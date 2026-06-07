@@ -9,18 +9,32 @@ await page.waitForLoadState("networkidle");
 await page.click("button:has-text('Find my perfect experience')");
 await page.waitForTimeout(800);
 
-// Click "Couple" — enabled WHO button
-await page.locator("button:enabled:has-text('💑 Couple')").click();
-console.log("Clicked Couple");
+// Click 2nd WHO button (Couple) by position
+const whoButtons = await page.$$("button.rounded-full:not([disabled])");
+console.log("WHO buttons count:", whoButtons.length);
+for (const b of whoButtons) {
+  const text = await b.textContent();
+  console.log("  button:", text?.trim());
+}
+if (whoButtons.length >= 2) {
+  await whoButtons[1].click();
+  console.log("Clicked WHO button index 1");
+} else {
+  console.log("ERROR: could not find WHO buttons");
+  await browser.close();
+  process.exit(1);
+}
 
 // Helper: wait for loading to stop and get visible option buttons
 async function waitAndGetOptions() {
-  // Wait for loading dots to disappear (loading state ends)
+  // Wait for loading dots to appear (API call started)
+  await page.waitForSelector(".animate-bounce", { timeout: 5000 }).catch(() => {});
+  // Then wait for them to disappear (API call finished)
   await page.waitForFunction(
     () => !document.querySelector(".animate-bounce"),
     { timeout: 15000 }
   );
-  await page.waitForTimeout(300);
+  await page.waitForTimeout(400);
   const btns = await page.$$eval(
     "div.flex.flex-wrap button.rounded-full:not([disabled])",
     els => els.map(b => b.textContent?.trim()).filter(Boolean)
@@ -66,6 +80,12 @@ if (speedOpt) {
 const opts3 = await waitAndGetOptions();
 console.log("Round 3 options:", opts3);
 if (opts3[0]) await clickOption(opts3[0]);
+
+// Screenshot after recommendation card appears
+await page.waitForFunction(() => !document.querySelector(".animate-bounce"), { timeout: 15000 });
+await page.waitForLoadState("networkidle").catch(() => {});
+await page.waitForTimeout(1500);
+await page.screenshot({ path: "/tmp/tenerify-card.png", fullPage: true });
 
 // Round 4
 const opts4 = await waitAndGetOptions();
