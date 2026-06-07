@@ -6,6 +6,58 @@ import { SESSION_COOKIE } from "@/lib/session";
 
 const WHATSAPP_NUMBER = "34610434957";
 
+function DatePicker({ onSelect }: { onSelect: (date: string) => void }) {
+  const today = new Date();
+  const fmt = (d: Date) => d.toISOString().split("T")[0];
+  const label = (d: Date) =>
+    d.toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" });
+
+  const tomorrow = new Date(today); tomorrow.setDate(today.getDate() + 1);
+  const weekend = new Date(today);
+  const daysToSat = (6 - today.getDay() + 7) % 7 || 7;
+  weekend.setDate(today.getDate() + daysToSat);
+
+  const [showPicker, setShowPicker] = useState(false);
+  const minDate = fmt(tomorrow);
+
+  return (
+    <div className="flex flex-col gap-2 w-full">
+      <div className="flex flex-wrap gap-2">
+        <button onClick={() => onSelect(label(today))}
+          className="px-4 py-2 rounded-full text-sm font-medium border bg-stone-900 border-stone-700 text-white hover:border-orange-500 hover:text-orange-400 transition-all">
+          Today
+        </button>
+        <button onClick={() => onSelect(label(tomorrow))}
+          className="px-4 py-2 rounded-full text-sm font-medium border bg-stone-900 border-stone-700 text-white hover:border-orange-500 hover:text-orange-400 transition-all">
+          Tomorrow
+        </button>
+        <button onClick={() => onSelect(label(weekend))}
+          className="px-4 py-2 rounded-full text-sm font-medium border bg-stone-900 border-stone-700 text-white hover:border-orange-500 hover:text-orange-400 transition-all">
+          This weekend
+        </button>
+        <button onClick={() => setShowPicker(true)}
+          className="px-4 py-2 rounded-full text-sm font-medium border bg-stone-900 border-stone-700 text-white hover:border-orange-500 hover:text-orange-400 transition-all">
+          📅 Pick a date
+        </button>
+      </div>
+      {showPicker && (
+        <input
+          type="date"
+          min={minDate}
+          autoFocus
+          onChange={(e) => {
+            if (e.target.value) {
+              const d = new Date(e.target.value);
+              onSelect(label(d));
+            }
+          }}
+          className="bg-stone-900 border border-orange-500 text-white rounded-2xl px-4 py-3 text-sm w-full focus:outline-none"
+        />
+      )}
+    </div>
+  );
+}
+
 function BookingButtons({ bookingText, whatsappNumber }: { bookingText: string; whatsappNumber: string }) {
   const [loading, setLoading] = useState(false);
 
@@ -63,6 +115,7 @@ type Message = {
   options?: string[];
   bookingText?: string;
   tourMedia?: TourMedia | null;
+  needsDate?: boolean;
 };
 
 type Step = "hero" | "who" | "chat";
@@ -122,7 +175,7 @@ export default function Home() {
       if (data.isReturning) setIsReturning(true);
       setMessages([
         ...newMessages,
-        { role: "assistant", content: data.message, options: data.options, bookingText: data.bookingText, tourMedia: data.tourMedia },
+        { role: "assistant", content: data.message, options: data.options, bookingText: data.bookingText, tourMedia: data.tourMedia, needsDate: data.needsDate },
       ]);
     } catch {
       setMessages([
@@ -267,22 +320,29 @@ export default function Home() {
                 <BookingButtons bookingText={msg.bookingText} whatsappNumber={WHATSAPP_NUMBER} />
               )}
 
-              {/* Quick-reply options */}
+              {/* Date picker or quick-reply options */}
               {msg.role === "assistant" && i === lastAssistantIndex && !usedOptions.has(i) && !loading && (
-                <div className="flex flex-wrap gap-2">
-                  {(msg.options && msg.options.length > 0
-                    ? msg.options
-                    : ["Tell me more 🌴", "Something else", "How do I book?"]
-                  ).map((opt) => (
-                    <button
-                      key={opt}
-                      onClick={() => handleOption(opt, i)}
-                      className="px-4 py-2 rounded-full text-sm font-medium border bg-stone-900 border-stone-700 text-white hover:border-orange-500 hover:text-orange-400 transition-all cursor-pointer"
-                    >
-                      {opt}
-                    </button>
-                  ))}
-                </div>
+                msg.needsDate ? (
+                  <DatePicker onSelect={(date) => {
+                    setUsedOptions((prev) => new Set(prev).add(i));
+                    sendToAI(date, messages);
+                  }} />
+                ) : (
+                  <div className="flex flex-wrap gap-2">
+                    {(msg.options && msg.options.length > 0
+                      ? msg.options
+                      : ["Tell me more 🌴", "Something else", "How do I book?"]
+                    ).map((opt) => (
+                      <button
+                        key={opt}
+                        onClick={() => handleOption(opt, i)}
+                        className="px-4 py-2 rounded-full text-sm font-medium border bg-stone-900 border-stone-700 text-white hover:border-orange-500 hover:text-orange-400 transition-all cursor-pointer"
+                      >
+                        {opt}
+                      </button>
+                    ))}
+                  </div>
+                )
               )}
             </div>
           </div>

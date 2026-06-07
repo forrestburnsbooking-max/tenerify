@@ -171,6 +171,10 @@ export async function POST(req: NextRequest) {
                 type: "string",
                 description: "The slug of the tour you are recommending in this message (e.g. 'buggy-sunset-adventure'). Only set when actively recommending a specific tour.",
               },
+              needsDate: {
+                type: "boolean",
+                description: "Set to true when you are asking the user to pick a date for their booking. This shows a date picker in the UI.",
+              },
             },
             required: ["message", "options"],
           },
@@ -182,12 +186,13 @@ export async function POST(req: NextRequest) {
     const toolUse = response.content.find((b) => b.type === "tool_use");
     const input =
       toolUse && toolUse.type === "tool_use"
-        ? (toolUse.input as { message: string; options: string[]; tourSlug?: string })
+        ? (toolUse.input as { message: string; options: string[]; tourSlug?: string; needsDate?: boolean })
         : null;
 
     let message = input?.message ?? "Sorry, something went wrong.";
     const options = input?.options ?? [];
     const tourSlug = input?.tourSlug ?? null;
+    const needsDate = input?.needsDate ?? false;
 
     const bookMatch = message.match(/\[BOOK_NOW: ([^\]]+)\]/);
     const bookingText = bookMatch ? bookMatch[1] : null;
@@ -205,7 +210,7 @@ export async function POST(req: NextRequest) {
     // Save session and set cookie
     await saveSession(sessionId, session);
 
-    const res = NextResponse.json({ message, options, bookingText, tourMedia, isReturning: session.visits.length > 1 });
+    const res = NextResponse.json({ message, options, bookingText, tourMedia, needsDate, isReturning: session.visits.length > 1 });
     res.cookies.set(SESSION_COOKIE, sessionId, {
       httpOnly: false, // readable by client to show "welcome back"
       sameSite: "lax",
