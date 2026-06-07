@@ -53,39 +53,36 @@ export default function LegalPage() {
 
         {/* Cancellation Policy */}
         <Section id="cancellation---refund-policy" title="Cancellation & Refund Policy">
-          <P>We understand plans change. Here is how cancellations work on Tenerify.ai.</P>
+          <P>We understand plans change. Cancellation terms may vary slightly by experience — the details below reflect the general policy that applies to all bookings made through Tenerify.ai.</P>
 
           <H3>Customer cancellations</H3>
           <div className="space-y-3 text-stone-300 text-sm leading-relaxed">
             <div className="bg-stone-900 border border-white/5 rounded-xl px-4 py-3 space-y-1">
-              <p className="font-semibold text-white">48+ hours before the tour</p>
-              <p>Full refund to your original payment method. Processing time: 5–10 business days depending on your bank.</p>
+              <p className="font-semibold text-white">More than 24 hours before the tour</p>
+              <p>Full refund to your original payment method. Refunds are processed within 14 days.</p>
             </div>
             <div className="bg-stone-900 border border-white/5 rounded-xl px-4 py-3 space-y-1">
-              <p className="font-semibold text-white">24–48 hours before the tour</p>
-              <p>50% refund.</p>
-            </div>
-            <div className="bg-stone-900 border border-white/5 rounded-xl px-4 py-3 space-y-1">
-              <p className="font-semibold text-white">Less than 24 hours / no-show</p>
-              <p>No refund. The full amount is forfeited.</p>
+              <p className="font-semibold text-white">Less than 24 hours before the tour / no-show</p>
+              <p>No refund. The full amount is forfeited as the experience slot cannot be re-sold at short notice.</p>
             </div>
           </div>
 
           <H3>Operator cancellations</H3>
-          <P>If the tour operator cancels your booking (e.g. bad weather, minimum group not reached), you will receive a full refund or the option to reschedule at no extra cost.</P>
-
-          <H3>Weather policy</H3>
-          <P>Tenerife enjoys excellent weather year-round, but ocean and outdoor activities may occasionally be cancelled due to adverse conditions. In such cases, a full refund or reschedule will be offered.</P>
+          <P>If the tour operator cancels your booking (e.g. bad weather, safety reasons, or minimum group not reached), you will receive a full refund or the option to reschedule at no extra cost.</P>
 
           <H3>How to cancel</H3>
-          <P>To request a cancellation, contact us via WhatsApp at +34 610 434 957 with your booking reference. Cancellations must be requested before the cutoff time to qualify for a refund.</P>
+          <P>Contact us via WhatsApp at +34 610 434 957 with your booking reference. Please cancel as early as possible — cancellations must be received more than 24 hours before your tour start time to be eligible for a refund.</P>
 
           <H3>Non-refundable situations</H3>
           <ul className="text-stone-300 text-sm leading-relaxed space-y-1 list-disc list-inside">
-            <li>Failure to meet tour requirements (age, license)</li>
-            <li>Late arrival causing you to miss the tour</li>
             <li>Cancellation within 24 hours of the tour start time</li>
+            <li>No-show on the day of the tour</li>
+            <li>Failure to meet tour requirements (minimum age, valid driving license)</li>
+            <li>Late arrival causing you to miss the departure</li>
           </ul>
+
+          <H3>Refund processing</H3>
+          <P>All eligible refunds are returned to the original payment method used at checkout within 14 days of the cancellation request being confirmed.</P>
         </Section>
 
         {/* Privacy Policy */}
