@@ -70,8 +70,8 @@ export async function POST(req: NextRequest) {
       mode: "payment",
       success_url: `${baseUrl}/booking/success?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${baseUrl}/`,
-      // Collect customer email so Stripe can send receipt
       customer_creation: "always",
+      phone_number_collection: { enabled: true },
       metadata: {
         bookingText,
         tourName,

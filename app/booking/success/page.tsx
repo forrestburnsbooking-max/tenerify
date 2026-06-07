@@ -10,6 +10,8 @@ type BookingInfo = {
   groupSize: string;
   bookingDate: string;
   amountTotal: number;
+  customerPhone: string;
+  customerName: string;
 };
 
 function SuccessContent() {
@@ -28,6 +30,8 @@ function SuccessContent() {
           groupSize: data.groupSize ?? "",
           bookingDate: data.bookingDate ?? "",
           amountTotal: data.amountTotal ?? 0,
+          customerPhone: data.customerPhone ?? "",
+          customerName: data.customerName ?? "",
         });
       })
       .catch(() => {});
@@ -74,15 +78,29 @@ function SuccessContent() {
             🎫 Get Your Ticket
           </a>
 
-          {/* Secondary — WhatsApp */}
+          {/* Customer → operator WhatsApp */}
           <a
             href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(waMessage)}`}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-2 bg-green-600 hover:bg-green-500 text-white font-semibold px-6 py-4 rounded-2xl transition-all w-full"
           >
-            <span>📲</span> Contact us on WhatsApp
+            <span>📲</span> Questions? Chat with us
           </a>
+
+          {/* Operator → customer WhatsApp (only shows if phone known) */}
+          {booking?.customerPhone && (
+            <a
+              href={`https://wa.me/${booking.customerPhone.replace(/\D/g, "")}?text=${encodeURIComponent(
+                `Hi${booking.customerName ? ` ${booking.customerName}` : ""}! This is Tenerify.ai. Just confirming your booking: ${booking.tourName}${booking.bookingDate ? ` on ${booking.bookingDate}` : ""}. Ref: ${ref}. Any questions — we're here! 🌋`
+              )}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 border border-green-700 text-green-400 hover:bg-green-900/30 font-medium px-6 py-3 rounded-2xl transition-all w-full text-sm"
+            >
+              📩 Send confirmation to client
+            </a>
+          )}
 
           <a
             href="/"

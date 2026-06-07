@@ -21,6 +21,7 @@ export async function GET(req: NextRequest) {
       tourSlug: meta.tourSlug ?? null,
       customerEmail: session.customer_details?.email ?? null,
       customerName: session.customer_details?.name ?? null,
+      customerPhone: session.customer_details?.phone ?? null,
       amountTotal: session.amount_total ?? null,
     });
   } catch {
