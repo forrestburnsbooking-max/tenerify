@@ -6,11 +6,18 @@ import { SESSION_COOKIE } from "@/lib/session";
 
 const WHATSAPP_NUMBER = "34610434957";
 
+type TourMedia = {
+  imageUrl?: string;
+  videoUrl?: string;
+  title?: string;
+};
+
 type Message = {
   role: "user" | "assistant";
   content: string;
   options?: string[];
   bookingText?: string;
+  tourMedia?: TourMedia | null;
 };
 
 type Step = "hero" | "who" | "chat";
@@ -70,7 +77,7 @@ export default function Home() {
       if (data.isReturning) setIsReturning(true);
       setMessages([
         ...newMessages,
-        { role: "assistant", content: data.message, options: data.options, bookingText: data.bookingText },
+        { role: "assistant", content: data.message, options: data.options, bookingText: data.bookingText, tourMedia: data.tourMedia },
       ]);
     } catch {
       setMessages([
@@ -189,6 +196,26 @@ export default function Home() {
                   msg.content
                 )}
               </div>
+
+              {/* Tour media card */}
+              {msg.role === "assistant" && msg.tourMedia && (
+                <div className="rounded-2xl overflow-hidden border border-white/10 w-full max-w-sm">
+                  {msg.tourMedia.videoUrl ? (
+                    <iframe
+                      src={msg.tourMedia.videoUrl}
+                      className="w-full aspect-video"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    />
+                  ) : msg.tourMedia.imageUrl ? (
+                    <img
+                      src={msg.tourMedia.imageUrl}
+                      alt={msg.tourMedia.title ?? ""}
+                      className="w-full aspect-video object-cover"
+                    />
+                  ) : null}
+                </div>
+              )}
 
               {/* WhatsApp booking button */}
               {msg.role === "assistant" && msg.bookingText && (

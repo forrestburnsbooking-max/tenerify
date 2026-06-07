@@ -27,6 +27,8 @@ export type Tour = {
   notIncluded?: string;
   meetingPoint?: string;
   faq: FaqItem[];
+  imageUrl?: string;
+  videoUrl?: string;
   url: string;
 };
 

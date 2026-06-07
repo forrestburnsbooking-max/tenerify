@@ -11,6 +11,7 @@ import {
   SESSION_COOKIE,
   SESSION_TTL_MS,
 } from "@/lib/session";
+import { getTourBySlug } from "@/lib/tours";
 import { randomUUID } from "crypto";
 
 const client = new Anthropic();
@@ -143,6 +144,10 @@ export async function POST(req: NextRequest) {
                 items: { type: "string" },
                 description: "2–4 short clickable options that match the current question",
               },
+              tourSlug: {
+                type: "string",
+                description: "The slug of the tour you are recommending in this message (e.g. 'buggy-sunset-adventure'). Only set when actively recommending a specific tour.",
+              },
             },
             required: ["message", "options"],
           },
@@ -154,20 +159,30 @@ export async function POST(req: NextRequest) {
     const toolUse = response.content.find((b) => b.type === "tool_use");
     const input =
       toolUse && toolUse.type === "tool_use"
-        ? (toolUse.input as { message: string; options: string[] })
+        ? (toolUse.input as { message: string; options: string[]; tourSlug?: string })
         : null;
 
     let message = input?.message ?? "Sorry, something went wrong.";
     const options = input?.options ?? [];
+    const tourSlug = input?.tourSlug ?? null;
 
     const bookMatch = message.match(/\[BOOK_NOW: ([^\]]+)\]/);
     const bookingText = bookMatch ? bookMatch[1] : null;
     message = message.replace(/\[BOOK_NOW:[^\]]+\]/g, "").trim();
 
+    // Attach tour media if AI recommended a specific tour
+    let tourMedia: { imageUrl?: string; videoUrl?: string; title?: string } | null = null;
+    if (tourSlug) {
+      const tour = getTourBySlug(tourSlug);
+      if (tour) {
+        tourMedia = { imageUrl: tour.imageUrl, videoUrl: tour.videoUrl, title: tour.title };
+      }
+    }
+
     // Save session and set cookie
     await saveSession(sessionId, session);
 
-    const res = NextResponse.json({ message, options, bookingText, isReturning: session.visits.length > 1 });
+    const res = NextResponse.json({ message, options, bookingText, tourMedia, isReturning: session.visits.length > 1 });
     res.cookies.set(SESSION_COOKIE, sessionId, {
       httpOnly: false, // readable by client to show "welcome back"
       sameSite: "lax",

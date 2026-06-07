@@ -32,6 +32,8 @@ export type Tour = {
   notIncluded?: string;
   meetingPoint?: string;
   faq: FaqItem[];
+  imageUrl?: string;
+  videoUrl?: string;
   url: string;
 };
 
@@ -222,6 +224,31 @@ function extractFaq(html: string): FaqItem[] {
   return faqs;
 }
 
+function extractImageUrl(html: string): string | undefined {
+  // Hero image: first .webp or .jpg from the tour content CDN folder, excluding responsive variants
+  const TOUR_CDN = "664b7dd803941967e876905a";
+  const imgs = [...html.matchAll(
+    new RegExp(`https://cdn\\.prod\\.website-files\\.com/${TOUR_CDN}/([^"'\\s]{10,200}\\.(?:webp|jpg|jpeg))`, "g")
+  )];
+  for (const m of imgs) {
+    const url = m[0];
+    // Skip responsive variants (-p-500, -p-800, -p-1080, -p-1600)
+    if (/-p-\d+\./.test(url)) continue;
+    return url;
+  }
+  return undefined;
+}
+
+function extractVideoUrl(html: string): string | undefined {
+  // YouTube embed
+  const yt = html.match(/(?:youtube\.com\/embed\/|youtu\.be\/)([a-zA-Z0-9_-]{11})/);
+  if (yt) return `https://www.youtube.com/embed/${yt[1]}`;
+  // Vimeo
+  const vm = html.match(/vimeo\.com\/(?:video\/)?(\d{6,12})/);
+  if (vm) return `https://player.vimeo.com/video/${vm[1]}`;
+  return undefined;
+}
+
 // --- Sitemap discovery ---
 
 async function discoverSlugs(): Promise<string[]> {
@@ -259,6 +286,8 @@ async function scrapeTour(slug: string): Promise<Tour | null> {
     const notIncluded = extractNotIncluded(html);
     const meetingPoint = extractMeetingPoint(html);
     const faq = extractFaq(html);
+    const imageUrl = extractImageUrl(html);
+    const videoUrl = extractVideoUrl(html);
 
     return {
       slug,
@@ -274,6 +303,8 @@ async function scrapeTour(slug: string): Promise<Tour | null> {
       notIncluded,
       meetingPoint,
       faq,
+      imageUrl,
+      videoUrl,
       url,
     };
   } catch (e) {
