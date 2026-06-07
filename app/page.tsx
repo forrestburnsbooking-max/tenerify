@@ -230,7 +230,7 @@ export default function Home() {
           </div>
         </div>
         <div className="border-t border-white/5 px-6 py-4 flex justify-center">
-          <p className="text-stone-600 text-xs">Tenerify.ai · Tenerife, Canary Islands</p>
+          <p className="text-stone-600 text-xs">Tenerify.ai · Tenerife, Canary Islands · <a href="/legal" className="hover:text-stone-400 transition-colors">Legal & Privacy</a></p>
         </div>
       </div>
     );
