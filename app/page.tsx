@@ -1,10 +1,55 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 import ReactMarkdown from "react-markdown";
 import { SESSION_COOKIE } from "@/lib/session";
 
 const WHATSAPP_NUMBER = "34610434957";
+
+function BookingButtons({ bookingText, whatsappNumber }: { bookingText: string; whatsappNumber: string }) {
+  const [loading, setLoading] = useState(false);
+
+  const handlePay = useCallback(async () => {
+    setLoading(true);
+    try {
+      const res = await fetch("/api/checkout", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ bookingText }),
+      });
+      const data = await res.json();
+      if (data.url) {
+        window.location.href = data.url;
+      } else {
+        alert("Payment unavailable right now. Please book via WhatsApp.");
+      }
+    } catch {
+      alert("Payment unavailable right now. Please book via WhatsApp.");
+    } finally {
+      setLoading(false);
+    }
+  }, [bookingText]);
+
+  return (
+    <div className="flex flex-col gap-2 w-full max-w-xs">
+      <button
+        onClick={handlePay}
+        disabled={loading}
+        className="flex items-center justify-center gap-2 bg-orange-500 hover:bg-orange-400 disabled:opacity-60 text-white font-semibold px-5 py-3 rounded-2xl text-sm transition-all"
+      >
+        {loading ? "Opening payment…" : "💳 Pay & Book →"}
+      </button>
+      <a
+        href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(`Hi! I'd like to book:\n${bookingText}`)}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center justify-center gap-2 text-stone-500 hover:text-green-400 text-xs transition-colors py-1"
+      >
+        📲 or book via WhatsApp
+      </a>
+    </div>
+  );
+}
 
 type TourMedia = {
   imageUrl?: string;
@@ -217,16 +262,9 @@ export default function Home() {
                 </div>
               )}
 
-              {/* WhatsApp booking button */}
+              {/* Booking buttons */}
               {msg.role === "assistant" && msg.bookingText && (
-                <a
-                  href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`Hi! I'd like to book:\n${msg.bookingText}`)}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 bg-green-600 hover:bg-green-500 text-white font-semibold px-5 py-3 rounded-2xl text-sm transition-all w-fit"
-                >
-                  <span>📲</span> Book via WhatsApp
-                </a>
+                <BookingButtons bookingText={msg.bookingText} whatsappNumber={WHATSAPP_NUMBER} />
               )}
 
               {/* Quick-reply options */}
