@@ -7,13 +7,16 @@ function getStripe() {
   return new Stripe(key);
 }
 
-async function sendWhatsApp(message: string): Promise<void> {
-  const phone = process.env.CALLMEBOT_PHONE;
-  const apiKey = process.env.CALLMEBOT_API_KEY;
-  if (!phone || !apiKey) return;
+async function sendTelegram(message: string): Promise<void> {
+  const token = process.env.TELEGRAM_BOT_TOKEN;
+  const chatId = process.env.TELEGRAM_CHAT_ID;
+  if (!token || !chatId) return;
 
-  const url = `https://api.callmebot.com/whatsapp.php?phone=${phone}&text=${encodeURIComponent(message)}&apikey=${apiKey}`;
-  await fetch(url);
+  await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ chat_id: chatId, text: message }),
+  });
 }
 
 export async function POST(req: NextRequest) {
@@ -61,7 +64,7 @@ export async function POST(req: NextRequest) {
       `🔖 Ref: ${ref}`,
     ].filter(Boolean);
 
-    await sendWhatsApp(lines.join("\n"));
+    await sendTelegram(lines.join("\n"));
   }
 
   return NextResponse.json({ received: true });
