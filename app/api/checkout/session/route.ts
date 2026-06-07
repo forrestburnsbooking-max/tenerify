@@ -11,7 +11,18 @@ export async function GET(req: NextRequest) {
   try {
     const stripe = new Stripe(key);
     const session = await stripe.checkout.sessions.retrieve(id);
-    return NextResponse.json({ bookingText: session.metadata?.bookingText ?? null });
+    const meta = session.metadata ?? {};
+    return NextResponse.json({
+      bookingText: meta.bookingText ?? null,
+      tourName: meta.tourName ?? null,
+      groupSize: meta.groupSize ?? null,
+      bookingDate: meta.bookingDate ?? null,
+      meetingPoint: meta.meetingPoint ?? null,
+      tourSlug: meta.tourSlug ?? null,
+      customerEmail: session.customer_details?.email ?? null,
+      customerName: session.customer_details?.name ?? null,
+      amountTotal: session.amount_total ?? null,
+    });
   } catch {
     return NextResponse.json({ error: "Session not found" }, { status: 404 });
   }

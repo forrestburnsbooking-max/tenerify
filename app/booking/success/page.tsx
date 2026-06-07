@@ -8,37 +8,32 @@ const WHATSAPP_NUMBER = "34610434957";
 type BookingInfo = {
   tourName: string;
   groupSize: string;
-  priceEur: number;
+  bookingDate: string;
+  amountTotal: number;
 };
-
-function parseBookingText(text: string): BookingInfo {
-  const parts = text.split("|").map((s) => s.trim());
-  const priceEur = parseFloat((parts[2] ?? "0").replace(/[^0-9.]/g, "")) || 0;
-  return {
-    tourName: parts[0] ?? "Your experience",
-    groupSize: parts[1] ?? "",
-    priceEur,
-  };
-}
 
 function SuccessContent() {
   const params = useSearchParams();
-  const sessionId = params.get("session_id");
+  const sessionId = params.get("session_id") ?? "";
   const [booking, setBooking] = useState<BookingInfo | null>(null);
+  const ref = sessionId.slice(-8).toUpperCase();
 
   useEffect(() => {
     if (!sessionId) return;
     fetch(`/api/checkout/session?id=${sessionId}`)
       .then((r) => r.json())
       .then((data) => {
-        if (data.bookingText) setBooking(parseBookingText(data.bookingText));
+        setBooking({
+          tourName: data.tourName ?? "Your experience",
+          groupSize: data.groupSize ?? "",
+          bookingDate: data.bookingDate ?? "",
+          amountTotal: data.amountTotal ?? 0,
+        });
       })
       .catch(() => {});
   }, [sessionId]);
 
-  const waMessage = booking
-    ? `Hi! I just paid for: ${booking.tourName}${booking.groupSize ? ` (${booking.groupSize})` : ""}. My booking reference: ${sessionId?.slice(-8).toUpperCase()}`
-    : `Hi! I just booked via Tenerify.ai. Reference: ${sessionId?.slice(-8).toUpperCase()}`;
+  const waMessage = `Hi! I just paid for${booking ? `: ${booking.tourName}` : " a Tenerife experience"}. My booking reference: ${ref}`;
 
   return (
     <div className="flex flex-col min-h-screen bg-[#0d0d0d] text-white items-center justify-center px-6">
@@ -48,37 +43,45 @@ function SuccessContent() {
         <div>
           <h1 className="text-2xl font-bold mb-2">Payment confirmed!</h1>
           <p className="text-stone-400 text-sm leading-relaxed">
-            Your booking is secured. We&apos;ll be in touch with details shortly.
+            Your spot is secured. Download your ticket below.
           </p>
         </div>
 
         {booking && (
           <div className="bg-stone-900 border border-white/5 rounded-2xl px-5 py-4 text-left space-y-2">
             <p className="font-semibold text-white">{booking.tourName}</p>
+            {booking.bookingDate && (
+              <p className="text-stone-400 text-sm">📅 {booking.bookingDate}</p>
+            )}
             {booking.groupSize && (
-              <p className="text-stone-400 text-sm">{booking.groupSize}</p>
+              <p className="text-stone-400 text-sm">👥 {booking.groupSize}</p>
             )}
-            {booking.priceEur > 0 && (
+            {booking.amountTotal > 0 && (
               <p className="text-orange-400 font-semibold text-lg">
-                €{booking.priceEur.toFixed(0)} paid
+                €{(booking.amountTotal / 100).toFixed(0)} paid
               </p>
             )}
-            {sessionId && (
-              <p className="text-stone-600 text-xs">
-                Ref: {sessionId.slice(-8).toUpperCase()}
-              </p>
-            )}
+            <p className="text-stone-600 text-xs font-mono">Ref: {ref}</p>
           </div>
         )}
 
         <div className="space-y-3">
+          {/* Primary — ticket */}
+          <a
+            href={`/booking/ticket?session_id=${sessionId}`}
+            className="flex items-center justify-center gap-2 bg-orange-500 hover:bg-orange-400 text-white font-semibold px-6 py-4 rounded-2xl transition-all w-full"
+          >
+            🎫 Get Your Ticket
+          </a>
+
+          {/* Secondary — WhatsApp */}
           <a
             href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(waMessage)}`}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-2 bg-green-600 hover:bg-green-500 text-white font-semibold px-6 py-4 rounded-2xl transition-all w-full"
           >
-            <span>📲</span> Send booking details on WhatsApp
+            <span>📲</span> Contact us on WhatsApp
           </a>
 
           <a
