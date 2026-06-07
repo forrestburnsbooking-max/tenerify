@@ -1,4 +1,4 @@
-import { kv } from "@vercel/kv";
+import { Redis } from "@upstash/redis";
 
 export type SessionData = {
   id: string;
@@ -13,20 +13,26 @@ export type SessionData = {
 const SESSION_TTL_SECONDS = 7 * 24 * 60 * 60; // 7 days
 const KEY_PREFIX = "tenerify:session:";
 
-// In-memory fallback for local dev (no KV configured)
+// In-memory fallback for local dev (no Redis configured)
 const devStore = new Map<string, { data: SessionData; expiresAt: number }>();
 
-function isKvAvailable(): boolean {
-  return !!(process.env.KV_REST_API_URL && process.env.KV_REST_API_TOKEN);
+function getRedis(): Redis | null {
+  if (process.env.KV_REST_API_URL && process.env.KV_REST_API_TOKEN) {
+    return new Redis({
+      url: process.env.KV_REST_API_URL,
+      token: process.env.KV_REST_API_TOKEN,
+    });
+  }
+  return null;
 }
 
 export async function getSession(id: string): Promise<SessionData | null> {
   if (!id) return null;
   try {
-    if (isKvAvailable()) {
-      return await kv.get<SessionData>(`${KEY_PREFIX}${id}`);
+    const redis = getRedis();
+    if (redis) {
+      return await redis.get<SessionData>(`${KEY_PREFIX}${id}`);
     }
-    // Dev fallback
     const entry = devStore.get(id);
     if (!entry || Date.now() > entry.expiresAt) {
       devStore.delete(id);
@@ -41,8 +47,9 @@ export async function getSession(id: string): Promise<SessionData | null> {
 export async function saveSession(id: string, data: SessionData): Promise<void> {
   data.lastSeen = new Date().toISOString();
   try {
-    if (isKvAvailable()) {
-      await kv.set(`${KEY_PREFIX}${id}`, data, { ex: SESSION_TTL_SECONDS });
+    const redis = getRedis();
+    if (redis) {
+      await redis.set(`${KEY_PREFIX}${id}`, data, { ex: SESSION_TTL_SECONDS });
     } else {
       devStore.set(id, { data, expiresAt: Date.now() + SESSION_TTL_SECONDS * 1000 });
     }
@@ -53,8 +60,9 @@ export async function saveSession(id: string, data: SessionData): Promise<void> 
 
 export async function deleteSession(id: string): Promise<void> {
   try {
-    if (isKvAvailable()) {
-      await kv.del(`${KEY_PREFIX}${id}`);
+    const redis = getRedis();
+    if (redis) {
+      await redis.del(`${KEY_PREFIX}${id}`);
     } else {
       devStore.delete(id);
     }
