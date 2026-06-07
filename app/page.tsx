@@ -268,7 +268,7 @@ export default function Home() {
               <div className="bg-stone-900 border border-white/5 text-white rounded-2xl rounded-tl-none px-4 py-3 text-sm leading-relaxed">
                 ¡Buenas! Who&apos;s coming to Tenerife? 🌊
               </div>
-              <div className="flex flex-wrap gap-2">
+              <div className="grid grid-cols-2 gap-2">
                 {WHO_OPTIONS.map((opt) => (
                   <button
                     key={opt.value}
