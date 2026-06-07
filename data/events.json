@@ -1,0 +1,45 @@
+[
+  {
+    "title": "Carnaval de Santa Cruz de Tenerife",
+    "date": "2026-06-13",
+    "time": "20:00",
+    "location": "Santa Cruz de Tenerife, calle del Pilar",
+    "description": "One of the world's great carnivals — costumes, music, street parties",
+    "price": "Free",
+    "url": "https://www.carnavaldetenerife.com"
+  },
+  {
+    "title": "Concierto: Orquesta Sinfónica de Tenerife",
+    "date": "2026-06-14",
+    "time": "19:30",
+    "location": "Auditorio de Tenerife, Santa Cruz",
+    "description": "Live symphonic performance in Calatrava's iconic concert hall",
+    "price": "€10–€35",
+    "url": "https://www.auditoriodetenerife.com"
+  },
+  {
+    "title": "Exposición: Arte Volcánico",
+    "date": "2026-06-07",
+    "time": "10:00–20:00",
+    "location": "TEA Tenerife, Santa Cruz",
+    "description": "Contemporary art inspired by volcanic landscapes of the Canary Islands",
+    "price": "Free on Sundays, €6 other days",
+    "url": "https://www.teatenerife.es"
+  },
+  {
+    "title": "Mercado Artesanal de La Orotava",
+    "date": "2026-06-07",
+    "time": "09:00–14:00",
+    "location": "Plaza del Ayuntamiento, La Orotava",
+    "description": "Weekly crafts market in the most beautiful historic town on the island",
+    "price": "Free"
+  },
+  {
+    "title": "Festival de Música Étnica",
+    "date": "2026-06-20",
+    "time": "18:00",
+    "location": "Parque García Sanabria, Santa Cruz",
+    "description": "World music festival in the open-air park",
+    "price": "Free"
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(run)",
+      "Skill(run:*)",
+      "Bash(npm run *)",
+      "Bash(echo \"PID: $!\")",
+      "Bash(curl -s http://localhost:3000)",
+      "Bash(cat /tmp/tenerisell-dev.log)",
+      "Read(//tmp/**)"
+    ]
+  }
+}
