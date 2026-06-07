@@ -58,6 +58,31 @@ function DatePicker({ onSelect }: { onSelect: (date: string) => void }) {
   );
 }
 
+function LicensePicker({ onSelect }: { onSelect: (answer: string) => void }) {
+  return (
+    <div className="flex flex-col gap-2 w-full">
+      <div className="flex flex-wrap gap-2">
+        <button onClick={() => onSelect("Yes, I have a category B license (car)")}
+          className="px-4 py-2 rounded-full text-sm font-medium border bg-stone-900 border-stone-700 text-white hover:border-orange-500 hover:text-orange-400 transition-all">
+          🚗 Category B (car)
+        </button>
+        <button onClick={() => onSelect("Yes, I have a category A license (motorcycle)")}
+          className="px-4 py-2 rounded-full text-sm font-medium border bg-stone-900 border-stone-700 text-white hover:border-orange-500 hover:text-orange-400 transition-all">
+          🏍️ Category A (moto)
+        </button>
+        <button onClick={() => onSelect("Both — category A and B")}
+          className="px-4 py-2 rounded-full text-sm font-medium border bg-stone-900 border-stone-700 text-white hover:border-orange-500 hover:text-orange-400 transition-all">
+          ✅ Both A & B
+        </button>
+        <button onClick={() => onSelect("No driving license")}
+          className="px-4 py-2 rounded-full text-sm font-medium border bg-stone-900 border-red-900 text-red-400 hover:border-red-500 transition-all">
+          ❌ No license
+        </button>
+      </div>
+    </div>
+  );
+}
+
 function BookingButtons({ bookingText, whatsappNumber }: { bookingText: string; whatsappNumber: string }) {
   const [loading, setLoading] = useState(false);
 
@@ -116,6 +141,7 @@ type Message = {
   bookingText?: string;
   tourMedia?: TourMedia | null;
   needsDate?: boolean;
+  needsLicense?: boolean;
 };
 
 type Step = "hero" | "who" | "chat";
@@ -175,7 +201,7 @@ export default function Home() {
       if (data.isReturning) setIsReturning(true);
       setMessages([
         ...newMessages,
-        { role: "assistant", content: data.message, options: data.options, bookingText: data.bookingText, tourMedia: data.tourMedia, needsDate: data.needsDate },
+        { role: "assistant", content: data.message, options: data.options, bookingText: data.bookingText, tourMedia: data.tourMedia, needsDate: data.needsDate, needsLicense: data.needsLicense },
       ]);
     } catch {
       setMessages([
@@ -326,6 +352,11 @@ export default function Home() {
                   <DatePicker onSelect={(date) => {
                     setUsedOptions((prev) => new Set(prev).add(i));
                     sendToAI(date, messages);
+                  }} />
+                ) : msg.needsLicense ? (
+                  <LicensePicker onSelect={(answer) => {
+                    setUsedOptions((prev) => new Set(prev).add(i));
+                    sendToAI(answer, messages);
                   }} />
                 ) : (
                   <div className="flex flex-wrap gap-2">

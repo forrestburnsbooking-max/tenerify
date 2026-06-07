@@ -91,13 +91,29 @@ Ready to grab it, or want to see the daytime option too?
 
 **Never write long paragraphs.** Short card + 1-2 sentences + question. That's it.
 
+## AGE & LICENSE RULES (mandatory — legal requirement)
+
+**For ALL tours:** ask ages of participants if there's any chance of minors (family, group). Check min age from catalogue.
+
+**For buggy/quad/karting tours specifically — ALWAYS ask before recommending:**
+- Set needsLicense=true in your tool response when asking this question
+- Buggy → requires **category B** driving license (car), min age **18**
+- Quad → requires **category A** driving license (motorcycle), min age **18**
+- If someone has no license → suggest boat, jet ski (passenger), whale watching, Siam Park instead
+- If someone has category B only → can do buggy but NOT quad
+- State the license requirement clearly in the tour card: add "🪪 Category B license required" or "🪪 Category A license required"
+
+**Never book a buggy/quad tour without confirming license.**
+
 ## FLOW
 
 1. Find out vibe (adventure/relaxed/family/couple/solo)
 2. Narrow down category (land/water/air)
-3. Recommend MAX 2 tours using the card format
-4. State price clearly
-5. Close the booking
+3. **If buggy/quad:** ask about license before recommending (needsLicense: true)
+4. **If family/group:** confirm ages, check min age requirements
+5. Recommend MAX 2 tours using the card format
+6. State price + license requirement clearly
+7. Ask for date (needsDate: true) → close the booking
 
 ## BOOKING TRIGGER
 
@@ -175,6 +191,10 @@ export async function POST(req: NextRequest) {
                 type: "boolean",
                 description: "Set to true when you are asking the user to pick a date for their booking. This shows a date picker in the UI.",
               },
+              needsLicense: {
+                type: "boolean",
+                description: "Set to true when asking if the user has a driving license (for buggy/quad tours). Shows license type buttons in the UI.",
+              },
             },
             required: ["message", "options"],
           },
@@ -186,13 +206,14 @@ export async function POST(req: NextRequest) {
     const toolUse = response.content.find((b) => b.type === "tool_use");
     const input =
       toolUse && toolUse.type === "tool_use"
-        ? (toolUse.input as { message: string; options: string[]; tourSlug?: string; needsDate?: boolean })
+        ? (toolUse.input as { message: string; options: string[]; tourSlug?: string; needsDate?: boolean; needsLicense?: boolean })
         : null;
 
     let message = input?.message ?? "Sorry, something went wrong.";
     const options = input?.options ?? [];
     const tourSlug = input?.tourSlug ?? null;
     const needsDate = input?.needsDate ?? false;
+    const needsLicense = input?.needsLicense ?? false;
 
     const bookMatch = message.match(/\[BOOK_NOW: ([^\]]+)\]/);
     const bookingText = bookMatch ? bookMatch[1] : null;
@@ -210,7 +231,7 @@ export async function POST(req: NextRequest) {
     // Save session and set cookie
     await saveSession(sessionId, session);
 
-    const res = NextResponse.json({ message, options, bookingText, tourMedia, needsDate, isReturning: session.visits.length > 1 });
+    const res = NextResponse.json({ message, options, bookingText, tourMedia, needsDate, needsLicense, isReturning: session.visits.length > 1 });
     res.cookies.set(SESSION_COOKIE, sessionId, {
       httpOnly: false, // readable by client to show "welcome back"
       sameSite: "lax",
