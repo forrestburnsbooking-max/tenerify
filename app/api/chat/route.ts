@@ -2,6 +2,7 @@ import Anthropic from "@anthropic-ai/sdk";
 import { NextRequest, NextResponse } from "next/server";
 import { getEvents } from "@/lib/events";
 import { getTours } from "@/lib/tours";
+import { checkRateLimit, getClientIp } from "@/lib/ratelimit";
 import {
   getSession,
   saveSession,
@@ -154,6 +155,15 @@ Example: [BOOK_NOW: Buggy – Sunset Adventure | 2 people | €180 | 15 June 202
 
 export async function POST(req: NextRequest) {
   try {
+    const ip = getClientIp(req);
+    const { allowed, remaining } = await checkRateLimit(`chat:${ip}`, 20, 60);
+    if (!allowed) {
+      return NextResponse.json(
+        { error: "Too many requests. Please wait a moment." },
+        { status: 429, headers: { "Retry-After": "60", "X-RateLimit-Remaining": "0" } }
+      );
+    }
+
     const { messages, who } = await req.json();
 
     // Session management

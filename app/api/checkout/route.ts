@@ -1,6 +1,7 @@
 import Stripe from "stripe";
 import { NextRequest, NextResponse } from "next/server";
 import { getTourBySlug } from "@/lib/tours";
+import { checkRateLimit, getClientIp } from "@/lib/ratelimit";
 import fs from "fs";
 import path from "path";
 
@@ -38,6 +39,15 @@ function findTourSlugByName(tourName: string): string | null {
 
 export async function POST(req: NextRequest) {
   try {
+    const ip = getClientIp(req);
+    const { allowed } = await checkRateLimit(`checkout:${ip}`, 5, 60);
+    if (!allowed) {
+      return NextResponse.json(
+        { error: "Too many requests. Please wait a moment." },
+        { status: 429, headers: { "Retry-After": "60" } }
+      );
+    }
+
     const { bookingText, tourSlug: clientTourSlug } = await req.json();
     if (!bookingText) {
       return NextResponse.json({ error: "Missing bookingText" }, { status: 400 });

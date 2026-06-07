@@ -188,6 +188,13 @@ export default function Home() {
         }),
       });
       const data = await res.json();
+      if (res.status === 429) {
+        setMessages([
+          ...newMessages,
+          { role: "assistant", content: "You're sending messages a bit too fast. Give it a second and try again.", options: ["Try again"] },
+        ]);
+        return;
+      }
       if (data.isReturning) setIsReturning(true);
       setMessages([
         ...newMessages,
