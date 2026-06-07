@@ -60,25 +60,15 @@ function DatePicker({ onSelect }: { onSelect: (date: string) => void }) {
 
 function LicensePicker({ onSelect }: { onSelect: (answer: string) => void }) {
   return (
-    <div className="flex flex-col gap-2 w-full">
-      <div className="flex flex-wrap gap-2">
-        <button onClick={() => onSelect("Yes, I have a category B license (car)")}
-          className="px-4 py-2 rounded-full text-sm font-medium border bg-stone-900 border-stone-700 text-white hover:border-orange-500 hover:text-orange-400 transition-all">
-          🚗 Category B (car)
-        </button>
-        <button onClick={() => onSelect("Yes, I have a category A license (motorcycle)")}
-          className="px-4 py-2 rounded-full text-sm font-medium border bg-stone-900 border-stone-700 text-white hover:border-orange-500 hover:text-orange-400 transition-all">
-          🏍️ Category A (moto)
-        </button>
-        <button onClick={() => onSelect("Both — category A and B")}
-          className="px-4 py-2 rounded-full text-sm font-medium border bg-stone-900 border-stone-700 text-white hover:border-orange-500 hover:text-orange-400 transition-all">
-          ✅ Both A & B
-        </button>
-        <button onClick={() => onSelect("No driving license")}
-          className="px-4 py-2 rounded-full text-sm font-medium border bg-stone-900 border-red-900 text-red-400 hover:border-red-500 transition-all">
-          ❌ No license
-        </button>
-      </div>
+    <div className="flex flex-wrap gap-2">
+      <button onClick={() => onSelect("Yes, I have a valid driving license (category B or A)")}
+        className="px-4 py-2 rounded-full text-sm font-medium border bg-stone-900 border-stone-700 text-white hover:border-orange-500 hover:text-orange-400 transition-all">
+        ✅ Yes, I have a license
+      </button>
+      <button onClick={() => onSelect("No driving license")}
+        className="px-4 py-2 rounded-full text-sm font-medium border bg-stone-900 border-red-900 text-red-400 hover:border-red-500 transition-all">
+        ❌ No license
+      </button>
     </div>
   );
 }
