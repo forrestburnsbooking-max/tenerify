@@ -166,6 +166,80 @@ const LANGUAGES = [
   { flag: "🇳🇱", label: "Nederlands", value: "nl" },
 ];
 
+const UI_STRINGS: Record<string, {
+  whoQuestion: string;
+  categoryQuestion: string;
+  locationQuestion: string;
+  nextButton: string;
+  whoLabels: { family: string; couple: string; solo: string; friends: string };
+  catLabels: { water: string; buggy: string; tours: string; parks: string; shows: string; adventure: string };
+}> = {
+  es: {
+    whoQuestion: "¡Buenas! ¿Quién viene a Tenerife? 🌊",
+    categoryQuestion: "¿Qué te apetece? Elige lo que te interese 👇",
+    locationQuestion: "¿En qué zona te alojas? 📍",
+    nextButton: "Siguiente →",
+    whoLabels: { family: "👨‍👩‍👧 Familia", couple: "💑 Pareja", solo: "🧑 Solo", friends: "👥 Amigos" },
+    catLabels: { water: "Agua y Barcos", buggy: "Buggy y Quad", tours: "Tours", parks: "Parques", shows: "Shows y Cenas", adventure: "Aventura" },
+  },
+  en: {
+    whoQuestion: "¡Buenas! Who's coming to Tenerife? 🌊",
+    categoryQuestion: "What are you looking for? Pick all that interest you 👇",
+    locationQuestion: "Which area are you staying in? 📍",
+    nextButton: "Next →",
+    whoLabels: { family: "👨‍👩‍👧 Family", couple: "💑 Couple", solo: "🧑 Solo", friends: "👥 Friends" },
+    catLabels: { water: "Water & Boats", buggy: "Buggy & Quad", tours: "Island Tours", parks: "Theme Parks", shows: "Shows & Dinners", adventure: "Adventure" },
+  },
+  de: {
+    whoQuestion: "Hallo! Wer kommt nach Teneriffa? 🌊",
+    categoryQuestion: "Was sucht ihr? Wählt alles aus 👇",
+    locationQuestion: "In welcher Gegend übernachtet ihr? 📍",
+    nextButton: "Weiter →",
+    whoLabels: { family: "👨‍👩‍👧 Familie", couple: "💑 Paar", solo: "🧑 Alleine", friends: "👥 Freunde" },
+    catLabels: { water: "Wasser & Boote", buggy: "Buggy & Quad", tours: "Insel-Touren", parks: "Freizeitparks", shows: "Shows & Dinner", adventure: "Abenteuer" },
+  },
+  ru: {
+    whoQuestion: "Привет! Кто едет на Тенерифе? 🌊",
+    categoryQuestion: "Что вас интересует? Выбери всё нужное 👇",
+    locationQuestion: "В каком районе вы остановились? 📍",
+    nextButton: "Далее →",
+    whoLabels: { family: "👨‍👩‍👧 Семья", couple: "💑 Пара", solo: "🧑 Один", friends: "👥 Друзья" },
+    catLabels: { water: "Вода и лодки", buggy: "Багги и квад", tours: "Экскурсии", parks: "Парки", shows: "Шоу и ужины", adventure: "Приключения" },
+  },
+  pl: {
+    whoQuestion: "Hej! Kto jedzie na Teneryfę? 🌊",
+    categoryQuestion: "Czego szukasz? Wybierz wszystko 👇",
+    locationQuestion: "W której okolicy mieszkasz? 📍",
+    nextButton: "Dalej →",
+    whoLabels: { family: "👨‍👩‍👧 Rodzina", couple: "💑 Para", solo: "🧑 Solo", friends: "👥 Znajomi" },
+    catLabels: { water: "Woda i łodzie", buggy: "Buggy i Quad", tours: "Wycieczki", parks: "Parki rozrywki", shows: "Pokazy i kolacje", adventure: "Przygoda" },
+  },
+  fr: {
+    whoQuestion: "Salut! Qui vient à Tenerife? 🌊",
+    categoryQuestion: "Qu'est-ce qui vous intéresse? Choisissez tout 👇",
+    locationQuestion: "Dans quelle zone logez-vous? 📍",
+    nextButton: "Suivant →",
+    whoLabels: { family: "👨‍👩‍👧 Famille", couple: "💑 Couple", solo: "🧑 Seul(e)", friends: "👥 Amis" },
+    catLabels: { water: "Eau & Bateaux", buggy: "Buggy & Quad", tours: "Tours de l'île", parks: "Parcs", shows: "Shows & Dîners", adventure: "Aventure" },
+  },
+  it: {
+    whoQuestion: "Ciao! Chi viene a Tenerife? 🌊",
+    categoryQuestion: "Cosa cercate? Selezionate tutto 👇",
+    locationQuestion: "In quale zona alloggiate? 📍",
+    nextButton: "Avanti →",
+    whoLabels: { family: "👨‍👩‍👧 Famiglia", couple: "💑 Coppia", solo: "🧑 Solo", friends: "👥 Amici" },
+    catLabels: { water: "Acqua e Barche", buggy: "Buggy & Quad", tours: "Tour dell'isola", parks: "Parchi tematici", shows: "Show e Cene", adventure: "Avventura" },
+  },
+  nl: {
+    whoQuestion: "Hallo! Wie komt naar Tenerife? 🌊",
+    categoryQuestion: "Wat zoeken jullie? Kies alles wat jullie interesseert 👇",
+    locationQuestion: "In welk gebied verblijven jullie? 📍",
+    nextButton: "Volgende →",
+    whoLabels: { family: "👨‍👩‍👧 Familie", couple: "💑 Stel", solo: "🧑 Solo", friends: "👥 Vrienden" },
+    catLabels: { water: "Water & Boten", buggy: "Buggy & Quad", tours: "Eilandtours", parks: "Pretparken", shows: "Shows & Diners", adventure: "Avontuur" },
+  },
+};
+
 const WHO_OPTIONS = [
   { label: "👨‍👩‍👧 Family", value: "We are a family with kids" },
   { label: "💑 Couple", value: "We are a couple" },
@@ -200,6 +274,18 @@ export default function Home() {
   const [isReturning, setIsReturning] = useState(false);
   const [videoReady, setVideoReady] = useState(false);
   const bottomRef = useRef<HTMLDivElement>(null);
+
+  const t = UI_STRINGS[selectedLanguage] ?? UI_STRINGS["en"];
+  const whoLabelMap: Record<string, string> = {
+    "We are a family with kids": t.whoLabels.family,
+    "We are a couple": t.whoLabels.couple,
+    "I'm traveling solo": t.whoLabels.solo,
+    "We are a group of friends": t.whoLabels.friends,
+  };
+  const catLabelMap: Record<string, string> = {
+    water: t.catLabels.water, buggy: t.catLabels.buggy, tours: t.catLabels.tours,
+    parks: t.catLabels.parks, shows: t.catLabels.shows, adventure: t.catLabels.adventure,
+  };
 
   useEffect(() => {
     // Check for existing session cookie to show "welcome back"
@@ -399,7 +485,7 @@ export default function Home() {
             <div className="text-xl flex-shrink-0 mt-1">🌋</div>
             <div className="space-y-3 flex-1">
               <div className="bg-white/6 border border-white/12 text-white rounded-2xl rounded-tl-none px-4 py-3 text-sm leading-relaxed">
-                ¡Buenas! Who&apos;s coming to Tenerife? 🌊
+                {t.whoQuestion}
               </div>
               <div className="grid grid-cols-2 gap-2">
                 {WHO_OPTIONS.map((opt) => (
@@ -415,7 +501,7 @@ export default function Home() {
                         : "bg-white/5 border-white/10 text-white/40 cursor-default"
                     }`}
                   >
-                    {opt.label}
+                    {whoLabelMap[opt.value] ?? opt.label}
                   </button>
                 ))}
               </div>
@@ -429,7 +515,7 @@ export default function Home() {
             <div className="text-xl flex-shrink-0 mt-1">🌋</div>
             <div className="space-y-3 flex-1">
               <div className="bg-white/6 border border-white/12 text-white rounded-2xl rounded-tl-none px-4 py-3 text-sm leading-relaxed">
-                What are you looking for? Pick all that interest you 👇
+                {t.categoryQuestion}
               </div>
               <div className="grid grid-cols-2 gap-2">
                 {CATEGORIES.map((cat) => {
@@ -450,7 +536,7 @@ export default function Home() {
                             : "bg-white/8 border-white/15 text-white hover:border-orange-500 hover:text-orange-400 cursor-pointer"
                       }`}
                     >
-                      {cat.emoji} {cat.label}
+                      {cat.emoji} {catLabelMap[cat.id] ?? cat.label}
                     </button>
                   );
                 })}
@@ -461,7 +547,7 @@ export default function Home() {
                   disabled={selectedCategories.length === 0}
                   className="w-full bg-orange-500 hover:bg-orange-400 disabled:opacity-40 disabled:cursor-not-allowed text-white font-semibold px-5 py-3 rounded-2xl text-sm transition-all"
                 >
-                  Next →
+                  {t.nextButton}
                 </button>
               )}
             </div>
@@ -474,7 +560,7 @@ export default function Home() {
             <div className="text-xl flex-shrink-0 mt-1">🌋</div>
             <div className="space-y-3 flex-1">
               <div className="bg-white/6 border border-white/12 text-white rounded-2xl rounded-tl-none px-4 py-3 text-sm leading-relaxed">
-                Which area are you staying in? 📍
+                {t.locationQuestion}
               </div>
               <div className="grid grid-cols-3 gap-2">
                 {LOCATIONS.map((loc) => {
