@@ -3064,11 +3064,19 @@
     ],
     "pricing": [
       {
-        "label": "Per person",
+        "label": "Adult",
         "price": 36
+      },
+      {
+        "label": "Child (5-10)",
+        "price": 29
+      },
+      {
+        "label": "Infant (3-4)",
+        "price": 16
       }
     ],
-    "priceFrom": 36,
+    "priceFrom": 16,
     "description": "Especially for the family's youngest members, Aqualand has Kidzworld, Forestland and Dragonland areas, while the whole family can enjoy the Wave Pool and Adventureland. Float down the Lava River or relax in the open-air spa with Jacuzzi and whirlpools. And for an adrenaline rush, head to the Twister, Super Slalom, Tornado or crazy Kamikazes. ・ Visit Dolphin Planet to learn more about them. The dolphins are the park stars, showing off their amazing skills, agility and speed. ・ Spend a fabulous, f",
     "faq": [
       {
@@ -3180,11 +3188,19 @@
     ],
     "pricing": [
       {
-        "label": "Per person",
+        "label": "Adult",
         "price": 35
+      },
+      {
+        "label": "Child (5-10)",
+        "price": 29
+      },
+      {
+        "label": "Infant (3-4)",
+        "price": 16
       }
     ],
-    "priceFrom": 35,
+    "priceFrom": 16,
     "description": "The Jungle Park is located in the south of Tenerife, just a 15-minute drive from Los Cristianos and Las Americas. A huge zoological and botanical park with 75,000 m² of jungle and more than 500 animals where you can wander through paths full of tunnels and hanging bridges, waterfalls, lagoons and caves, enjoying an incredible ecosystem made up of the flora and fauna of the south of the island. Don't miss the spectacular birds of prey show, one of the best in the world, where falcons, vultures an",
     "faq": [
       {
@@ -3356,8 +3372,16 @@
     ],
     "pricing": [
       {
-        "label": "Per person",
+        "label": "Adult",
         "price": 51
+      },
+      {
+        "label": "Child (5-10)",
+        "price": 42
+      },
+      {
+        "label": "Infant (3-4)",
+        "price": 21
       }
     ],
     "priceFrom": 51,
@@ -3418,6 +3442,14 @@
       {
         "label": "Child (3-11)",
         "price": 57
+      },
+      {
+        "label": "Adult + bus transfer",
+        "price": 98
+      },
+      {
+        "label": "Child + bus transfer",
+        "price": 73
       }
     ],
     "priceFrom": 57,
