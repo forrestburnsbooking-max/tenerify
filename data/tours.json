@@ -298,11 +298,15 @@
     ],
     "pricing": [
       {
-        "label": "Per person",
-        "price": 40
+        "label": "Adult",
+        "price": 45
+      },
+      {
+        "label": "Child",
+        "price": 45
       }
     ],
-    "priceFrom": 40,
+    "priceFrom": 45,
     "description": "An unforgettable experience awaits you at Xanadú Equestrian Center with its magnificent facilities. Hop on your horse and have a ride or take a look around and see all different animals. ・ You have several different options to enjoy your equestrian experience , such as a trek through the countryside, or along the coast or sit back and relax as you trek by horse and carriage. ・ Besides the horse riding, Xanadu is famous for its two Restaurants with their extensive menus. ・ Enjoy this unique exper",
     "faq": [
       {
@@ -354,11 +358,19 @@
     ],
     "pricing": [
       {
-        "label": "Per person",
+        "label": "Adult",
+        "price": 35
+      },
+      {
+        "label": "Child",
+        "price": 20
+      },
+      {
+        "label": "Kid",
         "price": 18
       }
     ],
-    "priceFrom": 18,
+    "priceFrom": 35,
     "description": "For over 25 years, Karting Club has been offering training and competitions to both island residents and tourists. ‍ ・ You can ride at high speed on a high-quality and safe track with the whole family. ‍ ・ We have now installed an LED display and a timing system (transponder) so that all our customers can enjoy racing even more. ‍ ・ Now you can compare track times yourself, both among race participants and in group events. In this way, we are sure that you will get the most enjoyment and gain mo",
     "faq": [
       {
@@ -410,11 +422,15 @@
     ],
     "pricing": [
       {
-        "label": "Per person",
+        "label": "Adult",
+        "price": 20
+      },
+      {
+        "label": "Child",
         "price": 15
       }
     ],
-    "priceFrom": 15,
+    "priceFrom": 20,
     "description": "Test your Grand Prix skills on the newest karting track in the south of Tenerife. ・ Just 4 minutes from the main resorts, Karting Las Americas offers all the thrills and excitement you need if you are looking for something new to do away from the pool or beach. ・ With karting for all ages, the family can have a safe, fun and exciting time. For those who prefer to watch from the stands, there is a cosy bar on the terrace selling drinks, pizza, snacks and ice cream. Here you can simply relax with ",
     "faq": [
       {
@@ -523,11 +539,15 @@
     "minAge": 8,
     "pricing": [
       {
-        "label": "Per person",
-        "price": 55
+        "label": "Adult",
+        "price": 60
+      },
+      {
+        "label": "Child",
+        "price": 60
       }
     ],
-    "priceFrom": 55,
+    "priceFrom": 60,
     "description": "Enjoy one of our breathtaking activities! Parascending is a fun and safe activity, suitable for people of all ages. ・ Our team will take you through this exciting experience in complete safety and comfort, attaching you to the parachute and all the safety equipment, it will not require any effort from you, you will just relax and enjoy the views. At the end of the flight, the team will make you dip your feet in the water before landing on the boat. ・ It's fun and safe!",
     "faq": [
       {
@@ -579,11 +599,15 @@
     ],
     "pricing": [
       {
-        "label": "Per person",
-        "price": 35
+        "label": "Adult",
+        "price": 45
+      },
+      {
+        "label": "Child",
+        "price": 22
       }
     ],
-    "priceFrom": 35,
+    "priceFrom": 45,
     "description": "Enjoy this unforgettable kayaking experience in the south of Tenerife. ・ From Los Cristianos beach we will kayak to the cliffs of Guaza, a protected natural reserve, and admire this beautiful landscape. ・ Halfway we will make a stop where we hope to see dolphins and other species that live in the area, such as the loggerhead turtle and various species of birds.",
     "faq": [
       {
@@ -975,8 +999,12 @@
     ],
     "pricing": [
       {
-        "label": "Per person",
+        "label": "Adult",
         "price": 50
+      },
+      {
+        "label": "Child",
+        "price": 35
       }
     ],
     "priceFrom": 50,
@@ -1427,11 +1455,15 @@
     ],
     "pricing": [
       {
-        "label": "Per person",
-        "price": 23
+        "label": "Adult",
+        "price": 47
+      },
+      {
+        "label": "Child",
+        "price": 23.5
       }
     ],
-    "priceFrom": 23,
+    "priceFrom": 47,
     "description": "Sail aboard the Freebird Catamaran and enjoy the Atlantic Ocean. ・ On this catamaran, you can choose between two different excursions. On both, you will be able to observe the cetaceans that inhabit the coast of Tenerife, while Freebird's specialised guides will inform you about their characteristics: their habits, feeding habits, migrations, etc. ・ Once you have finished whale watching, you can relax and enjoy a swim in the sea.",
     "meetingPoint": "On this catamaran, you will sail along the Adeje coast or through the waters of Masca and Los Gigantes. 3 or 4 hours trip. Drinks and food are include",
     "faq": [
@@ -1821,11 +1853,15 @@
     ],
     "pricing": [
       {
-        "label": "Per person",
-        "price": 38
+        "label": "Adult",
+        "price": 46
+      },
+      {
+        "label": "Child",
+        "price": 23
       }
     ],
-    "priceFrom": 38,
+    "priceFrom": 46,
     "description": "Maxicat is an ecological catamaran, discover the fascinating world of the sea mammals that inhabit the waters of the Canary Islands and see them in their natural habitat including pilot whales and bottle-nose dolphins. ・ Then relax on the spacious decks or choose a swim and snorkel in the crystal waters of the Atlantic Ocean. Relax on the solarium and enjoy the sea.",
     "included": "・ Open bar and lunch",
     "faq": [
@@ -1934,11 +1970,15 @@
     ],
     "pricing": [
       {
-        "label": "Per person",
-        "price": 60
+        "label": "Adult",
+        "price": 59
+      },
+      {
+        "label": "Child",
+        "price": 49
       }
     ],
-    "priceFrom": 60,
+    "priceFrom": 59,
     "description": "On this small group voyage, our friendly and experienced crew will welcome you on board and take you to the amazing world of whales and dolphins swimming freely in their natural habitat along the coastline, and you will also see breathtaking views of the island's coastline. ・ Then you can relax on our spacious terraces and fly-bridge and enjoy a wonderful selection of drinks, fruit, snacks, tapas and much more, you can swim, snorkel or simply sunbathe with the beautiful mountains of Tenerife as ",
     "faq": [
       {
@@ -2046,11 +2086,15 @@
     ],
     "pricing": [
       {
-        "label": "Per person",
-        "price": 30
+        "label": "Adult",
+        "price": 63
+      },
+      {
+        "label": "Child",
+        "price": 31.5
       }
     ],
-    "priceFrom": 30,
+    "priceFrom": 63,
     "description": "The Neptuno is a pleasure boat on which you can cruise along the south coast of Tenerife, swim in the ocean and even spot the whales and dolphins that inhabit the coast of the island. ・ It has a maximum capacity of 22 passengers, so it is ideal if you want to enjoy an excursion in small groups. ・ Don't forget to bring sun cream, sunglasses and camera!",
     "faq": [
       {
@@ -2272,8 +2316,12 @@
     ],
     "pricing": [
       {
-        "label": "Per person",
+        "label": "Adult",
         "price": 27
+      },
+      {
+        "label": "Child",
+        "price": 13.5
       }
     ],
     "priceFrom": 27,
@@ -2385,8 +2433,16 @@
     ],
     "pricing": [
       {
-        "label": "Per person",
+        "label": "Adult",
         "price": 25
+      },
+      {
+        "label": "Child",
+        "price": 20
+      },
+      {
+        "label": "Kid",
+        "price": 5
       }
     ],
     "priceFrom": 25,
@@ -2611,11 +2667,15 @@
     ],
     "pricing": [
       {
-        "label": "Per person",
+        "label": "Adult",
+        "price": 50
+      },
+      {
+        "label": "Child",
         "price": 30
       }
     ],
-    "priceFrom": 30,
+    "priceFrom": 50,
     "description": "The Royal Delfin is a catamaran with underwater vision that will take you along the unique southwest coast of Tenerife. ・ It has 50-inch underwater panoramic windows. ・ During the excursion you will have the opportunity to observe the cetaceans in their natural habitat: families of pilot whales and dolphins that have chosen the waters of Tenerife as their habitual residence throughout the year. ・ Do not miss the opportunity to sail aboard the Royal Delfin during your visit to Tenerife!",
     "faq": [
       {
@@ -2667,8 +2727,12 @@
     ],
     "pricing": [
       {
-        "label": "Per person",
+        "label": "Adult",
         "price": 61
+      },
+      {
+        "label": "Child",
+        "price": 30.5
       }
     ],
     "priceFrom": 61,
@@ -2725,11 +2789,19 @@
     ],
     "pricing": [
       {
-        "label": "Per person",
-        "price": 55
+        "label": "Adult",
+        "price": 50
+      },
+      {
+        "label": "Child",
+        "price": 12.5
+      },
+      {
+        "label": "Kid",
+        "price": 12.5
       }
     ],
-    "priceFrom": 55,
+    "priceFrom": 50,
     "description": "Enjoy the best moment of your holiday in our fast Beneteau First 45. We will visit visit the cliffs of Los Gigantes and the beach of the Masca ravine. ・ Come aboard our luxury sailing yacht and enjoy whale and dolphin watching, snorkeling in a wonderful bay with crystal clear waters. On board we have snorkeling equipment, surfboards and other water activities. ・ During its short life, our boat is proud of many victories at prestigious world competitions. ‍ ・ Come and try the best sailing yacht i",
     "meetingPoint": "This luxury sailboat is a Beneteau First 45, an award-winning boat worldwide. We offer 3 or 4 hours private sailboat trips. Departure from Puerto Colo",
     "faq": [
@@ -3306,11 +3378,15 @@
     ],
     "pricing": [
       {
-        "label": "Per person",
-        "price": 53
+        "label": "Adult",
+        "price": 90
+      },
+      {
+        "label": "Child",
+        "price": 75
       }
     ],
-    "priceFrom": 53,
+    "priceFrom": 90,
     "description": "Our first visit will be to the Teide National Park , located in the heart of Tenerife and home to the highest peak in Spain: El Teide Volcano . Here we will stop for about 30 minutes to admire the impressive volcanic landscapes of Las Cañadas del Teide, not forgetting the emblematic rocks of Roques de García. ・ After this visit, we will descend to Icod de los Vinos , where we will have the opportunity to contemplate the famous Drago Milenario tree, which is said to be over 800 years old. You wil",
     "faq": [
       {
@@ -3474,11 +3550,15 @@
     ],
     "pricing": [
       {
-        "label": "Per person",
-        "price": 99
+        "label": "Adult",
+        "price": 145
+      },
+      {
+        "label": "Child",
+        "price": 118
       }
     ],
-    "priceFrom": 99,
+    "priceFrom": 145,
     "description": "Our day starts by heading to the port of Los Cristianos in Tenerife South, where we will take a ferry to La Gomera . ‍ ・ Once there, we'll board the bus and head into the Hermigua Valley , where we'll have the opportunity to capture some photos of the breathtaking scenery. ・ We will continue the excursion until we reach the municipality of Agulo , where we will enjoy a delicious lunch in a typical restaurant with local products. If availability permits, during lunch we will witness a live demons",
     "faq": [
       {
@@ -3586,11 +3666,15 @@
     ],
     "pricing": [
       {
-        "label": "Per person",
-        "price": 65
+        "label": "Adult",
+        "price": 75
+      },
+      {
+        "label": "Child",
+        "price": 60
       }
     ],
-    "priceFrom": 65,
+    "priceFrom": 75,
     "description": "Enjoy Magic Teide by Night bus tour with Canarian Fun ! Stargazing, breathtaking sunset with sparkling wine is a truly enjoyable, informative and unique experience not to be missed. ‍ Adventure program: ・ First, we head to Las Cañadas del Teide, stopping at a restaurant with a unique interior design for a three-course delicious dinner with Canarian wine. ・ After that we go to the Teide National Park, stopping at the largest pine tree in Tenerife. Its diameter is 3.16 meters, and its height reach",
     "faq": [
       {
@@ -3642,11 +3726,15 @@
     ],
     "pricing": [
       {
-        "label": "Per person",
-        "price": 39
+        "label": "Adult",
+        "price": 60
+      },
+      {
+        "label": "Child",
+        "price": 50
       }
     ],
-    "priceFrom": 39,
+    "priceFrom": 60,
     "description": "This excursion will take you up to about 2,000 meters above sea level to visit Spain's highest peak, El Teide . We will cross the Corona Forestal Nature Reserve and leave behind the pine forests of Tenerife until we reach the Teide National Park . In 2007, this area was declared a UNESCO World Heritage Site in the category of Natural Heritage. ・ Along the way, we'll make several stops so you can admire all that Las Cañadas del Teide natural area has to offer: a landscape of spectacular lava flow",
     "faq": [
       {
@@ -3755,11 +3843,15 @@
     ],
     "pricing": [
       {
-        "label": "Per person",
-        "price": 50
+        "label": "Adult",
+        "price": 85
+      },
+      {
+        "label": "Child",
+        "price": 70
       }
     ],
-    "priceFrom": 50,
+    "priceFrom": 85,
     "description": "Our first stop will be in Santa Cruz de Tenerife , the island's capital. We will walk through its vibrant streets that will take us to the most outstanding places, such as the Plaza de España , the Plaza Weyler or the Market of Nuestra Señora de Africa . ・ We will continue our route to La Laguna , the first city founded in Tenerife after its conquest, and a historical jewel declared a World Heritage Site by UNESCO in 1999. We will walk through its streets full of history and culture, and discove",
     "included": "・ Lunch (in basic tour option) ‍",
     "faq": [
@@ -4041,11 +4133,15 @@
     ],
     "pricing": [
       {
-        "label": "Per person",
-        "price": 9
+        "label": "Adult",
+        "price": 22
+      },
+      {
+        "label": "Child",
+        "price": 11
       }
     ],
-    "priceFrom": 9,
+    "priceFrom": 22,
     "description": "Just 10 minutes from the tourist centers of Los Cristianos and Playa de las Americas , we find a cozy, rural Camel Park, where you can enjoy more than camel rides . ・ On this animal farm, you can find several species native to the Canaries and El Cerro de la Luna restaurant , where you can enjoy a good lunch. ・ The climate and vegetation of the Canaries are suitable for breeding camels. Donkeys and camels, which are easily domesticated, have been used historically in farm work to till the land. ",
     "faq": [
       {
@@ -5563,8 +5659,12 @@
     ],
     "pricing": [
       {
-        "label": "Per person",
+        "label": "Adult",
         "price": 51
+      },
+      {
+        "label": "Child",
+        "price": 25.5
       }
     ],
     "priceFrom": 51,
@@ -5619,11 +5719,15 @@
     ],
     "pricing": [
       {
-        "label": "Per person",
-        "price": 31
+        "label": "Adult",
+        "price": 32
+      },
+      {
+        "label": "Child",
+        "price": 19
       }
     ],
-    "priceFrom": 31,
+    "priceFrom": 32,
     "description": "Pasion is a show of Spanish Dance and Flamenco directed by Eva Rodríguez. ・ In the first part of the show you will be able to see the Classical Spanish Dances such as La Boda de Luis Alonso, La Vida Breve and Pasodoble. ・ In the second part the purest Flamenco will be represented with live singing and guitar, a love story going through the styles of tangos, alegrías and soleares among others, a show full of color and passion.",
     "faq": [
       {
@@ -5675,8 +5779,12 @@
     ],
     "pricing": [
       {
-        "label": "Per person",
+        "label": "Adult",
         "price": 49
+      },
+      {
+        "label": "Child",
+        "price": 25
       }
     ],
     "priceFrom": 49,
@@ -5731,11 +5839,15 @@
     ],
     "pricing": [
       {
-        "label": "Per person",
-        "price": 29
+        "label": "Adult",
+        "price": 52
+      },
+      {
+        "label": "Child",
+        "price": 31
       }
     ],
-    "priceFrom": 29,
+    "priceFrom": 52,
     "description": "The San Miguel Castle is an impressive construction of 6,000 square meters and made of Canarian canto stone, with principal towers of more than 16 meters in height and an extensive area of 20,000 square meters. The entrance is decorated with historical armour, swords, chests and scrolls of the medieval epoch. ・ The Count, Don Rodrigo, and his daughter, the young Countess, will greet you and welcome you to their Castle. The kind subjects of Count Rodrigo will guide you to the Tournament Hall, whe",
     "faq": [
       {
@@ -5828,11 +5940,15 @@
     ],
     "pricing": [
       {
-        "label": "Per person",
-        "price": 34
+        "label": "Adult",
+        "price": 49
+      },
+      {
+        "label": "Child",
+        "price": 39
       }
     ],
-    "priceFrom": 34,
+    "priceFrom": 49,
     "description": "Music Hall Tavern have been entertaining guests across the Canaries for over 20 years. So there no doubt, that this truly magnificent night of dazzling costumes, side-splitting laughter and a cast of unique characters singing and dancing all night long will become the funniest night of your holiday. ‍ Highlights: live singing, dancing and hilarious comedy",
     "faq": [
       {
@@ -5884,7 +6000,7 @@
     ],
     "pricing": [
       {
-        "label": "Per person",
+        "label": "Adult",
         "price": 94
       }
     ],
@@ -5922,7 +6038,8 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/66845487a383570fd6811e31_A1poratadaweb.webp",
-    "url": "https://www.excursionstenerife.es/tours/scandal-dinner-show"
+    "url": "https://www.excursionstenerife.es/tours/scandal-dinner-show",
+    "adultOnly": true
   },
   {
     "slug": "utopia-pool-party",
@@ -5941,11 +6058,11 @@
     ],
     "pricing": [
       {
-        "label": "Per person",
-        "price": 30
+        "label": "Adult",
+        "price": 70
       }
     ],
-    "priceFrom": 30,
+    "priceFrom": 70,
     "description": "Utopia Pool Party takes place at Cielo de Monkey Beach Club in the heart of Tenerife South. ・ With House, RnB, Hip Hop, DnB, EDM, Reggaeton, Deep House, Tropical Bass... here you will find music and fun for all tastes.",
     "faq": [
       {
