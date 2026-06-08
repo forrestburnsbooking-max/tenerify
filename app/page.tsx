@@ -58,6 +58,22 @@ function DatePicker({ onSelect }: { onSelect: (date: string) => void }) {
   );
 }
 
+function TimePicker({ slots, onSelect }: { slots: string[]; onSelect: (time: string) => void }) {
+  return (
+    <div className="flex flex-wrap gap-2">
+      {slots.map((t) => (
+        <button
+          key={t}
+          onClick={() => onSelect(t)}
+          className="px-4 py-2 rounded-full text-sm font-medium border bg-stone-900 border-stone-700 text-white hover:border-orange-500 hover:text-orange-400 transition-all"
+        >
+          🕐 {t}
+        </button>
+      ))}
+    </div>
+  );
+}
+
 function LicensePicker({ onSelect }: { onSelect: (answer: string) => void }) {
   return (
     <div className="flex flex-wrap gap-2">
@@ -132,9 +148,11 @@ type Message = {
   tourMedia?: TourMedia | null;
   needsDate?: boolean;
   needsLicense?: boolean;
+  needsTime?: boolean;
+  availableTimeSlots?: string[];
 };
 
-type Step = "hero" | "who" | "chat";
+type Step = "hero" | "who" | "category" | "location" | "chat";
 
 const WHO_OPTIONS = [
   { label: "👨‍👩‍👧 Family", value: "We are a family with kids" },
@@ -143,9 +161,26 @@ const WHO_OPTIONS = [
   { label: "👥 Friends", value: "We are a group of friends" },
 ];
 
+const CATEGORIES = [
+  { id: "water",     emoji: "🌊", label: "Water & Boats" },
+  { id: "buggy",     emoji: "🏍️", label: "Buggy & Quad" },
+  { id: "tours",     emoji: "🗺️", label: "Island Tours" },
+  { id: "parks",     emoji: "🎡", label: "Theme Parks" },
+  { id: "shows",     emoji: "🎭", label: "Shows & Dinners" },
+  { id: "adventure", emoji: "🪂", label: "Adventure" },
+];
+
+const LOCATIONS = [
+  { label: "🏖️ Los Cristianos", value: "Los Cristianos" },
+  { label: "🎡 Las Americas", value: "Las Americas" },
+  { label: "⛱️ Costa Adeje", value: "Costa Adeje" },
+];
+
 export default function Home() {
   const [step, setStep] = useState<Step>("hero");
   const [who, setWho] = useState("");
+  const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
+  const [location, setLocation] = useState("");
   const [messages, setMessages] = useState<Message[]>([]);
   const [loading, setLoading] = useState(false);
   const [usedOptions, setUsedOptions] = useState<Set<number>>(new Set());
@@ -161,10 +196,29 @@ export default function Home() {
     bottomRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages, loading, step]);
 
-  async function handleWho(option: { label: string; value: string }) {
+  function handleWho(option: { label: string; value: string }) {
     setWho(option.value);
+    setStep("category");
+  }
+
+  function toggleCategory(id: string) {
+    setSelectedCategories(prev =>
+      prev.includes(id) ? prev.filter(c => c !== id) : [...prev, id]
+    );
+  }
+
+  function handleCategoryConfirm() {
+    setStep("location");
+  }
+
+  async function handleLocationSelect(loc: string) {
+    setLocation(loc);
     setStep("chat");
-    await sendToAI(option.value, [], option.value);
+    const catLabels = selectedCategories.length > 0
+      ? CATEGORIES.filter(c => selectedCategories.includes(c.id)).map(c => c.emoji + " " + c.label).join(", ")
+      : "anything";
+    const firstMessage = `${who}. Staying in: ${loc}. Interested in: ${catLabels}`;
+    await sendToAI(firstMessage, [], who);
   }
 
   async function handleOption(option: string, messageIndex: number) {
@@ -198,7 +252,7 @@ export default function Home() {
       if (data.isReturning) setIsReturning(true);
       setMessages([
         ...newMessages,
-        { role: "assistant", content: data.message, options: data.options, bookingText: data.bookingText, tourMedia: data.tourMedia, needsDate: data.needsDate, needsLicense: data.needsLicense },
+        { role: "assistant", content: data.message, options: data.options, bookingText: data.bookingText, tourMedia: data.tourMedia, needsDate: data.needsDate, needsLicense: data.needsLicense, needsTime: data.needsTime, availableTimeSlots: data.availableTimeSlots },
       ]);
     } catch {
       setMessages([
@@ -252,7 +306,7 @@ export default function Home() {
     <div className="flex flex-col h-screen bg-[#0d0d0d] text-white">
       <header className="flex items-center gap-3 px-5 py-4 border-b border-white/5">
         <button
-          onClick={() => { setStep("hero"); setMessages([]); setUsedOptions(new Set()); }}
+          onClick={() => { setStep("hero"); setMessages([]); setUsedOptions(new Set()); setSelectedCategories([]); setWho(""); setLocation(""); }}
           className="text-2xl hover:scale-110 transition-transform"
         >
           🌋
@@ -268,7 +322,7 @@ export default function Home() {
       <div className="flex-1 overflow-y-auto px-4 py-6 space-y-6">
 
         {/* Who selection */}
-        {(step === "who" || step === "chat") && (
+        {(step === "who" || step === "category" || step === "location" || step === "chat") && (
           <div className="flex gap-3 max-w-xl mx-auto w-full">
             <div className="text-xl flex-shrink-0 mt-1">🌋</div>
             <div className="space-y-3 flex-1">
@@ -292,6 +346,85 @@ export default function Home() {
                     {opt.label}
                   </button>
                 ))}
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Category selection */}
+        {(step === "category" || step === "location" || step === "chat") && (
+          <div className="flex gap-3 max-w-xl mx-auto w-full">
+            <div className="text-xl flex-shrink-0 mt-1">🌋</div>
+            <div className="space-y-3 flex-1">
+              <div className="bg-stone-900 border border-white/5 text-white rounded-2xl rounded-tl-none px-4 py-3 text-sm leading-relaxed">
+                What are you looking for? Pick all that interest you 👇
+              </div>
+              <div className="grid grid-cols-2 gap-2">
+                {CATEGORIES.map((cat) => {
+                  const isSelected = selectedCategories.includes(cat.id);
+                  const isLocked = step === "location" || step === "chat";
+                  return (
+                    <button
+                      key={cat.id}
+                      onClick={() => !isLocked && toggleCategory(cat.id)}
+                      disabled={isLocked}
+                      className={`px-4 py-2.5 rounded-2xl text-sm font-medium border transition-all text-left ${
+                        isLocked
+                          ? isSelected
+                            ? "bg-orange-500/20 border-orange-500 text-orange-300 cursor-default"
+                            : "bg-stone-900/50 border-stone-800 text-stone-600 cursor-default"
+                          : isSelected
+                            ? "bg-orange-500/20 border-orange-500 text-orange-300"
+                            : "bg-stone-900 border-stone-700 text-white hover:border-orange-500 hover:text-orange-400 cursor-pointer"
+                      }`}
+                    >
+                      {cat.emoji} {cat.label}
+                    </button>
+                  );
+                })}
+              </div>
+              {step === "category" && (
+                <button
+                  onClick={handleCategoryConfirm}
+                  disabled={selectedCategories.length === 0}
+                  className="w-full bg-orange-500 hover:bg-orange-400 disabled:opacity-40 disabled:cursor-not-allowed text-white font-semibold px-5 py-3 rounded-2xl text-sm transition-all"
+                >
+                  Next →
+                </button>
+              )}
+            </div>
+          </div>
+        )}
+
+        {/* Location selection */}
+        {(step === "location" || step === "chat") && (
+          <div className="flex gap-3 max-w-xl mx-auto w-full">
+            <div className="text-xl flex-shrink-0 mt-1">🌋</div>
+            <div className="space-y-3 flex-1">
+              <div className="bg-stone-900 border border-white/5 text-white rounded-2xl rounded-tl-none px-4 py-3 text-sm leading-relaxed">
+                Which area are you staying in? 📍
+              </div>
+              <div className="grid grid-cols-3 gap-2">
+                {LOCATIONS.map((loc) => {
+                  const isSelected = location === loc.value;
+                  const isLocked = step === "chat";
+                  return (
+                    <button
+                      key={loc.value}
+                      onClick={() => !isLocked && handleLocationSelect(loc.value)}
+                      disabled={isLocked}
+                      className={`px-3 py-2.5 rounded-2xl text-sm font-medium border transition-all text-center ${
+                        isLocked
+                          ? isSelected
+                            ? "bg-orange-500/20 border-orange-500 text-orange-300 cursor-default"
+                            : "bg-stone-900/50 border-stone-800 text-stone-600 cursor-default"
+                          : "bg-stone-900 border-stone-700 text-white hover:border-orange-500 hover:text-orange-400 cursor-pointer"
+                      }`}
+                    >
+                      {loc.label}
+                    </button>
+                  );
+                })}
               </div>
             </div>
           </div>
@@ -349,6 +482,11 @@ export default function Home() {
                   <DatePicker onSelect={(date) => {
                     setUsedOptions((prev) => new Set(prev).add(i));
                     sendToAI(date, messages);
+                  }} />
+                ) : msg.needsTime && msg.availableTimeSlots && msg.availableTimeSlots.length > 0 ? (
+                  <TimePicker slots={msg.availableTimeSlots} onSelect={(time) => {
+                    setUsedOptions((prev) => new Set(prev).add(i));
+                    sendToAI(time, messages);
                   }} />
                 ) : msg.needsLicense ? (
                   <LicensePicker onSelect={(answer) => {

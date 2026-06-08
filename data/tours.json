@@ -829,12 +829,8 @@
     ],
     "pricing": [
       {
-        "label": "Adult",
+        "label": "Per person",
         "price": 50
-      },
-      {
-        "label": "Child",
-        "price": 35
       }
     ],
     "priceFrom": 50,
@@ -870,7 +866,84 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/66bbc8e5695bc1ecf2849996_arriro-boat-e72perienceis-x.webp",
-    "url": "https://www.excursionstenerife.es/tours/arriro-boat"
+    "url": "https://www.excursionstenerife.es/tours/arriro-boat",
+    "timeSlots": [
+      "10:00",
+      "13:00",
+      "16:00"
+    ],
+    "meetingPoint": "Gate 11, Puerto Colón Marina, Costa Adeje"
+  },
+  {
+    "slug": "cool-sailing",
+    "title": "Cool Sailing — 3h motor yacht trip",
+    "category": "boat",
+    "duration": "3h",
+    "pricing": [
+      {
+        "label": "Per person",
+        "price": 50
+      }
+    ],
+    "priceFrom": 50,
+    "description": "A 3-hour motor yacht trip from Puerto Colón along the Costa Adeje coast — whale and dolphin watching, open bar, food, and a swim stop included. Max 11 guests.",
+    "timeSlots": [
+      "10:00",
+      "13:00",
+      "16:00",
+      "19:00"
+    ],
+    "meetingPoint": "Puerto Colón Marina, Costa Adeje",
+    "faq": [
+      {
+        "question": "How will I receive my tickets?",
+        "answer": "After you complete your purchase, you will receive an order confirmation email within a few minutes with all the details of your booking."
+      },
+      {
+        "question": "What happens if the weather is too bad?",
+        "answer": "If the weather is too bad to go on the excursion, it will be rescheduled or you will receive a full refund."
+      },
+      {
+        "question": "Can I book within 24 hours?",
+        "answer": "Yes, it is possible. Please contact us."
+      }
+    ],
+    "imageUrl": "https://www.bestexcursionstenerife.com/media/com_eshop/products/resized/Cool-Sailing-07 Copy-960x540.jpg"
+  },
+  {
+    "slug": "kosamui-boat",
+    "title": "Kosamui — 3h sailing yacht, whale & dolphin watching",
+    "category": "boat",
+    "duration": "3h",
+    "pricing": [
+      {
+        "label": "Per person",
+        "price": 50
+      }
+    ],
+    "priceFrom": 50,
+    "description": "An intimate 3-hour sailing yacht trip from Puerto Colón — whale and dolphin watching, open bar, food, and a swim stop included. Max 12 guests.",
+    "timeSlots": [
+      "10:00",
+      "13:00",
+      "16:00"
+    ],
+    "meetingPoint": "Puerto Colón Marina, Costa Adeje",
+    "faq": [
+      {
+        "question": "How will I receive my tickets?",
+        "answer": "After you complete your purchase, you will receive an order confirmation email within a few minutes with all the details of your booking."
+      },
+      {
+        "question": "What happens if the weather is too bad?",
+        "answer": "If the weather is too bad to go on the excursion, it will be rescheduled or you will receive a full refund."
+      },
+      {
+        "question": "Can I book within 24 hours?",
+        "answer": "Yes, it is possible. Please contact us."
+      }
+    ],
+    "imageUrl": "https://www.bestexcursionstenerife.com/components/com_eventgallery/helpers/image.php?&width=1600&folder=Kosamui&file=Kosamui_0000s_0000_Layer+4.jpg"
   },
   {
     "slug": "atlanca-boat-rental",
@@ -926,7 +999,8 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/66a168d76965869758de1adc_invite-your-friends-for.jpg-2-1200x739.webp",
-    "url": "https://www.excursionstenerife.es/tours/atlanca-boat-rental"
+    "url": "https://www.excursionstenerife.es/tours/atlanca-boat-rental",
+    "meetingPoint": "Puerto Colón Marina, Costa Adeje"
   },
   {
     "slug": "freebird-catamaran",
@@ -945,17 +1019,29 @@
     ],
     "pricing": [
       {
-        "label": "Adult",
+        "label": "Adult (3h)",
         "price": 47
       },
       {
-        "label": "Child",
+        "label": "Adult (4.5h)",
+        "price": 62
+      },
+      {
+        "label": "Child 4-11 (3h)",
         "price": 23.5
+      },
+      {
+        "label": "Child 4-11 (4.5h)",
+        "price": 31
+      },
+      {
+        "label": "Baby (under 4)",
+        "price": 0
       }
     ],
     "priceFrom": 47,
     "description": "Sail aboard the Freebird Catamaran and enjoy the Atlantic Ocean. ・ On this catamaran, you can choose between two different excursions. On both, you will be able to observe the cetaceans that inhabit the coast of Tenerife, while Freebird's specialised guides will inform you about their characteristics: their habits, feeding habits, migrations, etc. ・ Once you have finished whale watching, you can relax and enjoy a swim in the sea.",
-    "meetingPoint": "On this catamaran, you will sail along the Adeje coast or through the waters of Masca and Los Gigantes. 3 or 4 hours trip. Drinks and food are include",
+    "meetingPoint": "Gate 10/15, Puerto Colón Marina, Costa Adeje",
     "faq": [
       {
         "question": "How will I receive my tickets?",
@@ -987,7 +1073,11 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6686dacb812bc8d88e104f37_AFREEBIRDCATAMARAN2.webp",
-    "url": "https://www.excursionstenerife.es/tours/freebird-catamaran"
+    "url": "https://www.excursionstenerife.es/tours/freebird-catamaran",
+    "timeSlots": [
+      "10:00",
+      "13:00"
+    ]
   },
   {
     "slug": "fishing-boat-puerto-colon",
@@ -1044,7 +1134,12 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/68824b29ed1d8b7e2680823c_happy-1.jpg",
-    "url": "https://www.excursionstenerife.es/tours/fishing-boat-puerto-colon"
+    "url": "https://www.excursionstenerife.es/tours/fishing-boat-puerto-colon",
+    "timeSlots": [
+      "09:00",
+      "13:30"
+    ],
+    "meetingPoint": "Pontoon 2, Puerto Colón Marina, Costa Adeje"
   },
   {
     "slug": "maxicat-catamaran",
@@ -1064,14 +1159,18 @@
     "pricing": [
       {
         "label": "Adult",
-        "price": 46
+        "price": 45
       },
       {
-        "label": "Child",
-        "price": 23
+        "label": "Child (6-11)",
+        "price": 22.5
+      },
+      {
+        "label": "Baby (under 6)",
+        "price": 0
       }
     ],
-    "priceFrom": 46,
+    "priceFrom": 45,
     "description": "Maxicat is an ecological catamaran, discover the fascinating world of the sea mammals that inhabit the waters of the Canary Islands and see them in their natural habitat including pilot whales and bottle-nose dolphins. ・ Then relax on the spacious decks or choose a swim and snorkel in the crystal waters of the Atlantic Ocean. Relax on the solarium and enjoy the sea.",
     "included": "・ Open bar and lunch",
     "faq": [
@@ -1105,7 +1204,13 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/668520f43210e63b9b40b1c1_2049_photo1594903124.webp",
-    "url": "https://www.excursionstenerife.es/tours/maxicat-catamaran"
+    "url": "https://www.excursionstenerife.es/tours/maxicat-catamaran",
+    "timeSlots": [
+      "10:00",
+      "13:15",
+      "16:30"
+    ],
+    "meetingPoint": "Gate 9, Puerto Colón Marina, Costa Adeje"
   },
   {
     "slug": "monte-cristo-catamaran",
@@ -1125,14 +1230,14 @@
     "pricing": [
       {
         "label": "Adult",
-        "price": 59
+        "price": 62
       },
       {
-        "label": "Child",
+        "label": "Child (0-11)",
         "price": 49
       }
     ],
-    "priceFrom": 59,
+    "priceFrom": 62,
     "description": "On this small group voyage, our friendly and experienced crew will welcome you on board and take you to the amazing world of whales and dolphins swimming freely in their natural habitat along the coastline, and you will also see breathtaking views of the island's coastline. ・ Then you can relax on our spacious terraces and fly-bridge and enjoy a wonderful selection of drinks, fruit, snacks, tapas and much more, you can swim, snorkel or simply sunbathe with the beautiful mountains of Tenerife as ",
     "faq": [
       {
@@ -1165,7 +1270,13 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/66a14df878855be508ee1260_catamaran.webp",
-    "url": "https://www.excursionstenerife.es/tours/monte-cristo-catamaran"
+    "url": "https://www.excursionstenerife.es/tours/monte-cristo-catamaran",
+    "timeSlots": [
+      "10:00",
+      "13:00",
+      "16:00"
+    ],
+    "meetingPoint": "Gate 6, Puerto Colón Marina, Costa Adeje"
   },
   {
     "slug": "neptuno-boat",
@@ -1188,8 +1299,12 @@
         "price": 63
       },
       {
-        "label": "Child",
+        "label": "Child (3-11)",
         "price": 31.5
+      },
+      {
+        "label": "Baby (0-2)",
+        "price": 0
       }
     ],
     "priceFrom": 63,
@@ -1225,7 +1340,12 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/667eac97a952877431157d7a_Neptuno1.webp",
-    "url": "https://www.excursionstenerife.es/tours/neptuno-boat"
+    "url": "https://www.excursionstenerife.es/tours/neptuno-boat",
+    "timeSlots": [
+      "10:00",
+      "14:00"
+    ],
+    "meetingPoint": "Excursion Zone B, Port of Los Cristianos"
   },
   {
     "slug": "diamant-boat",
@@ -1250,7 +1370,7 @@
     ],
     "priceFrom": 80,
     "description": "Share some great moments with friends or family on one of the most exclusive and luxurious boats in the Canary Islands. ・ At 20 metres long, it is one of the largest RIBs in the world. The boat will take you along the beautiful southern coast of Tenerife and even allow you to swim in the refreshing waters of the Atlantic Ocean. ・ On board the Opera 60, everything is designed to provide an unforgettable sailing experience. And for those who love whale watching, the boat’s Blue Boat certification ",
-    "meetingPoint": "With its length of 20 meters, it is one of the largest and most exclusive semi-rigid inflatable boats in the world. 3h private or shared trips are ava",
+    "meetingPoint": "Puerto Colón Marina, Costa Adeje",
     "faq": [
       {
         "question": "How will I receive my tickets?",
@@ -1282,7 +1402,12 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6683d9fbcd5acb8d132a7ce2_Opera9.webp",
-    "url": "https://www.excursionstenerife.es/tours/diamant-boat"
+    "url": "https://www.excursionstenerife.es/tours/diamant-boat",
+    "timeSlots": [
+      "10:00",
+      "13:00",
+      "16:00"
+    ]
   },
   {
     "slug": "peter-pan-boat",
@@ -1305,13 +1430,17 @@
         "price": 27
       },
       {
-        "label": "Child",
+        "label": "Child (3-11)",
         "price": 13.5
+      },
+      {
+        "label": "Baby (0-2)",
+        "price": 0
       }
     ],
     "priceFrom": 27,
     "description": "Enjoy the nicer and funnier family cruise on board. Our pirate ship arrives at the island of Tenerife. ・ In an authentic Portuguese Gulet of the last century, we will relive the emotions of the ancient sailing, as well as stories of pirates who once sailed the ocean. ・The PETER PAN has 2 services, an open bar, a large central table and a lounge for about fifteen people. It also has an upper deck ideal for relaxing and sunbathing. ・ The pirate ship PETER PAN is based in Los Cristianos, from where",
-    "meetingPoint": "A pirate ship has arrived on the island of Tenerife! This Portuguese schooner will delight the little ones. Go and see pilot whales and dolphins! Trip",
+    "meetingPoint": "Excursion Zone A, Port of Los Cristianos",
     "faq": [
       {
         "question": "How will I receive my tickets?",
@@ -1343,7 +1472,12 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/667db291aef2903363d7b0d6_peter_pan.webp",
-    "url": "https://www.excursionstenerife.es/tours/peter-pan-boat"
+    "url": "https://www.excursionstenerife.es/tours/peter-pan-boat",
+    "timeSlots": [
+      "11:00",
+      "13:30",
+      "15:30"
+    ]
   },
   {
     "slug": "raggie-tenerife-fishing",
@@ -1399,13 +1533,17 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/688f8816146a7b79548302af_raggie-4.jpg",
-    "url": "https://www.excursionstenerife.es/tours/raggie-tenerife-fishing"
+    "url": "https://www.excursionstenerife.es/tours/raggie-tenerife-fishing",
+    "timeSlots": [
+      "08:00"
+    ],
+    "meetingPoint": "Pier 5, Puerto Colón Marina, Costa Adeje"
   },
   {
     "slug": "ragnarok-viking-boat",
     "title": "Ragnarok Viking — 2 or 3 hours boat trip from Los Cristianos",
     "category": "boat",
-    "duration": "3h",
+    "duration": "2h or 3h",
     "languages": [
       "Deutsch",
       "English",
@@ -1418,21 +1556,29 @@
     ],
     "pricing": [
       {
-        "label": "Adult",
+        "label": "Adult (2h)",
+        "price": 30
+      },
+      {
+        "label": "Adult (3h)",
+        "price": 44.5
+      },
+      {
+        "label": "Child 4-11 (2h)",
+        "price": 15
+      },
+      {
+        "label": "Child 4-11 (3h)",
         "price": 25
       },
       {
-        "label": "Child",
-        "price": 20
-      },
-      {
-        "label": "Kid",
-        "price": 5
+        "label": "Baby (under 4)",
+        "price": 0
       }
     ],
-    "priceFrom": 25,
+    "priceFrom": 30,
     "description": "We will set sail from Los Cristianos harbour towards picturesque cliffs overlooking the blue sheet of ocean. We head out to meet the dolphins and whales. Thanks to the location, the climate between La Gomera and Tenerife we have almost 100% guarantee of sightings. The proximity of the cetaceans is a unique opportunity for amateur photographers to take an extraordinary shot. ・ We offer two types of cruises: 2 hours and 3 hours. On both there is no room for boredom on board - unique environment, o",
-    "meetingPoint": "An adventure on board an authentic Viking ship Ragnarok! Meet dolphins and whales with pirates on board! The trip duration on choice 2 or 3 hours. Dep",
+    "meetingPoint": "Excursion Zone A, Port of Los Cristianos",
     "faq": [
       {
         "question": "How will I receive my tickets?",
@@ -1464,7 +1610,11 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/667d9f9949326bc72883cc60_1.webp",
-    "url": "https://www.excursionstenerife.es/tours/ragnarok-viking-boat"
+    "url": "https://www.excursionstenerife.es/tours/ragnarok-viking-boat",
+    "timeSlots": [
+      "11:00",
+      "13:30"
+    ]
   },
   {
     "slug": "royal-delfin-boat",
@@ -1483,12 +1633,24 @@
     ],
     "pricing": [
       {
-        "label": "Adult",
+        "label": "Adult (3h)",
         "price": 50
       },
       {
-        "label": "Child",
+        "label": "Adult (4.5h)",
+        "price": 63
+      },
+      {
+        "label": "Child 3-11 (3h)",
         "price": 30
+      },
+      {
+        "label": "Child 3-11 (4.5h)",
+        "price": 40
+      },
+      {
+        "label": "Baby (under 2)",
+        "price": 0
       }
     ],
     "priceFrom": 50,
@@ -1524,7 +1686,12 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/667d7c6bfad3b4aebd86e58a_royal3.webp",
-    "url": "https://www.excursionstenerife.es/tours/royal-delfin-boat"
+    "url": "https://www.excursionstenerife.es/tours/royal-delfin-boat",
+    "timeSlots": [
+      "10:30",
+      "14:00"
+    ],
+    "meetingPoint": "Gate 12, Puerto Colón Marina, Costa Adeje"
   },
   {
     "slug": "shogun-boat",
@@ -1544,17 +1711,21 @@
     "pricing": [
       {
         "label": "Adult",
-        "price": 61
+        "price": 60
       },
       {
-        "label": "Child",
-        "price": 30.5
+        "label": "Child (3-11)",
+        "price": 30
+      },
+      {
+        "label": "Baby (0-2)",
+        "price": 0
       }
     ],
-    "priceFrom": 61,
+    "priceFrom": 60,
     "description": "Live the experience on board an authentic oriental sailboat , completely constructed in teak hard wood , for the private use of an Arabian Sheikh. ・The Shogun has 2 levels, 3 services available (for wich one is adapted for the disabled peaple), an open bar, a large central table where your meal it will be served. A 5 hour trip , during of which we will see pilot whales and bottlenose dolphins , an internationally species. ・The SHOGUN complies with these rules and holds a yellow flag with a blue ",
     "included": "・ Drinks on board (water, soft drinks, beer and wine)",
-    "meetingPoint": "This is an authentic oriental sailing boat, built in teak wood, in which you will sail along the South coast of Tenerife. Drinks and lunch menu are in",
+    "meetingPoint": "Gate 14, Puerto Colón Marina, Costa Adeje",
     "faq": [
       {
         "question": "How will I receive my tickets?",
@@ -1586,7 +1757,10 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/667da9b1304c2947eb09243c_Shogun6.webp",
-    "url": "https://www.excursionstenerife.es/tours/shogun-boat"
+    "url": "https://www.excursionstenerife.es/tours/shogun-boat",
+    "timeSlots": [
+      "11:00"
+    ]
   },
   {
     "slug": "sonador-boat",
@@ -1606,20 +1780,20 @@
     "pricing": [
       {
         "label": "Adult",
-        "price": 50
+        "price": 40
       },
       {
-        "label": "Child",
-        "price": 12.5
+        "label": "Child (3-9)",
+        "price": 27.5
       },
       {
-        "label": "Kid",
-        "price": 12.5
+        "label": "Baby (0-2)",
+        "price": 0
       }
     ],
-    "priceFrom": 50,
+    "priceFrom": 40,
     "description": "Enjoy the best moment of your holiday in our fast Beneteau First 45. We will visit visit the cliffs of Los Gigantes and the beach of the Masca ravine. ・ Come aboard our luxury sailing yacht and enjoy whale and dolphin watching, snorkeling in a wonderful bay with crystal clear waters. On board we have snorkeling equipment, surfboards and other water activities. ・ During its short life, our boat is proud of many victories at prestigious world competitions. ‍ ・ Come and try the best sailing yacht i",
-    "meetingPoint": "This luxury sailboat is a Beneteau First 45, an award-winning boat worldwide. We offer 3 or 4 hours private sailboat trips. Departure from Puerto Colo",
+    "meetingPoint": "Gate 1, Puerto Colón Marina, Costa Adeje",
     "faq": [
       {
         "question": "How will I receive my tickets?",
@@ -1651,7 +1825,12 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6683e8ed61c49243bb4061f3_sonador-9.webp",
-    "url": "https://www.excursionstenerife.es/tours/sonador-boat"
+    "url": "https://www.excursionstenerife.es/tours/sonador-boat",
+    "timeSlots": [
+      "10:00",
+      "13:00",
+      "16:00"
+    ]
   },
   {
     "slug": "submarine-safari-boat",
@@ -1670,11 +1849,15 @@
     ],
     "pricing": [
       {
-        "label": "Per person",
-        "price": 35
+        "label": "Adult",
+        "price": 57.95
+      },
+      {
+        "label": "Child",
+        "price": 35.15
       }
     ],
-    "priceFrom": 35,
+    "priceFrom": 57.95,
     "description": "Step on board one of the most sophisticated tourist submarines in the world for a dive beneath the waves which takes you to places previously explored only by experienced divers. ・Experience the sensation of a dive aboard the Submarine Safari, which will take you to the bottom of the sea in the vicinity of the Marina of San Miguel. The clarity of the waters and the marine life of the island of Tenerife make this dive a once-in-a-lifetime experience. ・On each trip, you will be accompanied by a gu",
     "faq": [
       {
@@ -1707,7 +1890,16 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6681a100cb06d3d6d41cd8bd_1.SUB.webp",
-    "url": "https://www.excursionstenerife.es/tours/submarine-safari-boat"
+    "url": "https://www.excursionstenerife.es/tours/submarine-safari-boat",
+    "timeSlots": [
+      "10:00",
+      "11:00",
+      "12:00",
+      "13:00",
+      "14:00",
+      "15:00"
+    ],
+    "meetingPoint": "Amarilla Marina, San Miguel de Abona (Pontoon 2)"
   },
   {
     "slug": "yate-sofia-fishing-tenerife",
@@ -1764,7 +1956,11 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6894d68239fa3a2fde62645b_sofia-3.jpeg",
-    "url": "https://www.excursionstenerife.es/tours/yate-sofia-fishing-tenerife"
+    "url": "https://www.excursionstenerife.es/tours/yate-sofia-fishing-tenerife",
+    "timeSlots": [
+      "10:00"
+    ],
+    "meetingPoint": "Port of Los Cristianos"
   },
   {
     "slug": "2-hours-buggy-trip",
@@ -1822,7 +2018,13 @@
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/687e55189ba3d0e15912fbeb_buggie-2.jpg",
     "url": "https://www.excursionstenerife.es/tours/2-hours-buggy-trip",
-    "seatsPerVehicle": 2
+    "seatsPerVehicle": 2,
+    "timeSlots": [
+      "10:00",
+      "12:00",
+      "14:00"
+    ],
+    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)"
   },
   {
     "slug": "buggy-teide-adventure",
@@ -1849,7 +2051,7 @@
     "priceFrom": 180,
     "description": "Teide Adventure is a 3-hour trip to the Teide National Park. There are two tours: a day tour and a sunset tour. ・ After a short briefing, we will drive through several villages in the south of Tenerife. On the way to the volcano, our experienced guides will take you on an adrenaline-pumping route where you will enjoy breathtaking views of the island and ocean. ・ We will stop at an altitude of 2200 meters above sea level, where you can relax, take panoramic photos and, most importantly, breathe f",
     "included": "Fuel, guide, travel insurance, coat, glasses, snack, water and off road.",
-    "meetingPoint": "Starts from our base, located in the industrial estate of Las Chafiras,",
+    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
     "faq": [
       {
         "question": "How will I receive my tickets?",
@@ -1882,7 +2084,10 @@
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/66a0cf24a5bb416da48f0d26_sunset-adventure-buggy-ride_regaloBIG3980.webp",
     "url": "https://www.excursionstenerife.es/tours/buggy-teide-adventure",
-    "seatsPerVehicle": 2
+    "seatsPerVehicle": 2,
+    "timeSlots": [
+      "10:00"
+    ]
   },
   {
     "slug": "buggy-costa-adventure",
@@ -1909,7 +2114,7 @@
     "priceFrom": 180,
     "description": "‍ Costa Adventure is a 3-hour tour along the south coast of Tenerife. After a short briefing, we will begin the tour by crossing the coastline of the south of Tenerife to enjoy the majestic landscapes and views, passing through various coastal villages and stopping to explore places that will leave you with unforgettable memories.",
     "included": "Fuel, guide, travel insurance, coat, glasses, snack, water and off road.",
-    "meetingPoint": "Starts from our base, located in the industrial estate of Las Chafiras",
+    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
     "faq": [
       {
         "question": "How will I receive my tickets?",
@@ -1942,7 +2147,10 @@
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/669f8af38809e6376f061c20_af.webp",
     "url": "https://www.excursionstenerife.es/tours/buggy-costa-adventure",
-    "seatsPerVehicle": 2
+    "seatsPerVehicle": 2,
+    "timeSlots": [
+      "12:00"
+    ]
   },
   {
     "slug": "buggy-sunset-adventure",
@@ -1969,7 +2177,7 @@
     "priceFrom": 180,
     "description": "3 hour tour of the south of Tenerife with sunset. This tour starts from our base, located in the industrial estate of Las Chafiras, ・ We will follow the road through various villages in the south of Tenerife, enjoying the beautiful scenery and fresh mountain air. ‍ ・ We will continue the route to a viewpoint at 781 metres above sea level where you can relax, take panoramic photographs, have a drink (wine and/or non-alcoholic cava), snack on some cold meats and/or nuts while we admire the landsca",
     "included": "Fuel, guide, travel insurance, coat, glasses, snack, water and off road.",
-    "meetingPoint": "3 hour tour of the south of Tenerife with sunset. This tour starts from our base, located in the industrial estate of Las Chafiras,",
+    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
     "faq": [
       {
         "question": "How will I receive my tickets?",
@@ -2002,7 +2210,10 @@
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/66a0d3e82ebf1433a7756012_145%20(3).webp",
     "url": "https://www.excursionstenerife.es/tours/buggy-sunset-adventure",
-    "seatsPerVehicle": 2
+    "seatsPerVehicle": 2,
+    "timeSlots": [
+      "18:00"
+    ]
   },
   {
     "slug": "buggy-off-road",
@@ -2029,7 +2240,7 @@
     "priceFrom": 180,
     "description": "3-hour Extreme Off-Road Buggy Adventure on Tenerife that will get your adrenaline flowing and push your limits. ・ This is not just any ride, but an intense trek through challenging, rugged terrain, perfect for both adrenaline seekers as beginners. You will do steep hills Climbing, taking sharp turns, and experience the powerful speed of our buggies. These buggies are suitable for 1 to 6 persons, so whether you come solo or with a group, we have the ideal vehicle for your adventure. ・ From the fi",
     "included": "Fuel, guide, travel insurance, coat, glasses, snack, water and off road.",
-    "meetingPoint": "Starts from our base, located in the industrial estate of Las Chafiras,",
+    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
     "faq": [
       {
         "question": "How will I receive my tickets?",
@@ -2062,7 +2273,10 @@
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6688535ef6bd55c436857aea_buggy2.webp",
     "url": "https://www.excursionstenerife.es/tours/buggy-off-road",
-    "seatsPerVehicle": 2
+    "seatsPerVehicle": 2,
+    "timeSlots": [
+      "10:00"
+    ]
   },
   {
     "slug": "teide-icod-garachico-masca",
@@ -2122,7 +2336,11 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6672fd62e7143a4326ddaadd_masca_b.webp",
-    "url": "https://www.excursionstenerife.es/tours/teide-icod-garachico-masca"
+    "url": "https://www.excursionstenerife.es/tours/teide-icod-garachico-masca",
+    "timeSlots": [
+      "08:30"
+    ],
+    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)"
   },
   {
     "slug": "gran-canaria",
@@ -2178,7 +2396,11 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6873ac89d38c7fe7428562ee_poema9.jpeg",
-    "url": "https://www.excursionstenerife.es/tours/gran-canaria"
+    "url": "https://www.excursionstenerife.es/tours/gran-canaria",
+    "timeSlots": [
+      "08:30"
+    ],
+    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)"
   },
   {
     "slug": "island-tour-masca",
@@ -2234,7 +2456,11 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/667c3e145c416b48ae5c160c_IVUELTAISLA.webp",
-    "url": "https://www.excursionstenerife.es/tours/island-tour-masca"
+    "url": "https://www.excursionstenerife.es/tours/island-tour-masca",
+    "timeSlots": [
+      "08:30"
+    ],
+    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)"
   },
   {
     "slug": "la-gomera",
@@ -2294,7 +2520,11 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/665996ac57ac1bb8d1d1db1d_roque_agando_FR2.webp",
-    "url": "https://www.excursionstenerife.es/tours/la-gomera"
+    "url": "https://www.excursionstenerife.es/tours/la-gomera",
+    "timeSlots": [
+      "08:30"
+    ],
+    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)"
   },
   {
     "slug": "la-palma",
@@ -2350,7 +2580,11 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/667dbd271b373c736693f136_4.webp",
-    "url": "https://www.excursionstenerife.es/tours/la-palma"
+    "url": "https://www.excursionstenerife.es/tours/la-palma",
+    "timeSlots": [
+      "08:30"
+    ],
+    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)"
   },
   {
     "slug": "teide-by-night",
@@ -2410,7 +2644,11 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/692caa4d516976cc3905b6a9_teide%20by%20night.jpg",
-    "url": "https://www.excursionstenerife.es/tours/teide-by-night"
+    "url": "https://www.excursionstenerife.es/tours/teide-by-night",
+    "timeSlots": [
+      "08:30"
+    ],
+    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)"
   },
   {
     "slug": "teide-tour-cable-car",
@@ -2470,7 +2708,11 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/66731b038aea60515c6bd8d7_teide_primavera.webp",
-    "url": "https://www.excursionstenerife.es/tours/teide-tour-cable-car"
+    "url": "https://www.excursionstenerife.es/tours/teide-tour-cable-car",
+    "timeSlots": [
+      "08:30"
+    ],
+    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)"
   },
   {
     "slug": "puerto-cruz-tour",
@@ -2495,7 +2737,7 @@
     ],
     "priceFrom": 22,
     "description": "Discover the charming town of Puerto de la Cruz , located in the coastal area of the Orotava Valley in the north of Tenerife. You will have the whole day at your leisure to enjoy the pleasant atmosphere in this unique place by the ocean. ・ Despite its popularity with travellers who visit the island every year, Puerto de la Cruz has not lost its seaside charm. You can stroll through its beautiful streets and squares, such as Plaza del Charco or Muelle Viejo. Many believe that one of its most dist",
-    "meetingPoint": "Return departure from Puerto de la Cruz at 16.30.",
+    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
     "faq": [
       {
         "question": "How will I receive my tickets?",
@@ -2527,7 +2769,10 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/667c368cf039fe55173c9345_7.webp",
-    "url": "https://www.excursionstenerife.es/tours/puerto-cruz-tour"
+    "url": "https://www.excursionstenerife.es/tours/puerto-cruz-tour",
+    "timeSlots": [
+      "08:30"
+    ]
   },
   {
     "slug": "santa-cruz--la-laguna--anaga",
@@ -2588,7 +2833,11 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6674524a0efab473f3474e27_miradorr.webp",
-    "url": "https://www.excursionstenerife.es/tours/santa-cruz--la-laguna--anaga"
+    "url": "https://www.excursionstenerife.es/tours/santa-cruz--la-laguna--anaga",
+    "timeSlots": [
+      "08:30"
+    ],
+    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)"
   },
   {
     "slug": "booster-pack-puerto-colon",
@@ -2645,7 +2894,19 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6692c42396277c050a9605c4_BOOSTER_PACKS1.webp",
-    "url": "https://www.excursionstenerife.es/tours/booster-pack-puerto-colon"
+    "url": "https://www.excursionstenerife.es/tours/booster-pack-puerto-colon",
+    "timeSlots": [
+      "09:00",
+      "10:00",
+      "11:00",
+      "12:00",
+      "13:00",
+      "14:00",
+      "15:00",
+      "16:00",
+      "17:00"
+    ],
+    "meetingPoint": "Puerto Colón Marina, Costa Adeje"
   },
   {
     "slug": "jet-ski-puerto-colon",
@@ -2671,7 +2932,7 @@
     ],
     "priceFrom": 100,
     "description": "If you love speed and the sea, there is nothing better than enjoying Jet Ski's speed. ・ Drive along the south coast of Costa Adeje on a jet ski and enjoy the beautiful view. ・ The Jet Ski Safari Tour starts from Las Americas and you can choose between 40 minutes, 1 hour and 2 hours",
-    "meetingPoint": "・ The Jet Ski Safari Tour starts from Las Americas and you can choose between 40 minutes, 1 hour and 2 hours",
+    "meetingPoint": "Puerto Colón Marina, Costa Adeje",
     "faq": [
       {
         "question": "How will I receive my tickets?",
@@ -2704,7 +2965,18 @@
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/668eae630e942299bb28a2f1_Jet_Bike7.webp",
     "url": "https://www.excursionstenerife.es/tours/jet-ski-puerto-colon",
-    "seatsPerVehicle": 2
+    "seatsPerVehicle": 2,
+    "timeSlots": [
+      "09:00",
+      "10:00",
+      "11:00",
+      "12:00",
+      "13:00",
+      "14:00",
+      "15:00",
+      "16:00",
+      "17:00"
+    ]
   },
   {
     "slug": "watersport-pack-puerto-colon",
@@ -2761,7 +3033,19 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6692e0b495f33c7a887c2c7b_z_Colage.webp",
-    "url": "https://www.excursionstenerife.es/tours/watersport-pack-puerto-colon"
+    "url": "https://www.excursionstenerife.es/tours/watersport-pack-puerto-colon",
+    "timeSlots": [
+      "09:00",
+      "10:00",
+      "11:00",
+      "12:00",
+      "13:00",
+      "14:00",
+      "15:00",
+      "16:00",
+      "17:00"
+    ],
+    "meetingPoint": "Puerto Colón Marina, Costa Adeje"
   },
   {
     "slug": "aqualand",
@@ -3214,7 +3498,11 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/68433b8f821e040215745400_coastal.jpg",
-    "url": "https://www.excursionstenerife.es/tours/coastal-quads"
+    "url": "https://www.excursionstenerife.es/tours/coastal-quads",
+    "timeSlots": [
+      "12:00"
+    ],
+    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)"
   },
   {
     "slug": "quad-off-road-tour",
@@ -3241,7 +3529,7 @@
     "priceFrom": 120,
     "description": "An epic journey in the Corona Forest with stunning views of Mount Teide! Are you ready for an adventure that takes you deep inside the forest crown of a UNESCO protected area? Look no further than a quad trip through the magical volcano Mount Teide! ・ This incredible journey will take you on a thrilling ride through some of the most picturesque and untouched areas of Tenerife, allowing you to immerse yourself in nature like never before. 50% off road/trails, so buckle up and get ready to explore",
     "included": "・ Helmet",
-    "meetingPoint": "Please note pick-ups start from one hour before",
+    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
     "faq": [
       {
         "question": "How will I receive my tickets?",
@@ -3273,7 +3561,10 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/66a0d6ce98f413ff7ebf222c_GetWebshopImage.webp",
-    "url": "https://www.excursionstenerife.es/tours/quad-off-road-tour"
+    "url": "https://www.excursionstenerife.es/tours/quad-off-road-tour",
+    "timeSlots": [
+      "10:00"
+    ]
   },
   {
     "slug": "quad-sunset-tour",
@@ -3300,7 +3591,7 @@
     "priceFrom": 120,
     "description": "Sunset Tour is an adventure that will leave you breathless! Travel through the stunning scenery of this amazing island by quad bike and enjoy the spectacular sunset over Mount Teide, one of Spain's most majestic volcanoes. ・ This is an unforgettable experience not to be missed, so buckle up and get ready to to explore the south of Tenerife.",
     "included": "・ Helmet",
-    "meetingPoint": "Please note pick-ups start from one hour before",
+    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
     "faq": [
       {
         "question": "How will I receive my tickets?",
@@ -3332,7 +3623,10 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/66a0d644f7ecd40ff346b374_AtrakcyjnaTeneryfa.pl-Quad-El-Teide-noca-1-600x450.webp",
-    "url": "https://www.excursionstenerife.es/tours/quad-sunset-tour"
+    "url": "https://www.excursionstenerife.es/tours/quad-sunset-tour",
+    "timeSlots": [
+      "18:00"
+    ]
   },
   {
     "slug": "quad-teide-tour",
@@ -3390,7 +3684,11 @@
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/665832332bcef8b6be6adb7f_2.webp",
     "url": "https://www.excursionstenerife.es/tours/quad-teide-tour",
-    "seatsPerVehicle": 2
+    "seatsPerVehicle": 2,
+    "timeSlots": [
+      "10:00"
+    ],
+    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)"
   },
   {
     "slug": "quad-masca-tour",
@@ -3447,7 +3745,11 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/66a69b900761259ff2733235_masca.webp",
-    "url": "https://www.excursionstenerife.es/tours/quad-masca-tour"
+    "url": "https://www.excursionstenerife.es/tours/quad-masca-tour",
+    "timeSlots": [
+      "10:00"
+    ],
+    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)"
   },
   {
     "slug": "citroen-c3-car-rental",
@@ -4403,7 +4705,11 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6682eaed18fabe55719de8a0_EOleflamencoshowgfvictoria.webp",
-    "url": "https://www.excursionstenerife.es/tours/ole-flamenco-show"
+    "url": "https://www.excursionstenerife.es/tours/ole-flamenco-show",
+    "timeSlots": [
+      "21:00"
+    ],
+    "meetingPoint": "Las Olas Showroom, GF Victoria Hotel, C. Fernando López Arvelo 1, Costa Adeje"
   },
   {
     "slug": "flamenco-show-sala-coliseo",
@@ -4463,7 +4769,11 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/668466a8ccb9c4d8f5c16b27_FOTOPORTADAWEBELCOLISEO.webp",
-    "url": "https://www.excursionstenerife.es/tours/flamenco-show-sala-coliseo"
+    "url": "https://www.excursionstenerife.es/tours/flamenco-show-sala-coliseo",
+    "timeSlots": [
+      "20:30"
+    ],
+    "meetingPoint": "Teatro Coliseo, Avda. Edelmira Alfonso s/n, San Miguel de Abona"
   },
   {
     "slug": "history-evolution-of-music",
@@ -4523,7 +4833,11 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/66845b4a3357f7d025d46e55_PORTADAHISTORY.webp",
-    "url": "https://www.excursionstenerife.es/tours/history-evolution-of-music"
+    "url": "https://www.excursionstenerife.es/tours/history-evolution-of-music",
+    "timeSlots": [
+      "21:00"
+    ],
+    "meetingPoint": "Auditorio Pirámide de Arona, Av. las Américas s/n, Playa de las Américas"
   },
   {
     "slug": "medieval-show",
@@ -4583,7 +4897,11 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/666b0e16c1bb5ff68c98a635_Castillo11.webp",
-    "url": "https://www.excursionstenerife.es/tours/medieval-show"
+    "url": "https://www.excursionstenerife.es/tours/medieval-show",
+    "timeSlots": [
+      "19:00"
+    ],
+    "meetingPoint": "Castillo San Miguel, Av. Edelmira Alfonso s/n, Aldea Blanca"
   },
   {
     "slug": "music-hall-tavern",
@@ -4684,7 +5002,11 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/665993a3fc4c4c1d3cd7bc2b_MHTforWeb.webp",
-    "url": "https://www.excursionstenerife.es/tours/music-hall-tavern"
+    "url": "https://www.excursionstenerife.es/tours/music-hall-tavern",
+    "timeSlots": [
+      "19:30"
+    ],
+    "meetingPoint": "Vivo Show Bar, Av. Rafael Puig Lluvina 7, Playa de las Américas"
   },
   {
     "slug": "scandal-dinner-show",
@@ -4742,7 +5064,11 @@
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/66845487a383570fd6811e31_A1poratadaweb.webp",
     "url": "https://www.excursionstenerife.es/tours/scandal-dinner-show",
-    "adultOnly": true
+    "adultOnly": true,
+    "timeSlots": [
+      "20:30"
+    ],
+    "meetingPoint": "Las Olas Showroom, GF Victoria Hotel, C. Fernando López Arvelo 1, Costa Adeje"
   },
   {
     "slug": "utopia-pool-party",
@@ -4798,7 +5124,11 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/668ef2c0025fe274bb8d2255_AUTOPIAPOOLPARTY.webp",
-    "url": "https://www.excursionstenerife.es/tours/utopia-pool-party"
+    "url": "https://www.excursionstenerife.es/tours/utopia-pool-party",
+    "timeSlots": [
+      "13:00"
+    ],
+    "meetingPoint": "Monkey Beach Club, Av. Rafael Puig Lluvinas 3, Costa Adeje"
   },
   {
     "slug": "spa-aqua-club-termal",

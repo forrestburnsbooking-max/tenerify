@@ -29,6 +29,7 @@ export type Tour = {
   faq: FaqItem[];
   imageUrl?: string;
   videoUrl?: string;
+  timeSlots?: string[];
   url: string;
 };
 
@@ -82,7 +83,8 @@ export function getTours(): string {
         const agePart = t.minAge ? ` | min age ${t.minAge}` : "";
         const durPart = t.duration ? ` | ${t.duration}` : "";
         const incPart = t.included ? ` | Includes: ${t.included.slice(0, 80)}` : "";
-        lines.push(`  • ${t.title}${durPart} | ${pricePart}${agePart}${incPart} | ${t.url}`);
+        const slotsPart = t.timeSlots?.length ? ` | timeSlots: ${t.timeSlots.join(", ")}` : "";
+        lines.push(`  • [slug:${t.slug}] ${t.title}${durPart} | ${pricePart}${agePart}${incPart}${slotsPart}`);
         if (t.description) {
           lines.push(`    ${t.description.slice(0, 150)}`);
         }

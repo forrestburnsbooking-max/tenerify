@@ -17,6 +17,7 @@ export async function GET(req: NextRequest) {
       tourName: meta.tourName ?? null,
       groupSize: meta.groupSize ?? null,
       bookingDate: meta.bookingDate ?? null,
+      bookingTime: meta.bookingTime ?? null,
       meetingPoint: meta.meetingPoint ?? null,
       tourSlug: meta.tourSlug ?? null,
       customerEmail: session.customer_details?.email ?? null,

@@ -8,6 +8,7 @@ type TicketData = {
   tourName: string;
   groupSize: string;
   bookingDate: string;
+  bookingTime: string;
   meetingPoint: string;
   customerName: string;
   customerEmail: string;
@@ -34,6 +35,7 @@ function TicketContent() {
           tourName: data.tourName ?? "Tenerife Experience",
           groupSize: data.groupSize ?? "",
           bookingDate: data.bookingDate ?? "",
+          bookingTime: data.bookingTime ?? "",
           meetingPoint: data.meetingPoint ?? "",
           customerName: data.customerName ?? "",
           customerEmail: data.customerEmail ?? "",
@@ -116,7 +118,9 @@ function TicketContent() {
               {ticket.bookingDate && (
                 <div className="flex items-center gap-2">
                   <span>📅</span>
-                  <span className="font-medium text-gray-900">{ticket.bookingDate}</span>
+                  <span className="font-medium text-gray-900">
+                    {ticket.bookingDate}{ticket.bookingTime ? ` · ${ticket.bookingTime}` : ""}
+                  </span>
                 </div>
               )}
               {ticket.groupSize && (

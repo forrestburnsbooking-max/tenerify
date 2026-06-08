@@ -43,6 +43,7 @@ export async function POST(req: NextRequest) {
     const tourSlug = session.metadata?.tourSlug ?? "";
     const groupSize = session.metadata?.groupSize ?? "";
     const bookingDate = session.metadata?.bookingDate ?? "";
+    const bookingTime = session.metadata?.bookingTime ?? "";
     const meetingPoint = session.metadata?.meetingPoint ?? "";
     const pvpTotal = session.amount_total ? session.amount_total / 100 : 0;
     const amountTotal = pvpTotal > 0 ? `€${pvpTotal.toFixed(0)}` : "";
@@ -60,7 +61,7 @@ export async function POST(req: NextRequest) {
       "💳 New booking on Tenerify!",
       "",
       `🏷 ${tourName}`,
-      bookingDate ? `📅 ${bookingDate}` : "",
+      bookingDate ? `📅 ${bookingDate}${bookingTime ? ` at ${bookingTime}` : ""}` : "",
       groupSize ? `👥 ${groupSize}` : "",
       amountTotal ? `💰 ${amountTotal} paid` : "",
       commissionLine,

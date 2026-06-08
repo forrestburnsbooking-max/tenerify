@@ -12,14 +12,15 @@ function getStripe() {
 }
 
 function parseBookingText(bookingText: string) {
-  // Format: "Tour Name | 2 people | €180 | 15 June 2026"
+  // Format: "Tour Name | 2 people | €180 | 15 June 2026 | 10:00" (time optional)
   const parts = bookingText.split("|").map((s) => s.trim());
   const tourName = parts[0] ?? "Tenerife Experience";
   const groupSize = parts[1] ?? "";
   const priceStr = parts[2] ?? "€0";
   const bookingDate = parts[3] ?? "";
+  const bookingTime = parts[4] ?? "";
   const priceEur = parseFloat(priceStr.replace(/[^0-9.]/g, "")) || 0;
-  return { tourName, groupSize, priceEur, bookingDate };
+  return { tourName, groupSize, priceEur, bookingDate, bookingTime };
 }
 
 function findTourSlugByName(tourName: string): string | null {
@@ -53,7 +54,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Missing bookingText" }, { status: 400 });
     }
 
-    const { tourName, groupSize, priceEur, bookingDate } = parseBookingText(bookingText);
+    const { tourName, groupSize, priceEur, bookingDate, bookingTime } = parseBookingText(bookingText);
     const stripe = getStripe();
     const baseUrl = process.env.NEXT_PUBLIC_BASE_URL ?? "http://localhost:3000";
 
@@ -70,7 +71,7 @@ export async function POST(req: NextRequest) {
             currency: "eur",
             product_data: {
               name: tourName,
-              description: [groupSize, bookingDate].filter(Boolean).join(" · ") || "Tenerife experience via Tenerify.ai",
+              description: [groupSize, bookingDate, bookingTime].filter(Boolean).join(" · ") || "Tenerife experience via Tenerify.ai",
             },
             unit_amount: Math.round(priceEur * 100),
           },
@@ -87,11 +88,12 @@ export async function POST(req: NextRequest) {
         tourName,
         groupSize,
         bookingDate,
+        bookingTime,
         meetingPoint,
         tourSlug: slug ?? "",
       },
       payment_intent_data: {
-        description: `Tenerify booking: ${tourName} — ${groupSize} — ${bookingDate}`,
+        description: `Tenerify booking: ${tourName} — ${groupSize} — ${bookingDate}${bookingTime ? ` at ${bookingTime}` : ""}`,
       },
     });
 
