@@ -1,5 +1,6 @@
 import Stripe from "stripe";
 import { NextRequest, NextResponse } from "next/server";
+import { getCommission } from "@/lib/net-prices";
 
 function getStripe() {
   const key = process.env.STRIPE_SECRET_KEY;
@@ -39,14 +40,21 @@ export async function POST(req: NextRequest) {
     const session = event.data.object as Stripe.Checkout.Session;
 
     const tourName = session.metadata?.tourName ?? "Unknown tour";
+    const tourSlug = session.metadata?.tourSlug ?? "";
     const groupSize = session.metadata?.groupSize ?? "";
     const bookingDate = session.metadata?.bookingDate ?? "";
     const meetingPoint = session.metadata?.meetingPoint ?? "";
-    const amountTotal = session.amount_total ? `€${(session.amount_total / 100).toFixed(0)}` : "";
+    const pvpTotal = session.amount_total ? session.amount_total / 100 : 0;
+    const amountTotal = pvpTotal > 0 ? `€${pvpTotal.toFixed(0)}` : "";
     const customerName = session.customer_details?.name ?? "";
     const customerEmail = session.customer_details?.email ?? "";
     const customerPhone = session.customer_details?.phone ?? "";
     const ref = session.id.slice(-8).toUpperCase();
+
+    const commission = tourSlug ? getCommission(tourSlug, pvpTotal) : null;
+    const commissionLine = commission
+      ? `📈 Your commission: €${commission.commission.toFixed(0)} (${commission.percent}%)`
+      : "";
 
     const lines = [
       "💳 New booking on Tenerify!",
@@ -55,6 +63,7 @@ export async function POST(req: NextRequest) {
       bookingDate ? `📅 ${bookingDate}` : "",
       groupSize ? `👥 ${groupSize}` : "",
       amountTotal ? `💰 ${amountTotal} paid` : "",
+      commissionLine,
       meetingPoint ? `📍 ${meetingPoint}` : "",
       "",
       customerName ? `👤 ${customerName}` : "",
