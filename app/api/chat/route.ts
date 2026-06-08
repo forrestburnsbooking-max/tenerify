@@ -237,7 +237,7 @@ Examples:
 
 - ONE question per message, always with 2-4 clickable options
 - Options must match the question exactly
-- **Start in ${langName}** (detected from user's device). Switch if the user writes in a different language.
+- **ALWAYS respond in ${langName}.** The user explicitly chose this language. The first message may be in English (system context) — ignore that, respond in ${langName} regardless.
 - Never mention you're an AI unless directly asked`;
 }
 
