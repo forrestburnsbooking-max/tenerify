@@ -52,6 +52,7 @@ function DatePicker({ onSelect }: { onSelect: (date: string) => void }) {
             }
           }}
           className="bg-stone-900 border border-orange-500 text-white rounded-2xl px-4 py-3 text-sm w-full focus:outline-none"
+          style={{ colorScheme: "dark" }}
         />
       )}
     </div>
@@ -552,13 +553,13 @@ export default function Home() {
         <div ref={bottomRef} />
       </div>
 
-      {/* Text input fallback */}
+      {/* Text input */}
       {step === "chat" && !loading && (
-        <div className="px-4 pb-4 pt-2 border-t border-white/5">
-          <div className="max-w-xl mx-auto">
+        <div className="px-4 pb-5 pt-3 border-t border-white/5 bg-[#0d0d0d]">
+          <div className="max-w-xl mx-auto flex gap-2 items-center">
             <input
               type="text"
-              placeholder="Or type your own question..."
+              placeholder="Type a message..."
               onKeyDown={(e) => {
                 if (e.key === "Enter" && e.currentTarget.value.trim()) {
                   const val = e.currentTarget.value.trim();
@@ -566,8 +567,23 @@ export default function Home() {
                   sendToAI(val, messages);
                 }
               }}
-              className="w-full bg-transparent border-0 text-stone-500 placeholder-stone-700 text-xs py-2 focus:outline-none focus:text-white transition-colors"
+              className="flex-1 bg-stone-800 border border-stone-700 focus:border-orange-500 text-white placeholder-stone-500 text-sm px-4 py-3 rounded-2xl focus:outline-none transition-colors"
             />
+            <button
+              onClick={(e) => {
+                const input = (e.currentTarget.previousElementSibling as HTMLInputElement);
+                if (input?.value.trim()) {
+                  const val = input.value.trim();
+                  input.value = "";
+                  sendToAI(val, messages);
+                }
+              }}
+              className="bg-orange-500 hover:bg-orange-400 text-white p-3 rounded-2xl transition-colors flex-shrink-0"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
+                <path d="M3.105 2.288a.75.75 0 0 0-.826.95l1.908 6.258H10a.75.75 0 0 1 0 1.5H4.188l-1.909 6.258a.75.75 0 0 0 .826.95 28.897 28.897 0 0 0 15.208-8.293.75.75 0 0 0 0-1.076A28.897 28.897 0 0 0 3.105 2.288Z" />
+              </svg>
+            </button>
           </div>
         </div>
       )}
