@@ -160,7 +160,7 @@ const LANGUAGES = [
   { flag: "🇬🇧", label: "English",    value: "en" },
   { flag: "🇩🇪", label: "Deutsch",    value: "de" },
   { flag: "🇷🇺", label: "Русский",    value: "ru" },
-  { flag: "🇫🇮", label: "Suomi",      value: "fi" },
+  { flag: "🇵🇱", label: "Polski",     value: "pl" },
   { flag: "🇫🇷", label: "Français",   value: "fr" },
   { flag: "🇮🇹", label: "Italiano",   value: "it" },
   { flag: "🇳🇱", label: "Nederlands", value: "nl" },
