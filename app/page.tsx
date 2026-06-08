@@ -328,19 +328,16 @@ export default function Home() {
   return (
     <div className="flex flex-col h-screen text-white relative overflow-hidden">
       {/* Blurred background — z-index 0 */}
-      <div
-        className="absolute inset-0"
-        style={{
-          backgroundImage: "url('/hero-teide.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          filter: "blur(48px) brightness(0.28) saturate(1.4)",
-          transform: "scale(1.15)",
-          zIndex: 0,
-        }}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src="/hero-teide.jpg"
+        alt=""
+        aria-hidden="true"
+        className="absolute inset-0 w-full h-full object-cover"
+        style={{ filter: "blur(40px) brightness(0.5) saturate(1.3)", transform: "scale(1.1)", zIndex: 0 }}
       />
       {/* Dark overlay — z-index 1 */}
-      <div className="absolute inset-0 bg-black/50" style={{ zIndex: 1 }} />
+      <div className="absolute inset-0 bg-black/40" style={{ zIndex: 1 }} />
 
       {/* All content — z-index 2+ */}
       <header className="relative flex items-center gap-3 px-5 py-4 border-b border-white/10 bg-black/30 backdrop-blur-md" style={{ zIndex: 2 }}>
