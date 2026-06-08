@@ -3865,7 +3865,7 @@
     "minAge": 16,
     "pricing": [
       {
-        "label": "Per person",
+        "label": "For 2 people",
         "price": 100
       }
     ],
@@ -3903,7 +3903,8 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/668eae630e942299bb28a2f1_Jet_Bike7.webp",
-    "url": "https://www.excursionstenerife.es/tours/jet-ski-puerto-colon"
+    "url": "https://www.excursionstenerife.es/tours/jet-ski-puerto-colon",
+    "seatsPerVehicle": 2
   },
   {
     "slug": "watersport-pack-puerto-colon",
@@ -4547,7 +4548,7 @@
     "minAge": 18,
     "pricing": [
       {
-        "label": "Per person",
+        "label": "For 2 people",
         "price": 100
       }
     ],
@@ -4584,7 +4585,8 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/665832332bcef8b6be6adb7f_2.webp",
-    "url": "https://www.excursionstenerife.es/tours/quad-teide-tour"
+    "url": "https://www.excursionstenerife.es/tours/quad-teide-tour",
+    "seatsPerVehicle": 2
   },
   {
     "slug": "quad-masca-tour",
