@@ -266,22 +266,33 @@ export default function Home() {
 
   if (step === "hero") {
     return (
-      <div
-        className="flex flex-col min-h-screen text-white relative overflow-hidden"
-        style={{
-          backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.45) 45%, rgba(0,0,0,0.92) 100%), url('/hero-teide.jpg')`,
-          backgroundSize: "cover",
-          backgroundPosition: "center 40%",
-        }}
-      >
-        <div className="flex flex-col items-center justify-end flex-1 px-6 text-center pb-16 pt-12">
+      <div className="flex flex-col min-h-screen text-white relative overflow-hidden bg-[#0d0d0d]">
+        {/* Video background — drop mp4 files into /public/videos/ */}
+        <video
+          key="hero-video"
+          autoPlay
+          muted
+          loop
+          playsInline
+          poster="/hero-teide.jpg"
+          className="absolute inset-0 w-full h-full object-cover opacity-70"
+        >
+          <source src="/videos/hero.mp4" type="video/mp4" />
+          {/* Fallback: if no video, poster image shows */}
+        </video>
+
+        {/* Gradient overlay — dark at bottom for text */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-black/90" />
+
+        {/* Content */}
+        <div className="relative z-10 flex flex-col items-center justify-end flex-1 px-6 text-center pb-16 pt-12">
           <div className="flex flex-col items-center gap-6 max-w-sm w-full">
             <div>
               <h1 className="text-6xl font-extrabold tracking-tight mb-2 leading-none">
                 <span className="text-white">Tenerify</span>
                 <span className="text-orange-400">.ai</span>
               </h1>
-              <p className="text-white/70 text-base font-medium tracking-wide uppercase text-sm mt-3">
+              <p className="text-white/70 text-sm font-medium tracking-widest uppercase mt-3">
                 {isReturning ? "Welcome back 👋" : "Tenerife Sur · AI concierge"}
               </p>
             </div>
