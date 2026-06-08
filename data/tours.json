@@ -3236,11 +3236,15 @@
     ],
     "pricing": [
       {
-        "label": "Per person",
-        "price": 22
+        "label": "Adult",
+        "price": 44
+      },
+      {
+        "label": "Child (3-11)",
+        "price": 32
       }
     ],
-    "priceFrom": 22,
+    "priceFrom": 32,
     "description": "Loro Parque is a great option for families, groups of friends, nature lovers and anyone who wants to discover something unique in a place that promotes the conservation and protection of different animal species in Tenerife and Europe. ・Loro Parque is home to the biggest zoological gem in existence: the Parrot Sanctuary, which features parrot species from all over the planet, as well as endangered species. ・ Discover all that the animal world hides. Enjoy a show of sea lions, dolphins, orcas, an",
     "faq": [
       {
@@ -3292,11 +3296,15 @@
     ],
     "pricing": [
       {
-        "label": "Per person",
-        "price": 16
+        "label": "Adult",
+        "price": 44
+      },
+      {
+        "label": "Child (3-11)",
+        "price": 32
       }
     ],
-    "priceFrom": 16,
+    "priceFrom": 32,
     "description": "‍Siam Park is full of diversity, where water attractions, vegetation and every corner evokes emotions. ・ Children and adults alike will find the perfect place for an unforgettable Siam experience for every taste. ・ Also in Siam Park there are several places where you can have a snack and regain your energy thanks to the gastronomic selection, offering a wide range of dishes. ・ Siam Park has been voted the best water park in the world by TripAdvisor users for the seventh consecutive year.",
     "faq": [
       {
@@ -3404,7 +3412,11 @@
     ],
     "pricing": [
       {
-        "label": "Per person",
+        "label": "Adult",
+        "price": 78
+      },
+      {
+        "label": "Child (3-11)",
         "price": 57
       }
     ],
