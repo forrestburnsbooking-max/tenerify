@@ -24,19 +24,19 @@ function DatePicker({ onSelect }: { onSelect: (date: string) => void }) {
     <div className="flex flex-col gap-2 w-full">
       <div className="flex flex-wrap gap-2">
         <button onClick={() => onSelect(label(today))}
-          className="px-4 py-2 rounded-full text-sm font-medium border bg-stone-900 border-stone-700 text-white hover:border-orange-500 hover:text-orange-400 transition-all">
+          className="px-4 py-2 rounded-full text-sm font-medium border bg-white/10 backdrop-blur-sm border-white/20 text-white hover:border-orange-500 hover:text-orange-400 transition-all">
           Today
         </button>
         <button onClick={() => onSelect(label(tomorrow))}
-          className="px-4 py-2 rounded-full text-sm font-medium border bg-stone-900 border-stone-700 text-white hover:border-orange-500 hover:text-orange-400 transition-all">
+          className="px-4 py-2 rounded-full text-sm font-medium border bg-white/10 backdrop-blur-sm border-white/20 text-white hover:border-orange-500 hover:text-orange-400 transition-all">
           Tomorrow
         </button>
         <button onClick={() => onSelect(label(weekend))}
-          className="px-4 py-2 rounded-full text-sm font-medium border bg-stone-900 border-stone-700 text-white hover:border-orange-500 hover:text-orange-400 transition-all">
+          className="px-4 py-2 rounded-full text-sm font-medium border bg-white/10 backdrop-blur-sm border-white/20 text-white hover:border-orange-500 hover:text-orange-400 transition-all">
           This weekend
         </button>
         <button onClick={() => setShowPicker(true)}
-          className="px-4 py-2 rounded-full text-sm font-medium border bg-stone-900 border-stone-700 text-white hover:border-orange-500 hover:text-orange-400 transition-all">
+          className="px-4 py-2 rounded-full text-sm font-medium border bg-white/10 backdrop-blur-sm border-white/20 text-white hover:border-orange-500 hover:text-orange-400 transition-all">
           📅 Pick a date
         </button>
       </div>
@@ -66,7 +66,7 @@ function TimePicker({ slots, onSelect }: { slots: string[]; onSelect: (time: str
         <button
           key={t}
           onClick={() => onSelect(t)}
-          className="px-4 py-2 rounded-full text-sm font-medium border bg-stone-900 border-stone-700 text-white hover:border-orange-500 hover:text-orange-400 transition-all"
+          className="px-4 py-2 rounded-full text-sm font-medium border bg-white/10 backdrop-blur-sm border-white/20 text-white hover:border-orange-500 hover:text-orange-400 transition-all"
         >
           🕐 {t}
         </button>
@@ -79,7 +79,7 @@ function LicensePicker({ onSelect }: { onSelect: (answer: string) => void }) {
   return (
     <div className="flex flex-wrap gap-2">
       <button onClick={() => onSelect("Yes, I have a valid driving license (category B or A)")}
-        className="px-4 py-2 rounded-full text-sm font-medium border bg-stone-900 border-stone-700 text-white hover:border-orange-500 hover:text-orange-400 transition-all">
+        className="px-4 py-2 rounded-full text-sm font-medium border bg-white/10 backdrop-blur-sm border-white/20 text-white hover:border-orange-500 hover:text-orange-400 transition-all">
         ✅ Yes, I have a license
       </button>
       <button onClick={() => onSelect("No driving license")}
@@ -326,8 +326,21 @@ export default function Home() {
   );
 
   return (
-    <div className="flex flex-col h-screen bg-[#0d0d0d] text-white">
-      <header className="flex items-center gap-3 px-5 py-4 border-b border-white/5 bg-[#0d0d0d]">
+    <div className="flex flex-col h-screen text-white relative overflow-hidden">
+      {/* Blurred background */}
+      <div
+        className="absolute inset-0 -z-10"
+        style={{
+          backgroundImage: "url('/hero-teide.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          filter: "blur(48px) brightness(0.25) saturate(1.4)",
+          transform: "scale(1.15)",
+        }}
+      />
+      <div className="absolute inset-0 -z-10 bg-black/50" />
+
+      <header className="flex items-center gap-3 px-5 py-4 border-b border-white/10 bg-black/30 backdrop-blur-md">
         <button
           onClick={() => { setStep("hero"); setMessages([]); setUsedOptions(new Set()); setSelectedCategories([]); setWho(""); setLocation(""); }}
           className="text-2xl hover:scale-110 transition-transform flex-shrink-0"
@@ -349,7 +362,7 @@ export default function Home() {
           <div className="flex gap-3 max-w-xl mx-auto w-full">
             <div className="text-xl flex-shrink-0 mt-1">🌋</div>
             <div className="space-y-3 flex-1">
-              <div className="bg-stone-900 border border-white/5 text-white rounded-2xl rounded-tl-none px-4 py-3 text-sm leading-relaxed">
+              <div className="bg-white/8 backdrop-blur-md border border-white/15 text-white rounded-2xl rounded-tl-none px-4 py-3 text-sm leading-relaxed">
                 ¡Buenas! Who&apos;s coming to Tenerife? 🌊
               </div>
               <div className="grid grid-cols-2 gap-2">
@@ -360,10 +373,10 @@ export default function Home() {
                     disabled={step !== "who"}
                     className={`px-4 py-2 rounded-full text-sm font-medium border transition-all ${
                       step === "who"
-                        ? "bg-stone-900 border-stone-700 text-white hover:border-orange-500 hover:text-orange-400 cursor-pointer"
+                        ? "bg-white/10 backdrop-blur-sm border-white/20 text-white hover:border-orange-500 hover:text-orange-400 cursor-pointer"
                         : who === opt.value
                         ? "bg-orange-500/20 border-orange-500 text-orange-300"
-                        : "bg-stone-900/50 border-stone-800 text-stone-600 cursor-default"
+                        : "bg-white/5 border-white/10 text-white/40 cursor-default"
                     }`}
                   >
                     {opt.label}
@@ -379,7 +392,7 @@ export default function Home() {
           <div className="flex gap-3 max-w-xl mx-auto w-full">
             <div className="text-xl flex-shrink-0 mt-1">🌋</div>
             <div className="space-y-3 flex-1">
-              <div className="bg-stone-900 border border-white/5 text-white rounded-2xl rounded-tl-none px-4 py-3 text-sm leading-relaxed">
+              <div className="bg-white/8 backdrop-blur-md border border-white/15 text-white rounded-2xl rounded-tl-none px-4 py-3 text-sm leading-relaxed">
                 What are you looking for? Pick all that interest you 👇
               </div>
               <div className="grid grid-cols-2 gap-2">
@@ -395,10 +408,10 @@ export default function Home() {
                         isLocked
                           ? isSelected
                             ? "bg-orange-500/20 border-orange-500 text-orange-300 cursor-default"
-                            : "bg-stone-900/50 border-stone-800 text-stone-600 cursor-default"
+                            : "bg-white/5 border-white/10 text-white/40 cursor-default"
                           : isSelected
                             ? "bg-orange-500/20 border-orange-500 text-orange-300"
-                            : "bg-stone-900 border-stone-700 text-white hover:border-orange-500 hover:text-orange-400 cursor-pointer"
+                            : "bg-white/10 backdrop-blur-sm border-white/20 text-white hover:border-orange-500 hover:text-orange-400 cursor-pointer"
                       }`}
                     >
                       {cat.emoji} {cat.label}
@@ -424,7 +437,7 @@ export default function Home() {
           <div className="flex gap-3 max-w-xl mx-auto w-full">
             <div className="text-xl flex-shrink-0 mt-1">🌋</div>
             <div className="space-y-3 flex-1">
-              <div className="bg-stone-900 border border-white/5 text-white rounded-2xl rounded-tl-none px-4 py-3 text-sm leading-relaxed">
+              <div className="bg-white/8 backdrop-blur-md border border-white/15 text-white rounded-2xl rounded-tl-none px-4 py-3 text-sm leading-relaxed">
                 Which area are you staying in? 📍
               </div>
               <div className="grid grid-cols-3 gap-2">
@@ -440,8 +453,8 @@ export default function Home() {
                         isLocked
                           ? isSelected
                             ? "bg-orange-500/20 border-orange-500 text-orange-300 cursor-default"
-                            : "bg-stone-900/50 border-stone-800 text-stone-600 cursor-default"
-                          : "bg-stone-900 border-stone-700 text-white hover:border-orange-500 hover:text-orange-400 cursor-pointer"
+                            : "bg-white/5 border-white/10 text-white/40 cursor-default"
+                          : "bg-white/10 backdrop-blur-sm border-white/20 text-white hover:border-orange-500 hover:text-orange-400 cursor-pointer"
                       }`}
                     >
                       {loc.label}
@@ -464,7 +477,7 @@ export default function Home() {
                 className={`px-4 py-3 rounded-2xl text-sm leading-relaxed ${
                   msg.role === "user"
                     ? "bg-orange-500 text-white rounded-tr-none"
-                    : "bg-stone-900 border border-white/5 text-white rounded-tl-none prose prose-invert prose-sm"
+                    : "bg-white/8 backdrop-blur-md border border-white/15 text-white rounded-tl-none prose prose-invert prose-sm"
                 }`}
               >
                 {msg.role === "assistant" ? (
@@ -525,7 +538,7 @@ export default function Home() {
                       <button
                         key={opt}
                         onClick={() => handleOption(opt, i)}
-                        className="px-4 py-2 rounded-full text-sm font-medium border bg-stone-900 border-stone-700 text-white hover:border-orange-500 hover:text-orange-400 transition-all cursor-pointer"
+                        className="px-4 py-2 rounded-full text-sm font-medium border bg-white/10 backdrop-blur-sm border-white/20 text-white hover:border-orange-500 hover:text-orange-400 transition-all cursor-pointer"
                       >
                         {opt}
                       </button>
@@ -540,7 +553,7 @@ export default function Home() {
         {loading && (
           <div className="flex gap-3 max-w-xl mx-auto w-full">
             <div className="text-xl flex-shrink-0 mt-1">🌋</div>
-            <div className="bg-stone-900 border border-white/5 rounded-2xl rounded-tl-none px-4 py-3">
+            <div className="bg-white/8 backdrop-blur-md border border-white/15 rounded-2xl rounded-tl-none px-4 py-3">
               <div className="flex gap-1 items-center h-4">
                 <span className="w-1.5 h-1.5 bg-orange-400 rounded-full animate-bounce [animation-delay:0ms]" />
                 <span className="w-1.5 h-1.5 bg-orange-400 rounded-full animate-bounce [animation-delay:150ms]" />
@@ -555,7 +568,7 @@ export default function Home() {
 
       {/* Text input */}
       {step === "chat" && !loading && (
-        <div className="px-4 pb-5 pt-3 border-t border-white/5 bg-[#0d0d0d]">
+        <div className="px-4 pb-5 pt-3 border-t border-white/10 bg-black/30 backdrop-blur-md">
           <div className="max-w-xl mx-auto flex gap-2 items-center">
             <input
               type="text"
@@ -567,7 +580,7 @@ export default function Home() {
                   sendToAI(val, messages);
                 }
               }}
-              className="flex-1 bg-stone-800 border border-stone-700 focus:border-orange-500 text-white placeholder-stone-500 text-sm px-4 py-3 rounded-2xl focus:outline-none transition-colors"
+              className="flex-1 bg-white/10 backdrop-blur-sm border border-white/20 focus:border-orange-500 text-white placeholder-white/40 text-sm px-4 py-3 rounded-2xl focus:outline-none transition-colors"
             />
             <button
               onClick={(e) => {
