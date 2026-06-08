@@ -266,32 +266,43 @@ export default function Home() {
 
   if (step === "hero") {
     return (
-      <div className="flex flex-col min-h-screen bg-[#0d0d0d] text-white">
-        <div className="flex flex-col items-center justify-center flex-1 px-6 text-center gap-8 py-24">
-          <div className="text-6xl">🌋</div>
-          <div>
-            <h1 className="text-5xl font-bold tracking-tight mb-3">
-              <span className="text-white">Tenerify</span>
-              <span className="text-orange-400">.ai</span>
-            </h1>
-            <p className="text-stone-400 text-lg max-w-xs mx-auto leading-relaxed">
+      <div
+        className="flex flex-col min-h-screen text-white relative overflow-hidden"
+        style={{
+          backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.45) 45%, rgba(0,0,0,0.92) 100%), url('/hero-teide.jpg')`,
+          backgroundSize: "cover",
+          backgroundPosition: "center 40%",
+        }}
+      >
+        <div className="flex flex-col items-center justify-end flex-1 px-6 text-center pb-16 pt-12">
+          <div className="flex flex-col items-center gap-6 max-w-sm w-full">
+            <div>
+              <h1 className="text-6xl font-extrabold tracking-tight mb-2 leading-none">
+                <span className="text-white">Tenerify</span>
+                <span className="text-orange-400">.ai</span>
+              </h1>
+              <p className="text-white/70 text-base font-medium tracking-wide uppercase text-sm mt-3">
+                {isReturning ? "Welcome back 👋" : "Tenerife Sur · AI concierge"}
+              </p>
+            </div>
+
+            <p className="text-white/60 text-sm leading-relaxed max-w-[260px]">
               {isReturning
-                ? <>Welcome back. 🌊<br />Ready for your next adventure?</>
-                : <>Your local AI friend in Tenerife.<br />Discover & book in 60 seconds.</>}
+                ? "Ready for your next adventure?"
+                : "Boats, buggies, shows & more — find and book in under 60 seconds."}
             </p>
-          </div>
-          <div className="flex flex-col items-center gap-4 mt-4">
+
             <button
               onClick={() => setStep("who")}
-              className="bg-orange-500 hover:bg-orange-400 text-white font-semibold px-8 py-4 rounded-2xl text-base transition-all hover:scale-105 shadow-lg shadow-orange-900/40"
+              className="w-full bg-orange-500 hover:bg-orange-400 active:bg-orange-600 text-white font-bold px-8 py-4 rounded-2xl text-base transition-all hover:scale-[1.02] shadow-xl shadow-orange-900/50 tracking-wide"
             >
-              Find my perfect experience →
+              Find my experience →
             </button>
-            <p className="text-stone-600 text-xs">Volcano · Ocean · Boats · Tenerife</p>
+
+            <p className="text-white/25 text-xs">
+              Tenerify.ai · <a href="/legal" className="hover:text-white/50 transition-colors">Legal & Privacy</a>
+            </p>
           </div>
-        </div>
-        <div className="border-t border-white/5 px-6 py-4 flex justify-center">
-          <p className="text-stone-600 text-xs">Tenerify.ai · Tenerife, Canary Islands · <a href="/legal" className="hover:text-stone-400 transition-colors">Legal & Privacy</a></p>
         </div>
       </div>
     );
@@ -304,18 +315,18 @@ export default function Home() {
 
   return (
     <div className="flex flex-col h-screen bg-[#0d0d0d] text-white">
-      <header className="flex items-center gap-3 px-5 py-4 border-b border-white/5">
+      <header className="flex items-center gap-3 px-5 py-4 border-b border-white/5 bg-[#0d0d0d]">
         <button
           onClick={() => { setStep("hero"); setMessages([]); setUsedOptions(new Set()); setSelectedCategories([]); setWho(""); setLocation(""); }}
-          className="text-2xl hover:scale-110 transition-transform"
+          className="text-2xl hover:scale-110 transition-transform flex-shrink-0"
         >
           🌋
         </button>
-        <div>
-          <h1 className="font-bold text-base leading-none">
+        <div className="flex-1 min-w-0">
+          <h1 className="font-extrabold text-base leading-none tracking-tight">
             Tenerify<span className="text-orange-400">.ai</span>
           </h1>
-          <p className="text-stone-500 text-xs mt-0.5">Tenerife · Your local AI friend</p>
+          <p className="text-stone-500 text-xs mt-0.5 font-medium">Tenerife Sur · AI concierge</p>
         </div>
       </header>
 
