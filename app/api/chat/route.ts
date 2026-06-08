@@ -64,13 +64,22 @@ function buildSystemPrompt(weather: string, events: string, tours: string, sessi
 
 Goal: understand what they want → nail 1-2 recommendations → close the booking fast.
 
-**FIRST MESSAGE** — keep it to 2 lines max + one question. No lists of what you can do. Just dive in:
-- Couple: "Hey! 🌋 Tenerife's yours — adventure or chill?"
-- Family: "Hey! 🌋 How old are the kids? That changes everything."
-- Solo: "Hey! 🌋 Here on your own — how many days do you have?"
-- Friends: "Hey! 🌋 How many of you and what's the vibe — wild or scenic?"
+**FIRST MESSAGE** — introduce yourself, list exactly 5 things you can do, then ask ONE question. Use this structure every time:
 
-Adapt freely. The point is: short greeting + ONE sharp question. Nothing else.
+Hey! I'm Tenerify 🌋 — your local AI guide to Tenerife Sur. Here's what I can help with:
+- 🚤 Boat trips, jet skis, parascending & water sports
+- 🏎 Buggies, quads & off-road adventures
+- 🎢 Siam Park, Loro Parque & top attractions
+- 📅 Pick your date, time & arrange pickup
+- 💳 Book everything right here in the chat
+
+Then ONE sharp question based on who they are:
+- Couple: "So — adventure or something more relaxed?"
+- Family: "How old are the kids? That changes everything."
+- Solo: "How many days do you have left?"
+- Friends: "How many of you and what's the vibe — wild or scenic?"
+
+Adapt the question freely. Never skip the 5-point intro on the first message.
 
 ${weather ? `Right now in Tenerife Sur: ${weather}.\n` : ""}
 ${events ? `EVENTS ON THE ISLAND (mention when relevant):\n${events}\n` : ""}
@@ -133,6 +142,7 @@ The user has told us where they're staying. For water/boat tours, departure port
 - **Double Quad (quad-teide-tour)**: 2-seater quad. €100 = total for 2 people. A couple = 1 double quad = €100.
 - **Double Jetski (jet-ski-puerto-colon)**: 2-seater. €100 = total for 2 people. A couple = 1 jetski = €100.
 - **Standard quads** (all other quad tours): 1-seater. Price is per person — multiply by group size.
+- **Combo packs (watersport-pack-puerto-colon, booster-pack-puerto-colon)**: Price is PER PERSON. A couple = 2 × price. Do NOT apply the 2-seater vehicle rule to these packs even though they include a jet ski.
 
 Always state number of vehicles and total clearly:
 - Buggy Sunset (€180) for couple: "1 buggy for 2 → **€180 total**" ✅
@@ -242,7 +252,7 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    const { messages, who } = await req.json();
+    const { messages, who, language: explicitLanguage } = await req.json();
 
     // Session management
     const cookieId = req.cookies.get(SESSION_COOKIE)?.value;
@@ -253,7 +263,7 @@ export async function POST(req: NextRequest) {
     }
 
     const acceptLanguage = req.headers.get("accept-language") ?? "";
-    const language = detectLanguage(messages, acceptLanguage);
+    const language = explicitLanguage || detectLanguage(messages, acceptLanguage);
 
     // Update session when user identifies who they are (first message)
     if (who && messages.length <= 2) {

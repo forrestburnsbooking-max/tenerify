@@ -153,7 +153,18 @@ type Message = {
   availableTimeSlots?: string[];
 };
 
-type Step = "hero" | "who" | "category" | "location" | "chat";
+type Step = "hero" | "language" | "who" | "category" | "location" | "chat";
+
+const LANGUAGES = [
+  { flag: "🇪🇸", label: "Español",    value: "es" },
+  { flag: "🇬🇧", label: "English",    value: "en" },
+  { flag: "🇩🇪", label: "Deutsch",    value: "de" },
+  { flag: "🇷🇺", label: "Русский",    value: "ru" },
+  { flag: "🇫🇮", label: "Suomi",      value: "fi" },
+  { flag: "🇫🇷", label: "Français",   value: "fr" },
+  { flag: "🇮🇹", label: "Italiano",   value: "it" },
+  { flag: "🇳🇱", label: "Nederlands", value: "nl" },
+];
 
 const WHO_OPTIONS = [
   { label: "👨‍👩‍👧 Family", value: "We are a family with kids" },
@@ -182,10 +193,12 @@ export default function Home() {
   const [who, setWho] = useState("");
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
   const [location, setLocation] = useState("");
+  const [selectedLanguage, setSelectedLanguage] = useState("");
   const [messages, setMessages] = useState<Message[]>([]);
   const [loading, setLoading] = useState(false);
   const [usedOptions, setUsedOptions] = useState<Set<number>>(new Set());
   const [isReturning, setIsReturning] = useState(false);
+  const [videoReady, setVideoReady] = useState(false);
   const bottomRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -196,6 +209,11 @@ export default function Home() {
   useEffect(() => {
     bottomRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages, loading, step]);
+
+  function handleLanguageSelect(lang: string) {
+    setSelectedLanguage(lang);
+    setStep("who");
+  }
 
   function handleWho(option: { label: string; value: string }) {
     setWho(option.value);
@@ -219,7 +237,7 @@ export default function Home() {
       ? CATEGORIES.filter(c => selectedCategories.includes(c.id)).map(c => c.emoji + " " + c.label).join(", ")
       : "anything";
     const firstMessage = `${who}. Staying in: ${loc}. Interested in: ${catLabels}`;
-    await sendToAI(firstMessage, [], who);
+    await sendToAI(firstMessage, [], who, selectedLanguage);
   }
 
   async function handleOption(option: string, messageIndex: number) {
@@ -227,7 +245,7 @@ export default function Home() {
     await sendToAI(option, messages);
   }
 
-  async function sendToAI(userText: string, history: Message[] = [], whoValue?: string) {
+  async function sendToAI(userText: string, history: Message[] = [], whoValue?: string, langValue?: string) {
     const userMessage: Message = { role: "user", content: userText };
     const newMessages = [...history, userMessage];
     setMessages(newMessages);
@@ -240,6 +258,7 @@ export default function Home() {
         body: JSON.stringify({
           messages: newMessages.map(({ role, content }) => ({ role, content })),
           who: whoValue ?? who,
+          language: langValue ?? selectedLanguage,
         }),
       });
       const data = await res.json();
@@ -275,11 +294,10 @@ export default function Home() {
           muted
           loop
           playsInline
-          poster="/hero-teide.jpg"
-          className="absolute inset-0 w-full h-full object-cover opacity-70"
+          onCanPlay={() => setVideoReady(true)}
+          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${videoReady ? "opacity-70" : "opacity-0"}`}
         >
           <source src="/videos/hero.mp4" type="video/mp4" />
-          {/* Fallback: if no video, poster image shows */}
         </video>
 
         {/* Gradient overlay — dark at bottom for text */}
@@ -305,7 +323,7 @@ export default function Home() {
             </p>
 
             <button
-              onClick={() => setStep("who")}
+              onClick={() => setStep("language")}
               className="w-full bg-orange-500 hover:bg-orange-400 active:bg-orange-600 text-white font-bold px-8 py-4 rounded-2xl text-base transition-all hover:scale-[1.02] shadow-xl shadow-orange-900/50 tracking-wide"
             >
               Find my experience →
@@ -329,7 +347,7 @@ export default function Home() {
     <div className="flex flex-col h-screen text-white" style={{ background: "linear-gradient(160deg, #071829 0%, #0a1020 40%, #110c1a 100%)" }}>
       <header className="flex items-center gap-3 px-5 border-b border-white/8" style={{ paddingTop: "max(env(safe-area-inset-top, 0px), 16px)", paddingBottom: "16px" }}>
         <button
-          onClick={() => { setStep("hero"); setMessages([]); setUsedOptions(new Set()); setSelectedCategories([]); setWho(""); setLocation(""); }}
+          onClick={() => { setStep("hero"); setMessages([]); setUsedOptions(new Set()); setSelectedCategories([]); setWho(""); setLocation(""); setSelectedLanguage(""); }}
           className="text-2xl hover:scale-110 transition-transform flex-shrink-0"
         >
           🌋
@@ -343,6 +361,37 @@ export default function Home() {
       </header>
 
       <div className="flex-1 overflow-y-auto px-4 py-6 space-y-6">
+
+        {/* Language selection */}
+        {(step === "language" || step === "who" || step === "category" || step === "location" || step === "chat") && (
+          <div className="flex gap-3 max-w-xl mx-auto w-full">
+            <div className="text-xl flex-shrink-0 mt-1">🌋</div>
+            <div className="space-y-3 flex-1">
+              <div className="bg-white/6 border border-white/12 text-white rounded-2xl rounded-tl-none px-4 py-3 text-sm leading-relaxed">
+                ¿Qué idioma hablas?
+              </div>
+              <div className="grid grid-cols-2 gap-2">
+                {LANGUAGES.map((lang) => (
+                  <button
+                    key={lang.value}
+                    onClick={() => step === "language" && handleLanguageSelect(lang.value)}
+                    disabled={step !== "language"}
+                    className={`px-4 py-2 rounded-full text-sm font-medium border transition-all flex items-center gap-2 ${
+                      step === "language"
+                        ? "bg-white/8 border-white/15 text-white hover:border-orange-500 hover:text-orange-400 cursor-pointer"
+                        : selectedLanguage === lang.value
+                        ? "bg-orange-500/20 border-orange-500 text-orange-300"
+                        : "bg-white/5 border-white/10 text-white/40 cursor-default"
+                    }`}
+                  >
+                    <span>{lang.flag}</span>
+                    <span>{lang.label}</span>
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
 
         {/* Who selection */}
         {(step === "who" || step === "category" || step === "location" || step === "chat") && (
