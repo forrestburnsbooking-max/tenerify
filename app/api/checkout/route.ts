@@ -71,7 +71,12 @@ export async function POST(req: NextRequest) {
             currency: "eur",
             product_data: {
               name: tourName,
-              description: [groupSize, bookingDate, bookingTime].filter(Boolean).join(" · ") || "Tenerife experience via Tenerify.ai",
+              description: [
+                groupSize,
+                bookingDate,
+                bookingTime ? `Time: ${bookingTime}` : "",
+                meetingPoint ? `Pickup: ${meetingPoint}` : "",
+              ].filter(Boolean).join(" · ") || "Tenerife experience via Tenerify.ai",
             },
             unit_amount: Math.round(priceEur * 100),
           },
@@ -93,7 +98,13 @@ export async function POST(req: NextRequest) {
         tourSlug: slug ?? "",
       },
       payment_intent_data: {
-        description: `Tenerify booking: ${tourName} — ${groupSize} — ${bookingDate}${bookingTime ? ` at ${bookingTime}` : ""}`,
+        description: [
+          `Tenerify: ${tourName}`,
+          groupSize,
+          bookingDate,
+          bookingTime ? `at ${bookingTime}` : "",
+          meetingPoint ? `📍 ${meetingPoint}` : "",
+        ].filter(Boolean).join(" · "),
       },
     });
 
