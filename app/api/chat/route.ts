@@ -37,17 +37,29 @@ async function getWeather(): Promise<string> {
   }
 }
 
-function detectLanguage(messages: { role: string; content: string }[]): string {
+function detectLanguage(messages: { role: string; content: string }[], acceptLanguage?: string): string {
   const userText = messages
     .filter((m) => m.role === "user")
     .map((m) => m.content)
     .join(" ");
   if (/[а-яА-ЯёЁ]/.test(userText)) return "ru";
   if (/[ñáéíóúü]/i.test(userText)) return "es";
+
+  // Fall back to browser language if no typed language detected
+  if (acceptLanguage) {
+    const primary = acceptLanguage.split(",")[0].split("-")[0].toLowerCase();
+    if (["ru", "es", "fi", "de", "fr", "it", "nl", "pl"].includes(primary)) return primary;
+  }
   return "en";
 }
 
-function buildSystemPrompt(weather: string, events: string, tours: string, sessionContext: string): string {
+const LANGUAGE_NAMES: Record<string, string> = {
+  ru: "Russian", es: "Spanish", fi: "Finnish", de: "German",
+  fr: "French", it: "Italian", nl: "Dutch", pl: "Polish", en: "English",
+};
+
+function buildSystemPrompt(weather: string, events: string, tours: string, sessionContext: string, language: string): string {
+  const langName = LANGUAGE_NAMES[language] ?? "English";
   return `You are Tenerify — a local AI friend from Tenerife Sur. Warm, direct, genuinely passionate. Not a corporate bot.
 
 Goal: understand who they are → nail the recommendation → close the booking.
@@ -188,7 +200,7 @@ Examples:
 
 - ONE question per message, always with 2-4 clickable options
 - Options must match the question exactly
-- Detect language and switch: Russian → Russian, Spanish → Spanish, English → English, Finnish → Finnish
+- **Start in ${langName}** (detected from user's device). Switch if the user writes in a different language.
 - Never mention you're an AI unless directly asked`;
 }
 
@@ -213,16 +225,18 @@ export async function POST(req: NextRequest) {
       session = createSession(sessionId);
     }
 
+    const acceptLanguage = req.headers.get("accept-language") ?? "";
+    const language = detectLanguage(messages, acceptLanguage);
+
     // Update session when user identifies who they are (first message)
     if (who && messages.length <= 2) {
-      const language = detectLanguage(messages);
       session = updateSessionVisit(session, who, language);
     }
 
     const sessionContext = sessionToContext(session);
     const [weather, events] = await Promise.all([getWeather(), getEvents()]);
     const tours = getTours();
-    const systemPrompt = buildSystemPrompt(weather, events, tours, sessionContext);
+    const systemPrompt = buildSystemPrompt(weather, events, tours, sessionContext, language);
 
     const response = await client.messages.create({
       model: "claude-sonnet-4-6",
