@@ -327,20 +327,23 @@ export default function Home() {
 
   return (
     <div className="flex flex-col h-screen text-white relative overflow-hidden">
-      {/* Blurred background */}
+      {/* Blurred background — z-index 0 */}
       <div
-        className="absolute inset-0 -z-10"
+        className="absolute inset-0"
         style={{
           backgroundImage: "url('/hero-teide.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
-          filter: "blur(48px) brightness(0.25) saturate(1.4)",
+          filter: "blur(48px) brightness(0.28) saturate(1.4)",
           transform: "scale(1.15)",
+          zIndex: 0,
         }}
       />
-      <div className="absolute inset-0 -z-10 bg-black/50" />
+      {/* Dark overlay — z-index 1 */}
+      <div className="absolute inset-0 bg-black/50" style={{ zIndex: 1 }} />
 
-      <header className="flex items-center gap-3 px-5 py-4 border-b border-white/10 bg-black/30 backdrop-blur-md">
+      {/* All content — z-index 2+ */}
+      <header className="relative flex items-center gap-3 px-5 py-4 border-b border-white/10 bg-black/30 backdrop-blur-md" style={{ zIndex: 2 }}>
         <button
           onClick={() => { setStep("hero"); setMessages([]); setUsedOptions(new Set()); setSelectedCategories([]); setWho(""); setLocation(""); }}
           className="text-2xl hover:scale-110 transition-transform flex-shrink-0"
@@ -355,7 +358,7 @@ export default function Home() {
         </div>
       </header>
 
-      <div className="flex-1 overflow-y-auto px-4 py-6 space-y-6">
+      <div className="flex-1 overflow-y-auto px-4 py-6 space-y-6 relative" style={{ zIndex: 2 }}>
 
         {/* Who selection */}
         {(step === "who" || step === "category" || step === "location" || step === "chat") && (
@@ -568,7 +571,7 @@ export default function Home() {
 
       {/* Text input */}
       {step === "chat" && !loading && (
-        <div className="px-4 pb-5 pt-3 border-t border-white/10 bg-black/30 backdrop-blur-md">
+        <div className="px-4 pb-5 pt-3 border-t border-white/10 bg-black/30 backdrop-blur-md relative" style={{ zIndex: 2 }}>
           <div className="max-w-xl mx-auto flex gap-2 items-center">
             <input
               type="text"
