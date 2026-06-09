@@ -167,6 +167,7 @@ const LANGUAGES = [
 ];
 
 const UI_STRINGS: Record<string, {
+  intro: string;
   whoQuestion: string;
   categoryQuestion: string;
   locationQuestion: string;
@@ -175,6 +176,7 @@ const UI_STRINGS: Record<string, {
   catLabels: { water: string; buggy: string; tours: string; parks: string; shows: string; adventure: string };
 }> = {
   es: {
+    intro: "¡Hola! Soy Tenerify 🌋 — tu amigo local de IA en Tenerife. Creado por un guía local, un vendedor de tours y un entusiasta de la IA. Conozco lo que hay en internet *y* lo que solo saben los locales.\n\n**Puedo ayudarte a:**\n- 🎯 Encontrar las mejores actividades y ofertas\n- 📅 Reservar experiencias directamente aquí\n- 🗺️ Planificar tu ruta perfecta\n- 💡 Responder cualquier duda sobre Tenerife Sur",
     whoQuestion: "¡Buenas! ¿Quién viene a Tenerife? 🌊",
     categoryQuestion: "¿Qué te apetece? Elige lo que te interese 👇",
     locationQuestion: "¿En qué zona te alojas? 📍",
@@ -183,6 +185,7 @@ const UI_STRINGS: Record<string, {
     catLabels: { water: "Agua y Barcos", buggy: "Buggy y Quad", tours: "Tours", parks: "Parques", shows: "Shows y Cenas", adventure: "Aventura" },
   },
   en: {
+    intro: "Hey! I'm Tenerify 🌋 — your local AI friend from Tenerife. Built by a local guide, a tour seller & an AI enthusiast. I know what's online *and* what only locals know.\n\n**Here's what I can do:**\n- 🎯 Find the best activities & deals for you\n- 📅 Book your experiences right here in chat\n- 🗺️ Plan your perfect itinerary\n- 💡 Answer anything about Tenerife Sur",
     whoQuestion: "¡Buenas! Who's coming to Tenerife? 🌊",
     categoryQuestion: "What are you looking for? Pick all that interest you 👇",
     locationQuestion: "Which area are you staying in? 📍",
@@ -191,6 +194,7 @@ const UI_STRINGS: Record<string, {
     catLabels: { water: "Water & Boats", buggy: "Buggy & Quad", tours: "Island Tours", parks: "Theme Parks", shows: "Shows & Dinners", adventure: "Adventure" },
   },
   de: {
+    intro: "Hey! Ich bin Tenerify 🌋 — dein lokaler KI-Freund aus Teneriffa. Erstellt von einem lokalen Guide, Touren-Verkäufer & KI-Enthusiasten. Ich kenne, was online steht *und* was nur Einheimische wissen.\n\n**Das kann ich für euch tun:**\n- 🎯 Die besten Aktivitäten & Angebote finden\n- 📅 Erlebnisse direkt hier buchen\n- 🗺️ Eure perfekte Route planen\n- 💡 Alles über Teneriffa Sur beantworten",
     whoQuestion: "Hallo! Wer kommt nach Teneriffa? 🌊",
     categoryQuestion: "Was sucht ihr? Wählt alles aus 👇",
     locationQuestion: "In welcher Gegend übernachtet ihr? 📍",
@@ -199,6 +203,7 @@ const UI_STRINGS: Record<string, {
     catLabels: { water: "Wasser & Boote", buggy: "Buggy & Quad", tours: "Insel-Touren", parks: "Freizeitparks", shows: "Shows & Dinner", adventure: "Abenteuer" },
   },
   ru: {
+    intro: "Привет! Я Tenerify 🌋 — твой местный AI-друг с Тенерифе. Создан местным гидом, продавцом туров и AI-энтузиастом. Знаю и то, что есть в интернете, и то, о чём знают только местные.\n\n**Что я умею:**\n- 🎯 Найти лучшие активности и предложения\n- 📅 Забронировать прямо в этом чате\n- 🗺️ Спланировать идеальный маршрут\n- 💡 Ответить на любой вопрос о Тенерифе",
     whoQuestion: "Привет! Кто едет на Тенерифе? 🌊",
     categoryQuestion: "Что вас интересует? Выбери всё нужное 👇",
     locationQuestion: "В каком районе вы остановились? 📍",
@@ -207,6 +212,7 @@ const UI_STRINGS: Record<string, {
     catLabels: { water: "Вода и лодки", buggy: "Багги и квад", tours: "Экскурсии", parks: "Парки", shows: "Шоу и ужины", adventure: "Приключения" },
   },
   pl: {
+    intro: "Hej! Jestem Tenerify 🌋 — twój lokalny przyjaciel AI z Teneryfy. Stworzony przez lokalnego przewodnika, sprzedawcę wycieczek i entuzjastę AI. Znam to, co jest w internecie *i* to, co wiedzą tylko miejscowi.\n\n**Co mogę dla ciebie zrobić:**\n- 🎯 Znaleźć najlepsze atrakcje i oferty\n- 📅 Zarezerwować doświadczenia bezpośrednio tu\n- 🗺️ Zaplanować idealną trasę\n- 💡 Odpowiedzieć na każde pytanie o Teneryfę",
     whoQuestion: "Hej! Kto jedzie na Teneryfę? 🌊",
     categoryQuestion: "Czego szukasz? Wybierz wszystko 👇",
     locationQuestion: "W której okolicy mieszkasz? 📍",
@@ -215,6 +221,7 @@ const UI_STRINGS: Record<string, {
     catLabels: { water: "Woda i łodzie", buggy: "Buggy i Quad", tours: "Wycieczki", parks: "Parki rozrywki", shows: "Pokazy i kolacje", adventure: "Przygoda" },
   },
   fr: {
+    intro: "Salut! Je suis Tenerify 🌋 — ton ami local IA de Tenerife. Créé par un guide local, un vendeur de tours & un passionné d'IA. Je connais ce qui est en ligne *et* ce que seuls les locaux savent.\n\n**Ce que je peux faire:**\n- 🎯 Trouver les meilleures activités & bons plans\n- 📅 Réserver vos expériences directement ici\n- 🗺️ Planifier votre itinéraire parfait\n- 💡 Répondre à toutes vos questions sur Tenerife",
     whoQuestion: "Salut! Qui vient à Tenerife? 🌊",
     categoryQuestion: "Qu'est-ce qui vous intéresse? Choisissez tout 👇",
     locationQuestion: "Dans quelle zone logez-vous? 📍",
@@ -223,6 +230,7 @@ const UI_STRINGS: Record<string, {
     catLabels: { water: "Eau & Bateaux", buggy: "Buggy & Quad", tours: "Tours de l'île", parks: "Parcs", shows: "Shows & Dîners", adventure: "Aventure" },
   },
   it: {
+    intro: "Ciao! Sono Tenerify 🌋 — il tuo amico AI locale di Tenerife. Creato da una guida locale, un venditore di tour e un appassionato di AI. Conosco ciò che c'è online *e* ciò che sanno solo i locali.\n\n**Cosa posso fare:**\n- 🎯 Trovare le migliori attività e offerte\n- 📅 Prenotare esperienze direttamente qui\n- 🗺️ Pianificare il vostro itinerario perfetto\n- 💡 Rispondere a qualsiasi domanda su Tenerife",
     whoQuestion: "Ciao! Chi viene a Tenerife? 🌊",
     categoryQuestion: "Cosa cercate? Selezionate tutto 👇",
     locationQuestion: "In quale zona alloggiate? 📍",
@@ -231,6 +239,7 @@ const UI_STRINGS: Record<string, {
     catLabels: { water: "Acqua e Barche", buggy: "Buggy & Quad", tours: "Tour dell'isola", parks: "Parchi tematici", shows: "Show e Cene", adventure: "Avventura" },
   },
   nl: {
+    intro: "Hallo! Ik ben Tenerify 🌋 — je lokale AI-vriend van Tenerife. Gemaakt door een lokale gids, tourverkoper & AI-liefhebber. Ik ken wat online staat *én* wat alleen locals weten.\n\n**Wat ik kan doen:**\n- 🎯 De beste activiteiten & deals voor jullie vinden\n- 📅 Ervaringen direct hier boeken\n- 🗺️ Jullie perfecte route plannen\n- 💡 Alles over Tenerife Sur beantwoorden",
     whoQuestion: "Hallo! Wie komt naar Tenerife? 🌊",
     categoryQuestion: "Wat zoeken jullie? Kies alles wat jullie interesseert 👇",
     locationQuestion: "In welk gebied verblijven jullie? 📍",
@@ -475,6 +484,16 @@ export default function Home() {
                   </button>
                 ))}
               </div>
+            </div>
+          </div>
+        )}
+
+        {/* Intro message */}
+        {(step === "who" || step === "category" || step === "location" || step === "chat") && (
+          <div className="flex gap-3 max-w-xl mx-auto w-full">
+            <div className="text-xl flex-shrink-0 mt-1">🌋</div>
+            <div className="bg-white/6 border border-white/12 text-white rounded-2xl rounded-tl-none px-4 py-3 text-sm leading-relaxed">
+              <ReactMarkdown>{t.intro}</ReactMarkdown>
             </div>
           </div>
         )}
