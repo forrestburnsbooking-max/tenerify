@@ -32,6 +32,7 @@ export type Tour = {
   timeSlots?: string[];
   url: string;
   bookingPhone?: string;
+  depositPercent?: number;
 };
 
 const CATEGORY_EMOJI: Record<string, string> = {
@@ -85,7 +86,8 @@ export function getTours(): string {
         const durPart = t.duration ? ` | ${t.duration}` : "";
         const incPart = t.included ? ` | Includes: ${t.included.slice(0, 80)}` : "";
         const slotsPart = t.timeSlots?.length ? ` | timeSlots: ${t.timeSlots.join(", ")}` : "";
-        lines.push(`  • [slug:${t.slug}] ${t.title}${durPart} | ${pricePart}${agePart}${incPart}${slotsPart}`);
+        const depositPart = t.depositPercent ? ` | 💳 ${t.depositPercent}% deposit online, rest paid on pickup` : "";
+        lines.push(`  • [slug:${t.slug}] ${t.title}${durPart} | ${pricePart}${agePart}${incPart}${slotsPart}${depositPart}`);
         if (t.description) {
           lines.push(`    ${t.description.slice(0, 150)}`);
         }

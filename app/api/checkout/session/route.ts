@@ -24,6 +24,8 @@ export async function GET(req: NextRequest) {
       customerName: session.customer_details?.name ?? null,
       customerPhone: session.customer_details?.phone ?? null,
       amountTotal: session.amount_total ?? null,
+      depositPercent: meta.depositPercent ?? null,
+      totalPriceEur: meta.totalPriceEur ?? null,
     });
   } catch {
     return NextResponse.json({ error: "Session not found" }, { status: 404 });

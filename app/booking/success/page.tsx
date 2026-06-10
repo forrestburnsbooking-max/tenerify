@@ -12,6 +12,8 @@ type BookingInfo = {
   amountTotal: number;
   customerPhone: string;
   customerName: string;
+  depositPercent: string;
+  totalPriceEur: string;
 };
 
 function SuccessContent() {
@@ -32,6 +34,8 @@ function SuccessContent() {
           amountTotal: data.amountTotal ?? 0,
           customerPhone: data.customerPhone ?? "",
           customerName: data.customerName ?? "",
+          depositPercent: data.depositPercent ?? "",
+          totalPriceEur: data.totalPriceEur ?? "",
         });
       })
       .catch(() => {});
@@ -63,6 +67,12 @@ function SuccessContent() {
             {booking.amountTotal > 0 && (
               <p className="text-orange-400 font-semibold text-lg">
                 €{(booking.amountTotal / 100).toFixed(0)} paid
+                {booking.depositPercent && ` (${booking.depositPercent}% deposit)`}
+              </p>
+            )}
+            {booking.depositPercent && booking.totalPriceEur && (
+              <p className="text-stone-400 text-sm">
+                💶 €{(parseFloat(booking.totalPriceEur) - booking.amountTotal / 100).toFixed(0)} due on pickup
               </p>
             )}
             <p className="text-stone-600 text-xs font-mono">Ref: {ref}</p>

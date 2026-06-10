@@ -48,9 +48,15 @@ export async function POST(req: NextRequest) {
     const meetingPoint = session.metadata?.meetingPoint ?? "";
     const pvpTotal = session.amount_total ? session.amount_total / 100 : 0;
     const amountTotal = pvpTotal > 0 ? `€${pvpTotal.toFixed(0)}` : "";
-    const customerName = session.customer_details?.name ?? "";
+    const depositPercent = session.metadata?.depositPercent ?? "";
+    const totalPriceEur = session.metadata?.totalPriceEur ?? "";
+    const balanceDue = depositPercent && totalPriceEur
+      ? `€${(parseFloat(totalPriceEur) - pvpTotal).toFixed(0)} due on pickup`
+      : "";
+    const customerName = session.customer_details?.name ?? session.metadata?.customerNameChat ?? "";
     const customerEmail = session.customer_details?.email ?? "";
-    const customerPhone = session.customer_details?.phone ?? "";
+    const customerPhone = session.customer_details?.phone ?? session.metadata?.customerPhoneChat ?? "";
+    const customerHotel = session.metadata?.customerHotel ?? "";
     const ref = session.id.slice(-8).toUpperCase();
 
     const commission = tourSlug ? getCommission(tourSlug, pvpTotal) : null;
@@ -66,13 +72,15 @@ export async function POST(req: NextRequest) {
       `🏷 ${tourName}`,
       bookingDate ? `📅 ${bookingDate}${bookingTime ? ` at ${bookingTime}` : ""}` : "",
       groupSize ? `👥 ${groupSize}` : "",
-      amountTotal ? `💰 ${amountTotal} paid` : "",
+      amountTotal ? `💰 ${amountTotal} paid${depositPercent ? ` (${depositPercent}% deposit)` : ""}` : "",
+      balanceDue ? `💶 ${balanceDue}` : "",
       commissionLine,
       meetingPoint ? `📍 ${meetingPoint}` : "",
       "",
       customerName ? `👤 ${customerName}` : "",
       customerEmail ? `✉️ ${customerEmail}` : "",
       customerPhone ? `📞 Client: ${customerPhone}` : "",
+      customerHotel ? `🏨 ${customerHotel}` : "",
       supplierPhone ? `📞 Call supplier to confirm: ${supplierPhone}` : "",
       "",
       `🔖 Ref: ${ref}`,

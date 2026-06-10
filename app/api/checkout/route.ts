@@ -12,15 +12,20 @@ function getStripe() {
 }
 
 function parseBookingText(bookingText: string) {
-  // Format: "Tour Name | 2 people | €180 | 15 June 2026 | 10:00" (time optional)
+  // Format: "Tour Name | 2 people | €180 | 15 June 2026 | 10:00 | Full Name | Phone | Email | Hotel/Address"
+  // Time is "-" when the tour has no fixed time slot.
   const parts = bookingText.split("|").map((s) => s.trim());
   const tourName = parts[0] ?? "Tenerife Experience";
   const groupSize = parts[1] ?? "";
   const priceStr = parts[2] ?? "€0";
   const bookingDate = parts[3] ?? "";
-  const bookingTime = parts[4] ?? "";
+  const bookingTime = parts[4] && parts[4] !== "-" ? parts[4] : "";
+  const customerName = parts[5] ?? "";
+  const customerPhone = parts[6] ?? "";
+  const customerEmail = parts[7] ?? "";
+  const customerHotel = parts[8] ?? "";
   const priceEur = parseFloat(priceStr.replace(/[^0-9.]/g, "")) || 0;
-  return { tourName, groupSize, priceEur, bookingDate, bookingTime };
+  return { tourName, groupSize, priceEur, bookingDate, bookingTime, customerName, customerPhone, customerEmail, customerHotel };
 }
 
 function findTourSlugByName(tourName: string): string | null {
@@ -54,7 +59,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Missing bookingText" }, { status: 400 });
     }
 
-    const { tourName, groupSize, priceEur, bookingDate, bookingTime } = parseBookingText(bookingText);
+    const { tourName, groupSize, priceEur, bookingDate, bookingTime, customerName, customerPhone, customerEmail, customerHotel } = parseBookingText(bookingText);
     const stripe = getStripe();
     const baseUrl = process.env.NEXT_PUBLIC_BASE_URL ?? "http://localhost:3000";
 
@@ -63,8 +68,16 @@ export async function POST(req: NextRequest) {
     const tour = slug ? getTourBySlug(slug) : null;
     const meetingPoint = tour?.meetingPoint ?? "";
 
+    // Some tours (e.g. car rentals) only take a deposit online, balance paid on pickup
+    const depositPercent = tour?.depositPercent;
+    const chargeEur = depositPercent ? Math.round(priceEur * depositPercent) / 100 : priceEur;
+    const depositNote = depositPercent
+      ? `Deposit (${depositPercent}% of €${priceEur}) — remaining ${100 - depositPercent}% paid on pickup`
+      : "";
+
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ["card"],
+      ...(customerEmail.includes("@") ? { customer_email: customerEmail } : {}),
       line_items: [
         {
           price_data: {
@@ -76,9 +89,10 @@ export async function POST(req: NextRequest) {
                 bookingDate,
                 bookingTime ? `Time: ${bookingTime}` : "",
                 meetingPoint ? `Pickup: ${meetingPoint}` : "",
+                depositNote,
               ].filter(Boolean).join(" · ") || "Tenerife experience via Tenerify.ai",
             },
-            unit_amount: Math.round(priceEur * 100),
+            unit_amount: Math.round(chargeEur * 100),
           },
           quantity: 1,
         },
@@ -96,6 +110,11 @@ export async function POST(req: NextRequest) {
         bookingTime,
         meetingPoint,
         tourSlug: slug ?? "",
+        depositPercent: depositPercent ? String(depositPercent) : "",
+        totalPriceEur: String(priceEur),
+        customerNameChat: customerName,
+        customerPhoneChat: customerPhone,
+        customerHotel,
       },
       payment_intent_data: {
         description: [
@@ -104,6 +123,7 @@ export async function POST(req: NextRequest) {
           bookingDate,
           bookingTime ? `at ${bookingTime}` : "",
           meetingPoint ? `📍 ${meetingPoint}` : "",
+          depositNote,
         ].filter(Boolean).join(" · "),
       },
     });

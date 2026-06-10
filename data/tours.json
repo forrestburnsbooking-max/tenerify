@@ -1,66 +1,5 @@
 [
   {
-    "slug": "airsoft",
-    "title": "Airsoft — Tenerife's largest Tactical Center",
-    "category": "adventure",
-    "duration": "3h",
-    "languages": [
-      "Deutsch",
-      "English",
-      "Español",
-      "Français",
-      "Italiano",
-      "Neerlandés",
-      "Rumano",
-      "Русский"
-    ],
-    "minAge": 8,
-    "pricing": [
-      {
-        "label": "Per person",
-        "price": 35
-      }
-    ],
-    "priceFrom": 35,
-    "description": "Airsoft is a risk-free sport for all the family , full of adrenaline and excitement. It is a game of strategy . You have to eleminate the opposing team by shooting them with small soft plastic balls. ・ The team at World Airsoft Tactical Center will explain how to use the guns, give you some strategies and tell you the rules, so that when you start the game you are a professional. ・ Come and enjoy an unforgettable experience in the largest Airsoft field in Tenerife!",
-    "faq": [
-      {
-        "question": "How will I receive my tickets?",
-        "answer": "After you complete your purchase, you will receive an order confirmation email within a few minutes. This email will contain all the details of your purchase, including the event, date, and number of tickets. Please note we do not send tickets by post."
-      },
-      {
-        "question": "Can I book an excursion within 24 hours of its start time?",
-        "answer": "Yes, it possible. Please contact us or visit our office"
-      },
-      {
-        "question": "Will I be picked up at my hotel when a transfer is possible?",
-        "answer": "And where is the meeting point The exact meeting point for your excursion will be specified in your booking confirmation email. If a transfer service is included with your booking, we offer convenient hotel pickup. The availability of this service will depend on your hotel’s location and the specific excursion."
-      },
-      {
-        "question": "May I pay directly in cash when the tour / activity starts?",
-        "answer": "We offer online purchases on the platform. If you wish to buy with cash you can visit our office."
-      },
-      {
-        "question": "Do you offer discounts?",
-        "answer": "We generally cannot give any discounts due to the very high demand. We offer discount for group bookings. Please contact us"
-      },
-      {
-        "question": "What happens if the weather is too bad to go on the excursion?",
-        "answer": "If the weather is too bad to go on the excursion, it will be rescheduled or you will receive a full refund."
-      },
-      {
-        "question": "May I purchase a gift voucher?",
-        "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
-      }
-    ],
-    "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/668c43e11f5c4ac445df8e24_foto-web-3.webp",
-    "url": "https://www.excursionstenerife.es/tours/airsoft",
-    "pvpPricing": {
-      "adult": 35
-    },
-    "netPricing": {}
-  },
-  {
     "slug": "diving-puerto-colon",
     "title": "Diving Atlantis school in Los Cristianos",
     "category": "adventure",
@@ -182,66 +121,6 @@
     },
     "netPricing": {},
     "bookingPhone": "638 531 863"
-  },
-  {
-    "slug": "guided-bike-tours",
-    "title": "Guided bike tours",
-    "category": "adventure",
-    "duration": "3h",
-    "languages": [
-      "Deutsch",
-      "English",
-      "Español",
-      "Français",
-      "Italiano",
-      "Neerlandés",
-      "Rumano",
-      "Русский"
-    ],
-    "pricing": [
-      {
-        "label": "Per person",
-        "price": 90
-      }
-    ],
-    "priceFrom": 90,
-    "description": "If you want to enjoy the nature of Tenerife and gain new experiences, we offer you a wide range of cycling tours for the whole family, as well as the possibility of renting electric mountain bikes or carbon bikes",
-    "faq": [
-      {
-        "question": "How will I receive my tickets?",
-        "answer": "After you complete your purchase, you will receive an order confirmation email within a few minutes. This email will contain all the details of your purchase, including the event, date, and number of tickets. Please note we do not send tickets by post."
-      },
-      {
-        "question": "Can I book an excursion within 24 hours of its start time?",
-        "answer": "Yes, it possible. Please contact us or visit our office"
-      },
-      {
-        "question": "Will I be picked up at my hotel when a transfer is possible?",
-        "answer": "And where is the meeting point The exact meeting point for your excursion will be specified in your booking confirmation email. If a transfer service is included with your booking, we offer convenient hotel pickup. The availability of this service will depend on your hotel’s location and the specific excursion."
-      },
-      {
-        "question": "May I pay directly in cash when the tour / activity starts?",
-        "answer": "We offer online purchases on the platform. If you wish to buy with cash you can visit our office."
-      },
-      {
-        "question": "Do you offer discounts?",
-        "answer": "We generally cannot give any discounts due to the very high demand. We offer discount for group bookings. Please contact us"
-      },
-      {
-        "question": "What happens if the weather is too bad to go on the excursion?",
-        "answer": "If the weather is too bad to go on the excursion, it will be rescheduled or you will receive a full refund."
-      },
-      {
-        "question": "May I purchase a gift voucher?",
-        "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
-      }
-    ],
-    "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/668d53486f4ced05a0b5359b_a4.webp",
-    "url": "https://www.excursionstenerife.es/tours/guided-bike-tours",
-    "pvpPricing": {
-      "adult": 90
-    },
-    "netPricing": {}
   },
   {
     "slug": "helidream-helicopter-tour",
@@ -2002,144 +1881,6 @@
     "bookingPhone": "699 508 232"
   },
   {
-    "slug": "submarine-safari-boat",
-    "title": "Submarine Safari — Real tourist submarine — 1 hour trip",
-    "category": "boat",
-    "duration": "1h",
-    "languages": [
-      "Deutsch",
-      "English",
-      "Español",
-      "Français",
-      "Italiano",
-      "Neerlandés",
-      "Rumano",
-      "Русский"
-    ],
-    "pricing": [
-      {
-        "label": "Adult",
-        "price": 57.95
-      },
-      {
-        "label": "Child",
-        "price": 35.15
-      }
-    ],
-    "priceFrom": 35,
-    "description": "Step on board one of the most sophisticated tourist submarines in the world for a dive beneath the waves which takes you to places previously explored only by experienced divers. ・Experience the sensation of a dive aboard the Submarine Safari, which will take you to the bottom of the sea in the vicinity of the Marina of San Miguel. The clarity of the waters and the marine life of the island of Tenerife make this dive a once-in-a-lifetime experience. ・On each trip, you will be accompanied by a gu",
-    "faq": [
-      {
-        "question": "How will I receive my tickets?",
-        "answer": "After you complete your purchase, you will receive an order confirmation email within a few minutes. This email will contain all the details of your purchase, including the event, date, and number of tickets. Please note we do not send tickets by post."
-      },
-      {
-        "question": "Can I book an excursion within 24 hours of its start time?",
-        "answer": "Yes, it possible. Please contact us or visit our office"
-      },
-      {
-        "question": "Will I be picked up at my hotel when a transfer is possible?",
-        "answer": "And where is the meeting point The exact meeting point for your excursion will be specified in your booking confirmation email. If a transfer service is included with your booking, we offer convenient hotel pickup. The availability of this service will depend on your hotel’s location and the specific excursion."
-      },
-      {
-        "question": "May I pay directly in cash when the tour / activity starts?",
-        "answer": "We offer online purchases on the platform. If you wish to buy with cash you can visit our office."
-      },
-      {
-        "question": "Do you offer discounts?",
-        "answer": "We generally cannot give any discounts due to the very high demand. We offer discount for group bookings. Please contact us"
-      },
-      {
-        "question": "What happens if the weather is too bad to go on the excursion?",
-        "answer": "If the weather is too bad to go on the excursion, it will be rescheduled or you will receive a full refund."
-      },
-      {
-        "question": "May I purchase a gift voucher?",
-        "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
-      }
-    ],
-    "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6681a100cb06d3d6d41cd8bd_1.SUB.webp",
-    "url": "https://www.excursionstenerife.es/tours/submarine-safari-boat",
-    "timeSlots": [
-      "10:00",
-      "11:00",
-      "12:00",
-      "13:00",
-      "14:00",
-      "15:00"
-    ],
-    "meetingPoint": "Amarilla Marina, San Miguel de Abona (Pontoon 2)",
-    "pvpPricing": {
-      "adult": 35
-    },
-    "netPricing": {}
-  },
-  {
-    "slug": "yate-sofia-fishing-tenerife",
-    "title": "Yacht Sofia fishing In Tenerife",
-    "category": "boat",
-    "duration": "3h",
-    "languages": [
-      "Deutsch",
-      "English",
-      "Español",
-      "Français",
-      "Italiano",
-      "Neerlandés",
-      "Rumano",
-      "Русский"
-    ],
-    "pricing": [
-      {
-        "label": "Per person",
-        "price": 50
-      }
-    ],
-    "priceFrom": 50,
-    "description": "Max capacity : 10 persons total ・ Includes crew (captain + possibly 1 assistant) ・ Typically allows 4–6 anglers to fish at once comfortably, while others can relax or rotate ‍ Striker 44 – a 44-foot sportfishing vessel with shaded seating, bathroom, and full fishing gear setup. If you’re booking a private charter, you can bring up to 10 guests. For shared charters, it’s usually 6–8 guests total for comfort. ・ Experience the freedom of boat fishing in the Atlantic Ocean and spend a wonderful day ",
-    "included": "・ Professional fishing gear & tackle",
-    "faq": [
-      {
-        "question": "How will I receive my tickets?",
-        "answer": "After you complete your purchase, you will receive an order confirmation email within a few minutes. This email will contain all the details of your purchase, including the event, date, and number of tickets. Please note we do not send tickets by post."
-      },
-      {
-        "question": "Can I book an excursion within 24 hours of its start time?",
-        "answer": "Yes, it possible. Please contact us or visit our office"
-      },
-      {
-        "question": "Will I be picked up at my hotel when a transfer is possible?",
-        "answer": "And where is the meeting point The exact meeting point for your excursion will be specified in your booking confirmation email. If a transfer service is included with your booking, we offer convenient hotel pickup. The availability of this service will depend on your hotel’s location and the specific excursion."
-      },
-      {
-        "question": "May I pay directly in cash when the tour / activity starts?",
-        "answer": "We offer online purchases on the platform. If you wish to buy with cash you can visit our office."
-      },
-      {
-        "question": "Do you offer discounts?",
-        "answer": "We generally cannot give any discounts due to the very high demand. We offer discount for group bookings. Please contact us"
-      },
-      {
-        "question": "What happens if the weather is too bad to go on the excursion?",
-        "answer": "If the weather is too bad to go on the excursion, it will be rescheduled or you will receive a full refund."
-      },
-      {
-        "question": "May I purchase a gift voucher?",
-        "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
-      }
-    ],
-    "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6894d68239fa3a2fde62645b_sofia-3.jpeg",
-    "url": "https://www.excursionstenerife.es/tours/yate-sofia-fishing-tenerife",
-    "timeSlots": [
-      "10:00"
-    ],
-    "meetingPoint": "Port of Los Cristianos",
-    "pvpPricing": {
-      "adult": 50
-    },
-    "netPricing": {}
-  },
-  {
     "slug": "2-hours-buggy-trip",
     "title": "Buggy — 2 hour trip with 20 minutes off road",
     "category": "buggy",
@@ -2546,70 +2287,6 @@
     "bookingPhone": "677 654 754"
   },
   {
-    "slug": "gran-canaria",
-    "title": "Gran Canaria island — 1 day bus + ferry tour",
-    "category": "excursion",
-    "duration": "3h",
-    "languages": [
-      "Deutsch",
-      "English",
-      "Español",
-      "Français",
-      "Italiano",
-      "Neerlandés",
-      "Rumano",
-      "Русский"
-    ],
-    "pricing": [
-      {
-        "label": "Per person",
-        "price": 130
-      }
-    ],
-    "priceFrom": 130,
-    "description": "We will travel by ferry from Tenerife to Gran Canaria in the most comfortable and fastest way with Fred Olsen Express. ・ Arriving at Puerto de las Nieves in Agaete , we will head straight to the historic quarter of Vegueta , where we will take a walking tour through its streets full of culture and history. ・ After exploring Vegueta, we'll head to the Poema del Mar aquarium in Las Palmas de Gran Canaria. This impressive theme park, which opened on 17 December 2017, will immerse us in the majesty ",
-    "faq": [
-      {
-        "question": "How will I receive my tickets?",
-        "answer": "After you complete your purchase, you will receive an order confirmation email within a few minutes. This email will contain all the details of your purchase, including the event, date, and number of tickets. Please note we do not send tickets by post."
-      },
-      {
-        "question": "Can I book an excursion within 24 hours of its start time?",
-        "answer": "Yes, it possible. Please contact us or visit our office"
-      },
-      {
-        "question": "Will I be picked up at my hotel when a transfer is possible?",
-        "answer": "And where is the meeting point The exact meeting point for your excursion will be specified in your booking confirmation email. If a transfer service is included with your booking, we offer convenient hotel pickup. The availability of this service will depend on your hotel’s location and the specific excursion."
-      },
-      {
-        "question": "May I pay directly in cash when the tour / activity starts?",
-        "answer": "We offer online purchases on the platform. If you wish to buy with cash you can visit our office."
-      },
-      {
-        "question": "Do you offer discounts?",
-        "answer": "We generally cannot give any discounts due to the very high demand. We offer discount for group bookings. Please contact us"
-      },
-      {
-        "question": "What happens if the weather is too bad to go on the excursion?",
-        "answer": "If the weather is too bad to go on the excursion, it will be rescheduled or you will receive a full refund."
-      },
-      {
-        "question": "May I purchase a gift voucher?",
-        "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
-      }
-    ],
-    "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6873ac89d38c7fe7428562ee_poema9.jpeg",
-    "url": "https://www.excursionstenerife.es/tours/gran-canaria",
-    "timeSlots": [
-      "08:30"
-    ],
-    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
-    "pvpPricing": {
-      "adult": 130
-    },
-    "netPricing": {}
-  },
-  {
     "slug": "island-tour-masca",
     "title": "Island bus Tour + Masca village",
     "category": "excursion",
@@ -2739,70 +2416,6 @@
     "pvpPricing": {
       "adult": 145,
       "child": 118
-    },
-    "netPricing": {}
-  },
-  {
-    "slug": "la-palma",
-    "title": "La Palma island  — 1 day bus tour with drinks, lunch, and professional guide",
-    "category": "excursion",
-    "duration": "15h",
-    "languages": [
-      "Deutsch",
-      "English",
-      "Español",
-      "Français",
-      "Italiano",
-      "Neerlandés",
-      "Rumano",
-      "Русский"
-    ],
-    "pricing": [
-      {
-        "label": "Per person",
-        "price": 160
-      }
-    ],
-    "priceFrom": 160,
-    "description": "The first stop will be in the capital of La Palma so that we can discover some of the most emblematic places such as: El Barco de la Virgen , a reproduction of the Santa Maria on board of which Christopher Columbus discovered America and was built in memory of the sailors from La Palma who set sail from here with sailing ships made from the wood of our mountains. Inside there is a naval museum with naval charts and reproductions of some of the ships made on the island. The Castle of Santa Catali",
-    "faq": [
-      {
-        "question": "How will I receive my tickets?",
-        "answer": "After you complete your purchase, you will receive an order confirmation email within a few minutes. This email will contain all the details of your purchase, including the event, date, and number of tickets. Please note we do not send tickets by post."
-      },
-      {
-        "question": "Can I book an excursion within 24 hours of its start time?",
-        "answer": "Yes, it possible. Please contact us or visit our office"
-      },
-      {
-        "question": "Will I be picked up at my hotel when a transfer is possible?",
-        "answer": "And where is the meeting point The exact meeting point for your excursion will be specified in your booking confirmation email. If a transfer service is included with your booking, we offer convenient hotel pickup. The availability of this service will depend on your hotel’s location and the specific excursion."
-      },
-      {
-        "question": "May I pay directly in cash when the tour / activity starts?",
-        "answer": "We offer online purchases on the platform. If you wish to buy with cash you can visit our office."
-      },
-      {
-        "question": "Do you offer discounts?",
-        "answer": "We generally cannot give any discounts due to the very high demand. We offer discount for group bookings. Please contact us"
-      },
-      {
-        "question": "What happens if the weather is too bad to go on the excursion?",
-        "answer": "If the weather is too bad to go on the excursion, it will be rescheduled or you will receive a full refund."
-      },
-      {
-        "question": "May I purchase a gift voucher?",
-        "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
-      }
-    ],
-    "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/667dbd271b373c736693f136_4.webp",
-    "url": "https://www.excursionstenerife.es/tours/la-palma",
-    "timeSlots": [
-      "08:30"
-    ],
-    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
-    "pvpPricing": {
-      "adult": 160
     },
     "netPricing": {}
   },
@@ -2945,70 +2558,6 @@
     },
     "netPricing": {},
     "bookingPhone": "677 654 754"
-  },
-  {
-    "slug": "puerto-cruz-tour",
-    "title": "Puerto de la Cruz — Round Trip from Tenerife South",
-    "category": "excursion",
-    "duration": "3h",
-    "languages": [
-      "Deutsch",
-      "English",
-      "Español",
-      "Français",
-      "Italiano",
-      "Neerlandés",
-      "Rumano",
-      "Русский"
-    ],
-    "pricing": [
-      {
-        "label": "Per person",
-        "price": 22
-      }
-    ],
-    "priceFrom": 22,
-    "description": "Discover the charming town of Puerto de la Cruz , located in the coastal area of the Orotava Valley in the north of Tenerife. You will have the whole day at your leisure to enjoy the pleasant atmosphere in this unique place by the ocean. ・ Despite its popularity with travellers who visit the island every year, Puerto de la Cruz has not lost its seaside charm. You can stroll through its beautiful streets and squares, such as Plaza del Charco or Muelle Viejo. Many believe that one of its most dist",
-    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
-    "faq": [
-      {
-        "question": "How will I receive my tickets?",
-        "answer": "After you complete your purchase, you will receive an order confirmation email within a few minutes. This email will contain all the details of your purchase, including the event, date, and number of tickets. Please note we do not send tickets by post."
-      },
-      {
-        "question": "Can I book an excursion within 24 hours of its start time?",
-        "answer": "Yes, it possible. Please contact us or visit our office"
-      },
-      {
-        "question": "Will I be picked up at my hotel when a transfer is possible?",
-        "answer": "And where is the meeting point The exact meeting point for your excursion will be specified in your booking confirmation email. If a transfer service is included with your booking, we offer convenient hotel pickup. The availability of this service will depend on your hotel’s location and the specific excursion."
-      },
-      {
-        "question": "May I pay directly in cash when the tour / activity starts?",
-        "answer": "We offer online purchases on the platform. If you wish to buy with cash you can visit our office."
-      },
-      {
-        "question": "Do you offer discounts?",
-        "answer": "We generally cannot give any discounts due to the very high demand. We offer discount for group bookings. Please contact us"
-      },
-      {
-        "question": "What happens if the weather is too bad to go on the excursion?",
-        "answer": "If the weather is too bad to go on the excursion, it will be rescheduled or you will receive a full refund."
-      },
-      {
-        "question": "May I purchase a gift voucher?",
-        "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
-      }
-    ],
-    "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/667c368cf039fe55173c9345_7.webp",
-    "url": "https://www.excursionstenerife.es/tours/puerto-cruz-tour",
-    "timeSlots": [
-      "08:30"
-    ],
-    "pvpPricing": {
-      "adult": 22
-    },
-    "netPricing": {}
   },
   {
     "slug": "santa-cruz--la-laguna--anaga",
@@ -4175,7 +3724,9 @@
     "pvpPricing": {
       "adult": 62
     },
-    "netPricing": {}
+    "netPricing": {},
+    "bookingPhone": "922 753 816",
+    "depositPercent": 30
   },
   {
     "slug": "citroen-cactus-automatic-car-rental",
@@ -4235,7 +3786,9 @@
     "pvpPricing": {
       "adult": 65
     },
-    "netPricing": {}
+    "netPricing": {},
+    "bookingPhone": "922 753 816",
+    "depositPercent": 30
   },
   {
     "slug": "citroen-grand-picasso-car-rental",
@@ -4295,7 +3848,9 @@
     "pvpPricing": {
       "adult": 100
     },
-    "netPricing": {}
+    "netPricing": {},
+    "bookingPhone": "922 753 816",
+    "depositPercent": 30
   },
   {
     "slug": "fiat-500-car-rental",
@@ -4355,7 +3910,9 @@
     "pvpPricing": {
       "adult": 45
     },
-    "netPricing": {}
+    "netPricing": {},
+    "bookingPhone": "922 753 816",
+    "depositPercent": 30
   },
   {
     "slug": "fiat-500-cabrio-car-rental",
@@ -4415,7 +3972,9 @@
     "pvpPricing": {
       "adult": 70
     },
-    "netPricing": {}
+    "netPricing": {},
+    "bookingPhone": "922 753 816",
+    "depositPercent": 30
   },
   {
     "slug": "fiat-panda-car-rental",
@@ -4475,7 +4034,9 @@
     "pvpPricing": {
       "adult": 40
     },
-    "netPricing": {}
+    "netPricing": {},
+    "bookingPhone": "922 753 816",
+    "depositPercent": 30
   },
   {
     "slug": "renault-captur-automatic-car-rental",
@@ -4535,7 +4096,9 @@
     "pvpPricing": {
       "adult": 65
     },
-    "netPricing": {}
+    "netPricing": {},
+    "bookingPhone": "922 753 816",
+    "depositPercent": 30
   },
   {
     "slug": "renault-trafic-car-rental",
@@ -4595,7 +4158,9 @@
     "pvpPricing": {
       "adult": 110
     },
-    "netPricing": {}
+    "netPricing": {},
+    "bookingPhone": "922 753 816",
+    "depositPercent": 30
   },
   {
     "slug": "single-mobility-scooter",
@@ -4715,7 +4280,9 @@
     "pvpPricing": {
       "adult": 52
     },
-    "netPricing": {}
+    "netPricing": {},
+    "bookingPhone": "922 753 816",
+    "depositPercent": 30
   },
   {
     "slug": "seat-leon-car-rental",
@@ -4775,7 +4342,9 @@
     "pvpPricing": {
       "adult": 65
     },
-    "netPricing": {}
+    "netPricing": {},
+    "bookingPhone": "922 753 816",
+    "depositPercent": 30
   },
   {
     "slug": "tuk-tuk",
@@ -4896,7 +4465,9 @@
     "pvpPricing": {
       "adult": 105
     },
-    "netPricing": {}
+    "netPricing": {},
+    "bookingPhone": "922 753 816",
+    "depositPercent": 30
   },
   {
     "slug": "vw-golf-car-rental",
@@ -4956,7 +4527,9 @@
     "pvpPricing": {
       "adult": 65
     },
-    "netPricing": {}
+    "netPricing": {},
+    "bookingPhone": "922 753 816",
+    "depositPercent": 30
   },
   {
     "slug": "vw-polo-car-rental",
@@ -5016,7 +4589,9 @@
     "pvpPricing": {
       "adult": 52
     },
-    "netPricing": {}
+    "netPricing": {},
+    "bookingPhone": "922 753 816",
+    "depositPercent": 30
   },
   {
     "slug": "vw-polo-automatic-car-rental",
@@ -5076,7 +4651,9 @@
     "pvpPricing": {
       "adult": 60
     },
-    "netPricing": {}
+    "netPricing": {},
+    "bookingPhone": "922 753 816",
+    "depositPercent": 30
   },
   {
     "slug": "ole-flamenco-show",
@@ -5602,9 +5179,9 @@
     "bookingPhone": "690 126 477"
   },
   {
-    "slug": "spa-aqua-club-termal",
-    "title": "Spa Aquaclub Termal — entrance tickets",
-    "category": "wellness",
+    "slug": "seat-leon-st-automatic-car-rental",
+    "title": "Seat Leon ST — Car Rental (Automatic)",
+    "category": "rental",
     "duration": "3h",
     "languages": [
       "Deutsch",
@@ -5619,11 +5196,11 @@
     "pricing": [
       {
         "label": "Per person",
-        "price": 13
+        "price": 70
       }
     ],
-    "priceFrom": 13,
-    "description": "Aqua Club Thermal opens up a world of relaxation and well-being for you. ・ This spacious club of over 6,000 square metres is one of the best relaxation centres in Europe. The spa and thermal baths feature a large pool with approximately 300 water jets, where you can relax and indulge in a complete thermal cycle. ・ Also relax in the hands of our highly qualified therapists by choosing one of our massages: aloe vera massage, hot stone massage, Thai bamboo stick massage or a combination with Chines",
+    "priceFrom": 70,
+    "description": "Our company is based in Tenerife and has many years of experience in the car rental industry. ・ The Seat Leon ST is a spacious automatic estate car, perfect for families or groups with extra luggage. ・ Our staff are experts in car rentals throughout the island and are ready to adapt services to the needs of our customers",
     "faq": [
       {
         "question": "How will I receive my tickets?",
@@ -5654,11 +5231,73 @@
         "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
       }
     ],
-    "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6685b71cfac38a4dc8f4417f_c.webp",
-    "url": "https://www.excursionstenerife.es/tours/spa-aqua-club-termal",
+    "url": "https://aliscar.com/",
     "pvpPricing": {
-      "adult": 13
+      "adult": 70
     },
-    "netPricing": {}
+    "netPricing": {},
+    "bookingPhone": "922 753 816",
+    "depositPercent": 30
+  },
+  {
+    "slug": "opel-zafira-7-seater-car-rental",
+    "title": "Opel Zafira 7-Seater — Car Rental (Automatic)",
+    "category": "rental",
+    "duration": "3h",
+    "languages": [
+      "Deutsch",
+      "English",
+      "Español",
+      "Français",
+      "Italiano",
+      "Neerlandés",
+      "Rumano",
+      "Русский"
+    ],
+    "pricing": [
+      {
+        "label": "Per person",
+        "price": 110
+      }
+    ],
+    "priceFrom": 110,
+    "description": "Our company is based in Tenerife and has many years of experience in the car rental industry. ・ The Opel Zafira is a 7-seater automatic, ideal for big families or groups of friends who want to travel together. ・ Our staff are experts in car rentals throughout the island and are ready to adapt services to the needs of our customers",
+    "faq": [
+      {
+        "question": "How will I receive my tickets?",
+        "answer": "After you complete your purchase, you will receive an order confirmation email within a few minutes. This email will contain all the details of your purchase, including the event, date, and number of tickets. Please note we do not send tickets by post."
+      },
+      {
+        "question": "Can I book an excursion within 24 hours of its start time?",
+        "answer": "Yes, it possible. Please contact us or visit our office"
+      },
+      {
+        "question": "Will I be picked up at my hotel when a transfer is possible?",
+        "answer": "And where is the meeting point The exact meeting point for your excursion will be specified in your booking confirmation email. If a transfer service is included with your booking, we offer convenient hotel pickup. The availability of this service will depend on your hotel’s location and the specific excursion."
+      },
+      {
+        "question": "May I pay directly in cash when the tour / activity starts?",
+        "answer": "We offer online purchases on the platform. If you wish to buy with cash you can visit our office."
+      },
+      {
+        "question": "Do you offer discounts?",
+        "answer": "We generally cannot give any discounts due to the very high demand. We offer discount for group bookings. Please contact us"
+      },
+      {
+        "question": "What happens if the weather is too bad to go on the excursion?",
+        "answer": "If the weather is too bad to go on the excursion, it will be rescheduled or you will receive a full refund."
+      },
+      {
+        "question": "May I purchase a gift voucher?",
+        "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
+      }
+    ],
+    "url": "https://aliscar.com/",
+    "pvpPricing": {
+      "adult": 110
+    },
+    "netPricing": {},
+    "bookingPhone": "922 753 816",
+    "depositPercent": 30
   }
 ]
