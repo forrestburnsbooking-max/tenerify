@@ -174,101 +174,99 @@ const UI_STRINGS: Record<string, {
   nextButton: string;
   whoLabels: { family: string; couple: string; solo: string; friends: string };
   catLabels: { water: string; buggy: string; tours: string; parks: string; shows: string; adventure: string };
-  menuLabels: { book: string; route: string; ask: string; restaurant: string; legend: string };
+  menuLabels: { book: string; route: string; restaurant: string; legend: string };
 }> = {
   es: {
-    intro: "¡Hola! Soy Tenerify 🌋 — tu amigo local de IA en Tenerife. Creado por un guía local, un vendedor de tours y un entusiasta de la IA. Conozco lo que hay en internet *y* lo que solo saben los locales.\n\n**Esto es lo que puedo hacer:**\n- 📅 Encontrar y reservar las mejores actividades de la isla\n- 🗺️ Planificar tu ruta perfecta\n- 💡 Responder cualquier duda sobre Tenerife\n- 🍽️ Recomendarte un restaurante\n- 🏴‍☠️ Contarte una leyenda o historia de la isla\n\n¿Qué te apetece hoy?",
+    intro: "¡Hola! Soy Tenerify 🌋 — tu amigo local de IA en Tenerife. Creado por un guía local, un vendedor de tours y un entusiasta de la IA. Conozco lo que hay en internet *y* lo que solo saben los locales.\n\n**Esto es lo que puedo hacer:**\n- 📅 Encontrar y reservar las mejores actividades de la isla\n- 🗺️ Planificar tu ruta perfecta\n- 🍽️ Recomendarte un restaurante\n- 🏴‍☠️ Contarte una leyenda o historia de la isla\n\n¿Qué te apetece hoy?",
     whoQuestion: "¡Buenas! ¿Quién viene a Tenerife? 🌊",
     categoryQuestion: "¿Qué te apetece? Elige lo que te interese 👇",
     locationQuestion: "¿En qué zona te alojas? 📍",
     nextButton: "Siguiente →",
     whoLabels: { family: "👨‍👩‍👧 Familia", couple: "💑 Pareja", solo: "🧑 Solo", friends: "👥 Amigos" },
     catLabels: { water: "Agua y Barcos", buggy: "Buggy y Quad", tours: "Tours", parks: "Parques", shows: "Shows y Cenas", adventure: "Aventura" },
-    menuLabels: { book: "📅 Reservar actividades", route: "🗺️ Planificar una ruta", ask: "💡 Hacer una pregunta", restaurant: "🍽️ Recomendar restaurante", legend: "🏴‍☠️ Contar una leyenda" },
+    menuLabels: { book: "📅 Reservar actividades", route: "🗺️ Planificar una ruta", restaurant: "🍽️ Recomendar restaurante", legend: "🏴‍☠️ Contar una leyenda" },
   },
   en: {
-    intro: "Hey! I'm Tenerify 🌋 — your local AI friend from Tenerife. Built by a local guide, a tour seller & an AI enthusiast. I know what's online *and* what only locals know.\n\n**Here's what I can do:**\n- 📅 Find & book the best activities on the island\n- 🗺️ Plan your perfect route\n- 💡 Answer anything about Tenerife\n- 🍽️ Recommend a restaurant\n- 🏴‍☠️ Tell you a legend or story about the island\n\nWhat would you like today?",
+    intro: "Hey! I'm Tenerify 🌋 — your local AI friend from Tenerife. Built by a local guide, a tour seller & an AI enthusiast. I know what's online *and* what only locals know.\n\n**Here's what I can do:**\n- 📅 Find & book the best activities on the island\n- 🗺️ Plan your perfect route\n- 🍽️ Recommend a restaurant\n- 🏴‍☠️ Tell you a legend or story about the island\n\nWhat would you like today?",
     whoQuestion: "¡Buenas! Who's coming to Tenerife? 🌊",
     categoryQuestion: "What are you looking for? Pick all that interest you 👇",
     locationQuestion: "Which area are you staying in? 📍",
     nextButton: "Next →",
     whoLabels: { family: "👨‍👩‍👧 Family", couple: "💑 Couple", solo: "🧑 Solo", friends: "👥 Friends" },
     catLabels: { water: "Water & Boats", buggy: "Buggy & Quad", tours: "Island Tours", parks: "Theme Parks", shows: "Shows & Dinners", adventure: "Adventure" },
-    menuLabels: { book: "📅 Find & book activities", route: "🗺️ Plan a route", ask: "💡 Ask a question", restaurant: "🍽️ Recommend a restaurant", legend: "🏴‍☠️ Tell me a legend" },
+    menuLabels: { book: "📅 Find & book activities", route: "🗺️ Plan a route", restaurant: "🍽️ Recommend a restaurant", legend: "🏴‍☠️ Tell me a legend" },
   },
   de: {
-    intro: "Hey! Ich bin Tenerify 🌋 — dein lokaler KI-Freund aus Teneriffa. Erstellt von einem lokalen Guide, Touren-Verkäufer & KI-Enthusiasten. Ich kenne, was online steht *und* was nur Einheimische wissen.\n\n**Das kann ich für euch tun:**\n- 📅 Die besten Aktivitäten der Insel finden & buchen\n- 🗺️ Eure perfekte Route planen\n- 💡 Alles über Teneriffa beantworten\n- 🍽️ Ein Restaurant empfehlen\n- 🏴‍☠️ Eine Legende oder Geschichte der Insel erzählen\n\nWorauf habt ihr heute Lust?",
+    intro: "Hey! Ich bin Tenerify 🌋 — dein lokaler KI-Freund aus Teneriffa. Erstellt von einem lokalen Guide, Touren-Verkäufer & KI-Enthusiasten. Ich kenne, was online steht *und* was nur Einheimische wissen.\n\n**Das kann ich für euch tun:**\n- 📅 Die besten Aktivitäten der Insel finden & buchen\n- 🗺️ Eure perfekte Route planen\n- 🍽️ Ein Restaurant empfehlen\n- 🏴‍☠️ Eine Legende oder Geschichte der Insel erzählen\n\nWorauf habt ihr heute Lust?",
     whoQuestion: "Hallo! Wer kommt nach Teneriffa? 🌊",
     categoryQuestion: "Was sucht ihr? Wählt alles aus 👇",
     locationQuestion: "In welcher Gegend übernachtet ihr? 📍",
     nextButton: "Weiter →",
     whoLabels: { family: "👨‍👩‍👧 Familie", couple: "💑 Paar", solo: "🧑 Alleine", friends: "👥 Freunde" },
     catLabels: { water: "Wasser & Boote", buggy: "Buggy & Quad", tours: "Insel-Touren", parks: "Freizeitparks", shows: "Shows & Dinner", adventure: "Abenteuer" },
-    menuLabels: { book: "📅 Aktivitäten finden & buchen", route: "🗺️ Route planen", ask: "💡 Frage stellen", restaurant: "🍽️ Restaurant empfehlen", legend: "🏴‍☠️ Legende erzählen" },
+    menuLabels: { book: "📅 Aktivitäten finden & buchen", route: "🗺️ Route planen", restaurant: "🍽️ Restaurant empfehlen", legend: "🏴‍☠️ Legende erzählen" },
   },
   ru: {
-    intro: "Привет! Я Tenerify 🌋 — твой местный AI-друг с Тенерифе. Создан местным гидом, продавцом туров и AI-энтузиастом. Знаю и то, что есть в интернете, и то, о чём знают только местные.\n\n**Что я умею:**\n- 📅 Найти и забронировать лучшие активности на острове\n- 🗺️ Спланировать идеальный маршрут\n- 💡 Ответить на любой вопрос о Тенерифе\n- 🍽️ Порекомендовать ресторан\n- 🏴‍☠️ Рассказать легенду или историю про остров\n\nЧто бы ты хотел сегодня?",
+    intro: "Привет! Я Tenerify 🌋 — твой местный AI-друг с Тенерифе. Создан местным гидом, продавцом туров и AI-энтузиастом. Знаю и то, что есть в интернете, и то, о чём знают только местные.\n\n**Что я умею:**\n- 📅 Найти и забронировать лучшие активности на острове\n- 🗺️ Спланировать идеальный маршрут\n- 🍽️ Порекомендовать ресторан\n- 🏴‍☠️ Рассказать легенду или историю про остров\n\nЧто бы ты хотел сегодня?",
     whoQuestion: "Привет! Кто едет на Тенерифе? 🌊",
     categoryQuestion: "Что вас интересует? Выбери всё нужное 👇",
     locationQuestion: "В каком районе вы остановились? 📍",
     nextButton: "Далее →",
     whoLabels: { family: "👨‍👩‍👧 Семья", couple: "💑 Пара", solo: "🧑 Один", friends: "👥 Друзья" },
     catLabels: { water: "Вода и лодки", buggy: "Багги и квад", tours: "Экскурсии", parks: "Парки", shows: "Шоу и ужины", adventure: "Приключения" },
-    menuLabels: { book: "📅 Найти и забронировать", route: "🗺️ Спланировать маршрут", ask: "💡 Задать вопрос", restaurant: "🍽️ Порекомендовать ресторан", legend: "🏴‍☠️ Рассказать легенду" },
+    menuLabels: { book: "📅 Найти и забронировать", route: "🗺️ Спланировать маршрут", restaurant: "🍽️ Порекомендовать ресторан", legend: "🏴‍☠️ Рассказать легенду" },
   },
   pl: {
-    intro: "Hej! Jestem Tenerify 🌋 — twój lokalny przyjaciel AI z Teneryfy. Stworzony przez lokalnego przewodnika, sprzedawcę wycieczek i entuzjastę AI. Znam to, co jest w internecie *i* to, co wiedzą tylko miejscowi.\n\n**Oto co mogę zrobić:**\n- 📅 Znaleźć i zarezerwować najlepsze atrakcje na wyspie\n- 🗺️ Zaplanować idealną trasę\n- 💡 Odpowiedzieć na każde pytanie o Teneryfie\n- 🍽️ Polecić restaurację\n- 🏴‍☠️ Opowiedzieć legendę lub historię wyspy\n\nNa co masz dziś ochotę?",
+    intro: "Hej! Jestem Tenerify 🌋 — twój lokalny przyjaciel AI z Teneryfy. Stworzony przez lokalnego przewodnika, sprzedawcę wycieczek i entuzjastę AI. Znam to, co jest w internecie *i* to, co wiedzą tylko miejscowi.\n\n**Oto co mogę zrobić:**\n- 📅 Znaleźć i zarezerwować najlepsze atrakcje na wyspie\n- 🗺️ Zaplanować idealną trasę\n- 🍽️ Polecić restaurację\n- 🏴‍☠️ Opowiedzieć legendę lub historię wyspy\n\nNa co masz dziś ochotę?",
     whoQuestion: "Hej! Kto jedzie na Teneryfę? 🌊",
     categoryQuestion: "Czego szukasz? Wybierz wszystko 👇",
     locationQuestion: "W której okolicy mieszkasz? 📍",
     nextButton: "Dalej →",
     whoLabels: { family: "👨‍👩‍👧 Rodzina", couple: "💑 Para", solo: "🧑 Solo", friends: "👥 Znajomi" },
     catLabels: { water: "Woda i łodzie", buggy: "Buggy i Quad", tours: "Wycieczki", parks: "Parki rozrywki", shows: "Pokazy i kolacje", adventure: "Przygoda" },
-    menuLabels: { book: "📅 Znajdź i zarezerwuj", route: "🗺️ Zaplanuj trasę", ask: "💡 Zadaj pytanie", restaurant: "🍽️ Poleć restaurację", legend: "🏴‍☠️ Opowiedz legendę" },
+    menuLabels: { book: "📅 Znajdź i zarezerwuj", route: "🗺️ Zaplanuj trasę", restaurant: "🍽️ Poleć restaurację", legend: "🏴‍☠️ Opowiedz legendę" },
   },
   fr: {
-    intro: "Salut! Je suis Tenerify 🌋 — ton ami local IA de Tenerife. Créé par un guide local, un vendeur de tours & un passionné d'IA. Je connais ce qui est en ligne *et* ce que seuls les locaux savent.\n\n**Voici ce que je peux faire:**\n- 📅 Trouver et réserver les meilleures activités de l'île\n- 🗺️ Planifier ton itinéraire parfait\n- 💡 Répondre à toutes tes questions sur Tenerife\n- 🍽️ Te recommander un restaurant\n- 🏴‍☠️ Te raconter une légende ou une histoire de l'île\n\nQu'est-ce qui te ferait plaisir aujourd'hui?",
+    intro: "Salut! Je suis Tenerify 🌋 — ton ami local IA de Tenerife. Créé par un guide local, un vendeur de tours & un passionné d'IA. Je connais ce qui est en ligne *et* ce que seuls les locaux savent.\n\n**Voici ce que je peux faire:**\n- 📅 Trouver et réserver les meilleures activités de l'île\n- 🗺️ Planifier ton itinéraire parfait\n- 🍽️ Te recommander un restaurant\n- 🏴‍☠️ Te raconter une légende ou une histoire de l'île\n\nQu'est-ce qui te ferait plaisir aujourd'hui?",
     whoQuestion: "Salut! Qui vient à Tenerife? 🌊",
     categoryQuestion: "Qu'est-ce qui vous intéresse? Choisissez tout 👇",
     locationQuestion: "Dans quelle zone logez-vous? 📍",
     nextButton: "Suivant →",
     whoLabels: { family: "👨‍👩‍👧 Famille", couple: "💑 Couple", solo: "🧑 Seul(e)", friends: "👥 Amis" },
     catLabels: { water: "Eau & Bateaux", buggy: "Buggy & Quad", tours: "Tours de l'île", parks: "Parcs", shows: "Shows & Dîners", adventure: "Aventure" },
-    menuLabels: { book: "📅 Trouver et réserver", route: "🗺️ Planifier un itinéraire", ask: "💡 Poser une question", restaurant: "🍽️ Recommander un restaurant", legend: "🏴‍☠️ Raconter une légende" },
+    menuLabels: { book: "📅 Trouver et réserver", route: "🗺️ Planifier un itinéraire", restaurant: "🍽️ Recommander un restaurant", legend: "🏴‍☠️ Raconter une légende" },
   },
   it: {
-    intro: "Ciao! Sono Tenerify 🌋 — il tuo amico AI locale di Tenerife. Creato da una guida locale, un venditore di tour e un appassionato di AI. Conosco ciò che c'è online *e* ciò che sanno solo i locali.\n\n**Ecco cosa posso fare:**\n- 📅 Trovare e prenotare le migliori attività dell'isola\n- 🗺️ Pianificare il tuo itinerario perfetto\n- 💡 Rispondere a qualsiasi domanda su Tenerife\n- 🍽️ Consigliarti un ristorante\n- 🏴‍☠️ Raccontarti una leggenda o una storia dell'isola\n\nCosa ti va di fare oggi?",
+    intro: "Ciao! Sono Tenerify 🌋 — il tuo amico AI locale di Tenerife. Creato da una guida locale, un venditore di tour e un appassionato di AI. Conosco ciò che c'è online *e* ciò che sanno solo i locali.\n\n**Ecco cosa posso fare:**\n- 📅 Trovare e prenotare le migliori attività dell'isola\n- 🗺️ Pianificare il tuo itinerario perfetto\n- 🍽️ Consigliarti un ristorante\n- 🏴‍☠️ Raccontarti una leggenda o una storia dell'isola\n\nCosa ti va di fare oggi?",
     whoQuestion: "Ciao! Chi viene a Tenerife? 🌊",
     categoryQuestion: "Cosa cercate? Selezionate tutto 👇",
     locationQuestion: "In quale zona alloggiate? 📍",
     nextButton: "Avanti →",
     whoLabels: { family: "👨‍👩‍👧 Famiglia", couple: "💑 Coppia", solo: "🧑 Solo", friends: "👥 Amici" },
     catLabels: { water: "Acqua e Barche", buggy: "Buggy & Quad", tours: "Tour dell'isola", parks: "Parchi tematici", shows: "Show e Cene", adventure: "Avventura" },
-    menuLabels: { book: "📅 Trova e prenota", route: "🗺️ Pianifica un itinerario", ask: "💡 Fai una domanda", restaurant: "🍽️ Consiglia un ristorante", legend: "🏴‍☠️ Raccontami una leggenda" },
+    menuLabels: { book: "📅 Trova e prenota", route: "🗺️ Pianifica un itinerario", restaurant: "🍽️ Consiglia un ristorante", legend: "🏴‍☠️ Raccontami una leggenda" },
   },
   nl: {
-    intro: "Hallo! Ik ben Tenerify 🌋 — je lokale AI-vriend van Tenerife. Gemaakt door een lokale gids, tourverkoper & AI-liefhebber. Ik ken wat online staat *én* wat alleen locals weten.\n\n**Dit kan ik voor je doen:**\n- 📅 De beste activiteiten op het eiland vinden & boeken\n- 🗺️ Jouw perfecte route plannen\n- 💡 Alles over Tenerife beantwoorden\n- 🍽️ Een restaurant aanbevelen\n- 🏴‍☠️ Een legende of verhaal van het eiland vertellen\n\nWaar heb je vandaag zin in?",
+    intro: "Hallo! Ik ben Tenerify 🌋 — je lokale AI-vriend van Tenerife. Gemaakt door een lokale gids, tourverkoper & AI-liefhebber. Ik ken wat online staat *én* wat alleen locals weten.\n\n**Dit kan ik voor je doen:**\n- 📅 De beste activiteiten op het eiland vinden & boeken\n- 🗺️ Jouw perfecte route plannen\n- 🍽️ Een restaurant aanbevelen\n- 🏴‍☠️ Een legende of verhaal van het eiland vertellen\n\nWaar heb je vandaag zin in?",
     whoQuestion: "Hallo! Wie komt naar Tenerife? 🌊",
     categoryQuestion: "Wat zoeken jullie? Kies alles wat jullie interesseert 👇",
     locationQuestion: "In welk gebied verblijven jullie? 📍",
     nextButton: "Volgende →",
     whoLabels: { family: "👨‍👩‍👧 Familie", couple: "💑 Stel", solo: "🧑 Solo", friends: "👥 Vrienden" },
     catLabels: { water: "Water & Boten", buggy: "Buggy & Quad", tours: "Eilandtours", parks: "Pretparken", shows: "Shows & Diners", adventure: "Avontuur" },
-    menuLabels: { book: "📅 Activiteiten vinden & boeken", route: "🗺️ Route plannen", ask: "💡 Een vraag stellen", restaurant: "🍽️ Restaurant aanbevelen", legend: "🏴‍☠️ Vertel een legende" },
+    menuLabels: { book: "📅 Activiteiten vinden & boeken", route: "🗺️ Route plannen", restaurant: "🍽️ Restaurant aanbevelen", legend: "🏴‍☠️ Vertel een legende" },
   },
 };
 
-const MENU_OPTIONS: { id: "book" | "route" | "ask" | "restaurant" | "legend" }[] = [
+const MENU_OPTIONS: { id: "book" | "route" | "restaurant" | "legend" }[] = [
   { id: "book" },
   { id: "route" },
-  { id: "ask" },
   { id: "restaurant" },
   { id: "legend" },
 ];
 
-const MENU_MESSAGES: Record<"route" | "ask" | "restaurant" | "legend", string> = {
+const MENU_MESSAGES: Record<"route" | "restaurant" | "legend", string> = {
   route: "I'd like to plan a self-drive route around Tenerife. Suggest one and tell me about it.",
-  ask: "I have a question about Tenerife.",
   restaurant: "Recommend a good restaurant in Tenerife.",
   legend: "Tell me a legend or story about Tenerife.",
 };
@@ -336,7 +334,7 @@ export default function Home() {
     setStep("menu");
   }
 
-  async function handleMenuOption(id: "book" | "route" | "ask" | "restaurant" | "legend") {
+  async function handleMenuOption(id: "book" | "route" | "restaurant" | "legend") {
     setMenuChoice(id);
     if (id === "book") {
       setStep("who");

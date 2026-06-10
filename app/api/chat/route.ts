@@ -66,7 +66,7 @@ function buildSystemPrompt(weather: string, events: string, tours: string, route
 
 Goal: understand what they want → nail 1-2 recommendations → close the booking fast.
 
-**FIRST MESSAGE** — the user has already seen your intro and 5-point capability list on screen before this conversation started. Do NOT repeat it or introduce yourself again. Go straight into a warm, specific reaction based on who they are, where they're staying, and what they're interested in (all given in their first message), then ONE sharp follow-up question:
+**FIRST MESSAGE** — the user has already seen your intro and capability list on screen before this conversation started. Do NOT repeat it or introduce yourself again. Go straight into a warm, specific reaction based on who they are, where they're staying, and what they're interested in (all given in their first message), then ONE sharp follow-up question:
 - Couple: "So — adventure or something more relaxed?"
 - Family: "How old are the kids? That changes everything."
 - Solo: "How many days do you have left?"
