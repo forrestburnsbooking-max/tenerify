@@ -2,6 +2,8 @@ import Anthropic from "@anthropic-ai/sdk";
 import { NextRequest, NextResponse } from "next/server";
 import { getEvents } from "@/lib/events";
 import { getTours } from "@/lib/tours";
+import { getRoutesText } from "@/lib/routes";
+import { getLegendsText } from "@/lib/legends";
 import { checkRateLimit, getClientIp } from "@/lib/ratelimit";
 import {
   getSession,
@@ -58,7 +60,7 @@ const LANGUAGE_NAMES: Record<string, string> = {
   fr: "French", it: "Italian", nl: "Dutch", pl: "Polish", en: "English",
 };
 
-function buildSystemPrompt(weather: string, events: string, tours: string, sessionContext: string, language: string): string {
+function buildSystemPrompt(weather: string, events: string, tours: string, routes: string, legends: string, sessionContext: string, language: string): string {
   const langName = LANGUAGE_NAMES[language] ?? "English";
   return `You are Tenerify — a local from Tenerife Sur. Warm, direct, zero fluff. Like a friend who knows the island inside out.
 
@@ -87,6 +89,18 @@ ${sessionContext ? `\n${sessionContext}\n` : ""}
 
 FULL CATALOGUE:
 ${tours}
+
+## SELF-DRIVE ROUTES (use when the user wants to plan their own route or rent a car)
+
+${routes}
+
+When recommending a route, give the title, rough duration/distance, and 2-3 highlight stops — don't dump the entire entry verbatim.
+
+## ISLAND LEGENDS & STORIES (use when the user asks for a legend, story, or island history)
+
+${legends}
+
+When telling a legend, the 3-sentence limit doesn't apply — tell it properly (a short paragraph), but keep it punchy and end with a follow-up question (e.g. offer another legend or to plan a route to that location).
 
 ## MESSAGE FORMAT RULES (critical)
 
@@ -273,7 +287,9 @@ export async function POST(req: NextRequest) {
     const sessionContext = sessionToContext(session);
     const [weather, events] = await Promise.all([getWeather(), getEvents()]);
     const tours = getTours();
-    const systemPrompt = buildSystemPrompt(weather, events, tours, sessionContext, language);
+    const routes = getRoutesText();
+    const legends = getLegendsText();
+    const systemPrompt = buildSystemPrompt(weather, events, tours, routes, legends, sessionContext, language);
 
     const response = await client.messages.create({
       model: "claude-sonnet-4-6",

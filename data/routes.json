@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "teide-masca-loop",
+    "title": "Mount Teide & Masca Loop",
+    "duration": "Full day (7-8h)",
+    "distance": "~180 km round trip",
+    "difficulty": "Moderate — winding mountain roads, some hairpin bends",
+    "startArea": "Costa Adeje / Los Cristianos / Las Americas",
+    "description": "The classic Tenerife road trip: from the south coast up through pine forests into Mount Teide National Park, then down the dramatic TF-436 to the cliffside village of Masca.",
+    "stops": [
+      { "name": "Vilaflor", "description": "Highest village in Tenerife, surrounded by pine forest. Good coffee stop." },
+      { "name": "Mount Teide National Park", "description": "Lunar landscapes around Spain's highest peak (3,715m). Stop at Roques de García viewpoint.", "tip": "Cable car needs good weather and gets busy — go early or book ahead." },
+      { "name": "Masca village", "description": "Tiny village clinging to a ravine, once a hideout for pirates and smugglers. Spectacular viewpoint on the descent." },
+      { "name": "Los Gigantes", "description": "Towering cliffs dropping into the Atlantic — great spot for sunset on the way back." }
+    ],
+    "highlights": ["Volcanic landscapes", "Mirador de Masca viewpoint", "Pine forest switchbacks", "Sunset over Los Gigantes cliffs"]
+  },
+  {
+    "slug": "south-coast-sunset-drive",
+    "title": "South Coast Sunset Drive",
+    "duration": "Half day (3-4h)",
+    "distance": "~70 km round trip",
+    "difficulty": "Easy — mostly coastal roads",
+    "startArea": "Los Cristianos / Las Americas / Costa Adeje",
+    "description": "A relaxed coastal cruise west along the TF-1 and TF-454, ending with one of the best sunsets on the island at Los Gigantes cliffs.",
+    "stops": [
+      { "name": "Playa de la Arena", "description": "Black sand beach near Puerto de Santiago, popular with locals." },
+      { "name": "Puerto de Santiago", "description": "Quiet fishing-village vibe with good seafood restaurants on the harbour." },
+      { "name": "Los Gigantes", "description": "800m sea cliffs — walk the marina promenade for the best views, especially at golden hour." },
+      { "name": "Acantilado de Guaza viewpoint (return)", "description": "Quick stop on the way back for a panoramic view over Las Americas and the coastline." }
+    ],
+    "highlights": ["Black sand beaches", "Fresh seafood", "Los Gigantes cliffs at sunset", "Coastal photo stops"]
+  },
+  {
+    "slug": "anaga-rainforest-loop",
+    "title": "Anaga Rainforest & La Laguna",
+    "duration": "Full day (8h+)",
+    "distance": "~220 km round trip from the south",
+    "difficulty": "Moderate-hard — long drive, narrow forest roads",
+    "startArea": "Costa Adeje / Los Cristianos / Las Americas",
+    "description": "A trip to the opposite end of the island: ancient laurel-forest mountains in the Anaga Rural Park, plus the UNESCO-listed colonial old town of La Laguna.",
+    "stops": [
+      { "name": "San Cristóbal de La Laguna", "description": "Tenerife's old capital — colourful colonial streets, UNESCO World Heritage centre." },
+      { "name": "Cruz del Carmen viewpoint", "description": "Gateway to Anaga, with sweeping views over the laurisilva (laurel) cloud forest." },
+      { "name": "Taganana", "description": "Remote village on the north coast with dramatic sea views and a famous rural church." },
+      { "name": "Playa de Benijo", "description": "Wild black-sand beach backed by jagged sea stacks — one of the island's most photographed spots." }
+    ],
+    "highlights": ["Ancient laurel cloud forest", "UNESCO old town", "Wild north-coast beaches", "Far fewer tourists than the south"]
+  }
+]
