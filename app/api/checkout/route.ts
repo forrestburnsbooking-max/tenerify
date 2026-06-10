@@ -125,6 +125,16 @@ export async function POST(req: NextRequest) {
           meetingPoint ? `📍 ${meetingPoint}` : "",
           depositNote,
         ].filter(Boolean).join(" · "),
+        metadata: {
+          tourName,
+          groupSize,
+          bookingDate,
+          bookingTime,
+          customerName,
+          customerPhone,
+          customerEmail,
+          customerHotel,
+        },
       },
     });
 
