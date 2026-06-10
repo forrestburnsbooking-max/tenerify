@@ -39,6 +39,24 @@ async function getWeather(): Promise<string> {
   }
 }
 
+function getCurrentDateTime(): string {
+  const now = new Date();
+  const date = new Intl.DateTimeFormat("en-GB", {
+    timeZone: "Atlantic/Canary",
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  }).format(now);
+  const time = new Intl.DateTimeFormat("en-GB", {
+    timeZone: "Atlantic/Canary",
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false,
+  }).format(now);
+  return `${date}, ${time}`;
+}
+
 function detectLanguage(messages: { role: string; content: string }[], acceptLanguage?: string): string {
   const userText = messages
     .filter((m) => m.role === "user")
@@ -73,6 +91,8 @@ Goal: understand what they want → nail 1-2 recommendations → close the booki
 - Friends: "How many of you and what's the vibe — wild or scenic?"
 
 Adapt the question freely based on their stated interests.
+
+Current date & time in Tenerife (Atlantic/Canary): ${getCurrentDateTime()}
 
 ${weather ? `Right now in Tenerife Sur: ${weather}.\n` : ""}
 ${events ? `EVENTS ON THE ISLAND (mention when relevant):\n${events}\n` : ""}
@@ -215,6 +235,14 @@ Many tours have fixed departure times. When recommending a tour that has timeSlo
 **If the tour has no timeSlots** (parks, rentals, adventure activities): skip the time step — go straight to BOOK_NOW after date.
 
 **For shows:** the time is fixed (only one slot), so just confirm it rather than asking: "The show starts at 21:00 — shall I book for [date]?"
+
+## MINIMUM BOOKING LEAD TIME
+
+A booking must be made at least 3 hours before the activity starts — there isn't enough time for the operator to confirm otherwise.
+
+- When the user wants to book for **today**, only offer/accept time slots that are at least 3 hours from the current time shown above.
+- If the user picks "today" but every remaining slot (or the activity itself, for tours without fixed times) is less than 3 hours away, tell them today is too tight to confirm and offer tomorrow instead.
+- If the user explicitly asks for a time/date less than 3 hours away, politely explain the 3-hour rule and suggest the next valid option — do not trigger BOOK_NOW.
 
 ## BOOKING TRIGGER
 
