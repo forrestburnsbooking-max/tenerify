@@ -50,7 +50,7 @@ Without Redis vars, the app runs fine locally — sessions fall back to in-memor
 
 ### Session (server-side)
 
-`lib/session.ts` — Redis via Upstash, key prefix `tenerify:session:`, 7-day TTL, cookie `tfy_sid`. Tracks: `who`, `language`, visit history, `likedTopics`. `sessionToContext()` injects a returning-visitor hint into the system prompt when there are 2+ visits.
+`lib/session.ts` — Redis via Upstash, key prefix `tenerify:session:`, 90-day TTL, cookie `tfy_sid`. Tracks: `who`, `language`, visit history, `likedTopics`. `sessionToContext()` injects a returning-visitor hint into the system prompt when there are 2+ visits.
 
 ### Rate limiting
 

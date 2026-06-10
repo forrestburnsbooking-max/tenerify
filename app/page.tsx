@@ -176,7 +176,7 @@ const UI_STRINGS: Record<string, {
   catLabels: { water: string; buggy: string; tours: string; parks: string; shows: string; adventure: string };
 }> = {
   es: {
-    intro: "¡Hola! Soy Tenerify 🌋 — tu amigo local de IA en Tenerife. Creado por un guía local, un vendedor de tours y un entusiasta de la IA. Conozco lo que hay en internet *y* lo que solo saben los locales.\n\n**Puedo ayudarte a:**\n- 🎯 Encontrar las mejores actividades y ofertas\n- 📅 Reservar experiencias directamente aquí\n- 🗺️ Planificar tu ruta perfecta\n- 💡 Responder cualquier duda sobre Tenerife Sur",
+    intro: "¡Hola! Soy Tenerify 🌋 — tu amigo local de IA en Tenerife. Creado por un guía local, un vendedor de tours y un entusiasta de la IA. Conozco lo que hay en internet *y* lo que solo saben los locales.\n\n**Esto es lo que puedo hacer:**\n- 📅 Encontrar y reservar las mejores actividades de la isla\n- 🗺️ Planificar tu ruta perfecta\n- 💡 Responder cualquier duda sobre Tenerife\n- 🍽️ Recomendarte un restaurante\n- 🏴‍☠️ Contarte una leyenda o historia de la isla\n\n¿Qué te apetece hoy?",
     whoQuestion: "¡Buenas! ¿Quién viene a Tenerife? 🌊",
     categoryQuestion: "¿Qué te apetece? Elige lo que te interese 👇",
     locationQuestion: "¿En qué zona te alojas? 📍",
@@ -185,7 +185,7 @@ const UI_STRINGS: Record<string, {
     catLabels: { water: "Agua y Barcos", buggy: "Buggy y Quad", tours: "Tours", parks: "Parques", shows: "Shows y Cenas", adventure: "Aventura" },
   },
   en: {
-    intro: "Hey! I'm Tenerify 🌋 — your local AI friend from Tenerife. Built by a local guide, a tour seller & an AI enthusiast. I know what's online *and* what only locals know.\n\n**Here's what I can do:**\n- 🎯 Find the best activities & deals for you\n- 📅 Book your experiences right here in chat\n- 🗺️ Plan your perfect itinerary\n- 💡 Answer anything about Tenerife Sur",
+    intro: "Hey! I'm Tenerify 🌋 — your local AI friend from Tenerife. Built by a local guide, a tour seller & an AI enthusiast. I know what's online *and* what only locals know.\n\n**Here's what I can do:**\n- 📅 Find & book the best activities on the island\n- 🗺️ Plan your perfect route\n- 💡 Answer anything about Tenerife\n- 🍽️ Recommend a restaurant\n- 🏴‍☠️ Tell you a legend or story about the island\n\nWhat would you like today?",
     whoQuestion: "¡Buenas! Who's coming to Tenerife? 🌊",
     categoryQuestion: "What are you looking for? Pick all that interest you 👇",
     locationQuestion: "Which area are you staying in? 📍",
@@ -194,7 +194,7 @@ const UI_STRINGS: Record<string, {
     catLabels: { water: "Water & Boats", buggy: "Buggy & Quad", tours: "Island Tours", parks: "Theme Parks", shows: "Shows & Dinners", adventure: "Adventure" },
   },
   de: {
-    intro: "Hey! Ich bin Tenerify 🌋 — dein lokaler KI-Freund aus Teneriffa. Erstellt von einem lokalen Guide, Touren-Verkäufer & KI-Enthusiasten. Ich kenne, was online steht *und* was nur Einheimische wissen.\n\n**Das kann ich für euch tun:**\n- 🎯 Die besten Aktivitäten & Angebote finden\n- 📅 Erlebnisse direkt hier buchen\n- 🗺️ Eure perfekte Route planen\n- 💡 Alles über Teneriffa Sur beantworten",
+    intro: "Hey! Ich bin Tenerify 🌋 — dein lokaler KI-Freund aus Teneriffa. Erstellt von einem lokalen Guide, Touren-Verkäufer & KI-Enthusiasten. Ich kenne, was online steht *und* was nur Einheimische wissen.\n\n**Das kann ich für euch tun:**\n- 📅 Die besten Aktivitäten der Insel finden & buchen\n- 🗺️ Eure perfekte Route planen\n- 💡 Alles über Teneriffa beantworten\n- 🍽️ Ein Restaurant empfehlen\n- 🏴‍☠️ Eine Legende oder Geschichte der Insel erzählen\n\nWorauf habt ihr heute Lust?",
     whoQuestion: "Hallo! Wer kommt nach Teneriffa? 🌊",
     categoryQuestion: "Was sucht ihr? Wählt alles aus 👇",
     locationQuestion: "In welcher Gegend übernachtet ihr? 📍",
@@ -203,7 +203,7 @@ const UI_STRINGS: Record<string, {
     catLabels: { water: "Wasser & Boote", buggy: "Buggy & Quad", tours: "Insel-Touren", parks: "Freizeitparks", shows: "Shows & Dinner", adventure: "Abenteuer" },
   },
   ru: {
-    intro: "Привет! Я Tenerify 🌋 — твой местный AI-друг с Тенерифе. Создан местным гидом, продавцом туров и AI-энтузиастом. Знаю и то, что есть в интернете, и то, о чём знают только местные.\n\n**Что я умею:**\n- 🎯 Найти лучшие активности и предложения\n- 📅 Забронировать прямо в этом чате\n- 🗺️ Спланировать идеальный маршрут\n- 💡 Ответить на любой вопрос о Тенерифе",
+    intro: "Привет! Я Tenerify 🌋 — твой местный AI-друг с Тенерифе. Создан местным гидом, продавцом туров и AI-энтузиастом. Знаю и то, что есть в интернете, и то, о чём знают только местные.\n\n**Что я умею:**\n- 📅 Найти и забронировать лучшие активности на острове\n- 🗺️ Спланировать идеальный маршрут\n- 💡 Ответить на любой вопрос о Тенерифе\n- 🍽️ Порекомендовать ресторан\n- 🏴‍☠️ Рассказать легенду или историю про остров\n\nЧто бы ты хотел сегодня?",
     whoQuestion: "Привет! Кто едет на Тенерифе? 🌊",
     categoryQuestion: "Что вас интересует? Выбери всё нужное 👇",
     locationQuestion: "В каком районе вы остановились? 📍",
@@ -212,7 +212,7 @@ const UI_STRINGS: Record<string, {
     catLabels: { water: "Вода и лодки", buggy: "Багги и квад", tours: "Экскурсии", parks: "Парки", shows: "Шоу и ужины", adventure: "Приключения" },
   },
   pl: {
-    intro: "Hej! Jestem Tenerify 🌋 — twój lokalny przyjaciel AI z Teneryfy. Stworzony przez lokalnego przewodnika, sprzedawcę wycieczek i entuzjastę AI. Znam to, co jest w internecie *i* to, co wiedzą tylko miejscowi.\n\n**Co mogę dla ciebie zrobić:**\n- 🎯 Znaleźć najlepsze atrakcje i oferty\n- 📅 Zarezerwować doświadczenia bezpośrednio tu\n- 🗺️ Zaplanować idealną trasę\n- 💡 Odpowiedzieć na każde pytanie o Teneryfę",
+    intro: "Hej! Jestem Tenerify 🌋 — twój lokalny przyjaciel AI z Teneryfy. Stworzony przez lokalnego przewodnika, sprzedawcę wycieczek i entuzjastę AI. Znam to, co jest w internecie *i* to, co wiedzą tylko miejscowi.\n\n**Oto co mogę zrobić:**\n- 📅 Znaleźć i zarezerwować najlepsze atrakcje na wyspie\n- 🗺️ Zaplanować idealną trasę\n- 💡 Odpowiedzieć na każde pytanie o Teneryfie\n- 🍽️ Polecić restaurację\n- 🏴‍☠️ Opowiedzieć legendę lub historię wyspy\n\nNa co masz dziś ochotę?",
     whoQuestion: "Hej! Kto jedzie na Teneryfę? 🌊",
     categoryQuestion: "Czego szukasz? Wybierz wszystko 👇",
     locationQuestion: "W której okolicy mieszkasz? 📍",
@@ -221,7 +221,7 @@ const UI_STRINGS: Record<string, {
     catLabels: { water: "Woda i łodzie", buggy: "Buggy i Quad", tours: "Wycieczki", parks: "Parki rozrywki", shows: "Pokazy i kolacje", adventure: "Przygoda" },
   },
   fr: {
-    intro: "Salut! Je suis Tenerify 🌋 — ton ami local IA de Tenerife. Créé par un guide local, un vendeur de tours & un passionné d'IA. Je connais ce qui est en ligne *et* ce que seuls les locaux savent.\n\n**Ce que je peux faire:**\n- 🎯 Trouver les meilleures activités & bons plans\n- 📅 Réserver vos expériences directement ici\n- 🗺️ Planifier votre itinéraire parfait\n- 💡 Répondre à toutes vos questions sur Tenerife",
+    intro: "Salut! Je suis Tenerify 🌋 — ton ami local IA de Tenerife. Créé par un guide local, un vendeur de tours & un passionné d'IA. Je connais ce qui est en ligne *et* ce que seuls les locaux savent.\n\n**Voici ce que je peux faire:**\n- 📅 Trouver et réserver les meilleures activités de l'île\n- 🗺️ Planifier ton itinéraire parfait\n- 💡 Répondre à toutes tes questions sur Tenerife\n- 🍽️ Te recommander un restaurant\n- 🏴‍☠️ Te raconter une légende ou une histoire de l'île\n\nQu'est-ce qui te ferait plaisir aujourd'hui?",
     whoQuestion: "Salut! Qui vient à Tenerife? 🌊",
     categoryQuestion: "Qu'est-ce qui vous intéresse? Choisissez tout 👇",
     locationQuestion: "Dans quelle zone logez-vous? 📍",
@@ -230,7 +230,7 @@ const UI_STRINGS: Record<string, {
     catLabels: { water: "Eau & Bateaux", buggy: "Buggy & Quad", tours: "Tours de l'île", parks: "Parcs", shows: "Shows & Dîners", adventure: "Aventure" },
   },
   it: {
-    intro: "Ciao! Sono Tenerify 🌋 — il tuo amico AI locale di Tenerife. Creato da una guida locale, un venditore di tour e un appassionato di AI. Conosco ciò che c'è online *e* ciò che sanno solo i locali.\n\n**Cosa posso fare:**\n- 🎯 Trovare le migliori attività e offerte\n- 📅 Prenotare esperienze direttamente qui\n- 🗺️ Pianificare il vostro itinerario perfetto\n- 💡 Rispondere a qualsiasi domanda su Tenerife",
+    intro: "Ciao! Sono Tenerify 🌋 — il tuo amico AI locale di Tenerife. Creato da una guida locale, un venditore di tour e un appassionato di AI. Conosco ciò che c'è online *e* ciò che sanno solo i locali.\n\n**Ecco cosa posso fare:**\n- 📅 Trovare e prenotare le migliori attività dell'isola\n- 🗺️ Pianificare il tuo itinerario perfetto\n- 💡 Rispondere a qualsiasi domanda su Tenerife\n- 🍽️ Consigliarti un ristorante\n- 🏴‍☠️ Raccontarti una leggenda o una storia dell'isola\n\nCosa ti va di fare oggi?",
     whoQuestion: "Ciao! Chi viene a Tenerife? 🌊",
     categoryQuestion: "Cosa cercate? Selezionate tutto 👇",
     locationQuestion: "In quale zona alloggiate? 📍",
@@ -239,7 +239,7 @@ const UI_STRINGS: Record<string, {
     catLabels: { water: "Acqua e Barche", buggy: "Buggy & Quad", tours: "Tour dell'isola", parks: "Parchi tematici", shows: "Show e Cene", adventure: "Avventura" },
   },
   nl: {
-    intro: "Hallo! Ik ben Tenerify 🌋 — je lokale AI-vriend van Tenerife. Gemaakt door een lokale gids, tourverkoper & AI-liefhebber. Ik ken wat online staat *én* wat alleen locals weten.\n\n**Wat ik kan doen:**\n- 🎯 De beste activiteiten & deals voor jullie vinden\n- 📅 Ervaringen direct hier boeken\n- 🗺️ Jullie perfecte route plannen\n- 💡 Alles over Tenerife Sur beantwoorden",
+    intro: "Hallo! Ik ben Tenerify 🌋 — je lokale AI-vriend van Tenerife. Gemaakt door een lokale gids, tourverkoper & AI-liefhebber. Ik ken wat online staat *én* wat alleen locals weten.\n\n**Dit kan ik voor je doen:**\n- 📅 De beste activiteiten op het eiland vinden & boeken\n- 🗺️ Jouw perfecte route plannen\n- 💡 Alles over Tenerife beantwoorden\n- 🍽️ Een restaurant aanbevelen\n- 🏴‍☠️ Een legende of verhaal van het eiland vertellen\n\nWaar heb je vandaag zin in?",
     whoQuestion: "Hallo! Wie komt naar Tenerife? 🌊",
     categoryQuestion: "Wat zoeken jullie? Kies alles wat jullie interesseert 👇",
     locationQuestion: "In welk gebied verblijven jullie? 📍",
@@ -283,6 +283,7 @@ export default function Home() {
   const [isReturning, setIsReturning] = useState(false);
   const [videoReady, setVideoReady] = useState(false);
   const bottomRef = useRef<HTMLDivElement>(null);
+  const sendingRef = useRef(false);
 
   const t = UI_STRINGS[selectedLanguage] ?? UI_STRINGS["en"];
   const whoLabelMap: Record<string, string> = {
@@ -308,6 +309,14 @@ export default function Home() {
   function handleLanguageSelect(lang: string) {
     setSelectedLanguage(lang);
     setStep("who");
+  }
+
+  function handleLanguageChange(lang: string) {
+    if (step === "language") {
+      handleLanguageSelect(lang);
+    } else {
+      setSelectedLanguage(lang);
+    }
   }
 
   function handleWho(option: { label: string; value: string }) {
@@ -341,6 +350,9 @@ export default function Home() {
   }
 
   async function sendToAI(userText: string, history: Message[] = [], whoValue?: string, langValue?: string) {
+    if (sendingRef.current) return;
+    sendingRef.current = true;
+
     const userMessage: Message = { role: "user", content: userText };
     const newMessages = [...history, userMessage];
     setMessages(newMessages);
@@ -376,6 +388,7 @@ export default function Home() {
       ]);
     } finally {
       setLoading(false);
+      sendingRef.current = false;
     }
   }
 
@@ -469,14 +482,11 @@ export default function Home() {
                 {LANGUAGES.map((lang) => (
                   <button
                     key={lang.value}
-                    onClick={() => step === "language" && handleLanguageSelect(lang.value)}
-                    disabled={step !== "language"}
-                    className={`px-4 py-2 rounded-full text-sm font-medium border transition-all flex items-center gap-2 ${
-                      step === "language"
-                        ? "bg-white/8 border-white/15 text-white hover:border-orange-500 hover:text-orange-400 cursor-pointer"
-                        : selectedLanguage === lang.value
+                    onClick={() => handleLanguageChange(lang.value)}
+                    className={`px-4 py-2 rounded-full text-sm font-medium border transition-all flex items-center gap-2 cursor-pointer ${
+                      selectedLanguage === lang.value
                         ? "bg-orange-500/20 border-orange-500 text-orange-300"
-                        : "bg-white/5 border-white/10 text-white/40 cursor-default"
+                        : "bg-white/8 border-white/15 text-white hover:border-orange-500 hover:text-orange-400"
                     }`}
                   >
                     <span>{lang.flag}</span>

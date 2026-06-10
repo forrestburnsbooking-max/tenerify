@@ -10,7 +10,7 @@ export type SessionData = {
   lastSeen: string;
 };
 
-const SESSION_TTL_SECONDS = 7 * 24 * 60 * 60; // 7 days
+const SESSION_TTL_SECONDS = 90 * 24 * 60 * 60; // 90 days
 const KEY_PREFIX = "tenerify:session:";
 
 // In-memory fallback for local dev (no Redis configured)

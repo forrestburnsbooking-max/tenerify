@@ -97,7 +97,7 @@ export default function LegalPage() {
           <ul className="text-stone-300 text-sm leading-relaxed space-y-1 list-disc list-inside">
             <li><strong className="text-white">Name, email, phone number</strong> — collected by Stripe during payment checkout</li>
             <li><strong className="text-white">Payment data</strong> — processed by Stripe, Inc. We never see or store your full card details</li>
-            <li><strong className="text-white">Chat session data</strong> — your conversation preferences (who you are, tour interests) stored anonymously for 7 days, then automatically deleted</li>
+            <li><strong className="text-white">Chat session data</strong> — your conversation preferences (who you are, tour interests) stored anonymously for 90 days, then automatically deleted</li>
             <li><strong className="text-white">Booking details</strong> — tour, date, group size, stored as part of your Stripe payment record</li>
           </ul>
 
@@ -113,7 +113,7 @@ export default function LegalPage() {
           <ul className="text-stone-300 text-sm leading-relaxed space-y-1 list-disc list-inside">
             <li><strong className="text-white">Stripe, Inc.</strong> — payment processing. <a href="https://stripe.com/privacy" target="_blank" className="text-orange-400 hover:underline">Stripe Privacy Policy</a></li>
             <li><strong className="text-white">Anthropic, PBC</strong> — AI responses. Conversation content may be processed by Anthropic's API. No personal identifiers are sent.</li>
-            <li><strong className="text-white">Upstash</strong> — anonymous session storage (7-day TTL)</li>
+            <li><strong className="text-white">Upstash</strong> — anonymous session storage (90-day TTL)</li>
             <li><strong className="text-white">Vercel, Inc.</strong> — hosting infrastructure</li>
             <li><strong className="text-white">excursionstenerife.es</strong> — tour operator who receives your booking details to fulfil the service</li>
           </ul>
@@ -122,7 +122,7 @@ export default function LegalPage() {
           <P>You have the right to access, correct, or delete your personal data. To exercise these rights, contact us at forrestburns.booking@gmail.com. You also have the right to lodge a complaint with the Spanish data protection authority (AEPD) at aepd.es.</P>
 
           <H3>Data retention</H3>
-          <P>Chat session data: deleted after 7 days. Booking/payment data: retained for 5 years as required by Spanish tax law. You may request deletion of non-financial data at any time.</P>
+          <P>Chat session data: deleted after 90 days of inactivity. Booking/payment data: retained for 5 years as required by Spanish tax law. You may request deletion of non-financial data at any time.</P>
 
           <H3>Cookies</H3>
           <P>Tenerify.ai uses a single session cookie (<code className="bg-stone-800 px-1 rounded text-xs">tfy_sid</code>) to maintain your chat session. No tracking or advertising cookies are used.</P>
