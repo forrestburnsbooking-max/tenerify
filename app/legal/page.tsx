@@ -1,5 +1,5 @@
 export default function LegalPage() {
-  const updated = "7 June 2026";
+  const updated = "10 June 2026";
 
   return (
     <div className="min-h-screen bg-[#0d0d0d] text-white">
@@ -16,7 +16,7 @@ export default function LegalPage() {
 
         {/* Quick nav */}
         <nav className="flex flex-col gap-2 text-sm">
-          {["Terms of Service", "Cancellation & Refund Policy", "Privacy Policy"].map((s) => (
+          {["Legal Notice", "Terms of Service", "Booking Conditions", "Cancellation & Refund Policy", "Privacy Policy", "Cookie Policy"].map((s) => (
             <a key={s} href={`#${s.toLowerCase().replace(/[^a-z]/g, "-")}`}
               className="text-orange-400 hover:text-orange-300 transition-colors">
               → {s}
@@ -24,9 +24,33 @@ export default function LegalPage() {
           ))}
         </nav>
 
+        {/* Legal Notice */}
+        <Section id="legal-notice" title="Legal Notice (Aviso Legal)">
+          <P>In accordance with Article 10 of Spanish Law 34/2002 on Information Society Services and Electronic Commerce (LSSI-CE), the following information is provided about the entity responsible for this website.</P>
+
+          <H3>Identification</H3>
+          <ul className="text-stone-300 text-sm leading-relaxed space-y-1 list-disc list-inside">
+            <li><strong className="text-white">Trading name:</strong> Tenerify.ai</li>
+            <li><strong className="text-white">Operating company:</strong> Spanish Dream Plus S.L.</li>
+            <li><strong className="text-white">CIF:</strong> [PLACEHOLDER — to be confirmed]</li>
+            <li><strong className="text-white">Registered address:</strong> Local 19, C.C. Playa Fañabé, Calle Londres 7, Costa Adeje, 38660, Tenerife, Spain</li>
+            <li><strong className="text-white">Email:</strong> forrestburns.booking@gmail.com</li>
+            <li><strong className="text-white">Phone / WhatsApp:</strong> +34 610 434 957</li>
+          </ul>
+
+          <H3>Purpose of the website</H3>
+          <P>Tenerify.ai provides an AI-powered chat interface that helps visitors discover, select, and book tours and experiences in Tenerife, and to process the related payments via Stripe.</P>
+
+          <H3>Intellectual property</H3>
+          <P>The Tenerify.ai name, logo, design, and underlying software are the property of the operating company or its licensors. Tour descriptions, images, and videos may belong to the respective tour operators and are used with their permission.</P>
+
+          <H3>Applicable law and jurisdiction</H3>
+          <P>These terms are governed by Spanish law. Any disputes arising from the use of this website that cannot be resolved amicably will be submitted to the courts and tribunals of Santa Cruz de Tenerife, Spain, without prejudice to any mandatory consumer protection rules that grant you the right to bring proceedings in your own jurisdiction.</P>
+        </Section>
+
         {/* Terms of Service */}
         <Section id="terms-of-service" title="Terms of Service">
-          <P>Tenerify.ai is an AI-powered booking assistant for tours and experiences in Tenerife, Canary Islands, Spain. The service is operated by Alexandr Foy, an independent operator based in Tenerife.</P>
+          <P>Tenerify.ai is an AI-powered booking assistant for tours and experiences in Tenerife, Canary Islands, Spain. The service is operated by Spanish Dream Plus S.L., a company registered in Tenerife, Spain (see Legal Notice above).</P>
           <P>By using Tenerify.ai and making a payment through our platform, you agree to these Terms.</P>
 
           <H3>1. What we do</H3>
@@ -35,6 +59,7 @@ export default function LegalPage() {
 
           <H3>2. Payments</H3>
           <P>All payments are processed securely by Stripe, Inc. Tenerify.ai receives payment on behalf of the tour operator and passes booking details to them. Your card data is handled exclusively by Stripe and never stored on our servers.</P>
+          <P>For car and vehicle rentals (operated by Aliscar), only a deposit (typically 30% of the total rental price) is charged online at checkout. The remaining balance is paid directly to the rental operator in cash or card upon vehicle pickup. The full price and the deposit/balance breakdown are shown to you before booking and on your confirmation page.</P>
 
           <H3>3. Booking confirmation</H3>
           <P>A booking is confirmed upon successful payment. You will receive a booking reference and ticket via the platform. The tour operator will contact you if any changes to your booking are necessary.</P>
@@ -50,6 +75,44 @@ export default function LegalPage() {
 
           <H3>Contact</H3>
           <P>Questions about these Terms: WhatsApp +34 610 434 957 or email forrestburns.booking@gmail.com</P>
+        </Section>
+
+        {/* Booking Conditions */}
+        <Section id="booking-conditions" title="Booking Conditions">
+          <P>The general conditions below apply on top of the Terms of Service and may be supplemented by the specific operator&apos;s own conditions, which will be shared with you on confirmation.</P>
+
+          <H3>Boat trips, sailing & water sports</H3>
+          <ul className="text-stone-300 text-sm leading-relaxed space-y-1 list-disc list-inside">
+            <li>Arrive at the meeting point (marina gate / pier shown on your ticket) at least 15–30 minutes before departure</li>
+            <li>Trips are weather and sea-condition dependent and may be rescheduled or cancelled by the operator for safety reasons</li>
+            <li>Bring swimwear, a towel, sun protection, and a valid photo ID</li>
+            <li>Some activities (jet ski, parascending, fly fish) have minimum age and/or weight requirements as stated on the tour page</li>
+          </ul>
+
+          <H3>Buggy & quad tours</H3>
+          <ul className="text-stone-300 text-sm leading-relaxed space-y-1 list-disc list-inside">
+            <li>Driver must be 18+ and hold a valid driving license (category B or A as applicable) — bring the physical license</li>
+            <li>Hotel pickup time is confirmed the day before or on the morning of the activity</li>
+            <li>Closed shoes and clothing you don&apos;t mind getting dusty/muddy are recommended</li>
+            <li>The assigned operator and vehicle type may vary based on availability for your date</li>
+          </ul>
+
+          <H3>Theme parks & attraction tickets (Siam Park, Loro Parque, Aqualand, Jungle Park, Camel Park, etc.)</H3>
+          <ul className="text-stone-300 text-sm leading-relaxed space-y-1 list-disc list-inside">
+            <li>Your booking confirmation serves as an e-ticket — present it (printed or on your phone) at the park entrance, along with photo ID if requested</li>
+            <li>Tickets are valid only for the date selected at booking unless the park&apos;s own policy states otherwise</li>
+            <li>Once inside the park, the park&apos;s own rules, opening hours, and conditions apply</li>
+          </ul>
+
+          <H3>Bus tours & island excursions</H3>
+          <ul className="text-stone-300 text-sm leading-relaxed space-y-1 list-disc list-inside">
+            <li>Hotel pickup window is confirmed before the tour — please be ready and visible at the pickup point at the agreed time</li>
+            <li>Itineraries may be adjusted by the guide due to weather, traffic, or local circumstances</li>
+            <li>Late arrival at the pickup point may result in missing the tour with no refund</li>
+          </ul>
+
+          <H3>Vehicle rentals</H3>
+          <P>A valid driving license, photo ID, and (where required by the rental operator) a credit card for the security deposit must be presented at pickup. The remaining balance after the online deposit is paid directly to the rental operator.</P>
         </Section>
 
         {/* Cancellation Policy */}
@@ -91,7 +154,7 @@ export default function LegalPage() {
           <P>This Privacy Policy explains how Tenerify.ai collects, uses, and protects your personal data in accordance with the EU General Data Protection Regulation (GDPR) and Spanish data protection law (LOPDGDD).</P>
 
           <H3>Data controller</H3>
-          <P>Alexandr Foy, operating as Tenerify.ai, Tenerife, Canary Islands, Spain. Contact: forrestburns.booking@gmail.com</P>
+          <P>Spanish Dream Plus S.L., operating as Tenerify.ai, Tenerife, Canary Islands, Spain. Contact: forrestburns.booking@gmail.com — see Legal Notice above for full identification details.</P>
 
           <H3>What data we collect</H3>
           <ul className="text-stone-300 text-sm leading-relaxed space-y-1 list-disc list-inside">
@@ -124,8 +187,32 @@ export default function LegalPage() {
           <H3>Data retention</H3>
           <P>Chat session data: deleted after 90 days of inactivity. Booking/payment data: retained for 5 years as required by Spanish tax law. You may request deletion of non-financial data at any time.</P>
 
-          <H3>Cookies</H3>
-          <P>Tenerify.ai uses a single session cookie (<code className="bg-stone-800 px-1 rounded text-xs">tfy_sid</code>) to maintain your chat session. No tracking or advertising cookies are used.</P>
+        </Section>
+
+        {/* Cookie Policy */}
+        <Section id="cookie-policy" title="Cookie Policy">
+          <P>This Cookie Policy explains what cookies Tenerify.ai uses and why, in accordance with Spanish and EU law (LSSI-CE, ePrivacy Directive, and GDPR).</P>
+
+          <H3>What is a cookie?</H3>
+          <P>A cookie is a small text file stored on your device that lets a website remember information about your visit, such as your session or preferences.</P>
+
+          <H3>Cookies we use</H3>
+          <div className="space-y-3 text-stone-300 text-sm leading-relaxed">
+            <div className="bg-stone-900 border border-white/5 rounded-xl px-4 py-3 space-y-1">
+              <p className="font-semibold text-white"><code className="bg-stone-800 px-1 rounded text-xs">tfy_sid</code> — Session cookie (strictly necessary)</p>
+              <p>Identifies your chat session so the AI remembers context within and across visits. Stored for up to 90 days. This cookie is essential for the service to work and does not require consent under EU law.</p>
+            </div>
+          </div>
+          <P>We do not use any analytics, advertising, or third-party tracking cookies on Tenerify.ai.</P>
+
+          <H3>Cookies set by third parties</H3>
+          <P>When you proceed to payment, Stripe may set its own cookies on the <code className="bg-stone-800 px-1 rounded text-xs">checkout.stripe.com</code> domain to process your payment securely and prevent fraud. These are governed by <a href="https://stripe.com/cookies-policy/legal" target="_blank" className="text-orange-400 hover:underline">Stripe&apos;s Cookie Policy</a> and are outside our control.</P>
+
+          <H3>Managing cookies</H3>
+          <P>Because Tenerify.ai only uses one essential cookie required to operate the chat session, the notice shown on your first visit is informational rather than a consent request. You can still delete or block cookies at any time via your browser settings, but doing so may prevent the chat session from working correctly.</P>
+
+          <H3>Changes to this policy</H3>
+          <P>We may update this Cookie Policy if the cookies we use change. Any updates will be posted on this page with a new &quot;last updated&quot; date.</P>
         </Section>
 
         {/* Footer */}
