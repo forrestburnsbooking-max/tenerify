@@ -1,6 +1,7 @@
 import Stripe from "stripe";
 import { NextRequest, NextResponse } from "next/server";
 import { getCommission } from "@/lib/net-prices";
+import { getTourBySlug } from "@/lib/tours";
 
 function getStripe() {
   const key = process.env.STRIPE_SECRET_KEY;
@@ -57,6 +58,8 @@ export async function POST(req: NextRequest) {
       ? `📈 Your commission: €${commission.commission.toFixed(0)} (${commission.percent}%)`
       : "";
 
+    const supplierPhone = tourSlug ? getTourBySlug(tourSlug)?.bookingPhone : null;
+
     const lines = [
       "💳 New booking on Tenerify!",
       "",
@@ -69,7 +72,8 @@ export async function POST(req: NextRequest) {
       "",
       customerName ? `👤 ${customerName}` : "",
       customerEmail ? `✉️ ${customerEmail}` : "",
-      customerPhone ? `📞 ${customerPhone}` : "",
+      customerPhone ? `📞 Client: ${customerPhone}` : "",
+      supplierPhone ? `📞 Call supplier to confirm: ${supplierPhone}` : "",
       "",
       `🔖 Ref: ${ref}`,
     ].filter(Boolean);

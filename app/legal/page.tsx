@@ -31,6 +31,7 @@ export default function LegalPage() {
 
           <H3>1. What we do</H3>
           <P>Tenerify.ai acts as a booking intermediary between customers and local tour operators in Tenerife. We facilitate the discovery, selection, and payment for experiences. The tours themselves are operated by our partner operators, primarily excursionstenerife.es.</P>
+          <P>For some activities (e.g. buggy and quad tours), the experience you book (e.g. vehicle type, duration, route) is fulfilled by one of several licensed local partner operators, assigned based on availability for your chosen date and time. The assigned operator&apos;s name and contact details will be confirmed and provided to you before the activity.</P>
 
           <H3>2. Payments</H3>
           <P>All payments are processed securely by Stripe, Inc. Tenerify.ai receives payment on behalf of the tour operator and passes booking details to them. Your card data is handled exclusively by Stripe and never stored on our servers.</P>

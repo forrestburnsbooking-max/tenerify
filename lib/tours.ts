@@ -31,6 +31,7 @@ export type Tour = {
   videoUrl?: string;
   timeSlots?: string[];
   url: string;
+  bookingPhone?: string;
 };
 
 const CATEGORY_EMOJI: Record<string, string> = {

@@ -54,7 +54,11 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/668c43e11f5c4ac445df8e24_foto-web-3.webp",
-    "url": "https://www.excursionstenerife.es/tours/airsoft"
+    "url": "https://www.excursionstenerife.es/tours/airsoft",
+    "pvpPricing": {
+      "adult": 35
+    },
+    "netPricing": {}
   },
   {
     "slug": "diving-puerto-colon",
@@ -111,7 +115,12 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6693ee4c7d053ca0b4a60795_AAOlaDivingATlanticoExcursiones.webp",
-    "url": "https://www.excursionstenerife.es/tours/diving-puerto-colon"
+    "url": "https://www.excursionstenerife.es/tours/diving-puerto-colon",
+    "pvpPricing": {
+      "adult": 75
+    },
+    "netPricing": {},
+    "bookingPhone": "671 408 970"
   },
   {
     "slug": "fly-fish-puerto-colon",
@@ -167,7 +176,12 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6692ccced3e6dadb64cb39c4_flyfish2.webp",
-    "url": "https://www.excursionstenerife.es/tours/fly-fish-puerto-colon"
+    "url": "https://www.excursionstenerife.es/tours/fly-fish-puerto-colon",
+    "pvpPricing": {
+      "adult": 18
+    },
+    "netPricing": {},
+    "bookingPhone": "638 531 863"
   },
   {
     "slug": "guided-bike-tours",
@@ -223,7 +237,11 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/668d53486f4ced05a0b5359b_a4.webp",
-    "url": "https://www.excursionstenerife.es/tours/guided-bike-tours"
+    "url": "https://www.excursionstenerife.es/tours/guided-bike-tours",
+    "pvpPricing": {
+      "adult": 90
+    },
+    "netPricing": {}
   },
   {
     "slug": "helidream-helicopter-tour",
@@ -279,7 +297,12 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/668d96374c23e4a9c36b623b_AHELIDREAMEXCURSIONHELICPOTERO.webp",
-    "url": "https://www.excursionstenerife.es/tours/helidream-helicopter-tour"
+    "url": "https://www.excursionstenerife.es/tours/helidream-helicopter-tour",
+    "pvpPricing": {
+      "adult": 98
+    },
+    "netPricing": {},
+    "bookingPhone": "630 315 422"
   },
   {
     "slug": "centro-hipico-xanadu",
@@ -339,7 +362,13 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/668c4c229c7f299e48c5f328_1.webp",
-    "url": "https://www.excursionstenerife.es/tours/centro-hipico-xanadu"
+    "url": "https://www.excursionstenerife.es/tours/centro-hipico-xanadu",
+    "pvpPricing": {
+      "adult": 45,
+      "child": 45
+    },
+    "netPricing": {},
+    "bookingPhone": "619 932 637"
   },
   {
     "slug": "karting-club-tenerife",
@@ -403,7 +432,14 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/665832b72151b4fbdcf445e9_C..webp",
-    "url": "https://www.excursionstenerife.es/tours/karting-club-tenerife"
+    "url": "https://www.excursionstenerife.es/tours/karting-club-tenerife",
+    "pvpPricing": {
+      "adult": 35,
+      "child": 20,
+      "kid": 18
+    },
+    "netPricing": {},
+    "bookingPhone": "922 730 703"
   },
   {
     "slug": "karting-las-americas",
@@ -463,7 +499,13 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/687bea70d64eccd64a56aa74_karting-12.jpg",
-    "url": "https://www.excursionstenerife.es/tours/karting-las-americas"
+    "url": "https://www.excursionstenerife.es/tours/karting-las-americas",
+    "pvpPricing": {
+      "adult": 20,
+      "child": 15
+    },
+    "netPricing": {},
+    "bookingPhone": "922 713 096"
   },
   {
     "slug": "paragliding",
@@ -519,7 +561,12 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/668d839fdfeeede47005bbac_BRISA2.webp",
-    "url": "https://www.excursionstenerife.es/tours/paragliding"
+    "url": "https://www.excursionstenerife.es/tours/paragliding",
+    "pvpPricing": {
+      "adult": 85
+    },
+    "netPricing": {},
+    "bookingPhone": "609 261 796"
   },
   {
     "slug": "parascending-puerto-colon",
@@ -580,7 +627,13 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6692d2d2323c44de26624baf_Parascending3.webp",
-    "url": "https://www.excursionstenerife.es/tours/parascending-puerto-colon"
+    "url": "https://www.excursionstenerife.es/tours/parascending-puerto-colon",
+    "pvpPricing": {
+      "adult": 60,
+      "child": 60
+    },
+    "netPricing": {},
+    "bookingPhone": "655 074 083"
   },
   {
     "slug": "safari-kayak-tour-los-cristianos",
@@ -640,7 +693,13 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6692a96afac01307bd9434de_kayak-snorkel-3.webp",
-    "url": "https://www.excursionstenerife.es/tours/safari-kayak-tour-los-cristianos"
+    "url": "https://www.excursionstenerife.es/tours/safari-kayak-tour-los-cristianos",
+    "pvpPricing": {
+      "adult": 45,
+      "child": 22
+    },
+    "netPricing": {},
+    "bookingPhone": "671 408 970"
   },
   {
     "slug": "kayaking-stand-up-paddle-los-cristianos",
@@ -697,7 +756,11 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6692b5742f10ee15ab7c4ab3_DDKayakDivingAtlantis.webp",
-    "url": "https://www.excursionstenerife.es/tours/kayaking-stand-up-paddle-los-cristianos"
+    "url": "https://www.excursionstenerife.es/tours/kayaking-stand-up-paddle-los-cristianos",
+    "pvpPricing": {
+      "adult": 23
+    },
+    "netPricing": {}
   },
   {
     "slug": "stand-up-paddle-la-caleta",
@@ -754,7 +817,11 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/668d92fd6769e15354a7c086_1.webp",
-    "url": "https://www.excursionstenerife.es/tours/stand-up-paddle-la-caleta"
+    "url": "https://www.excursionstenerife.es/tours/stand-up-paddle-la-caleta",
+    "pvpPricing": {
+      "adult": 60
+    },
+    "netPricing": {}
   },
   {
     "slug": "banana-puerto-colon",
@@ -810,7 +877,12 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6692c2ce5fb30e12b950e2c9_banana2.webp",
-    "url": "https://www.excursionstenerife.es/tours/banana-puerto-colon"
+    "url": "https://www.excursionstenerife.es/tours/banana-puerto-colon",
+    "pvpPricing": {
+      "adult": 18
+    },
+    "netPricing": {},
+    "bookingPhone": "638 531 863"
   },
   {
     "slug": "arriro-boat",
@@ -872,7 +944,14 @@
       "13:00",
       "16:00"
     ],
-    "meetingPoint": "Gate 11, Puerto Colón Marina, Costa Adeje"
+    "meetingPoint": "Gate 11, Puerto Colón Marina, Costa Adeje",
+    "pvpPricing": {
+      "adult": 50
+    },
+    "netPricing": {
+      "adult": 25
+    },
+    "bookingPhone": "619 591 892"
   },
   {
     "slug": "cool-sailing",
@@ -908,7 +987,14 @@
         "answer": "Yes, it is possible. Please contact us."
       }
     ],
-    "imageUrl": "https://www.bestexcursionstenerife.com/media/com_eshop/products/resized/Cool-Sailing-07 Copy-960x540.jpg"
+    "imageUrl": "https://www.bestexcursionstenerife.com/media/com_eshop/products/resized/Cool-Sailing-07 Copy-960x540.jpg",
+    "pvpPricing": {
+      "adult": 50
+    },
+    "netPricing": {
+      "adult": 25
+    },
+    "bookingPhone": "613 924 763"
   },
   {
     "slug": "kosamui-boat",
@@ -943,7 +1029,14 @@
         "answer": "Yes, it is possible. Please contact us."
       }
     ],
-    "imageUrl": "https://www.bestexcursionstenerife.com/components/com_eventgallery/helpers/image.php?&width=1600&folder=Kosamui&file=Kosamui_0000s_0000_Layer+4.jpg"
+    "imageUrl": "https://www.bestexcursionstenerife.com/components/com_eventgallery/helpers/image.php?&width=1600&folder=Kosamui&file=Kosamui_0000s_0000_Layer+4.jpg",
+    "pvpPricing": {
+      "adult": 50
+    },
+    "netPricing": {
+      "adult": 25
+    },
+    "bookingPhone": "639 203 484"
   },
   {
     "slug": "atlanca-boat-rental",
@@ -1000,7 +1093,12 @@
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/66a168d76965869758de1adc_invite-your-friends-for.jpg-2-1200x739.webp",
     "url": "https://www.excursionstenerife.es/tours/atlanca-boat-rental",
-    "meetingPoint": "Puerto Colón Marina, Costa Adeje"
+    "meetingPoint": "Puerto Colón Marina, Costa Adeje",
+    "pvpPricing": {
+      "adult": 85
+    },
+    "netPricing": {},
+    "bookingPhone": "659 831 064"
   },
   {
     "slug": "freebird-catamaran",
@@ -1077,7 +1175,13 @@
     "timeSlots": [
       "10:00",
       "13:00"
-    ]
+    ],
+    "pvpPricing": {
+      "adult": 47,
+      "child": 23.5
+    },
+    "netPricing": {},
+    "bookingPhone": "922 716 864"
   },
   {
     "slug": "fishing-boat-puerto-colon",
@@ -1139,7 +1243,12 @@
       "09:00",
       "13:30"
     ],
-    "meetingPoint": "Pontoon 2, Puerto Colón Marina, Costa Adeje"
+    "meetingPoint": "Pontoon 2, Puerto Colón Marina, Costa Adeje",
+    "pvpPricing": {
+      "adult": 70
+    },
+    "netPricing": {},
+    "bookingPhone": "636 761 552"
   },
   {
     "slug": "maxicat-catamaran",
@@ -1170,7 +1279,7 @@
         "price": 0
       }
     ],
-    "priceFrom": 45,
+    "priceFrom": 46,
     "description": "Maxicat is an ecological catamaran, discover the fascinating world of the sea mammals that inhabit the waters of the Canary Islands and see them in their natural habitat including pilot whales and bottle-nose dolphins. ・ Then relax on the spacious decks or choose a swim and snorkel in the crystal waters of the Atlantic Ocean. Relax on the solarium and enjoy the sea.",
     "included": "・ Open bar and lunch",
     "faq": [
@@ -1210,7 +1319,13 @@
       "13:15",
       "16:30"
     ],
-    "meetingPoint": "Gate 9, Puerto Colón Marina, Costa Adeje"
+    "meetingPoint": "Gate 9, Puerto Colón Marina, Costa Adeje",
+    "pvpPricing": {
+      "adult": 46,
+      "child": 23
+    },
+    "netPricing": {},
+    "bookingPhone": "822 200 420"
   },
   {
     "slug": "monte-cristo-catamaran",
@@ -1237,7 +1352,7 @@
         "price": 49
       }
     ],
-    "priceFrom": 62,
+    "priceFrom": 59,
     "description": "On this small group voyage, our friendly and experienced crew will welcome you on board and take you to the amazing world of whales and dolphins swimming freely in their natural habitat along the coastline, and you will also see breathtaking views of the island's coastline. ・ Then you can relax on our spacious terraces and fly-bridge and enjoy a wonderful selection of drinks, fruit, snacks, tapas and much more, you can swim, snorkel or simply sunbathe with the beautiful mountains of Tenerife as ",
     "faq": [
       {
@@ -1276,7 +1391,13 @@
       "13:00",
       "16:00"
     ],
-    "meetingPoint": "Gate 6, Puerto Colón Marina, Costa Adeje"
+    "meetingPoint": "Gate 6, Puerto Colón Marina, Costa Adeje",
+    "pvpPricing": {
+      "adult": 59,
+      "child": 49
+    },
+    "netPricing": {},
+    "bookingPhone": "661 553 308"
   },
   {
     "slug": "neptuno-boat",
@@ -1345,7 +1466,13 @@
       "10:00",
       "14:00"
     ],
-    "meetingPoint": "Excursion Zone B, Port of Los Cristianos"
+    "meetingPoint": "Excursion Zone B, Port of Los Cristianos",
+    "pvpPricing": {
+      "adult": 63,
+      "child": 31.5
+    },
+    "netPricing": {},
+    "bookingPhone": "623 597 482"
   },
   {
     "slug": "diamant-boat",
@@ -1407,7 +1534,12 @@
       "10:00",
       "13:00",
       "16:00"
-    ]
+    ],
+    "pvpPricing": {
+      "adult": 80
+    },
+    "netPricing": {},
+    "bookingPhone": "661 259 806"
   },
   {
     "slug": "peter-pan-boat",
@@ -1477,7 +1609,13 @@
       "11:00",
       "13:30",
       "15:30"
-    ]
+    ],
+    "pvpPricing": {
+      "adult": 27,
+      "child": 13.5
+    },
+    "netPricing": {},
+    "bookingPhone": "666 542 881"
   },
   {
     "slug": "raggie-tenerife-fishing",
@@ -1537,7 +1675,12 @@
     "timeSlots": [
       "08:00"
     ],
-    "meetingPoint": "Pier 5, Puerto Colón Marina, Costa Adeje"
+    "meetingPoint": "Pier 5, Puerto Colón Marina, Costa Adeje",
+    "pvpPricing": {
+      "adult": 70
+    },
+    "netPricing": {},
+    "bookingPhone": "639 209 200"
   },
   {
     "slug": "ragnarok-viking-boat",
@@ -1576,7 +1719,7 @@
         "price": 0
       }
     ],
-    "priceFrom": 30,
+    "priceFrom": 25,
     "description": "We will set sail from Los Cristianos harbour towards picturesque cliffs overlooking the blue sheet of ocean. We head out to meet the dolphins and whales. Thanks to the location, the climate between La Gomera and Tenerife we have almost 100% guarantee of sightings. The proximity of the cetaceans is a unique opportunity for amateur photographers to take an extraordinary shot. ・ We offer two types of cruises: 2 hours and 3 hours. On both there is no room for boredom on board - unique environment, o",
     "meetingPoint": "Excursion Zone A, Port of Los Cristianos",
     "faq": [
@@ -1614,7 +1757,14 @@
     "timeSlots": [
       "11:00",
       "13:30"
-    ]
+    ],
+    "pvpPricing": {
+      "adult": 25,
+      "child": 20,
+      "kid": 5
+    },
+    "netPricing": {},
+    "bookingPhone": "654 638 922"
   },
   {
     "slug": "royal-delfin-boat",
@@ -1691,7 +1841,13 @@
       "10:30",
       "14:00"
     ],
-    "meetingPoint": "Gate 12, Puerto Colón Marina, Costa Adeje"
+    "meetingPoint": "Gate 12, Puerto Colón Marina, Costa Adeje",
+    "pvpPricing": {
+      "adult": 50,
+      "child": 30
+    },
+    "netPricing": {},
+    "bookingPhone": "922 750 085"
   },
   {
     "slug": "shogun-boat",
@@ -1722,7 +1878,7 @@
         "price": 0
       }
     ],
-    "priceFrom": 60,
+    "priceFrom": 61,
     "description": "Live the experience on board an authentic oriental sailboat , completely constructed in teak hard wood , for the private use of an Arabian Sheikh. ・The Shogun has 2 levels, 3 services available (for wich one is adapted for the disabled peaple), an open bar, a large central table where your meal it will be served. A 5 hour trip , during of which we will see pilot whales and bottlenose dolphins , an internationally species. ・The SHOGUN complies with these rules and holds a yellow flag with a blue ",
     "included": "・ Drinks on board (water, soft drinks, beer and wine)",
     "meetingPoint": "Gate 14, Puerto Colón Marina, Costa Adeje",
@@ -1760,7 +1916,13 @@
     "url": "https://www.excursionstenerife.es/tours/shogun-boat",
     "timeSlots": [
       "11:00"
-    ]
+    ],
+    "pvpPricing": {
+      "adult": 61,
+      "child": 30.5
+    },
+    "netPricing": {},
+    "bookingPhone": "623 597 482"
   },
   {
     "slug": "sonador-boat",
@@ -1791,7 +1953,7 @@
         "price": 0
       }
     ],
-    "priceFrom": 40,
+    "priceFrom": 50,
     "description": "Enjoy the best moment of your holiday in our fast Beneteau First 45. We will visit visit the cliffs of Los Gigantes and the beach of the Masca ravine. ・ Come aboard our luxury sailing yacht and enjoy whale and dolphin watching, snorkeling in a wonderful bay with crystal clear waters. On board we have snorkeling equipment, surfboards and other water activities. ・ During its short life, our boat is proud of many victories at prestigious world competitions. ‍ ・ Come and try the best sailing yacht i",
     "meetingPoint": "Gate 1, Puerto Colón Marina, Costa Adeje",
     "faq": [
@@ -1830,7 +1992,14 @@
       "10:00",
       "13:00",
       "16:00"
-    ]
+    ],
+    "pvpPricing": {
+      "adult": 50,
+      "child": 12.5,
+      "kid": 12.5
+    },
+    "netPricing": {},
+    "bookingPhone": "699 508 232"
   },
   {
     "slug": "submarine-safari-boat",
@@ -1857,7 +2026,7 @@
         "price": 35.15
       }
     ],
-    "priceFrom": 57.95,
+    "priceFrom": 35,
     "description": "Step on board one of the most sophisticated tourist submarines in the world for a dive beneath the waves which takes you to places previously explored only by experienced divers. ・Experience the sensation of a dive aboard the Submarine Safari, which will take you to the bottom of the sea in the vicinity of the Marina of San Miguel. The clarity of the waters and the marine life of the island of Tenerife make this dive a once-in-a-lifetime experience. ・On each trip, you will be accompanied by a gu",
     "faq": [
       {
@@ -1899,7 +2068,11 @@
       "14:00",
       "15:00"
     ],
-    "meetingPoint": "Amarilla Marina, San Miguel de Abona (Pontoon 2)"
+    "meetingPoint": "Amarilla Marina, San Miguel de Abona (Pontoon 2)",
+    "pvpPricing": {
+      "adult": 35
+    },
+    "netPricing": {}
   },
   {
     "slug": "yate-sofia-fishing-tenerife",
@@ -1960,7 +2133,11 @@
     "timeSlots": [
       "10:00"
     ],
-    "meetingPoint": "Port of Los Cristianos"
+    "meetingPoint": "Port of Los Cristianos",
+    "pvpPricing": {
+      "adult": 50
+    },
+    "netPricing": {}
   },
   {
     "slug": "2-hours-buggy-trip",
@@ -2024,7 +2201,11 @@
       "12:00",
       "14:00"
     ],
-    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)"
+    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
+    "pvpPricing": {
+      "adult": 110
+    },
+    "netPricing": {}
   },
   {
     "slug": "buggy-teide-adventure",
@@ -2087,7 +2268,11 @@
     "seatsPerVehicle": 2,
     "timeSlots": [
       "10:00"
-    ]
+    ],
+    "pvpPricing": {
+      "adult": 180
+    },
+    "netPricing": {}
   },
   {
     "slug": "buggy-costa-adventure",
@@ -2150,7 +2335,11 @@
     "seatsPerVehicle": 2,
     "timeSlots": [
       "12:00"
-    ]
+    ],
+    "pvpPricing": {
+      "adult": 180
+    },
+    "netPricing": {}
   },
   {
     "slug": "buggy-sunset-adventure",
@@ -2213,7 +2402,11 @@
     "seatsPerVehicle": 2,
     "timeSlots": [
       "18:00"
-    ]
+    ],
+    "pvpPricing": {
+      "adult": 180
+    },
+    "netPricing": {}
   },
   {
     "slug": "buggy-off-road",
@@ -2276,7 +2469,11 @@
     "seatsPerVehicle": 2,
     "timeSlots": [
       "10:00"
-    ]
+    ],
+    "pvpPricing": {
+      "adult": 180
+    },
+    "netPricing": {}
   },
   {
     "slug": "teide-icod-garachico-masca",
@@ -2340,7 +2537,13 @@
     "timeSlots": [
       "08:30"
     ],
-    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)"
+    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
+    "pvpPricing": {
+      "adult": 90,
+      "child": 75
+    },
+    "netPricing": {},
+    "bookingPhone": "677 654 754"
   },
   {
     "slug": "gran-canaria",
@@ -2400,7 +2603,11 @@
     "timeSlots": [
       "08:30"
     ],
-    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)"
+    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
+    "pvpPricing": {
+      "adult": 130
+    },
+    "netPricing": {}
   },
   {
     "slug": "island-tour-masca",
@@ -2460,7 +2667,11 @@
     "timeSlots": [
       "08:30"
     ],
-    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)"
+    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
+    "pvpPricing": {
+      "adult": 50
+    },
+    "netPricing": {}
   },
   {
     "slug": "la-gomera",
@@ -2524,7 +2735,12 @@
     "timeSlots": [
       "08:30"
     ],
-    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)"
+    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
+    "pvpPricing": {
+      "adult": 145,
+      "child": 118
+    },
+    "netPricing": {}
   },
   {
     "slug": "la-palma",
@@ -2584,7 +2800,11 @@
     "timeSlots": [
       "08:30"
     ],
-    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)"
+    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
+    "pvpPricing": {
+      "adult": 160
+    },
+    "netPricing": {}
   },
   {
     "slug": "teide-by-night",
@@ -2648,7 +2868,13 @@
     "timeSlots": [
       "08:30"
     ],
-    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)"
+    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
+    "pvpPricing": {
+      "adult": 75,
+      "child": 60
+    },
+    "netPricing": {},
+    "bookingPhone": "624 642 724"
   },
   {
     "slug": "teide-tour-cable-car",
@@ -2712,7 +2938,13 @@
     "timeSlots": [
       "08:30"
     ],
-    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)"
+    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
+    "pvpPricing": {
+      "adult": 60,
+      "child": 50
+    },
+    "netPricing": {},
+    "bookingPhone": "677 654 754"
   },
   {
     "slug": "puerto-cruz-tour",
@@ -2772,7 +3004,11 @@
     "url": "https://www.excursionstenerife.es/tours/puerto-cruz-tour",
     "timeSlots": [
       "08:30"
-    ]
+    ],
+    "pvpPricing": {
+      "adult": 22
+    },
+    "netPricing": {}
   },
   {
     "slug": "santa-cruz--la-laguna--anaga",
@@ -2837,7 +3073,13 @@
     "timeSlots": [
       "08:30"
     ],
-    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)"
+    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
+    "pvpPricing": {
+      "adult": 85,
+      "child": 70
+    },
+    "netPricing": {},
+    "bookingPhone": "677 654 754"
   },
   {
     "slug": "booster-pack-puerto-colon",
@@ -2906,7 +3148,11 @@
       "16:00",
       "17:00"
     ],
-    "meetingPoint": "Puerto Colón Marina, Costa Adeje"
+    "meetingPoint": "Puerto Colón Marina, Costa Adeje",
+    "pvpPricing": {
+      "adult": 110
+    },
+    "netPricing": {}
   },
   {
     "slug": "jet-ski-puerto-colon",
@@ -2976,7 +3222,11 @@
       "15:00",
       "16:00",
       "17:00"
-    ]
+    ],
+    "pvpPricing": {
+      "adult": 100
+    },
+    "netPricing": {}
   },
   {
     "slug": "watersport-pack-puerto-colon",
@@ -3045,7 +3295,12 @@
       "16:00",
       "17:00"
     ],
-    "meetingPoint": "Puerto Colón Marina, Costa Adeje"
+    "meetingPoint": "Puerto Colón Marina, Costa Adeje",
+    "pvpPricing": {
+      "adult": 90
+    },
+    "netPricing": {},
+    "bookingPhone": "638 531 863"
   },
   {
     "slug": "aqualand",
@@ -3076,7 +3331,7 @@
         "price": 16
       }
     ],
-    "priceFrom": 16,
+    "priceFrom": 36,
     "description": "Especially for the family's youngest members, Aqualand has Kidzworld, Forestland and Dragonland areas, while the whole family can enjoy the Wave Pool and Adventureland. Float down the Lava River or relax in the open-air spa with Jacuzzi and whirlpools. And for an adrenaline rush, head to the Twister, Super Slalom, Tornado or crazy Kamikazes. ・ Visit Dolphin Planet to learn more about them. The dolphins are the park stars, showing off their amazing skills, agility and speed. ・ Spend a fabulous, f",
     "faq": [
       {
@@ -3109,7 +3364,14 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6682f3b5c426ea82ef18f2fc_aqualand.webp",
-    "url": "https://www.excursionstenerife.es/tours/aqualand"
+    "url": "https://www.excursionstenerife.es/tours/aqualand",
+    "pvpPricing": {
+      "adult": 36,
+      "child": 29,
+      "kid": 16
+    },
+    "netPricing": {},
+    "bookingPhone": "922 797 573 / 662 936 575"
   },
   {
     "slug": "camel-park",
@@ -3169,7 +3431,13 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/668c50e33f5c20a8f49a89c8_c.webp",
-    "url": "https://www.excursionstenerife.es/tours/camel-park"
+    "url": "https://www.excursionstenerife.es/tours/camel-park",
+    "pvpPricing": {
+      "adult": 22,
+      "child": 11
+    },
+    "netPricing": {},
+    "bookingPhone": "922 721 121"
   },
   {
     "slug": "jungle-park",
@@ -3200,7 +3468,7 @@
         "price": 16
       }
     ],
-    "priceFrom": 16,
+    "priceFrom": 35,
     "description": "The Jungle Park is located in the south of Tenerife, just a 15-minute drive from Los Cristianos and Las Americas. A huge zoological and botanical park with 75,000 m² of jungle and more than 500 animals where you can wander through paths full of tunnels and hanging bridges, waterfalls, lagoons and caves, enjoying an incredible ecosystem made up of the flora and fauna of the south of the island. Don't miss the spectacular birds of prey show, one of the best in the world, where falcons, vultures an",
     "faq": [
       {
@@ -3233,7 +3501,14 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6682fd28a1049f45b9e90155_Sin-t%C3%ADtulo-1.webp",
-    "url": "https://www.excursionstenerife.es/tours/jungle-park"
+    "url": "https://www.excursionstenerife.es/tours/jungle-park",
+    "pvpPricing": {
+      "adult": 35,
+      "child": 29,
+      "kid": 16
+    },
+    "netPricing": {},
+    "bookingPhone": "922 797 573 / 662 936 575"
   },
   {
     "slug": "loro-parque",
@@ -3260,7 +3535,7 @@
         "price": 32
       }
     ],
-    "priceFrom": 32,
+    "priceFrom": 44,
     "description": "Loro Parque is a great option for families, groups of friends, nature lovers and anyone who wants to discover something unique in a place that promotes the conservation and protection of different animal species in Tenerife and Europe. ・Loro Parque is home to the biggest zoological gem in existence: the Parrot Sanctuary, which features parrot species from all over the planet, as well as endangered species. ・ Discover all that the animal world hides. Enjoy a show of sea lions, dolphins, orcas, an",
     "faq": [
       {
@@ -3293,7 +3568,13 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/666b0ec62605d8e22d009378_G.webp",
-    "url": "https://www.excursionstenerife.es/tours/loro-parque"
+    "url": "https://www.excursionstenerife.es/tours/loro-parque",
+    "pvpPricing": {
+      "adult": 44,
+      "child": 32
+    },
+    "netPricing": {},
+    "bookingPhone": "922 797 573 / 662 936 575"
   },
   {
     "slug": "siam-park",
@@ -3320,7 +3601,7 @@
         "price": 32
       }
     ],
-    "priceFrom": 32,
+    "priceFrom": 44,
     "description": "‍Siam Park is full of diversity, where water attractions, vegetation and every corner evokes emotions. ・ Children and adults alike will find the perfect place for an unforgettable Siam experience for every taste. ・ Also in Siam Park there are several places where you can have a snack and regain your energy thanks to the gastronomic selection, offering a wide range of dishes. ・ Siam Park has been voted the best water park in the world by TripAdvisor users for the seventh consecutive year.",
     "faq": [
       {
@@ -3353,7 +3634,13 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6659956066980b3e57ccf786_z.webp",
-    "url": "https://www.excursionstenerife.es/tours/siam-park"
+    "url": "https://www.excursionstenerife.es/tours/siam-park",
+    "pvpPricing": {
+      "adult": 44,
+      "child": 32
+    },
+    "netPricing": {},
+    "bookingPhone": "922 797 573 / 662 936 575"
   },
   {
     "slug": "2parks-ticket-jungle-park-aqualand",
@@ -3417,7 +3704,14 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6683071ecb1ebb9cd9ed19bc_Two_Parks.webp",
-    "url": "https://www.excursionstenerife.es/tours/2parks-ticket-jungle-park-aqualand"
+    "url": "https://www.excursionstenerife.es/tours/2parks-ticket-jungle-park-aqualand",
+    "pvpPricing": {
+      "adult": 51,
+      "child": 42,
+      "kid": 21
+    },
+    "netPricing": {},
+    "bookingPhone": "922 797 573 / 662 936 575"
   },
   {
     "slug": "twin-ticket-loro-parque-siam-park",
@@ -3452,7 +3746,7 @@
         "price": 73
       }
     ],
-    "priceFrom": 57,
+    "priceFrom": 78,
     "description": "Twin Ticket is an opportunity to visit Loro Parque and Siam Park, two of the best parks in the world, at a bargain price. ‍ ・Loro Parque is a beautiful ecological park located in Puerto de la Cruz (North)and recognised by TripAdvisor users as the first zoo in Europe and the second best one in the world. Visit the largest collection of parrots in the world and enjoy all the wonders on offer here: gardens, orchids, sharks, countless animals and fantastic shows of sea lions, dolphins, orcas and par",
     "faq": [
       {
@@ -3485,7 +3779,13 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6682dfa8f1cc5c7a594e6eb9_Z.webp",
-    "url": "https://www.excursionstenerife.es/tours/twin-ticket-loro-parque-siam-park"
+    "url": "https://www.excursionstenerife.es/tours/twin-ticket-loro-parque-siam-park",
+    "pvpPricing": {
+      "adult": 78,
+      "child": 57
+    },
+    "netPricing": {},
+    "bookingPhone": "922 797 573 / 662 936 575"
   },
   {
     "slug": "coastal-quads",
@@ -3546,7 +3846,11 @@
     "timeSlots": [
       "12:00"
     ],
-    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)"
+    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
+    "pvpPricing": {
+      "adult": 120
+    },
+    "netPricing": {}
   },
   {
     "slug": "quad-off-road-tour",
@@ -3608,7 +3912,12 @@
     "url": "https://www.excursionstenerife.es/tours/quad-off-road-tour",
     "timeSlots": [
       "10:00"
-    ]
+    ],
+    "pvpPricing": {
+      "adult": 120
+    },
+    "netPricing": {},
+    "bookingPhone": "691 019 039"
   },
   {
     "slug": "quad-sunset-tour",
@@ -3670,7 +3979,12 @@
     "url": "https://www.excursionstenerife.es/tours/quad-sunset-tour",
     "timeSlots": [
       "18:00"
-    ]
+    ],
+    "pvpPricing": {
+      "adult": 120
+    },
+    "netPricing": {},
+    "bookingPhone": "722 210 957"
   },
   {
     "slug": "quad-teide-tour",
@@ -3732,7 +4046,11 @@
     "timeSlots": [
       "10:00"
     ],
-    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)"
+    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
+    "pvpPricing": {
+      "adult": 100
+    },
+    "netPricing": {}
   },
   {
     "slug": "quad-masca-tour",
@@ -3793,7 +4111,11 @@
     "timeSlots": [
       "10:00"
     ],
-    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)"
+    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
+    "pvpPricing": {
+      "adult": 135
+    },
+    "netPricing": {}
   },
   {
     "slug": "citroen-c3-car-rental",
@@ -3849,7 +4171,11 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/66ae48040b8354a845612216_citroen_3_500x280.webp",
-    "url": "https://www.excursionstenerife.es/tours/citroen-c3-car-rental"
+    "url": "https://www.excursionstenerife.es/tours/citroen-c3-car-rental",
+    "pvpPricing": {
+      "adult": 62
+    },
+    "netPricing": {}
   },
   {
     "slug": "citroen-cactus-automatic-car-rental",
@@ -3905,7 +4231,11 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6892019154714aae342a73c0_1.jpg",
-    "url": "https://www.excursionstenerife.es/tours/citroen-cactus-automatic-car-rental"
+    "url": "https://www.excursionstenerife.es/tours/citroen-cactus-automatic-car-rental",
+    "pvpPricing": {
+      "adult": 65
+    },
+    "netPricing": {}
   },
   {
     "slug": "citroen-grand-picasso-car-rental",
@@ -3961,7 +4291,11 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/68921116a573cb8389e6fdcf_1.jpg",
-    "url": "https://www.excursionstenerife.es/tours/citroen-grand-picasso-car-rental"
+    "url": "https://www.excursionstenerife.es/tours/citroen-grand-picasso-car-rental",
+    "pvpPricing": {
+      "adult": 100
+    },
+    "netPricing": {}
   },
   {
     "slug": "fiat-500-car-rental",
@@ -4017,7 +4351,11 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/688509695f0359298542bc80_arteum-ro-UfMb0M2RWjo-unsplash.jpg",
-    "url": "https://www.excursionstenerife.es/tours/fiat-500-car-rental"
+    "url": "https://www.excursionstenerife.es/tours/fiat-500-car-rental",
+    "pvpPricing": {
+      "adult": 45
+    },
+    "netPricing": {}
   },
   {
     "slug": "fiat-500-cabrio-car-rental",
@@ -4073,7 +4411,11 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/688950e3739657d54800be23_53522630.jpg",
-    "url": "https://www.excursionstenerife.es/tours/fiat-500-cabrio-car-rental"
+    "url": "https://www.excursionstenerife.es/tours/fiat-500-cabrio-car-rental",
+    "pvpPricing": {
+      "adult": 70
+    },
+    "netPricing": {}
   },
   {
     "slug": "fiat-panda-car-rental",
@@ -4129,7 +4471,11 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/668d2498920eba9ff789af45_fiat-panda-front-view.webp",
-    "url": "https://www.excursionstenerife.es/tours/fiat-panda-car-rental"
+    "url": "https://www.excursionstenerife.es/tours/fiat-panda-car-rental",
+    "pvpPricing": {
+      "adult": 40
+    },
+    "netPricing": {}
   },
   {
     "slug": "renault-captur-automatic-car-rental",
@@ -4185,7 +4531,11 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/68920ef7a1d6c8ebc6c5596e_1.jpg",
-    "url": "https://www.excursionstenerife.es/tours/renault-captur-automatic-car-rental"
+    "url": "https://www.excursionstenerife.es/tours/renault-captur-automatic-car-rental",
+    "pvpPricing": {
+      "adult": 65
+    },
+    "netPricing": {}
   },
   {
     "slug": "renault-trafic-car-rental",
@@ -4241,7 +4591,11 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/689214d760489b788bfd1130_1400x936.jpg",
-    "url": "https://www.excursionstenerife.es/tours/renault-trafic-car-rental"
+    "url": "https://www.excursionstenerife.es/tours/renault-trafic-car-rental",
+    "pvpPricing": {
+      "adult": 110
+    },
+    "netPricing": {}
   },
   {
     "slug": "single-mobility-scooter",
@@ -4297,7 +4651,11 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/689219f59e649e5503e68373_1.jpg",
-    "url": "https://www.excursionstenerife.es/tours/single-mobility-scooter"
+    "url": "https://www.excursionstenerife.es/tours/single-mobility-scooter",
+    "pvpPricing": {
+      "adult": 10
+    },
+    "netPricing": {}
   },
   {
     "slug": "seat-ibiza-car-rental",
@@ -4353,7 +4711,11 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6892166ea19a4760c266f12b_1.jpg",
-    "url": "https://www.excursionstenerife.es/tours/seat-ibiza-car-rental"
+    "url": "https://www.excursionstenerife.es/tours/seat-ibiza-car-rental",
+    "pvpPricing": {
+      "adult": 52
+    },
+    "netPricing": {}
   },
   {
     "slug": "seat-leon-car-rental",
@@ -4409,7 +4771,11 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/66b363f050749aaea93feea3_new-seat-leon-candy-white-colour-configuration.webp",
-    "url": "https://www.excursionstenerife.es/tours/seat-leon-car-rental"
+    "url": "https://www.excursionstenerife.es/tours/seat-leon-car-rental",
+    "pvpPricing": {
+      "adult": 65
+    },
+    "netPricing": {}
   },
   {
     "slug": "tuk-tuk",
@@ -4465,7 +4831,12 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/66ba5f353e96ccb355a04adb_264341739_4695885117142426_8120454214620924274_n.jpg",
-    "url": "https://www.excursionstenerife.es/tours/tuk-tuk"
+    "url": "https://www.excursionstenerife.es/tours/tuk-tuk",
+    "pvpPricing": {
+      "adult": 12
+    },
+    "netPricing": {},
+    "bookingPhone": "628 820 720"
   },
   {
     "slug": "vw-beetle-automatic-car-rental",
@@ -4521,7 +4892,11 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/66bbc8e5695bc1ecf2849996_arriro-boat-e72perienceis-x.webp",
-    "url": "https://www.excursionstenerife.es/tours/vw-beetle-automatic-car-rental"
+    "url": "https://www.excursionstenerife.es/tours/vw-beetle-automatic-car-rental",
+    "pvpPricing": {
+      "adult": 105
+    },
+    "netPricing": {}
   },
   {
     "slug": "vw-golf-car-rental",
@@ -4577,7 +4952,11 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6892003a9c7ae34280a967bd_DB2016AU00879_web_1600.jpg",
-    "url": "https://www.excursionstenerife.es/tours/vw-golf-car-rental"
+    "url": "https://www.excursionstenerife.es/tours/vw-golf-car-rental",
+    "pvpPricing": {
+      "adult": 65
+    },
+    "netPricing": {}
   },
   {
     "slug": "vw-polo-car-rental",
@@ -4633,7 +5012,11 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6891fd5f9afed457b3675c46_(3).jpg",
-    "url": "https://www.excursionstenerife.es/tours/vw-polo-car-rental"
+    "url": "https://www.excursionstenerife.es/tours/vw-polo-car-rental",
+    "pvpPricing": {
+      "adult": 52
+    },
+    "netPricing": {}
   },
   {
     "slug": "vw-polo-automatic-car-rental",
@@ -4689,7 +5072,11 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/66bbc8e5695bc1ecf2849996_arriro-boat-e72perienceis-x.webp",
-    "url": "https://www.excursionstenerife.es/tours/vw-polo-automatic-car-rental"
+    "url": "https://www.excursionstenerife.es/tours/vw-polo-automatic-car-rental",
+    "pvpPricing": {
+      "adult": 60
+    },
+    "netPricing": {}
   },
   {
     "slug": "ole-flamenco-show",
@@ -4753,7 +5140,13 @@
     "timeSlots": [
       "21:00"
     ],
-    "meetingPoint": "Las Olas Showroom, GF Victoria Hotel, C. Fernando López Arvelo 1, Costa Adeje"
+    "meetingPoint": "Las Olas Showroom, GF Victoria Hotel, C. Fernando López Arvelo 1, Costa Adeje",
+    "pvpPricing": {
+      "adult": 51,
+      "child": 25.5
+    },
+    "netPricing": {},
+    "bookingPhone": "922 987 184"
   },
   {
     "slug": "flamenco-show-sala-coliseo",
@@ -4817,7 +5210,13 @@
     "timeSlots": [
       "20:30"
     ],
-    "meetingPoint": "Teatro Coliseo, Avda. Edelmira Alfonso s/n, San Miguel de Abona"
+    "meetingPoint": "Teatro Coliseo, Avda. Edelmira Alfonso s/n, San Miguel de Abona",
+    "pvpPricing": {
+      "adult": 32,
+      "child": 19
+    },
+    "netPricing": {},
+    "bookingPhone": "922 374 811"
   },
   {
     "slug": "history-evolution-of-music",
@@ -4881,7 +5280,13 @@
     "timeSlots": [
       "21:00"
     ],
-    "meetingPoint": "Auditorio Pirámide de Arona, Av. las Américas s/n, Playa de las Américas"
+    "meetingPoint": "Auditorio Pirámide de Arona, Av. las Américas s/n, Playa de las Américas",
+    "pvpPricing": {
+      "adult": 49,
+      "child": 25
+    },
+    "netPricing": {},
+    "bookingPhone": "658 987 645"
   },
   {
     "slug": "medieval-show",
@@ -4945,7 +5350,13 @@
     "timeSlots": [
       "19:00"
     ],
-    "meetingPoint": "Castillo San Miguel, Av. Edelmira Alfonso s/n, Aldea Blanca"
+    "meetingPoint": "Castillo San Miguel, Av. Edelmira Alfonso s/n, Aldea Blanca",
+    "pvpPricing": {
+      "adult": 52,
+      "child": 31
+    },
+    "netPricing": {},
+    "bookingPhone": "922 374 811"
   },
   {
     "slug": "music-hall-tavern",
@@ -5050,7 +5461,13 @@
     "timeSlots": [
       "19:30"
     ],
-    "meetingPoint": "Vivo Show Bar, Av. Rafael Puig Lluvina 7, Playa de las Américas"
+    "meetingPoint": "Vivo Show Bar, Av. Rafael Puig Lluvina 7, Playa de las Américas",
+    "pvpPricing": {
+      "adult": 49,
+      "child": 39
+    },
+    "netPricing": {},
+    "bookingPhone": "928 514 701"
   },
   {
     "slug": "scandal-dinner-show",
@@ -5112,7 +5529,12 @@
     "timeSlots": [
       "20:30"
     ],
-    "meetingPoint": "Las Olas Showroom, GF Victoria Hotel, C. Fernando López Arvelo 1, Costa Adeje"
+    "meetingPoint": "Las Olas Showroom, GF Victoria Hotel, C. Fernando López Arvelo 1, Costa Adeje",
+    "pvpPricing": {
+      "adult": 94
+    },
+    "netPricing": {},
+    "bookingPhone": "922 987 184"
   },
   {
     "slug": "utopia-pool-party",
@@ -5172,7 +5594,12 @@
     "timeSlots": [
       "13:00"
     ],
-    "meetingPoint": "Monkey Beach Club, Av. Rafael Puig Lluvinas 3, Costa Adeje"
+    "meetingPoint": "Monkey Beach Club, Av. Rafael Puig Lluvinas 3, Costa Adeje",
+    "pvpPricing": {
+      "adult": 70
+    },
+    "netPricing": {},
+    "bookingPhone": "690 126 477"
   },
   {
     "slug": "spa-aqua-club-termal",
@@ -5228,6 +5655,10 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6685b71cfac38a4dc8f4417f_c.webp",
-    "url": "https://www.excursionstenerife.es/tours/spa-aqua-club-termal"
+    "url": "https://www.excursionstenerife.es/tours/spa-aqua-club-termal",
+    "pvpPricing": {
+      "adult": 13
+    },
+    "netPricing": {}
   }
 ]

@@ -7,12 +7,14 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "scrape-events": "npx tsx scripts/scrape-events.ts"
+    "scrape-events": "npx tsx scripts/scrape-events.ts",
+    "sync-prices": "npx tsx scripts/sync-prices.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.101.0",
     "@types/qrcode": "^1.5.6",
     "@upstash/redis": "^1.38.0",
+    "csv-parse": "^6.2.1",
     "next": "16.2.7",
     "qrcode": "^1.5.4",
     "react": "19.2.4",
