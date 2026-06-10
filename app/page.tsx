@@ -119,7 +119,7 @@ function BookingButtons({ bookingText, whatsappNumber }: { bookingText: string; 
       <button
         onClick={handlePay}
         disabled={loading}
-        className="flex items-center justify-center gap-2 bg-orange-500 hover:bg-orange-400 disabled:opacity-60 text-white font-semibold px-5 py-3 rounded-2xl text-sm transition-all"
+        className="flex items-center justify-center gap-2 bg-green-600 hover:bg-green-500 disabled:opacity-60 text-white font-semibold px-5 py-3 rounded-2xl text-sm transition-all"
       >
         {loading ? "Opening payment…" : "💳 Pay & Book →"}
       </button>
