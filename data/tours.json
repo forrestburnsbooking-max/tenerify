@@ -1159,8 +1159,8 @@
       }
     ],
     "priceFrom": 46,
-    "description": "Maxicat is an ecological catamaran, discover the fascinating world of the sea mammals that inhabit the waters of the Canary Islands and see them in their natural habitat including pilot whales and bottle-nose dolphins. ・ Then relax on the spacious decks or choose a swim and snorkel in the crystal waters of the Atlantic Ocean. Relax on the solarium and enjoy the sea.",
-    "included": "・ Open bar and lunch",
+    "description": "Maxicat is an ecological catamaran, discover the fascinating world of the sea mammals that inhabit the waters of the Canary Islands and see them in their natural habitat including pilot whales and bottle-nose dolphins. ・ Then relax on the spacious decks or swim and snorkel at Diego Hernández beach in the crystal waters of the Atlantic Ocean. Relax on the solarium and enjoy the sea.",
+    "included": "・ Free shuttle pickup from Callao Salvaje, Las Américas, Los Cristianos & Golf del Sur ・ Canarian-style rice with mojo sauce + dessert (vegan/vegetarian and kids' menu available) ・ Drinks ・ Swimming & snorkelling stop ・ Guided whale watching ・ Safety briefing",
     "faq": [
       {
         "question": "How will I receive my tickets?",
@@ -1195,8 +1195,8 @@
     "url": "https://www.excursionstenerife.es/tours/maxicat-catamaran",
     "timeSlots": [
       "10:00",
-      "13:15",
-      "16:30"
+      "13:00",
+      "16:00"
     ],
     "meetingPoint": "Gate 9, Puerto Colón Marina, Costa Adeje",
     "pvpPricing": {
