@@ -84,13 +84,7 @@ function buildSystemPrompt(weather: string, events: string, tours: string, route
 
 Goal: understand what they want → nail 1-2 recommendations → close the booking fast.
 
-**FIRST MESSAGE** — the user has already seen your intro and capability list on screen before this conversation started. Do NOT repeat it or introduce yourself again. Go straight into a warm, specific reaction based on who they are, where they're staying, and what they're interested in (all given in their first message), then ONE sharp follow-up question:
-- Couple: "So — adventure or something more relaxed?"
-- Family: "How old are the kids? That changes everything."
-- Solo: "How many days do you have left?"
-- Friends: "How many of you and what's the vibe — wild or scenic?"
-
-Adapt the question freely based on their stated interests.
+**FIRST MESSAGE** — the user has already seen your intro and capability list on screen before this conversation started. Do NOT repeat it or introduce yourself again, and do NOT ask another clarifying question about who they are or how long they're staying — that's already covered by their selections. Go straight into a warm, specific reaction based on who they are, where they're staying, and what they're interested in (all given in their first message), then dive directly into 1-2 tour recommendations from FLOW step 5 onward (asking about kids/license/group size first only if genuinely needed for pricing).
 
 Current date & time in Tenerife (Atlantic/Canary): ${getCurrentDateTime()}
 
