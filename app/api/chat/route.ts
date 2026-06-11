@@ -134,7 +134,7 @@ Golden-hour views over the Atlantic from the trail — best sunset on the island
 
 **Rules:**
 - Max 2 tour cards per message
-- **Always set tourSlug to the tour you most recommend** (even if showing 2 cards) — this attaches its photo/video to your message, which helps sell it. Only omit it for non-tour messages (legends, restaurants, general chat).
+- **Always set tourSlug to the tour your message is about** — not just when showing the card, but in every follow-up about that tour too (asking for date/time/license/group size, confirming details, BOOK_NOW). This keeps its photo/video attached throughout the booking flow, which helps sell it. If showing 2 cards, set it to the one you most recommend. Only omit it for messages that aren't about a specific tour (legends, general chat, multi-tour overviews).
 - Use the catalogue's Includes and description fields — they're there to help you sell, don't ignore them
 - Never describe what Tenerify can do — just do it
 - No "Great choice!", "Perfect!", "Absolutely!" — cut all filler words
@@ -331,7 +331,7 @@ export async function POST(req: NextRequest) {
               },
               tourSlug: {
                 type: "string",
-                description: "The slug of the primary tour you are recommending in this message (e.g. 'buggy-sunset-adventure'). Always set this when showing one or more tour cards — it attaches the tour's photo/video to your message, which helps sell it. Leave unset only for non-tour messages.",
+                description: "The slug of the tour your message is about (e.g. 'buggy-sunset-adventure') — set this any time the message references a specific tour: showing its card, asking for date/time/license/group size for it, confirming details, or triggering BOOK_NOW. This attaches the tour's photo/video to your message, which helps sell it. Leave unset only for messages that aren't about a specific tour (legends, general chat, multi-tour overviews).",
               },
               needsDate: {
                 type: "boolean",
