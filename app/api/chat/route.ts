@@ -377,11 +377,16 @@ export async function POST(req: NextRequest) {
     message = message.replace(/\[BOOK_NOW:[^\]]+\]/g, "").trim();
 
     // Attach tour media if AI recommended a specific tour
-    let tourMedia: { imageUrl?: string; videoUrl?: string; title?: string } | null = null;
+    let tourMedia: { imageUrl?: string; images?: string[]; videoUrl?: string; title?: string } | null = null;
     if (tourSlug) {
       const tour = getTourBySlug(tourSlug);
       if (tour) {
-        tourMedia = { imageUrl: tour.imageUrl, videoUrl: tour.videoUrl, title: tour.title };
+        tourMedia = {
+          imageUrl: tour.imageUrl,
+          images: tour.images?.length ? tour.images : tour.imageUrl ? [tour.imageUrl] : undefined,
+          videoUrl: tour.videoUrl,
+          title: tour.title,
+        };
       }
     }
 

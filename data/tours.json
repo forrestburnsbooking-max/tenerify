@@ -1192,6 +1192,11 @@
       }
     ],
     "imageUrl": "/images/tours/maxicat-catamaran.webp",
+    "images": [
+      "/images/tours/maxicat-catamaran.webp",
+      "/images/tours/maxicat-catamaran-2.webp",
+      "/images/tours/maxicat-catamaran-3.webp"
+    ],
     "url": "https://www.excursionstenerife.es/tours/maxicat-catamaran",
     "timeSlots": [
       "10:00",

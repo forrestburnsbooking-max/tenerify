@@ -137,6 +137,7 @@ function BookingButtons({ bookingText, whatsappNumber }: { bookingText: string; 
 
 type TourMedia = {
   imageUrl?: string;
+  images?: string[];
   videoUrl?: string;
   title?: string;
 };
@@ -707,12 +708,24 @@ export default function Home() {
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
                     />
-                  ) : msg.tourMedia.imageUrl ? (
-                    <img
-                      src={msg.tourMedia.imageUrl}
-                      alt={msg.tourMedia.title ?? ""}
-                      className="w-full aspect-video object-cover"
-                    />
+                  ) : msg.tourMedia.images?.length ? (
+                    <div className="relative">
+                      <div className="flex overflow-x-auto snap-x snap-mandatory no-scrollbar">
+                        {msg.tourMedia.images.map((src, i) => (
+                          <img
+                            key={src}
+                            src={src}
+                            alt={`${msg.tourMedia!.title ?? ""} ${i + 1}`}
+                            className="w-full flex-none snap-center aspect-video object-cover"
+                          />
+                        ))}
+                      </div>
+                      {msg.tourMedia.images.length > 1 && (
+                        <span className="absolute bottom-2 right-2 bg-black/50 text-white text-xs px-2 py-0.5 rounded-full">
+                          1/{msg.tourMedia.images.length} · swipe
+                        </span>
+                      )}
+                    </div>
                   ) : null}
                 </div>
               )}
