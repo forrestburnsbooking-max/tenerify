@@ -84,12 +84,12 @@ export function getTours(): string {
         const pricePart = formatPrice(t);
         const agePart = t.minAge ? ` | min age ${t.minAge}` : "";
         const durPart = t.duration ? ` | ${t.duration}` : "";
-        const incPart = t.included ? ` | Includes: ${t.included.slice(0, 80)}` : "";
+        const incPart = t.included ? ` | Includes: ${t.included.slice(0, 200)}` : "";
         const slotsPart = t.timeSlots?.length ? ` | timeSlots: ${t.timeSlots.join(", ")}` : "";
         const depositPart = t.depositPercent ? ` | 💳 ${t.depositPercent}% deposit online, rest paid on pickup` : "";
         lines.push(`  • [slug:${t.slug}] ${t.title}${durPart} | ${pricePart}${agePart}${incPart}${slotsPart}${depositPart}`);
         if (t.description) {
-          lines.push(`    ${t.description.slice(0, 150)}`);
+          lines.push(`    ${t.description.slice(0, 220)}`);
         }
         if (t.pricing.length > 1) {
           const options = t.pricing.map((p) => `${p.label}: €${p.price}`).join(" / ");
