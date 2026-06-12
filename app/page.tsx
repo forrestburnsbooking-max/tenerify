@@ -172,6 +172,8 @@ const UI_STRINGS: Record<string, {
   whoQuestion: string;
   categoryQuestion: string;
   locationQuestion: string;
+  otherLabel: string;
+  otherPlaceholder: string;
   nextButton: string;
   whoLabels: { family: string; couple: string; solo: string; friends: string };
   catLabels: { water: string; buggy: string; tours: string; parks: string; shows: string; adventure: string };
@@ -182,6 +184,8 @@ const UI_STRINGS: Record<string, {
     whoQuestion: "¡Buenas! ¿Quién viene a Tenerife? 🌊",
     categoryQuestion: "¿Qué te apetece? Elige lo que te interese 👇",
     locationQuestion: "¿En qué zona te alojas? 📍",
+    otherLabel: "📍 Otra zona",
+    otherPlaceholder: "Escribe tu zona...",
     nextButton: "Siguiente →",
     whoLabels: { family: "👨‍👩‍👧 Familia", couple: "💑 Pareja", solo: "🧑 Solo", friends: "👥 Amigos" },
     catLabels: { water: "Agua y Barcos", buggy: "Buggy y Quad", tours: "Tours", parks: "Parques", shows: "Shows y Cenas", adventure: "Aventura" },
@@ -192,6 +196,8 @@ const UI_STRINGS: Record<string, {
     whoQuestion: "¡Buenas! Who's coming to Tenerife? 🌊",
     categoryQuestion: "What are you looking for? Pick all that interest you 👇",
     locationQuestion: "Which area are you staying in? 📍",
+    otherLabel: "📍 Other",
+    otherPlaceholder: "Type your area...",
     nextButton: "Next →",
     whoLabels: { family: "👨‍👩‍👧 Family", couple: "💑 Couple", solo: "🧑 Solo", friends: "👥 Friends" },
     catLabels: { water: "Water & Boats", buggy: "Buggy & Quad", tours: "Island Tours", parks: "Theme Parks", shows: "Shows & Dinners", adventure: "Adventure" },
@@ -202,6 +208,8 @@ const UI_STRINGS: Record<string, {
     whoQuestion: "Hallo! Wer kommt nach Teneriffa? 🌊",
     categoryQuestion: "Was sucht ihr? Wählt alles aus 👇",
     locationQuestion: "In welcher Gegend übernachtet ihr? 📍",
+    otherLabel: "📍 Andere",
+    otherPlaceholder: "Gib deine Gegend ein...",
     nextButton: "Weiter →",
     whoLabels: { family: "👨‍👩‍👧 Familie", couple: "💑 Paar", solo: "🧑 Alleine", friends: "👥 Freunde" },
     catLabels: { water: "Wasser & Boote", buggy: "Buggy & Quad", tours: "Insel-Touren", parks: "Freizeitparks", shows: "Shows & Dinner", adventure: "Abenteuer" },
@@ -212,6 +220,8 @@ const UI_STRINGS: Record<string, {
     whoQuestion: "Привет! Кто едет на Тенерифе? 🌊",
     categoryQuestion: "Что вас интересует? Выбери всё нужное 👇",
     locationQuestion: "В каком районе вы остановились? 📍",
+    otherLabel: "📍 Другое",
+    otherPlaceholder: "Укажите свой район...",
     nextButton: "Далее →",
     whoLabels: { family: "👨‍👩‍👧 Семья", couple: "💑 Пара", solo: "🧑 Один", friends: "👥 Друзья" },
     catLabels: { water: "Вода и лодки", buggy: "Багги и квад", tours: "Экскурсии", parks: "Парки", shows: "Шоу и ужины", adventure: "Приключения" },
@@ -222,6 +232,8 @@ const UI_STRINGS: Record<string, {
     whoQuestion: "Hej! Kto jedzie na Teneryfę? 🌊",
     categoryQuestion: "Czego szukasz? Wybierz wszystko 👇",
     locationQuestion: "W której okolicy mieszkasz? 📍",
+    otherLabel: "📍 Inne",
+    otherPlaceholder: "Wpisz swoją okolicę...",
     nextButton: "Dalej →",
     whoLabels: { family: "👨‍👩‍👧 Rodzina", couple: "💑 Para", solo: "🧑 Solo", friends: "👥 Znajomi" },
     catLabels: { water: "Woda i łodzie", buggy: "Buggy i Quad", tours: "Wycieczki", parks: "Parki rozrywki", shows: "Pokazy i kolacje", adventure: "Przygoda" },
@@ -232,6 +244,8 @@ const UI_STRINGS: Record<string, {
     whoQuestion: "Salut! Qui vient à Tenerife? 🌊",
     categoryQuestion: "Qu'est-ce qui vous intéresse? Choisissez tout 👇",
     locationQuestion: "Dans quelle zone logez-vous? 📍",
+    otherLabel: "📍 Autre",
+    otherPlaceholder: "Indiquez votre zone...",
     nextButton: "Suivant →",
     whoLabels: { family: "👨‍👩‍👧 Famille", couple: "💑 Couple", solo: "🧑 Seul(e)", friends: "👥 Amis" },
     catLabels: { water: "Eau & Bateaux", buggy: "Buggy & Quad", tours: "Tours de l'île", parks: "Parcs", shows: "Shows & Dîners", adventure: "Aventure" },
@@ -242,6 +256,8 @@ const UI_STRINGS: Record<string, {
     whoQuestion: "Ciao! Chi viene a Tenerife? 🌊",
     categoryQuestion: "Cosa cercate? Selezionate tutto 👇",
     locationQuestion: "In quale zona alloggiate? 📍",
+    otherLabel: "📍 Altro",
+    otherPlaceholder: "Indica la tua zona...",
     nextButton: "Avanti →",
     whoLabels: { family: "👨‍👩‍👧 Famiglia", couple: "💑 Coppia", solo: "🧑 Solo", friends: "👥 Amici" },
     catLabels: { water: "Acqua e Barche", buggy: "Buggy & Quad", tours: "Tour dell'isola", parks: "Parchi tematici", shows: "Show e Cene", adventure: "Avventura" },
@@ -252,6 +268,8 @@ const UI_STRINGS: Record<string, {
     whoQuestion: "Hallo! Wie komt naar Tenerife? 🌊",
     categoryQuestion: "Wat zoeken jullie? Kies alles wat jullie interesseert 👇",
     locationQuestion: "In welk gebied verblijven jullie? 📍",
+    otherLabel: "📍 Anders",
+    otherPlaceholder: "Voer je gebied in...",
     nextButton: "Volgende →",
     whoLabels: { family: "👨‍👩‍👧 Familie", couple: "💑 Stel", solo: "🧑 Solo", friends: "👥 Vrienden" },
     catLabels: { water: "Water & Boten", buggy: "Buggy & Quad", tours: "Eilandtours", parks: "Pretparken", shows: "Shows & Diners", adventure: "Avontuur" },
@@ -300,6 +318,8 @@ export default function Home() {
   const [who, setWho] = useState("");
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
   const [location, setLocation] = useState("");
+  const [showCustomLocation, setShowCustomLocation] = useState(false);
+  const [customLocation, setCustomLocation] = useState("");
   const [selectedLanguage, setSelectedLanguage] = useState("");
   const [messages, setMessages] = useState<Message[]>([]);
   const [loading, setLoading] = useState(false);
@@ -491,7 +511,7 @@ export default function Home() {
     <div className="flex flex-col h-screen text-white" style={{ background: "linear-gradient(160deg, #071829 0%, #0a1020 40%, #110c1a 100%)" }}>
       <header className="flex items-center gap-3 px-5 border-b border-white/8" style={{ paddingTop: "max(env(safe-area-inset-top, 0px), 16px)", paddingBottom: "16px" }}>
         <button
-          onClick={() => { setStep("hero"); setMessages([]); setUsedOptions(new Set()); setSelectedCategories([]); setWho(""); setLocation(""); setSelectedLanguage(""); setMenuChoice(null); }}
+          onClick={() => { setStep("hero"); setMessages([]); setUsedOptions(new Set()); setSelectedCategories([]); setWho(""); setLocation(""); setSelectedLanguage(""); setMenuChoice(null); setShowCustomLocation(false); setCustomLocation(""); }}
           className="text-2xl hover:scale-110 transition-transform flex-shrink-0"
         >
           🌋
@@ -651,7 +671,7 @@ export default function Home() {
               <div className="bg-white/6 border border-white/12 text-white rounded-2xl rounded-tl-none px-4 py-3 text-sm leading-relaxed">
                 {t.locationQuestion}
               </div>
-              <div className="grid grid-cols-3 gap-2">
+              <div className="grid grid-cols-2 gap-2">
                 {LOCATIONS.map((loc) => {
                   const isSelected = location === loc.value;
                   const isLocked = step === "chat";
@@ -672,7 +692,44 @@ export default function Home() {
                     </button>
                   );
                 })}
+                {(() => {
+                  const isLocked = step === "chat";
+                  const isSelected = showCustomLocation || (isLocked && location !== "" && !LOCATIONS.some(l => l.value === location));
+                  return (
+                    <button
+                      onClick={() => !isLocked && setShowCustomLocation(true)}
+                      disabled={isLocked}
+                      className={`px-3 py-2.5 rounded-2xl text-sm font-medium border transition-all text-center ${
+                        isLocked
+                          ? isSelected
+                            ? "bg-orange-500/20 border-orange-500 text-orange-300 cursor-default"
+                            : "bg-white/5 border-white/10 text-white/40 cursor-default"
+                          : "bg-white/8 border-white/15 text-white hover:border-orange-500 hover:text-orange-400 cursor-pointer"
+                      }`}
+                    >
+                      {t.otherLabel}
+                    </button>
+                  );
+                })()}
               </div>
+              {showCustomLocation && step !== "chat" && (
+                <div className="flex gap-2">
+                  <input
+                    type="text"
+                    value={customLocation}
+                    onChange={(e) => setCustomLocation(e.target.value)}
+                    placeholder={t.otherPlaceholder}
+                    className="flex-1 px-3 py-2.5 rounded-2xl text-sm bg-white/8 border border-white/15 text-white placeholder:text-white/40 focus:outline-none focus:border-orange-500"
+                  />
+                  <button
+                    onClick={() => customLocation.trim() && handleLocationSelect(customLocation.trim())}
+                    disabled={!customLocation.trim()}
+                    className="px-4 py-2.5 rounded-2xl text-sm font-medium border border-orange-500 bg-orange-500/20 text-orange-300 hover:bg-orange-500/30 transition-all disabled:opacity-40"
+                  >
+                    {t.nextButton}
+                  </button>
+                </div>
+              )}
             </div>
           </div>
         )}

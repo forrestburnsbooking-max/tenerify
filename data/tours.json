@@ -5125,5 +5125,63 @@
     "url": "https://www.souljeep.com/",
     "bookingPhone": "614 475 604",
     "supplierId": "soul-jeep"
+  },
+  {
+    "slug": "jetski-las-galletas",
+    "title": "Jet Ski Safari — Las Galletas",
+    "category": "jetski",
+    "duration": "1h",
+    "minAge": 16,
+    "pricing": [
+      {
+        "label": "SNG (1 person)",
+        "price": 110,
+        "net": 50
+      },
+      {
+        "label": "DBL (2 people)",
+        "price": 130,
+        "net": 60
+      }
+    ],
+    "priceFrom": 110,
+    "description": "Explore Tenerife's south coast on a powerful Sea-Doo jet ski, departing from Marina del Sur in Las Galletas. Ride along the coastline with incredible ocean views, with a guide leading the safari. Free hotel-area transfer and soft drinks included.",
+    "included": "Jet ski, fuel, insurance, life jacket and wetsuit, guide, free pick-up/drop-off in South Tenerife, soft drinks.",
+    "meetingPoint": "Marina del Sur, Av. del Litoral, Pantalán Nº4, Las Galletas",
+    "faq": [
+      {
+        "question": "How will I receive my tickets?",
+        "answer": "After you complete your purchase, you will receive an order confirmation email within a few minutes. This email will contain all the details of your purchase, including the event, date, and number of tickets. Please note we do not send tickets by post."
+      },
+      {
+        "question": "Can I book an excursion within 24 hours of its start time?",
+        "answer": "Yes, it possible. Please contact us or visit our office"
+      },
+      {
+        "question": "Will I be picked up at my hotel when a transfer is possible?",
+        "answer": "And where is the meeting point The exact meeting point for your excursion will be specified in your booking confirmation email. If a transfer service is included with your booking, we offer convenient hotel pickup. The availability of this service will depend on your hotel’s location and the specific excursion."
+      },
+      {
+        "question": "May I pay directly in cash when the tour / activity starts?",
+        "answer": "We offer online purchases on the platform. If you wish to buy with cash you can visit our office."
+      },
+      {
+        "question": "Do you offer discounts?",
+        "answer": "We generally cannot give any discounts due to the very high demand. We offer discount for group bookings. Please contact us"
+      },
+      {
+        "question": "What happens if the weather is too bad to go on the excursion?",
+        "answer": "If the weather is too bad to go on the excursion, it will be rescheduled or you will receive a full refund."
+      },
+      {
+        "question": "May I purchase a gift voucher?",
+        "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
+      }
+    ],
+    "imageUrl": "https://flashjetski.com/wp-content/uploads/2023/06/jetski-tenerife-foto-8.webp",
+    "url": "https://flashjetski.com/en/",
+    "seatsPerVehicle": 2,
+    "bookingPhone": "666 141 121",
+    "supplierId": "flash-jetski"
   }
 ]
