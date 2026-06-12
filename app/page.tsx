@@ -521,9 +521,9 @@ export default function Home() {
       <header className="relative flex items-center gap-3 px-5 border-b border-white/8" style={{ paddingTop: "max(env(safe-area-inset-top, 0px), 16px)", paddingBottom: "16px" }}>
         <button
           onClick={() => { setStep("hero"); setMessages([]); setUsedOptions(new Set()); setSelectedCategories([]); setWho(""); setLocation(""); setSelectedLanguage(""); setMenuChoice(null); setShowCustomLocation(false); setCustomLocation(""); }}
-          className="text-2xl hover:scale-110 transition-transform flex-shrink-0"
+          className="w-8 h-8 hover:scale-110 transition-transform flex-shrink-0"
         >
-          🌋
+          <img src="/logo-mark.svg" alt="" className="w-full h-full" />
         </button>
         <div className="flex-1 min-w-0">
           <h1 className="font-extrabold text-base leading-none tracking-tight">
