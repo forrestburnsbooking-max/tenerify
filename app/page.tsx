@@ -513,11 +513,10 @@ export default function Home() {
       <img
         src="/chat-bg.jpg"
         alt=""
-        className="absolute inset-0 w-full h-full object-cover opacity-80"
-        style={{ filter: "sepia(0.7) saturate(1.4)" }}
+        className="absolute inset-0 w-full h-full object-cover opacity-90"
       />
       {/* Dark overlay for readability */}
-      <div className="absolute inset-0 bg-[#0d0d0d]/55" />
+      <div className="absolute inset-0 bg-[#0d0d0d]/45" />
 
       <header className="relative flex items-center gap-3 px-5 border-b border-white/8" style={{ paddingTop: "max(env(safe-area-inset-top, 0px), 16px)", paddingBottom: "16px" }}>
         <button
