@@ -618,7 +618,8 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6692b5742f10ee15ab7c4ab3_DDKayakDivingAtlantis.webp",
-    "url": "https://www.excursionstenerife.es/tours/kayaking-stand-up-paddle-los-cristianos"
+    "url": "https://www.excursionstenerife.es/tours/kayaking-stand-up-paddle-los-cristianos",
+    "supplierId": "nere"
   },
   {
     "slug": "stand-up-paddle-la-caleta",
@@ -676,7 +677,8 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/668d92fd6769e15354a7c086_1.webp",
-    "url": "https://www.excursionstenerife.es/tours/stand-up-paddle-la-caleta"
+    "url": "https://www.excursionstenerife.es/tours/stand-up-paddle-la-caleta",
+    "supplierId": "nere"
   },
   {
     "slug": "banana-puerto-colon",
@@ -1895,7 +1897,8 @@
       "12:00",
       "14:00"
     ],
-    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)"
+    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
+    "supplierId": "nere"
   },
   {
     "slug": "buggy-teide-adventure",
@@ -2223,7 +2226,7 @@
     ],
     "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
     "bookingPhone": "677 654 754",
-    "supplierId": "comfort"
+    "supplierId": "nere"
   },
   {
     "slug": "island-tour-masca",
@@ -2284,7 +2287,8 @@
     "timeSlots": [
       "08:30"
     ],
-    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)"
+    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
+    "supplierId": "nere"
   },
   {
     "slug": "la-gomera",
@@ -2350,7 +2354,8 @@
     "timeSlots": [
       "08:30"
     ],
-    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)"
+    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
+    "supplierId": "nere"
   },
   {
     "slug": "teide-by-night",
@@ -2486,7 +2491,7 @@
     ],
     "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
     "bookingPhone": "677 654 754",
-    "supplierId": "comfort"
+    "supplierId": "nere"
   },
   {
     "slug": "santa-cruz--la-laguna--anaga",
@@ -2555,7 +2560,7 @@
     ],
     "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
     "bookingPhone": "677 654 754",
-    "supplierId": "comfort"
+    "supplierId": "nere"
   },
   {
     "slug": "booster-pack-puerto-colon",
@@ -2625,7 +2630,8 @@
       "16:00",
       "17:00"
     ],
-    "meetingPoint": "Puerto Colón Marina, Costa Adeje"
+    "meetingPoint": "Puerto Colón Marina, Costa Adeje",
+    "supplierId": "nere"
   },
   {
     "slug": "jet-ski-puerto-colon",
@@ -2696,7 +2702,8 @@
       "15:00",
       "16:00",
       "17:00"
-    ]
+    ],
+    "supplierId": "nere"
   },
   {
     "slug": "watersport-pack-puerto-colon",
@@ -2834,7 +2841,7 @@
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6682f3b5c426ea82ef18f2fc_aqualand.webp",
     "url": "https://www.excursionstenerife.es/tours/aqualand",
     "bookingPhone": "922 797 573 / 662 936 575",
-    "supplierId": "island-excursions"
+    "supplierId": "nere"
   },
   {
     "slug": "camel-park",
@@ -2964,7 +2971,7 @@
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6682fd28a1049f45b9e90155_Sin-t%C3%ADtulo-1.webp",
     "url": "https://www.excursionstenerife.es/tours/jungle-park",
     "bookingPhone": "922 797 573 / 662 936 575",
-    "supplierId": "island-excursions"
+    "supplierId": "nere"
   },
   {
     "slug": "loro-parque",
@@ -3026,7 +3033,7 @@
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/666b0ec62605d8e22d009378_G.webp",
     "url": "https://www.excursionstenerife.es/tours/loro-parque",
     "bookingPhone": "922 797 573 / 662 936 575",
-    "supplierId": "island-excursions"
+    "supplierId": "nere"
   },
   {
     "slug": "siam-park",
@@ -3088,7 +3095,7 @@
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6659956066980b3e57ccf786_z.webp",
     "url": "https://www.excursionstenerife.es/tours/siam-park",
     "bookingPhone": "922 797 573 / 662 936 575",
-    "supplierId": "island-excursions"
+    "supplierId": "nere"
   },
   {
     "slug": "2parks-ticket-jungle-park-aqualand",
@@ -3154,7 +3161,7 @@
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6683071ecb1ebb9cd9ed19bc_Two_Parks.webp",
     "url": "https://www.excursionstenerife.es/tours/2parks-ticket-jungle-park-aqualand",
     "bookingPhone": "922 797 573 / 662 936 575",
-    "supplierId": "island-excursions"
+    "supplierId": "nere"
   },
   {
     "slug": "twin-ticket-loro-parque-siam-park",
@@ -3224,7 +3231,7 @@
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6682dfa8f1cc5c7a594e6eb9_Z.webp",
     "url": "https://www.excursionstenerife.es/tours/twin-ticket-loro-parque-siam-park",
     "bookingPhone": "922 797 573 / 662 936 575",
-    "supplierId": "island-excursions"
+    "supplierId": "nere"
   },
   {
     "slug": "coastal-quads",
@@ -3286,7 +3293,8 @@
     "timeSlots": [
       "12:00"
     ],
-    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)"
+    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
+    "supplierId": "nere"
   },
   {
     "slug": "quad-off-road-tour",
@@ -3479,7 +3487,8 @@
     "timeSlots": [
       "10:00"
     ],
-    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)"
+    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
+    "supplierId": "nere"
   },
   {
     "slug": "quad-masca-tour",
@@ -3541,7 +3550,8 @@
     "timeSlots": [
       "10:00"
     ],
-    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)"
+    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
+    "supplierId": "nere"
   },
   {
     "slug": "citroen-c3-car-rental",
@@ -4508,7 +4518,7 @@
     ],
     "meetingPoint": "Las Olas Showroom, GF Victoria Hotel, C. Fernando López Arvelo 1, Costa Adeje",
     "bookingPhone": "922 987 184",
-    "supplierId": "nere-shows"
+    "supplierId": "las-olas-showroom"
   },
   {
     "slug": "flamenco-show-sala-coliseo",
@@ -4886,7 +4896,7 @@
     ],
     "meetingPoint": "Las Olas Showroom, GF Victoria Hotel, C. Fernando López Arvelo 1, Costa Adeje",
     "bookingPhone": "922 987 184",
-    "supplierId": "nere-shows"
+    "supplierId": "las-olas-showroom"
   },
   {
     "slug": "seat-leon-st-automatic-car-rental",

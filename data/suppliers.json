@@ -120,18 +120,13 @@
     "phone": "699 508 232"
   },
   {
-    "id": "comfort",
-    "name": "Comfort",
-    "phone": "677 654 754"
-  },
-  {
     "id": "ozzy",
     "name": "Ozzy",
     "phone": "624 642 724"
   },
   {
-    "id": "island-excursions",
-    "name": "Island Excursions",
+    "id": "nere",
+    "name": "Nere",
     "phone": "922 797 573 / 662 936 575"
   },
   {
@@ -162,8 +157,8 @@
     "commissionPercent": 25
   },
   {
-    "id": "nere-shows",
-    "name": "Nere Shows",
+    "id": "las-olas-showroom",
+    "name": "Las Olas Showroom",
     "phone": "922 987 184"
   },
   {
