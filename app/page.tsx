@@ -508,13 +508,22 @@ export default function Home() {
   );
 
   return (
-    <div
-      className="flex flex-col h-screen text-white relative"
-      style={{
-        background:
-          "radial-gradient(ellipse 80% 50% at 50% -10%, rgba(251,146,60,0.16), transparent 60%), linear-gradient(160deg, #071829 0%, #0a1020 40%, #110c1a 100%)",
-      }}
-    >
+    <div className="flex flex-col h-screen text-white relative overflow-hidden bg-[#0d0d0d]">
+      {/* Background photo */}
+      <img
+        src="/hero-teide.jpg"
+        alt=""
+        className="absolute inset-0 w-full h-full object-cover opacity-40"
+      />
+      {/* Dark overlay + warm glow for readability */}
+      <div
+        className="absolute inset-0"
+        style={{
+          background:
+            "radial-gradient(ellipse 80% 50% at 50% -10%, rgba(251,146,60,0.18), transparent 60%), linear-gradient(160deg, rgba(7,24,41,0.82) 0%, rgba(10,16,32,0.86) 40%, rgba(17,12,26,0.92) 100%)",
+        }}
+      />
+
       <header className="relative flex items-center gap-3 px-5 border-b border-white/8" style={{ paddingTop: "max(env(safe-area-inset-top, 0px), 16px)", paddingBottom: "16px" }}>
         <button
           onClick={() => { setStep("hero"); setMessages([]); setUsedOptions(new Set()); setSelectedCategories([]); setWho(""); setLocation(""); setSelectedLanguage(""); setMenuChoice(null); setShowCustomLocation(false); setCustomLocation(""); }}
@@ -530,7 +539,7 @@ export default function Home() {
         </div>
       </header>
 
-      <div className="flex-1 overflow-y-auto px-4 py-6 space-y-6">
+      <div className="relative flex-1 overflow-y-auto px-4 py-6 space-y-6">
 
         {/* Language selection */}
         {(step === "language" || step === "menu" || step === "who" || step === "category" || step === "location" || step === "chat") && (
@@ -868,7 +877,7 @@ export default function Home() {
 
       {/* Text input */}
       {step === "chat" && !loading && (
-        <div className="px-4 pb-5 pt-3 border-t border-white/8">
+        <div className="relative px-4 pb-5 pt-3 border-t border-white/8">
           <div className="max-w-xl mx-auto flex gap-2 items-center">
             <input
               type="text"
