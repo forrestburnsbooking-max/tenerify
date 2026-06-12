@@ -78,19 +78,12 @@ const LANGUAGE_NAMES: Record<string, string> = {
   fr: "French", it: "Italian", nl: "Dutch", pl: "Polish", en: "English",
 };
 
-function buildSystemPrompt(weather: string, events: string, tours: string, routes: string, legends: string, sessionContext: string, language: string): string {
-  const langName = LANGUAGE_NAMES[language] ?? "English";
+function buildStaticSystemPrompt(tours: string, routes: string, legends: string): string {
   return `You are Tenerify — a local from Tenerife Sur. Warm, direct, zero fluff. Like a friend who knows the island inside out.
 
 Goal: understand what they want → nail 1-2 recommendations → close the booking fast.
 
 **FIRST MESSAGE** — the user has already seen your intro and capability list on screen before this conversation started. Do NOT repeat it or introduce yourself again, and do NOT ask another clarifying question about who they are or how long they're staying — that's already covered by their selections. Go straight into a warm, specific reaction based on who they are, where they're staying, and what they're interested in (all given in their first message), then dive directly into 1-2 tour recommendations from FLOW step 5 onward (asking about kids/license/group size first only if genuinely needed for pricing).
-
-Current date & time in Tenerife (Atlantic/Canary): ${getCurrentDateTime()}
-
-${weather ? `Right now in Tenerife Sur: ${weather}.\n` : ""}
-${events ? `EVENTS ON THE ISLAND (mention when relevant):\n${events}\n` : ""}
-${sessionContext ? `\n${sessionContext}\n` : ""}
 
 FULL CATALOGUE:
 ${tours}
@@ -268,8 +261,17 @@ For tours marked with "💳 X% deposit online, rest paid on pickup" (Aliscar car
 
 - ONE question per message, always with 2-4 clickable options
 - Options must match the question exactly
-- **ALWAYS respond in ${langName}.** The user explicitly chose this language. The first message may be in English (system context) — ignore that, respond in ${langName} regardless.
 - Never mention you're an AI unless directly asked`;
+}
+
+function buildDynamicContext(weather: string, events: string, sessionContext: string, language: string): string {
+  const langName = LANGUAGE_NAMES[language] ?? "English";
+  return `Current date & time in Tenerife (Atlantic/Canary): ${getCurrentDateTime()}
+
+${weather ? `Right now in Tenerife Sur: ${weather}.\n` : ""}
+${events ? `EVENTS ON THE ISLAND (mention when relevant):\n${events}\n` : ""}
+${sessionContext ? `\n${sessionContext}\n` : ""}
+**ALWAYS respond in ${langName}.** The user explicitly chose this language. The first message may be in English (system context) — ignore that, respond in ${langName} regardless.`;
 }
 
 export async function POST(req: NextRequest) {
@@ -284,6 +286,17 @@ export async function POST(req: NextRequest) {
     }
 
     const { messages, who, language: explicitLanguage } = await req.json();
+
+    if (
+      !Array.isArray(messages) ||
+      messages.length === 0 ||
+      messages.length > 40 ||
+      messages.some(
+        (m) => typeof m?.content !== "string" || m.content.length > 4000
+      )
+    ) {
+      return NextResponse.json({ error: "Invalid request" }, { status: 400 });
+    }
 
     // Session management
     const cookieId = req.cookies.get(SESSION_COOKIE)?.value;
@@ -306,12 +319,16 @@ export async function POST(req: NextRequest) {
     const tours = getTours();
     const routes = getRoutesText();
     const legends = getLegendsText();
-    const systemPrompt = buildSystemPrompt(weather, events, tours, routes, legends, sessionContext, language);
+    const staticSystemPrompt = buildStaticSystemPrompt(tours, routes, legends);
+    const dynamicContext = buildDynamicContext(weather, events, sessionContext, language);
 
     const response = await client.messages.create({
       model: "claude-sonnet-4-6",
       max_tokens: 1024,
-      system: systemPrompt,
+      system: [
+        { type: "text", text: staticSystemPrompt, cache_control: { type: "ephemeral" } },
+        { type: "text", text: dynamicContext },
+      ],
       messages,
       tools: [
         {
