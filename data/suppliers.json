@@ -1,0 +1,195 @@
+[
+  {
+    "id": "atlantis",
+    "name": "Atlantis",
+    "phone": "671 408 970"
+  },
+  {
+    "id": "watersport",
+    "name": "Watersport",
+    "phone": "638 531 863"
+  },
+  {
+    "id": "helidreams",
+    "name": "Helidreams",
+    "phone": "630 315 422"
+  },
+  {
+    "id": "xanado",
+    "name": "Xanado",
+    "phone": "619 932 637",
+    "commissionPercent": 25
+  },
+  {
+    "id": "karting-club-tenerife",
+    "name": "Karting Club Tenerife",
+    "phone": "922 730 703",
+    "commissionPercent": 30
+  },
+  {
+    "id": "karting-adeje",
+    "name": "Karting Adeje",
+    "phone": "922 713 096",
+    "commissionPercent": 30
+  },
+  {
+    "id": "rob-paragliding",
+    "name": "Rob Paragliding",
+    "phone": "609 261 796"
+  },
+  {
+    "id": "aj-fly",
+    "name": "AJ Fly",
+    "phone": "655 074 083"
+  },
+  {
+    "id": "arriro",
+    "name": "Arriro",
+    "phone": "619 591 892"
+  },
+  {
+    "id": "cool-sailing",
+    "name": "Cool Sailing",
+    "phone": "613 924 763"
+  },
+  {
+    "id": "kosamui",
+    "name": "Kosamui",
+    "phone": "639 203 484"
+  },
+  {
+    "id": "atlanca",
+    "name": "Atlanca",
+    "phone": "659 831 064"
+  },
+  {
+    "id": "freebird",
+    "name": "Freebird",
+    "phone": "922 716 864"
+  },
+  {
+    "id": "happy-hooker",
+    "name": "Happy Hooker",
+    "phone": "636 761 552"
+  },
+  {
+    "id": "maxicat",
+    "name": "Maxicat",
+    "phone": "822 200 420"
+  },
+  {
+    "id": "monte-cristo",
+    "name": "Monte Cristo",
+    "phone": "661 553 308"
+  },
+  {
+    "id": "shogun-neptuno",
+    "name": "Shogun / Neptuno",
+    "phone": "623 597 482"
+  },
+  {
+    "id": "opera",
+    "name": "Opera",
+    "phone": "661 259 806"
+  },
+  {
+    "id": "peter-pan",
+    "name": "Peter Pan",
+    "phone": "666 542 881"
+  },
+  {
+    "id": "raggie-fishing",
+    "name": "Raggie Fishing",
+    "phone": "639 209 200"
+  },
+  {
+    "id": "viking",
+    "name": "Viking",
+    "phone": "654 638 922",
+    "commissionPercent": 30
+  },
+  {
+    "id": "royal-delfin",
+    "name": "Royal Delfin",
+    "phone": "922 750 085",
+    "commissionPercent": 30
+  },
+  {
+    "id": "sonador",
+    "name": "Sonador",
+    "phone": "699 508 232"
+  },
+  {
+    "id": "comfort",
+    "name": "Comfort",
+    "phone": "677 654 754"
+  },
+  {
+    "id": "ozzy",
+    "name": "Ozzy",
+    "phone": "624 642 724"
+  },
+  {
+    "id": "island-excursions",
+    "name": "Island Excursions",
+    "phone": "922 797 573 / 662 936 575"
+  },
+  {
+    "id": "camel-park",
+    "name": "Camel Park",
+    "phone": "922 721 121"
+  },
+  {
+    "id": "quad-explorer",
+    "name": "Quad Explorer",
+    "phone": "691 019 039"
+  },
+  {
+    "id": "quadsquad",
+    "name": "QuadSquad",
+    "phone": "722 210 957"
+  },
+  {
+    "id": "aliscar",
+    "name": "Aliscar",
+    "phone": "922 753 816",
+    "commissionPercent": 30
+  },
+  {
+    "id": "tuk-tuk",
+    "name": "Tuk Tuk",
+    "phone": "628 820 720",
+    "commissionPercent": 25
+  },
+  {
+    "id": "nere-shows",
+    "name": "Nere Shows",
+    "phone": "922 987 184"
+  },
+  {
+    "id": "medieval-adventure",
+    "name": "Medieval Adventure",
+    "phone": "922 374 811"
+  },
+  {
+    "id": "history-musicle",
+    "name": "History Musicle",
+    "phone": "658 987 645"
+  },
+  {
+    "id": "mht-tavern",
+    "name": "MHT Tavern",
+    "phone": "928 514 701",
+    "commissionPercent": 30
+  },
+  {
+    "id": "hub-buggy",
+    "name": "Hub Buggy",
+    "phone": "643 132 221 / 641 123 466"
+  },
+  {
+    "id": "soul-jeep",
+    "name": "Soul Jeep",
+    "phone": "614 475 604"
+  }
+]

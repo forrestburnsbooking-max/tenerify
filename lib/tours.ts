@@ -2,10 +2,19 @@ import fs from "fs";
 import path from "path";
 
 const TOURS_FILE = path.join(process.cwd(), "data", "tours.json");
+const SUPPLIERS_FILE = path.join(process.cwd(), "data", "suppliers.json");
 
 export type PricingOption = {
   label: string;
   price: number;
+  net?: number;
+};
+
+export type Supplier = {
+  id: string;
+  name: string;
+  phone: string;
+  commissionPercent?: number;
 };
 
 export type FaqItem = {
@@ -34,6 +43,7 @@ export type Tour = {
   url: string;
   bookingPhone?: string;
   depositPercent?: number;
+  supplierId?: string;
 };
 
 const CATEGORY_EMOJI: Record<string, string> = {
@@ -109,6 +119,15 @@ function formatPrice(t: Tour): string {
   if (t.pricing.length === 0) return "Price on request";
   if (t.pricing.length === 1) return `€${t.priceFrom}`;
   return `from €${t.priceFrom}`;
+}
+
+export function getSuppliers(): Supplier[] {
+  try {
+    if (!fs.existsSync(SUPPLIERS_FILE)) return [];
+    return JSON.parse(fs.readFileSync(SUPPLIERS_FILE, "utf-8"));
+  } catch {
+    return [];
+  }
 }
 
 export function getTourBySlug(slug: string): Tour | null {

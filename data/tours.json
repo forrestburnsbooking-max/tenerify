@@ -18,7 +18,8 @@
     "pricing": [
       {
         "label": "Per person",
-        "price": 75
+        "price": 75,
+        "net": 35
       }
     ],
     "priceFrom": 75,
@@ -55,11 +56,8 @@
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6693ee4c7d053ca0b4a60795_AAOlaDivingATlanticoExcursiones.webp",
     "url": "https://www.excursionstenerife.es/tours/diving-puerto-colon",
-    "pvpPricing": {
-      "adult": 75
-    },
-    "netPricing": {},
-    "bookingPhone": "671 408 970"
+    "bookingPhone": "671 408 970",
+    "supplierId": "atlantis"
   },
   {
     "slug": "fly-fish-puerto-colon",
@@ -79,7 +77,8 @@
     "pricing": [
       {
         "label": "Per person",
-        "price": 18
+        "price": 18,
+        "net": 12
       }
     ],
     "priceFrom": 18,
@@ -116,11 +115,8 @@
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6692ccced3e6dadb64cb39c4_flyfish2.webp",
     "url": "https://www.excursionstenerife.es/tours/fly-fish-puerto-colon",
-    "pvpPricing": {
-      "adult": 18
-    },
-    "netPricing": {},
-    "bookingPhone": "638 531 863"
+    "bookingPhone": "638 531 863",
+    "supplierId": "watersport"
   },
   {
     "slug": "helidream-helicopter-tour",
@@ -140,7 +136,8 @@
     "pricing": [
       {
         "label": "Per person",
-        "price": 98
+        "price": 98,
+        "net": 83
       }
     ],
     "priceFrom": 98,
@@ -177,11 +174,8 @@
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/668d96374c23e4a9c36b623b_AHELIDREAMEXCURSIONHELICPOTERO.webp",
     "url": "https://www.excursionstenerife.es/tours/helidream-helicopter-tour",
-    "pvpPricing": {
-      "adult": 98
-    },
-    "netPricing": {},
-    "bookingPhone": "630 315 422"
+    "bookingPhone": "630 315 422",
+    "supplierId": "helidreams"
   },
   {
     "slug": "centro-hipico-xanadu",
@@ -201,11 +195,13 @@
     "pricing": [
       {
         "label": "Adult",
-        "price": 45
+        "price": 45,
+        "net": 33.75
       },
       {
         "label": "Child",
-        "price": 45
+        "price": 45,
+        "net": 33.75
       }
     ],
     "priceFrom": 45,
@@ -242,12 +238,8 @@
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/668c4c229c7f299e48c5f328_1.webp",
     "url": "https://www.excursionstenerife.es/tours/centro-hipico-xanadu",
-    "pvpPricing": {
-      "adult": 45,
-      "child": 45
-    },
-    "netPricing": {},
-    "bookingPhone": "619 932 637"
+    "bookingPhone": "619 932 637",
+    "supplierId": "xanado"
   },
   {
     "slug": "karting-club-tenerife",
@@ -267,15 +259,18 @@
     "pricing": [
       {
         "label": "Adult",
-        "price": 35
+        "price": 35,
+        "net": 24.5
       },
       {
         "label": "Child",
-        "price": 20
+        "price": 20,
+        "net": 14
       },
       {
         "label": "Kid",
-        "price": 18
+        "price": 18,
+        "net": 12.6
       }
     ],
     "priceFrom": 35,
@@ -312,13 +307,8 @@
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/665832b72151b4fbdcf445e9_C..webp",
     "url": "https://www.excursionstenerife.es/tours/karting-club-tenerife",
-    "pvpPricing": {
-      "adult": 35,
-      "child": 20,
-      "kid": 18
-    },
-    "netPricing": {},
-    "bookingPhone": "922 730 703"
+    "bookingPhone": "922 730 703",
+    "supplierId": "karting-club-tenerife"
   },
   {
     "slug": "karting-las-americas",
@@ -338,11 +328,13 @@
     "pricing": [
       {
         "label": "Adult",
-        "price": 20
+        "price": 20,
+        "net": 14
       },
       {
         "label": "Child",
-        "price": 15
+        "price": 15,
+        "net": 10.5
       }
     ],
     "priceFrom": 20,
@@ -379,12 +371,8 @@
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/687bea70d64eccd64a56aa74_karting-12.jpg",
     "url": "https://www.excursionstenerife.es/tours/karting-las-americas",
-    "pvpPricing": {
-      "adult": 20,
-      "child": 15
-    },
-    "netPricing": {},
-    "bookingPhone": "922 713 096"
+    "bookingPhone": "922 713 096",
+    "supplierId": "karting-adeje"
   },
   {
     "slug": "paragliding",
@@ -404,7 +392,8 @@
     "pricing": [
       {
         "label": "Per person",
-        "price": 85
+        "price": 85,
+        "net": 46
       }
     ],
     "priceFrom": 85,
@@ -441,11 +430,8 @@
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/668d839fdfeeede47005bbac_BRISA2.webp",
     "url": "https://www.excursionstenerife.es/tours/paragliding",
-    "pvpPricing": {
-      "adult": 85
-    },
-    "netPricing": {},
-    "bookingPhone": "609 261 796"
+    "bookingPhone": "609 261 796",
+    "supplierId": "rob-paragliding"
   },
   {
     "slug": "parascending-puerto-colon",
@@ -466,11 +452,13 @@
     "pricing": [
       {
         "label": "Adult",
-        "price": 60
+        "price": 60,
+        "net": 40
       },
       {
         "label": "Child",
-        "price": 60
+        "price": 60,
+        "net": 40
       }
     ],
     "priceFrom": 60,
@@ -507,12 +495,8 @@
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6692d2d2323c44de26624baf_Parascending3.webp",
     "url": "https://www.excursionstenerife.es/tours/parascending-puerto-colon",
-    "pvpPricing": {
-      "adult": 60,
-      "child": 60
-    },
-    "netPricing": {},
-    "bookingPhone": "655 074 083"
+    "bookingPhone": "655 074 083",
+    "supplierId": "aj-fly"
   },
   {
     "slug": "safari-kayak-tour-los-cristianos",
@@ -532,11 +516,13 @@
     "pricing": [
       {
         "label": "Adult",
-        "price": 45
+        "price": 45,
+        "net": 25
       },
       {
         "label": "Child",
-        "price": 22
+        "price": 22,
+        "net": 12.5
       }
     ],
     "priceFrom": 45,
@@ -573,12 +559,8 @@
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6692a96afac01307bd9434de_kayak-snorkel-3.webp",
     "url": "https://www.excursionstenerife.es/tours/safari-kayak-tour-los-cristianos",
-    "pvpPricing": {
-      "adult": 45,
-      "child": 22
-    },
-    "netPricing": {},
-    "bookingPhone": "671 408 970"
+    "bookingPhone": "671 408 970",
+    "supplierId": "atlantis"
   },
   {
     "slug": "kayaking-stand-up-paddle-los-cristianos",
@@ -599,7 +581,8 @@
     "pricing": [
       {
         "label": "Per person",
-        "price": 23
+        "price": 23,
+        "net": 13
       }
     ],
     "priceFrom": 23,
@@ -635,11 +618,7 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6692b5742f10ee15ab7c4ab3_DDKayakDivingAtlantis.webp",
-    "url": "https://www.excursionstenerife.es/tours/kayaking-stand-up-paddle-los-cristianos",
-    "pvpPricing": {
-      "adult": 23
-    },
-    "netPricing": {}
+    "url": "https://www.excursionstenerife.es/tours/kayaking-stand-up-paddle-los-cristianos"
   },
   {
     "slug": "stand-up-paddle-la-caleta",
@@ -660,7 +639,8 @@
     "pricing": [
       {
         "label": "Per person",
-        "price": 60
+        "price": 60,
+        "net": 30
       }
     ],
     "priceFrom": 60,
@@ -696,11 +676,7 @@
       }
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/668d92fd6769e15354a7c086_1.webp",
-    "url": "https://www.excursionstenerife.es/tours/stand-up-paddle-la-caleta",
-    "pvpPricing": {
-      "adult": 60
-    },
-    "netPricing": {}
+    "url": "https://www.excursionstenerife.es/tours/stand-up-paddle-la-caleta"
   },
   {
     "slug": "banana-puerto-colon",
@@ -720,7 +696,8 @@
     "pricing": [
       {
         "label": "Per person",
-        "price": 18
+        "price": 18,
+        "net": 12
       }
     ],
     "priceFrom": 18,
@@ -757,11 +734,8 @@
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6692c2ce5fb30e12b950e2c9_banana2.webp",
     "url": "https://www.excursionstenerife.es/tours/banana-puerto-colon",
-    "pvpPricing": {
-      "adult": 18
-    },
-    "netPricing": {},
-    "bookingPhone": "638 531 863"
+    "bookingPhone": "638 531 863",
+    "supplierId": "watersport"
   },
   {
     "slug": "arriro-boat",
@@ -781,7 +755,8 @@
     "pricing": [
       {
         "label": "Per person",
-        "price": 50
+        "price": 50,
+        "net": 22.5
       }
     ],
     "priceFrom": 50,
@@ -824,13 +799,8 @@
       "16:00"
     ],
     "meetingPoint": "Gate 11, Puerto Colón Marina, Costa Adeje",
-    "pvpPricing": {
-      "adult": 50
-    },
-    "netPricing": {
-      "adult": 25
-    },
-    "bookingPhone": "619 591 892"
+    "bookingPhone": "619 591 892",
+    "supplierId": "arriro"
   },
   {
     "slug": "cool-sailing",
@@ -840,7 +810,8 @@
     "pricing": [
       {
         "label": "Per person",
-        "price": 50
+        "price": 50,
+        "net": 25
       }
     ],
     "priceFrom": 50,
@@ -867,13 +838,8 @@
       }
     ],
     "imageUrl": "https://www.bestexcursionstenerife.com/media/com_eshop/products/resized/Cool-Sailing-07 Copy-960x540.jpg",
-    "pvpPricing": {
-      "adult": 50
-    },
-    "netPricing": {
-      "adult": 25
-    },
-    "bookingPhone": "613 924 763"
+    "bookingPhone": "613 924 763",
+    "supplierId": "cool-sailing"
   },
   {
     "slug": "kosamui-boat",
@@ -883,7 +849,8 @@
     "pricing": [
       {
         "label": "Per person",
-        "price": 50
+        "price": 50,
+        "net": 25
       }
     ],
     "priceFrom": 50,
@@ -909,13 +876,8 @@
       }
     ],
     "imageUrl": "/images/tours/kosamui-boat.jpg",
-    "pvpPricing": {
-      "adult": 50
-    },
-    "netPricing": {
-      "adult": 25
-    },
-    "bookingPhone": "639 203 484"
+    "bookingPhone": "639 203 484",
+    "supplierId": "kosamui"
   },
   {
     "slug": "atlanca-boat-rental",
@@ -935,7 +897,8 @@
     "pricing": [
       {
         "label": "Per person",
-        "price": 85
+        "price": 85,
+        "net": 55
       }
     ],
     "priceFrom": 85,
@@ -973,11 +936,8 @@
     "imageUrl": "/images/tours/atlanca-boat-rental.webp",
     "url": "https://www.excursionstenerife.es/tours/atlanca-boat-rental",
     "meetingPoint": "Puerto Colón Marina, Costa Adeje",
-    "pvpPricing": {
-      "adult": 85
-    },
-    "netPricing": {},
-    "bookingPhone": "659 831 064"
+    "bookingPhone": "659 831 064",
+    "supplierId": "atlanca"
   },
   {
     "slug": "freebird-catamaran",
@@ -997,23 +957,28 @@
     "pricing": [
       {
         "label": "Adult (3h)",
-        "price": 47
+        "price": 47,
+        "net": 22
       },
       {
         "label": "Adult (4.5h)",
-        "price": 62
+        "price": 62,
+        "net": 32
       },
       {
         "label": "Child 4-11 (3h)",
-        "price": 23.5
+        "price": 23.5,
+        "net": 11
       },
       {
         "label": "Child 4-11 (4.5h)",
-        "price": 31
+        "price": 31,
+        "net": 16
       },
       {
         "label": "Baby (under 4)",
-        "price": 0
+        "price": 0,
+        "net": 0
       }
     ],
     "priceFrom": 47,
@@ -1055,12 +1020,8 @@
       "10:00",
       "13:00"
     ],
-    "pvpPricing": {
-      "adult": 47,
-      "child": 23.5
-    },
-    "netPricing": {},
-    "bookingPhone": "922 716 864"
+    "bookingPhone": "922 716 864",
+    "supplierId": "freebird"
   },
   {
     "slug": "fishing-boat-puerto-colon",
@@ -1080,7 +1041,8 @@
     "pricing": [
       {
         "label": "Per person",
-        "price": 70
+        "price": 70,
+        "net": 50
       }
     ],
     "priceFrom": 70,
@@ -1123,11 +1085,8 @@
       "13:30"
     ],
     "meetingPoint": "Pontoon 2, Puerto Colón Marina, Costa Adeje",
-    "pvpPricing": {
-      "adult": 70
-    },
-    "netPricing": {},
-    "bookingPhone": "636 761 552"
+    "bookingPhone": "636 761 552",
+    "supplierId": "happy-hooker"
   },
   {
     "slug": "maxicat-catamaran",
@@ -1147,15 +1106,18 @@
     "pricing": [
       {
         "label": "Adult",
-        "price": 45
+        "price": 45,
+        "net": 25
       },
       {
         "label": "Child (6-11)",
-        "price": 22.5
+        "price": 22.5,
+        "net": 12.5
       },
       {
         "label": "Baby (under 6)",
-        "price": 0
+        "price": 0,
+        "net": 25
       }
     ],
     "priceFrom": 46,
@@ -1204,12 +1166,8 @@
       "16:00"
     ],
     "meetingPoint": "Gate 9, Puerto Colón Marina, Costa Adeje",
-    "pvpPricing": {
-      "adult": 46,
-      "child": 23
-    },
-    "netPricing": {},
-    "bookingPhone": "822 200 420"
+    "bookingPhone": "822 200 420",
+    "supplierId": "maxicat"
   },
   {
     "slug": "monte-cristo-catamaran",
@@ -1229,11 +1187,13 @@
     "pricing": [
       {
         "label": "Adult",
-        "price": 62
+        "price": 62,
+        "net": 40
       },
       {
         "label": "Child (0-11)",
-        "price": 49
+        "price": 49,
+        "net": 36
       }
     ],
     "priceFrom": 59,
@@ -1276,12 +1236,8 @@
       "16:00"
     ],
     "meetingPoint": "Gate 6, Puerto Colón Marina, Costa Adeje",
-    "pvpPricing": {
-      "adult": 59,
-      "child": 49
-    },
-    "netPricing": {},
-    "bookingPhone": "661 553 308"
+    "bookingPhone": "661 553 308",
+    "supplierId": "monte-cristo"
   },
   {
     "slug": "neptuno-boat",
@@ -1301,15 +1257,18 @@
     "pricing": [
       {
         "label": "Adult",
-        "price": 63
+        "price": 63,
+        "net": 42
       },
       {
         "label": "Child (3-11)",
-        "price": 31.5
+        "price": 31.5,
+        "net": 21
       },
       {
         "label": "Baby (0-2)",
-        "price": 0
+        "price": 0,
+        "net": 42
       }
     ],
     "priceFrom": 63,
@@ -1351,12 +1310,8 @@
       "14:00"
     ],
     "meetingPoint": "Excursion Zone B, Port of Los Cristianos",
-    "pvpPricing": {
-      "adult": 63,
-      "child": 31.5
-    },
-    "netPricing": {},
-    "bookingPhone": "623 597 482"
+    "bookingPhone": "623 597 482",
+    "supplierId": "shogun-neptuno"
   },
   {
     "slug": "diamant-boat",
@@ -1376,7 +1331,8 @@
     "pricing": [
       {
         "label": "Per person",
-        "price": 80
+        "price": 80,
+        "net": 45
       }
     ],
     "priceFrom": 80,
@@ -1419,11 +1375,8 @@
       "13:00",
       "16:00"
     ],
-    "pvpPricing": {
-      "adult": 80
-    },
-    "netPricing": {},
-    "bookingPhone": "661 259 806"
+    "bookingPhone": "661 259 806",
+    "supplierId": "opera"
   },
   {
     "slug": "peter-pan-boat",
@@ -1443,15 +1396,18 @@
     "pricing": [
       {
         "label": "Adult",
-        "price": 27
+        "price": 27,
+        "net": 16
       },
       {
         "label": "Child (3-11)",
-        "price": 13.5
+        "price": 13.5,
+        "net": 8
       },
       {
         "label": "Baby (0-2)",
-        "price": 0
+        "price": 0,
+        "net": 16
       }
     ],
     "priceFrom": 27,
@@ -1494,12 +1450,8 @@
       "13:30",
       "15:30"
     ],
-    "pvpPricing": {
-      "adult": 27,
-      "child": 13.5
-    },
-    "netPricing": {},
-    "bookingPhone": "666 542 881"
+    "bookingPhone": "666 542 881",
+    "supplierId": "peter-pan"
   },
   {
     "slug": "raggie-tenerife-fishing",
@@ -1519,7 +1471,8 @@
     "pricing": [
       {
         "label": "Per person",
-        "price": 70
+        "price": 70,
+        "net": 50
       }
     ],
     "priceFrom": 70,
@@ -1560,11 +1513,8 @@
       "08:00"
     ],
     "meetingPoint": "Pier 5, Puerto Colón Marina, Costa Adeje",
-    "pvpPricing": {
-      "adult": 70
-    },
-    "netPricing": {},
-    "bookingPhone": "639 209 200"
+    "bookingPhone": "639 209 200",
+    "supplierId": "raggie-fishing"
   },
   {
     "slug": "ragnarok-viking-boat",
@@ -1584,23 +1534,28 @@
     "pricing": [
       {
         "label": "Adult (2h)",
-        "price": 30
+        "price": 30,
+        "net": 21
       },
       {
         "label": "Adult (3h)",
-        "price": 44.5
+        "price": 44.5,
+        "net": 31.15
       },
       {
         "label": "Child 4-11 (2h)",
-        "price": 15
+        "price": 15,
+        "net": 10.5
       },
       {
         "label": "Child 4-11 (3h)",
-        "price": 25
+        "price": 25,
+        "net": 17.5
       },
       {
         "label": "Baby (under 4)",
-        "price": 0
+        "price": 0,
+        "net": 0
       }
     ],
     "priceFrom": 25,
@@ -1642,13 +1597,8 @@
       "11:00",
       "13:30"
     ],
-    "pvpPricing": {
-      "adult": 25,
-      "child": 20,
-      "kid": 5
-    },
-    "netPricing": {},
-    "bookingPhone": "654 638 922"
+    "bookingPhone": "654 638 922",
+    "supplierId": "viking"
   },
   {
     "slug": "royal-delfin-boat",
@@ -1668,23 +1618,28 @@
     "pricing": [
       {
         "label": "Adult (3h)",
-        "price": 50
+        "price": 50,
+        "net": 35
       },
       {
         "label": "Adult (4.5h)",
-        "price": 63
+        "price": 63,
+        "net": 44.1
       },
       {
         "label": "Child 3-11 (3h)",
-        "price": 30
+        "price": 30,
+        "net": 21
       },
       {
         "label": "Child 3-11 (4.5h)",
-        "price": 40
+        "price": 40,
+        "net": 28
       },
       {
         "label": "Baby (under 2)",
-        "price": 0
+        "price": 0,
+        "net": 0
       }
     ],
     "priceFrom": 50,
@@ -1726,12 +1681,8 @@
       "14:00"
     ],
     "meetingPoint": "Gate 12, Puerto Colón Marina, Costa Adeje",
-    "pvpPricing": {
-      "adult": 50,
-      "child": 30
-    },
-    "netPricing": {},
-    "bookingPhone": "922 750 085"
+    "bookingPhone": "922 750 085",
+    "supplierId": "royal-delfin"
   },
   {
     "slug": "shogun-boat",
@@ -1751,15 +1702,18 @@
     "pricing": [
       {
         "label": "Adult",
-        "price": 60
+        "price": 60,
+        "net": 37
       },
       {
         "label": "Child (3-11)",
-        "price": 30
+        "price": 30,
+        "net": 18.5
       },
       {
         "label": "Baby (0-2)",
-        "price": 0
+        "price": 0,
+        "net": 37
       }
     ],
     "priceFrom": 61,
@@ -1801,12 +1755,8 @@
     "timeSlots": [
       "11:00"
     ],
-    "pvpPricing": {
-      "adult": 61,
-      "child": 30.5
-    },
-    "netPricing": {},
-    "bookingPhone": "623 597 482"
+    "bookingPhone": "623 597 482",
+    "supplierId": "shogun-neptuno"
   },
   {
     "slug": "sonador-boat",
@@ -1826,15 +1776,18 @@
     "pricing": [
       {
         "label": "Adult",
-        "price": 40
+        "price": 40,
+        "net": 25
       },
       {
         "label": "Child (3-9)",
-        "price": 27.5
+        "price": 27.5,
+        "net": 12.5
       },
       {
         "label": "Baby (0-2)",
-        "price": 0
+        "price": 0,
+        "net": 12.5
       }
     ],
     "priceFrom": 50,
@@ -1877,13 +1830,8 @@
       "13:00",
       "16:00"
     ],
-    "pvpPricing": {
-      "adult": 50,
-      "child": 12.5,
-      "kid": 12.5
-    },
-    "netPricing": {},
-    "bookingPhone": "699 508 232"
+    "bookingPhone": "699 508 232",
+    "supplierId": "sonador"
   },
   {
     "slug": "2-hours-buggy-trip",
@@ -1947,11 +1895,7 @@
       "12:00",
       "14:00"
     ],
-    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
-    "pvpPricing": {
-      "adult": 110
-    },
-    "netPricing": {}
+    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)"
   },
   {
     "slug": "buggy-teide-adventure",
@@ -1972,7 +1916,8 @@
     "pricing": [
       {
         "label": "Per buggy (2 people)",
-        "price": 180
+        "price": 180,
+        "net": 80
       }
     ],
     "priceFrom": 180,
@@ -2015,10 +1960,7 @@
     "timeSlots": [
       "10:00"
     ],
-    "pvpPricing": {
-      "adult": 180
-    },
-    "netPricing": {}
+    "supplierId": "hub-buggy"
   },
   {
     "slug": "buggy-costa-adventure",
@@ -2039,7 +1981,8 @@
     "pricing": [
       {
         "label": "Per buggy (2 people)",
-        "price": 180
+        "price": 180,
+        "net": 80
       }
     ],
     "priceFrom": 180,
@@ -2082,10 +2025,7 @@
     "timeSlots": [
       "12:00"
     ],
-    "pvpPricing": {
-      "adult": 180
-    },
-    "netPricing": {}
+    "supplierId": "hub-buggy"
   },
   {
     "slug": "buggy-sunset-adventure",
@@ -2106,7 +2046,8 @@
     "pricing": [
       {
         "label": "Per buggy (2 people)",
-        "price": 180
+        "price": 180,
+        "net": 80
       }
     ],
     "priceFrom": 180,
@@ -2149,10 +2090,7 @@
     "timeSlots": [
       "18:00"
     ],
-    "pvpPricing": {
-      "adult": 180
-    },
-    "netPricing": {}
+    "supplierId": "hub-buggy"
   },
   {
     "slug": "buggy-off-road",
@@ -2173,7 +2111,8 @@
     "pricing": [
       {
         "label": "Per buggy (2 people)",
-        "price": 180
+        "price": 180,
+        "net": 80
       }
     ],
     "priceFrom": 180,
@@ -2216,10 +2155,7 @@
     "timeSlots": [
       "10:00"
     ],
-    "pvpPricing": {
-      "adult": 180
-    },
-    "netPricing": {}
+    "supplierId": "hub-buggy"
   },
   {
     "slug": "teide-icod-garachico-masca",
@@ -2239,11 +2175,13 @@
     "pricing": [
       {
         "label": "Adult",
-        "price": 90
+        "price": 90,
+        "net": 55
       },
       {
         "label": "Child",
-        "price": 75
+        "price": 75,
+        "net": 50
       }
     ],
     "priceFrom": 90,
@@ -2284,12 +2222,8 @@
       "08:30"
     ],
     "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
-    "pvpPricing": {
-      "adult": 90,
-      "child": 75
-    },
-    "netPricing": {},
-    "bookingPhone": "677 654 754"
+    "bookingPhone": "677 654 754",
+    "supplierId": "comfort"
   },
   {
     "slug": "island-tour-masca",
@@ -2309,7 +2243,8 @@
     "pricing": [
       {
         "label": "Per person",
-        "price": 50
+        "price": 50,
+        "net": 33
       }
     ],
     "priceFrom": 50,
@@ -2349,11 +2284,7 @@
     "timeSlots": [
       "08:30"
     ],
-    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
-    "pvpPricing": {
-      "adult": 50
-    },
-    "netPricing": {}
+    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)"
   },
   {
     "slug": "la-gomera",
@@ -2373,11 +2304,13 @@
     "pricing": [
       {
         "label": "Adult",
-        "price": 145
+        "price": 145,
+        "net": 125
       },
       {
         "label": "Child",
-        "price": 118
+        "price": 118,
+        "net": 105.25
       }
     ],
     "priceFrom": 145,
@@ -2417,12 +2350,7 @@
     "timeSlots": [
       "08:30"
     ],
-    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
-    "pvpPricing": {
-      "adult": 145,
-      "child": 118
-    },
-    "netPricing": {}
+    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)"
   },
   {
     "slug": "teide-by-night",
@@ -2442,11 +2370,13 @@
     "pricing": [
       {
         "label": "Adult",
-        "price": 75
+        "price": 75,
+        "net": 38
       },
       {
         "label": "Child",
-        "price": 60
+        "price": 60,
+        "net": 33
       }
     ],
     "priceFrom": 75,
@@ -2487,12 +2417,8 @@
       "08:30"
     ],
     "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
-    "pvpPricing": {
-      "adult": 75,
-      "child": 60
-    },
-    "netPricing": {},
-    "bookingPhone": "624 642 724"
+    "bookingPhone": "624 642 724",
+    "supplierId": "ozzy"
   },
   {
     "slug": "teide-tour-cable-car",
@@ -2512,11 +2438,13 @@
     "pricing": [
       {
         "label": "Adult",
-        "price": 60
+        "price": 60,
+        "net": 40
       },
       {
         "label": "Child",
-        "price": 50
+        "price": 50,
+        "net": 35
       }
     ],
     "priceFrom": 60,
@@ -2557,12 +2485,8 @@
       "08:30"
     ],
     "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
-    "pvpPricing": {
-      "adult": 60,
-      "child": 50
-    },
-    "netPricing": {},
-    "bookingPhone": "677 654 754"
+    "bookingPhone": "677 654 754",
+    "supplierId": "comfort"
   },
   {
     "slug": "santa-cruz--la-laguna--anaga",
@@ -2582,11 +2506,13 @@
     "pricing": [
       {
         "label": "Adult",
-        "price": 85
+        "price": 85,
+        "net": 50
       },
       {
         "label": "Child",
-        "price": 70
+        "price": 70,
+        "net": 45
       }
     ],
     "priceFrom": 85,
@@ -2628,12 +2554,8 @@
       "08:30"
     ],
     "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
-    "pvpPricing": {
-      "adult": 85,
-      "child": 70
-    },
-    "netPricing": {},
-    "bookingPhone": "677 654 754"
+    "bookingPhone": "677 654 754",
+    "supplierId": "comfort"
   },
   {
     "slug": "booster-pack-puerto-colon",
@@ -2654,7 +2576,8 @@
     "pricing": [
       {
         "label": "Per person",
-        "price": 110
+        "price": 110,
+        "net": 45
       }
     ],
     "priceFrom": 110,
@@ -2702,11 +2625,7 @@
       "16:00",
       "17:00"
     ],
-    "meetingPoint": "Puerto Colón Marina, Costa Adeje",
-    "pvpPricing": {
-      "adult": 110
-    },
-    "netPricing": {}
+    "meetingPoint": "Puerto Colón Marina, Costa Adeje"
   },
   {
     "slug": "jet-ski-puerto-colon",
@@ -2727,7 +2646,8 @@
     "pricing": [
       {
         "label": "For 2 people",
-        "price": 100
+        "price": 100,
+        "net": 40
       }
     ],
     "priceFrom": 100,
@@ -2776,11 +2696,7 @@
       "15:00",
       "16:00",
       "17:00"
-    ],
-    "pvpPricing": {
-      "adult": 100
-    },
-    "netPricing": {}
+    ]
   },
   {
     "slug": "watersport-pack-puerto-colon",
@@ -2801,7 +2717,8 @@
     "pricing": [
       {
         "label": "Per person",
-        "price": 90
+        "price": 90,
+        "net": 54
       }
     ],
     "priceFrom": 90,
@@ -2850,11 +2767,8 @@
       "17:00"
     ],
     "meetingPoint": "Puerto Colón Marina, Costa Adeje",
-    "pvpPricing": {
-      "adult": 90
-    },
-    "netPricing": {},
-    "bookingPhone": "638 531 863"
+    "bookingPhone": "638 531 863",
+    "supplierId": "watersport"
   },
   {
     "slug": "aqualand",
@@ -2919,13 +2833,8 @@
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6682f3b5c426ea82ef18f2fc_aqualand.webp",
     "url": "https://www.excursionstenerife.es/tours/aqualand",
-    "pvpPricing": {
-      "adult": 36,
-      "child": 29,
-      "kid": 16
-    },
-    "netPricing": {},
-    "bookingPhone": "922 797 573 / 662 936 575"
+    "bookingPhone": "922 797 573 / 662 936 575",
+    "supplierId": "island-excursions"
   },
   {
     "slug": "camel-park",
@@ -2945,11 +2854,13 @@
     "pricing": [
       {
         "label": "Adult",
-        "price": 22
+        "price": 22,
+        "net": 15
       },
       {
         "label": "Child",
-        "price": 11
+        "price": 11,
+        "net": 7.5
       }
     ],
     "priceFrom": 22,
@@ -2986,12 +2897,8 @@
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/668c50e33f5c20a8f49a89c8_c.webp",
     "url": "https://www.excursionstenerife.es/tours/camel-park",
-    "pvpPricing": {
-      "adult": 22,
-      "child": 11
-    },
-    "netPricing": {},
-    "bookingPhone": "922 721 121"
+    "bookingPhone": "922 721 121",
+    "supplierId": "camel-park"
   },
   {
     "slug": "jungle-park",
@@ -3056,13 +2963,8 @@
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6682fd28a1049f45b9e90155_Sin-t%C3%ADtulo-1.webp",
     "url": "https://www.excursionstenerife.es/tours/jungle-park",
-    "pvpPricing": {
-      "adult": 35,
-      "child": 29,
-      "kid": 16
-    },
-    "netPricing": {},
-    "bookingPhone": "922 797 573 / 662 936 575"
+    "bookingPhone": "922 797 573 / 662 936 575",
+    "supplierId": "island-excursions"
   },
   {
     "slug": "loro-parque",
@@ -3123,12 +3025,8 @@
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/666b0ec62605d8e22d009378_G.webp",
     "url": "https://www.excursionstenerife.es/tours/loro-parque",
-    "pvpPricing": {
-      "adult": 44,
-      "child": 32
-    },
-    "netPricing": {},
-    "bookingPhone": "922 797 573 / 662 936 575"
+    "bookingPhone": "922 797 573 / 662 936 575",
+    "supplierId": "island-excursions"
   },
   {
     "slug": "siam-park",
@@ -3189,12 +3087,8 @@
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6659956066980b3e57ccf786_z.webp",
     "url": "https://www.excursionstenerife.es/tours/siam-park",
-    "pvpPricing": {
-      "adult": 44,
-      "child": 32
-    },
-    "netPricing": {},
-    "bookingPhone": "922 797 573 / 662 936 575"
+    "bookingPhone": "922 797 573 / 662 936 575",
+    "supplierId": "island-excursions"
   },
   {
     "slug": "2parks-ticket-jungle-park-aqualand",
@@ -3259,13 +3153,8 @@
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6683071ecb1ebb9cd9ed19bc_Two_Parks.webp",
     "url": "https://www.excursionstenerife.es/tours/2parks-ticket-jungle-park-aqualand",
-    "pvpPricing": {
-      "adult": 51,
-      "child": 42,
-      "kid": 21
-    },
-    "netPricing": {},
-    "bookingPhone": "922 797 573 / 662 936 575"
+    "bookingPhone": "922 797 573 / 662 936 575",
+    "supplierId": "island-excursions"
   },
   {
     "slug": "twin-ticket-loro-parque-siam-park",
@@ -3334,12 +3223,8 @@
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6682dfa8f1cc5c7a594e6eb9_Z.webp",
     "url": "https://www.excursionstenerife.es/tours/twin-ticket-loro-parque-siam-park",
-    "pvpPricing": {
-      "adult": 78,
-      "child": 57
-    },
-    "netPricing": {},
-    "bookingPhone": "922 797 573 / 662 936 575"
+    "bookingPhone": "922 797 573 / 662 936 575",
+    "supplierId": "island-excursions"
   },
   {
     "slug": "coastal-quads",
@@ -3360,7 +3245,8 @@
     "pricing": [
       {
         "label": "Per person",
-        "price": 120
+        "price": 120,
+        "net": 60
       }
     ],
     "priceFrom": 120,
@@ -3400,11 +3286,7 @@
     "timeSlots": [
       "12:00"
     ],
-    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
-    "pvpPricing": {
-      "adult": 120
-    },
-    "netPricing": {}
+    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)"
   },
   {
     "slug": "quad-off-road-tour",
@@ -3425,7 +3307,8 @@
     "pricing": [
       {
         "label": "Per person",
-        "price": 120
+        "price": 120,
+        "net": 50
       }
     ],
     "priceFrom": 120,
@@ -3467,11 +3350,8 @@
     "timeSlots": [
       "10:00"
     ],
-    "pvpPricing": {
-      "adult": 120
-    },
-    "netPricing": {},
-    "bookingPhone": "691 019 039"
+    "bookingPhone": "691 019 039",
+    "supplierId": "quad-explorer"
   },
   {
     "slug": "quad-sunset-tour",
@@ -3492,7 +3372,8 @@
     "pricing": [
       {
         "label": "Per person",
-        "price": 120
+        "price": 120,
+        "net": 65
       }
     ],
     "priceFrom": 120,
@@ -3534,11 +3415,8 @@
     "timeSlots": [
       "18:00"
     ],
-    "pvpPricing": {
-      "adult": 120
-    },
-    "netPricing": {},
-    "bookingPhone": "722 210 957"
+    "bookingPhone": "722 210 957",
+    "supplierId": "quadsquad"
   },
   {
     "slug": "quad-teide-tour",
@@ -3559,7 +3437,8 @@
     "pricing": [
       {
         "label": "For 2 people",
-        "price": 100
+        "price": 100,
+        "net": 68
       }
     ],
     "priceFrom": 100,
@@ -3600,11 +3479,7 @@
     "timeSlots": [
       "10:00"
     ],
-    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
-    "pvpPricing": {
-      "adult": 100
-    },
-    "netPricing": {}
+    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)"
   },
   {
     "slug": "quad-masca-tour",
@@ -3625,7 +3500,8 @@
     "pricing": [
       {
         "label": "Per person",
-        "price": 135
+        "price": 135,
+        "net": 78
       }
     ],
     "priceFrom": 135,
@@ -3665,11 +3541,7 @@
     "timeSlots": [
       "10:00"
     ],
-    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
-    "pvpPricing": {
-      "adult": 135
-    },
-    "netPricing": {}
+    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)"
   },
   {
     "slug": "citroen-c3-car-rental",
@@ -3689,7 +3561,8 @@
     "pricing": [
       {
         "label": "Per person",
-        "price": 62
+        "price": 62,
+        "net": 43.4
       }
     ],
     "priceFrom": 62,
@@ -3726,12 +3599,9 @@
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/66ae48040b8354a845612216_citroen_3_500x280.webp",
     "url": "https://www.excursionstenerife.es/tours/citroen-c3-car-rental",
-    "pvpPricing": {
-      "adult": 62
-    },
-    "netPricing": {},
     "bookingPhone": "922 753 816",
-    "depositPercent": 30
+    "depositPercent": 30,
+    "supplierId": "aliscar"
   },
   {
     "slug": "citroen-cactus-automatic-car-rental",
@@ -3751,7 +3621,8 @@
     "pricing": [
       {
         "label": "Per person",
-        "price": 65
+        "price": 65,
+        "net": 45.5
       }
     ],
     "priceFrom": 65,
@@ -3788,12 +3659,9 @@
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6892019154714aae342a73c0_1.jpg",
     "url": "https://www.excursionstenerife.es/tours/citroen-cactus-automatic-car-rental",
-    "pvpPricing": {
-      "adult": 65
-    },
-    "netPricing": {},
     "bookingPhone": "922 753 816",
-    "depositPercent": 30
+    "depositPercent": 30,
+    "supplierId": "aliscar"
   },
   {
     "slug": "citroen-grand-picasso-car-rental",
@@ -3813,7 +3681,8 @@
     "pricing": [
       {
         "label": "Per person",
-        "price": 100
+        "price": 100,
+        "net": 70
       }
     ],
     "priceFrom": 100,
@@ -3850,12 +3719,9 @@
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/68921116a573cb8389e6fdcf_1.jpg",
     "url": "https://www.excursionstenerife.es/tours/citroen-grand-picasso-car-rental",
-    "pvpPricing": {
-      "adult": 100
-    },
-    "netPricing": {},
     "bookingPhone": "922 753 816",
-    "depositPercent": 30
+    "depositPercent": 30,
+    "supplierId": "aliscar"
   },
   {
     "slug": "fiat-500-car-rental",
@@ -3875,7 +3741,8 @@
     "pricing": [
       {
         "label": "Per person",
-        "price": 45
+        "price": 45,
+        "net": 31.5
       }
     ],
     "priceFrom": 45,
@@ -3912,12 +3779,9 @@
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/688509695f0359298542bc80_arteum-ro-UfMb0M2RWjo-unsplash.jpg",
     "url": "https://www.excursionstenerife.es/tours/fiat-500-car-rental",
-    "pvpPricing": {
-      "adult": 45
-    },
-    "netPricing": {},
     "bookingPhone": "922 753 816",
-    "depositPercent": 30
+    "depositPercent": 30,
+    "supplierId": "aliscar"
   },
   {
     "slug": "fiat-500-cabrio-car-rental",
@@ -3937,7 +3801,8 @@
     "pricing": [
       {
         "label": "Per person",
-        "price": 70
+        "price": 70,
+        "net": 49
       }
     ],
     "priceFrom": 70,
@@ -3974,12 +3839,9 @@
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/688950e3739657d54800be23_53522630.jpg",
     "url": "https://www.excursionstenerife.es/tours/fiat-500-cabrio-car-rental",
-    "pvpPricing": {
-      "adult": 70
-    },
-    "netPricing": {},
     "bookingPhone": "922 753 816",
-    "depositPercent": 30
+    "depositPercent": 30,
+    "supplierId": "aliscar"
   },
   {
     "slug": "fiat-panda-car-rental",
@@ -3999,7 +3861,8 @@
     "pricing": [
       {
         "label": "Per person",
-        "price": 40
+        "price": 40,
+        "net": 28
       }
     ],
     "priceFrom": 40,
@@ -4036,12 +3899,9 @@
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/668d2498920eba9ff789af45_fiat-panda-front-view.webp",
     "url": "https://www.excursionstenerife.es/tours/fiat-panda-car-rental",
-    "pvpPricing": {
-      "adult": 40
-    },
-    "netPricing": {},
     "bookingPhone": "922 753 816",
-    "depositPercent": 30
+    "depositPercent": 30,
+    "supplierId": "aliscar"
   },
   {
     "slug": "renault-captur-automatic-car-rental",
@@ -4061,7 +3921,8 @@
     "pricing": [
       {
         "label": "Per person",
-        "price": 65
+        "price": 65,
+        "net": 45.5
       }
     ],
     "priceFrom": 65,
@@ -4098,12 +3959,9 @@
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/68920ef7a1d6c8ebc6c5596e_1.jpg",
     "url": "https://www.excursionstenerife.es/tours/renault-captur-automatic-car-rental",
-    "pvpPricing": {
-      "adult": 65
-    },
-    "netPricing": {},
     "bookingPhone": "922 753 816",
-    "depositPercent": 30
+    "depositPercent": 30,
+    "supplierId": "aliscar"
   },
   {
     "slug": "renault-trafic-car-rental",
@@ -4123,7 +3981,8 @@
     "pricing": [
       {
         "label": "Per person",
-        "price": 110
+        "price": 110,
+        "net": 77
       }
     ],
     "priceFrom": 110,
@@ -4160,72 +4019,9 @@
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/689214d760489b788bfd1130_1400x936.jpg",
     "url": "https://www.excursionstenerife.es/tours/renault-trafic-car-rental",
-    "pvpPricing": {
-      "adult": 110
-    },
-    "netPricing": {},
     "bookingPhone": "922 753 816",
-    "depositPercent": 30
-  },
-  {
-    "slug": "single-mobility-scooter",
-    "title": "Rent Mobility Scooter - 2 seats",
-    "category": "rental",
-    "duration": "1h",
-    "languages": [
-      "Deutsch",
-      "English",
-      "Español",
-      "Français",
-      "Italiano",
-      "Neerlandés",
-      "Rumano",
-      "Русский"
-    ],
-    "pricing": [
-      {
-        "label": "Per person",
-        "price": 10
-      }
-    ],
-    "priceFrom": 10,
-    "description": "Discover the freedom of movement around South Tenerife with our mobility scooter rental service. Save your time when discover best and famous places of the Tenerife South.",
-    "faq": [
-      {
-        "question": "How will I receive my tickets?",
-        "answer": "After you complete your purchase, you will receive an order confirmation email within a few minutes. This email will contain all the details of your purchase, including the event, date, and number of tickets. Please note we do not send tickets by post."
-      },
-      {
-        "question": "Can I book an excursion within 24 hours of its start time?",
-        "answer": "Yes, it possible. Please contact us or visit our office"
-      },
-      {
-        "question": "Will I be picked up at my hotel when a transfer is possible?",
-        "answer": "And where is the meeting point The exact meeting point for your excursion will be specified in your booking confirmation email. If a transfer service is included with your booking, we offer convenient hotel pickup. The availability of this service will depend on your hotel’s location and the specific excursion."
-      },
-      {
-        "question": "May I pay directly in cash when the tour / activity starts?",
-        "answer": "We offer online purchases on the platform. If you wish to buy with cash you can visit our office."
-      },
-      {
-        "question": "Do you offer discounts?",
-        "answer": "We generally cannot give any discounts due to the very high demand. We offer discount for group bookings. Please contact us"
-      },
-      {
-        "question": "What happens if the weather is too bad to go on the excursion?",
-        "answer": "If the weather is too bad to go on the excursion, it will be rescheduled or you will receive a full refund."
-      },
-      {
-        "question": "May I purchase a gift voucher?",
-        "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
-      }
-    ],
-    "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/689219f59e649e5503e68373_1.jpg",
-    "url": "https://www.excursionstenerife.es/tours/single-mobility-scooter",
-    "pvpPricing": {
-      "adult": 10
-    },
-    "netPricing": {}
+    "depositPercent": 30,
+    "supplierId": "aliscar"
   },
   {
     "slug": "seat-ibiza-car-rental",
@@ -4245,7 +4041,8 @@
     "pricing": [
       {
         "label": "Per person",
-        "price": 52
+        "price": 52,
+        "net": 36.4
       }
     ],
     "priceFrom": 52,
@@ -4282,12 +4079,9 @@
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6892166ea19a4760c266f12b_1.jpg",
     "url": "https://www.excursionstenerife.es/tours/seat-ibiza-car-rental",
-    "pvpPricing": {
-      "adult": 52
-    },
-    "netPricing": {},
     "bookingPhone": "922 753 816",
-    "depositPercent": 30
+    "depositPercent": 30,
+    "supplierId": "aliscar"
   },
   {
     "slug": "seat-leon-car-rental",
@@ -4307,7 +4101,8 @@
     "pricing": [
       {
         "label": "Per person",
-        "price": 65
+        "price": 65,
+        "net": 45.5
       }
     ],
     "priceFrom": 65,
@@ -4344,12 +4139,9 @@
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/66b363f050749aaea93feea3_new-seat-leon-candy-white-colour-configuration.webp",
     "url": "https://www.excursionstenerife.es/tours/seat-leon-car-rental",
-    "pvpPricing": {
-      "adult": 65
-    },
-    "netPricing": {},
     "bookingPhone": "922 753 816",
-    "depositPercent": 30
+    "depositPercent": 30,
+    "supplierId": "aliscar"
   },
   {
     "slug": "tuk-tuk",
@@ -4369,7 +4161,8 @@
     "pricing": [
       {
         "label": "Per person",
-        "price": 12
+        "price": 12,
+        "net": 9
       }
     ],
     "priceFrom": 12,
@@ -4406,11 +4199,8 @@
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/66ba5f353e96ccb355a04adb_264341739_4695885117142426_8120454214620924274_n.jpg",
     "url": "https://www.excursionstenerife.es/tours/tuk-tuk",
-    "pvpPricing": {
-      "adult": 12
-    },
-    "netPricing": {},
-    "bookingPhone": "628 820 720"
+    "bookingPhone": "628 820 720",
+    "supplierId": "tuk-tuk"
   },
   {
     "slug": "vw-beetle-automatic-car-rental",
@@ -4430,7 +4220,8 @@
     "pricing": [
       {
         "label": "Per person",
-        "price": 105
+        "price": 105,
+        "net": 73.5
       }
     ],
     "priceFrom": 105,
@@ -4467,12 +4258,9 @@
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/66bbc8e5695bc1ecf2849996_arriro-boat-e72perienceis-x.webp",
     "url": "https://www.excursionstenerife.es/tours/vw-beetle-automatic-car-rental",
-    "pvpPricing": {
-      "adult": 105
-    },
-    "netPricing": {},
     "bookingPhone": "922 753 816",
-    "depositPercent": 30
+    "depositPercent": 30,
+    "supplierId": "aliscar"
   },
   {
     "slug": "vw-golf-car-rental",
@@ -4492,7 +4280,8 @@
     "pricing": [
       {
         "label": "Per person",
-        "price": 65
+        "price": 65,
+        "net": 45.5
       }
     ],
     "priceFrom": 65,
@@ -4529,12 +4318,9 @@
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6892003a9c7ae34280a967bd_DB2016AU00879_web_1600.jpg",
     "url": "https://www.excursionstenerife.es/tours/vw-golf-car-rental",
-    "pvpPricing": {
-      "adult": 65
-    },
-    "netPricing": {},
     "bookingPhone": "922 753 816",
-    "depositPercent": 30
+    "depositPercent": 30,
+    "supplierId": "aliscar"
   },
   {
     "slug": "vw-polo-car-rental",
@@ -4554,7 +4340,8 @@
     "pricing": [
       {
         "label": "Per person",
-        "price": 52
+        "price": 52,
+        "net": 36.4
       }
     ],
     "priceFrom": 52,
@@ -4591,12 +4378,9 @@
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6891fd5f9afed457b3675c46_(3).jpg",
     "url": "https://www.excursionstenerife.es/tours/vw-polo-car-rental",
-    "pvpPricing": {
-      "adult": 52
-    },
-    "netPricing": {},
     "bookingPhone": "922 753 816",
-    "depositPercent": 30
+    "depositPercent": 30,
+    "supplierId": "aliscar"
   },
   {
     "slug": "vw-polo-automatic-car-rental",
@@ -4616,7 +4400,8 @@
     "pricing": [
       {
         "label": "Per person",
-        "price": 60
+        "price": 60,
+        "net": 42
       }
     ],
     "priceFrom": 60,
@@ -4653,12 +4438,9 @@
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/66bbc8e5695bc1ecf2849996_arriro-boat-e72perienceis-x.webp",
     "url": "https://www.excursionstenerife.es/tours/vw-polo-automatic-car-rental",
-    "pvpPricing": {
-      "adult": 60
-    },
-    "netPricing": {},
     "bookingPhone": "922 753 816",
-    "depositPercent": 30
+    "depositPercent": 30,
+    "supplierId": "aliscar"
   },
   {
     "slug": "ole-flamenco-show",
@@ -4678,11 +4460,13 @@
     "pricing": [
       {
         "label": "Adult",
-        "price": 51
+        "price": 51,
+        "net": 35.7
       },
       {
         "label": "Child",
-        "price": 25.5
+        "price": 25.5,
+        "net": 17.85
       }
     ],
     "priceFrom": 51,
@@ -4723,12 +4507,8 @@
       "21:00"
     ],
     "meetingPoint": "Las Olas Showroom, GF Victoria Hotel, C. Fernando López Arvelo 1, Costa Adeje",
-    "pvpPricing": {
-      "adult": 51,
-      "child": 25.5
-    },
-    "netPricing": {},
-    "bookingPhone": "922 987 184"
+    "bookingPhone": "922 987 184",
+    "supplierId": "nere-shows"
   },
   {
     "slug": "flamenco-show-sala-coliseo",
@@ -4748,11 +4528,13 @@
     "pricing": [
       {
         "label": "Adult",
-        "price": 32
+        "price": 32,
+        "net": 22.4
       },
       {
         "label": "Child",
-        "price": 19
+        "price": 19,
+        "net": 15.2
       }
     ],
     "priceFrom": 32,
@@ -4793,12 +4575,8 @@
       "20:30"
     ],
     "meetingPoint": "Teatro Coliseo, Avda. Edelmira Alfonso s/n, San Miguel de Abona",
-    "pvpPricing": {
-      "adult": 32,
-      "child": 19
-    },
-    "netPricing": {},
-    "bookingPhone": "922 374 811"
+    "bookingPhone": "922 374 811",
+    "supplierId": "medieval-adventure"
   },
   {
     "slug": "history-evolution-of-music",
@@ -4818,11 +4596,13 @@
     "pricing": [
       {
         "label": "Adult",
-        "price": 49
+        "price": 49,
+        "net": 34.3
       },
       {
         "label": "Child",
-        "price": 25
+        "price": 25,
+        "net": 17.5
       }
     ],
     "priceFrom": 49,
@@ -4863,12 +4643,8 @@
       "21:00"
     ],
     "meetingPoint": "Auditorio Pirámide de Arona, Av. las Américas s/n, Playa de las Américas",
-    "pvpPricing": {
-      "adult": 49,
-      "child": 25
-    },
-    "netPricing": {},
-    "bookingPhone": "658 987 645"
+    "bookingPhone": "658 987 645",
+    "supplierId": "history-musicle"
   },
   {
     "slug": "medieval-show",
@@ -4888,11 +4664,13 @@
     "pricing": [
       {
         "label": "Adult",
-        "price": 52
+        "price": 52,
+        "net": 36.4
       },
       {
         "label": "Child",
-        "price": 31
+        "price": 31,
+        "net": 24.8
       }
     ],
     "priceFrom": 52,
@@ -4933,12 +4711,8 @@
       "19:00"
     ],
     "meetingPoint": "Castillo San Miguel, Av. Edelmira Alfonso s/n, Aldea Blanca",
-    "pvpPricing": {
-      "adult": 52,
-      "child": 31
-    },
-    "netPricing": {},
-    "bookingPhone": "922 374 811"
+    "bookingPhone": "922 374 811",
+    "supplierId": "medieval-adventure"
   },
   {
     "slug": "music-hall-tavern",
@@ -4999,11 +4773,13 @@
     "pricing": [
       {
         "label": "Adult",
-        "price": 49
+        "price": 49,
+        "net": 34.3
       },
       {
         "label": "Child",
-        "price": 39
+        "price": 39,
+        "net": 27.3
       }
     ],
     "priceFrom": 49,
@@ -5044,12 +4820,8 @@
       "19:30"
     ],
     "meetingPoint": "Vivo Show Bar, Av. Rafael Puig Lluvina 7, Playa de las Américas",
-    "pvpPricing": {
-      "adult": 49,
-      "child": 39
-    },
-    "netPricing": {},
-    "bookingPhone": "928 514 701"
+    "bookingPhone": "928 514 701",
+    "supplierId": "mht-tavern"
   },
   {
     "slug": "scandal-dinner-show",
@@ -5069,7 +4841,8 @@
     "pricing": [
       {
         "label": "Adult",
-        "price": 94
+        "price": 94,
+        "net": 65.8
       }
     ],
     "priceFrom": 94,
@@ -5112,76 +4885,8 @@
       "20:30"
     ],
     "meetingPoint": "Las Olas Showroom, GF Victoria Hotel, C. Fernando López Arvelo 1, Costa Adeje",
-    "pvpPricing": {
-      "adult": 94
-    },
-    "netPricing": {},
-    "bookingPhone": "922 987 184"
-  },
-  {
-    "slug": "utopia-pool-party",
-    "title": "Utopia — Pool Party entry tickets",
-    "category": "show",
-    "duration": "3h",
-    "languages": [
-      "Deutsch",
-      "English",
-      "Español",
-      "Français",
-      "Italiano",
-      "Neerlandés",
-      "Rumano",
-      "Русский"
-    ],
-    "pricing": [
-      {
-        "label": "Adult",
-        "price": 70
-      }
-    ],
-    "priceFrom": 70,
-    "description": "Utopia Pool Party takes place at Cielo de Monkey Beach Club in the heart of Tenerife South. ・ With House, RnB, Hip Hop, DnB, EDM, Reggaeton, Deep House, Tropical Bass... here you will find music and fun for all tastes.",
-    "faq": [
-      {
-        "question": "How will I receive my tickets?",
-        "answer": "After you complete your purchase, you will receive an order confirmation email within a few minutes. This email will contain all the details of your purchase, including the event, date, and number of tickets. Please note we do not send tickets by post."
-      },
-      {
-        "question": "Can I book an excursion within 24 hours of its start time?",
-        "answer": "Yes, it possible. Please contact us or visit our office"
-      },
-      {
-        "question": "Will I be picked up at my hotel when a transfer is possible?",
-        "answer": "And where is the meeting point The exact meeting point for your excursion will be specified in your booking confirmation email. If a transfer service is included with your booking, we offer convenient hotel pickup. The availability of this service will depend on your hotel’s location and the specific excursion."
-      },
-      {
-        "question": "May I pay directly in cash when the tour / activity starts?",
-        "answer": "We offer online purchases on the platform. If you wish to buy with cash you can visit our office."
-      },
-      {
-        "question": "Do you offer discounts?",
-        "answer": "We generally cannot give any discounts due to the very high demand. We offer discount for group bookings. Please contact us"
-      },
-      {
-        "question": "What happens if the weather is too bad to go on the excursion?",
-        "answer": "If the weather is too bad to go on the excursion, it will be rescheduled or you will receive a full refund."
-      },
-      {
-        "question": "May I purchase a gift voucher?",
-        "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
-      }
-    ],
-    "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/668ef2c0025fe274bb8d2255_AUTOPIAPOOLPARTY.webp",
-    "url": "https://www.excursionstenerife.es/tours/utopia-pool-party",
-    "timeSlots": [
-      "13:00"
-    ],
-    "meetingPoint": "Monkey Beach Club, Av. Rafael Puig Lluvinas 3, Costa Adeje",
-    "pvpPricing": {
-      "adult": 70
-    },
-    "netPricing": {},
-    "bookingPhone": "690 126 477"
+    "bookingPhone": "922 987 184",
+    "supplierId": "nere-shows"
   },
   {
     "slug": "seat-leon-st-automatic-car-rental",
@@ -5201,7 +4906,8 @@
     "pricing": [
       {
         "label": "Per person",
-        "price": 70
+        "price": 70,
+        "net": 49
       }
     ],
     "priceFrom": 70,
@@ -5237,12 +4943,9 @@
       }
     ],
     "url": "https://aliscar.com/",
-    "pvpPricing": {
-      "adult": 70
-    },
-    "netPricing": {},
     "bookingPhone": "922 753 816",
-    "depositPercent": 30
+    "depositPercent": 30,
+    "supplierId": "aliscar"
   },
   {
     "slug": "opel-zafira-7-seater-car-rental",
@@ -5262,7 +4965,8 @@
     "pricing": [
       {
         "label": "Per person",
-        "price": 110
+        "price": 110,
+        "net": 77
       }
     ],
     "priceFrom": 110,
@@ -5298,11 +5002,128 @@
       }
     ],
     "url": "https://aliscar.com/",
-    "pvpPricing": {
-      "adult": 110
-    },
-    "netPricing": {},
     "bookingPhone": "922 753 816",
-    "depositPercent": 30
+    "depositPercent": 30,
+    "supplierId": "aliscar"
+  },
+  {
+    "slug": "soul-jeep-self-drive-safari",
+    "title": "Soul Jeep — Self-Drive 4x4 Jeep Safari",
+    "category": "buggy",
+    "duration": "3h",
+    "minAge": 21,
+    "pricing": [
+      {
+        "label": "Per jeep (1-2 people)",
+        "price": 290,
+        "net": 130
+      },
+      {
+        "label": "Per jeep (3-4 people)",
+        "price": 310,
+        "net": 150
+      }
+    ],
+    "priceFrom": 290,
+    "description": "Get behind the wheel of your own Jeep Wrangler and explore Tenerife on one of two self-drive routes. The Coastal Safari follows old roads from Costa Adeje to Chío, with off-road tracks, views of the Los Gigantes cliffs, and a swimming stop at El Balito port. The Teide Sunset Safari climbs from Costa Adeje through Chío into Teide National Park, passing volcanic landscapes and a traditional Guanche cave at 1,700m before watching the sunset over the volcano. Groups of up to 4 people travel together in a single Jeep, with the option to swap drivers along the way.",
+    "included": "Jeep Wrangler rental (fully insured) with full fuel tank, professional route guide, refreshments.",
+    "notIncluded": "Pickup/drop-off (€10 discount if you arrive by taxi with receipt). Child car seats available on request at no extra charge.",
+    "meetingPoint": "C.C. Aquamall, Local 13/B, Costa Adeje (open daily 9:00–22:00)",
+    "faq": [
+      {
+        "question": "How will I receive my tickets?",
+        "answer": "After you complete your purchase, you will receive an order confirmation email within a few minutes. This email will contain all the details of your purchase, including the event, date, and number of tickets. Please note we do not send tickets by post."
+      },
+      {
+        "question": "Can I book an excursion within 24 hours of its start time?",
+        "answer": "Yes, it possible. Please contact us or visit our office"
+      },
+      {
+        "question": "Will I be picked up at my hotel when a transfer is possible?",
+        "answer": "And where is the meeting point The exact meeting point for your excursion will be specified in your booking confirmation email. If a transfer service is included with your booking, we offer convenient hotel pickup. The availability of this service will depend on your hotel’s location and the specific excursion."
+      },
+      {
+        "question": "May I pay directly in cash when the tour / activity starts?",
+        "answer": "We offer online purchases on the platform. If you wish to buy with cash you can visit our office."
+      },
+      {
+        "question": "Do you offer discounts?",
+        "answer": "We generally cannot give any discounts due to the very high demand. We offer discount for group bookings. Please contact us"
+      },
+      {
+        "question": "What happens if the weather is too bad to go on the excursion?",
+        "answer": "If the weather is too bad to go on the excursion, it will be rescheduled or you will receive a full refund."
+      },
+      {
+        "question": "May I purchase a gift voucher?",
+        "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
+      },
+      {
+        "question": "Do I need a special licence to drive the Jeep?",
+        "answer": "Yes — the driver must be at least 21 years old with a valid driving licence and at least 2 years of driving experience."
+      }
+    ],
+    "imageUrl": "https://www.souljeep.com/images/tours/teide-sunset/hero.jpg",
+    "url": "https://www.souljeep.com/",
+    "seatsPerVehicle": 4,
+    "bookingPhone": "614 475 604",
+    "supplierId": "soul-jeep"
+  },
+  {
+    "slug": "soul-jeep-passenger-tour",
+    "title": "Soul Jeep — Passenger Jeep Tour (No Licence Required)",
+    "category": "buggy",
+    "duration": "3h",
+    "pricing": [
+      {
+        "label": "Per person",
+        "price": 120,
+        "net": 65
+      },
+      {
+        "label": "Additional passenger",
+        "price": 90,
+        "net": 45
+      }
+    ],
+    "priceFrom": 120,
+    "description": "Don't want to drive? Join the Jeep safari as a passenger — no driving licence needed. Ride along through Tenerife's volcanic landscapes on the Coastal or Teide Sunset route, with stops for views, photos and a swim, while one of the group (or a guide) takes the wheel.",
+    "included": "Seat in a Jeep Wrangler for the route, professional route guide, refreshments.",
+    "notIncluded": "Pickup/drop-off (€10 discount if you arrive by taxi with receipt).",
+    "meetingPoint": "C.C. Aquamall, Local 13/B, Costa Adeje (open daily 9:00–22:00)",
+    "faq": [
+      {
+        "question": "How will I receive my tickets?",
+        "answer": "After you complete your purchase, you will receive an order confirmation email within a few minutes. This email will contain all the details of your purchase, including the event, date, and number of tickets. Please note we do not send tickets by post."
+      },
+      {
+        "question": "Can I book an excursion within 24 hours of its start time?",
+        "answer": "Yes, it possible. Please contact us or visit our office"
+      },
+      {
+        "question": "Will I be picked up at my hotel when a transfer is possible?",
+        "answer": "And where is the meeting point The exact meeting point for your excursion will be specified in your booking confirmation email. If a transfer service is included with your booking, we offer convenient hotel pickup. The availability of this service will depend on your hotel’s location and the specific excursion."
+      },
+      {
+        "question": "May I pay directly in cash when the tour / activity starts?",
+        "answer": "We offer online purchases on the platform. If you wish to buy with cash you can visit our office."
+      },
+      {
+        "question": "Do you offer discounts?",
+        "answer": "We generally cannot give any discounts due to the very high demand. We offer discount for group bookings. Please contact us"
+      },
+      {
+        "question": "What happens if the weather is too bad to go on the excursion?",
+        "answer": "If the weather is too bad to go on the excursion, it will be rescheduled or you will receive a full refund."
+      },
+      {
+        "question": "May I purchase a gift voucher?",
+        "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
+      }
+    ],
+    "imageUrl": "https://www.souljeep.com/images/tours/coastal/hero.jpg",
+    "url": "https://www.souljeep.com/",
+    "bookingPhone": "614 475 604",
+    "supplierId": "soul-jeep"
   }
 ]

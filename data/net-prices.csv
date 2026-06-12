@@ -1,109 +1,133 @@
-slug,name,category,net_adult,net_child,net_kid,pvp_adult,pvp_child,pvp_kid
-airsoft,Airsoft — Tenerife's largest Tactical Center,adventure,,,,35,,
-diving-puerto-colon,Diving Atlantis school in Los Cristianos,adventure,,,,75,,
-fly-fish-puerto-colon,Fly Fish — Water attraction in Puerto Colon,adventure,,,,18,,
-guided-bike-tours,Guided bike tours,adventure,,,,90,,
-helidream-helicopter-tour,Helicopter Tours — Helidream,adventure,,,,98,,
-centro-hipico-xanadu,Horse riding — Equestrian center Xanadu,adventure,,,,45,45,
-karting-club-tenerife,Karting Club Tenerife,adventure,,,,35,20,18
-karting-las-americas,Karting in Las Americas,adventure,,,,20,15,
-paragliding,Paragliding tandem flights with a pilot,adventure,,,,85,,
-parascending-puerto-colon,Parascending attraction in Puerto Colon,adventure,,,,60,60,
-safari-kayak-tour-los-cristianos,Safari kayak trip in Los Cristianos,adventure,,,,45,22,
-kayaking-stand-up-paddle-los-cristianos,Stand Up Paddle (SUP) in Los Cristianos,adventure,,,,23,,
-stand-up-paddle-la-caleta,Stand up paddle trip in La Caleta,adventure,,,,60,,
-banana-puerto-colon,The flying banana — Water attraction,adventure,,,,18,,
-abrazo-catamaranprivate-yacht-trip,Abrazo catamaran — Private yacht trip,,,,,890,,
-abrazo-catamaran,Abrazo catamaran — Shared yacht trip,,,,,57,,
-armani-yacht,Armani Yacht Tenerife — Exclusive private or shared yacht charter,,,,,75,,
-arriro-boat,Arriro yacht — Private or shared 3h sail trip with skipper,boat,25,,,50,,
-cool-sailing,Cool Sailing — 3h motor yacht trip,boat,25,,,50,,
-kosamui-boat,Kosamui — 3h sailing yacht whale & dolphin watching,boat,25,,,50,,
-atlanca-boat-rental,Atlanca — Motorboat rental without license,boat,,,,85,,
-blue-jack-sail-boat,Blue Jack Sail — 3h sailboat trip,,,,,38,,
-blue-ocean-yacht-charter,Blue Ocean catamaran shared or private charter,,,,,105,,
-boat-33-fishing-tenerife,Boat 33 — private fishing tour in Tenerife,,,,,450,,
-private-charter-champagne-tenerife,Champagne boat - Private or shared Charter in Tenerife,,,,,75,,
-five-star-catamaran,Five Star catamaran — luxury boat trip with drinks and food,,,,,60,,
-flipper-uno,Flipper Uno boat — 2 and 3 hours Sailboat trip,,,,,33,,
-freebird-catamaran,Freebird catamaran boat trip — Free transfer — Free drinks,boat,,,,47,23.5,
-fishing-boat-puerto-colon,Happy Hooker — Fishing trip in South Tenerife,boat,,,,70,,
-idea-58-boat-rental,Idea 58 — Boat rental,,,,,110,,
-idea-70-boat-rental,Idea 70 — Boat rental,,,,,170,,
-lady-sunshine-yacht-private-charter,Lady Sunshine Yacht — Luxury private or shared Charter,,,,,90,,
-leah-catamaran,LEAH Catamaran - Without licence,,,,,200,,
-masca-express-boat,Masca Express — 2h speedboat trip. From Los Gigantes,,,,,28,,
-maxicat-catamaran,Maxicat catamaran — 3h sailing trip,boat,,,,46,23,
-moira-fishing-tenerife,Moira boat — fishing in Tenerife,,,,,250,,
-monte-cristo-catamaran,Monte Cristo Catamaran — Whale and dolphin watching,boat,,,,59,49,
-moonday-boat-rental,Moonday boat — Rental without license,,,,,190,,
-neptuno-boat,Neptuno — 3h yacht trip — From Los Cristianos,boat,,,,63,31.5,
-ocadila-fishing-private-charter,Ocadila Fishing — Private fishing Charters,,,,,750,,
-opera-33-boat,Opera 33 — Private comfortable yacht trip with skipper,,,,,400,,
-diamant-boat,Opera 60 — Exclusive 3h motorboat trip with a skipper,boat,,,,80,,
-peter-pan-boat,Peter Pan pirate ship — 2 hours boat trip,boat,,,,27,13.5,
-raggie-tenerife-fishing,Raggie Fishing Tenerife,boat,,,,70,,
-ragnarok-viking-boat,Ragnarok Viking — 2 or 3 hours boat trip from Los Cristianos,boat,,,,25,20,5
-true-love,"Rent ""True Love"" Boat without licence - Sail yourself",,,,,100,,
-rib-boat-rental,RIB 45 boat — Rental without license,,,,,65,,
-rodfather-fishing-tenerife,Rodfather yacht - Tenerife Fishing,,,,,550,,
-royal-delfin-boat,Royal Delfin Catamaran — Boat trip with underwater vision,boat,,,,50,30,
-shogun-boat,Shogun — 5 hours boat trip with drinks and food,boat,,,,61,30.5,
-sonador-boat,Sonador — luxury sailboat private trip,boat,,,,50,12.5,12.5
-submarine-safari-boat,Submarine Safari — Real tourist submarine — 1 hour trip,boat,,,,35,,
-vulcano-ocean-charter,Vulcano Ocean charter — Boat trip with skipper,,,,,72,,
-white-paradise-catamaran,White Paradise catamaran trip — 3h sailing and dolphin watching,,,,,42,,
-yate-sofia-fishing-tenerife,Yacht Sofia fishing In Tenerife,boat,,,,50,,
-2-hours-buggy-trip,Buggy — 2 hour trip with 20 minutes off road,buggy,,,,110,,
-buggy-teide-adventure,Buggy — Mount Teide adventure trip,buggy,,,,180,,
-buggy-costa-adventure,Buggy — South coast adventure 3h trip,buggy,,,,180,,
-buggy-sunset-adventure,Buggy — Sunset Adventure,buggy,,,,180,,
-buggy-off-road,Extreme Off Road Buggy Tenerife,buggy,,,,180,,
-teide-icod-garachico-masca,Bus tour to Teide National Park  Masca and the northern coast of Tenerife,excursion,,,,90,75,
-gran-canaria,Gran Canaria island — 1 day bus + ferry tour,excursion,,,,130,,
-island-tour-masca,Island bus Tour + Masca village,excursion,,,,50,,
-la-gomera,La Gomera island — 1 day bus Tour + ferry,excursion,,,,145,118,
-la-palma,La Palma island  — 1 day bus tour with drinks  lunch  and professional guide,excursion,,,,160,,
-teide-by-night,Mount Teide by Night — bus tour — Stargazing & Sunset experience,excursion,,,,75,60,
-teide-tour-cable-car,Mount Teide Tour and Cable Car tickets,excursion,,,,60,50,
-puerto-cruz-tour,Puerto de la Cruz — Round Trip from Tenerife South,excursion,,,,22,,
-santa-cruz--la-laguna--anaga,Santa Cruz — Anaga — La Laguna — bus tour,excursion,,,,85,70,
-booster-pack-puerto-colon,Booster Pack — Jet Ski & Parascending,jetski,,,,110,,
-jet-ski-puerto-colon,Jetski — Ocean Safari excursion,jetski,,,,100,,
-watersport-pack-puerto-colon,Water Sports Pack — Jet Ski + Parascending + Fly Fish,jetski,,,,90,,
-aqualand,Aqualand — waterpark in Costa Adeje,park,,,,36,29,16
-camel-park,Camel Park tickets,park,,,,22,11,
-jungle-park,Jungle Park — ZOO oriented to jungle animals,park,,,,35,29,16
-loro-parque,Loro Parque tickets — The biggest ZOO in Tenerife,park,,,,44,32,
-siam-park,Siam Park — Tickets to the legendary water park,park,,,,44,32,
-2parks-ticket-jungle-park-aqualand,Twin ticket — ZOO Jungle Park + Aqualand Waterpark,park,,,,51,42,21
-twin-ticket-loro-parque-siam-park,Twin ticket — ZOO Loro Parque + Siam Park,park,,,,78,57,
-coastal-quads,Coastal Quads Trip,quad,,,,120,,
-quad-off-road-tour,Quad — 100% Off-road Tour,quad,,,,120,,
-quad-sunset-tour,Quad — Sunset Tour,quad,,,,120,,
-quad-teide-tour,Quads — 3 hours mount Teide tour,quad,,,,100,,
-quad-masca-tour,Quads — Masca valley Gran Tour,quad,,,,135,,
-citroen-c3-car-rental,Citroen C3 — Car Rental,rental,,,,62,,
-citroen-cactus-automatic-car-rental,Citroen Cactus Automatic — Car Rental,rental,,,,65,,
-citroen-grand-picasso-car-rental,Citroen Grand Picasso - 7 Seats — Car Rental,rental,,,,100,,
-fiat-500-car-rental,Fiat 500 — Car Rental,rental,,,,45,,
-fiat-500-cabrio-car-rental,Fiat 500 Cabrio — Car Rental,rental,,,,70,,
-fiat-panda-car-rental,Fiat Panda dynamic — Car rental,rental,,,,40,,
-renault-captur-automatic-car-rental,Renault Captur Automatic — Car Rental,rental,,,,65,,
-renault-trafic-car-rental,Renault Trafic 9 Seats — Car Rental,rental,,,,110,,
-single-mobility-scooter,Rent Mobility Scooter - 2 seats,rental,,,,10,,
-seat-ibiza-car-rental,Seat Ibiza — Car Rental,rental,,,,52,,
-seat-leon-car-rental,Seat Leon — Car Rental,rental,,,,65,,
-tuk-tuk,Tuk Tuk — Touristic Tours,rental,,,,12,,
-vw-beetle-automatic-car-rental,VW Beetle Automatic — Car Rental,rental,,,,105,,
-vw-golf-car-rental,VW Golf — Car Rental,rental,,,,65,,
-vw-polo-car-rental,VW Polo — Car Rental,rental,,,,52,,
-vw-polo-automatic-car-rental,VW Polo Automatic — Car Rental,rental,,,,60,,
-ole-flamenco-show,Flamenco show Ole — the best flamenco show on the Canary Islands,show,,,,51,25.5,
-flamenco-show-sala-coliseo,Flamenco Show tickets — San Miguel  Sala Coliseo,show,,,,32,19,
-history-evolution-of-music,History — Unique musical show tickets,show,,,,49,25,
-medieval-show,Medieval dinner Show in Tenerife,show,,,,52,31,
-music-hall-tavern,MHT - Music Hall Tavern show — Comedy and dinner with Drag Queens show,show,,,,49,39,
-scandal-dinner-show,Scandal — Dinner Show tickets,show,,,,94,,
-utopia-pool-party,Utopia — Pool Party entry tickets,show,,,,70,,
-spa-aqua-club-termal,Spa Aquaclub Termal — entrance tickets,wellness,,,,13,,
+slug,label,supplierId,pvp,net
+diving-puerto-colon,Per person,atlantis,75,35
+fly-fish-puerto-colon,Per person,watersport,18,12
+helidream-helicopter-tour,Per person,helidreams,98,83
+centro-hipico-xanadu,Adult,xanado,45,33.75
+centro-hipico-xanadu,Child,xanado,45,33.75
+karting-club-tenerife,Adult,karting-club-tenerife,35,24.5
+karting-club-tenerife,Child,karting-club-tenerife,20,14
+karting-club-tenerife,Kid,karting-club-tenerife,18,12.6
+karting-las-americas,Adult,karting-adeje,20,14
+karting-las-americas,Child,karting-adeje,15,10.5
+paragliding,Per person,rob-paragliding,85,46
+parascending-puerto-colon,Adult,aj-fly,60,40
+parascending-puerto-colon,Child,aj-fly,60,40
+safari-kayak-tour-los-cristianos,Adult,atlantis,45,25
+safari-kayak-tour-los-cristianos,Child,atlantis,22,12.5
+kayaking-stand-up-paddle-los-cristianos,Per person,,23,13
+stand-up-paddle-la-caleta,Per person,,60,30
+banana-puerto-colon,Per person,watersport,18,12
+arriro-boat,Per person,arriro,50,22.5
+cool-sailing,Per person,cool-sailing,50,25
+kosamui-boat,Per person,kosamui,50,25
+atlanca-boat-rental,Per person,atlanca,85,55
+freebird-catamaran,Adult (3h),freebird,47,22
+freebird-catamaran,Adult (4.5h),freebird,62,32
+freebird-catamaran,Child 4-11 (3h),freebird,23.5,11
+freebird-catamaran,Child 4-11 (4.5h),freebird,31,16
+freebird-catamaran,Baby (under 4),freebird,0,0
+fishing-boat-puerto-colon,Per person,happy-hooker,70,50
+maxicat-catamaran,Adult,maxicat,45,25
+maxicat-catamaran,Child (6-11),maxicat,22.5,12.5
+maxicat-catamaran,Baby (under 6),maxicat,0,25
+monte-cristo-catamaran,Adult,monte-cristo,62,40
+monte-cristo-catamaran,Child (0-11),monte-cristo,49,36
+neptuno-boat,Adult,shogun-neptuno,63,42
+neptuno-boat,Child (3-11),shogun-neptuno,31.5,21
+neptuno-boat,Baby (0-2),shogun-neptuno,0,42
+diamant-boat,Per person,opera,80,45
+peter-pan-boat,Adult,peter-pan,27,16
+peter-pan-boat,Child (3-11),peter-pan,13.5,8
+peter-pan-boat,Baby (0-2),peter-pan,0,16
+raggie-tenerife-fishing,Per person,raggie-fishing,70,50
+ragnarok-viking-boat,Adult (2h),viking,30,21
+ragnarok-viking-boat,Adult (3h),viking,44.5,31.15
+ragnarok-viking-boat,Child 4-11 (2h),viking,15,10.5
+ragnarok-viking-boat,Child 4-11 (3h),viking,25,17.5
+ragnarok-viking-boat,Baby (under 4),viking,0,0
+royal-delfin-boat,Adult (3h),royal-delfin,50,35
+royal-delfin-boat,Adult (4.5h),royal-delfin,63,44.1
+royal-delfin-boat,Child 3-11 (3h),royal-delfin,30,21
+royal-delfin-boat,Child 3-11 (4.5h),royal-delfin,40,28
+royal-delfin-boat,Baby (under 2),royal-delfin,0,0
+shogun-boat,Adult,shogun-neptuno,60,37
+shogun-boat,Child (3-11),shogun-neptuno,30,18.5
+shogun-boat,Baby (0-2),shogun-neptuno,0,37
+sonador-boat,Adult,sonador,40,25
+sonador-boat,Child (3-9),sonador,27.5,12.5
+sonador-boat,Baby (0-2),sonador,0,12.5
+2-hours-buggy-trip,Per buggy (2 people),,110,
+buggy-teide-adventure,Per buggy (2 people),hub-buggy,180,80
+buggy-costa-adventure,Per buggy (2 people),hub-buggy,180,80
+buggy-sunset-adventure,Per buggy (2 people),hub-buggy,180,80
+buggy-off-road,Per buggy (2 people),hub-buggy,180,80
+teide-icod-garachico-masca,Adult,comfort,90,55
+teide-icod-garachico-masca,Child,comfort,75,50
+island-tour-masca,Per person,,50,33
+la-gomera,Adult,,145,125
+la-gomera,Child,,118,105.25
+teide-by-night,Adult,ozzy,75,38
+teide-by-night,Child,ozzy,60,33
+teide-tour-cable-car,Adult,comfort,60,40
+teide-tour-cable-car,Child,comfort,50,35
+santa-cruz--la-laguna--anaga,Adult,comfort,85,50
+santa-cruz--la-laguna--anaga,Child,comfort,70,45
+booster-pack-puerto-colon,Per person,,110,45
+jet-ski-puerto-colon,For 2 people,,100,40
+watersport-pack-puerto-colon,Per person,watersport,90,54
+aqualand,Adult,island-excursions,36,
+aqualand,Child (5-10),island-excursions,29,
+aqualand,Infant (3-4),island-excursions,16,
+camel-park,Adult,camel-park,22,15
+camel-park,Child,camel-park,11,7.5
+jungle-park,Adult,island-excursions,35,
+jungle-park,Child (5-10),island-excursions,29,
+jungle-park,Infant (3-4),island-excursions,16,
+loro-parque,Adult,island-excursions,44,
+loro-parque,Child (3-11),island-excursions,32,
+siam-park,Adult,island-excursions,44,
+siam-park,Child (3-11),island-excursions,32,
+2parks-ticket-jungle-park-aqualand,Adult,island-excursions,51,
+2parks-ticket-jungle-park-aqualand,Child (5-10),island-excursions,42,
+2parks-ticket-jungle-park-aqualand,Infant (3-4),island-excursions,21,
+twin-ticket-loro-parque-siam-park,Adult,island-excursions,78,
+twin-ticket-loro-parque-siam-park,Child (3-11),island-excursions,57,
+twin-ticket-loro-parque-siam-park,Adult + bus transfer,island-excursions,98,
+twin-ticket-loro-parque-siam-park,Child + bus transfer,island-excursions,73,
+coastal-quads,Per person,,120,60
+quad-off-road-tour,Per person,quad-explorer,120,50
+quad-sunset-tour,Per person,quadsquad,120,65
+quad-teide-tour,For 2 people,,100,68
+quad-masca-tour,Per person,,135,78
+citroen-c3-car-rental,Per person,aliscar,62,43.4
+citroen-cactus-automatic-car-rental,Per person,aliscar,65,45.5
+citroen-grand-picasso-car-rental,Per person,aliscar,100,70
+fiat-500-car-rental,Per person,aliscar,45,31.5
+fiat-500-cabrio-car-rental,Per person,aliscar,70,49
+fiat-panda-car-rental,Per person,aliscar,40,28
+renault-captur-automatic-car-rental,Per person,aliscar,65,45.5
+renault-trafic-car-rental,Per person,aliscar,110,77
+seat-ibiza-car-rental,Per person,aliscar,52,36.4
+seat-leon-car-rental,Per person,aliscar,65,45.5
+tuk-tuk,Per person,tuk-tuk,12,9
+vw-beetle-automatic-car-rental,Per person,aliscar,105,73.5
+vw-golf-car-rental,Per person,aliscar,65,45.5
+vw-polo-car-rental,Per person,aliscar,52,36.4
+vw-polo-automatic-car-rental,Per person,aliscar,60,42
+ole-flamenco-show,Adult,nere-shows,51,35.7
+ole-flamenco-show,Child,nere-shows,25.5,17.85
+flamenco-show-sala-coliseo,Adult,medieval-adventure,32,22.4
+flamenco-show-sala-coliseo,Child,medieval-adventure,19,15.2
+history-evolution-of-music,Adult,history-musicle,49,34.3
+history-evolution-of-music,Child,history-musicle,25,17.5
+medieval-show,Adult,medieval-adventure,52,36.4
+medieval-show,Child,medieval-adventure,31,24.8
+music-hall-tavern,Adult,mht-tavern,49,34.3
+music-hall-tavern,Child,mht-tavern,39,27.3
+scandal-dinner-show,Adult,nere-shows,94,65.8
+seat-leon-st-automatic-car-rental,Per person,aliscar,70,49
+opel-zafira-7-seater-car-rental,Per person,aliscar,110,77
+soul-jeep-self-drive-safari,Per jeep (1-2 people),soul-jeep,290,130
+soul-jeep-self-drive-safari,Per jeep (3-4 people),soul-jeep,310,150
+soul-jeep-passenger-tour,Per person,soul-jeep,120,65
+soul-jeep-passenger-tour,Additional passenger,soul-jeep,90,45

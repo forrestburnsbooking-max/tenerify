@@ -6,22 +6,18 @@ const DATA_DIR = path.join(process.cwd(), "data");
 
 type CsvRow = {
   slug: string;
-  name: string;
-  category: string;
-  net_adult: string;
-  net_child: string;
-  net_kid: string;
-  pvp_adult: string;
-  pvp_child: string;
-  pvp_kid: string;
+  label: string;
+  supplierId: string;
+  pvp: string;
+  net: string;
 };
+
+type PricingItem = { label: string; price: number; net?: number };
 
 type Tour = {
   slug: string;
-  priceFrom?: number;
-  pricing?: { label: string; price: number }[];
-  netPricing?: { adult?: number; child?: number; kid?: number };
-  pvpPricing?: { adult?: number; child?: number; kid?: number };
+  pricing: PricingItem[];
+  supplierId?: string;
   [key: string]: unknown;
 };
 
@@ -31,43 +27,32 @@ const rows: CsvRow[] = parse(csvRaw, { columns: true, skip_empty_lines: true });
 const toursPath = path.join(DATA_DIR, "tours.json");
 const tours: Tour[] = JSON.parse(fs.readFileSync(toursPath, "utf-8"));
 
-const priceMap = new Map(rows.map((r) => [r.slug, r]));
+const rowMap = new Map(rows.map((r) => [`${r.slug}::${r.label}`, r]));
 
 let updated = 0;
 let skipped = 0;
 
 for (const tour of tours) {
-  const row = priceMap.get(tour.slug);
-  if (!row) {
-    skipped++;
-    continue;
+  let touched = false;
+
+  for (const item of tour.pricing) {
+    const row = rowMap.get(`${tour.slug}::${item.label}`);
+    if (!row) {
+      skipped++;
+      continue;
+    }
+    if (row.net !== "") {
+      item.net = parseFloat(row.net);
+      touched = true;
+    }
+    if (row.supplierId) {
+      tour.supplierId = row.supplierId;
+      touched = true;
+    }
   }
 
-  const num = (v: string) => (v !== "" ? parseFloat(v) : undefined);
-
-  const pvp = {
-    adult: num(row.pvp_adult),
-    child: num(row.pvp_child),
-    kid: num(row.pvp_kid),
-  };
-  const net = {
-    adult: num(row.net_adult),
-    child: num(row.net_child),
-    kid: num(row.net_kid),
-  };
-
-  if (pvp.adult !== undefined) {
-    tour.pvpPricing = Object.fromEntries(
-      Object.entries(pvp).filter(([, v]) => v !== undefined)
-    );
-    tour.netPricing = Object.fromEntries(
-      Object.entries(net).filter(([, v]) => v !== undefined)
-    );
-    tour.priceFrom = pvp.adult;
-  }
-
-  updated++;
+  if (touched) updated++;
 }
 
-fs.writeFileSync(toursPath, JSON.stringify(tours, null, 2));
-console.log(`✓ Updated ${updated} tours, skipped ${skipped} (not in tours.json)`);
+fs.writeFileSync(toursPath, JSON.stringify(tours, null, 2) + "\n");
+console.log(`✓ Updated ${updated} tours, ${skipped} pricing items not found in CSV`);
