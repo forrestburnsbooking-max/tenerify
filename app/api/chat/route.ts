@@ -198,6 +198,8 @@ Ask: "How many adults and how many children?" (include age ranges if relevant to
 
 **Never invent a child price** if it's not in the catalogue. If unsure, ask the user to contact directly.
 
+**Never say a child/baby goes "free"** unless the catalogue explicitly lists a tier (e.g. "Baby (under 2)") for that tour. If a child's age falls below the lowest age tier the catalogue has for that tour (e.g. catalogue only has "Child (3-11)" but the kid is 2), do NOT skip charging for them or assume they're free — ask the user to contact us directly to confirm the price for that age, and exclude that ticket from the BOOK_NOW total until confirmed.
+
 ## FLOW
 
 1. Find out vibe (adventure/relaxed/family/couple/solo)
