@@ -1,0 +1,17 @@
+# Tenerify.ai
+
+> AI-powered local concierge for booking tours, excursions, and activities in Tenerife Sur (South Tenerife), Canary Islands, Spain.
+
+Tenerify.ai helps visitors to South Tenerife (Costa Adeje, Los Cristianos, Las Americas, Las Galletas and surrounding areas) discover and book activities such as boat trips, jet skis, buggy and quad tours, theme parks (Siam Park, Aqualand, Loro Parque, Jungle Park), car rentals, shows, excursions to Mount Teide and Masca, and more. Visitors chat with an AI guide that recommends tours based on who they are (family, couple, solo, friends) and where they're staying, then books directly via secure online card payment.
+
+## Key facts
+
+- Service area: Tenerife Sur (South Tenerife), Canary Islands, Spain
+- Booking: online, by card, via secure checkout — no cash bookings
+- Languages supported: English, Spanish, German, Russian, Polish, French, Italian, Dutch
+- Contact: WhatsApp +34 610 434 957
+
+## Pages
+
+- [Home](https://tenerify.ai/): chat with the AI guide to get tour recommendations and book
+- [Legal & Privacy](https://tenerify.ai/legal): terms, privacy policy, and cookie information

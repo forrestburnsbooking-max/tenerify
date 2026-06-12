@@ -10,9 +10,47 @@ const jakarta = Plus_Jakarta_Sans({
   display: "swap",
 });
 
+const WHATSAPP_NUMBER = "34610434957";
+
+const title = "Tenerify.ai — Your local AI guide to Tenerife";
+const description = "Discover and book the best experiences in Tenerife Sur. AI-powered, locally curated.";
+
 export const metadata: Metadata = {
-  title: "Tenerify.ai — Your local AI guide to Tenerife",
-  description: "Discover and book the best experiences in Tenerife Sur. AI-powered, locally curated.",
+  metadataBase: new URL("https://tenerify.ai"),
+  title,
+  description,
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title,
+    description,
+    url: "/",
+    siteName: "Tenerify.ai",
+    images: [{ url: "/hero-teide.jpg", width: 1400, height: 935, alt: "Mount Teide, Tenerife" }],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images: ["/hero-teide.jpg"],
+  },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "TravelAgency",
+  name: "Tenerify.ai",
+  url: "https://tenerify.ai",
+  image: "https://tenerify.ai/hero-teide.jpg",
+  description,
+  areaServed: {
+    "@type": "Place",
+    name: "Tenerife Sur, Canary Islands, Spain",
+  },
+  sameAs: [`https://wa.me/${WHATSAPP_NUMBER}`],
 };
 
 export default function RootLayout({
@@ -25,6 +63,10 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col font-sans">
         {children}
         <CookieBanner />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </body>
     </html>
   );
