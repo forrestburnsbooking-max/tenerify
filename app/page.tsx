@@ -529,7 +529,7 @@ export default function Home() {
           <h1 className="font-extrabold text-base leading-none tracking-tight">
             Tenerify<span className="text-orange-400">.ai</span>
           </h1>
-          <p className="text-stone-500 text-xs mt-0.5 font-medium">Tenerife Sur · AI concierge</p>
+          <p className="text-white/80 text-xs mt-0.5 font-medium">Tenerife Sur · AI concierge</p>
         </div>
       </header>
 
