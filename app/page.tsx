@@ -539,7 +539,7 @@ export default function Home() {
         {(step === "language" || step === "menu" || step === "who" || step === "category" || step === "location" || step === "chat") && (
           <div className="flex gap-3 max-w-xl mx-auto w-full">
             <div className="flex-shrink-0 mt-1 w-7 h-7 rounded-full overflow-hidden">
-              <img src="/icon.svg" alt="" className="w-full h-full" />
+              <img src="/logo-mark.svg" alt="" className="w-full h-full p-1" />
             </div>
             <div className="space-y-3 flex-1">
               <div className="bg-white/6 border border-white/12 text-white rounded-2xl rounded-tl-none px-4 py-3 text-sm leading-relaxed">
@@ -569,7 +569,7 @@ export default function Home() {
         {(step === "menu" || step === "who" || step === "category" || step === "location" || step === "chat") && (
           <div className="flex gap-3 max-w-xl mx-auto w-full">
             <div className="flex-shrink-0 mt-1 w-7 h-7 rounded-full overflow-hidden">
-              <img src="/icon.svg" alt="" className="w-full h-full" />
+              <img src="/logo-mark.svg" alt="" className="w-full h-full p-1" />
             </div>
             <div className="space-y-3 flex-1">
               <div className="bg-white/6 border border-white/12 text-white rounded-2xl rounded-tl-none px-4 py-3 text-sm leading-relaxed">
@@ -605,7 +605,7 @@ export default function Home() {
         {menuChoice === "book" && (step === "who" || step === "category" || step === "location" || step === "chat") && (
           <div className="flex gap-3 max-w-xl mx-auto w-full">
             <div className="flex-shrink-0 mt-1 w-7 h-7 rounded-full overflow-hidden">
-              <img src="/icon.svg" alt="" className="w-full h-full" />
+              <img src="/logo-mark.svg" alt="" className="w-full h-full p-1" />
             </div>
             <div className="space-y-3 flex-1">
               <div className="bg-white/6 border border-white/12 text-white rounded-2xl rounded-tl-none px-4 py-3 text-sm leading-relaxed">
@@ -637,7 +637,7 @@ export default function Home() {
         {menuChoice === "book" && (step === "category" || step === "location" || step === "chat") && (
           <div className="flex gap-3 max-w-xl mx-auto w-full">
             <div className="flex-shrink-0 mt-1 w-7 h-7 rounded-full overflow-hidden">
-              <img src="/icon.svg" alt="" className="w-full h-full" />
+              <img src="/logo-mark.svg" alt="" className="w-full h-full p-1" />
             </div>
             <div className="space-y-3 flex-1">
               <div className="bg-white/6 border border-white/12 text-white rounded-2xl rounded-tl-none px-4 py-3 text-sm leading-relaxed">
@@ -684,7 +684,7 @@ export default function Home() {
         {menuChoice === "book" && (step === "location" || step === "chat") && (
           <div className="flex gap-3 max-w-xl mx-auto w-full">
             <div className="flex-shrink-0 mt-1 w-7 h-7 rounded-full overflow-hidden">
-              <img src="/icon.svg" alt="" className="w-full h-full" />
+              <img src="/logo-mark.svg" alt="" className="w-full h-full p-1" />
             </div>
             <div className="space-y-3 flex-1">
               <div className="bg-white/6 border border-white/12 text-white rounded-2xl rounded-tl-none px-4 py-3 text-sm leading-relaxed">
@@ -758,7 +758,7 @@ export default function Home() {
           <div key={i} className={`flex gap-3 max-w-xl mx-auto w-full ${msg.role === "user" ? "flex-row-reverse" : ""}`}>
             {msg.role === "assistant" && (
               <div className="flex-shrink-0 mt-1 w-7 h-7 rounded-full overflow-hidden">
-              <img src="/icon.svg" alt="" className="w-full h-full" />
+              <img src="/logo-mark.svg" alt="" className="w-full h-full p-1" />
             </div>
             )}
             <div className="flex flex-col gap-3 max-w-[85%]">
@@ -854,7 +854,7 @@ export default function Home() {
         {loading && (
           <div className="flex gap-3 max-w-xl mx-auto w-full">
             <div className="flex-shrink-0 mt-1 w-7 h-7 rounded-full overflow-hidden">
-              <img src="/icon.svg" alt="" className="w-full h-full" />
+              <img src="/logo-mark.svg" alt="" className="w-full h-full p-1" />
             </div>
             <div className="bg-white/6 border border-white/12 rounded-2xl rounded-tl-none px-4 py-3">
               <div className="flex gap-1 items-center h-4">
