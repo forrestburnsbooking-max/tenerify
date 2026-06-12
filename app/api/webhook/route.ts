@@ -53,10 +53,12 @@ export async function POST(req: NextRequest) {
     const balanceDue = depositPercent && totalPriceEur
       ? `€${(parseFloat(totalPriceEur) - pvpTotal).toFixed(0)} due on pickup`
       : "";
-    const customerName = session.customer_details?.name ?? session.metadata?.customerNameChat ?? "";
+    const getCustomField = (key: string) =>
+      session.custom_fields?.find((f) => f.key === key)?.text?.value ?? "";
+    const customerName = getCustomField("full_name") || session.customer_details?.name || "";
     const customerEmail = session.customer_details?.email ?? "";
-    const customerPhone = session.customer_details?.phone ?? session.metadata?.customerPhoneChat ?? "";
-    const customerHotel = session.metadata?.customerHotel ?? "";
+    const customerPhone = session.customer_details?.phone ?? "";
+    const customerHotel = getCustomField("hotel");
     const ref = session.id.slice(-8).toUpperCase();
 
     const commission = tourSlug ? getCommission(tourSlug, pvpTotal) : null;

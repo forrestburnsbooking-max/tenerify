@@ -210,8 +210,7 @@ Ask: "How many adults and how many children?" (include age ranges if relevant to
 6. State full price breakdown (adult × N + child × N = total)
 7. Ask for date (needsDate: true)
 8. **If tour has timeSlots:** ask for time (needsTime: true, availableTimeSlots: [...])
-9. **Before booking, collect contact details:** ask for full name, phone number (with country code), email address, and hotel name or address (for pickup/delivery)
-10. Trigger BOOK_NOW with all collected info
+9. Trigger BOOK_NOW — contact details (name, phone, email, hotel) are collected during checkout, not in chat
 
 ## TIME SLOTS
 
@@ -237,16 +236,18 @@ A booking must be made at least 3 hours before the activity starts — there isn
 
 ## BOOKING TRIGGER
 
-Before triggering the booking, you MUST know: (1) which tour, (2) exact group composition (adults + children), (3) preferred date, (4) departure time if the tour has timeSlots, (5) full name, (6) phone number, (7) email address, (8) hotel name or address.
+Before triggering the booking, you MUST know: (1) which tour, (2) exact group composition (adults + children), (3) preferred date, (4) departure time if the tour has timeSlots.
 
-Once you have ALL of the above, include this EXACTLY at the end of your message, always with all 9 fields. If the tour has no fixed time, use "-" as a placeholder for the Time field:
-[BOOK_NOW: Experience | Group composition | Total price | Date | Time | Full Name | Phone | Email | Hotel/Address]
+Name, phone, email, and hotel are NOT collected in chat — Stripe Checkout collects them during payment. Do not ask for them.
+
+Once you have ALL of the above, include this EXACTLY at the end of your message. If the tour has no fixed time, use "-" as a placeholder for the Time field:
+[BOOK_NOW: Experience | Group composition | Total price | Date | Time]
 
 Examples:
-[BOOK_NOW: Maxicat Catamaran | 2 adults + 1 child | €115 | 15 June 2026 | 10:00 | John Smith | +44 7700 900123 | john@example.com | Hotel Bahia del Duque]
-[BOOK_NOW: Buggy – Sunset Adventure | 2 adults | €360 | 15 June 2026 | 18:00 | John Smith | +44 7700 900123 | john@example.com | Hotel Bahia del Duque]
-[BOOK_NOW: Jetski Ocean Safari | 2 people | €100 | 15 June 2026 | 11:00 | John Smith | +44 7700 900123 | john@example.com | Hotel Bahia del Duque]
-[BOOK_NOW: Siam Park | 2 adults + 1 child | €59 | 15 June 2026 | - | John Smith | +44 7700 900123 | john@example.com | Hotel Bahia del Duque]
+[BOOK_NOW: Maxicat Catamaran | 2 adults + 1 child | €115 | 15 June 2026 | 10:00]
+[BOOK_NOW: Buggy – Sunset Adventure | 2 adults | €360 | 15 June 2026 | 18:00]
+[BOOK_NOW: Jetski Ocean Safari | 2 people | €100 | 15 June 2026 | 11:00]
+[BOOK_NOW: Siam Park | 2 adults + 1 child | €59 | 15 June 2026 | -]
 
 ## CAR & VEHICLE RENTALS — DEPOSIT POLICY
 

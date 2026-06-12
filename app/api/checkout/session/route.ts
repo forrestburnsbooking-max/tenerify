@@ -12,6 +12,8 @@ export async function GET(req: NextRequest) {
     const stripe = new Stripe(key);
     const session = await stripe.checkout.sessions.retrieve(id);
     const meta = session.metadata ?? {};
+    const getCustomField = (key: string) =>
+      session.custom_fields?.find((f) => f.key === key)?.text?.value ?? null;
     return NextResponse.json({
       bookingText: meta.bookingText ?? null,
       tourName: meta.tourName ?? null,
@@ -21,8 +23,9 @@ export async function GET(req: NextRequest) {
       meetingPoint: meta.meetingPoint ?? null,
       tourSlug: meta.tourSlug ?? null,
       customerEmail: session.customer_details?.email ?? null,
-      customerName: session.customer_details?.name ?? null,
+      customerName: getCustomField("full_name") ?? session.customer_details?.name ?? null,
       customerPhone: session.customer_details?.phone ?? null,
+      customerHotel: getCustomField("hotel"),
       amountTotal: session.amount_total ?? null,
       depositPercent: meta.depositPercent ?? null,
       totalPriceEur: meta.totalPriceEur ?? null,

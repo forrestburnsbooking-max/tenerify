@@ -12,7 +12,7 @@ function getStripe() {
 }
 
 function parseBookingText(bookingText: string) {
-  // Format: "Tour Name | 2 people | €180 | 15 June 2026 | 10:00 | Full Name | Phone | Email | Hotel/Address"
+  // Format: "Tour Name | 2 people | €180 | 15 June 2026 | 10:00"
   // Time is "-" when the tour has no fixed time slot.
   const parts = bookingText.split("|").map((s) => s.trim());
   const tourName = parts[0] ?? "Tenerife Experience";
@@ -20,12 +20,8 @@ function parseBookingText(bookingText: string) {
   const priceStr = parts[2] ?? "€0";
   const bookingDate = parts[3] ?? "";
   const bookingTime = parts[4] && parts[4] !== "-" ? parts[4] : "";
-  const customerName = parts[5] ?? "";
-  const customerPhone = parts[6] ?? "";
-  const customerEmail = parts[7] ?? "";
-  const customerHotel = parts[8] ?? "";
   const priceEur = parseFloat(priceStr.replace(/[^0-9.]/g, "")) || 0;
-  return { tourName, groupSize, priceEur, bookingDate, bookingTime, customerName, customerPhone, customerEmail, customerHotel };
+  return { tourName, groupSize, priceEur, bookingDate, bookingTime };
 }
 
 function findTourSlugByName(tourName: string): string | null {
@@ -59,7 +55,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Missing bookingText" }, { status: 400 });
     }
 
-    const { tourName, groupSize, priceEur, bookingDate, bookingTime, customerName, customerPhone, customerEmail, customerHotel } = parseBookingText(bookingText);
+    const { tourName, groupSize, priceEur, bookingDate, bookingTime } = parseBookingText(bookingText);
     const stripe = getStripe();
     const baseUrl = process.env.NEXT_PUBLIC_BASE_URL ?? "http://localhost:3000";
 
@@ -101,6 +97,18 @@ export async function POST(req: NextRequest) {
       cancel_url: `${baseUrl}/`,
       customer_creation: "always",
       phone_number_collection: { enabled: true },
+      custom_fields: [
+        {
+          key: "full_name",
+          label: { type: "custom", custom: "Full name" },
+          type: "text",
+        },
+        {
+          key: "hotel",
+          label: { type: "custom", custom: "Hotel name & room (or address)" },
+          type: "text",
+        },
+      ],
       metadata: {
         bookingText,
         tourName,
@@ -111,9 +119,6 @@ export async function POST(req: NextRequest) {
         tourSlug: slug ?? "",
         depositPercent: depositPercent ? String(depositPercent) : "",
         totalPriceEur: String(priceEur),
-        customerNameChat: customerName,
-        customerPhoneChat: customerPhone,
-        customerHotel,
       },
       payment_intent_data: {
         description: [
@@ -129,10 +134,6 @@ export async function POST(req: NextRequest) {
           groupSize,
           bookingDate,
           bookingTime,
-          customerName,
-          customerPhone,
-          customerEmail,
-          customerHotel,
         },
       },
     });
