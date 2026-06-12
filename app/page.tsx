@@ -508,8 +508,14 @@ export default function Home() {
   );
 
   return (
-    <div className="flex flex-col h-screen text-white" style={{ background: "linear-gradient(160deg, #071829 0%, #0a1020 40%, #110c1a 100%)" }}>
-      <header className="flex items-center gap-3 px-5 border-b border-white/8" style={{ paddingTop: "max(env(safe-area-inset-top, 0px), 16px)", paddingBottom: "16px" }}>
+    <div
+      className="flex flex-col h-screen text-white relative"
+      style={{
+        background:
+          "radial-gradient(ellipse 80% 50% at 50% -10%, rgba(251,146,60,0.16), transparent 60%), linear-gradient(160deg, #071829 0%, #0a1020 40%, #110c1a 100%)",
+      }}
+    >
+      <header className="relative flex items-center gap-3 px-5 border-b border-white/8" style={{ paddingTop: "max(env(safe-area-inset-top, 0px), 16px)", paddingBottom: "16px" }}>
         <button
           onClick={() => { setStep("hero"); setMessages([]); setUsedOptions(new Set()); setSelectedCategories([]); setWho(""); setLocation(""); setSelectedLanguage(""); setMenuChoice(null); setShowCustomLocation(false); setCustomLocation(""); }}
           className="text-2xl hover:scale-110 transition-transform flex-shrink-0"
@@ -529,7 +535,9 @@ export default function Home() {
         {/* Language selection */}
         {(step === "language" || step === "menu" || step === "who" || step === "category" || step === "location" || step === "chat") && (
           <div className="flex gap-3 max-w-xl mx-auto w-full">
-            <div className="text-xl flex-shrink-0 mt-1">🌋</div>
+            <div className="flex-shrink-0 mt-1 w-7 h-7 rounded-full overflow-hidden">
+              <img src="/icon.svg" alt="" className="w-full h-full" />
+            </div>
             <div className="space-y-3 flex-1">
               <div className="bg-white/6 border border-white/12 text-white rounded-2xl rounded-tl-none px-4 py-3 text-sm leading-relaxed">
                 ¿Qué idioma hablas?
@@ -557,7 +565,9 @@ export default function Home() {
         {/* Intro message + menu options */}
         {(step === "menu" || step === "who" || step === "category" || step === "location" || step === "chat") && (
           <div className="flex gap-3 max-w-xl mx-auto w-full">
-            <div className="text-xl flex-shrink-0 mt-1">🌋</div>
+            <div className="flex-shrink-0 mt-1 w-7 h-7 rounded-full overflow-hidden">
+              <img src="/icon.svg" alt="" className="w-full h-full" />
+            </div>
             <div className="space-y-3 flex-1">
               <div className="bg-white/6 border border-white/12 text-white rounded-2xl rounded-tl-none px-4 py-3 text-sm leading-relaxed">
                 <ReactMarkdown>{t.intro}</ReactMarkdown>
@@ -591,7 +601,9 @@ export default function Home() {
         {/* Who selection */}
         {menuChoice === "book" && (step === "who" || step === "category" || step === "location" || step === "chat") && (
           <div className="flex gap-3 max-w-xl mx-auto w-full">
-            <div className="text-xl flex-shrink-0 mt-1">🌋</div>
+            <div className="flex-shrink-0 mt-1 w-7 h-7 rounded-full overflow-hidden">
+              <img src="/icon.svg" alt="" className="w-full h-full" />
+            </div>
             <div className="space-y-3 flex-1">
               <div className="bg-white/6 border border-white/12 text-white rounded-2xl rounded-tl-none px-4 py-3 text-sm leading-relaxed">
                 {t.whoQuestion}
@@ -621,7 +633,9 @@ export default function Home() {
         {/* Category selection */}
         {menuChoice === "book" && (step === "category" || step === "location" || step === "chat") && (
           <div className="flex gap-3 max-w-xl mx-auto w-full">
-            <div className="text-xl flex-shrink-0 mt-1">🌋</div>
+            <div className="flex-shrink-0 mt-1 w-7 h-7 rounded-full overflow-hidden">
+              <img src="/icon.svg" alt="" className="w-full h-full" />
+            </div>
             <div className="space-y-3 flex-1">
               <div className="bg-white/6 border border-white/12 text-white rounded-2xl rounded-tl-none px-4 py-3 text-sm leading-relaxed">
                 {t.categoryQuestion}
@@ -666,7 +680,9 @@ export default function Home() {
         {/* Location selection */}
         {menuChoice === "book" && (step === "location" || step === "chat") && (
           <div className="flex gap-3 max-w-xl mx-auto w-full">
-            <div className="text-xl flex-shrink-0 mt-1">🌋</div>
+            <div className="flex-shrink-0 mt-1 w-7 h-7 rounded-full overflow-hidden">
+              <img src="/icon.svg" alt="" className="w-full h-full" />
+            </div>
             <div className="space-y-3 flex-1">
               <div className="bg-white/6 border border-white/12 text-white rounded-2xl rounded-tl-none px-4 py-3 text-sm leading-relaxed">
                 {t.locationQuestion}
@@ -738,7 +754,9 @@ export default function Home() {
         {messages.map((msg, i) => (
           <div key={i} className={`flex gap-3 max-w-xl mx-auto w-full ${msg.role === "user" ? "flex-row-reverse" : ""}`}>
             {msg.role === "assistant" && (
-              <div className="text-xl flex-shrink-0 mt-1">🌋</div>
+              <div className="flex-shrink-0 mt-1 w-7 h-7 rounded-full overflow-hidden">
+              <img src="/icon.svg" alt="" className="w-full h-full" />
+            </div>
             )}
             <div className="flex flex-col gap-3 max-w-[85%]">
               <div
@@ -832,7 +850,9 @@ export default function Home() {
 
         {loading && (
           <div className="flex gap-3 max-w-xl mx-auto w-full">
-            <div className="text-xl flex-shrink-0 mt-1">🌋</div>
+            <div className="flex-shrink-0 mt-1 w-7 h-7 rounded-full overflow-hidden">
+              <img src="/icon.svg" alt="" className="w-full h-full" />
+            </div>
             <div className="bg-white/6 border border-white/12 rounded-2xl rounded-tl-none px-4 py-3">
               <div className="flex gap-1 items-center h-4">
                 <span className="w-1.5 h-1.5 bg-orange-400 rounded-full animate-bounce [animation-delay:0ms]" />
