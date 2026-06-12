@@ -5193,5 +5193,71 @@
     "seatsPerVehicle": 2,
     "bookingPhone": "666 141 121",
     "supplierId": "flash-jetski"
+  },
+  {
+    "slug": "cabrio-bus-teide-masca",
+    "title": "Masca & Teide Full-Day Cabrio Bus Tour",
+    "category": "excursion",
+    "duration": "8h",
+    "languages": [
+      "Deutsch",
+      "English",
+      "Español",
+      "Français",
+      "Italiano"
+    ],
+    "pricing": [
+      {
+        "label": "Adult",
+        "price": 80,
+        "net": 55
+      },
+      {
+        "label": "Child",
+        "price": 60,
+        "net": 45
+      }
+    ],
+    "priceFrom": 80,
+    "description": "A full-day excursion in an open-top panoramic cabrio bus with a 360º view of the island. The route descends towards the hamlet of Masca, with sweeping views over the ravines and palm-lined valleys down to the sea. ・ From there, the tour climbs into Las Cañadas del Teide National Park, a UNESCO World Heritage Site surrounding Spain's highest peak, the Teide volcano (3,718m). ・ Along the way there's a stop in Vilaflor, Spain's highest village, for a taste of local wine and cheese, plus time at the cable car station for photos.",
+    "included": "Open-top panoramic cabrio bus, multilingual guide (English, Spanish, German, French, Italian), hotel pickup and return, wine & cheese tasting stop in Vilaflor.",
+    "notIncluded": "Lunch. Teide cable car ascent (+€45, weather dependent).",
+    "faq": [
+      {
+        "question": "How will I receive my tickets?",
+        "answer": "After you complete your purchase, you will receive an order confirmation email within a few minutes. This email will contain all the details of your purchase, including the event, date, and number of tickets. Please note we do not send tickets by post."
+      },
+      {
+        "question": "Can I book an excursion within 24 hours of its start time?",
+        "answer": "Yes, it possible. Please contact us or visit our office"
+      },
+      {
+        "question": "Will I be picked up at my hotel when a transfer is possible?",
+        "answer": "And where is the meeting point The exact meeting point for your excursion will be specified in your booking confirmation email. If a transfer service is included with your booking, we offer convenient hotel pickup. The availability of this service will depend on your hotel's location and the specific excursion."
+      },
+      {
+        "question": "May I pay directly in cash when the tour / activity starts?",
+        "answer": "We offer online purchases on the platform. If you wish to buy with cash you can visit our office."
+      },
+      {
+        "question": "Do you offer discounts?",
+        "answer": "We generally cannot give any discounts due to the very high demand. We offer discount for group bookings. Please contact us"
+      },
+      {
+        "question": "What happens if the weather is too bad to go on the excursion?",
+        "answer": "If the weather is too bad to go on the excursion, it will be rescheduled or you will receive a full refund."
+      },
+      {
+        "question": "May I purchase a gift voucher?",
+        "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
+      }
+    ],
+    "imageUrl": "https://canaryexplorer.com/wp-content/uploads/bus-cabrio-thumb.jpg",
+    "url": "https://www.tripadvisor.com/AttractionProductReview-g662606-d23845542-Cabrio_Bus_Full_Day_Guided_Tour_of_Teide_SOUTH_ONLY-Costa_Adeje_Adeje_Tenerife_Can.html",
+    "timeSlots": [
+      "09:00"
+    ],
+    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
+    "supplierId": "nere"
   }
 ]
