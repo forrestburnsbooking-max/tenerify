@@ -344,6 +344,16 @@ export default function Home() {
   useEffect(() => {
     // Check for existing session cookie to show "welcome back"
     setIsReturning(document.cookie.includes(SESSION_COOKIE));
+
+    // Deep link from a tour page: /?book=<Tour Title> jumps straight into chat
+    const bookParam = new URLSearchParams(window.location.search).get("book");
+    if (bookParam) {
+      setStep("chat");
+      const whoValue = "Booking from tour page";
+      setWho(whoValue);
+      sendToAI(`I'd like to book: ${bookParam}`, [], whoValue, "");
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {

@@ -138,3 +138,26 @@ export function getTourBySlug(slug: string): Tour | null {
     return null;
   }
 }
+
+export function getAllTours(): Tour[] {
+  try {
+    if (!fs.existsSync(TOURS_FILE)) return [];
+    return JSON.parse(fs.readFileSync(TOURS_FILE, "utf-8"));
+  } catch {
+    return [];
+  }
+}
+
+export const CATEGORY_EMOJIS = CATEGORY_EMOJI;
+export const CATEGORY_LABELS = CATEGORY_LABEL;
+
+export function tourImages(t: Tour): string[] {
+  if (t.images?.length) return t.images;
+  if (t.imageUrl) return [t.imageUrl];
+  return [];
+}
+
+export function formatPriceFrom(t: Tour): string {
+  if (!t.pricing?.length) return "Price on request";
+  return t.pricing.length === 1 ? `€${t.priceFrom}` : `from €${t.priceFrom}`;
+}
