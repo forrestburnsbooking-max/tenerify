@@ -2,16 +2,130 @@
 
 > AI-powered local concierge for booking tours, excursions, and activities in Tenerife Sur (South Tenerife), Canary Islands, Spain.
 
-Tenerify.ai helps visitors to South Tenerife (Costa Adeje, Los Cristianos, Las Americas, Las Galletas and surrounding areas) discover and book activities such as boat trips, jet skis, buggy and quad tours, theme parks (Siam Park, Aqualand, Loro Parque, Jungle Park), car rentals, shows, excursions to Mount Teide and Masca, and more. Visitors chat with an AI guide that recommends tours based on who they are (family, couple, solo, friends) and where they're staying, then books directly via secure online card payment.
+Tenerify.ai helps visitors to South Tenerife (Costa Adeje, Los Cristianos, Las Americas, Las Galletas and surrounding areas) discover and book activities. Visitors chat with an AI guide that recommends tours based on who they are (family, couple, solo, friends) and where they are staying, then books directly via secure online card payment.
 
 ## Key facts
 
 - Service area: Tenerife Sur (South Tenerife), Canary Islands, Spain
-- Booking: online, by card, via secure checkout — no cash bookings
+- Booking: online, by card, via secure checkout (Stripe) — no cash bookings
 - Languages supported: English, Spanish, German, Russian, Polish, French, Italian, Dutch
 - Contact: WhatsApp +34 610 434 957
 
 ## Pages
 
 - [Home](https://tenerify.ai/): chat with the AI guide to get tour recommendations and book
+- [All experiences](https://tenerify.ai/tours): full catalogue of tours and activities
 - [Legal & Privacy](https://tenerify.ai/legal): terms, privacy policy, and cookie information
+
+## Experiences by category
+
+
+### Water
+
+**Whale & dolphin watching:**
+- [Arriro yacht — Private or shared 3h sail trip with skipper](https://tenerify.ai/tours/arriro-boat) — from €50
+- [Cool Sailing — 3h motor yacht trip](https://tenerify.ai/tours/cool-sailing) — from €50
+- [Kosamui — 3h sailing yacht, whale & dolphin watching](https://tenerify.ai/tours/kosamui-boat) — from €50
+- [Freebird catamaran boat trip — Free transfer — Free drinks](https://tenerify.ai/tours/freebird-catamaran) — from €47
+- [Maxicat catamaran — 3h sailing trip](https://tenerify.ai/tours/maxicat-catamaran) — from €46
+- [Monte Cristo Catamaran — Whale and dolphin watching](https://tenerify.ai/tours/monte-cristo-catamaran) — from €59
+- [Neptuno — 3h yacht trip — From Los Cristianos](https://tenerify.ai/tours/neptuno-boat) — from €63
+- [Opera 60 — Exclusive 3h motorboat trip with a skipper](https://tenerify.ai/tours/diamant-boat) — from €80
+- [Peter Pan pirate ship — 2 hours boat trip](https://tenerify.ai/tours/peter-pan-boat) — from €27
+- [Ragnarok Viking — 2 or 3 hours boat trip from Los Cristianos](https://tenerify.ai/tours/ragnarok-viking-boat) — from €25
+- [Royal Delfin Catamaran — Boat trip with underwater vision](https://tenerify.ai/tours/royal-delfin-boat) — from €50
+- [Shogun — 5 hours boat trip with drinks and food](https://tenerify.ai/tours/shogun-boat) — from €61
+- [Sonador — luxury sailboat private trip](https://tenerify.ai/tours/sonador-boat) — from €50
+
+**Fishing tours:**
+- [Happy Hooker — Fishing trip in South Tenerife](https://tenerify.ai/tours/fishing-boat-puerto-colon) — from €70
+- [Raggie Fishing Tenerife](https://tenerify.ai/tours/raggie-tenerife-fishing) — from €70
+
+**No-licence boats:**
+- [Atlanca — Motorboat rental without license](https://tenerify.ai/tours/atlanca-boat-rental) — from €85
+
+**Jet ski & parasailing:**
+- [Parascending attraction in Puerto Colon](https://tenerify.ai/tours/parascending-puerto-colon) — from €60
+- [Booster Pack — Jet Ski & Parascending](https://tenerify.ai/tours/booster-pack-puerto-colon) — from €110
+- [Jetski — Ocean Safari excursion](https://tenerify.ai/tours/jet-ski-puerto-colon) — from €100
+- [Water Sports Pack — Jet Ski + Parascending + Fly Fish](https://tenerify.ai/tours/watersport-pack-puerto-colon) — from €90
+- [Jet Ski Safari — Las Galletas](https://tenerify.ai/tours/jetski-las-galletas) — from €110
+
+**Water activities:**
+- [Diving Atlantis school in Los Cristianos](https://tenerify.ai/tours/diving-puerto-colon) — from €75
+- [Fly Fish — Water attraction in Puerto Colon](https://tenerify.ai/tours/fly-fish-puerto-colon) — from €18
+- [Safari kayak trip in Los Cristianos](https://tenerify.ai/tours/safari-kayak-tour-los-cristianos) — from €45
+- [Stand Up Paddle (SUP) in Los Cristianos](https://tenerify.ai/tours/kayaking-stand-up-paddle-los-cristianos) — from €23
+- [Stand up paddle trip in La Caleta](https://tenerify.ai/tours/stand-up-paddle-la-caleta) — from €60
+- [The flying banana — Water attraction](https://tenerify.ai/tours/banana-puerto-colon) — from €18
+
+### Land
+
+**Buggy, quads & jeeps:**
+- [Buggy — 2 hour trip with 20 minutes off road](https://tenerify.ai/tours/2-hours-buggy-trip) — from €110
+- [Buggy — Mount Teide adventure trip](https://tenerify.ai/tours/buggy-teide-adventure) — from €180
+- [Buggy — South coast adventure 3h trip](https://tenerify.ai/tours/buggy-costa-adventure) — from €180
+- [Buggy — Sunset Adventure](https://tenerify.ai/tours/buggy-sunset-adventure) — from €180
+- [Extreme Off Road Buggy Tenerife](https://tenerify.ai/tours/buggy-off-road) — from €180
+- [Coastal Quads Trip](https://tenerify.ai/tours/coastal-quads) — from €120
+- [Quad — 100% Off-road Tour](https://tenerify.ai/tours/quad-off-road-tour) — from €120
+- [Quad — Sunset Tour](https://tenerify.ai/tours/quad-sunset-tour) — from €120
+- [Quads — 3 hours mount Teide tour](https://tenerify.ai/tours/quad-teide-tour) — from €100
+- [Quads — Masca valley Gran Tour](https://tenerify.ai/tours/quad-masca-tour) — from €135
+- [Soul Jeep — Self-Drive 4x4 Jeep Safari](https://tenerify.ai/tours/soul-jeep-self-drive-safari) — from €290
+- [Soul Jeep — Passenger Jeep Tour (No Licence Required)](https://tenerify.ai/tours/soul-jeep-passenger-tour) — from €120
+
+**Theme parks:**
+- [Aqualand — waterpark in Costa Adeje](https://tenerify.ai/tours/aqualand) — from €36
+- [Camel Park tickets](https://tenerify.ai/tours/camel-park) — from €22
+- [Jungle Park — ZOO oriented to jungle animals](https://tenerify.ai/tours/jungle-park) — from €35
+- [Loro Parque tickets — The biggest ZOO in Tenerife](https://tenerify.ai/tours/loro-parque) — from €44
+- [Siam Park — Tickets to the legendary water park](https://tenerify.ai/tours/siam-park) — from €44
+- [Twin ticket — ZOO Jungle Park + Aqualand Waterpark](https://tenerify.ai/tours/2parks-ticket-jungle-park-aqualand) — from €51
+- [Twin ticket — ZOO Loro Parque + Siam Park](https://tenerify.ai/tours/twin-ticket-loro-parque-siam-park) — from €78
+
+**Bus tours & stargazing:**
+- [Bus tour to Teide National Park, Masca and the northern coast of Tenerife](https://tenerify.ai/tours/teide-icod-garachico-masca) — from €90
+- [Island bus Tour + Masca village](https://tenerify.ai/tours/island-tour-masca) — from €50
+- [La Gomera island — 1 day bus Tour + ferry](https://tenerify.ai/tours/la-gomera) — from €145
+- [Mount Teide by Night — bus tour — Stargazing & Sunset experience](https://tenerify.ai/tours/teide-by-night) — from €75
+- [Mount Teide Tour and Cable Car tickets](https://tenerify.ai/tours/teide-tour-cable-car) — from €60
+- [Santa Cruz — Anaga — La Laguna — bus tour](https://tenerify.ai/tours/santa-cruz--la-laguna--anaga) — from €85
+- [Tuk Tuk — Touristic Tours](https://tenerify.ai/tours/tuk-tuk) — from €12
+- [Masca & Teide Full-Day Cabrio Bus Tour](https://tenerify.ai/tours/cabrio-bus-teide-masca) — from €80
+
+### Air
+
+**Air tours:**
+- [Helicopter Tours — Helidream](https://tenerify.ai/tours/helidream-helicopter-tour) — from €98
+- [Paragliding tandem flights with a pilot](https://tenerify.ai/tours/paragliding) — from €85
+
+### Evening shows
+
+**Shows & dinners:**
+- [Flamenco show Ole — the best flamenco show on the Canary Islands](https://tenerify.ai/tours/ole-flamenco-show) — from €51
+- [Flamenco Show tickets — San Miguel, Sala Coliseo](https://tenerify.ai/tours/flamenco-show-sala-coliseo) — from €32
+- [History — Unique musical show tickets](https://tenerify.ai/tours/history-evolution-of-music) — from €49
+- [Medieval dinner Show in Tenerife](https://tenerify.ai/tours/medieval-show) — from €52
+- [MHT - Music Hall Tavern show — Comedy and dinner with Drag Queens show](https://tenerify.ai/tours/music-hall-tavern) — from €49
+- [Scandal — Dinner Show tickets](https://tenerify.ai/tours/scandal-dinner-show) — from €94
+
+### Car & vehicle rental
+
+**Car & vehicle rental:**
+- [Citroen C3 — Car Rental](https://tenerify.ai/tours/citroen-c3-car-rental) — from €62
+- [Citroen Cactus Automatic — Car Rental](https://tenerify.ai/tours/citroen-cactus-automatic-car-rental) — from €65
+- [Citroen Grand Picasso - 7 Seats — Car Rental](https://tenerify.ai/tours/citroen-grand-picasso-car-rental) — from €100
+- [Fiat 500 — Car Rental](https://tenerify.ai/tours/fiat-500-car-rental) — from €45
+- [Fiat 500 Cabrio — Car Rental](https://tenerify.ai/tours/fiat-500-cabrio-car-rental) — from €70
+- [Fiat Panda dynamic — Car rental](https://tenerify.ai/tours/fiat-panda-car-rental) — from €40
+- [Renault Captur Automatic — Car Rental](https://tenerify.ai/tours/renault-captur-automatic-car-rental) — from €65
+- [Renault Trafic 9 Seats — Car Rental](https://tenerify.ai/tours/renault-trafic-car-rental) — from €110
+- [Seat Ibiza — Car Rental](https://tenerify.ai/tours/seat-ibiza-car-rental) — from €52
+- [Seat Leon — Car Rental](https://tenerify.ai/tours/seat-leon-car-rental) — from €65
+- [VW Beetle Automatic — Car Rental](https://tenerify.ai/tours/vw-beetle-automatic-car-rental) — from €105
+- [VW Golf — Car Rental](https://tenerify.ai/tours/vw-golf-car-rental) — from €65
+- [VW Polo — Car Rental](https://tenerify.ai/tours/vw-polo-car-rental) — from €52
+- [VW Polo Automatic — Car Rental](https://tenerify.ai/tours/vw-polo-automatic-car-rental) — from €60
+- [Seat Leon ST — Car Rental (Automatic)](https://tenerify.ai/tours/seat-leon-st-automatic-car-rental) — from €70
+- [Opel Zafira 7-Seater — Car Rental (Automatic)](https://tenerify.ai/tours/opel-zafira-7-seater-car-rental) — from €110
