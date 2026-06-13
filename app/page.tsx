@@ -688,7 +688,7 @@ export default function Home() {
                         {cat.emoji} {catLabelMap[cat.id] ?? cat.label}
                       </div>
                       {catSubMap[cat.id] && (
-                        <div className={`text-xs mt-0.5 ${isSelected ? "text-orange-300/70" : "text-white/50"}`}>
+                        <div className={`text-xs mt-0.5 ${isSelected ? "text-orange-200/90" : "text-white/75"}`}>
                           {catSubMap[cat.id]}
                         </div>
                       )}
