@@ -6,7 +6,7 @@ import {
   getTourBySlug,
   tourImages,
   formatPriceFrom,
-  CATEGORY_LABELS,
+  SUBCATEGORY_LABEL,
 } from "@/lib/tours";
 import TourGallery from "@/components/TourGallery";
 import FaqAccordion from "@/components/FaqAccordion";
@@ -63,7 +63,7 @@ export default async function TourPage({
   if (!tour) notFound();
 
   const images = tourImages(tour);
-  const categoryLabel = CATEGORY_LABELS[tour.category] ?? tour.category.toUpperCase();
+  const categoryLabel = SUBCATEGORY_LABEL[tour.category] ?? tour.category.toUpperCase();
   const bookHref = `/?book=${encodeURIComponent(tour.title)}`;
   const cleanDesc = tour.description?.replace(/・/g, "\n\n").trim();
 

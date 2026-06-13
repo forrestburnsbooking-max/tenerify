@@ -25,7 +25,8 @@ export type FaqItem = {
 export type Tour = {
   slug: string;
   title: string;
-  category: string;
+  category: string; // subcategory slug, e.g. "whale-watching"
+  group?: string; // top-level group: water | land | air | shows | rental
   duration?: string;
   languages?: string[];
   minAge?: number;
@@ -46,33 +47,71 @@ export type Tour = {
   supplierId?: string;
 };
 
-const CATEGORY_EMOJI: Record<string, string> = {
-  buggy: "🚗",
-  quad: "🏍️",
-  jetski: "🛥️",
-  boat: "⛵",
-  park: "🎡",
-  adventure: "🪂",
-  show: "🎭",
-  excursion: "🗺️",
-  rental: "🚗",
-  wellness: "🧖",
-  other: "🌴",
+// Top-level groups (Water / Land / Air / Shows / Rental)
+export type GroupId = "water" | "land" | "air" | "shows" | "rental";
+
+export const GROUP_ORDER: GroupId[] = ["water", "land", "air", "shows", "rental"];
+
+export const GROUP_LABEL: Record<string, string> = {
+  water: "WATER",
+  land: "LAND",
+  air: "AIR",
+  shows: "EVENING SHOWS",
+  rental: "CAR & VEHICLE RENTAL",
 };
 
-const CATEGORY_LABEL: Record<string, string> = {
-  buggy: "BUGGY TOURS",
-  quad: "QUAD TOURS",
-  jetski: "JET SKI",
-  boat: "BOAT, YACHT & WHALE WATCHING",
-  park: "THEME PARKS",
-  adventure: "ADVENTURE & WATERSPORTS",
-  show: "SHOWS & DINNER EXPERIENCES",
-  excursion: "ISLAND EXCURSIONS",
-  rental: "CAR & VEHICLE RENTAL",
-  wellness: "SPA & WELLNESS",
-  other: "OTHER EXPERIENCES",
+export const GROUP_EMOJI: Record<string, string> = {
+  water: "🌊",
+  land: "🏝️",
+  air: "✈️",
+  shows: "🎭",
+  rental: "🚗",
 };
+
+// Subcategories, with display label + emoji
+export const SUBCATEGORY_LABEL: Record<string, string> = {
+  "whale-watching": "Whale & dolphin watching",
+  fishing: "Fishing tours",
+  "boat-rental": "No-licence boats",
+  jetski: "Jet ski & parasailing",
+  "water-activities": "Water activities",
+  "buggy-quad": "Buggy, quads & jeeps",
+  parks: "Theme parks",
+  "bus-tours": "Bus tours & stargazing",
+  air: "Air tours",
+  shows: "Shows & dinners",
+  "car-rental": "Car & vehicle rental",
+};
+
+export const SUBCATEGORY_EMOJI: Record<string, string> = {
+  "whale-watching": "🐋",
+  fishing: "🎣",
+  "boat-rental": "🚤",
+  jetski: "🛥️",
+  "water-activities": "🤿",
+  "buggy-quad": "🏎️",
+  parks: "🎡",
+  "bus-tours": "🚌",
+  air: "🪂",
+  shows: "🎭",
+  "car-rental": "🚗",
+};
+
+// Subcategories that belong to each group, in display order
+export const GROUP_SUBCATEGORIES: Record<string, string[]> = {
+  water: ["whale-watching", "fishing", "boat-rental", "jetski", "water-activities"],
+  land: ["buggy-quad", "parks", "bus-tours"],
+  air: ["air"],
+  shows: ["shows"],
+  rental: ["car-rental"],
+};
+
+export function groupOf(subcategory: string): GroupId {
+  for (const g of GROUP_ORDER) {
+    if (GROUP_SUBCATEGORIES[g]?.includes(subcategory)) return g;
+  }
+  return "land";
+}
 
 export function getTours(): string {
   try {
@@ -80,31 +119,35 @@ export function getTours(): string {
     const tours: Tour[] = JSON.parse(fs.readFileSync(TOURS_FILE, "utf-8"));
     if (!tours.length) return "";
 
-    const byCategory = new Map<string, Tour[]>();
+    const bySub = new Map<string, Tour[]>();
     for (const t of tours) {
-      if (!byCategory.has(t.category)) byCategory.set(t.category, []);
-      byCategory.get(t.category)!.push(t);
+      if (!bySub.has(t.category)) bySub.set(t.category, []);
+      bySub.get(t.category)!.push(t);
     }
 
     const lines: string[] = [];
-    for (const [cat, items] of byCategory) {
-      const emoji = CATEGORY_EMOJI[cat] ?? "🌴";
-      const label = CATEGORY_LABEL[cat] ?? cat.toUpperCase();
-      lines.push(`\n${emoji} ${label}`);
-      for (const t of items) {
-        const pricePart = formatPrice(t);
-        const agePart = t.minAge ? ` | min age ${t.minAge}` : "";
-        const durPart = t.duration ? ` | ${t.duration}` : "";
-        const incPart = t.included ? ` | Includes: ${t.included.slice(0, 200)}` : "";
-        const slotsPart = t.timeSlots?.length ? ` | timeSlots: ${t.timeSlots.join(", ")}` : "";
-        const depositPart = t.depositPercent ? ` | 💳 ${t.depositPercent}% deposit online, rest paid on pickup` : "";
-        lines.push(`  • [slug:${t.slug}] ${t.title}${durPart} | ${pricePart}${agePart}${incPart}${slotsPart}${depositPart}`);
-        if (t.description) {
-          lines.push(`    ${t.description.slice(0, 220)}`);
-        }
-        if (t.pricing.length > 1) {
-          const options = t.pricing.map((p) => `${p.label}: €${p.price}`).join(" / ");
-          lines.push(`    Pricing: ${options}`);
+    for (const g of GROUP_ORDER) {
+      const subs = GROUP_SUBCATEGORIES[g].filter((s) => bySub.has(s));
+      if (!subs.length) continue;
+      lines.push(`\n${GROUP_EMOJI[g]} ${GROUP_LABEL[g]}`);
+      for (const sub of subs) {
+        const items = bySub.get(sub)!;
+        lines.push(`\n  ${SUBCATEGORY_EMOJI[sub] ?? "🌴"} ${SUBCATEGORY_LABEL[sub] ?? sub}`);
+        for (const t of items) {
+          const pricePart = formatPrice(t);
+          const agePart = t.minAge ? ` | min age ${t.minAge}` : "";
+          const durPart = t.duration ? ` | ${t.duration}` : "";
+          const incPart = t.included ? ` | Includes: ${t.included.slice(0, 200)}` : "";
+          const slotsPart = t.timeSlots?.length ? ` | timeSlots: ${t.timeSlots.join(", ")}` : "";
+          const depositPart = t.depositPercent ? ` | 💳 ${t.depositPercent}% deposit online, rest paid on pickup` : "";
+          lines.push(`    • [slug:${t.slug}] ${t.title}${durPart} | ${pricePart}${agePart}${incPart}${slotsPart}${depositPart}`);
+          if (t.description) {
+            lines.push(`      ${t.description.slice(0, 220)}`);
+          }
+          if (t.pricing.length > 1) {
+            const options = t.pricing.map((p) => `${p.label}: €${p.price}`).join(" / ");
+            lines.push(`      Pricing: ${options}`);
+          }
         }
       }
     }
@@ -147,9 +190,6 @@ export function getAllTours(): Tour[] {
     return [];
   }
 }
-
-export const CATEGORY_EMOJIS = CATEGORY_EMOJI;
-export const CATEGORY_LABELS = CATEGORY_LABEL;
 
 export function tourImages(t: Tour): string[] {
   if (t.images?.length) return t.images;

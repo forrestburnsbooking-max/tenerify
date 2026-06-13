@@ -4,8 +4,12 @@ import {
   getAllTours,
   tourImages,
   formatPriceFrom,
-  CATEGORY_LABELS,
-  CATEGORY_EMOJIS,
+  GROUP_ORDER,
+  GROUP_LABEL,
+  GROUP_EMOJI,
+  GROUP_SUBCATEGORIES,
+  SUBCATEGORY_LABEL,
+  SUBCATEGORY_EMOJI,
   type Tour,
 } from "@/lib/tours";
 
@@ -25,19 +29,6 @@ export const metadata: Metadata = {
     type: "website",
   },
 };
-
-// Order categories for a sensible browse experience
-const CATEGORY_ORDER = [
-  "boat",
-  "park",
-  "buggy",
-  "quad",
-  "jetski",
-  "adventure",
-  "excursion",
-  "show",
-  "rental",
-];
 
 function TourCard({ tour }: { tour: Tour }) {
   const img = tourImages(tour)[0];
@@ -73,16 +64,11 @@ function TourCard({ tour }: { tour: Tour }) {
 export default function ToursIndexPage() {
   const tours = getAllTours();
 
-  const byCategory = new Map<string, Tour[]>();
+  const bySub = new Map<string, Tour[]>();
   for (const t of tours) {
-    if (!byCategory.has(t.category)) byCategory.set(t.category, []);
-    byCategory.get(t.category)!.push(t);
+    if (!bySub.has(t.category)) bySub.set(t.category, []);
+    bySub.get(t.category)!.push(t);
   }
-
-  const orderedCats = [
-    ...CATEGORY_ORDER.filter((c) => byCategory.has(c)),
-    ...[...byCategory.keys()].filter((c) => !CATEGORY_ORDER.includes(c)),
-  ];
 
   return (
     <div className="min-h-screen bg-[#0d0d0d] text-white">
@@ -101,18 +87,29 @@ export default function ToursIndexPage() {
           to get a personal recommendation.
         </p>
 
-        {orderedCats.map((cat) => (
-          <section key={cat} className="mb-10">
-            <h2 className="text-lg font-semibold mb-4">
-              {CATEGORY_EMOJIS[cat] ?? "🌴"} {CATEGORY_LABELS[cat] ?? cat.toUpperCase()}
-            </h2>
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-              {byCategory.get(cat)!.map((t) => (
-                <TourCard key={t.slug} tour={t} />
+        {GROUP_ORDER.map((group) => {
+          const subs = GROUP_SUBCATEGORIES[group].filter((s) => bySub.has(s));
+          if (!subs.length) return null;
+          return (
+            <section key={group} className="mb-12">
+              <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
+                <span>{GROUP_EMOJI[group]}</span> {GROUP_LABEL[group]}
+              </h2>
+              {subs.map((sub) => (
+                <div key={sub} className="mb-8">
+                  <h3 className="text-sm font-semibold text-stone-300 mb-3 flex items-center gap-2">
+                    <span>{SUBCATEGORY_EMOJI[sub]}</span> {SUBCATEGORY_LABEL[sub]}
+                  </h3>
+                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                    {bySub.get(sub)!.map((t) => (
+                      <TourCard key={t.slug} tour={t} />
+                    ))}
+                  </div>
+                </div>
               ))}
-            </div>
-          </section>
-        ))}
+            </section>
+          );
+        })}
 
         <div className="mt-4 pt-6 border-t border-white/5">
           <Link href="/" className="text-stone-500 hover:text-white text-sm transition-colors">

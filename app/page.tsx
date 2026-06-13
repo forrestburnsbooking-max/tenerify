@@ -176,7 +176,8 @@ const UI_STRINGS: Record<string, {
   otherPlaceholder: string;
   nextButton: string;
   whoLabels: { family: string; couple: string; solo: string; friends: string };
-  catLabels: { water: string; buggy: string; tours: string; parks: string; shows: string; adventure: string };
+  catLabels: { water: string; land: string; air: string; shows: string; rental: string };
+  catSubs: { water: string; land: string; air: string; shows: string; rental: string };
   menuLabels: { book: string; route: string; restaurant: string; legend: string };
 }> = {
   es: {
@@ -188,7 +189,8 @@ const UI_STRINGS: Record<string, {
     otherPlaceholder: "Escribe tu zona...",
     nextButton: "Siguiente →",
     whoLabels: { family: "👨‍👩‍👧 Familia", couple: "💑 Pareja", solo: "🧑 Solo", friends: "👥 Amigos" },
-    catLabels: { water: "Agua y Barcos", buggy: "Buggy y Quad", tours: "Tours", parks: "Parques", shows: "Shows y Cenas", adventure: "Aventura" },
+    catLabels: { water: "Agua", land: "Tierra", air: "Aire", shows: "Espectáculos", rental: "Alquiler de coches" },
+    catSubs: { water: "Ballenas · Moto acuática · Pesca · Barcos", land: "Buggy y quad · Parques · Tours en bus", air: "Helicóptero · Parapente", shows: "Flamenco · Cenas show", rental: "Coches · Furgonetas · Cabrio" },
     menuLabels: { book: "📅 Reservar actividades", route: "🗺️ Planificar una ruta", restaurant: "🍽️ Recomendar restaurante", legend: "🏴‍☠️ Contar una leyenda" },
   },
   en: {
@@ -200,7 +202,8 @@ const UI_STRINGS: Record<string, {
     otherPlaceholder: "Type your area...",
     nextButton: "Next →",
     whoLabels: { family: "👨‍👩‍👧 Family", couple: "💑 Couple", solo: "🧑 Solo", friends: "👥 Friends" },
-    catLabels: { water: "Water & Boats", buggy: "Buggy & Quad", tours: "Island Tours", parks: "Theme Parks", shows: "Shows & Dinners", adventure: "Adventure" },
+    catLabels: { water: "Water", land: "Land", air: "Air", shows: "Evening shows", rental: "Car rental" },
+    catSubs: { water: "Whale watching · Jet ski · Fishing · Boat trips", land: "Buggy & quads · Theme parks · Bus tours", air: "Helicopter · Paragliding", shows: "Flamenco · Dinner shows", rental: "Cars · Vans · Cabrio" },
     menuLabels: { book: "📅 Find & book activities", route: "🗺️ Plan a route", restaurant: "🍽️ Recommend a restaurant", legend: "🏴‍☠️ Tell me a legend" },
   },
   de: {
@@ -212,7 +215,8 @@ const UI_STRINGS: Record<string, {
     otherPlaceholder: "Gib deine Gegend ein...",
     nextButton: "Weiter →",
     whoLabels: { family: "👨‍👩‍👧 Familie", couple: "💑 Paar", solo: "🧑 Alleine", friends: "👥 Freunde" },
-    catLabels: { water: "Wasser & Boote", buggy: "Buggy & Quad", tours: "Insel-Touren", parks: "Freizeitparks", shows: "Shows & Dinner", adventure: "Abenteuer" },
+    catLabels: { water: "Wasser", land: "Land", air: "Luft", shows: "Abendshows", rental: "Mietwagen" },
+    catSubs: { water: "Walbeobachtung · Jetski · Angeln · Bootstouren", land: "Buggy & Quad · Freizeitparks · Bustouren", air: "Hubschrauber · Gleitschirm", shows: "Flamenco · Dinnershows", rental: "Autos · Vans · Cabrio" },
     menuLabels: { book: "📅 Aktivitäten finden & buchen", route: "🗺️ Route planen", restaurant: "🍽️ Restaurant empfehlen", legend: "🏴‍☠️ Legende erzählen" },
   },
   ru: {
@@ -224,7 +228,8 @@ const UI_STRINGS: Record<string, {
     otherPlaceholder: "Укажите свой район...",
     nextButton: "Далее →",
     whoLabels: { family: "👨‍👩‍👧 Семья", couple: "💑 Пара", solo: "🧑 Один", friends: "👥 Друзья" },
-    catLabels: { water: "Вода и лодки", buggy: "Багги и квад", tours: "Экскурсии", parks: "Парки", shows: "Шоу и ужины", adventure: "Приключения" },
+    catLabels: { water: "Вода", land: "Суша", air: "Воздух", shows: "Вечерние шоу", rental: "Аренда авто" },
+    catSubs: { water: "Киты и дельфины · Гидроцикл · Рыбалка · Лодки", land: "Багги и квадро · Парки · Автобусные туры", air: "Вертолёт · Параплан", shows: "Фламенко · Шоу с ужином", rental: "Авто · Минивэны · Кабрио" },
     menuLabels: { book: "📅 Найти и забронировать", route: "🗺️ Спланировать маршрут", restaurant: "🍽️ Порекомендовать ресторан", legend: "🏴‍☠️ Рассказать легенду" },
   },
   pl: {
@@ -236,7 +241,8 @@ const UI_STRINGS: Record<string, {
     otherPlaceholder: "Wpisz swoją okolicę...",
     nextButton: "Dalej →",
     whoLabels: { family: "👨‍👩‍👧 Rodzina", couple: "💑 Para", solo: "🧑 Solo", friends: "👥 Znajomi" },
-    catLabels: { water: "Woda i łodzie", buggy: "Buggy i Quad", tours: "Wycieczki", parks: "Parki rozrywki", shows: "Pokazy i kolacje", adventure: "Przygoda" },
+    catLabels: { water: "Woda", land: "Ląd", air: "Powietrze", shows: "Wieczorne pokazy", rental: "Wynajem aut" },
+    catSubs: { water: "Wieloryby · Skuter wodny · Wędkarstwo · Łodzie", land: "Buggy i quady · Parki · Wycieczki autobusowe", air: "Helikopter · Paralotnia", shows: "Flamenco · Kolacje z pokazem", rental: "Samochody · Vany · Kabriolet" },
     menuLabels: { book: "📅 Znajdź i zarezerwuj", route: "🗺️ Zaplanuj trasę", restaurant: "🍽️ Poleć restaurację", legend: "🏴‍☠️ Opowiedz legendę" },
   },
   fr: {
@@ -248,7 +254,8 @@ const UI_STRINGS: Record<string, {
     otherPlaceholder: "Indiquez votre zone...",
     nextButton: "Suivant →",
     whoLabels: { family: "👨‍👩‍👧 Famille", couple: "💑 Couple", solo: "🧑 Seul(e)", friends: "👥 Amis" },
-    catLabels: { water: "Eau & Bateaux", buggy: "Buggy & Quad", tours: "Tours de l'île", parks: "Parcs", shows: "Shows & Dîners", adventure: "Aventure" },
+    catLabels: { water: "Eau", land: "Terre", air: "Air", shows: "Spectacles", rental: "Location de voiture" },
+    catSubs: { water: "Baleines · Jet ski · Pêche · Bateaux", land: "Buggy & quad · Parcs · Excursions en bus", air: "Hélicoptère · Parapente", shows: "Flamenco · Dîners-spectacles", rental: "Voitures · Vans · Cabriolet" },
     menuLabels: { book: "📅 Trouver et réserver", route: "🗺️ Planifier un itinéraire", restaurant: "🍽️ Recommander un restaurant", legend: "🏴‍☠️ Raconter une légende" },
   },
   it: {
@@ -260,7 +267,8 @@ const UI_STRINGS: Record<string, {
     otherPlaceholder: "Indica la tua zona...",
     nextButton: "Avanti →",
     whoLabels: { family: "👨‍👩‍👧 Famiglia", couple: "💑 Coppia", solo: "🧑 Solo", friends: "👥 Amici" },
-    catLabels: { water: "Acqua e Barche", buggy: "Buggy & Quad", tours: "Tour dell'isola", parks: "Parchi tematici", shows: "Show e Cene", adventure: "Avventura" },
+    catLabels: { water: "Acqua", land: "Terra", air: "Aria", shows: "Spettacoli serali", rental: "Noleggio auto" },
+    catSubs: { water: "Balene · Moto d'acqua · Pesca · Barche", land: "Buggy e quad · Parchi · Tour in bus", air: "Elicottero · Parapendio", shows: "Flamenco · Cene-spettacolo", rental: "Auto · Furgoni · Cabrio" },
     menuLabels: { book: "📅 Trova e prenota", route: "🗺️ Pianifica un itinerario", restaurant: "🍽️ Consiglia un ristorante", legend: "🏴‍☠️ Raccontami una leggenda" },
   },
   nl: {
@@ -272,7 +280,8 @@ const UI_STRINGS: Record<string, {
     otherPlaceholder: "Voer je gebied in...",
     nextButton: "Volgende →",
     whoLabels: { family: "👨‍👩‍👧 Familie", couple: "💑 Stel", solo: "🧑 Solo", friends: "👥 Vrienden" },
-    catLabels: { water: "Water & Boten", buggy: "Buggy & Quad", tours: "Eilandtours", parks: "Pretparken", shows: "Shows & Diners", adventure: "Avontuur" },
+    catLabels: { water: "Water", land: "Land", air: "Lucht", shows: "Avondshows", rental: "Autoverhuur" },
+    catSubs: { water: "Walvissen · Jetski · Vissen · Boottochten", land: "Buggy & quad · Pretparken · Bustours", air: "Helikopter · Paragliding", shows: "Flamenco · Dinershows", rental: "Auto's · Bussen · Cabrio" },
     menuLabels: { book: "📅 Activiteiten vinden & boeken", route: "🗺️ Route plannen", restaurant: "🍽️ Restaurant aanbevelen", legend: "🏴‍☠️ Vertel een legende" },
   },
 };
@@ -298,12 +307,11 @@ const WHO_OPTIONS = [
 ];
 
 const CATEGORIES = [
-  { id: "water",     emoji: "🌊", label: "Water & Boats" },
-  { id: "buggy",     emoji: "🏍️", label: "Buggy & Quad" },
-  { id: "tours",     emoji: "🗺️", label: "Island Tours" },
-  { id: "parks",     emoji: "🎡", label: "Theme Parks" },
-  { id: "shows",     emoji: "🎭", label: "Shows & Dinners" },
-  { id: "adventure", emoji: "🪂", label: "Adventure" },
+  { id: "water",  emoji: "🌊", label: "Water" },
+  { id: "land",   emoji: "🏝️", label: "Land" },
+  { id: "air",    emoji: "✈️", label: "Air" },
+  { id: "shows",  emoji: "🎭", label: "Evening shows" },
+  { id: "rental", emoji: "🚗", label: "Car rental" },
 ];
 
 const LOCATIONS = [
@@ -337,8 +345,12 @@ export default function Home() {
     "We are a group of friends": t.whoLabels.friends,
   };
   const catLabelMap: Record<string, string> = {
-    water: t.catLabels.water, buggy: t.catLabels.buggy, tours: t.catLabels.tours,
-    parks: t.catLabels.parks, shows: t.catLabels.shows, adventure: t.catLabels.adventure,
+    water: t.catLabels.water, land: t.catLabels.land, air: t.catLabels.air,
+    shows: t.catLabels.shows, rental: t.catLabels.rental,
+  };
+  const catSubMap: Record<string, string> = {
+    water: t.catSubs.water, land: t.catSubs.land, air: t.catSubs.air,
+    shows: t.catSubs.shows, rental: t.catSubs.rental,
   };
 
   useEffect(() => {
@@ -653,7 +665,7 @@ export default function Home() {
               <div className="bg-white/6 border border-white/12 text-white rounded-2xl rounded-tl-none px-4 py-3 text-sm leading-relaxed">
                 {t.categoryQuestion}
               </div>
-              <div className="grid grid-cols-2 gap-2">
+              <div className="grid grid-cols-1 gap-2">
                 {CATEGORIES.map((cat) => {
                   const isSelected = selectedCategories.includes(cat.id);
                   const isLocked = step === "location" || step === "chat";
@@ -662,17 +674,24 @@ export default function Home() {
                       key={cat.id}
                       onClick={() => !isLocked && toggleCategory(cat.id)}
                       disabled={isLocked}
-                      className={`px-4 py-2.5 rounded-2xl text-sm font-medium border transition-all text-left ${
+                      className={`px-4 py-2.5 rounded-2xl border transition-all text-left ${
                         isLocked
                           ? isSelected
-                            ? "bg-orange-500/20 border-orange-500 text-orange-300 cursor-default"
-                            : "bg-white/5 border-white/10 text-white/40 cursor-default"
+                            ? "bg-orange-500/20 border-orange-500 cursor-default"
+                            : "bg-white/5 border-white/10 opacity-40 cursor-default"
                           : isSelected
-                            ? "bg-orange-500/20 border-orange-500 text-orange-300"
-                            : "bg-white/8 border-white/15 text-white hover:border-orange-500 hover:text-orange-400 cursor-pointer"
+                            ? "bg-orange-500/20 border-orange-500"
+                            : "bg-white/8 border-white/15 hover:border-orange-500 cursor-pointer"
                       }`}
                     >
-                      {cat.emoji} {catLabelMap[cat.id] ?? cat.label}
+                      <div className={`text-sm font-semibold ${isSelected ? "text-orange-300" : "text-white"}`}>
+                        {cat.emoji} {catLabelMap[cat.id] ?? cat.label}
+                      </div>
+                      {catSubMap[cat.id] && (
+                        <div className={`text-xs mt-0.5 ${isSelected ? "text-orange-300/70" : "text-white/50"}`}>
+                          {catSubMap[cat.id]}
+                        </div>
+                      )}
                     </button>
                   );
                 })}
