@@ -4133,7 +4133,7 @@
         "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
       }
     ],
-    "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/66bbc8e5695bc1ecf2849996_arriro-boat-e72perienceis-x.webp",
+    "imageUrl": "/images/tours/vw-beetle-automatic-car-rental.jpg",
     "url": "https://www.excursionstenerife.es/tours/vw-beetle-automatic-car-rental",
     "bookingPhone": "922 753 816",
     "depositPercent": 30,
@@ -4316,7 +4316,7 @@
         "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
       }
     ],
-    "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/66bbc8e5695bc1ecf2849996_arriro-boat-e72perienceis-x.webp",
+    "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6891fd5f9afed457b3675c46_(3).jpg",
     "url": "https://www.excursionstenerife.es/tours/vw-polo-automatic-car-rental",
     "bookingPhone": "922 753 816",
     "depositPercent": 30,
@@ -4832,7 +4832,8 @@
     "url": "https://aliscar.com/",
     "bookingPhone": "922 753 816",
     "depositPercent": 30,
-    "supplierId": "aliscar"
+    "supplierId": "aliscar",
+    "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/66b363f050749aaea93feea3_new-seat-leon-candy-white-colour-configuration.webp"
   },
   {
     "slug": "opel-zafira-7-seater-car-rental",
@@ -4892,7 +4893,8 @@
     "url": "https://aliscar.com/",
     "bookingPhone": "922 753 816",
     "depositPercent": 30,
-    "supplierId": "aliscar"
+    "supplierId": "aliscar",
+    "imageUrl": "/images/tours/opel-zafira-7-seater-car-rental.jpg"
   },
   {
     "slug": "soul-jeep-self-drive-safari",

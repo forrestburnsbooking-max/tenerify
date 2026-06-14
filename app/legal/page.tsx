@@ -16,7 +16,7 @@ export default function LegalPage() {
 
         {/* Quick nav */}
         <nav className="flex flex-col gap-2 text-sm">
-          {["Legal Notice", "Terms of Service", "Booking Conditions", "Cancellation & Refund Policy", "Privacy Policy", "Cookie Policy"].map((s) => (
+          {["Legal Notice", "Terms of Service", "Booking Conditions", "Cancellation & Refund Policy", "Privacy Policy", "Cookie Policy", "Photo Credits"].map((s) => (
             <a key={s} href={`#${s.toLowerCase().replace(/[^a-z]/g, "-")}`}
               className="text-orange-400 hover:text-orange-300 transition-colors">
               → {s}
@@ -213,6 +213,23 @@ export default function LegalPage() {
 
           <H3>Changes to this policy</H3>
           <P>We may update this Cookie Policy if the cookies we use change. Any updates will be posted on this page with a new &quot;last updated&quot; date.</P>
+        </Section>
+
+        {/* Photo Credits */}
+        <Section id="photo-credits" title="Photo Credits">
+          <P>Most tour photos are provided by our partner operators. The following images are used under a Creative Commons licence and have been cropped/resized to fit:</P>
+          <ul className="text-stone-300 text-sm leading-relaxed space-y-2 list-disc list-inside">
+            <li>
+              VW Beetle (car rental) — photo by Vauxford, via Wikimedia Commons, licensed under{" "}
+              <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" className="text-orange-400 hover:underline">CC BY-SA 4.0</a>.{" "}
+              <a href="https://commons.wikimedia.org/wiki/File:2006_Volkswagen_New_Beetle_Luna_1.6_Front.jpg" target="_blank" className="text-orange-400 hover:underline">Source</a>.
+            </li>
+            <li>
+              Opel Zafira (car rental) — photo by Luftfahrrad, via Wikimedia Commons, licensed under{" "}
+              <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" className="text-orange-400 hover:underline">CC BY-SA 3.0</a>.{" "}
+              <a href="https://commons.wikimedia.org/wiki/File:Opel_Zafira_B_1.9_CDTI_front.JPG" target="_blank" className="text-orange-400 hover:underline">Source</a>.
+            </li>
+          </ul>
         </Section>
 
         {/* Footer */}
