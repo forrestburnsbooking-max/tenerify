@@ -801,7 +801,7 @@
       }
     ],
     "priceFrom": 47,
-    "description": "Sail aboard the Freebird Catamaran and enjoy the Atlantic Ocean. ・ On this catamaran, you can choose between two different excursions. On both, you will be able to observe the cetaceans that inhabit the coast of Tenerife, while Freebird's specialised guides will inform you about their characteristics: their habits, feeding habits, migrations, etc. ・ Once you have finished whale watching, you can relax and enjoy a swim in the sea.",
+    "description": "Set sail on the Freebird, a sleek catamaran offering two trip lengths — a 3-hour cruise or a fuller 4.5-hour voyage — both in search of the whales and dolphins that inhabit Tenerife's coast year-round.\n\nFreebird's specialist guides help you spot the cetaceans, then the boat anchors so you can swim and snorkel in the Atlantic before relaxing on deck. Free hotel transfer and free drinks on board are included, which makes it one of the easiest boat days on the south coast.\n\nChoose the 3-hour trip for a quick taste, or the 4.5-hour for a fuller day on the water. Bring swimwear, a towel and sunscreen.",
     "meetingPoint": "Gate 10/15, Puerto Colón Marina, Costa Adeje",
     "faq": [
       {
@@ -942,7 +942,7 @@
       }
     ],
     "priceFrom": 46,
-    "description": "Maxicat is an ecological catamaran, discover the fascinating world of the sea mammals that inhabit the waters of the Canary Islands and see them in their natural habitat including pilot whales and bottle-nose dolphins. ・ Then relax on the spacious decks or swim and snorkel at Diego Hernández beach in the crystal waters of the Atlantic Ocean. Relax on the solarium and enjoy the sea.",
+    "description": "Maxicat is an eco-friendly sailing catamaran built for a relaxed 3 hours on the Atlantic, watching the pilot whales and bottlenose dolphins that live off Tenerife's south-west coast all year round.\n\nOnce the crew finds the wildlife, the catamaran anchors in a quiet spot so you can swim and snorkel in the clear water, then stretch out on the spacious decks. A Canarian-style snack and drinks are served on board, and free shuttle pickup is included from Callao Salvaje, Las Américas, Los Cristianos and Golf del Sur.\n\nComfortable, family-friendly and easy. Bring a swimsuit, towel and sunscreen.",
     "included": "・ Free shuttle pickup from Callao Salvaje, Las Américas, Los Cristianos & Golf del Sur ・ Canarian-style rice with mojo sauce + dessert (vegan/vegetarian and kids' menu available) ・ Drinks ・ Swimming & snorkelling stop ・ Guided whale watching ・ Safety briefing",
     "faq": [
       {
@@ -1820,7 +1820,7 @@
       }
     ],
     "priceFrom": 180,
-    "description": "‍ Costa Adventure is a 3-hour tour along the south coast of Tenerife. After a short briefing, we will begin the tour by crossing the coastline of the south of Tenerife to enjoy the majestic landscapes and views, passing through various coastal villages and stopping to explore places that will leave you with unforgettable memories.",
+    "description": "Take the wheel of your own buggy for a 3-hour off-road adventure along Tenerife's wild south coast. After a short safety briefing you'll follow your guide out of base, weaving through coastal villages, dirt tracks and dramatic ravines with sweeping ocean views the whole way.\n\nPrice is per buggy for two people (you can swap driver) and includes fuel, guide, insurance, a coat and goggles, plus a snack and water along the way. Expect dust, grins and great photo stops.\n\nA valid driving licence is required to drive. Wear closed shoes and clothes you don't mind getting dusty.",
     "included": "Fuel, guide, travel insurance, coat, glasses, snack, water and off road.",
     "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
     "faq": [
@@ -1886,7 +1886,7 @@
       }
     ],
     "priceFrom": 180,
-    "description": "3 hour tour of the south of Tenerife with sunset. This tour starts from our base, located in the industrial estate of Las Chafiras, ・ We will follow the road through various villages in the south of Tenerife, enjoying the beautiful scenery and fresh mountain air. ‍ ・ We will continue the route to a viewpoint at 781 metres above sea level where you can relax, take panoramic photographs, have a drink (wine and/or non-alcoholic cava), snack on some cold meats and/or nuts while we admire the landsca",
+    "description": "The same adrenaline as our south-coast buggy trip, timed to finish with the sunset. This 3-hour tour leaves from our base in Las Chafiras and winds through the villages and hills of southern Tenerife, the light turning golden as you go.\n\nYou drive your own buggy (price is per buggy for two, driver can swap), with fuel, guide, insurance, coat, goggles, a snack and water all included. The route is timed so you're out on the trails as the sun goes down — bring a camera.\n\nA valid driving licence is required to drive. Wear closed shoes and clothes you don't mind getting dusty.",
     "included": "Fuel, guide, travel insurance, coat, glasses, snack, water and off road.",
     "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
     "faq": [
@@ -2067,7 +2067,7 @@
     "title": "Island bus Tour + Masca village",
     "category": "bus-tours",
     "group": "land",
-    "duration": "3h",
+    "duration": "Full day",
     "languages": [
       "Deutsch",
       "English",
@@ -2086,7 +2086,7 @@
       }
     ],
     "priceFrom": 50,
-    "description": "This excursion gives you the opportunity to get to know the essence of Tenerife in just one day. ・ We will start the day by visiting Candelaria . This coastal town is home to the Basilica of Candelaria, one of the most important places of worship in Tenerife. On the seashore you can admire the imposing bronze statues commemorating the ancient Guanche Kings of Tenerife. ・ The excursion continues in the Historic-Artistic Site of La Villa de La Orotava. The cobbled streets of its historic quarter w",
+    "description": "See the essence of Tenerife in a single day. This guided bus tour starts in Candelaria, home to the basilica of the island's patron saint — one of the most important places of worship in the Canaries — before heading inland and west toward the mountains.\n\nThe highlight is Masca: a tiny village clinging to a steep ravine in the Teno massif, with some of the most dramatic scenery on the island. Along the way you'll wind through traditional villages and viewpoints while your guide shares the history and legends of each stop.\n\nA relaxed, scenic day with no driving to worry about. Bring a camera and comfortable shoes.",
     "faq": [
       {
         "question": "How will I receive my tickets?",
@@ -2130,7 +2130,7 @@
     "title": "La Gomera island — 1 day bus Tour + ferry",
     "category": "bus-tours",
     "group": "land",
-    "duration": "3h",
+    "duration": "Full day",
     "languages": [
       "Deutsch",
       "English",
@@ -2154,7 +2154,7 @@
       }
     ],
     "priceFrom": 145,
-    "description": "Our day starts by heading to the port of Los Cristianos in Tenerife South, where we will take a ferry to La Gomera . ‍ ・ Once there, we'll board the bus and head into the Hermigua Valley , where we'll have the opportunity to capture some photos of the breathtaking scenery. ・ We will continue the excursion until we reach the municipality of Agulo , where we will enjoy a delicious lunch in a typical restaurant with local products. If availability permits, during lunch we will witness a live demons",
+    "description": "Hop across the water to La Gomera, Tenerife's wild, green neighbour, on a full-day tour by fast ferry and bus. The crossing from Los Cristianos takes about 50 minutes to San Sebastián, the island's capital.\n\nFrom there you'll drive up through the lush Hermigua valley into Garajonay National Park — a UNESCO World Heritage Site blanketed in ancient laurel forest that dates back millions of years, where mist drifts between giant ferns and twisted trees. You'll also hear locals demonstrate Silbo Gomero, the island's astonishing whistled language, and stop for lunch at a local restaurant.\n\nA full day out, so bring a light jacket for the cooler, misty highlands and comfortable walking shoes.",
     "faq": [
       {
         "question": "How will I receive my tickets?",
@@ -2222,7 +2222,7 @@
       }
     ],
     "priceFrom": 75,
-    "description": "Enjoy Magic Teide by Night bus tour with Canarian Fun ! Stargazing, breathtaking sunset with sparkling wine is a truly enjoyable, informative and unique experience not to be missed. ‍ Adventure program: ・ First, we head to Las Cañadas del Teide, stopping at a restaurant with a unique interior design for a three-course delicious dinner with Canarian wine. ・ After that we go to the Teide National Park, stopping at the largest pine tree in Tenerife. Its diameter is 3.16 meters, and its height reach",
+    "description": "As the sun drops, Teide National Park becomes one of the best stargazing spots on the planet — and this evening tour (18:00–23:00) is built around it.\n\nFirst stop is a restaurant high in Las Cañadas for a three-course dinner with Canarian wine. Then you head up into the park to watch a breathtaking sunset over the volcanic landscape, glass of sparkling wine in hand. As darkness falls, your guide picks out planets, constellations and the Milky Way in some of the clearest, darkest skies in Europe — protected by law for astronomy.\n\nBring a warm jacket: it's cold at altitude after dark. A magical, relaxed evening for couples and families alike.",
     "faq": [
       {
         "question": "How will I receive my tickets?",
@@ -2499,7 +2499,7 @@
       }
     ],
     "priceFrom": 100,
-    "description": "If you love speed and the sea, there is nothing better than enjoying Jet Ski's speed. ・ Drive along the south coast of Costa Adeje on a jet ski and enjoy the beautiful view. ・ The Jet Ski Safari Tour starts from Las Americas and you can choose between 40 minutes, 1 hour and 2 hours",
+    "description": "For a hit of speed and salt spray, nothing beats a jet ski safari along the Costa Adeje coast. Led by an instructor on the water, you'll ride out from the Las Américas area and skim the south coastline, taking in the cliffs and open Atlantic at full throttle.\n\nThe price covers a jet ski for two people — ride together or take turns — with a choice of a 40-minute or longer route. It's a guided safari: you simply follow the lead jet ski, so no experience is needed.\n\nBring a swimsuit, a towel and a waterproof phone case if you want photos.",
     "meetingPoint": "Puerto Colón Marina, Costa Adeje",
     "faq": [
       {
@@ -2651,7 +2651,7 @@
       }
     ],
     "priceFrom": 36,
-    "description": "Especially for the family's youngest members, Aqualand has Kidzworld, Forestland and Dragonland areas, while the whole family can enjoy the Wave Pool and Adventureland. Float down the Lava River or relax in the open-air spa with Jacuzzi and whirlpools. And for an adrenaline rush, head to the Twister, Super Slalom, Tornado or crazy Kamikazes. ・ Visit Dolphin Planet to learn more about them. The dolphins are the park stars, showing off their amazing skills, agility and speed. ・ Spend a fabulous, f",
+    "description": "Aqualand Costa Adeje is the island's biggest water park — and the only one with its own dolphinarium. Right in the heart of Costa Adeje, it's a full day of splashing for every age and every nerve level.\n\nThrill-seekers head for the high-speed slides — the Tornado, the Kamikazes and the newer Cyclones, plus Tsunami, rapids and a giant wave pool. Younger kids get their own worlds in Kidzworld, Forestland and Dragonland, with gentle slides and shallow pools. When you need a breather, drift down the Lava River or sink into a jacuzzi bed in the open-air spa.\n\nThe park is also known for its daily dolphin show in a dedicated arena. Plan a full day, bring towels and sunscreen, and arrive early to beat the queues on the big rides.",
     "faq": [
       {
         "question": "How will I receive my tickets?",
@@ -2716,7 +2716,7 @@
       }
     ],
     "priceFrom": 22,
-    "description": "Just 10 minutes from the tourist centers of Los Cristianos and Playa de las Americas , we find a cozy, rural Camel Park, where you can enjoy more than camel rides . ・ On this animal farm, you can find several species native to the Canaries and El Cerro de la Luna restaurant , where you can enjoy a good lunch. ・ The climate and vegetation of the Canaries are suitable for breeding camels. Donkeys and camels, which are easily domesticated, have been used historically in farm work to till the land. ",
+    "description": "Just 10 minutes from Los Cristianos and Playa de las Américas, Camel Park is a relaxed, rural animal farm — an easy, fun outing for families with younger kids.\n\nThe star attraction is the camel ride through the grounds, but there's more to see: native Canarian animals and other species to meet, set in the countryside below El Cerro de la Centinela. It's low-key and hands-on, well suited to little ones who'd find the big parks overwhelming.\n\nAffordable and quick to reach — a nice half-day rather than a full day out.",
     "faq": [
       {
         "question": "How will I receive my tickets?",
@@ -2783,7 +2783,7 @@
       }
     ],
     "priceFrom": 35,
-    "description": "The Jungle Park is located in the south of Tenerife, just a 15-minute drive from Los Cristianos and Las Americas. A huge zoological and botanical park with 75,000 m² of jungle and more than 500 animals where you can wander through paths full of tunnels and hanging bridges, waterfalls, lagoons and caves, enjoying an incredible ecosystem made up of the flora and fauna of the south of the island. Don't miss the spectacular birds of prey show, one of the best in the world, where falcons, vultures an",
+    "description": "Jungle Park (formerly Parque Las Águilas) is a lush 75,000 m² zoo and botanical park just 15 minutes from Los Cristianos, home to more than 500 animals roaming among waterfalls, lagoons, caves and jungle suspension bridges.\n\nTwo shows anchor the day: the spectacular Birds of Prey flight, where eagles, falcons and vultures swoop low over the audience, and the ever-popular Sea Lion show. Along the trails you'll meet orangutans, gibbons, penguins, crocodiles, meerkats, flamingos, macaws and much more. For one last thrill, ride BOB — an 800-metre toboggan run down through the park.\n\nGreat for families and animal lovers. Allow at least half a day and check the show times on arrival so you don't miss them.",
     "faq": [
       {
         "question": "How will I receive my tickets?",
@@ -3304,7 +3304,7 @@
       }
     ],
     "priceFrom": 100,
-    "description": "Get ready for an exciting adventure on Teide! Teide Quad Safari Tenerife tour takes you off wonderful landscapes and feel the adrenaline rush as you drive through volcanic areas and dense forests with quad trip! ・ Enjoy the best views, feel the wind in your face, admiring the sea views as you step on the gas pedal. In addition, during the tour, there will be stops so that you can get to know all the attractions of Teide and its nature. ・ You will always be accompanied by experienced guides who w",
+    "description": "Trade the beach for the volcano on a 3-hour quad safari up towards Teide. After a briefing you'll ride through pine forests and otherworldly volcanic landscapes, feeling the adrenaline and the cool mountain air as the scenery opens up around you.\n\nPrice covers a quad for two people, and the guided route keeps you on the best tracks with the best views. It's one of the most scenic ways to swap the coast for the heights of the island.\n\nA valid driving licence is required to drive. Bring a jacket — it's noticeably cooler at altitude — plus closed shoes and sunglasses.",
     "faq": [
       {
         "question": "How will I receive my tickets?",
