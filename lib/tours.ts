@@ -138,9 +138,10 @@ export function getTours(): string {
           const agePart = t.minAge ? ` | min age ${t.minAge}` : "";
           const durPart = t.duration ? ` | ${t.duration}` : "";
           const incPart = t.included ? ` | Includes: ${t.included.slice(0, 200)}` : "";
+          const excPart = t.notIncluded ? ` | NOT included: ${t.notIncluded.slice(0, 200)}` : "";
           const slotsPart = t.timeSlots?.length ? ` | timeSlots: ${t.timeSlots.join(", ")}` : "";
           const depositPart = t.depositPercent ? ` | 💳 ${t.depositPercent}% deposit online, rest paid on pickup` : "";
-          lines.push(`    • [slug:${t.slug}] ${t.title}${durPart} | ${pricePart}${agePart}${incPart}${slotsPart}${depositPart}`);
+          lines.push(`    • [slug:${t.slug}] ${t.title}${durPart} | ${pricePart}${agePart}${incPart}${excPart}${slotsPart}${depositPart}`);
           if (t.description) {
             lines.push(`      ${t.description.slice(0, 500)}`);
           }

@@ -2264,7 +2264,7 @@
   },
   {
     "slug": "teide-tour-cable-car",
-    "title": "Mount Teide Tour and Cable Car tickets",
+    "title": "Mount Teide National Park Tour (cable car optional)",
     "category": "bus-tours",
     "group": "land",
     "duration": "3h",
@@ -2291,7 +2291,7 @@
       }
     ],
     "priceFrom": 60,
-    "description": "Stand on the roof of Spain. This excursion climbs through the Corona Forestal pine forest into Teide National Park — a UNESCO World Heritage Site — to the foot of El Teide, the highest peak in the country at 3,718 m.\n\nFrom the base station the cable car whisks you up over 1,000 metres in just eight minutes to La Rambleta at 3,555 m, where the air is thin and the views are unreal. From the upper viewpoints you take in the multicoloured Pico Viejo crater (800 m across), the Roques de García, and on clear days the neighbouring islands of La Gomera, La Palma and El Hierro floating on the horizon.\n\nAlong the way the tour stops at the most spectacular lava fields and rock formations of the Las Cañadas caldera. Bring a jacket — even in summer it's cold and windy at the top. (Cable car access depends on weather; strong winds can close it.)",
+    "description": "Climb from the coast into Teide National Park — a UNESCO World Heritage Site — on a guided tour to the foot of El Teide, the highest peak in Spain at 3,718 m. You'll cross the Corona Forestal pine forest and stop at the most spectacular lava fields, rock formations and viewpoints of the Las Cañadas caldera, with views on clear days across to La Gomera, La Palma and El Hierro.\n\nThe cable car up to the 3,555 m upper station is the highlight for many visitors — but the ride is an optional extra, bought separately and not included in this tour price. Cable car tickets sell out fast and only run in good weather, so if you want to go up, it's best to reserve your slot in advance.\n\nBring a jacket — even in summer it's cold and windy at altitude.",
     "faq": [
       {
         "question": "How will I receive my tickets?",
@@ -2329,7 +2329,8 @@
     ],
     "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
     "bookingPhone": "677 654 754",
-    "supplierId": "nere"
+    "supplierId": "nere",
+    "notIncluded": "Cable car ticket — purchased separately, not included (pre-booking recommended; weather-dependent)."
   },
   {
     "slug": "santa-cruz--la-laguna--anaga",
