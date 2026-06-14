@@ -142,7 +142,7 @@ export function getTours(): string {
           const depositPart = t.depositPercent ? ` | 💳 ${t.depositPercent}% deposit online, rest paid on pickup` : "";
           lines.push(`    • [slug:${t.slug}] ${t.title}${durPart} | ${pricePart}${agePart}${incPart}${slotsPart}${depositPart}`);
           if (t.description) {
-            lines.push(`      ${t.description.slice(0, 220)}`);
+            lines.push(`      ${t.description.slice(0, 500)}`);
           }
           if (t.pricing.length > 1) {
             const options = t.pricing.map((p) => `${p.label}: €${p.price}`).join(" / ");
