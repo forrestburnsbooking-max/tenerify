@@ -270,7 +270,7 @@
       }
     ],
     "priceFrom": 60,
-    "description": "Enjoy one of our breathtaking activities! Parascending is a fun and safe activity, suitable for people of all ages. ・ Our team will take you through this exciting experience in complete safety and comfort, attaching you to the parachute and all the safety equipment, it will not require any effort from you, you will just relax and enjoy the views. At the end of the flight, the team will make you dip your feet in the water before landing on the boat. ・ It's fun and safe!",
+    "description": "Float high above the Atlantic on a parascending flight from Puerto Colón — a calm, breathtaking ride suitable for all ages. You're strapped safely into the harness and parachute, towed gently up behind the boat, then left to relax and soak up the views.\n\nIt takes no effort at all: just sit back and enjoy the panorama of the coastline from up high. At the end, the crew dips your feet in the sea before reeling you back to the boat.\n\nFun, gentle and safe — great for couples, families and anyone who wants the views without the adrenaline overload.",
     "faq": [
       {
         "question": "How will I receive my tickets?",
@@ -1754,7 +1754,7 @@
       }
     ],
     "priceFrom": 180,
-    "description": "Teide Adventure is a 3-hour trip to the Teide National Park. There are two tours: a day tour and a sunset tour. ・ After a short briefing, we will drive through several villages in the south of Tenerife. On the way to the volcano, our experienced guides will take you on an adrenaline-pumping route where you will enjoy breathtaking views of the island and ocean. ・ We will stop at an altitude of 2200 meters above sea level, where you can relax, take panoramic photos and, most importantly, breathe f",
+    "description": "The big one: a 3-hour buggy adventure all the way up to Teide National Park, available as a daytime or sunset tour. After a short briefing you'll drive your own buggy out through the villages of southern Tenerife and onto an adrenaline-pumping route toward the volcano.\n\nYou'll climb to around 2,200 metres for panoramic photo stops, breathing the cool mountain air with the island and ocean spread out below. Price is per buggy for two (you can swap driver), including fuel, guide, insurance, coat, goggles, a snack and water.\n\nA valid driving licence is required to drive. Bring a jacket — it's much cooler at altitude — plus closed shoes and sunglasses.",
     "included": "Fuel, guide, travel insurance, coat, glasses, snack, water and off road.",
     "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
     "faq": [
@@ -3413,7 +3413,7 @@
     "title": "Citroen C3 — Car Rental",
     "category": "car-rental",
     "group": "rental",
-    "duration": "3h",
+    "duration": "Per day",
     "languages": [
       "Deutsch",
       "English",
@@ -3432,7 +3432,7 @@
       }
     ],
     "priceFrom": 62,
-    "description": "Our company is based in Tenerife and has many years of experience in the car rental industry. ・ We offer our customers the latest models of cars at very competitive prices. ・ Our staff are experts in car rentals throughout the island and are ready to adapt services to the needs of our customers. ‍",
+    "description": "The Citroën C3 is a compact 5-door hatchback with manual transmission and seating for five — comfortable, economical and easy to park, making it a great all-rounder for exploring Tenerife.\n\nRoomy enough for a couple or small family with luggage, and frugal on fuel for longer island drives. Price is per day; pick it up and go at your own pace.",
     "faq": [
       {
         "question": "How will I receive my tickets?",
@@ -3474,7 +3474,7 @@
     "title": "Citroen Cactus Automatic — Car Rental",
     "category": "car-rental",
     "group": "rental",
-    "duration": "3h",
+    "duration": "Per day",
     "languages": [
       "Deutsch",
       "English",
@@ -3493,7 +3493,7 @@
       }
     ],
     "priceFrom": 65,
-    "description": "Our company is based in Tenerife and has many years of experience in the car rental industry. ・ We offer our customers the latest models of cars at very competitive prices. ・ Our staff are experts in car rentals throughout the island and are ready to adapt services to the needs of our customers ‍",
+    "description": "The Citroën C4 Cactus is a quirky, comfortable compact crossover with automatic transmission and seating for five — relaxed to drive on Tenerife's winding mountain roads, with no gear-changing on the climbs.\n\nA good pick for couples or small families who want a higher, comfier ride and an automatic. Price is per day.",
     "faq": [
       {
         "question": "How will I receive my tickets?",
@@ -3535,7 +3535,7 @@
     "title": "Citroen Grand Picasso - 7 Seats — Car Rental",
     "category": "car-rental",
     "group": "rental",
-    "duration": "3h",
+    "duration": "Per day",
     "languages": [
       "Deutsch",
       "English",
@@ -3554,7 +3554,7 @@
       }
     ],
     "priceFrom": 100,
-    "description": "Our company is based in Tenerife and has many years of experience in the car rental industry. ・ We offer our customers the latest models of cars at very competitive prices. ・ Our staff are experts in car rentals throughout the island and are ready to adapt services to the needs of our customers",
+    "description": "The Citroën Grand Picasso is a 7-seat MPV — plenty of room for a big family or group, plus space for luggage. Manual transmission, comfortable on long island drives.\n\nIdeal when you need seats for everyone and don't want two cars. Price is per day.",
     "faq": [
       {
         "question": "How will I receive my tickets?",
@@ -3596,7 +3596,7 @@
     "title": "Fiat 500 — Car Rental",
     "category": "car-rental",
     "group": "rental",
-    "duration": "3h",
+    "duration": "Per day",
     "languages": [
       "Deutsch",
       "English",
@@ -3615,7 +3615,7 @@
       }
     ],
     "priceFrom": 45,
-    "description": "Our company is based in Tenerife and has many years of experience in the car rental industry. ・ We offer our customers the latest models of cars at very competitive prices. ・ Our staff are experts in car rentals throughout the island and are ready to adapt services to the needs of our customers.",
+    "description": "The iconic Fiat 500 — a stylish, fun little city car with manual transmission, seating four. Nippy, easy to park and perfect for buzzing around the resorts and coast.\n\nBest for couples or two friends travelling light. Price is per day.",
     "faq": [
       {
         "question": "How will I receive my tickets?",
@@ -3657,7 +3657,7 @@
     "title": "Fiat 500 Cabrio — Car Rental",
     "category": "car-rental",
     "group": "rental",
-    "duration": "3h",
+    "duration": "Per day",
     "languages": [
       "Deutsch",
       "English",
@@ -3676,7 +3676,7 @@
       }
     ],
     "priceFrom": 70,
-    "description": "Our company is based in Tenerife and has many years of experience in the car rental industry. ・ We offer our customers the latest models of cars at very competitive prices. ・ Our staff are experts in car rentals throughout the island and are ready to adapt services to the needs of our customers",
+    "description": "The Fiat 500 Cabrio brings open-top fun to your trip — the same iconic little car with a roll-back roof, manual transmission and seating for four. Top down, sun out, coast roads ahead.\n\nA holiday favourite for couples who want a bit of style. Price is per day.",
     "faq": [
       {
         "question": "How will I receive my tickets?",
@@ -3718,7 +3718,7 @@
     "title": "Fiat Panda dynamic — Car rental",
     "category": "car-rental",
     "group": "rental",
-    "duration": "3h",
+    "duration": "Per day",
     "languages": [
       "Deutsch",
       "English",
@@ -3737,7 +3737,7 @@
       }
     ],
     "priceFrom": 40,
-    "description": "Our company is based in Tenerife and has many years of experience in the car rental industry. ・ We offer our customers the latest models of cars at very competitive prices. ・ Our staff are experts in car rentals throughout the island and are ready to adapt services to the needs of our customers.",
+    "description": "The Fiat Panda is the budget-friendly choice — a compact, economical 5-seat city car with manual transmission. Cheap to run, easy to park and perfectly capable for getting around the island.\n\nGreat value for couples or a small family watching the budget. Price is per day.",
     "faq": [
       {
         "question": "How will I receive my tickets?",
@@ -3779,7 +3779,7 @@
     "title": "Renault Captur Automatic — Car Rental",
     "category": "car-rental",
     "group": "rental",
-    "duration": "3h",
+    "duration": "Per day",
     "languages": [
       "Deutsch",
       "English",
@@ -3798,7 +3798,7 @@
       }
     ],
     "priceFrom": 65,
-    "description": "Our company is based in Tenerife and has many years of experience in the car rental industry. ・ We offer our customers the latest models of cars at very competitive prices. ・ Our staff are experts in car rentals throughout the island and are ready to adapt services to the needs of our customers",
+    "description": "The Renault Captur is a stylish compact SUV with automatic transmission and seating for five — a comfortable, higher-riding option that's relaxed on Tenerife's hilly roads.\n\nA solid pick for families or couples who want space, comfort and an automatic. Price is per day.",
     "faq": [
       {
         "question": "How will I receive my tickets?",
@@ -3840,7 +3840,7 @@
     "title": "Renault Trafic 9 Seats — Car Rental",
     "category": "car-rental",
     "group": "rental",
-    "duration": "3h",
+    "duration": "Per day",
     "languages": [
       "Deutsch",
       "English",
@@ -3859,7 +3859,7 @@
       }
     ],
     "priceFrom": 110,
-    "description": "Our company is based in Tenerife and has many years of experience in the car rental industry. ・ We offer our customers the latest models of cars at very competitive prices. ・ Our staff are experts in car rentals throughout the island and are ready to adapt services to the needs of our customers",
+    "description": "The Renault Trafic is a 9-seat passenger van with manual transmission — the practical answer for large families and groups who want to travel together in one vehicle.\n\nPlenty of seats and luggage space for a group trip around the island. Price is per day.",
     "faq": [
       {
         "question": "How will I receive my tickets?",
@@ -3901,7 +3901,7 @@
     "title": "Seat Ibiza — Car Rental",
     "category": "car-rental",
     "group": "rental",
-    "duration": "3h",
+    "duration": "Per day",
     "languages": [
       "Deutsch",
       "English",
@@ -3920,7 +3920,7 @@
       }
     ],
     "priceFrom": 52,
-    "description": "Our company is based in Tenerife and has many years of experience in the car rental industry. ・ We offer our customers the latest models of cars at very competitive prices. ・ Our staff are experts in car rentals throughout the island and are ready to adapt services to the needs of our customers",
+    "description": "The SEAT Ibiza is a popular 5-seat supermini with manual transmission — sporty, economical and easy to handle on both town streets and open roads.\n\nA great-value all-rounder for couples or a small family. Price is per day.",
     "faq": [
       {
         "question": "How will I receive my tickets?",
@@ -3962,7 +3962,7 @@
     "title": "Seat Leon — Car Rental",
     "category": "car-rental",
     "group": "rental",
-    "duration": "3h",
+    "duration": "Per day",
     "languages": [
       "Deutsch",
       "English",
@@ -3981,7 +3981,7 @@
       }
     ],
     "priceFrom": 65,
-    "description": "Our company is based in Tenerife and has many years of experience in the car rental industry. ・ We offer our customers the latest models of cars at very competitive prices. ・ Our staff are experts in car rentals throughout the island and are ready to adapt services to the needs of our customers",
+    "description": "The SEAT León is a roomy 5-seat compact hatchback with manual transmission — comfortable, punchy and well-suited to longer drives across the island.\n\nA good step up in space and comfort for families or groups. Price is per day.",
     "faq": [
       {
         "question": "How will I receive my tickets?",
@@ -4083,7 +4083,7 @@
     "title": "VW Beetle Automatic — Car Rental",
     "category": "car-rental",
     "group": "rental",
-    "duration": "3h",
+    "duration": "Per day",
     "languages": [
       "Deutsch",
       "English",
@@ -4102,7 +4102,7 @@
       }
     ],
     "priceFrom": 105,
-    "description": "Our company is based in Tenerife and has many years of experience in the car rental industry. ・ We offer our customers the latest models of cars at very competitive prices. ・ Our staff are experts in car rentals throughout the island and are ready to adapt services to the needs of our customers",
+    "description": "The iconic VW Beetle with automatic transmission — a head-turning, fun-to-drive classic shape seating four. Cruise the coast roads in style without touching a gearstick.\n\nA characterful choice for couples who want something different. Price is per day.",
     "faq": [
       {
         "question": "How will I receive my tickets?",
@@ -4144,7 +4144,7 @@
     "title": "VW Golf — Car Rental",
     "category": "car-rental",
     "group": "rental",
-    "duration": "3h",
+    "duration": "Per day",
     "languages": [
       "Deutsch",
       "English",
@@ -4163,7 +4163,7 @@
       }
     ],
     "priceFrom": 65,
-    "description": "Our company is based in Tenerife and has many years of experience in the car rental industry. ・ We offer our customers the latest models of cars at very competitive prices. ・ Our staff are experts in car rentals throughout the island and are ready to adapt services to the needs of our customers",
+    "description": "The VW Golf is a refined 5-seat compact hatchback with manual transmission — comfortable, solid and a pleasure to drive on Tenerife's varied roads.\n\nA dependable all-rounder for families or couples. Price is per day.",
     "faq": [
       {
         "question": "How will I receive my tickets?",
@@ -4205,7 +4205,7 @@
     "title": "VW Polo — Car Rental",
     "category": "car-rental",
     "group": "rental",
-    "duration": "3h",
+    "duration": "Per day",
     "languages": [
       "Deutsch",
       "English",
@@ -4224,7 +4224,7 @@
       }
     ],
     "priceFrom": 52,
-    "description": "Our company is based in Tenerife and has many years of experience in the car rental industry. ・ We offer our customers the latest models of cars at very competitive prices. ・ Our staff are experts in car rentals throughout the island and are ready to adapt services to the needs of our customers.",
+    "description": "The VW Polo is a comfortable 5-seat supermini with manual transmission — compact and economical, with a quality feel that makes light work of island roads.\n\nA great-value, easy-to-drive choice for couples or a small family. Price is per day.",
     "faq": [
       {
         "question": "How will I receive my tickets?",
@@ -4266,7 +4266,7 @@
     "title": "VW Polo Automatic — Car Rental",
     "category": "car-rental",
     "group": "rental",
-    "duration": "3h",
+    "duration": "Per day",
     "languages": [
       "Deutsch",
       "English",
@@ -4285,7 +4285,7 @@
       }
     ],
     "priceFrom": 60,
-    "description": "Our company is based in Tenerife and has many years of experience in the car rental industry. ・ We offer our customers the latest models of cars at very competitive prices. ・ Our staff are experts in car rentals throughout the island and are ready to adapt services to the needs of our customers",
+    "description": "The VW Polo Automatic offers the same comfortable, economical 5-seat supermini with the ease of automatic transmission — no gear-changing on Tenerife's hilly, winding roads.\n\nIdeal for couples or small families who prefer an automatic. Price is per day.",
     "faq": [
       {
         "question": "How will I receive my tickets?",
@@ -4779,7 +4779,7 @@
     "title": "Seat Leon ST — Car Rental (Automatic)",
     "category": "car-rental",
     "group": "rental",
-    "duration": "3h",
+    "duration": "Per day",
     "languages": [
       "Deutsch",
       "English",
@@ -4798,7 +4798,7 @@
       }
     ],
     "priceFrom": 70,
-    "description": "Our company is based in Tenerife and has many years of experience in the car rental industry. ・ The Seat Leon ST is a spacious automatic estate car, perfect for families or groups with extra luggage. ・ Our staff are experts in car rentals throughout the island and are ready to adapt services to the needs of our customers",
+    "description": "The SEAT León ST is a spacious automatic estate car with seating for five and a large boot — perfect for families or groups with extra luggage who want comfort and an automatic gearbox.\n\nSmooth on long island drives with room for everything. Price is per day.",
     "faq": [
       {
         "question": "How will I receive my tickets?",
@@ -4839,7 +4839,7 @@
     "title": "Opel Zafira 7-Seater — Car Rental (Automatic)",
     "category": "car-rental",
     "group": "rental",
-    "duration": "3h",
+    "duration": "Per day",
     "languages": [
       "Deutsch",
       "English",
@@ -4858,7 +4858,7 @@
       }
     ],
     "priceFrom": 110,
-    "description": "Our company is based in Tenerife and has many years of experience in the car rental industry. ・ The Opel Zafira is a 7-seater automatic, ideal for big families or groups of friends who want to travel together. ・ Our staff are experts in car rentals throughout the island and are ready to adapt services to the needs of our customers",
+    "description": "The Opel Zafira is a 7-seat automatic MPV — ideal for big families or groups of friends who want to travel together with space for everyone and their luggage.\n\nComfortable and easy to drive thanks to the automatic gearbox. Price is per day.",
     "faq": [
       {
         "question": "How will I receive my tickets?",
