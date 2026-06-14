@@ -626,11 +626,11 @@
     "pricing": [
       {
         "label": "Per person",
-        "price": 50,
+        "price": 60,
         "net": 25
       }
     ],
-    "priceFrom": 50,
+    "priceFrom": 60,
     "description": "Cool Sailing is a relaxed 3-hour motor-yacht trip from Puerto Colón along the Costa Adeje coast, capped at just 11 guests for a personal, uncrowded day on the water.\n\nYou'll cruise in search of the resident pilot whales and dolphins, anchor for a swim in the clear Atlantic, and enjoy an open bar and food included throughout.\n\nSmall-group and easygoing — ideal for couples and small groups. Bring swimwear, a towel and sunscreen.",
     "timeSlots": [
       "10:00",
@@ -5181,5 +5181,275 @@
     "meetingPoint": "South Tenerife — departure point confirmed on booking",
     "bookingPhone": "686 28 63 54",
     "supplierId": "galatea"
+  },
+  {
+    "slug": "travelling-lady",
+    "title": "Travelling Lady — 2h dolphin watching from Los Cristianos",
+    "category": "whale-watching",
+    "group": "water",
+    "duration": "2h",
+    "pricing": [
+      {
+        "label": "Adult",
+        "price": 25,
+        "net": 15
+      },
+      {
+        "label": "Child",
+        "price": 15,
+        "net": 6
+      },
+      {
+        "label": "Kid",
+        "price": 5,
+        "net": 3
+      }
+    ],
+    "priceFrom": 25,
+    "description": "Travelling Lady is a relaxed 2-hour boat trip from Los Cristianos — the most budget-friendly way to get out on the water and look for the dolphins and whales that live along Tenerife's south coast.\n\nShorter and easy on the wallet, it's a great option for families with young kids or anyone who just wants a quick, scenic time at sea. Keep an eye out for the pods as you cruise the coastline.\n\nBring a swimsuit, a hat and sunscreen. Departs from Los Cristianos harbour.",
+    "faq": [
+      {
+        "question": "How will I receive my tickets?",
+        "answer": "After you complete your purchase, you will receive an order confirmation email within a few minutes with all the details of your booking."
+      },
+      {
+        "question": "What happens if the weather is too bad?",
+        "answer": "If the weather is too bad to go on the excursion, it will be rescheduled or you will receive a full refund."
+      },
+      {
+        "question": "Can I book within 24 hours?",
+        "answer": "Yes, it is possible. Please contact us."
+      }
+    ],
+    "meetingPoint": "Los Cristianos harbour",
+    "bookingPhone": "663 88 06 44",
+    "supplierId": "travelling-lady"
+  },
+  {
+    "slug": "gulliver-boat",
+    "title": "Gulliver — 3.5h premium boat cruise",
+    "category": "whale-watching",
+    "group": "water",
+    "duration": "3.5h",
+    "pricing": [
+      {
+        "label": "Adult",
+        "price": 80,
+        "net": 49
+      },
+      {
+        "label": "Child",
+        "price": 49,
+        "net": 30
+      }
+    ],
+    "priceFrom": 80,
+    "description": "Gulliver is a premium 3.5-hour boat cruise along Tenerife's south-west coast — a little longer and roomier than the standard trips, with extra time to find the whales and dolphins and to relax on board.\n\nYou'll cruise the coastline watching for marine life, stop to swim and snorkel in the clear Atlantic, and stretch out on the spacious decks. A step up for those who want more time and comfort on the water.\n\nBring a swimsuit, towel and sunscreen. Departure point confirmed on booking.",
+    "faq": [
+      {
+        "question": "How will I receive my tickets?",
+        "answer": "After you complete your purchase, you will receive an order confirmation email within a few minutes with all the details of your booking."
+      },
+      {
+        "question": "What happens if the weather is too bad?",
+        "answer": "If the weather is too bad to go on the excursion, it will be rescheduled or you will receive a full refund."
+      },
+      {
+        "question": "Can I book within 24 hours?",
+        "answer": "Yes, it is possible. Please contact us."
+      }
+    ],
+    "meetingPoint": "South Tenerife — departure point confirmed on booking",
+    "bookingPhone": "643 98 59 57",
+    "supplierId": "gulliver"
+  },
+  {
+    "slug": "skyline-cruiser",
+    "title": "Skyline Cruiser — 3h whale & dolphin watching",
+    "category": "whale-watching",
+    "group": "water",
+    "duration": "3h",
+    "pricing": [
+      {
+        "label": "Adult",
+        "price": 70,
+        "net": 45
+      },
+      {
+        "label": "Child",
+        "price": 50,
+        "net": 35
+      }
+    ],
+    "priceFrom": 70,
+    "description": "Skyline Cruiser is a comfortable 3-hour cruise along the south coast in search of pilot whales and dolphins, with plenty of deck space to relax between sightings.\n\nThe crew takes you out along the coastline, then anchors for a swim in the clear Atlantic before you soak up the sun on board. An easy, scenic few hours for couples, families and groups.\n\nBring a swimsuit, towel and sunscreen. Departure point confirmed on booking.",
+    "faq": [
+      {
+        "question": "How will I receive my tickets?",
+        "answer": "After you complete your purchase, you will receive an order confirmation email within a few minutes with all the details of your booking."
+      },
+      {
+        "question": "What happens if the weather is too bad?",
+        "answer": "If the weather is too bad to go on the excursion, it will be rescheduled or you will receive a full refund."
+      },
+      {
+        "question": "Can I book within 24 hours?",
+        "answer": "Yes, it is possible. Please contact us."
+      }
+    ],
+    "meetingPoint": "South Tenerife — departure point confirmed on booking",
+    "bookingPhone": "655 65 51 77",
+    "supplierId": "skyline-cruiser"
+  },
+  {
+    "slug": "white-dream",
+    "title": "White Dream — 3h whale & dolphin watching",
+    "category": "whale-watching",
+    "group": "water",
+    "duration": "3h",
+    "pricing": [
+      {
+        "label": "Adult",
+        "price": 60,
+        "net": 35
+      },
+      {
+        "label": "Child",
+        "price": 40
+      }
+    ],
+    "priceFrom": 60,
+    "description": "White Dream is a relaxed 3-hour boat trip along Tenerife's south-west coast, out to find the resident pilot whales and dolphins.\n\nCruise the coastline watching for marine life, then stop to swim in the clear Atlantic and unwind on deck. A comfortable, easygoing day on the water for all ages.\n\nBring a swimsuit, towel and sunscreen. Departure point confirmed on booking.",
+    "faq": [
+      {
+        "question": "How will I receive my tickets?",
+        "answer": "After you complete your purchase, you will receive an order confirmation email within a few minutes with all the details of your booking."
+      },
+      {
+        "question": "What happens if the weather is too bad?",
+        "answer": "If the weather is too bad to go on the excursion, it will be rescheduled or you will receive a full refund."
+      },
+      {
+        "question": "Can I book within 24 hours?",
+        "answer": "Yes, it is possible. Please contact us."
+      }
+    ],
+    "meetingPoint": "South Tenerife — departure point confirmed on booking",
+    "bookingPhone": "613 92 47 63",
+    "supplierId": "white-dream"
+  },
+  {
+    "slug": "mola-sailboat",
+    "title": "Mola — 3h sailboat, whale & dolphin watching",
+    "category": "whale-watching",
+    "group": "water",
+    "duration": "3h",
+    "pricing": [
+      {
+        "label": "Adult",
+        "price": 60,
+        "net": 30
+      },
+      {
+        "label": "Child",
+        "price": 40,
+        "net": 20
+      }
+    ],
+    "priceFrom": 60,
+    "description": "Mola is a sailboat trip along Tenerife's south-west coast — three relaxed hours under sail in search of the dolphins and pilot whales that live in these waters.\n\nThere's the calm of real sailing instead of engine noise, a stop to swim in the clear Atlantic, and space on deck to soak up the sun. A laid-back option for couples and small groups.\n\nBring a swimsuit, towel and sunscreen. Departure point confirmed on booking.",
+    "faq": [
+      {
+        "question": "How will I receive my tickets?",
+        "answer": "After you complete your purchase, you will receive an order confirmation email within a few minutes with all the details of your booking."
+      },
+      {
+        "question": "What happens if the weather is too bad?",
+        "answer": "If the weather is too bad to go on the excursion, it will be rescheduled or you will receive a full refund."
+      },
+      {
+        "question": "Can I book within 24 hours?",
+        "answer": "Yes, it is possible. Please contact us."
+      }
+    ],
+    "meetingPoint": "South Tenerife — departure point confirmed on booking",
+    "bookingPhone": "674 13 35 17",
+    "supplierId": "mola-sailboat"
+  },
+  {
+    "slug": "lina-mizendoha",
+    "title": "Lina & Mizendoha — 3h whale & dolphin watching",
+    "category": "whale-watching",
+    "group": "water",
+    "duration": "3h",
+    "pricing": [
+      {
+        "label": "Adult",
+        "price": 55,
+        "net": 35
+      },
+      {
+        "label": "Child",
+        "price": 40,
+        "net": 25
+      }
+    ],
+    "priceFrom": 55,
+    "description": "A relaxed 3-hour boat trip along the south-west coast of Tenerife, out to watch the pilot whales and dolphins that live here all year round.\n\nCruise the coastline with the crew, stop to swim and snorkel in the clear Atlantic, then relax on deck. An easy, scenic few hours for couples, families and groups.\n\nBring a swimsuit, towel and sunscreen. Departure point confirmed on booking.",
+    "faq": [
+      {
+        "question": "How will I receive my tickets?",
+        "answer": "After you complete your purchase, you will receive an order confirmation email within a few minutes with all the details of your booking."
+      },
+      {
+        "question": "What happens if the weather is too bad?",
+        "answer": "If the weather is too bad to go on the excursion, it will be rescheduled or you will receive a full refund."
+      },
+      {
+        "question": "Can I book within 24 hours?",
+        "answer": "Yes, it is possible. Please contact us."
+      }
+    ],
+    "meetingPoint": "South Tenerife — departure point confirmed on booking",
+    "bookingPhone": "623 41 07 94",
+    "supplierId": "lina-mizendoha"
+  },
+  {
+    "slug": "habana-del-sol",
+    "title": "Habana del Sol — 3h catamaran, whale & dolphin watching",
+    "category": "whale-watching",
+    "group": "water",
+    "duration": "3h",
+    "pricing": [
+      {
+        "label": "Adult",
+        "price": 60,
+        "net": 35
+      },
+      {
+        "label": "Child",
+        "price": 40,
+        "net": 25
+      }
+    ],
+    "priceFrom": 60,
+    "description": "Habana del Sol is a 3-hour catamaran trip along Tenerife's south-west coast, watching for the pilot whales and dolphins that live in these waters all year.\n\nThe crew finds the wildlife, then anchors for a swim and snorkel in the clear Atlantic, with plenty of room to relax on deck. A comfortable, family-friendly day at sea.\n\nBring a swimsuit, towel and sunscreen. Departure point confirmed on booking.",
+    "faq": [
+      {
+        "question": "How will I receive my tickets?",
+        "answer": "After you complete your purchase, you will receive an order confirmation email within a few minutes with all the details of your booking."
+      },
+      {
+        "question": "What happens if the weather is too bad?",
+        "answer": "If the weather is too bad to go on the excursion, it will be rescheduled or you will receive a full refund."
+      },
+      {
+        "question": "Can I book within 24 hours?",
+        "answer": "Yes, it is possible. Please contact us."
+      }
+    ],
+    "meetingPoint": "South Tenerife — departure point confirmed on booking",
+    "bookingPhone": "691 827 597",
+    "supplierId": "habana"
   }
 ]

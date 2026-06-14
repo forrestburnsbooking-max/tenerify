@@ -196,5 +196,40 @@
     "id": "galatea",
     "name": "Galatea",
     "phone": "686 28 63 54"
+  },
+  {
+    "id": "travelling-lady",
+    "name": "Travelling Lady",
+    "phone": "663 88 06 44"
+  },
+  {
+    "id": "gulliver",
+    "name": "Gulliver",
+    "phone": "643 98 59 57"
+  },
+  {
+    "id": "skyline-cruiser",
+    "name": "Skyline Cruiser",
+    "phone": "655 65 51 77"
+  },
+  {
+    "id": "white-dream",
+    "name": "White Dream",
+    "phone": "613 92 47 63"
+  },
+  {
+    "id": "mola-sailboat",
+    "name": "Mola Sailboat",
+    "phone": "674 13 35 17"
+  },
+  {
+    "id": "lina-mizendoha",
+    "name": "Lina & Mizendoha",
+    "phone": "623 41 07 94"
+  },
+  {
+    "id": "habana",
+    "name": "Habana",
+    "phone": "691 827 597"
   }
 ]
