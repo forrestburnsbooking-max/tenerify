@@ -191,5 +191,10 @@
     "id": "flash-jetski",
     "name": "Flash Jetski",
     "phone": "666 141 121"
+  },
+  {
+    "id": "galatea",
+    "name": "Galatea",
+    "phone": "686 28 63 54"
   }
 ]

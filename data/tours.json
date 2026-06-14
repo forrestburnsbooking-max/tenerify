@@ -5143,5 +5143,43 @@
     ],
     "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
     "supplierId": "nere"
+  },
+  {
+    "slug": "galatea-boat",
+    "title": "Galatea — 3h boat trip, whale & dolphin watching",
+    "category": "whale-watching",
+    "group": "water",
+    "duration": "3h",
+    "pricing": [
+      {
+        "label": "Adult",
+        "price": 50,
+        "net": 25
+      },
+      {
+        "label": "Child",
+        "price": 40,
+        "net": 15
+      }
+    ],
+    "priceFrom": 50,
+    "description": "Galatea is a relaxed 3-hour boat trip along Tenerife's south-west coast in search of the pilot whales and bottlenose dolphins that live in these waters all year round.\n\nWith a friendly local crew you'll cruise the coastline watching for marine life, then stop to swim in the clear Atlantic before soaking up the sun on deck. An easygoing few hours on the water for couples, families and groups alike.\n\nBring a swimsuit, a towel and sunscreen. The exact departure point is confirmed when you book.",
+    "faq": [
+      {
+        "question": "How will I receive my tickets?",
+        "answer": "After you complete your purchase, you will receive an order confirmation email within a few minutes with all the details of your booking."
+      },
+      {
+        "question": "What happens if the weather is too bad?",
+        "answer": "If the weather is too bad to go on the excursion, it will be rescheduled or you will receive a full refund."
+      },
+      {
+        "question": "Can I book within 24 hours?",
+        "answer": "Yes, it is possible. Please contact us."
+      }
+    ],
+    "meetingPoint": "South Tenerife — departure point confirmed on booking",
+    "bookingPhone": "686 28 63 54",
+    "supplierId": "galatea"
   }
 ]
