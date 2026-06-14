@@ -13,6 +13,15 @@ import FaqAccordion from "@/components/FaqAccordion";
 
 const BASE_URL = "https://tenerify.ai";
 
+// Build a clean, single-line meta description (~155 chars, cut on a word boundary)
+function metaFromDescription(desc?: string): string {
+  if (!desc) return "";
+  const clean = desc.replace(/・/g, " ").replace(/\s+/g, " ").trim();
+  if (clean.length <= 155) return clean;
+  const cut = clean.slice(0, 155);
+  return cut.slice(0, cut.lastIndexOf(" ")).trimEnd() + "…";
+}
+
 export function generateStaticParams() {
   return getAllTours().map((t) => ({ slug: t.slug }));
 }
@@ -27,9 +36,8 @@ export async function generateMetadata({
   if (!tour) return { title: "Tour not found — Tenerify.ai" };
 
   const title = `${tour.title} — book online | Tenerify.ai`;
-  const description = tour.description
-    ? tour.description.replace(/・/g, " ").slice(0, 155)
-    : `Book ${tour.title} in Tenerife Sur. ${formatPriceFrom(tour)}.`;
+  const description = metaFromDescription(tour.description)
+    || `Book ${tour.title} in Tenerife Sur. ${formatPriceFrom(tour)}.`;
   const images = tourImages(tour);
 
   return {
