@@ -2198,7 +2198,7 @@
     "title": "Mount Teide by Night — bus tour — Stargazing & Sunset experience",
     "category": "bus-tours",
     "group": "land",
-    "duration": "24h",
+    "duration": "5h (18:00–23:00)",
     "languages": [
       "Deutsch",
       "English",
@@ -2256,9 +2256,9 @@
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/692caa4d516976cc3905b6a9_teide%20by%20night.jpg",
     "url": "https://www.excursionstenerife.es/tours/teide-by-night",
     "timeSlots": [
-      "08:30"
+      "18:00"
     ],
-    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
+    "meetingPoint": "Hotel pickup — South Tenerife (evening start ~18:00, exact pickup on confirmation)",
     "bookingPhone": "624 642 724",
     "supplierId": "ozzy"
   },
