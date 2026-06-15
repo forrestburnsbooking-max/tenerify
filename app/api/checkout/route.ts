@@ -12,16 +12,24 @@ function getStripe() {
 }
 
 function parseBookingText(bookingText: string) {
-  // Format: "Tour Name | 2 people | €180 | 15 June 2026 | 10:00"
-  // Time is "-" when the tour has no fixed time slot.
-  const parts = bookingText.split("|").map((s) => s.trim());
+  // Format: "Tour Name | 2 people | €180 | 15 June 2026 | 10:00 | discount:5"
+  // Time is "-" when the tour has no fixed time slot. discount:N is optional.
+  const raw = bookingText.split("|").map((s) => s.trim());
+  // Pull out the optional discount field wherever it sits
+  let discountPercent = 0;
+  const parts: string[] = [];
+  for (const p of raw) {
+    const m = p.match(/discount\s*:\s*(\d+)/i);
+    if (m) discountPercent = parseInt(m[1], 10) || 0;
+    else parts.push(p);
+  }
   const tourName = parts[0] ?? "Tenerife Experience";
   const groupSize = parts[1] ?? "";
   const priceStr = parts[2] ?? "€0";
   const bookingDate = parts[3] ?? "";
   const bookingTime = parts[4] && parts[4] !== "-" ? parts[4] : "";
   const priceEur = parseFloat(priceStr.replace(/[^0-9.]/g, "")) || 0;
-  return { tourName, groupSize, priceEur, bookingDate, bookingTime };
+  return { tourName, groupSize, priceEur, bookingDate, bookingTime, discountPercent };
 }
 
 function findTourSlugByName(tourName: string): string | null {
@@ -55,7 +63,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Missing bookingText" }, { status: 400 });
     }
 
-    const { tourName, groupSize, priceEur, bookingDate, bookingTime } = parseBookingText(bookingText);
+    const { tourName, groupSize, priceEur, bookingDate, bookingTime, discountPercent } = parseBookingText(bookingText);
     const stripe = getStripe();
     const baseUrl = process.env.NEXT_PUBLIC_BASE_URL ?? "http://localhost:3000";
 
@@ -64,11 +72,18 @@ export async function POST(req: NextRequest) {
     const tour = slug ? getTourBySlug(slug) : null;
     const meetingPoint = tour?.meetingPoint ?? "";
 
+    // Discount guardrails: never on Nere (fixed-price parks/excursions), cap 9%,
+    // and only when we could verify the tour. Fail closed if the tour is unknown.
+    const discountable = !!tour && tour.supplierId !== "nere";
+    const effectiveDiscount = discountable ? Math.min(Math.max(discountPercent, 0), 9) : 0;
+    const discountedPrice = Math.round(priceEur * (1 - effectiveDiscount / 100) * 100) / 100;
+    const discountNote = effectiveDiscount > 0 ? `${effectiveDiscount}% discount applied (was €${priceEur})` : "";
+
     // Some tours (e.g. car rentals) only take a deposit online, balance paid on pickup
     const depositPercent = tour?.depositPercent;
-    const chargeEur = depositPercent ? Math.round(priceEur * depositPercent) / 100 : priceEur;
+    const chargeEur = depositPercent ? Math.round(discountedPrice * depositPercent) / 100 : discountedPrice;
     const depositNote = depositPercent
-      ? `Deposit (${depositPercent}% of €${priceEur}) — remaining ${100 - depositPercent}% paid on pickup`
+      ? `Deposit (${depositPercent}% of €${discountedPrice}) — remaining ${100 - depositPercent}% paid on pickup`
       : "";
 
     const session = await stripe.checkout.sessions.create({
@@ -84,6 +99,7 @@ export async function POST(req: NextRequest) {
                 bookingDate,
                 bookingTime ? `Time: ${bookingTime}` : "",
                 meetingPoint ? `Pickup: ${meetingPoint}` : "",
+                discountNote,
                 depositNote,
               ].filter(Boolean).join(" · ") || "Tenerife experience via Tenerify.ai",
             },
@@ -118,7 +134,9 @@ export async function POST(req: NextRequest) {
         meetingPoint,
         tourSlug: slug ?? "",
         depositPercent: depositPercent ? String(depositPercent) : "",
-        totalPriceEur: String(priceEur),
+        totalPriceEur: String(discountedPrice),
+        originalPriceEur: String(priceEur),
+        discountPercent: effectiveDiscount ? String(effectiveDiscount) : "",
       },
       payment_intent_data: {
         description: [
@@ -127,6 +145,7 @@ export async function POST(req: NextRequest) {
           bookingDate,
           bookingTime ? `at ${bookingTime}` : "",
           meetingPoint ? `📍 ${meetingPoint}` : "",
+          discountNote,
           depositNote,
         ].filter(Boolean).join(" · "),
         metadata: {

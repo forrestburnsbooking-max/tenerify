@@ -50,6 +50,11 @@ export async function POST(req: NextRequest) {
     const amountTotal = pvpTotal > 0 ? `€${pvpTotal.toFixed(0)}` : "";
     const depositPercent = session.metadata?.depositPercent ?? "";
     const totalPriceEur = session.metadata?.totalPriceEur ?? "";
+    const discountPercent = session.metadata?.discountPercent ?? "";
+    const originalPriceEur = session.metadata?.originalPriceEur ?? "";
+    const discountLine = discountPercent
+      ? `🎟 ${discountPercent}% discount applied${originalPriceEur ? ` (was €${originalPriceEur})` : ""}`
+      : "";
     const balanceDue = depositPercent && totalPriceEur
       ? `€${(parseFloat(totalPriceEur) - pvpTotal).toFixed(0)} due on pickup`
       : "";
@@ -75,6 +80,7 @@ export async function POST(req: NextRequest) {
       bookingDate ? `📅 ${bookingDate}${bookingTime ? ` at ${bookingTime}` : ""}` : "",
       groupSize ? `👥 ${groupSize}` : "",
       amountTotal ? `💰 ${amountTotal} paid${depositPercent ? ` (${depositPercent}% deposit)` : ""}` : "",
+      discountLine,
       balanceDue ? `💶 ${balanceDue}` : "",
       commissionLine,
       meetingPoint ? `📍 ${meetingPoint}` : "",
