@@ -145,6 +145,7 @@ type TourMedia = {
 type Message = {
   role: "user" | "assistant";
   content: string;
+  hidden?: boolean; // sent to the AI as context but not rendered (e.g. the onboarding summary)
   options?: string[];
   bookingText?: string;
   tourMedia?: TourMedia | null;
@@ -426,7 +427,7 @@ export default function Home() {
       ? CATEGORIES.filter(c => selectedCategories.includes(c.id)).map(c => c.emoji + " " + c.label).join(", ")
       : "anything";
     const firstMessage = `${who}. Staying in: ${loc}. Interested in: ${catLabels}`;
-    await sendToAI(firstMessage, [], who, selectedLanguage);
+    await sendToAI(firstMessage, [], who, selectedLanguage, true);
   }
 
   async function handleOption(option: string, messageIndex: number) {
@@ -434,11 +435,11 @@ export default function Home() {
     await sendToAI(option, messages);
   }
 
-  async function sendToAI(userText: string, history: Message[] = [], whoValue?: string, langValue?: string) {
+  async function sendToAI(userText: string, history: Message[] = [], whoValue?: string, langValue?: string, hidden = false) {
     if (sendingRef.current) return;
     sendingRef.current = true;
 
-    const userMessage: Message = { role: "user", content: userText };
+    const userMessage: Message = { role: "user", content: userText, hidden };
     const newMessages = [...history, userMessage];
     setMessages(newMessages);
     setLoading(true);
@@ -790,7 +791,7 @@ export default function Home() {
         )}
 
         {/* Chat messages */}
-        {messages.map((msg, i) => (
+        {messages.map((msg, i) => msg.hidden ? null : (
           <div key={i} className={`flex gap-3 max-w-xl mx-auto w-full ${msg.role === "user" ? "flex-row-reverse" : ""}`}>
             {msg.role === "assistant" && (
               <div className="flex-shrink-0 mt-1 w-7 h-7 rounded-full overflow-hidden">
