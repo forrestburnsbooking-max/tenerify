@@ -2350,7 +2350,8 @@
       "16:00",
       "17:00"
     ],
-    "supplierId": "jetski-puerto-colon"
+    "supplierId": "jetski-puerto-colon",
+    "bookingPhone": "602 58 58 87"
   },
   {
     "slug": "watersport-pack-puerto-colon",
