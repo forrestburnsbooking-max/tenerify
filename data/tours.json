@@ -429,7 +429,8 @@
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6692b5742f10ee15ab7c4ab3_DDKayakDivingAtlantis.webp",
     "url": "https://www.excursionstenerife.es/tours/kayaking-stand-up-paddle-los-cristianos",
-    "supplierId": "nere"
+    "supplierId": "atlantis",
+    "bookingPhone": "671 408 970"
   },
   {
     "slug": "stand-up-paddle-la-caleta",
@@ -489,7 +490,8 @@
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/668d92fd6769e15354a7c086_1.webp",
     "url": "https://www.excursionstenerife.es/tours/stand-up-paddle-la-caleta",
-    "supplierId": "nere"
+    "supplierId": "atlantis",
+    "bookingPhone": "671 408 970"
   },
   {
     "slug": "banana-puerto-colon",
@@ -2274,7 +2276,8 @@
       "17:00"
     ],
     "meetingPoint": "Puerto Colón Marina, Costa Adeje",
-    "supplierId": "nere"
+    "supplierId": "watersport",
+    "bookingPhone": "638 531 863"
   },
   {
     "slug": "jet-ski-puerto-colon",
@@ -2347,7 +2350,7 @@
       "16:00",
       "17:00"
     ],
-    "supplierId": "nere"
+    "supplierId": "jetski-puerto-colon"
   },
   {
     "slug": "watersport-pack-puerto-colon",
