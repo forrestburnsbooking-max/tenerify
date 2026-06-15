@@ -394,7 +394,7 @@ export default function Home() {
     setStep("chat");
     const whoValue = `Exploring: ${id}`;
     setWho(whoValue);
-    await sendToAI(MENU_MESSAGES[id], [], whoValue, selectedLanguage);
+    await sendToAI(MENU_MESSAGES[id], [], whoValue, selectedLanguage, true);
   }
 
   function handleLanguageChange(lang: string) {
