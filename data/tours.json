@@ -1606,7 +1606,7 @@
     "pricing": [
       {
         "label": "Adult",
-        "price": 40,
+        "price": 50,
         "net": 25
       },
       {
@@ -1664,74 +1664,8 @@
     "supplierId": "sonador"
   },
   {
-    "slug": "2-hours-buggy-trip",
-    "title": "Buggy — 2 hour trip with 20 minutes off road",
-    "category": "buggy-quad",
-    "group": "land",
-    "duration": "2h",
-    "languages": [
-      "Deutsch",
-      "English",
-      "Español",
-      "Français",
-      "Italiano",
-      "Neerlandés",
-      "Rumano",
-      "Русский"
-    ],
-    "minAge": 18,
-    "pricing": [
-      {
-        "label": "Per buggy (2 people)",
-        "price": 110
-      }
-    ],
-    "priceFrom": 110,
-    "description": "A shorter two-hour buggy trip that still packs a punch — including 20 minutes of proper off-road action. Drive your own buggy through stunning southern Tenerife scenery, kicking up dust on rocky trails between the smoother stretches.\n\nPrice is per buggy for two people (you can swap driver). A great option if you want the buggy thrill without committing to a half-day.\n\nA valid driving licence is required to drive. Wear closed shoes and clothes you don't mind getting dusty.",
-    "faq": [
-      {
-        "question": "How will I receive my tickets?",
-        "answer": "After you complete your purchase, you will receive an order confirmation email within a few minutes. This email will contain all the details of your purchase, including the event, date, and number of tickets. Please note we do not send tickets by post."
-      },
-      {
-        "question": "Can I book an excursion within 24 hours of its start time?",
-        "answer": "Yes, it possible. Please contact us or visit our office"
-      },
-      {
-        "question": "Will I be picked up at my hotel when a transfer is possible?",
-        "answer": "And where is the meeting point The exact meeting point for your excursion will be specified in your booking confirmation email. If a transfer service is included with your booking, we offer convenient hotel pickup. The availability of this service will depend on your hotel’s location and the specific excursion."
-      },
-      {
-        "question": "May I pay directly in cash when the tour / activity starts?",
-        "answer": "We offer online purchases on the platform. If you wish to buy with cash you can visit our office."
-      },
-      {
-        "question": "Do you offer discounts?",
-        "answer": "We generally cannot give any discounts due to the very high demand. We offer discount for group bookings. Please contact us"
-      },
-      {
-        "question": "What happens if the weather is too bad to go on the excursion?",
-        "answer": "If the weather is too bad to go on the excursion, it will be rescheduled or you will receive a full refund."
-      },
-      {
-        "question": "May I purchase a gift voucher?",
-        "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
-      }
-    ],
-    "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/687e55189ba3d0e15912fbeb_buggie-2.jpg",
-    "url": "https://www.excursionstenerife.es/tours/2-hours-buggy-trip",
-    "seatsPerVehicle": 2,
-    "timeSlots": [
-      "10:00",
-      "12:00",
-      "14:00"
-    ],
-    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
-    "supplierId": "nere"
-  },
-  {
     "slug": "buggy-teide-adventure",
-    "title": "Buggy — Mount Teide adventure trip",
+    "title": "Buggy — Teide Day Adventure",
     "category": "buggy-quad",
     "group": "land",
     "duration": "3h",
@@ -1754,7 +1688,7 @@
       }
     ],
     "priceFrom": 180,
-    "description": "The big one: a 3-hour buggy adventure all the way up to Teide National Park, available as a daytime or sunset tour. After a short briefing you'll drive your own buggy out through the villages of southern Tenerife and onto an adrenaline-pumping route toward the volcano.\n\nYou'll climb to around 2,200 metres for panoramic photo stops, breathing the cool mountain air with the island and ocean spread out below. Price is per buggy for two (you can swap driver), including fuel, guide, insurance, coat, goggles, a snack and water.\n\nA valid driving licence is required to drive. Bring a jacket — it's much cooler at altitude — plus closed shoes and sunglasses.",
+    "description": "Take the wheel of your own buggy for a 3-hour adventure up towards Teide National Park. After a short briefing you'll drive out through the villages of southern Tenerife and onto an adrenaline-pumping route toward the volcano.\n\nYou'll climb to around 2,200 metres for panoramic photo stops, breathing the cool mountain air with the island and ocean spread out below. Price is per buggy for two (you can swap driver), including fuel, guide, insurance, coat, goggles, a snack and water.\n\nA valid driving licence is required to drive. Bring a jacket — it's much cooler at altitude — plus closed shoes and sunglasses.",
     "included": "Fuel, guide, travel insurance, coat, glasses, snack, water and off road.",
     "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
     "faq": [
@@ -1796,74 +1730,8 @@
     "supplierId": "hub-buggy"
   },
   {
-    "slug": "buggy-costa-adventure",
-    "title": "Buggy — South coast adventure 3h trip",
-    "category": "buggy-quad",
-    "group": "land",
-    "duration": "3h",
-    "languages": [
-      "Deutsch",
-      "English",
-      "Español",
-      "Français",
-      "Italiano",
-      "Neerlandés",
-      "Rumano",
-      "Русский"
-    ],
-    "minAge": 18,
-    "pricing": [
-      {
-        "label": "Per buggy (2 people)",
-        "price": 180,
-        "net": 80
-      }
-    ],
-    "priceFrom": 180,
-    "description": "Take the wheel of your own buggy for a 3-hour off-road adventure along Tenerife's wild south coast. After a short safety briefing you'll follow your guide out of base, weaving through coastal villages, dirt tracks and dramatic ravines with sweeping ocean views the whole way.\n\nPrice is per buggy for two people (you can swap driver) and includes fuel, guide, insurance, a coat and goggles, plus a snack and water along the way. Expect dust, grins and great photo stops.\n\nA valid driving licence is required to drive. Wear closed shoes and clothes you don't mind getting dusty.",
-    "included": "Fuel, guide, travel insurance, coat, glasses, snack, water and off road.",
-    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
-    "faq": [
-      {
-        "question": "How will I receive my tickets?",
-        "answer": "After you complete your purchase, you will receive an order confirmation email within a few minutes. This email will contain all the details of your purchase, including the event, date, and number of tickets. Please note we do not send tickets by post."
-      },
-      {
-        "question": "Can I book an excursion within 24 hours of its start time?",
-        "answer": "Yes, it possible. Please contact us or visit our office"
-      },
-      {
-        "question": "Will I be picked up at my hotel when a transfer is possible?",
-        "answer": "And where is the meeting point The exact meeting point for your excursion will be specified in your booking confirmation email. If a transfer service is included with your booking, we offer convenient hotel pickup. The availability of this service will depend on your hotel’s location and the specific excursion."
-      },
-      {
-        "question": "May I pay directly in cash when the tour / activity starts?",
-        "answer": "We offer online purchases on the platform. If you wish to buy with cash you can visit our office."
-      },
-      {
-        "question": "Do you offer discounts?",
-        "answer": "We generally cannot give any discounts due to the very high demand. We offer discount for group bookings. Please contact us"
-      },
-      {
-        "question": "What happens if the weather is too bad to go on the excursion?",
-        "answer": "If the weather is too bad to go on the excursion, it will be rescheduled or you will receive a full refund."
-      },
-      {
-        "question": "May I purchase a gift voucher?",
-        "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
-      }
-    ],
-    "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/669f8af38809e6376f061c20_af.webp",
-    "url": "https://www.excursionstenerife.es/tours/buggy-costa-adventure",
-    "seatsPerVehicle": 2,
-    "timeSlots": [
-      "12:00"
-    ],
-    "supplierId": "hub-buggy"
-  },
-  {
     "slug": "buggy-sunset-adventure",
-    "title": "Buggy — Sunset Adventure",
+    "title": "Buggy — Teide Sunset Adventure",
     "category": "buggy-quad",
     "group": "land",
     "duration": "3h",
@@ -1886,7 +1754,7 @@
       }
     ],
     "priceFrom": 180,
-    "description": "The same adrenaline as our south-coast buggy trip, timed to finish with the sunset. This 3-hour tour leaves from our base in Las Chafiras and winds through the villages and hills of southern Tenerife, the light turning golden as you go.\n\nYou drive your own buggy (price is per buggy for two, driver can swap), with fuel, guide, insurance, coat, goggles, a snack and water all included. The route is timed so you're out on the trails as the sun goes down — bring a camera.\n\nA valid driving licence is required to drive. Wear closed shoes and clothes you don't mind getting dusty.",
+    "description": "The same Teide buggy adventure, timed to finish with the sunset. Drive your own buggy up toward Teide National Park as the afternoon light turns golden, climbing through southern villages onto the volcano's slopes.\n\nYou'll reach the high mountain viewpoints just as the sun drops, with the island and ocean glowing below — one of the most spectacular sunsets on Tenerife. Price is per buggy for two (you can swap driver), including fuel, guide, insurance, coat, goggles, a snack and water.\n\nA valid driving licence is required to drive. Bring a jacket — it's much colder at altitude after sunset — plus closed shoes.",
     "included": "Fuel, guide, travel insurance, coat, glasses, snack, water and off road.",
     "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
     "faq": [
@@ -1924,72 +1792,6 @@
     "seatsPerVehicle": 2,
     "timeSlots": [
       "18:00"
-    ],
-    "supplierId": "hub-buggy"
-  },
-  {
-    "slug": "buggy-off-road",
-    "title": "Extreme Off Road Buggy Tenerife",
-    "category": "buggy-quad",
-    "group": "land",
-    "duration": "3h",
-    "languages": [
-      "Deutsch",
-      "English",
-      "Español",
-      "Français",
-      "Italiano",
-      "Neerlandés",
-      "Rumano",
-      "Русский"
-    ],
-    "minAge": 18,
-    "pricing": [
-      {
-        "label": "Per buggy (2 people)",
-        "price": 180,
-        "net": 80
-      }
-    ],
-    "priceFrom": 180,
-    "description": "This is the hardcore one. The Extreme Off-Road Buggy Adventure is a 3-hour trek through Tenerife's most challenging, rugged terrain — built to get the adrenaline flowing and push your limits.\n\nLess scenic cruise, more intense off-road workout: steep, dusty, technical trails with your own buggy and a guide leading the way. Price is per buggy for two (you can swap driver), with fuel, guide, insurance, coat, goggles, a snack and water included.\n\nA valid driving licence is required. Wear closed shoes and clothes you don't mind trashing.",
-    "included": "Fuel, guide, travel insurance, coat, glasses, snack, water and off road.",
-    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
-    "faq": [
-      {
-        "question": "How will I receive my tickets?",
-        "answer": "After you complete your purchase, you will receive an order confirmation email within a few minutes. This email will contain all the details of your purchase, including the event, date, and number of tickets. Please note we do not send tickets by post."
-      },
-      {
-        "question": "Can I book an excursion within 24 hours of its start time?",
-        "answer": "Yes, it possible. Please contact us or visit our office"
-      },
-      {
-        "question": "Will I be picked up at my hotel when a transfer is possible?",
-        "answer": "And where is the meeting point The exact meeting point for your excursion will be specified in your booking confirmation email. If a transfer service is included with your booking, we offer convenient hotel pickup. The availability of this service will depend on your hotel’s location and the specific excursion."
-      },
-      {
-        "question": "May I pay directly in cash when the tour / activity starts?",
-        "answer": "We offer online purchases on the platform. If you wish to buy with cash you can visit our office."
-      },
-      {
-        "question": "Do you offer discounts?",
-        "answer": "We generally cannot give any discounts due to the very high demand. We offer discount for group bookings. Please contact us"
-      },
-      {
-        "question": "What happens if the weather is too bad to go on the excursion?",
-        "answer": "If the weather is too bad to go on the excursion, it will be rescheduled or you will receive a full refund."
-      },
-      {
-        "question": "May I purchase a gift voucher?",
-        "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
-      }
-    ],
-    "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6688535ef6bd55c436857aea_buggy2.webp",
-    "url": "https://www.excursionstenerife.es/tours/buggy-off-road",
-    "seatsPerVehicle": 2,
-    "timeSlots": [
-      "10:00"
     ],
     "supplierId": "hub-buggy"
   },
@@ -3084,138 +2886,8 @@
     "supplierId": "nere"
   },
   {
-    "slug": "coastal-quads",
-    "title": "Coastal Quads Trip",
-    "category": "buggy-quad",
-    "group": "land",
-    "duration": "3h",
-    "languages": [
-      "Deutsch",
-      "English",
-      "Español",
-      "Français",
-      "Italiano",
-      "Neerlandés",
-      "Rumano",
-      "Русский"
-    ],
-    "minAge": 18,
-    "pricing": [
-      {
-        "label": "Per person",
-        "price": 120,
-        "net": 60
-      }
-    ],
-    "priceFrom": 120,
-    "description": "Feel the sea breeze on a quad ride along Tenerife's coastline — hidden trails and dirt roads hugging the ocean, aboard a modern, comfortable quad bike.\n\nA guide leads the way along the best coastal tracks, with plenty of stops for views and photos. A fun, accessible adventure that suits first-timers and confident riders alike.\n\nA valid driving licence is required to drive. Wear closed shoes and sunglasses, and bring sunscreen.",
-    "faq": [
-      {
-        "question": "How will I receive my tickets?",
-        "answer": "After you complete your purchase, you will receive an order confirmation email within a few minutes. This email will contain all the details of your purchase, including the event, date, and number of tickets. Please note we do not send tickets by post."
-      },
-      {
-        "question": "Can I book an excursion within 24 hours of its start time?",
-        "answer": "Yes, it possible. Please contact us or visit our office"
-      },
-      {
-        "question": "Will I be picked up at my hotel when a transfer is possible?",
-        "answer": "And where is the meeting point The exact meeting point for your excursion will be specified in your booking confirmation email. If a transfer service is included with your booking, we offer convenient hotel pickup. The availability of this service will depend on your hotel’s location and the specific excursion."
-      },
-      {
-        "question": "May I pay directly in cash when the tour / activity starts?",
-        "answer": "We offer online purchases on the platform. If you wish to buy with cash you can visit our office."
-      },
-      {
-        "question": "Do you offer discounts?",
-        "answer": "We generally cannot give any discounts due to the very high demand. We offer discount for group bookings. Please contact us"
-      },
-      {
-        "question": "What happens if the weather is too bad to go on the excursion?",
-        "answer": "If the weather is too bad to go on the excursion, it will be rescheduled or you will receive a full refund."
-      },
-      {
-        "question": "May I purchase a gift voucher?",
-        "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
-      }
-    ],
-    "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/68433b8f821e040215745400_coastal.jpg",
-    "url": "https://www.excursionstenerife.es/tours/coastal-quads",
-    "timeSlots": [
-      "12:00"
-    ],
-    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
-    "supplierId": "nere"
-  },
-  {
-    "slug": "quad-off-road-tour",
-    "title": "Quad — 100% Off-road Tour",
-    "category": "buggy-quad",
-    "group": "land",
-    "duration": "3h",
-    "languages": [
-      "Deutsch",
-      "English",
-      "Español",
-      "Français",
-      "Italiano",
-      "Neerlandés",
-      "Rumano",
-      "Русский"
-    ],
-    "minAge": 18,
-    "pricing": [
-      {
-        "label": "Per person",
-        "price": 120,
-        "net": 50
-      }
-    ],
-    "priceFrom": 120,
-    "description": "An epic 100% off-road quad journey deep into the Corona Forest — a UNESCO-protected area — with stunning views of Mount Teide along the way.\n\nThis one's all about the trails: dense pine forest, dirt tracks and big volcanic panoramas, with a guide leading and a helmet provided. Pure off-road, no tarmac filler.\n\nA valid driving licence is required to drive. Bring a jacket for the cooler forest altitude, plus closed shoes and sunglasses.",
-    "included": "・ Helmet",
-    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
-    "faq": [
-      {
-        "question": "How will I receive my tickets?",
-        "answer": "After you complete your purchase, you will receive an order confirmation email within a few minutes. This email will contain all the details of your purchase, including the event, date, and number of tickets. Please note we do not send tickets by post."
-      },
-      {
-        "question": "Can I book an excursion within 24 hours of its start time?",
-        "answer": "Yes, it possible. Please contact us or visit our office"
-      },
-      {
-        "question": "Will I be picked up at my hotel when a transfer is possible?",
-        "answer": "And where is the meeting point The exact meeting point for your excursion will be specified in your booking confirmation email. If a transfer service is included with your booking, we offer convenient hotel pickup. The availability of this service will depend on your hotel’s location and the specific excursion."
-      },
-      {
-        "question": "May I pay directly in cash when the tour / activity starts?",
-        "answer": "We offer online purchases on the platform. If you wish to buy with cash you can visit our office."
-      },
-      {
-        "question": "Do you offer discounts?",
-        "answer": "We generally cannot give any discounts due to the very high demand. We offer discount for group bookings. Please contact us"
-      },
-      {
-        "question": "What happens if the weather is too bad to go on the excursion?",
-        "answer": "If the weather is too bad to go on the excursion, it will be rescheduled or you will receive a full refund."
-      },
-      {
-        "question": "May I purchase a gift voucher?",
-        "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
-      }
-    ],
-    "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/66a0d6ce98f413ff7ebf222c_GetWebshopImage.webp",
-    "url": "https://www.excursionstenerife.es/tours/quad-off-road-tour",
-    "timeSlots": [
-      "10:00"
-    ],
-    "bookingPhone": "691 019 039",
-    "supplierId": "quad-explorer"
-  },
-  {
     "slug": "quad-sunset-tour",
-    "title": "Quad — Sunset Tour",
+    "title": "Quad — Teide Sunset Tour",
     "category": "buggy-quad",
     "group": "land",
     "duration": "3h",
@@ -3281,7 +2953,7 @@
   },
   {
     "slug": "quad-teide-tour",
-    "title": "Quads — 3 hours mount Teide tour",
+    "title": "Quad — Teide Day Tour",
     "category": "buggy-quad",
     "group": "land",
     "duration": "3h",
@@ -3338,70 +3010,6 @@
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/665832332bcef8b6be6adb7f_2.webp",
     "url": "https://www.excursionstenerife.es/tours/quad-teide-tour",
     "seatsPerVehicle": 2,
-    "timeSlots": [
-      "10:00"
-    ],
-    "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
-    "supplierId": "nere"
-  },
-  {
-    "slug": "quad-masca-tour",
-    "title": "Quads — Masca valley Gran Tour",
-    "category": "buggy-quad",
-    "group": "land",
-    "duration": "3h",
-    "languages": [
-      "Deutsch",
-      "English",
-      "Español",
-      "Français",
-      "Italiano",
-      "Neerlandés",
-      "Rumano",
-      "Русский"
-    ],
-    "minAge": 18,
-    "pricing": [
-      {
-        "label": "Per person",
-        "price": 135,
-        "net": 78
-      }
-    ],
-    "priceFrom": 135,
-    "description": "The Gran Tour heads for Masca — a wild ride through rugged terrain and some of the most dramatic scenery on the island, deep in the Teno mountains.\n\nLonger and more adventurous than the coastal routes, it rewards you with epic landscapes and proper off-road riding, with a guide leading throughout. For riders who want the full experience.\n\nA valid driving licence is required to drive. Wear closed shoes and sunglasses; bring a light jacket and sunscreen.",
-    "faq": [
-      {
-        "question": "How will I receive my tickets?",
-        "answer": "After you complete your purchase, you will receive an order confirmation email within a few minutes. This email will contain all the details of your purchase, including the event, date, and number of tickets. Please note we do not send tickets by post."
-      },
-      {
-        "question": "Can I book an excursion within 24 hours of its start time?",
-        "answer": "Yes, it possible. Please contact us or visit our office"
-      },
-      {
-        "question": "Will I be picked up at my hotel when a transfer is possible?",
-        "answer": "And where is the meeting point The exact meeting point for your excursion will be specified in your booking confirmation email. If a transfer service is included with your booking, we offer convenient hotel pickup. The availability of this service will depend on your hotel’s location and the specific excursion."
-      },
-      {
-        "question": "May I pay directly in cash when the tour / activity starts?",
-        "answer": "We offer online purchases on the platform. If you wish to buy with cash you can visit our office."
-      },
-      {
-        "question": "Do you offer discounts?",
-        "answer": "We generally cannot give any discounts due to the very high demand. We offer discount for group bookings. Please contact us"
-      },
-      {
-        "question": "What happens if the weather is too bad to go on the excursion?",
-        "answer": "If the weather is too bad to go on the excursion, it will be rescheduled or you will receive a full refund."
-      },
-      {
-        "question": "May I purchase a gift voucher?",
-        "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
-      }
-    ],
-    "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/66a69b900761259ff2733235_masca.webp",
-    "url": "https://www.excursionstenerife.es/tours/quad-masca-tour",
     "timeSlots": [
       "10:00"
     ],
