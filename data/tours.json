@@ -2300,16 +2300,11 @@
       {
         "label": "1 hour (1-2 people)",
         "price": 110,
-        "net": 40
-      },
-      {
-        "label": "40 minutes (1-2 people)",
-        "price": 90,
-        "net": 30
+        "net": 45
       }
     ],
-    "priceFrom": 90,
-    "description": "For a hit of speed and salt spray, nothing beats a jet ski safari along the Costa Adeje coast. Led by an instructor on the water, you'll ride out from the Las Américas area and skim the south coastline, taking in the cliffs and open Atlantic at full throttle.\n\nThe price covers a jet ski for two people — ride together or take turns — with a choice of a 40-minute or longer route. It's a guided safari: you simply follow the lead jet ski, so no experience is needed.\n\nBring a swimsuit, a towel and a waterproof phone case if you want photos.",
+    "priceFrom": 110,
+    "description": "For a hit of speed and salt spray, nothing beats a jet ski safari along the Costa Adeje coast. Led by an instructor on the water, you'll ride out from the Las Américas area and skim the south coastline, taking in the cliffs and open Atlantic at full throttle.\n\nThe price covers a full one-hour ride on a jet ski for two — ride together or take turns. It's a guided safari: you simply follow the lead jet ski, so no experience is needed.\n\nBring a swimsuit, a towel and a waterproof phone case if you want photos.",
     "meetingPoint": "Puerto Colón Marina, Costa Adeje",
     "faq": [
       {
