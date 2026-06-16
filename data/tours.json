@@ -2913,7 +2913,10 @@
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6659956066980b3e57ccf786_z.webp",
     "url": "https://www.excursionstenerife.es/tours/siam-park",
     "bookingPhone": "922 797 573 / 662 936 575",
-    "supplierId": "nere"
+    "supplierId": "nere",
+    "googleRating": 4.4,
+    "googleReviews": 37203,
+    "googleName": "Siam Park"
   },
   {
     "slug": "2parks-ticket-jungle-park-aqualand",

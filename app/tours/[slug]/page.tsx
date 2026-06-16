@@ -143,7 +143,18 @@ export default async function TourPage({
         <span className="inline-block text-[11px] font-semibold tracking-wide text-orange-400 mb-2">
           {categoryLabel}
         </span>
-        <h1 className="text-2xl sm:text-3xl font-bold mb-4 leading-tight">{tour.title}</h1>
+        <h1 className="text-2xl sm:text-3xl font-bold mb-3 leading-tight">{tour.title}</h1>
+
+        {tour.googleRating && (
+          <div className="flex items-center gap-1.5 text-sm mb-4">
+            <span className="text-amber-400">★</span>
+            <span className="font-semibold text-white">{tour.googleRating.toFixed(1)}</span>
+            {tour.googleReviews ? (
+              <span className="text-stone-400">· {tour.googleReviews.toLocaleString("en-US")} reviews</span>
+            ) : null}
+            <span className="text-stone-500">on Google{tour.googleName ? ` · ${tour.googleName}` : ""}</span>
+          </div>
+        )}
 
         <TourGallery images={images} title={tour.title} />
 
