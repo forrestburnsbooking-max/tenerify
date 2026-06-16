@@ -50,11 +50,24 @@ function TourCard({ tour }: { tour: Tour }) {
           <div className="w-full h-full flex items-center justify-center text-4xl text-stone-700">🌴</div>
         )}
       </div>
-      <div className="p-3 flex flex-col gap-1 flex-1">
+      <div className="p-3 flex flex-col gap-1.5 flex-1">
         <h3 className="text-sm font-semibold leading-snug line-clamp-2">{tour.title}</h3>
-        <div className="mt-auto pt-1 flex items-center justify-between">
+        {tour.rating && tour.rating >= 4.3 && (
+          <div className="flex items-center gap-1 text-xs">
+            <span className="text-amber-400">★</span>
+            <span className="font-semibold text-white">{tour.rating.toFixed(1)}</span>
+            {tour.reviewCount ? (
+              <span className="text-stone-500">({tour.reviewCount.toLocaleString("en-US")})</span>
+            ) : null}
+          </div>
+        )}
+        <div className="mt-auto pt-1 flex items-center justify-between gap-2">
           <span className="text-orange-400 font-semibold text-sm">{formatPriceFrom(tour)}</span>
-          {tour.duration && <span className="text-stone-500 text-xs">⏱ {tour.duration}</span>}
+          {tour.duration && (
+            <span className="text-stone-200 text-[11px] bg-white/10 px-2 py-1 rounded-full whitespace-nowrap">
+              ⏱ {tour.duration}
+            </span>
+          )}
         </div>
       </div>
     </Link>
