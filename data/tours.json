@@ -5068,5 +5068,43 @@
     "meetingPoint": "South Tenerife — departure point confirmed on booking",
     "bookingPhone": "691 827 597",
     "supplierId": "habana"
+  },
+  {
+    "slug": "jetski-extreme",
+    "title": "Extreme Jet Ski Safari",
+    "category": "jetski",
+    "group": "water",
+    "duration": "40 min or 1h",
+    "pricing": [
+      {
+        "label": "1 hour (1-2 people)",
+        "price": 100,
+        "net": 60
+      },
+      {
+        "label": "40 minutes (1-2 people)",
+        "price": 85,
+        "net": 50
+      }
+    ],
+    "priceFrom": 85,
+    "description": "For riders who want more than a cruise — the Extreme Jet Ski Safari opens up the throttle along Tenerife's south-west coast with a faster, more adrenaline-fuelled route.\n\nLed by an instructor on the water, you'll carve along the coastline and out over the open Atlantic, hitting top speed and jumping the wake — no licence or experience needed, just hold on. Ride a jet ski for two, or solo; choose 40 minutes or a full hour.\n\nBring a swimsuit, a towel and a waterproof phone case for the photos.",
+    "faq": [
+      {
+        "question": "How will I receive my tickets?",
+        "answer": "After you complete your purchase, you will receive an order confirmation email within a few minutes with all the details of your booking."
+      },
+      {
+        "question": "What happens if the weather is too bad?",
+        "answer": "If the weather is too bad to go on the excursion, it will be rescheduled or you will receive a full refund."
+      },
+      {
+        "question": "Do I need a licence or experience?",
+        "answer": "No — it's a guided safari, you follow the instructor. No licence or experience needed."
+      }
+    ],
+    "meetingPoint": "Puerto Colón, Costa Adeje",
+    "bookingPhone": "642 81 19 12",
+    "supplierId": "jetski-extreme"
   }
 ]
