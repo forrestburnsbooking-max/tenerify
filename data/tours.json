@@ -5003,7 +5003,11 @@
     "url": "https://flashjetski.com/en/",
     "seatsPerVehicle": 2,
     "bookingPhone": "666 141 121",
-    "supplierId": "flash-jetski"
+    "supplierId": "flash-jetski",
+    "rating": 4.7,
+    "reviewCount": 520,
+    "reviewSource": "Tripadvisor",
+    "reviewedName": "Flash Jet Ski"
   },
   {
     "slug": "cabrio-bus-teide-masca",
