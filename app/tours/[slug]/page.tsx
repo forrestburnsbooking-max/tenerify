@@ -12,6 +12,14 @@ import TourGallery from "@/components/TourGallery";
 import FaqAccordion from "@/components/FaqAccordion";
 
 const BASE_URL = "https://tenerify.ai";
+const FALLBACK_IMAGE = "/chat-bg.jpg"; // used when a tour has no photo yet, so Product/OG always have an image
+
+// Absolute image URLs for schema/OG; falls back to a generic image if the tour has none
+function tourSchemaImages(tour: { imageUrl?: string; images?: string[] }): string[] {
+  const imgs = tourImages(tour as Parameters<typeof tourImages>[0]);
+  const list = imgs.length ? imgs : [FALLBACK_IMAGE];
+  return list.map((u) => (u.startsWith("http") ? u : `${BASE_URL}${u}`));
+}
 
 // Build a clean, single-line meta description (~155 chars, cut on a word boundary)
 function metaFromDescription(desc?: string): string {
@@ -38,7 +46,7 @@ export async function generateMetadata({
   const title = `${tour.title} — book online | Tenerify.ai`;
   const description = metaFromDescription(tour.description)
     || `Book ${tour.title} in Tenerife Sur. ${formatPriceFrom(tour)}.`;
-  const images = tourImages(tour);
+  const ogImage = tourSchemaImages(tour)[0];
 
   return {
     title,
@@ -49,14 +57,14 @@ export async function generateMetadata({
       description,
       url: `/tours/${slug}`,
       siteName: "Tenerify.ai",
-      images: images.length ? [{ url: images[0], alt: tour.title }] : undefined,
+      images: [{ url: ogImage, alt: tour.title }],
       type: "website",
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      images: images.length ? [images[0]] : undefined,
+      images: [ogImage],
     },
   };
 }
@@ -80,7 +88,7 @@ export default async function TourPage({
     "@type": "Product",
     name: tour.title,
     description: tour.description?.replace(/・/g, " ") ?? tour.title,
-    image: images.map((i) => i),
+    image: tourSchemaImages(tour),
     brand: { "@type": "Brand", name: "Tenerify.ai" },
     category: categoryLabel,
     offers: {
