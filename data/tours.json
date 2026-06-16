@@ -2298,12 +2298,12 @@
     "minAge": 16,
     "pricing": [
       {
-        "label": "60 min (2 people)",
+        "label": "1 hour (1-2 people)",
         "price": 100,
         "net": 40
       },
       {
-        "label": "40 min (2 people)",
+        "label": "40 minutes (1-2 people)",
         "price": 85,
         "net": 30
       }
@@ -4644,27 +4644,17 @@
     "minAge": 16,
     "pricing": [
       {
-        "label": "SNG 60 min (1 person)",
-        "price": 110,
-        "net": 50
-      },
-      {
-        "label": "DBL 60 min (2 people)",
-        "price": 130,
+        "label": "1 hour (1-2 people)",
+        "price": 100,
         "net": 60
       },
       {
-        "label": "SNG 40 min (1 person)",
-        "price": 95,
-        "net": 40
-      },
-      {
-        "label": "DBL 40 min (2 people)",
-        "price": 115,
+        "label": "40 minutes (1-2 people)",
+        "price": 85,
         "net": 50
       }
     ],
-    "priceFrom": 95,
+    "priceFrom": 85,
     "description": "Explore Tenerife's south coast on a powerful Sea-Doo jet ski, setting off from Marina del Sur in Las Galletas. A guide leads the safari along the coastline, with incredible open-ocean views the whole way.\n\nEverything's included — jet ski, fuel, insurance, life jacket and wetsuit, guide, and free pick-up and drop-off. Choose a single or double ski. It's a guided safari, so no experience is required; just follow the lead.\n\nBring a swimsuit and a towel; a waterproof phone case is handy for photos.",
     "included": "Jet ski, fuel, insurance, life jacket and wetsuit, guide, free pick-up/drop-off in South Tenerife, soft drinks.",
     "meetingPoint": "Marina del Sur, Av. del Litoral, Pantalán Nº4, Las Galletas",

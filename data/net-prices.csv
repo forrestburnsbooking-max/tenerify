@@ -142,9 +142,7 @@ lina-mizendoha,Adult,lina-mizendoha,55,35
 lina-mizendoha,Child,lina-mizendoha,40,25
 habana-del-sol,Adult,habana,60,35
 habana-del-sol,Child,habana,40,25
-jet-ski-puerto-colon,60 min (2 people),jetski-puerto-colon,100,40
-jet-ski-puerto-colon,40 min (2 people),jetski-puerto-colon,85,30
-jetski-las-galletas,SNG 60 min (1 person),flash-jetski,110,50
-jetski-las-galletas,DBL 60 min (2 people),flash-jetski,130,60
-jetski-las-galletas,SNG 40 min (1 person),flash-jetski,95,40
-jetski-las-galletas,DBL 40 min (2 people),flash-jetski,115,50
+jet-ski-puerto-colon,1 hour,jetski-puerto-colon,100,40
+jet-ski-puerto-colon,40 minutes,jetski-puerto-colon,85,30
+jetski-las-galletas,1 hour,flash-jetski,100,60
+jetski-las-galletas,40 minutes,flash-jetski,85,50
