@@ -2846,7 +2846,10 @@
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/666b0ec62605d8e22d009378_G.webp",
     "url": "https://www.excursionstenerife.es/tours/loro-parque",
     "bookingPhone": "922 797 573 / 662 936 575",
-    "supplierId": "nere"
+    "supplierId": "nere",
+    "googleRating": 4.6,
+    "googleReviews": 89540,
+    "googleName": "Loro Parque"
   },
   {
     "slug": "siam-park",
