@@ -5088,7 +5088,7 @@
       }
     ],
     "priceFrom": 85,
-    "description": "For riders who want more than a cruise — the Extreme Jet Ski Safari opens up the throttle along Tenerife's south-west coast with a faster, more adrenaline-fuelled route.\n\nLed by an instructor on the water, you'll carve along the coastline and out over the open Atlantic, hitting top speed and jumping the wake — no licence or experience needed, just hold on. Ride a jet ski for two, or solo; choose 40 minutes or a full hour.\n\nBring a swimsuit, a towel and a waterproof phone case for the photos.",
+    "description": "Tenerife's south-west coast at full throttle. The Extreme Jet Ski Safari runs in small groups (max 4 skis) with a multilingual guide leading the way — so you get real speed and attention, not a crowd.\n\nFrom Puerto Colón you'll carve along the Costa Adeje coast toward La Caleta and the offshore fish farms, where dolphins are often spotted, with the longer ride pushing on toward Palm Mar. Powerful Sea-Doo skis, photos of your ride included, and no licence or experience needed — just hold on.\n\nRide solo or two-up; choose 40 minutes or a full hour. Bring a swimsuit, a towel and a waterproof phone case.",
     "faq": [
       {
         "question": "How will I receive my tickets?",
@@ -5103,8 +5103,9 @@
         "answer": "No — it's a guided safari, you follow the instructor. No licence or experience needed."
       }
     ],
-    "meetingPoint": "Puerto Colón, Costa Adeje",
+    "meetingPoint": "Puerto Colón Harbour — Pantalán 7, Costa Adeje",
     "bookingPhone": "642 81 19 12",
-    "supplierId": "jetski-extreme"
+    "supplierId": "jetski-extreme",
+    "imageUrl": "/images/tours/jetski-extreme.jpg"
   }
 ]
