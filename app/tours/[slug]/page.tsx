@@ -145,14 +145,14 @@ export default async function TourPage({
         </span>
         <h1 className="text-2xl sm:text-3xl font-bold mb-3 leading-tight">{tour.title}</h1>
 
-        {tour.googleRating && (
+        {tour.rating && tour.rating >= 4.3 && (
           <div className="flex items-center gap-1.5 text-sm mb-4">
             <span className="text-amber-400">★</span>
-            <span className="font-semibold text-white">{tour.googleRating.toFixed(1)}</span>
-            {tour.googleReviews ? (
-              <span className="text-stone-400">· {tour.googleReviews.toLocaleString("en-US")} reviews</span>
+            <span className="font-semibold text-white">{tour.rating.toFixed(1)}</span>
+            {tour.reviewCount ? (
+              <span className="text-stone-400">· {tour.reviewCount.toLocaleString("en-US")} reviews</span>
             ) : null}
-            <span className="text-stone-500">on Google{tour.googleName ? ` · ${tour.googleName}` : ""}</span>
+            <span className="text-stone-500">on {tour.reviewSource ?? "Google"}{tour.reviewedName ? ` · ${tour.reviewedName}` : ""}</span>
           </div>
         )}
 

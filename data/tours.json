@@ -62,7 +62,11 @@
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6693ee4c7d053ca0b4a60795_AAOlaDivingATlanticoExcursiones.webp",
     "url": "https://www.excursionstenerife.es/tours/diving-puerto-colon",
     "bookingPhone": "671 408 970",
-    "supplierId": "atlantis"
+    "supplierId": "atlantis",
+    "rating": 4.6,
+    "reviewCount": 303,
+    "reviewSource": "Tripadvisor",
+    "reviewedName": "Diving Atlantis Tenerife"
   },
   {
     "slug": "fly-fish-puerto-colon",
@@ -190,7 +194,11 @@
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/668d96374c23e4a9c36b623b_AHELIDREAMEXCURSIONHELICPOTERO.webp",
     "url": "https://www.excursionstenerife.es/tours/helidream-helicopter-tour",
     "bookingPhone": "630 315 422",
-    "supplierId": "helidreams"
+    "supplierId": "helidreams",
+    "rating": 4.7,
+    "reviewCount": 349,
+    "reviewSource": "Tripadvisor",
+    "reviewedName": "Helidream Helicopters"
   },
   {
     "slug": "paragliding",
@@ -393,7 +401,11 @@
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6692a96afac01307bd9434de_kayak-snorkel-3.webp",
     "url": "https://www.excursionstenerife.es/tours/safari-kayak-tour-los-cristianos",
     "bookingPhone": "671 408 970",
-    "supplierId": "atlantis"
+    "supplierId": "atlantis",
+    "rating": 4.6,
+    "reviewCount": 303,
+    "reviewSource": "Tripadvisor",
+    "reviewedName": "Diving Atlantis Tenerife"
   },
   {
     "slug": "kayaking-stand-up-paddle-los-cristianos",
@@ -458,7 +470,11 @@
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6692b5742f10ee15ab7c4ab3_DDKayakDivingAtlantis.webp",
     "url": "https://www.excursionstenerife.es/tours/kayaking-stand-up-paddle-los-cristianos",
     "supplierId": "atlantis",
-    "bookingPhone": "671 408 970"
+    "bookingPhone": "671 408 970",
+    "rating": 4.6,
+    "reviewCount": 303,
+    "reviewSource": "Tripadvisor",
+    "reviewedName": "Diving Atlantis Tenerife"
   },
   {
     "slug": "stand-up-paddle-la-caleta",
@@ -523,7 +539,11 @@
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/668d92fd6769e15354a7c086_1.webp",
     "url": "https://www.excursionstenerife.es/tours/stand-up-paddle-la-caleta",
     "supplierId": "atlantis",
-    "bookingPhone": "671 408 970"
+    "bookingPhone": "671 408 970",
+    "rating": 4.6,
+    "reviewCount": 303,
+    "reviewSource": "Tripadvisor",
+    "reviewedName": "Diving Atlantis Tenerife"
   },
   {
     "slug": "banana-puerto-colon",
@@ -1129,7 +1149,11 @@
     ],
     "meetingPoint": "Gate 6, Puerto Colón Marina, Costa Adeje",
     "bookingPhone": "661 553 308",
-    "supplierId": "monte-cristo"
+    "supplierId": "monte-cristo",
+    "rating": 4.8,
+    "reviewCount": 2854,
+    "reviewSource": "Tripadvisor",
+    "reviewedName": "Monte Cristo Catamaran"
   },
   {
     "slug": "neptuno-boat",
@@ -2847,9 +2871,10 @@
     "url": "https://www.excursionstenerife.es/tours/loro-parque",
     "bookingPhone": "922 797 573 / 662 936 575",
     "supplierId": "nere",
-    "googleRating": 4.6,
-    "googleReviews": 89540,
-    "googleName": "Loro Parque"
+    "rating": 4.6,
+    "reviewCount": 89540,
+    "reviewSource": "Google",
+    "reviewedName": "Loro Parque"
   },
   {
     "slug": "siam-park",
@@ -2917,9 +2942,10 @@
     "url": "https://www.excursionstenerife.es/tours/siam-park",
     "bookingPhone": "922 797 573 / 662 936 575",
     "supplierId": "nere",
-    "googleRating": 4.4,
-    "googleReviews": 37203,
-    "googleName": "Siam Park"
+    "rating": 4.4,
+    "reviewCount": 37203,
+    "reviewSource": "Google",
+    "reviewedName": "Siam Park"
   },
   {
     "slug": "2parks-ticket-jungle-park-aqualand",

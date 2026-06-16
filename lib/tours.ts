@@ -45,9 +45,10 @@ export type Tour = {
   bookingPhone?: string;
   depositPercent?: number;
   supplierId?: string;
-  googleRating?: number; // Google rating of the operator (or venue, for parks) — display-only social proof
-  googleReviews?: number;
-  googleName?: string; // whose rating it is (operator/venue name)
+  rating?: number; // operator/venue review rating — display-only social proof
+  reviewCount?: number;
+  reviewSource?: string; // where the rating is from: "Google", "Tripadvisor", etc.
+  reviewedName?: string; // whose rating it is (operator/venue name)
 };
 
 // Top-level groups (Water / Land / Air / Shows / Rental)
