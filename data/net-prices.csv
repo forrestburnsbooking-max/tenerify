@@ -70,7 +70,6 @@ teide-tour-cable-car,Child,nere,50,35
 santa-cruz--la-laguna--anaga,Adult,nere,85,50
 santa-cruz--la-laguna--anaga,Child,nere,70,45
 booster-pack-puerto-colon,Per person,watersport,110,45
-jet-ski-puerto-colon,For 2 people,jetski-puerto-colon,100,40
 watersport-pack-puerto-colon,Per person,watersport,90,54
 aqualand,Adult,nere,36,
 aqualand,Child (5-10),nere,29,
@@ -125,8 +124,6 @@ soul-jeep-self-drive-safari,Per jeep (1-2 people),soul-jeep,290,130
 soul-jeep-self-drive-safari,Per jeep (3-4 people),soul-jeep,310,150
 soul-jeep-passenger-tour,Per person,soul-jeep,120,65
 soul-jeep-passenger-tour,Additional passenger,soul-jeep,90,45
-jetski-las-galletas,SNG (1 person),flash-jetski,110,50
-jetski-las-galletas,DBL (2 people),flash-jetski,130,60
 cabrio-bus-teide-masca,Adult,nere,80,55
 cabrio-bus-teide-masca,Child,nere,60,45
 galatea-boat,Adult,galatea,50,25
@@ -145,3 +142,9 @@ lina-mizendoha,Adult,lina-mizendoha,55,35
 lina-mizendoha,Child,lina-mizendoha,40,25
 habana-del-sol,Adult,habana,60,35
 habana-del-sol,Child,habana,40,25
+jet-ski-puerto-colon,60 min (2 people),jetski-puerto-colon,100,40
+jet-ski-puerto-colon,40 min (2 people),jetski-puerto-colon,85,30
+jetski-las-galletas,SNG 60 min (1 person),flash-jetski,110,50
+jetski-las-galletas,DBL 60 min (2 people),flash-jetski,130,60
+jetski-las-galletas,SNG 40 min (1 person),flash-jetski,95,40
+jetski-las-galletas,DBL 40 min (2 people),flash-jetski,115,50

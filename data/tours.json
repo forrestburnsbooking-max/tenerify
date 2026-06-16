@@ -2298,12 +2298,17 @@
     "minAge": 16,
     "pricing": [
       {
-        "label": "For 2 people",
+        "label": "60 min (2 people)",
         "price": 100,
         "net": 40
+      },
+      {
+        "label": "40 min (2 people)",
+        "price": 85,
+        "net": 30
       }
     ],
-    "priceFrom": 100,
+    "priceFrom": 85,
     "description": "For a hit of speed and salt spray, nothing beats a jet ski safari along the Costa Adeje coast. Led by an instructor on the water, you'll ride out from the Las Américas area and skim the south coastline, taking in the cliffs and open Atlantic at full throttle.\n\nThe price covers a jet ski for two people — ride together or take turns — with a choice of a 40-minute or longer route. It's a guided safari: you simply follow the lead jet ski, so no experience is needed.\n\nBring a swimsuit, a towel and a waterproof phone case if you want photos.",
     "meetingPoint": "Puerto Colón Marina, Costa Adeje",
     "faq": [
@@ -4639,17 +4644,27 @@
     "minAge": 16,
     "pricing": [
       {
-        "label": "SNG (1 person)",
+        "label": "SNG 60 min (1 person)",
         "price": 110,
         "net": 50
       },
       {
-        "label": "DBL (2 people)",
+        "label": "DBL 60 min (2 people)",
         "price": 130,
         "net": 60
+      },
+      {
+        "label": "SNG 40 min (1 person)",
+        "price": 95,
+        "net": 40
+      },
+      {
+        "label": "DBL 40 min (2 people)",
+        "price": 115,
+        "net": 50
       }
     ],
-    "priceFrom": 110,
+    "priceFrom": 95,
     "description": "Explore Tenerife's south coast on a powerful Sea-Doo jet ski, setting off from Marina del Sur in Las Galletas. A guide leads the safari along the coastline, with incredible open-ocean views the whole way.\n\nEverything's included — jet ski, fuel, insurance, life jacket and wetsuit, guide, and free pick-up and drop-off. Choose a single or double ski. It's a guided safari, so no experience is required; just follow the lead.\n\nBring a swimsuit and a towel; a waterproof phone case is handy for photos.",
     "included": "Jet ski, fuel, insurance, life jacket and wetsuit, guide, free pick-up/drop-off in South Tenerife, soft drinks.",
     "meetingPoint": "Marina del Sur, Av. del Litoral, Pantalán Nº4, Las Galletas",
