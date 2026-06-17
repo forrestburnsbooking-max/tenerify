@@ -506,7 +506,7 @@ export default function Home() {
                 <span className="text-orange-400">.ai</span>
               </h1>
               <p className="text-white/70 text-sm font-medium tracking-widest uppercase mt-3">
-                {isReturning ? "Welcome back 👋" : "South Tenerife · AI concierge"}
+                {isReturning ? "Welcome back 👋" : "Your local AI friend"}
               </p>
             </div>
 
@@ -559,7 +559,7 @@ export default function Home() {
           <h1 className="font-extrabold text-base leading-none tracking-tight">
             Tenerify<span className="text-orange-400">.ai</span>
           </h1>
-          <p className="text-white/80 text-xs mt-0.5 font-medium">South Tenerife · AI concierge</p>
+          <p className="text-white/80 text-xs mt-0.5 font-medium">Your local AI friend</p>
         </div>
       </header>
 
