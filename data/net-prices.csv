@@ -2,7 +2,7 @@ slug,label,supplierId,pvp,net
 diving-puerto-colon,Per person,atlantis,75,35
 fly-fish-puerto-colon,Per person,watersport,18,12
 helidream-helicopter-tour,Per person,helidreams,98,83
-paragliding,Per person,rob-paragliding,85,46
+paragliding,Per person,rob-paragliding,110,60
 parascending-puerto-colon,Adult,aj-fly,60,40
 parascending-puerto-colon,Child,aj-fly,60,40
 safari-kayak-tour-los-cristianos,Adult,atlantis,45,25
@@ -51,19 +51,19 @@ sonador-boat,Child (3-9),sonador,27.5,12.5
 sonador-boat,Baby (0-2),sonador,0,12.5
 buggy-teide-adventure,Per buggy (2 people),hub-buggy,180,80
 buggy-sunset-adventure,Per buggy (2 people),hub-buggy,180,80
-teide-icod-garachico-masca,Adult,nere,90,55
-teide-icod-garachico-masca,Child,nere,75,50
+teide-icod-garachico-masca,Adult,nere,58,46.4
+teide-icod-garachico-masca,Child,nere,45,36
 island-tour-masca,Per person,nere,50,33
 la-gomera,Adult,nere,145,125
 la-gomera,Child,nere,118,105.25
-teide-by-night,Adult,ozzy,75,38
-teide-by-night,Child,ozzy,60,33
-teide-tour-cable-car,Adult,nere,60,40
-teide-tour-cable-car,Child,nere,50,35
+teide-by-night,Adult,ozzy,70,48
+teide-by-night,Child,ozzy,60,38
+teide-tour-cable-car,Adult,nere,46,45
+teide-tour-cable-car,Child,nere,36,35
 santa-cruz--la-laguna--anaga,Adult,nere,85,50
 santa-cruz--la-laguna--anaga,Child,nere,70,45
 booster-pack-puerto-colon,Per person,watersport,110,45
-jet-ski-puerto-colon,1 hour (1-2 people),jetski-puerto-colon,110,45
+jet-ski-puerto-colon,1 hour (1-2 people),jetski-puerto-colon,100,60
 watersport-pack-puerto-colon,Per person,watersport,90,54
 aqualand,Adult,nere,36,
 aqualand,Child (5-10),nere,29,
@@ -84,8 +84,8 @@ twin-ticket-loro-parque-siam-park,Adult,nere,78,
 twin-ticket-loro-parque-siam-park,Child (3-11),nere,57,
 twin-ticket-loro-parque-siam-park,Adult + bus transfer,nere,98,
 twin-ticket-loro-parque-siam-park,Child + bus transfer,nere,73,
-quad-sunset-tour,Per person,quadsquad,120,65
-quad-teide-tour,For 2 people,quadsquad,100,68
+quad-sunset-tour,Per person,quadsquad,100,60
+quad-teide-tour,For 2 people,quadsquad,120,60
 citroen-c3-car-rental,Per person,aliscar,62,43.4
 citroen-cactus-automatic-car-rental,Per person,aliscar,65,45.5
 citroen-grand-picasso-car-rental,Per person,aliscar,100,70
@@ -118,7 +118,7 @@ soul-jeep-self-drive-safari,Per jeep (1-2 people),soul-jeep,290,130
 soul-jeep-self-drive-safari,Per jeep (3-4 people),soul-jeep,310,150
 soul-jeep-passenger-tour,Per person,soul-jeep,120,65
 soul-jeep-passenger-tour,Additional passenger,soul-jeep,90,45
-jetski-las-galletas,1 hour (1-2 people),flash-jetski,110,60
+jetski-las-galletas,1 hour (1-2 people),flash-jetski,100,60
 jetski-las-galletas,40 minutes (1-2 people),flash-jetski,90,50
 cabrio-bus-teide-masca,Adult,nere,80,55
 cabrio-bus-teide-masca,Child,nere,60,45
