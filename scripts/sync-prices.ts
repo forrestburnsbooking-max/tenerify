@@ -64,3 +64,23 @@ for (const tour of tours) {
 
 fs.writeFileSync(toursPath, JSON.stringify(tours, null, 2) + "\n");
 console.log(`✓ Updated ${updated} tours, ${skipped} pricing items not found in CSV`);
+
+// Margin check — surface likely typos (net at/above price, or a very thin margin)
+const warnings: string[] = [];
+for (const tour of tours) {
+  for (const item of tour.pricing) {
+    if (item.net == null || item.price <= 0) continue;
+    const margin = item.price - item.net;
+    if (item.net > item.price) {
+      warnings.push(`  🔴 ${tour.slug} / ${item.label}: net €${item.net} > price €${item.price} — selling BELOW cost!`);
+    } else if (margin < item.price * 0.15) {
+      warnings.push(`  ⚠️  ${tour.slug} / ${item.label}: thin margin €${margin.toFixed(2)} (price €${item.price}, net €${item.net})`);
+    }
+  }
+}
+if (warnings.length) {
+  console.log(`\n⚠️  Margin check — ${warnings.length} tier(s) to review (confirm these are intentional):`);
+  console.log(warnings.join("\n"));
+} else {
+  console.log("✓ Margin check: all tiers have a healthy margin");
+}
