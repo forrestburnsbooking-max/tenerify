@@ -72,9 +72,9 @@ export async function POST(req: NextRequest) {
     const tour = slug ? getTourBySlug(slug) : null;
     const meetingPoint = tour?.meetingPoint ?? "";
 
-    // Discount guardrails: never on Nere (fixed-price parks/excursions), cap 9%,
+    // Discount guardrails: only buggy/quad and jet ski tours, cap 9%,
     // and only when we could verify the tour. Fail closed if the tour is unknown.
-    const discountable = !!tour && tour.supplierId !== "nere";
+    const discountable = !!tour && (tour.category === "buggy-quad" || tour.category === "jetski");
     const effectiveDiscount = discountable ? Math.min(Math.max(discountPercent, 0), 9) : 0;
     const discountedPrice = Math.round(priceEur * (1 - effectiveDiscount / 100) * 100) / 100;
     const discountNote = effectiveDiscount > 0 ? `${effectiveDiscount}% discount applied (was €${priceEur})` : "";

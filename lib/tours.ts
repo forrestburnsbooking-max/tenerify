@@ -145,8 +145,8 @@ export function getTours(): string {
           const excPart = t.notIncluded ? ` | NOT included: ${t.notIncluded.slice(0, 200)}` : "";
           const slotsPart = t.timeSlots?.length ? ` | timeSlots: ${t.timeSlots.join(", ")}` : "";
           const depositPart = t.depositPercent ? ` | 💳 ${t.depositPercent}% deposit online, rest paid on pickup` : "";
-          const noDiscountPart = t.supplierId === "nere" ? ` | 🔒 NO DISCOUNT (fixed price)` : "";
-          lines.push(`    • [slug:${t.slug}] ${t.title}${durPart} | ${pricePart}${agePart}${incPart}${excPart}${slotsPart}${depositPart}${noDiscountPart}`);
+          const discountOkPart = (t.category === "buggy-quad" || t.category === "jetski") ? ` | 🏷️ 8% chat discount available` : "";
+          lines.push(`    • [slug:${t.slug}] ${t.title}${durPart} | ${pricePart}${agePart}${incPart}${excPart}${slotsPart}${depositPart}${discountOkPart}`);
           if (t.description) {
             lines.push(`      ${t.description.slice(0, 500)}`);
           }
