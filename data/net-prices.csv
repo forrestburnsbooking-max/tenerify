@@ -2,13 +2,6 @@ slug,label,supplierId,pvp,net
 diving-puerto-colon,Per person,atlantis,75,35
 fly-fish-puerto-colon,Per person,watersport,18,12
 helidream-helicopter-tour,Per person,helidreams,98,83
-centro-hipico-xanadu,Adult,xanado,45,33.75
-centro-hipico-xanadu,Child,xanado,45,33.75
-karting-club-tenerife,Adult,karting-club-tenerife,35,24.5
-karting-club-tenerife,Child,karting-club-tenerife,20,14
-karting-club-tenerife,Kid,karting-club-tenerife,18,12.6
-karting-las-americas,Adult,karting-adeje,20,14
-karting-las-americas,Child,karting-adeje,15,10.5
 paragliding,Per person,rob-paragliding,85,46
 parascending-puerto-colon,Adult,aj-fly,60,40
 parascending-puerto-colon,Child,aj-fly,60,40
@@ -70,6 +63,7 @@ teide-tour-cable-car,Child,nere,50,35
 santa-cruz--la-laguna--anaga,Adult,nere,85,50
 santa-cruz--la-laguna--anaga,Child,nere,70,45
 booster-pack-puerto-colon,Per person,watersport,110,45
+jet-ski-puerto-colon,1 hour (1-2 people),jetski-puerto-colon,110,45
 watersport-pack-puerto-colon,Per person,watersport,90,54
 aqualand,Adult,nere,36,
 aqualand,Child (5-10),nere,29,
@@ -124,6 +118,8 @@ soul-jeep-self-drive-safari,Per jeep (1-2 people),soul-jeep,290,130
 soul-jeep-self-drive-safari,Per jeep (3-4 people),soul-jeep,310,150
 soul-jeep-passenger-tour,Per person,soul-jeep,120,65
 soul-jeep-passenger-tour,Additional passenger,soul-jeep,90,45
+jetski-las-galletas,1 hour (1-2 people),flash-jetski,110,60
+jetski-las-galletas,40 minutes (1-2 people),flash-jetski,90,50
 cabrio-bus-teide-masca,Adult,nere,80,55
 cabrio-bus-teide-masca,Child,nere,60,45
 galatea-boat,Adult,galatea,50,25
@@ -136,14 +132,12 @@ gulliver-boat,Child,gulliver,49,30
 skyline-cruiser,Adult,skyline-cruiser,70,45
 skyline-cruiser,Child,skyline-cruiser,50,35
 white-dream,Adult,white-dream,60,35
+white-dream,Child,white-dream,40,
 mola-sailboat,Adult,mola-sailboat,60,30
 mola-sailboat,Child,mola-sailboat,40,20
 lina-mizendoha,Adult,lina-mizendoha,55,35
 lina-mizendoha,Child,lina-mizendoha,40,25
 habana-del-sol,Adult,habana,60,35
 habana-del-sol,Child,habana,40,25
-jetski-las-galletas,1 hour,flash-jetski,110,60
-jetski-las-galletas,40 minutes,flash-jetski,90,50
-jetski-extreme,1 hour,jetski-extreme,110,60
-jetski-extreme,40 minutes,jetski-extreme,90,50
-jet-ski-puerto-colon,1 hour,jetski-puerto-colon,110,45
+jetski-extreme,1 hour (1-2 people),jetski-extreme,110,60
+jetski-extreme,40 minutes (1-2 people),jetski-extreme,90,50

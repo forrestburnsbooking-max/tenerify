@@ -41,6 +41,10 @@ for (const tour of tours) {
       skipped++;
       continue;
     }
+    if (row.pvp !== "") {
+      item.price = parseFloat(row.pvp);
+      touched = true;
+    }
     if (row.net !== "") {
       item.net = parseFloat(row.net);
       touched = true;
@@ -50,6 +54,10 @@ for (const tour of tours) {
       touched = true;
     }
   }
+
+  // priceFrom = lowest non-zero tier price — the true "from €X" (ignores free baby tiers)
+  const positive = tour.pricing.map((p) => p.price).filter((p) => p > 0);
+  if (positive.length) tour.priceFrom = Math.min(...positive);
 
   if (touched) updated++;
 }
