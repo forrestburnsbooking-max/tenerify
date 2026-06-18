@@ -919,7 +919,7 @@
     ],
     "bookingPhone": "922 716 864",
     "supplierId": "freebird",
-    "rating": 4.0,
+    "rating": 4,
     "reviewCount": 1996,
     "reviewSource": "Tripadvisor",
     "reviewedName": "Freebird Catamaran"
@@ -1079,7 +1079,7 @@
     "meetingPoint": "Gate 9, Puerto Colón Marina, Costa Adeje",
     "bookingPhone": "822 200 420",
     "supplierId": "maxicat",
-    "rating": 4.0,
+    "rating": 4,
     "reviewCount": 1035,
     "reviewSource": "Tripadvisor",
     "reviewedName": "Maxicat Catamaran"
@@ -2508,7 +2508,7 @@
         "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
       }
     ],
-    "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/668eae630e942299bb28a2f1_Jet_Bike7.webp",
+    "imageUrl": "/images/tours/jetski.webp",
     "url": "https://www.excursionstenerife.es/tours/jet-ski-puerto-colon",
     "seatsPerVehicle": 2,
     "timeSlots": [
@@ -5498,7 +5498,7 @@
       }
     ],
     "priceFrom": 100,
-    "description": "Ultimate Quads runs the most powerful machines on the island — for riders who want the real adrenaline, not a gentle cruise. A guided quad safari across Tenerife's volcanic scenery on top-spec kit.\n\nPrice is for one rider (single) or two (double). The guide leads the way and no off-road experience is needed beyond a short briefing.\n\nA valid driving licence (category B or A) is required to drive. Wear closed shoes and sunglasses, and bring sunscreen.",
+    "description": "Ultimate Quads runs the most powerful, best-kept quads in the south — small groups, local guides, and three routes at one price: the **Teide** ride into the volcanic highlands, the **Sunset** tour for golden-hour views, or the **Coastal Off-Road** trail for pure dust and adrenaline.\n\nEvery tour includes a professional guide, helmet, insurance, a full safety briefing and photo stops, on modern high-performance machines that suit first-timers and experienced riders alike. Pickup available around Playa de las Américas, Los Cristianos and Costa Adeje.\n\nA valid driving licence (category B or A) is required to drive; minimum age 18. Wear closed shoes and sunglasses, and bring sunscreen.",
     "faq": [
       {
         "question": "What is your cancellation policy?",
@@ -5513,10 +5513,12 @@
         "answer": "If the weather is too bad to go, it will be rescheduled or you will receive a full refund."
       }
     ],
-    "meetingPoint": "South Tenerife — departure point confirmed on booking",
+    "meetingPoint": "South Tenerife — pickup around Las Américas / Los Cristianos / Costa Adeje",
     "supplierId": "ultimate-quads",
     "rating": 4.8,
     "reviewSource": "Google",
-    "reviewedName": "Ultimate Quads"
+    "reviewedName": "Ultimate Quads",
+    "bookingPhone": "711 08 90 76",
+    "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/66a0d644f7ecd40ff346b374_AtrakcyjnaTeneryfa.pl-Quad-El-Teide-noca-1-600x450.webp"
   }
 ]
