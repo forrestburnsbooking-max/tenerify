@@ -145,7 +145,7 @@ export default async function TourPage({
         </span>
         <h1 className="text-2xl sm:text-3xl font-bold mb-3 leading-tight">{tour.title}</h1>
 
-        {tour.rating && tour.rating >= 4.3 && (
+        {tour.rating && tour.rating >= 4.0 && (
           <div className="flex items-center gap-1.5 text-sm mb-4">
             <span className="text-amber-400">★</span>
             <span className="font-semibold text-white">{tour.rating.toFixed(1)}</span>

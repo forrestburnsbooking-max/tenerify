@@ -52,7 +52,7 @@ function TourCard({ tour }: { tour: Tour }) {
       </div>
       <div className="p-3 flex flex-col gap-1.5 flex-1">
         <h3 className="text-sm font-semibold leading-snug line-clamp-2">{tour.title}</h3>
-        {tour.rating && tour.rating >= 4.3 && (
+        {tour.rating && tour.rating >= 4.0 && (
           <div className="flex items-center gap-1 text-xs">
             <span className="text-amber-400">★</span>
             <span className="font-semibold text-white">{tour.rating.toFixed(1)}</span>

@@ -241,5 +241,10 @@
     "id": "jetski-extreme",
     "name": "Extreme Jet Ski",
     "phone": "642 81 19 12"
+  },
+  {
+    "id": "ultimate-quads",
+    "name": "Ultimate Quads",
+    "phone": ""
   }
 ]

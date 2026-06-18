@@ -918,7 +918,11 @@
       "13:00"
     ],
     "bookingPhone": "922 716 864",
-    "supplierId": "freebird"
+    "supplierId": "freebird",
+    "rating": 4.0,
+    "reviewCount": 1996,
+    "reviewSource": "Tripadvisor",
+    "reviewedName": "Freebird Catamaran"
   },
   {
     "slug": "fishing-boat-puerto-colon",
@@ -1074,7 +1078,11 @@
     ],
     "meetingPoint": "Gate 9, Puerto Colón Marina, Costa Adeje",
     "bookingPhone": "822 200 420",
-    "supplierId": "maxicat"
+    "supplierId": "maxicat",
+    "rating": 4.0,
+    "reviewCount": 1035,
+    "reviewSource": "Tripadvisor",
+    "reviewedName": "Maxicat Catamaran"
   },
   {
     "slug": "monte-cristo-catamaran",
@@ -1294,7 +1302,7 @@
         "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
       }
     ],
-    "imageUrl": "/images/tours/diamant-boat.webp",
+    "imageUrl": "/images/tours/diamant-boat.jpg",
     "url": "https://www.excursionstenerife.es/tours/diamant-boat",
     "timeSlots": [
       "10:00",
@@ -1443,7 +1451,7 @@
         "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
       }
     ],
-    "imageUrl": "/images/tours/raggie-tenerife-fishing.jpg",
+    "imageUrl": "/images/tours/raggie-tenerife-fishing.webp",
     "url": "https://www.excursionstenerife.es/tours/raggie-tenerife-fishing",
     "timeSlots": [
       "08:00"
@@ -1851,7 +1859,7 @@
         "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
       }
     ],
-    "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/66a0cf24a5bb416da48f0d26_sunset-adventure-buggy-ride_regaloBIG3980.webp",
+    "imageUrl": "/images/tours/buggy.jpg",
     "url": "https://www.excursionstenerife.es/tours/buggy-teide-adventure",
     "seatsPerVehicle": 2,
     "timeSlots": [
@@ -3161,7 +3169,11 @@
       "18:00"
     ],
     "bookingPhone": "722 210 957",
-    "supplierId": "quadsquad"
+    "supplierId": "quadsquad",
+    "rating": 4.1,
+    "reviewCount": 127,
+    "reviewSource": "Tripadvisor",
+    "reviewedName": "QuadSquad"
   },
   {
     "slug": "quad-teide-tour",
@@ -3230,7 +3242,11 @@
       "10:00"
     ],
     "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
-    "supplierId": "quadsquad"
+    "supplierId": "quadsquad",
+    "rating": 4.1,
+    "reviewCount": 127,
+    "reviewSource": "Tripadvisor",
+    "reviewedName": "QuadSquad"
   },
   {
     "slug": "citroen-c3-car-rental",
@@ -5462,5 +5478,45 @@
     "bookingPhone": "642 81 19 12",
     "supplierId": "jetski-extreme",
     "imageUrl": "/images/tours/jetski-extreme.jpg"
+  },
+  {
+    "slug": "ultimate-quads",
+    "title": "Ultimate Quads — premium quad safari",
+    "category": "buggy-quad",
+    "group": "land",
+    "duration": "3h",
+    "pricing": [
+      {
+        "label": "Single (1 rider)",
+        "price": 100,
+        "net": 60
+      },
+      {
+        "label": "Double (2 riders)",
+        "price": 120,
+        "net": 60
+      }
+    ],
+    "priceFrom": 100,
+    "description": "Ultimate Quads runs the most powerful machines on the island — for riders who want the real adrenaline, not a gentle cruise. A guided quad safari across Tenerife's volcanic scenery on top-spec kit.\n\nPrice is for one rider (single) or two (double). The guide leads the way and no off-road experience is needed beyond a short briefing.\n\nA valid driving licence (category B or A) is required to drive. Wear closed shoes and sunglasses, and bring sunscreen.",
+    "faq": [
+      {
+        "question": "What is your cancellation policy?",
+        "answer": "Free cancellation with a full refund if you cancel more than 24 hours before the tour starts. Cancellations made less than 24 hours before the start time, or no-shows, are non-refundable. If the operator has to cancel (for example due to bad weather or safety), you get a full refund or a free reschedule. To cancel, message us on WhatsApp (+34 610 434 957) with your booking reference — eligible refunds are processed within 14 days."
+      },
+      {
+        "question": "Do I need a driving licence?",
+        "answer": "Yes — a valid category B or A driving licence is required to drive a quad. Minimum age 18 to drive."
+      },
+      {
+        "question": "What happens if the weather is too bad?",
+        "answer": "If the weather is too bad to go, it will be rescheduled or you will receive a full refund."
+      }
+    ],
+    "meetingPoint": "South Tenerife — departure point confirmed on booking",
+    "supplierId": "ultimate-quads",
+    "rating": 4.8,
+    "reviewSource": "Google",
+    "reviewedName": "Ultimate Quads"
   }
 ]
