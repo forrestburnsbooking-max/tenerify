@@ -91,8 +91,6 @@ soul-jeep-passenger-tour,Per person,soul-jeep,120,65
 soul-jeep-passenger-tour,Additional passenger,soul-jeep,90,45
 cabrio-bus-teide-masca,Adult,nere,80,55
 cabrio-bus-teide-masca,Child,nere,60,45
-gulliver-boat,Adult,gulliver,80,49
-gulliver-boat,Child,gulliver,49,30
 ultimate-quads,Single (1 rider),ultimate-quads,100,60
 ultimate-quads,Double (2 riders),ultimate-quads,120,60
 
@@ -166,3 +164,6 @@ diamant-boat,Adult,opera,80,45
 diamant-boat,Child,opera,50,30
 fishing-boat-puerto-colon,Fisher — 4h,happy-hooker,90,60
 fishing-boat-puerto-colon,Spectator — 4h,happy-hooker,60,50
+gulliver-boat,Adult (11+),gulliver,80,49
+gulliver-boat,Child (4-10),gulliver,49,30
+gulliver-boat,Infant (0-3),gulliver,0,0

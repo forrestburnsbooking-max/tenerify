@@ -5335,14 +5335,19 @@
     "duration": "3.5h",
     "pricing": [
       {
-        "label": "Adult",
+        "label": "Adult (11+)",
         "price": 80,
         "net": 49
       },
       {
-        "label": "Child",
+        "label": "Child (4-10)",
         "price": 49,
         "net": 30
+      },
+      {
+        "label": "Infant (0-3)",
+        "price": 0,
+        "net": 0
       }
     ],
     "priceFrom": 80,
@@ -5365,7 +5370,7 @@
         "answer": "Yes, it is possible. Please contact us."
       }
     ],
-    "meetingPoint": "Puerto Colón Marina, Costa Adeje",
+    "meetingPoint": "Puerto Colón Marina — Gate 13, Costa Adeje",
     "bookingPhone": "643 98 59 57",
     "supplierId": "gulliver",
     "minAge": 0,
