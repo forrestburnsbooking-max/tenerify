@@ -5,7 +5,6 @@ helidream-helicopter-tour,Beaches & Cliffs — 10 min,helidreams,159,135.15
 helidream-helicopter-tour,Los Gigantes — 18 min,helidreams,295,250.75
 helidream-helicopter-tour,Isla Baja — 25 min,helidreams,430,365.50
 helidream-helicopter-tour,Gran Teide — 40 min,helidreams,545,463.25
-paragliding,Per person,rob-paragliding,110,60
 parascending-puerto-colon,Adult,aj-fly,60,40
 parascending-puerto-colon,Child,aj-fly,60,40
 banana-puerto-colon,Per person,watersport,18,12
@@ -164,3 +163,8 @@ diving-puerto-colon,Open Water Diver course,atlantis,440,308
 safari-kayak-tour-los-cristianos,Kayak + snorkeling,atlantis,45,25
 safari-kayak-tour-los-cristianos,Kayak only,atlantis,39,25
 safari-kayak-tour-los-cristianos,Kids (6-10),atlantis,22.5,12.5
+paragliding,Standard — 800m (15–20 min),daydream,100,60
+paragliding,High mountain — 1000m (20–30 min),daydream,120,80
+paragliding,Long flight (30–35 min),daydream,130,80
+paragliding,Teide — 45 min (min 2 pax),daydream,180,120
+paragliding,Acrobatic (20–30 min),daydream,150,100

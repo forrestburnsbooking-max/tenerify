@@ -273,12 +273,32 @@
     ],
     "pricing": [
       {
-        "label": "Per person",
-        "price": 110,
+        "label": "Standard — 800m (15–20 min)",
+        "price": 100,
         "net": 60
+      },
+      {
+        "label": "High mountain — 1000m (20–30 min)",
+        "price": 120,
+        "net": 80
+      },
+      {
+        "label": "Long flight (30–35 min)",
+        "price": 130,
+        "net": 80
+      },
+      {
+        "label": "Teide — 45 min (min 2 pax)",
+        "price": 180,
+        "net": 120
+      },
+      {
+        "label": "Acrobatic (20–30 min)",
+        "price": 150,
+        "net": 100
       }
     ],
-    "priceFrom": 110,
+    "priceFrom": 100,
     "description": "Want to see Tenerife from a bird's-eye view? On a tandem paragliding flight you're strapped safely to a highly experienced pilot — no skill or experience needed — and simply enjoy the ride.\n\nAfter an easy take-off you'll float silently above the south of the island, with sweeping views of the coast, mountains and the Atlantic far below. Your pilot handles everything; you just soak it in.\n\nA genuinely unforgettable experience for first-timers and thrill-seekers alike. Flights depend on wind and weather, so timing is confirmed on the day.",
     "faq": [
       {
@@ -316,10 +336,10 @@
     ],
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/668d839fdfeeede47005bbac_BRISA2.webp",
     "url": "https://www.excursionstenerife.es/tours/paragliding",
-    "bookingPhone": "609 261 796",
-    "supplierId": "rob-paragliding",
-    "meetingPoint": "Hotel pickup — South Tenerife (takeoff above Adeje; time on confirmation)",
-    "minAge": 5
+    "bookingPhone": "640 773 065",
+    "supplierId": "daydream",
+    "meetingPoint": "Mercadona Adeje (Los Olivos), Adeje",
+    "minAge": 4
   },
   {
     "slug": "parascending-puerto-colon",
