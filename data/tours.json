@@ -66,7 +66,8 @@
     "rating": 4.6,
     "reviewCount": 303,
     "reviewSource": "Tripadvisor",
-    "reviewedName": "Diving Atlantis Tenerife"
+    "reviewedName": "Diving Atlantis Tenerife",
+    "meetingPoint": "Atlantis Diving Center, Los Cristianos"
   },
   {
     "slug": "fly-fish-puerto-colon",
@@ -130,7 +131,9 @@
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6692ccced3e6dadb64cb39c4_flyfish2.webp",
     "url": "https://www.excursionstenerife.es/tours/fly-fish-puerto-colon",
     "bookingPhone": "638 531 863",
-    "supplierId": "watersport"
+    "supplierId": "watersport",
+    "meetingPoint": "Puerto Colón Marina, Costa Adeje",
+    "minAge": 6
   },
   {
     "slug": "helidream-helicopter-tour",
@@ -218,7 +221,9 @@
     "rating": 4.7,
     "reviewCount": 349,
     "reviewSource": "Tripadvisor",
-    "reviewedName": "Helidream Helicopters"
+    "reviewedName": "Helidream Helicopters",
+    "meetingPoint": "Helidream Heliport, Calle Charfa, Pol. Ind. Las Torres, Adeje",
+    "minAge": 0
   },
   {
     "slug": "paragliding",
@@ -282,7 +287,9 @@
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/668d839fdfeeede47005bbac_BRISA2.webp",
     "url": "https://www.excursionstenerife.es/tours/paragliding",
     "bookingPhone": "609 261 796",
-    "supplierId": "rob-paragliding"
+    "supplierId": "rob-paragliding",
+    "meetingPoint": "Hotel pickup — South Tenerife (takeoff above Adeje; time on confirmation)",
+    "minAge": 5
   },
   {
     "slug": "parascending-puerto-colon",
@@ -352,7 +359,8 @@
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6692d2d2323c44de26624baf_Parascending3.webp",
     "url": "https://www.excursionstenerife.es/tours/parascending-puerto-colon",
     "bookingPhone": "655 074 083",
-    "supplierId": "aj-fly"
+    "supplierId": "aj-fly",
+    "meetingPoint": "Puerto Colón Marina, Costa Adeje"
   },
   {
     "slug": "safari-kayak-tour-los-cristianos",
@@ -425,7 +433,9 @@
     "rating": 4.6,
     "reviewCount": 303,
     "reviewSource": "Tripadvisor",
-    "reviewedName": "Diving Atlantis Tenerife"
+    "reviewedName": "Diving Atlantis Tenerife",
+    "meetingPoint": "Playa de Los Cristianos, Los Cristianos",
+    "minAge": 6
   },
   {
     "slug": "kayaking-stand-up-paddle-los-cristianos",
@@ -494,7 +504,8 @@
     "rating": 4.6,
     "reviewCount": 303,
     "reviewSource": "Tripadvisor",
-    "reviewedName": "Diving Atlantis Tenerife"
+    "reviewedName": "Diving Atlantis Tenerife",
+    "meetingPoint": "Playa de Los Cristianos, Los Cristianos"
   },
   {
     "slug": "stand-up-paddle-la-caleta",
@@ -563,7 +574,8 @@
     "rating": 4.6,
     "reviewCount": 303,
     "reviewSource": "Tripadvisor",
-    "reviewedName": "Diving Atlantis Tenerife"
+    "reviewedName": "Diving Atlantis Tenerife",
+    "meetingPoint": "La Caleta, Costa Adeje"
   },
   {
     "slug": "banana-puerto-colon",
@@ -627,7 +639,9 @@
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6692c2ce5fb30e12b950e2c9_banana2.webp",
     "url": "https://www.excursionstenerife.es/tours/banana-puerto-colon",
     "bookingPhone": "638 531 863",
-    "supplierId": "watersport"
+    "supplierId": "watersport",
+    "meetingPoint": "Puerto Colón Marina, Costa Adeje",
+    "minAge": 6
   },
   {
     "slug": "arriro-boat",
@@ -697,7 +711,8 @@
     ],
     "meetingPoint": "Gate 11, Puerto Colón Marina, Costa Adeje",
     "bookingPhone": "619 591 892",
-    "supplierId": "arriro"
+    "supplierId": "arriro",
+    "minAge": 0
   },
   {
     "slug": "cool-sailing",
@@ -741,7 +756,8 @@
     ],
     "imageUrl": "/images/tours/sonador-boat.webp",
     "bookingPhone": "613 924 763",
-    "supplierId": "cool-sailing"
+    "supplierId": "cool-sailing",
+    "minAge": 0
   },
   {
     "slug": "kosamui-boat",
@@ -784,7 +800,8 @@
     ],
     "imageUrl": "/images/tours/sonador-boat.webp",
     "bookingPhone": "639 203 484",
-    "supplierId": "kosamui"
+    "supplierId": "kosamui",
+    "minAge": 0
   },
   {
     "slug": "atlanca-boat-rental",
@@ -849,7 +866,8 @@
     "url": "https://www.excursionstenerife.es/tours/atlanca-boat-rental",
     "meetingPoint": "Puerto Colón Marina, Costa Adeje",
     "bookingPhone": "659 831 064",
-    "supplierId": "atlanca"
+    "supplierId": "atlanca",
+    "minAge": 18
   },
   {
     "slug": "freebird-catamaran",
@@ -942,7 +960,8 @@
     "rating": 4,
     "reviewCount": 1996,
     "reviewSource": "Tripadvisor",
-    "reviewedName": "Freebird Catamaran"
+    "reviewedName": "Freebird Catamaran",
+    "minAge": 0
   },
   {
     "slug": "fishing-boat-puerto-colon",
@@ -1012,7 +1031,8 @@
     ],
     "meetingPoint": "Pontoon 2, Puerto Colón Marina, Costa Adeje",
     "bookingPhone": "636 761 552",
-    "supplierId": "happy-hooker"
+    "supplierId": "happy-hooker",
+    "minAge": 0
   },
   {
     "slug": "maxicat-catamaran",
@@ -1102,7 +1122,8 @@
     "rating": 4,
     "reviewCount": 1035,
     "reviewSource": "Tripadvisor",
-    "reviewedName": "Maxicat Catamaran"
+    "reviewedName": "Maxicat Catamaran",
+    "minAge": 0
   },
   {
     "slug": "monte-cristo-catamaran",
@@ -1181,7 +1202,8 @@
     "rating": 4.8,
     "reviewCount": 2854,
     "reviewSource": "Tripadvisor",
-    "reviewedName": "Monte Cristo Catamaran"
+    "reviewedName": "Monte Cristo Catamaran",
+    "minAge": 0
   },
   {
     "slug": "neptuno-boat",
@@ -1260,7 +1282,8 @@
     ],
     "meetingPoint": "Excursion Zone B, Port of Los Cristianos",
     "bookingPhone": "623 597 482",
-    "supplierId": "shogun-neptuno"
+    "supplierId": "shogun-neptuno",
+    "minAge": 0
   },
   {
     "slug": "diamant-boat",
@@ -1330,7 +1353,8 @@
       "16:00"
     ],
     "bookingPhone": "661 259 806",
-    "supplierId": "opera"
+    "supplierId": "opera",
+    "minAge": 0
   },
   {
     "slug": "peter-pan-boat",
@@ -1410,7 +1434,8 @@
       "15:30"
     ],
     "bookingPhone": "666 542 881",
-    "supplierId": "peter-pan"
+    "supplierId": "peter-pan",
+    "minAge": 0
   },
   {
     "slug": "raggie-tenerife-fishing",
@@ -1478,7 +1503,8 @@
     ],
     "meetingPoint": "Pier 5, Puerto Colón Marina, Costa Adeje",
     "bookingPhone": "639 209 200",
-    "supplierId": "raggie-fishing"
+    "supplierId": "raggie-fishing",
+    "minAge": 0
   },
   {
     "slug": "ragnarok-viking-boat",
@@ -1567,7 +1593,8 @@
       "13:30"
     ],
     "bookingPhone": "654 638 922",
-    "supplierId": "viking"
+    "supplierId": "viking",
+    "minAge": 0
   },
   {
     "slug": "royal-delfin-boat",
@@ -1656,7 +1683,8 @@
     ],
     "meetingPoint": "Gate 12, Puerto Colón Marina, Costa Adeje",
     "bookingPhone": "922 750 085",
-    "supplierId": "royal-delfin"
+    "supplierId": "royal-delfin",
+    "minAge": 0
   },
   {
     "slug": "shogun-boat",
@@ -1735,7 +1763,8 @@
       "11:00"
     ],
     "bookingPhone": "623 597 482",
-    "supplierId": "shogun-neptuno"
+    "supplierId": "shogun-neptuno",
+    "minAge": 0
   },
   {
     "slug": "sonador-boat",
@@ -1815,7 +1844,8 @@
       "16:00"
     ],
     "bookingPhone": "699 508 232",
-    "supplierId": "sonador"
+    "supplierId": "sonador",
+    "minAge": 0
   },
   {
     "slug": "buggy-teide-adventure",
@@ -2028,7 +2058,8 @@
     ],
     "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
     "bookingPhone": "677 654 754",
-    "supplierId": "nere"
+    "supplierId": "nere",
+    "minAge": 0
   },
   {
     "slug": "island-tour-masca",
@@ -2095,7 +2126,8 @@
       "08:30"
     ],
     "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
-    "supplierId": "nere"
+    "supplierId": "nere",
+    "minAge": 0
   },
   {
     "slug": "la-gomera",
@@ -2167,7 +2199,8 @@
       "08:30"
     ],
     "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
-    "supplierId": "nere"
+    "supplierId": "nere",
+    "minAge": 0
   },
   {
     "slug": "teide-by-night",
@@ -2240,7 +2273,8 @@
     ],
     "meetingPoint": "Hotel pickup — South Tenerife (evening start ~18:00, exact pickup on confirmation)",
     "bookingPhone": "624 642 724",
-    "supplierId": "ozzy"
+    "supplierId": "ozzy",
+    "minAge": 0
   },
   {
     "slug": "teide-tour-cable-car",
@@ -2314,7 +2348,8 @@
     "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
     "bookingPhone": "677 654 754",
     "supplierId": "nere",
-    "notIncluded": "Cable car ticket — purchased separately, not included (pre-booking recommended; weather-dependent)."
+    "notIncluded": "Cable car ticket — purchased separately, not included (pre-booking recommended; weather-dependent).",
+    "minAge": 0
   },
   {
     "slug": "santa-cruz--la-laguna--anaga",
@@ -2388,7 +2423,8 @@
     ],
     "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
     "bookingPhone": "677 654 754",
-    "supplierId": "nere"
+    "supplierId": "nere",
+    "minAge": 0
   },
   {
     "slug": "booster-pack-puerto-colon",
@@ -2691,7 +2727,9 @@
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6682f3b5c426ea82ef18f2fc_aqualand.webp",
     "url": "https://www.excursionstenerife.es/tours/aqualand",
     "bookingPhone": "922 797 573 / 662 936 575",
-    "supplierId": "nere"
+    "supplierId": "nere",
+    "meetingPoint": "Aqualand Costa Adeje, Av. de Austria 15, Costa Adeje",
+    "minAge": 0
   },
   {
     "slug": "camel-park",
@@ -2760,7 +2798,9 @@
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/668c50e33f5c20a8f49a89c8_c.webp",
     "url": "https://www.excursionstenerife.es/tours/camel-park",
     "bookingPhone": "922 721 121",
-    "supplierId": "camel-park"
+    "supplierId": "camel-park",
+    "meetingPoint": "Camel Park, Carretera Arona–Guaza, Arona",
+    "minAge": 0
   },
   {
     "slug": "jungle-park",
@@ -2831,7 +2871,9 @@
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6682fd28a1049f45b9e90155_Sin-t%C3%ADtulo-1.webp",
     "url": "https://www.excursionstenerife.es/tours/jungle-park",
     "bookingPhone": "922 797 573 / 662 936 575",
-    "supplierId": "nere"
+    "supplierId": "nere",
+    "meetingPoint": "Jungle Park (Aguilas Jungle Park), Arona",
+    "minAge": 0
   },
   {
     "slug": "loro-parque",
@@ -2902,7 +2944,9 @@
     "rating": 4.6,
     "reviewCount": 89540,
     "reviewSource": "Google",
-    "reviewedName": "Loro Parque"
+    "reviewedName": "Loro Parque",
+    "meetingPoint": "Loro Parque, Av. Loro Parque, Puerto de la Cruz",
+    "minAge": 0
   },
   {
     "slug": "siam-park",
@@ -2973,7 +3017,9 @@
     "rating": 4.4,
     "reviewCount": 37203,
     "reviewSource": "Google",
-    "reviewedName": "Siam Park"
+    "reviewedName": "Siam Park",
+    "meetingPoint": "Siam Park, Av. Siam, Costa Adeje",
+    "minAge": 0
   },
   {
     "slug": "2parks-ticket-jungle-park-aqualand",
@@ -3044,7 +3090,9 @@
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6683071ecb1ebb9cd9ed19bc_Two_Parks.webp",
     "url": "https://www.excursionstenerife.es/tours/2parks-ticket-jungle-park-aqualand",
     "bookingPhone": "922 797 573 / 662 936 575",
-    "supplierId": "nere"
+    "supplierId": "nere",
+    "meetingPoint": "Entry at each park — Jungle Park (Arona) & Aqualand (Costa Adeje)",
+    "minAge": 0
   },
   {
     "slug": "twin-ticket-loro-parque-siam-park",
@@ -3119,7 +3167,9 @@
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6682dfa8f1cc5c7a594e6eb9_Z.webp",
     "url": "https://www.excursionstenerife.es/tours/twin-ticket-loro-parque-siam-park",
     "bookingPhone": "922 797 573 / 662 936 575",
-    "supplierId": "nere"
+    "supplierId": "nere",
+    "meetingPoint": "Entry at each park — Loro Parque (Puerto de la Cruz) & Siam Park (Costa Adeje)",
+    "minAge": 0
   },
   {
     "slug": "quad-sunset-tour",
@@ -3331,7 +3381,9 @@
     "url": "https://www.excursionstenerife.es/tours/citroen-c3-car-rental",
     "bookingPhone": "922 753 816",
     "depositPercent": 30,
-    "supplierId": "aliscar"
+    "supplierId": "aliscar",
+    "meetingPoint": "Aliscar office, Av. Ernesto Sarti 12, Costa Adeje (free delivery Los Cristianos–La Caleta)",
+    "minAge": 21
   },
   {
     "slug": "citroen-cactus-automatic-car-rental",
@@ -3396,7 +3448,9 @@
     "url": "https://www.excursionstenerife.es/tours/citroen-cactus-automatic-car-rental",
     "bookingPhone": "922 753 816",
     "depositPercent": 30,
-    "supplierId": "aliscar"
+    "supplierId": "aliscar",
+    "meetingPoint": "Aliscar office, Av. Ernesto Sarti 12, Costa Adeje (free delivery Los Cristianos–La Caleta)",
+    "minAge": 21
   },
   {
     "slug": "citroen-grand-picasso-car-rental",
@@ -3461,7 +3515,9 @@
     "url": "https://www.excursionstenerife.es/tours/citroen-grand-picasso-car-rental",
     "bookingPhone": "922 753 816",
     "depositPercent": 30,
-    "supplierId": "aliscar"
+    "supplierId": "aliscar",
+    "meetingPoint": "Aliscar office, Av. Ernesto Sarti 12, Costa Adeje (free delivery Los Cristianos–La Caleta)",
+    "minAge": 21
   },
   {
     "slug": "fiat-500-car-rental",
@@ -3526,7 +3582,9 @@
     "url": "https://www.excursionstenerife.es/tours/fiat-500-car-rental",
     "bookingPhone": "922 753 816",
     "depositPercent": 30,
-    "supplierId": "aliscar"
+    "supplierId": "aliscar",
+    "meetingPoint": "Aliscar office, Av. Ernesto Sarti 12, Costa Adeje (free delivery Los Cristianos–La Caleta)",
+    "minAge": 21
   },
   {
     "slug": "fiat-500-cabrio-car-rental",
@@ -3591,7 +3649,9 @@
     "url": "https://www.excursionstenerife.es/tours/fiat-500-cabrio-car-rental",
     "bookingPhone": "922 753 816",
     "depositPercent": 30,
-    "supplierId": "aliscar"
+    "supplierId": "aliscar",
+    "meetingPoint": "Aliscar office, Av. Ernesto Sarti 12, Costa Adeje (free delivery Los Cristianos–La Caleta)",
+    "minAge": 21
   },
   {
     "slug": "fiat-panda-car-rental",
@@ -3656,7 +3716,9 @@
     "url": "https://www.excursionstenerife.es/tours/fiat-panda-car-rental",
     "bookingPhone": "922 753 816",
     "depositPercent": 30,
-    "supplierId": "aliscar"
+    "supplierId": "aliscar",
+    "meetingPoint": "Aliscar office, Av. Ernesto Sarti 12, Costa Adeje (free delivery Los Cristianos–La Caleta)",
+    "minAge": 21
   },
   {
     "slug": "renault-captur-automatic-car-rental",
@@ -3721,7 +3783,9 @@
     "url": "https://www.excursionstenerife.es/tours/renault-captur-automatic-car-rental",
     "bookingPhone": "922 753 816",
     "depositPercent": 30,
-    "supplierId": "aliscar"
+    "supplierId": "aliscar",
+    "meetingPoint": "Aliscar office, Av. Ernesto Sarti 12, Costa Adeje (free delivery Los Cristianos–La Caleta)",
+    "minAge": 21
   },
   {
     "slug": "renault-trafic-car-rental",
@@ -3786,7 +3850,9 @@
     "url": "https://www.excursionstenerife.es/tours/renault-trafic-car-rental",
     "bookingPhone": "922 753 816",
     "depositPercent": 30,
-    "supplierId": "aliscar"
+    "supplierId": "aliscar",
+    "meetingPoint": "Aliscar office, Av. Ernesto Sarti 12, Costa Adeje (free delivery Los Cristianos–La Caleta)",
+    "minAge": 21
   },
   {
     "slug": "seat-ibiza-car-rental",
@@ -3851,7 +3917,9 @@
     "url": "https://www.excursionstenerife.es/tours/seat-ibiza-car-rental",
     "bookingPhone": "922 753 816",
     "depositPercent": 30,
-    "supplierId": "aliscar"
+    "supplierId": "aliscar",
+    "meetingPoint": "Aliscar office, Av. Ernesto Sarti 12, Costa Adeje (free delivery Los Cristianos–La Caleta)",
+    "minAge": 21
   },
   {
     "slug": "seat-leon-car-rental",
@@ -3916,7 +3984,9 @@
     "url": "https://www.excursionstenerife.es/tours/seat-leon-car-rental",
     "bookingPhone": "922 753 816",
     "depositPercent": 30,
-    "supplierId": "aliscar"
+    "supplierId": "aliscar",
+    "meetingPoint": "Aliscar office, Av. Ernesto Sarti 12, Costa Adeje (free delivery Los Cristianos–La Caleta)",
+    "minAge": 21
   },
   {
     "slug": "tuk-tuk",
@@ -3980,7 +4050,9 @@
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/66ba5f353e96ccb355a04adb_264341739_4695885117142426_8120454214620924274_n.jpg",
     "url": "https://www.excursionstenerife.es/tours/tuk-tuk",
     "bookingPhone": "628 820 720",
-    "supplierId": "tuk-tuk"
+    "supplierId": "tuk-tuk",
+    "meetingPoint": "Hotel pickup — Costa Adeje area (time on confirmation)",
+    "minAge": 0
   },
   {
     "slug": "vw-beetle-automatic-car-rental",
@@ -4045,7 +4117,9 @@
     "url": "https://www.excursionstenerife.es/tours/vw-beetle-automatic-car-rental",
     "bookingPhone": "922 753 816",
     "depositPercent": 30,
-    "supplierId": "aliscar"
+    "supplierId": "aliscar",
+    "meetingPoint": "Aliscar office, Av. Ernesto Sarti 12, Costa Adeje (free delivery Los Cristianos–La Caleta)",
+    "minAge": 21
   },
   {
     "slug": "vw-golf-car-rental",
@@ -4110,7 +4184,9 @@
     "url": "https://www.excursionstenerife.es/tours/vw-golf-car-rental",
     "bookingPhone": "922 753 816",
     "depositPercent": 30,
-    "supplierId": "aliscar"
+    "supplierId": "aliscar",
+    "meetingPoint": "Aliscar office, Av. Ernesto Sarti 12, Costa Adeje (free delivery Los Cristianos–La Caleta)",
+    "minAge": 21
   },
   {
     "slug": "vw-polo-car-rental",
@@ -4175,7 +4251,9 @@
     "url": "https://www.excursionstenerife.es/tours/vw-polo-car-rental",
     "bookingPhone": "922 753 816",
     "depositPercent": 30,
-    "supplierId": "aliscar"
+    "supplierId": "aliscar",
+    "meetingPoint": "Aliscar office, Av. Ernesto Sarti 12, Costa Adeje (free delivery Los Cristianos–La Caleta)",
+    "minAge": 21
   },
   {
     "slug": "vw-polo-automatic-car-rental",
@@ -4240,7 +4318,9 @@
     "url": "https://www.excursionstenerife.es/tours/vw-polo-automatic-car-rental",
     "bookingPhone": "922 753 816",
     "depositPercent": 30,
-    "supplierId": "aliscar"
+    "supplierId": "aliscar",
+    "meetingPoint": "Aliscar office, Av. Ernesto Sarti 12, Costa Adeje (free delivery Los Cristianos–La Caleta)",
+    "minAge": 21
   },
   {
     "slug": "ole-flamenco-show",
@@ -4313,7 +4393,8 @@
     ],
     "meetingPoint": "Las Olas Showroom, GF Victoria Hotel, C. Fernando López Arvelo 1, Costa Adeje",
     "bookingPhone": "922 987 184",
-    "supplierId": "las-olas-showroom"
+    "supplierId": "las-olas-showroom",
+    "minAge": 0
   },
   {
     "slug": "flamenco-show-sala-coliseo",
@@ -4386,7 +4467,8 @@
     ],
     "meetingPoint": "Teatro Coliseo, Avda. Edelmira Alfonso s/n, San Miguel de Abona",
     "bookingPhone": "922 374 811",
-    "supplierId": "medieval-adventure"
+    "supplierId": "medieval-adventure",
+    "minAge": 0
   },
   {
     "slug": "history-evolution-of-music",
@@ -4459,7 +4541,8 @@
     ],
     "meetingPoint": "Auditorio Pirámide de Arona, Av. las Américas s/n, Playa de las Américas",
     "bookingPhone": "658 987 645",
-    "supplierId": "history-musicle"
+    "supplierId": "history-musicle",
+    "minAge": 0
   },
   {
     "slug": "medieval-show",
@@ -4532,7 +4615,8 @@
     ],
     "meetingPoint": "Castillo San Miguel, Av. Edelmira Alfonso s/n, Aldea Blanca",
     "bookingPhone": "922 374 811",
-    "supplierId": "medieval-adventure"
+    "supplierId": "medieval-adventure",
+    "minAge": 0
   },
   {
     "slug": "music-hall-tavern",
@@ -4646,7 +4730,8 @@
     ],
     "meetingPoint": "Vivo Show Bar, Av. Rafael Puig Lluvina 7, Playa de las Américas",
     "bookingPhone": "928 514 701",
-    "supplierId": "mht-tavern"
+    "supplierId": "mht-tavern",
+    "minAge": 0
   },
   {
     "slug": "scandal-dinner-show",
@@ -4716,7 +4801,8 @@
     ],
     "meetingPoint": "Las Olas Showroom, GF Victoria Hotel, C. Fernando López Arvelo 1, Costa Adeje",
     "bookingPhone": "922 987 184",
-    "supplierId": "las-olas-showroom"
+    "supplierId": "las-olas-showroom",
+    "minAge": 18
   },
   {
     "slug": "seat-leon-st-automatic-car-rental",
@@ -4781,7 +4867,9 @@
     "bookingPhone": "922 753 816",
     "depositPercent": 30,
     "supplierId": "aliscar",
-    "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/66b363f050749aaea93feea3_new-seat-leon-candy-white-colour-configuration.webp"
+    "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/66b363f050749aaea93feea3_new-seat-leon-candy-white-colour-configuration.webp",
+    "meetingPoint": "Aliscar office, Av. Ernesto Sarti 12, Costa Adeje (free delivery Los Cristianos–La Caleta)",
+    "minAge": 21
   },
   {
     "slug": "opel-zafira-7-seater-car-rental",
@@ -4846,7 +4934,9 @@
     "bookingPhone": "922 753 816",
     "depositPercent": 30,
     "supplierId": "aliscar",
-    "imageUrl": "/images/tours/opel-zafira-7-seater-car-rental.jpg"
+    "imageUrl": "/images/tours/opel-zafira-7-seater-car-rental.jpg",
+    "meetingPoint": "Aliscar office, Av. Ernesto Sarti 12, Costa Adeje (free delivery Los Cristianos–La Caleta)",
+    "minAge": 21
   },
   {
     "slug": "soul-jeep-self-drive-safari",
@@ -4976,7 +5066,8 @@
     "imageUrl": "/images/tours/soul-jeep-passenger-tour.jpg",
     "url": "https://www.souljeep.com/",
     "bookingPhone": "614 475 604",
-    "supplierId": "soul-jeep"
+    "supplierId": "soul-jeep",
+    "minAge": 0
   },
   {
     "slug": "jetski-las-galletas",
@@ -5114,7 +5205,8 @@
       "09:00"
     ],
     "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
-    "supplierId": "nere"
+    "supplierId": "nere",
+    "minAge": 0
   },
   {
     "slug": "galatea-boat",
@@ -5157,7 +5249,8 @@
     "meetingPoint": "South Tenerife — departure point confirmed on booking",
     "bookingPhone": "686 28 63 54",
     "supplierId": "galatea",
-    "imageUrl": "/images/tours/sonador-boat.webp"
+    "imageUrl": "/images/tours/sonador-boat.webp",
+    "minAge": 0
   },
   {
     "slug": "travelling-lady",
@@ -5204,7 +5297,8 @@
     ],
     "meetingPoint": "Los Cristianos harbour",
     "bookingPhone": "663 88 06 44",
-    "supplierId": "travelling-lady"
+    "supplierId": "travelling-lady",
+    "minAge": 0
   },
   {
     "slug": "gulliver-boat",
@@ -5246,7 +5340,8 @@
     ],
     "meetingPoint": "South Tenerife — departure point confirmed on booking",
     "bookingPhone": "643 98 59 57",
-    "supplierId": "gulliver"
+    "supplierId": "gulliver",
+    "minAge": 0
   },
   {
     "slug": "skyline-cruiser",
@@ -5288,7 +5383,8 @@
     ],
     "meetingPoint": "South Tenerife — departure point confirmed on booking",
     "bookingPhone": "655 65 51 77",
-    "supplierId": "skyline-cruiser"
+    "supplierId": "skyline-cruiser",
+    "minAge": 0
   },
   {
     "slug": "white-dream",
@@ -5329,7 +5425,8 @@
     ],
     "meetingPoint": "South Tenerife — departure point confirmed on booking",
     "bookingPhone": "613 92 47 63",
-    "supplierId": "white-dream"
+    "supplierId": "white-dream",
+    "minAge": 0
   },
   {
     "slug": "mola-sailboat",
@@ -5371,7 +5468,8 @@
     ],
     "meetingPoint": "South Tenerife — departure point confirmed on booking",
     "bookingPhone": "674 13 35 17",
-    "supplierId": "mola-sailboat"
+    "supplierId": "mola-sailboat",
+    "minAge": 0
   },
   {
     "slug": "lina-mizendoha",
@@ -5413,7 +5511,8 @@
     ],
     "meetingPoint": "South Tenerife — departure point confirmed on booking",
     "bookingPhone": "623 41 07 94",
-    "supplierId": "lina-mizendoha"
+    "supplierId": "lina-mizendoha",
+    "minAge": 0
   },
   {
     "slug": "habana-del-sol",
@@ -5455,7 +5554,8 @@
     ],
     "meetingPoint": "South Tenerife — departure point confirmed on booking",
     "bookingPhone": "691 827 597",
-    "supplierId": "habana"
+    "supplierId": "habana",
+    "minAge": 0
   },
   {
     "slug": "jetski-extreme",
@@ -5498,7 +5598,8 @@
     "meetingPoint": "Puerto Colón Harbour — Pantalán 7, Costa Adeje",
     "bookingPhone": "642 81 19 12",
     "supplierId": "jetski-extreme",
-    "imageUrl": "/images/tours/jetski-extreme.jpg"
+    "imageUrl": "/images/tours/jetski-extreme.jpg",
+    "minAge": 16
   },
   {
     "slug": "ultimate-quads",
@@ -5540,6 +5641,7 @@
     "reviewSource": "Google",
     "reviewedName": "Ultimate Quads",
     "bookingPhone": "711 08 90 76",
-    "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/66a0d644f7ecd40ff346b374_AtrakcyjnaTeneryfa.pl-Quad-El-Teide-noca-1-600x450.webp"
+    "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/66a0d644f7ecd40ff346b374_AtrakcyjnaTeneryfa.pl-Quad-El-Teide-noca-1-600x450.webp",
+    "minAge": 18
   }
 ]
