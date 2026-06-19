@@ -55,9 +55,15 @@ for (const tour of tours) {
     }
   }
 
-  // priceFrom = lowest non-zero tier price — the true "from €X" (ignores free baby tiers)
-  const positive = tour.pricing.map((p) => p.price).filter((p) => p > 0);
-  if (positive.length) tour.priceFrom = Math.min(...positive);
+  // priceFrom = lowest non-zero ADULT tier price — child/kid/baby tiers are excluded
+  // so "from €X" never shows a misleadingly cheap children's rate. Falls back to the
+  // lowest positive tier when no adult-labelled tier exists (e.g. single "Per person").
+  const isChildTier = (label: string) => /child|kid|niñ|baby|beb|infant/i.test(label);
+  const positive = tour.pricing.filter((p) => p.price > 0);
+  const adult = positive.filter((p) => !isChildTier(p.label)).map((p) => p.price);
+  const all = positive.map((p) => p.price);
+  if (adult.length) tour.priceFrom = Math.min(...adult);
+  else if (all.length) tour.priceFrom = Math.min(...all);
 
   if (touched) updated++;
 }

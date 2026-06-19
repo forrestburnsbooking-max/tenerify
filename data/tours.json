@@ -531,7 +531,7 @@
         "net": 12.5
       }
     ],
-    "priceFrom": 22.5,
+    "priceFrom": 39,
     "description": "Paddle out from Los Cristianos beach to the dramatic cliffs of Guaza, a protected nature reserve, on this guided sea-kayak safari — a peaceful, active way to see the coast from the water.\n\nAlong the way there's a great chance of spotting sea turtles and other marine life in the clear water, with a stop to snorkel. It's suitable for beginners — a quick briefing and you're off.\n\nGreat for couples, families and active travellers. Bring a swimsuit, towel and sunscreen; everything else is provided.",
     "faq": [
       {
@@ -752,7 +752,7 @@
         "net": 27.5
       }
     ],
-    "priceFrom": 45,
+    "priceFrom": 60,
     "description": "The Arriro is a sailboat departing Puerto Colón for the Costa Adeje coast, available as a private charter or a shared trip. Under sail you'll head out to find the pilot whales and dolphins that live in Canarian waters year-round.\n\nThere's time to swim in the clear Atlantic and enjoy the quiet of being under sail rather than engine. Choose a shared departure for value, or book it privately for your own group.\n\nA calm, authentic sailing experience. Bring swimwear, a towel and sunscreen.",
     "faq": [
       {
@@ -818,7 +818,7 @@
         "net": 27.5
       }
     ],
-    "priceFrom": 45,
+    "priceFrom": 60,
     "description": "Cool Sailing is a relaxed 3-hour motor-yacht trip from Puerto Colón along the Costa Adeje coast, capped at just 11 guests for a personal, uncrowded day on the water.\n\nYou'll cruise in search of the resident pilot whales and dolphins, anchor for a swim in the clear Atlantic, and enjoy an open bar and food included throughout.\n\nSmall-group and easygoing — ideal for couples and small groups. Bring swimwear, a towel and sunscreen.",
     "timeSlots": [
       "10:00",
@@ -868,7 +868,7 @@
         "net": 27.5
       }
     ],
-    "priceFrom": 45,
+    "priceFrom": 60,
     "description": "Kosamui is an intimate sailing-yacht trip from Puerto Colón — capped at just 12 guests, so it never feels crowded. Over three relaxed hours you'll sail Tenerife's south-west coast in search of the resident pilot whales and dolphins.\n\nThe crew anchors at a quiet spot for a swim in the clear Atlantic, with an open bar and food included throughout. Small-group, unhurried and personal — the opposite of the big party boats.\n\nIdeal for couples and small groups. Bring swimwear, a towel and sunscreen.",
     "timeSlots": [
       "10:00",
@@ -1008,7 +1008,7 @@
         "net": 0
       }
     ],
-    "priceFrom": 23.5,
+    "priceFrom": 47,
     "description": "Set sail on the Freebird, a sleek catamaran offering two trip lengths — a 3-hour cruise or a fuller 4.5-hour voyage — both in search of the whales and dolphins that inhabit Tenerife's coast year-round.\n\nFreebird's specialist guides help you spot the cetaceans, then the boat anchors so you can swim and snorkel in the Atlantic before relaxing on deck. Free hotel transfer and free drinks on board are included, which makes it one of the easiest boat days on the south coast.\n\nChoose the 3-hour trip for a quick taste, or the 4.5-hour for a fuller day on the water. Bring swimwear, a towel and sunscreen.",
     "meetingPoint": "Gate 10/15, Puerto Colón Marina, Costa Adeje",
     "faq": [
@@ -1163,7 +1163,7 @@
         "net": 25
       }
     ],
-    "priceFrom": 22.5,
+    "priceFrom": 45,
     "description": "Maxicat is an eco-friendly sailing catamaran built for a relaxed 3 hours on the Atlantic, watching the pilot whales and bottlenose dolphins that live off Tenerife's south-west coast all year round.\n\nOnce the crew finds the wildlife, the catamaran anchors in a quiet spot so you can swim and snorkel in the clear water, then stretch out on the spacious decks. A Canarian-style snack and drinks are served on board, and free shuttle pickup is included from Callao Salvaje, Las Américas, Los Cristianos and Golf del Sur.\n\nComfortable, family-friendly and easy. Bring a swimsuit, towel and sunscreen.",
     "included": "・ Free shuttle pickup from Callao Salvaje, Las Américas, Los Cristianos & Golf del Sur ・ Canarian-style rice with mojo sauce + dessert (vegan/vegetarian and kids' menu available) ・ Drinks ・ Swimming & snorkelling stop ・ Guided whale watching ・ Safety briefing",
     "faq": [
@@ -1249,7 +1249,7 @@
         "net": 36
       }
     ],
-    "priceFrom": 49,
+    "priceFrom": 62,
     "description": "Tenerife's south-west coast is one of the best places on earth to see whales and dolphins in the wild — a resident population lives here all year round. On this relaxed small-group cruise, an experienced crew takes you out to find pilot whales and playful dolphins swimming free in their natural habitat, with the island's dramatic cliffs as a backdrop.\n\nOnce you've had your fill of the wildlife, the catamaran anchors up so you can swim or snorkel in the clear Atlantic, then stretch out on the spacious sun deck and fly-bridge. Drinks, fruit, snacks and tapas are served on board throughout the trip.\n\nIt's an easy, comfortable few hours on the water that suits families, couples and groups alike. Bring sunscreen, a towel and a swimsuit.",
     "faq": [
       {
@@ -1334,7 +1334,7 @@
         "net": 42
       }
     ],
-    "priceFrom": 31.5,
+    "priceFrom": 63,
     "description": "The Neptuno is a comfortable pleasure boat (up to 22 passengers) sailing the south coast from Los Cristianos. Cruise the coastline, swim in the open ocean and watch for the whales and dolphins that live in these waters year-round.\n\nIt's a relaxed, roomy trip with plenty of space to spread out on deck between the wildlife spotting and the swim stop.\n\nA solid, family-friendly boat day. Bring a swimsuit, towel and sunscreen.",
     "faq": [
       {
@@ -1485,7 +1485,7 @@
         "net": 16
       }
     ],
-    "priceFrom": 13.5,
+    "priceFrom": 27,
     "description": "The Peter Pan is a characterful pirate ship — an authentic early-1900s Portuguese gulet — and one of the most fun, family-friendly cruises on the coast. Relive the romance of old-fashioned sailing, complete with pirate stories along the way.\n\nYou'll cruise Tenerife's south coast with a chance to spot dolphins, swim in the open water and soak up the easy-going pirate-themed atmosphere on deck.\n\nGreat-value fun, especially with kids. Bring swimwear, a towel and sunscreen.",
     "meetingPoint": "Excursion Zone A, Port of Los Cristianos",
     "faq": [
@@ -1650,7 +1650,7 @@
         "net": 0
       }
     ],
-    "priceFrom": 15,
+    "priceFrom": 30,
     "description": "Set sail from Los Cristianos aboard the Ragnarok, a striking Viking-styled boat, on a 2- or 3-hour cruise toward the picturesque cliffs and the channel between Tenerife and La Gomera — one of the most reliable spots to find dolphins and whales.\n\nThe sheltered climate here means calm water and frequent sightings. There's a swim stop in the clear Atlantic and plenty of deck space to enjoy the ride.\n\nGreat value and good fun for families and groups. Pick the 2-hour for a quick trip or the 3-hour for more time on the water.",
     "meetingPoint": "Excursion Zone A, Port of Los Cristianos",
     "faq": [
@@ -1740,7 +1740,7 @@
         "net": 0
       }
     ],
-    "priceFrom": 30,
+    "priceFrom": 50,
     "description": "The Royal Delfin is a large catamaran with a twist — 50-inch underwater panoramic windows, so you can watch marine life below while you cruise Tenerife's south-west coast.\n\nYou'll look out for pilot whales and dolphins on the surface and peer beneath the waves through the underwater viewing deck, with a swim stop and space to relax up top.\n\nA great option for families and anyone who'd rather stay dry but still see what's under the water.",
     "faq": [
       {
@@ -1820,7 +1820,7 @@
         "net": 37
       }
     ],
-    "priceFrom": 30,
+    "priceFrom": 60,
     "description": "The Shogun is no ordinary boat — an authentic oriental sailing vessel built entirely in teak hardwood, originally for the private use of an Arabian sheikh. This generous 5-hour trip is the most leisurely way to spend a day at sea.\n\nAcross two levels with plenty of room, you'll cruise the coast watching for whales and dolphins, stop to swim and snorkel, and enjoy drinks (water, soft drinks, beer and wine) and food on board.\n\nA premium, unhurried day out for couples, families and groups who want space and comfort.",
     "included": "・ Drinks on board (water, soft drinks, beer and wine)",
     "meetingPoint": "Gate 14, Puerto Colón Marina, Costa Adeje",
@@ -1895,7 +1895,7 @@
         "net": 27.5
       }
     ],
-    "priceFrom": 45,
+    "priceFrom": 60,
     "description": "Sonador is a fast, sleek Beneteau First 45 luxury sailing yacht for a private trip along Tenerife's most spectacular coast — the towering cliffs of Los Gigantes and the mouth of the Masca ravine.\n\nOnboard you'll watch for whales and dolphins, swim and snorkel in secluded water, and take in the island's wildest scenery from the deck of a genuine performance yacht — all to yourselves.\n\nA private, premium experience for couples, families or groups celebrating something special.",
     "meetingPoint": "Gate 1, Puerto Colón Marina, Costa Adeje",
     "faq": [
@@ -2121,7 +2121,7 @@
         "net": 36
       }
     ],
-    "priceFrom": 45,
+    "priceFrom": 58,
     "description": "A full-day island tour that packs in Tenerife's greatest hits. You'll start in Teide National Park — a UNESCO World Heritage Site and home to Spain's highest peak — stopping among the spectacular lava fields and rock formations of Las Cañadas.\n\nFrom there the route drops to the north: the dragon-tree town of Icod de los Vinos, the pretty coastal village of Garachico, and viewpoints over the dramatic Masca valley. Your guide brings the history and legends to life along the way.\n\nA relaxed, scenic day with no driving. Bring a camera, comfortable shoes and a light layer for the cooler highlands.",
     "faq": [
       {
@@ -2263,7 +2263,7 @@
         "net": 105.25
       }
     ],
-    "priceFrom": 118,
+    "priceFrom": 145,
     "description": "Hop across the water to La Gomera, Tenerife's wild, green neighbour, on a full-day tour by fast ferry and bus. The crossing from Los Cristianos takes about 50 minutes to San Sebastián, the island's capital.\n\nFrom there you'll drive up through the lush Hermigua valley into Garajonay National Park — a UNESCO World Heritage Site blanketed in ancient laurel forest that dates back millions of years, where mist drifts between giant ferns and twisted trees. You'll also hear locals demonstrate Silbo Gomero, the island's astonishing whistled language, and stop for lunch at a local restaurant.\n\nA full day out, so bring a light jacket for the cooler, misty highlands and comfortable walking shoes.",
     "faq": [
       {
@@ -2346,7 +2346,7 @@
         "net": 33
       }
     ],
-    "priceFrom": 49,
+    "priceFrom": 65,
     "description": "As the sun drops, Teide National Park becomes one of the best stargazing spots on the planet — and this evening tour (18:00–23:00) is built around it.\n\nFirst stop is a restaurant high in Las Cañadas for a three-course dinner with Canarian wine. Then you head up into the park to watch a breathtaking sunset over the volcanic landscape, glass of sparkling wine in hand. As darkness falls, your guide picks out planets, constellations and the Milky Way in some of the clearest, darkest skies in Europe — protected by law for astronomy.\n\nBring a warm jacket: it's cold at altitude after dark. A magical, relaxed evening for couples and families alike.",
     "faq": [
       {
@@ -2420,7 +2420,7 @@
         "net": 35
       }
     ],
-    "priceFrom": 36,
+    "priceFrom": 46,
     "description": "Climb from the coast into Teide National Park — a UNESCO World Heritage Site — on a guided tour to the foot of El Teide, the highest peak in Spain at 3,718 m. You'll cross the Corona Forestal pine forest and stop at the most spectacular lava fields, rock formations and viewpoints of the Las Cañadas caldera, with views on clear days across to La Gomera, La Palma and El Hierro.\n\nThe cable car up to the 3,555 m upper station is the highlight for many visitors — but the ride is an optional extra, bought separately and not included in this tour price. Cable car tickets sell out fast and only run in good weather, so if you want to go up, it's best to reserve your slot in advance.\n\nBring a jacket — even in summer it's cold and windy at altitude.",
     "faq": [
       {
@@ -2495,7 +2495,7 @@
         "net": 45
       }
     ],
-    "priceFrom": 70,
+    "priceFrom": 85,
     "description": "Discover Tenerife's cultural and green heart on this full-day tour of the north-east. You'll start in the island capital, Santa Cruz de Tenerife, walking its vibrant streets and landmark squares like the Plaza de España.\n\nNext is San Cristóbal de La Laguna, a UNESCO World Heritage old town, before heading into the lush, misty Anaga mountains — an ancient laurel-forest biosphere reserve that feels a world away from the southern resorts. Lunch is included on the basic option.\n\nA scenic, easygoing day with no driving. Bring comfortable shoes and a light jacket for Anaga.",
     "included": "・ Lunch (in basic tour option) ‍",
     "faq": [
@@ -2809,7 +2809,7 @@
         "price": 16
       }
     ],
-    "priceFrom": 16,
+    "priceFrom": 36,
     "description": "Aqualand Costa Adeje is the island's biggest water park — and the only one with its own dolphinarium. Right in the heart of Costa Adeje, it's a full day of splashing for every age and every nerve level.\n\nThrill-seekers head for the high-speed slides — the Tornado, the Kamikazes and the newer Cyclones, plus Tsunami, rapids and a giant wave pool. Younger kids get their own worlds in Kidzworld, Forestland and Dragonland, with gentle slides and shallow pools. When you need a breather, drift down the Lava River or sink into a jacuzzi bed in the open-air spa.\n\nThe park is also known for its daily dolphin show in a dedicated arena. Plan a full day, bring towels and sunscreen, and arrive early to beat the queues on the big rides.",
     "faq": [
       {
@@ -2880,7 +2880,7 @@
         "net": 7.5
       }
     ],
-    "priceFrom": 11,
+    "priceFrom": 22,
     "description": "Just 10 minutes from Los Cristianos and Playa de las Américas, Camel Park is a relaxed, rural animal farm — an easy, fun outing for families with younger kids.\n\nThe star attraction is the camel ride through the grounds, but there's more to see: native Canarian animals and other species to meet, set in the countryside below El Cerro de la Centinela. It's low-key and hands-on, well suited to little ones who'd find the big parks overwhelming.\n\nAffordable and quick to reach — a nice half-day rather than a full day out.",
     "faq": [
       {
@@ -2953,7 +2953,7 @@
         "price": 16
       }
     ],
-    "priceFrom": 16,
+    "priceFrom": 35,
     "description": "Jungle Park (formerly Parque Las Águilas) is a lush 75,000 m² zoo and botanical park just 15 minutes from Los Cristianos, home to more than 500 animals roaming among waterfalls, lagoons, caves and jungle suspension bridges.\n\nTwo shows anchor the day: the spectacular Birds of Prey flight, where eagles, falcons and vultures swoop low over the audience, and the ever-popular Sea Lion show. Along the trails you'll meet orangutans, gibbons, penguins, crocodiles, meerkats, flamingos, macaws and much more. For one last thrill, ride BOB — an 800-metre toboggan run down through the park.\n\nGreat for families and animal lovers. Allow at least half a day and check the show times on arrival so you don't miss them.",
     "faq": [
       {
@@ -3022,7 +3022,7 @@
         "price": 32
       }
     ],
-    "priceFrom": 32,
+    "priceFrom": 44,
     "description": "Loro Parque in Puerto de la Cruz is far more than a zoo — it's an internationally recognised animal conservation park, home to over 400 species across 135,000 m² of subtropical gardens.\n\nThe day is built around its world-class habitats and presentations: orcas in the vast Orca Ocean pools, bottlenose dolphins in one of the most modern dolphinariums in the world, a colony of penguins living in a real-snow Antarctic enclosure, and the largest parrot collection on earth — the park's namesake and conservation flagship.\n\nBetween shows you can walk the aquarium shark tunnel, visit the gorilla and chimpanzee habitats and wander the themed gardens. Plan a full day to catch the main presentations without rushing — they run on a timed schedule throughout the day.",
     "faq": [
       {
@@ -3095,7 +3095,7 @@
         "price": 32
       }
     ],
-    "priceFrom": 32,
+    "priceFrom": 44,
     "description": "Siam Park isn't just a water park — it's the one TripAdvisor has crowned the best on the planet for seven years running, and the moment you walk through the gates you'll understand why.\n\nThe headline ride, Tower of Power, drops you almost vertically down a 28-metre slide at speeds touching 80 km/h, straight through a transparent tunnel inside a shark and ray tank. Prefer to take it slow? Drift the length of the one-kilometre Mai Thai River through lush Thai-themed jungle, or ride the Wave Palace, home to some of the largest artificial waves in the world.\n\nWith more than a dozen attractions, a white-sand beach, dedicated kids' areas and Thai-styled restaurants across the park, it's an easy full day out for families, couples and thrill-seekers alike. Tip: arrive early — the big rides build queues by midday.",
     "faq": [
       {
@@ -3172,7 +3172,7 @@
         "price": 21
       }
     ],
-    "priceFrom": 21,
+    "priceFrom": 51,
     "description": "Two parks, two days, one bargain price. This Twin Ticket combines Jungle Park and Aqualand Costa Adeje — ideal for a family wanting both animals and water fun.\n\nJungle Park, minutes from Los Cristianos, is a lush zoo with 500+ animals, birds-of-prey and sea lion shows and an 800-metre toboggan run. Aqualand is the island's biggest water park, packed with slides, a wave pool and a daily dolphin show.\n\nGreat value for families — use one park per day across your holiday.",
     "faq": [
       {
@@ -3249,7 +3249,7 @@
         "price": 73
       }
     ],
-    "priceFrom": 57,
+    "priceFrom": 78,
     "description": "One ticket, two of the best parks on earth — at a bargain combined price. The Twin Ticket gets you into both Loro Parque and Siam Park, to use across two separate days.\n\nLoro Parque (Puerto de la Cruz) is a world-class animal park — orcas, dolphins, penguins and the largest parrot collection on the planet. Siam Park (Costa Adeje) is the TripAdvisor-crowned best water park in the world, home to the Tower of Power drop slide and the Mai Thai River.\n\nThe smart choice if you want to do both. Tickets are used on two different days.",
     "faq": [
       {
@@ -4481,7 +4481,7 @@
         "net": 17.85
       }
     ],
-    "priceFrom": 25.5,
+    "priceFrom": 51,
     "description": "Olé is a high-energy Spanish dance and flamenco show created and directed by acclaimed dancer Fran Chafino, staged at the Las Olas Showroom in the GF Victoria hotel, Costa Adeje.\n\nExpect a journey through Spanish passion — light, colour, thundering footwork and live guitar — performed by a cast of professional dancers in dazzling costume. It's one of the most polished flamenco productions on the island.\n\nA great evening out for couples, groups and anyone wanting a taste of authentic Spanish culture. Check your ticket for the start time and arrive a little early for seating.",
     "faq": [
       {
@@ -4555,7 +4555,7 @@
         "net": 15.2
       }
     ],
-    "priceFrom": 19,
+    "priceFrom": 32,
     "description": "Pasión is a Spanish dance and flamenco show directed by Eva Rodríguez, performed at the Sala Coliseo in San Miguel.\n\nThe first half showcases classical Spanish dance — pieces like La Boda de Luis Alonso, La Vida Breve and a rousing pasodoble — before building into pure, fiery flamenco. Live music, intricate footwork and real emotion carry the whole performance.\n\nAn intimate, authentic evening of Spanish culture, and one of the best-value shows on the island.",
     "faq": [
       {
@@ -4629,7 +4629,7 @@
         "net": 17.5
       }
     ],
-    "priceFrom": 25,
+    "priceFrom": 49,
     "description": "History is a spectacular live musical journey through the most memorable moments in the history of music, staged at the Auditorio Pirámide de Arona — one of the island's premier venues.\n\nThirty talented performers from fifteen different countries take the stage with singing, dance and dazzling production, racing through the eras and anthems that shaped modern music. It's big, polished, theatre-scale entertainment.\n\nA brilliant night out for all ages — couples, families and groups alike.",
     "faq": [
       {
@@ -4703,7 +4703,7 @@
         "net": 24.8
       }
     ],
-    "priceFrom": 31,
+    "priceFrom": 52,
     "description": "Step back in time at the San Miguel Castle, a vast 6,000 m² Canarian-stone fortress with towers over 16 metres high, for a medieval dinner and tournament show.\n\nWatch knights on horseback joust and duel in the arena while you tuck into a hearty meal eaten the medieval way — with your hands. It's loud, theatrical, family-friendly fun, cheering on your knight's colours all night.\n\nGreat for families and groups. Dinner and the show run together, so come hungry and ready to roar.",
     "faq": [
       {
@@ -4818,7 +4818,7 @@
         "net": 27.3
       }
     ],
-    "priceFrom": 39,
+    "priceFrom": 49,
     "description": "Music Hall Tavern has been one of the Canaries' favourite nights out for over 20 years — a dazzling cabaret of comedy, live singing and outrageous drag performance, with dinner included.\n\nExpect side-splitting laughter, jaw-dropping costumes and a cast of unforgettable characters belting out crowd-pleasers all night. It's slick, cheeky West-End-style entertainment with a meal to match.\n\nPerfect for groups, couples and a big night out. An adults-oriented show — check the details if you're bringing younger kids.",
     "faq": [
       {
@@ -5292,7 +5292,7 @@
         "net": 45
       }
     ],
-    "priceFrom": 60,
+    "priceFrom": 80,
     "description": "See the island from the top deck of an open-top panoramic cabrio bus — a full day with 360º views the whole way. The route winds down toward the hamlet of Masca, with sweeping vistas over the ravines and palm-lined valleys of the Teno mountains.\n\nYou'll also climb into Teide National Park, with a multilingual guide (English, Spanish, German, French and more) telling the story of the landscape. The open top makes it a uniquely scenic, breezy way to tour.\n\nA relaxed full day with no driving. Bring sunscreen, a hat and a light jacket — it's breezy up top and cooler at altitude.",
     "included": "Open-top panoramic cabrio bus, multilingual guide (English, Spanish, German, French, Italian), hotel pickup and return, wine & cheese tasting stop in Vilaflor.",
     "notIncluded": "Lunch. Teide cable car ascent (+€45, weather dependent).",
@@ -5357,7 +5357,7 @@
         "net": 27.5
       }
     ],
-    "priceFrom": 45,
+    "priceFrom": 60,
     "description": "Galatea is a relaxed 3-hour boat trip along Tenerife's south-west coast in search of the pilot whales and bottlenose dolphins that live in these waters all year round.\n\nWith a friendly local crew you'll cruise the coastline watching for marine life, then stop to swim in the clear Atlantic before soaking up the sun on deck. An easygoing few hours on the water for couples, families and groups alike.\n\nBring a swimsuit, a towel and sunscreen. The exact departure point is confirmed when you book.",
     "faq": [
       {
@@ -5406,7 +5406,7 @@
         "net": 3
       }
     ],
-    "priceFrom": 5,
+    "priceFrom": 25,
     "description": "Travelling Lady is a relaxed 2-hour boat trip from Los Cristianos — the most budget-friendly way to get out on the water and look for the dolphins and whales that live along Tenerife's south coast.\n\nShorter and easy on the wallet, it's a great option for families with young kids or anyone who just wants a quick, scenic time at sea. Keep an eye out for the pods as you cruise the coastline.\n\nBring a swimsuit, a hat and sunscreen. Departs from Los Cristianos harbour.",
     "faq": [
       {
@@ -5449,7 +5449,7 @@
         "net": 30
       }
     ],
-    "priceFrom": 49,
+    "priceFrom": 80,
     "description": "Gulliver is a premium 3.5-hour boat cruise along Tenerife's south-west coast — a little longer and roomier than the standard trips, with extra time to find the whales and dolphins and to relax on board.\n\nYou'll cruise the coastline watching for marine life, stop to swim and snorkel in the clear Atlantic, and stretch out on the spacious decks. A step up for those who want more time and comfort on the water.\n\nBring a swimsuit, towel and sunscreen. Departure point confirmed on booking.",
     "faq": [
       {
@@ -5492,7 +5492,7 @@
         "net": 35
       }
     ],
-    "priceFrom": 50,
+    "priceFrom": 70,
     "description": "Skyline Cruiser is a comfortable 3-hour cruise along the south coast in search of pilot whales and dolphins, with plenty of deck space to relax between sightings.\n\nThe crew takes you out along the coastline, then anchors for a swim in the clear Atlantic before you soak up the sun on board. An easy, scenic few hours for couples, families and groups.\n\nBring a swimsuit, towel and sunscreen. Departure point confirmed on booking.",
     "faq": [
       {
@@ -5534,7 +5534,7 @@
         "price": 40
       }
     ],
-    "priceFrom": 40,
+    "priceFrom": 60,
     "description": "White Dream is a relaxed 3-hour boat trip along Tenerife's south-west coast, out to find the resident pilot whales and dolphins.\n\nCruise the coastline watching for marine life, then stop to swim in the clear Atlantic and unwind on deck. A comfortable, easygoing day on the water for all ages.\n\nBring a swimsuit, towel and sunscreen. Departure point confirmed on booking.",
     "faq": [
       {
@@ -5577,7 +5577,7 @@
         "net": 20
       }
     ],
-    "priceFrom": 40,
+    "priceFrom": 60,
     "description": "Mola is a sailboat trip along Tenerife's south-west coast — three relaxed hours under sail in search of the dolphins and pilot whales that live in these waters.\n\nThere's the calm of real sailing instead of engine noise, a stop to swim in the clear Atlantic, and space on deck to soak up the sun. A laid-back option for couples and small groups.\n\nBring a swimsuit, towel and sunscreen. Departure point confirmed on booking.",
     "faq": [
       {
@@ -5620,7 +5620,7 @@
         "net": 25
       }
     ],
-    "priceFrom": 40,
+    "priceFrom": 55,
     "description": "A relaxed 3-hour boat trip along the south-west coast of Tenerife, out to watch the pilot whales and dolphins that live here all year round.\n\nCruise the coastline with the crew, stop to swim and snorkel in the clear Atlantic, then relax on deck. An easy, scenic few hours for couples, families and groups.\n\nBring a swimsuit, towel and sunscreen. Departure point confirmed on booking.",
     "faq": [
       {
@@ -5663,7 +5663,7 @@
         "net": 25
       }
     ],
-    "priceFrom": 40,
+    "priceFrom": 60,
     "description": "Habana del Sol is a 3-hour catamaran trip along Tenerife's south-west coast, watching for the pilot whales and dolphins that live in these waters all year.\n\nThe crew finds the wildlife, then anchors for a swim and snorkel in the clear Atlantic, with plenty of room to relax on deck. A comfortable, family-friendly day at sea.\n\nBring a swimsuit, towel and sunscreen. Departure point confirmed on booking.",
     "faq": [
       {
