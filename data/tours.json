@@ -137,7 +137,7 @@
     "title": "Helicopter Tours — Helidream",
     "category": "air",
     "group": "air",
-    "duration": "3h",
+    "duration": "7–40 min",
     "languages": [
       "Deutsch",
       "English",
@@ -150,12 +150,32 @@
     ],
     "pricing": [
       {
-        "label": "Per person",
-        "price": 98,
-        "net": 83
+        "label": "South Coast — 7 min",
+        "price": 110,
+        "net": 93.5
+      },
+      {
+        "label": "Beaches & Cliffs — 10 min",
+        "price": 159,
+        "net": 135.15
+      },
+      {
+        "label": "Los Gigantes — 18 min",
+        "price": 295,
+        "net": 250.75
+      },
+      {
+        "label": "Isla Baja — 25 min",
+        "price": 430,
+        "net": 365.5
+      },
+      {
+        "label": "Gran Teide — 40 min",
+        "price": 545,
+        "net": 463.25
       }
     ],
-    "priceFrom": 98,
+    "priceFrom": 110,
     "description": "See Tenerife the way few people ever do — from a helicopter. Helidream flights take off from the Adeje Heliport on the south-west coast, lifting you over the island's dramatic coastline, cliffs and volcanic interior.\n\nDepending on the route, you'll soar over the Costa Adeje resorts, the towering Los Gigantes cliffs and the slopes climbing toward Teide, with nothing between you and the view. Flights run daily, subject to weather and schedule.\n\nAn unforgettable bucket-list experience and a stunning way to mark a special occasion. Bring a camera — the photos are extraordinary.",
     "faq": [
       {

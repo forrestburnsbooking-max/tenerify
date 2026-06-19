@@ -1,7 +1,11 @@
 slug,label,supplierId,pvp,net
 diving-puerto-colon,Per person,atlantis,75,35
 fly-fish-puerto-colon,Per person,watersport,18,12
-helidream-helicopter-tour,Per person,helidreams,98,83
+helidream-helicopter-tour,South Coast — 7 min,helidreams,110,93.50
+helidream-helicopter-tour,Beaches & Cliffs — 10 min,helidreams,159,135.15
+helidream-helicopter-tour,Los Gigantes — 18 min,helidreams,295,250.75
+helidream-helicopter-tour,Isla Baja — 25 min,helidreams,430,365.50
+helidream-helicopter-tour,Gran Teide — 40 min,helidreams,545,463.25
 paragliding,Per person,rob-paragliding,110,60
 parascending-puerto-colon,Adult,aj-fly,60,40
 parascending-puerto-colon,Child,aj-fly,60,40
