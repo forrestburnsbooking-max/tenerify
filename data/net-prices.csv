@@ -11,7 +11,6 @@ parascending-puerto-colon,Adult,aj-fly,60,40
 parascending-puerto-colon,Child,aj-fly,60,40
 safari-kayak-tour-los-cristianos,Adult,atlantis,45,25
 safari-kayak-tour-los-cristianos,Child,atlantis,22,12.5
-kayaking-stand-up-paddle-los-cristianos,Per person,atlantis,23,13
 stand-up-paddle-la-caleta,Per person,atlantis,60,30
 banana-puerto-colon,Per person,watersport,18,12
 atlanca-boat-rental,Per person,atlanca,85,55
@@ -156,3 +155,6 @@ buggy-teide-adventure,2-seater,hub-buggy,180,125
 buggy-teide-adventure,4-seater,hub-buggy,250,180
 buggy-sunset-adventure,2-seater,hub-buggy,180,125
 buggy-sunset-adventure,4-seater,hub-buggy,250,180
+kayaking-stand-up-paddle-los-cristianos,Rental 2h,atlantis,25,15
+kayaking-stand-up-paddle-los-cristianos,Lesson — 1 person,atlantis,60,40
+kayaking-stand-up-paddle-los-cristianos,Lesson — 2 people,atlantis,85,55

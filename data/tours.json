@@ -453,15 +453,25 @@
       "Rumano",
       "Русский"
     ],
-    "minAge": 6,
+    "minAge": 10,
     "pricing": [
       {
-        "label": "Per person",
-        "price": 23,
-        "net": 13
+        "label": "Rental 2h",
+        "price": 25,
+        "net": 15
+      },
+      {
+        "label": "Lesson — 1 person",
+        "price": 60,
+        "net": 40
+      },
+      {
+        "label": "Lesson — 2 people",
+        "price": 85,
+        "net": 55
       }
     ],
-    "priceFrom": 23,
+    "priceFrom": 25,
     "description": "Set off from Los Cristianos beach on a stand-up paddle adventure toward the striking Palm Mar cliffs. After a short briefing you'll glide along the coast on calm, clear water — easy enough for first-timers.\n\nThe area is known for sea turtles, so keep your eyes on the water, and there's a chance to snorkel the protected coastline. A fun, gentle workout with beautiful views.\n\nGreat for couples and families. Bring a swimsuit, towel and sunscreen — boards and gear provided.",
     "faq": [
       {
