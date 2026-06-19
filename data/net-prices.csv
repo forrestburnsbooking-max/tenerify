@@ -48,8 +48,6 @@ royal-delfin-boat,Baby (under 2),royal-delfin,0,0
 shogun-boat,Adult,shogun-neptuno,60,37
 shogun-boat,Child (3-11),shogun-neptuno,30,18.5
 shogun-boat,Baby (0-2),shogun-neptuno,0,37
-buggy-teide-adventure,Per buggy (2 people),hub-buggy,180,80
-buggy-sunset-adventure,Per buggy (2 people),hub-buggy,180,80
 teide-icod-garachico-masca,Adult,nere,58,46.4
 teide-icod-garachico-masca,Child,nere,45,36
 island-tour-masca,Per person,nere,50,33
@@ -154,3 +152,7 @@ sonador-boat,Adult,sonador,60,27.5
 sonador-boat,Child,sonador,45,27.5
 galatea-boat,Adult,galatea,60,27.5
 galatea-boat,Child,galatea,45,27.5
+buggy-teide-adventure,2-seater,hub-buggy,180,125
+buggy-teide-adventure,4-seater,hub-buggy,250,180
+buggy-sunset-adventure,2-seater,hub-buggy,180,125
+buggy-sunset-adventure,4-seater,hub-buggy,250,180

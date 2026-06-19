@@ -1881,9 +1881,14 @@
     "minAge": 18,
     "pricing": [
       {
-        "label": "Per buggy (2 people)",
+        "label": "2-seater",
         "price": 180,
-        "net": 80
+        "net": 125
+      },
+      {
+        "label": "4-seater",
+        "price": 250,
+        "net": 180
       }
     ],
     "priceFrom": 180,
@@ -1951,9 +1956,14 @@
     "minAge": 18,
     "pricing": [
       {
-        "label": "Per buggy (2 people)",
+        "label": "2-seater",
         "price": 180,
-        "net": 80
+        "net": 125
+      },
+      {
+        "label": "4-seater",
+        "price": 250,
+        "net": 180
       }
     ],
     "priceFrom": 180,
