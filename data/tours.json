@@ -1160,7 +1160,7 @@
       {
         "label": "Baby (under 6)",
         "price": 0,
-        "net": 25
+        "net": 0
       }
     ],
     "priceFrom": 45,
@@ -1331,7 +1331,7 @@
       {
         "label": "Baby (0-2)",
         "price": 0,
-        "net": 42
+        "net": 0
       }
     ],
     "priceFrom": 63,
@@ -1482,7 +1482,7 @@
       {
         "label": "Baby (0-2)",
         "price": 0,
-        "net": 16
+        "net": 0
       }
     ],
     "priceFrom": 27,
@@ -1817,7 +1817,7 @@
       {
         "label": "Baby (0-2)",
         "price": 0,
-        "net": 37
+        "net": 0
       }
     ],
     "priceFrom": 60,
@@ -5531,7 +5531,13 @@
       },
       {
         "label": "Child",
-        "price": 40
+        "price": 40,
+        "net": 35
+      },
+      {
+        "label": "Baby (0-2)",
+        "price": 0,
+        "net": 0
       }
     ],
     "priceFrom": 60,

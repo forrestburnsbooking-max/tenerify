@@ -15,18 +15,9 @@ freebird-catamaran,Child 4-11 (3h),freebird,23.5,11
 freebird-catamaran,Child 4-11 (4.5h),freebird,31,16
 freebird-catamaran,Baby (under 4),freebird,0,0
 fishing-boat-puerto-colon,Per person,happy-hooker,70,50
-maxicat-catamaran,Adult,maxicat,45,25
-maxicat-catamaran,Child (6-11),maxicat,22.5,12.5
-maxicat-catamaran,Baby (under 6),maxicat,0,25
 monte-cristo-catamaran,Adult,monte-cristo,62,40
 monte-cristo-catamaran,Child (0-11),monte-cristo,49,36
-neptuno-boat,Adult,shogun-neptuno,63,42
-neptuno-boat,Child (3-11),shogun-neptuno,31.5,21
-neptuno-boat,Baby (0-2),shogun-neptuno,0,42
 diamant-boat,Per person,opera,80,45
-peter-pan-boat,Adult,peter-pan,27,16
-peter-pan-boat,Child (3-11),peter-pan,13.5,8
-peter-pan-boat,Baby (0-2),peter-pan,0,16
 raggie-tenerife-fishing,Fisher — 4h,raggie-fishing,85,60
 raggie-tenerife-fishing,Companion — 4h,raggie-fishing,79,50
 ragnarok-viking-boat,Adult (2h),viking,30,21
@@ -39,9 +30,6 @@ royal-delfin-boat,Adult (4.5h),royal-delfin,63,44.1
 royal-delfin-boat,Child 3-11 (3h),royal-delfin,30,21
 royal-delfin-boat,Child 3-11 (4.5h),royal-delfin,40,28
 royal-delfin-boat,Baby (under 2),royal-delfin,0,0
-shogun-boat,Adult,shogun-neptuno,60,37
-shogun-boat,Child (3-11),shogun-neptuno,30,18.5
-shogun-boat,Baby (0-2),shogun-neptuno,0,37
 teide-icod-garachico-masca,Adult,nere,58,46.4
 teide-icod-garachico-masca,Child,nere,45,36
 island-tour-masca,Per person,nere,50,33
@@ -113,8 +101,6 @@ gulliver-boat,Adult,gulliver,80,49
 gulliver-boat,Child,gulliver,49,30
 skyline-cruiser,Adult,skyline-cruiser,70,45
 skyline-cruiser,Child,skyline-cruiser,50,35
-white-dream,Adult,white-dream,60,35
-white-dream,Child,white-dream,40,
 mola-sailboat,Adult,mola-sailboat,60,30
 mola-sailboat,Child,mola-sailboat,40,20
 lina-mizendoha,Adult,lina-mizendoha,55,35
@@ -175,3 +161,18 @@ teide-by-night,With dinner — adult (11+),ozzy,79,48
 teide-by-night,With dinner — child (4-10),ozzy,55,43
 teide-by-night,Without dinner — adult (11+),ozzy,65,38
 teide-by-night,Without dinner — child (4-10),ozzy,49,33
+white-dream,Adult,white-dream,60,35
+white-dream,Child,white-dream,40,35
+white-dream,Baby (0-2),white-dream,0,0
+maxicat-catamaran,Adult,maxicat,45,25
+maxicat-catamaran,Child (6-11),maxicat,22.5,12.5
+maxicat-catamaran,Baby (under 6),maxicat,0,0
+neptuno-boat,Adult,shogun-neptuno,63,42
+neptuno-boat,Child (3-11),shogun-neptuno,31.5,21
+neptuno-boat,Baby (0-2),shogun-neptuno,0,0
+peter-pan-boat,Adult,peter-pan,27,16
+peter-pan-boat,Child (3-11),peter-pan,13.5,8
+peter-pan-boat,Baby (0-2),peter-pan,0,0
+shogun-boat,Adult,shogun-neptuno,60,37
+shogun-boat,Child (3-11),shogun-neptuno,30,18.5
+shogun-boat,Baby (0-2),shogun-neptuno,0,0
