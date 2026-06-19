@@ -5329,7 +5329,7 @@
   },
   {
     "slug": "gulliver-boat",
-    "title": "Gulliver — 3.5h premium boat cruise",
+    "title": "Gulliver Fun Yacht — boat trip with water slide",
     "category": "whale-watching",
     "group": "water",
     "duration": "3.5h",
@@ -5346,7 +5346,7 @@
       }
     ],
     "priceFrom": 80,
-    "description": "Gulliver is a premium 3.5-hour boat cruise along Tenerife's south-west coast — a little longer and roomier than the standard trips, with extra time to find the whales and dolphins and to relax on board.\n\nYou'll cruise the coastline watching for marine life, stop to swim and snorkel in the clear Atlantic, and stretch out on the spacious decks. A step up for those who want more time and comfort on the water.\n\nBring a swimsuit, towel and sunscreen. Departure point confirmed on booking.",
+    "description": "Gulliver is a fun motor-yacht trip from Puerto Colón, ideal for families and groups of up to 12. The yacht has a big water slide straight into the sea, plus inflatables, snorkel gear, kayak, paddleboard and a water bike — so the swim stops are packed with things to do.\n\nCruise Tenerife’s south-west coast keeping an eye out for whales and dolphins, with gourmet snacks and unlimited drinks included on board. Morning or afternoon departures, professional crew, suitable for all ages.",
     "faq": [
       {
         "question": "How will I receive my tickets?",
@@ -5365,10 +5365,11 @@
         "answer": "Yes, it is possible. Please contact us."
       }
     ],
-    "meetingPoint": "South Tenerife — departure point confirmed on booking",
+    "meetingPoint": "Puerto Colón Marina, Costa Adeje",
     "bookingPhone": "643 98 59 57",
     "supplierId": "gulliver",
-    "minAge": 0
+    "minAge": 0,
+    "imageUrl": "/images/tours/gulliver-boat.webp"
   },
   {
     "slug": "white-dream",
