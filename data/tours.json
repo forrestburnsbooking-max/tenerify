@@ -762,7 +762,7 @@
         "answer": "Yes, it is possible. Please contact us."
       }
     ],
-    "imageUrl": "/images/tours/sailing.jpg",
+    "imageUrl": "/images/tours/sonador-boat.webp",
     "bookingPhone": "639 203 484",
     "supplierId": "kosamui"
   },
@@ -3235,7 +3235,7 @@
         "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
       }
     ],
-    "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/665832332bcef8b6be6adb7f_2.webp",
+    "imageUrl": "/images/tours/quad.webp",
     "url": "https://www.excursionstenerife.es/tours/quad-teide-tour",
     "seatsPerVehicle": 2,
     "timeSlots": [
@@ -4286,7 +4286,7 @@
         "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
       }
     ],
-    "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6682eaed18fabe55719de8a0_EOleflamencoshowgfvictoria.webp",
+    "imageUrl": "/images/tours/ole-flamenco-show.jpg",
     "url": "https://www.excursionstenerife.es/tours/ole-flamenco-show",
     "timeSlots": [
       "21:00"
@@ -4359,7 +4359,7 @@
         "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
       }
     ],
-    "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/668466a8ccb9c4d8f5c16b27_FOTOPORTADAWEBELCOLISEO.webp",
+    "imageUrl": "/images/tours/flamenco-show-sala-coliseo.jpg",
     "url": "https://www.excursionstenerife.es/tours/flamenco-show-sala-coliseo",
     "timeSlots": [
       "20:30"
@@ -4432,7 +4432,7 @@
         "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
       }
     ],
-    "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/66845b4a3357f7d025d46e55_PORTADAHISTORY.webp",
+    "imageUrl": "/images/tours/history-evolution-of-music.webp",
     "url": "https://www.excursionstenerife.es/tours/history-evolution-of-music",
     "timeSlots": [
       "21:00"
@@ -4505,7 +4505,7 @@
         "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
       }
     ],
-    "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/666b0e16c1bb5ff68c98a635_Castillo11.webp",
+    "imageUrl": "/images/tours/medieval-show.webp",
     "url": "https://www.excursionstenerife.es/tours/medieval-show",
     "timeSlots": [
       "19:00"
@@ -4619,7 +4619,7 @@
         "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
       }
     ],
-    "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/665993a3fc4c4c1d3cd7bc2b_MHTforWeb.webp",
+    "imageUrl": "/images/tours/music-hall-tavern.png",
     "url": "https://www.excursionstenerife.es/tours/music-hall-tavern",
     "timeSlots": [
       "19:30"
@@ -4688,7 +4688,7 @@
         "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
       }
     ],
-    "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/66845487a383570fd6811e31_A1poratadaweb.webp",
+    "imageUrl": "/images/tours/scandal-dinner-show.webp",
     "url": "https://www.excursionstenerife.es/tours/scandal-dinner-show",
     "adultOnly": true,
     "timeSlots": [
@@ -4890,7 +4890,7 @@
         "answer": "Yes — the driver must be at least 21 years old with a valid driving licence and at least 2 years of driving experience."
       }
     ],
-    "imageUrl": "https://www.souljeep.com/images/tours/teide-sunset/hero.jpg",
+    "imageUrl": "/images/tours/soul-jeep-self-drive-safari.jpg",
     "url": "https://www.souljeep.com/",
     "seatsPerVehicle": 4,
     "bookingPhone": "614 475 604",
@@ -4953,7 +4953,7 @@
         "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
       }
     ],
-    "imageUrl": "https://www.souljeep.com/images/tours/coastal/hero.jpg",
+    "imageUrl": "/images/tours/soul-jeep-passenger-tour.jpg",
     "url": "https://www.souljeep.com/",
     "bookingPhone": "614 475 604",
     "supplierId": "soul-jeep"
