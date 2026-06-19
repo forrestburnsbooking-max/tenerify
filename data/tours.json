@@ -1455,12 +1455,17 @@
     ],
     "pricing": [
       {
-        "label": "Per person",
-        "price": 70,
+        "label": "Fisher — 4h",
+        "price": 85,
+        "net": 60
+      },
+      {
+        "label": "Companion — 4h",
+        "price": 79,
         "net": 50
       }
     ],
-    "priceFrom": 70,
+    "priceFrom": 79,
     "description": "Head offshore for a full-day fishing adventure aboard a 42-foot Rodman charter out of Costa Adeje. Perfect for groups of up to eight anglers, with experienced skipper Captain Raúl ('Atuñero') — 20+ years on these waters — and a multilingual crew.\n\nYou'll target the big game species of the deep Atlantic with all the gear provided, on a comfortable, well-equipped boat built for a serious day's fishing.\n\nIdeal for groups and keen anglers. Bring sun protection and a hat; catches depend on the day and season.",
     "faq": [
       {
