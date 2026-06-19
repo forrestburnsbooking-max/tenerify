@@ -1399,9 +1399,14 @@
     ],
     "pricing": [
       {
-        "label": "Per person",
+        "label": "Adult",
         "price": 80,
         "net": 45
+      },
+      {
+        "label": "Child",
+        "price": 50,
+        "net": 30
       }
     ],
     "priceFrom": 80,

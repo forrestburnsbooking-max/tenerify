@@ -17,7 +17,6 @@ freebird-catamaran,Baby (under 4),freebird,0,0
 fishing-boat-puerto-colon,Per person,happy-hooker,70,50
 monte-cristo-catamaran,Adult,monte-cristo,62,40
 monte-cristo-catamaran,Child (0-11),monte-cristo,49,36
-diamant-boat,Per person,opera,80,45
 raggie-tenerife-fishing,Fisher — 4h,raggie-fishing,85,60
 raggie-tenerife-fishing,Companion — 4h,raggie-fishing,79,50
 ragnarok-viking-boat,Adult (2h),viking,30,21
@@ -176,3 +175,5 @@ peter-pan-boat,Baby (0-2),peter-pan,0,0
 shogun-boat,Adult,shogun-neptuno,60,37
 shogun-boat,Child (3-11),shogun-neptuno,30,18.5
 shogun-boat,Baby (0-2),shogun-neptuno,0,0
+diamant-boat,Adult,opera,80,45
+diamant-boat,Child,opera,50,30
