@@ -89,7 +89,7 @@
         "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
       }
     ],
-    "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6693ee4c7d053ca0b4a60795_AAOlaDivingATlanticoExcursiones.webp",
+    "imageUrl": "/images/tours/diving-puerto-colon.jpg",
     "url": "https://www.excursionstenerife.es/tours/diving-puerto-colon",
     "bookingPhone": "671 408 970",
     "supplierId": "atlantis",
@@ -158,7 +158,7 @@
         "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
       }
     ],
-    "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6692ccced3e6dadb64cb39c4_flyfish2.webp",
+    "imageUrl": "/images/tours/fly-fish-puerto-colon.jpg",
     "url": "https://www.excursionstenerife.es/tours/fly-fish-puerto-colon",
     "bookingPhone": "638 531 863",
     "supplierId": "watersport",
@@ -244,7 +244,7 @@
         "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
       }
     ],
-    "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/668d96374c23e4a9c36b623b_AHELIDREAMEXCURSIONHELICPOTERO.webp",
+    "imageUrl": "/images/tours/helidream-helicopter-tour.jpg",
     "url": "https://www.excursionstenerife.es/tours/helidream-helicopter-tour",
     "bookingPhone": "630 315 422",
     "supplierId": "helidreams",
@@ -334,8 +334,94 @@
         "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
       }
     ],
-    "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/668d839fdfeeede47005bbac_BRISA2.webp",
+    "imageUrl": "/images/tours/paragliding.webp",
     "url": "https://www.excursionstenerife.es/tours/paragliding",
+    "bookingPhone": "640 773 065",
+    "supplierId": "daydream",
+    "meetingPoint": "Mercadona Adeje (Los Olivos), Adeje",
+    "minAge": 4
+  },
+  {
+    "slug": "paratrike",
+    "title": "Paratrike — powered tandem flight over Tenerife",
+    "category": "air",
+    "group": "air",
+    "duration": "20–60 min",
+    "languages": [
+      "Deutsch",
+      "English",
+      "Español",
+      "Français",
+      "Italiano",
+      "Neerlandés",
+      "Rumano",
+      "Русский"
+    ],
+    "pricing": [
+      {
+        "label": "Costa — 500m (20 min)",
+        "price": 100,
+        "net": 60
+      },
+      {
+        "label": "Mountain — 1000m (25 min)",
+        "price": 130,
+        "net": 80
+      },
+      {
+        "label": "Combined — 1000m (30 min)",
+        "price": 180,
+        "net": 100
+      },
+      {
+        "label": "Crossing (60 min)",
+        "price": 210,
+        "net": 150
+      },
+      {
+        "label": "Acrobatic (20 min)",
+        "price": 150,
+        "net": 100
+      }
+    ],
+    "priceFrom": 100,
+    "description": "See Tenerife from the sky on a powered tandem flight — a paratrike is a paraglider with a motor and a comfortable wheeled seat, so there is no running take-off and no skill needed. Strapped safely next to an expert pilot, you climb smoothly to 500–1000 m and cruise over the coast, mountains and volcanic landscape.\n\nChoose a short coastal hop, a longer mountain or crossing flight, or an adrenaline-filled acrobatic ride. Transport from the meeting point is included. Minimum age 4, maximum weight 130 kg.",
+    "faq": [
+      {
+        "question": "How will I receive my tickets?",
+        "answer": "After you complete your purchase, you will receive an order confirmation email within a few minutes. This email will contain all the details of your purchase, including the event, date, and number of tickets. Please note we do not send tickets by post."
+      },
+      {
+        "question": "What is your cancellation policy?",
+        "answer": "Free cancellation with a full refund if you cancel more than 24 hours before the tour starts. Cancellations made less than 24 hours before the start time, or no-shows, are non-refundable. If the operator has to cancel (for example due to bad weather or safety), you get a full refund or a free reschedule. To cancel, message us on WhatsApp (+34 610 434 957) with your booking reference — eligible refunds are processed within 14 days."
+      },
+      {
+        "question": "Can I book an excursion within 24 hours of its start time?",
+        "answer": "Yes, it possible. Please contact us or visit our office"
+      },
+      {
+        "question": "Will I be picked up at my hotel when a transfer is possible?",
+        "answer": "And where is the meeting point The exact meeting point for your excursion will be specified in your booking confirmation email. If a transfer service is included with your booking, we offer convenient hotel pickup. The availability of this service will depend on your hotel’s location and the specific excursion."
+      },
+      {
+        "question": "May I pay directly in cash when the tour / activity starts?",
+        "answer": "We offer online purchases on the platform. If you wish to buy with cash you can visit our office."
+      },
+      {
+        "question": "Do you offer discounts?",
+        "answer": "We generally cannot give any discounts due to the very high demand. We offer discount for group bookings. Please contact us"
+      },
+      {
+        "question": "What happens if the weather is too bad to go on the excursion?",
+        "answer": "If the weather is too bad to go on the excursion, it will be rescheduled or you will receive a full refund."
+      },
+      {
+        "question": "May I purchase a gift voucher?",
+        "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
+      }
+    ],
+    "imageUrl": "/images/tours/paragliding.webp",
+    "url": "https://www.daydreamparagliding.com",
     "bookingPhone": "640 773 065",
     "supplierId": "daydream",
     "meetingPoint": "Mercadona Adeje (Los Olivos), Adeje",
@@ -406,7 +492,7 @@
         "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
       }
     ],
-    "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6692d2d2323c44de26624baf_Parascending3.webp",
+    "imageUrl": "/images/tours/parascending-puerto-colon.jpg",
     "url": "https://www.excursionstenerife.es/tours/parascending-puerto-colon",
     "bookingPhone": "655 074 083",
     "supplierId": "aj-fly",
@@ -481,7 +567,7 @@
         "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
       }
     ],
-    "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6692a96afac01307bd9434de_kayak-snorkel-3.webp",
+    "imageUrl": "/images/tours/safari-kayak-tour-los-cristianos.jpg",
     "url": "https://www.excursionstenerife.es/tours/safari-kayak-tour-los-cristianos",
     "bookingPhone": "671 408 970",
     "supplierId": "atlantis",
@@ -562,7 +648,7 @@
         "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
       }
     ],
-    "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6692b5742f10ee15ab7c4ab3_DDKayakDivingAtlantis.webp",
+    "imageUrl": "/images/tours/paddle.jpg",
     "url": "https://www.excursionstenerife.es/tours/kayaking-stand-up-paddle-los-cristianos",
     "supplierId": "atlantis",
     "bookingPhone": "671 408 970",
@@ -631,7 +717,7 @@
         "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
       }
     ],
-    "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6692c2ce5fb30e12b950e2c9_banana2.webp",
+    "imageUrl": "/images/tours/banana-puerto-colon.jpg",
     "url": "https://www.excursionstenerife.es/tours/banana-puerto-colon",
     "bookingPhone": "638 531 863",
     "supplierId": "watersport",
