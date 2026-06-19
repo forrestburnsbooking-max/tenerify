@@ -661,12 +661,17 @@
     ],
     "pricing": [
       {
-        "label": "Per person",
-        "price": 50,
-        "net": 22.5
+        "label": "Adult",
+        "price": 60,
+        "net": 27.5
+      },
+      {
+        "label": "Child",
+        "price": 45,
+        "net": 27.5
       }
     ],
-    "priceFrom": 50,
+    "priceFrom": 45,
     "description": "The Arriro is a sailboat departing Puerto Colón for the Costa Adeje coast, available as a private charter or a shared trip. Under sail you'll head out to find the pilot whales and dolphins that live in Canarian waters year-round.\n\nThere's time to swim in the clear Atlantic and enjoy the quiet of being under sail rather than engine. Choose a shared departure for value, or book it privately for your own group.\n\nA calm, authentic sailing experience. Bring swimwear, a towel and sunscreen.",
     "faq": [
       {
@@ -722,12 +727,17 @@
     "duration": "3h",
     "pricing": [
       {
-        "label": "Per person",
+        "label": "Adult",
         "price": 60,
-        "net": 25
+        "net": 27.5
+      },
+      {
+        "label": "Child",
+        "price": 45,
+        "net": 27.5
       }
     ],
-    "priceFrom": 60,
+    "priceFrom": 45,
     "description": "Cool Sailing is a relaxed 3-hour motor-yacht trip from Puerto Colón along the Costa Adeje coast, capped at just 11 guests for a personal, uncrowded day on the water.\n\nYou'll cruise in search of the resident pilot whales and dolphins, anchor for a swim in the clear Atlantic, and enjoy an open bar and food included throughout.\n\nSmall-group and easygoing — ideal for couples and small groups. Bring swimwear, a towel and sunscreen.",
     "timeSlots": [
       "10:00",
@@ -767,12 +777,17 @@
     "duration": "3h",
     "pricing": [
       {
-        "label": "Per person",
-        "price": 50,
-        "net": 25
+        "label": "Adult",
+        "price": 60,
+        "net": 27.5
+      },
+      {
+        "label": "Child",
+        "price": 45,
+        "net": 27.5
       }
     ],
-    "priceFrom": 50,
+    "priceFrom": 45,
     "description": "Kosamui is an intimate sailing-yacht trip from Puerto Colón — capped at just 12 guests, so it never feels crowded. Over three relaxed hours you'll sail Tenerife's south-west coast in search of the resident pilot whales and dolphins.\n\nThe crew anchors at a quiet spot for a swim in the clear Atlantic, with an open bar and food included throughout. Small-group, unhurried and personal — the opposite of the big party boats.\n\nIdeal for couples and small groups. Bring swimwear, a towel and sunscreen.",
     "timeSlots": [
       "10:00",
@@ -1790,21 +1805,16 @@
     "pricing": [
       {
         "label": "Adult",
-        "price": 50,
-        "net": 25
+        "price": 60,
+        "net": 27.5
       },
       {
-        "label": "Child (3-9)",
-        "price": 27.5,
-        "net": 12.5
-      },
-      {
-        "label": "Baby (0-2)",
-        "price": 0,
-        "net": 12.5
+        "label": "Child",
+        "price": 45,
+        "net": 27.5
       }
     ],
-    "priceFrom": 27.5,
+    "priceFrom": 45,
     "description": "Sonador is a fast, sleek Beneteau First 45 luxury sailing yacht for a private trip along Tenerife's most spectacular coast — the towering cliffs of Los Gigantes and the mouth of the Masca ravine.\n\nOnboard you'll watch for whales and dolphins, swim and snorkel in secluded water, and take in the island's wildest scenery from the deck of a genuine performance yacht — all to yourselves.\n\nA private, premium experience for couples, families or groups celebrating something special.",
     "meetingPoint": "Gate 1, Puerto Colón Marina, Costa Adeje",
     "faq": [
@@ -2527,12 +2537,17 @@
     "minAge": 16,
     "pricing": [
       {
+        "label": "40 minutes (1-2 people)",
+        "price": 90,
+        "net": 50
+      },
+      {
         "label": "1 hour (1-2 people)",
         "price": 100,
         "net": 60
       }
     ],
-    "priceFrom": 100,
+    "priceFrom": 90,
     "description": "For a hit of speed and salt spray, nothing beats a jet ski safari along the Costa Adeje coast. Led by an instructor on the water, you'll ride out from the Las Américas area and skim the south coastline, taking in the cliffs and open Atlantic at full throttle.\n\nThe price covers a full one-hour ride on a jet ski for two — ride together or take turns. It's a guided safari: you simply follow the lead jet ski, so no experience is needed.\n\nBring a swimsuit, a towel and a waterproof phone case if you want photos.",
     "meetingPoint": "Puerto Colón Marina, Costa Adeje",
     "faq": [
@@ -3195,8 +3210,13 @@
     "minAge": 18,
     "pricing": [
       {
-        "label": "Per person",
+        "label": "Single (1 rider)",
         "price": 100,
+        "net": 60
+      },
+      {
+        "label": "Double (2 riders)",
+        "price": 120,
         "net": 60
       }
     ],
@@ -3269,12 +3289,17 @@
     "minAge": 18,
     "pricing": [
       {
-        "label": "For 2 people",
+        "label": "Single (1 rider)",
+        "price": 100,
+        "net": 60
+      },
+      {
+        "label": "Double (2 riders)",
         "price": 120,
         "net": 60
       }
     ],
-    "priceFrom": 120,
+    "priceFrom": 100,
     "description": "Trade the beach for the volcano on a 3-hour quad safari up towards Teide. After a briefing you'll ride through pine forests and otherworldly volcanic landscapes, feeling the adrenaline and the cool mountain air as the scenery opens up around you.\n\nPrice covers a quad for two people, and the guided route keeps you on the best tracks with the best views. It's one of the most scenic ways to swap the coast for the heights of the island.\n\nA valid driving licence is required to drive. Bring a jacket — it's noticeably cooler at altitude — plus closed shoes and sunglasses.",
     "faq": [
       {
@@ -5083,14 +5108,14 @@
     "minAge": 16,
     "pricing": [
       {
-        "label": "1 hour (1-2 people)",
-        "price": 100,
-        "net": 60
-      },
-      {
         "label": "40 minutes (1-2 people)",
         "price": 90,
         "net": 50
+      },
+      {
+        "label": "1 hour (1-2 people)",
+        "price": 100,
+        "net": 60
       }
     ],
     "priceFrom": 90,
@@ -5222,16 +5247,16 @@
     "pricing": [
       {
         "label": "Adult",
-        "price": 50,
-        "net": 25
+        "price": 60,
+        "net": 27.5
       },
       {
         "label": "Child",
-        "price": 40,
-        "net": 15
+        "price": 45,
+        "net": 27.5
       }
     ],
-    "priceFrom": 40,
+    "priceFrom": 45,
     "description": "Galatea is a relaxed 3-hour boat trip along Tenerife's south-west coast in search of the pilot whales and bottlenose dolphins that live in these waters all year round.\n\nWith a friendly local crew you'll cruise the coastline watching for marine life, then stop to swim in the clear Atlantic before soaking up the sun on deck. An easygoing few hours on the water for couples, families and groups alike.\n\nBring a swimsuit, a towel and sunscreen. The exact departure point is confirmed when you book.",
     "faq": [
       {
@@ -5570,14 +5595,14 @@
     "duration": "40 min or 1h",
     "pricing": [
       {
-        "label": "1 hour (1-2 people)",
-        "price": 110,
-        "net": 60
-      },
-      {
         "label": "40 minutes (1-2 people)",
         "price": 90,
         "net": 50
+      },
+      {
+        "label": "1 hour (1-2 people)",
+        "price": 100,
+        "net": 60
       }
     ],
     "priceFrom": 90,

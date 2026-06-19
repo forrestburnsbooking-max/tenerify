@@ -14,9 +14,6 @@ safari-kayak-tour-los-cristianos,Child,atlantis,22,12.5
 kayaking-stand-up-paddle-los-cristianos,Per person,atlantis,23,13
 stand-up-paddle-la-caleta,Per person,atlantis,60,30
 banana-puerto-colon,Per person,watersport,18,12
-arriro-boat,Per person,arriro,50,22.5
-cool-sailing,Per person,cool-sailing,60,25
-kosamui-boat,Per person,kosamui,50,25
 atlanca-boat-rental,Per person,atlanca,85,55
 freebird-catamaran,Adult (3h),freebird,47,22
 freebird-catamaran,Adult (4.5h),freebird,62,32
@@ -51,9 +48,6 @@ royal-delfin-boat,Baby (under 2),royal-delfin,0,0
 shogun-boat,Adult,shogun-neptuno,60,37
 shogun-boat,Child (3-11),shogun-neptuno,30,18.5
 shogun-boat,Baby (0-2),shogun-neptuno,0,37
-sonador-boat,Adult,sonador,50,25
-sonador-boat,Child (3-9),sonador,27.5,12.5
-sonador-boat,Baby (0-2),sonador,0,12.5
 buggy-teide-adventure,Per buggy (2 people),hub-buggy,180,80
 buggy-sunset-adventure,Per buggy (2 people),hub-buggy,180,80
 teide-icod-garachico-masca,Adult,nere,58,46.4
@@ -68,7 +62,6 @@ teide-tour-cable-car,Child,nere,36,35
 santa-cruz--la-laguna--anaga,Adult,nere,85,50
 santa-cruz--la-laguna--anaga,Child,nere,70,45
 booster-pack-puerto-colon,Per person,watersport,110,45
-jet-ski-puerto-colon,1 hour (1-2 people),jetski-puerto-colon,100,60
 watersport-pack-puerto-colon,Per person,watersport,90,54
 aqualand,Adult,nere,36,
 aqualand,Child (5-10),nere,29,
@@ -89,8 +82,6 @@ twin-ticket-loro-parque-siam-park,Adult,nere,78,
 twin-ticket-loro-parque-siam-park,Child (3-11),nere,57,
 twin-ticket-loro-parque-siam-park,Adult + bus transfer,nere,98,
 twin-ticket-loro-parque-siam-park,Child + bus transfer,nere,73,
-quad-sunset-tour,Per person,quadsquad,100,60
-quad-teide-tour,For 2 people,quadsquad,120,60
 citroen-c3-car-rental,Per person,aliscar,62,43.4
 citroen-cactus-automatic-car-rental,Per person,aliscar,65,45.5
 citroen-grand-picasso-car-rental,Per person,aliscar,100,70
@@ -123,12 +114,8 @@ soul-jeep-self-drive-safari,Per jeep (1-2 people),soul-jeep,290,130
 soul-jeep-self-drive-safari,Per jeep (3-4 people),soul-jeep,310,150
 soul-jeep-passenger-tour,Per person,soul-jeep,120,65
 soul-jeep-passenger-tour,Additional passenger,soul-jeep,90,45
-jetski-las-galletas,1 hour (1-2 people),flash-jetski,100,60
-jetski-las-galletas,40 minutes (1-2 people),flash-jetski,90,50
 cabrio-bus-teide-masca,Adult,nere,80,55
 cabrio-bus-teide-masca,Child,nere,60,45
-galatea-boat,Adult,galatea,50,25
-galatea-boat,Child,galatea,40,15
 travelling-lady,Adult,travelling-lady,25,15
 travelling-lady,Child,travelling-lady,15,6
 travelling-lady,Kid,travelling-lady,5,3
@@ -144,7 +131,26 @@ lina-mizendoha,Adult,lina-mizendoha,55,35
 lina-mizendoha,Child,lina-mizendoha,40,25
 habana-del-sol,Adult,habana,60,35
 habana-del-sol,Child,habana,40,25
-jetski-extreme,1 hour (1-2 people),jetski-extreme,110,60
-jetski-extreme,40 minutes (1-2 people),jetski-extreme,90,50
 ultimate-quads,Single (1 rider),ultimate-quads,100,60
 ultimate-quads,Double (2 riders),ultimate-quads,120,60
+
+jet-ski-puerto-colon,40 minutes (1-2 people),jetski-puerto-colon,90,50
+jet-ski-puerto-colon,1 hour (1-2 people),jetski-puerto-colon,100,60
+jetski-las-galletas,40 minutes (1-2 people),flash-jetski,90,50
+jetski-las-galletas,1 hour (1-2 people),flash-jetski,100,60
+jetski-extreme,40 minutes (1-2 people),jetski-extreme,90,50
+jetski-extreme,1 hour (1-2 people),jetski-extreme,100,60
+quad-teide-tour,Single (1 rider),quadsquad,100,60
+quad-teide-tour,Double (2 riders),quadsquad,120,60
+quad-sunset-tour,Single (1 rider),quadsquad,100,60
+quad-sunset-tour,Double (2 riders),quadsquad,120,60
+kosamui-boat,Adult,kosamui,60,27.5
+kosamui-boat,Child,kosamui,45,27.5
+cool-sailing,Adult,cool-sailing,60,27.5
+cool-sailing,Child,cool-sailing,45,27.5
+arriro-boat,Adult,arriro,60,27.5
+arriro-boat,Child,arriro,45,27.5
+sonador-boat,Adult,sonador,60,27.5
+sonador-boat,Child,sonador,45,27.5
+galatea-boat,Adult,galatea,60,27.5
+galatea-boat,Child,galatea,45,27.5
