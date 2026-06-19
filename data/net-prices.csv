@@ -1,5 +1,4 @@
 slug,label,supplierId,pvp,net
-diving-puerto-colon,Per person,atlantis,75,35
 fly-fish-puerto-colon,Per person,watersport,18,12
 helidream-helicopter-tour,South Coast — 7 min,helidreams,110,93.50
 helidream-helicopter-tour,Beaches & Cliffs — 10 min,helidreams,159,135.15
@@ -9,8 +8,6 @@ helidream-helicopter-tour,Gran Teide — 40 min,helidreams,545,463.25
 paragliding,Per person,rob-paragliding,110,60
 parascending-puerto-colon,Adult,aj-fly,60,40
 parascending-puerto-colon,Child,aj-fly,60,40
-safari-kayak-tour-los-cristianos,Adult,atlantis,45,25
-safari-kayak-tour-los-cristianos,Child,atlantis,22,12.5
 banana-puerto-colon,Per person,watersport,18,12
 atlanca-boat-rental,Per person,atlanca,85,55
 freebird-catamaran,Adult (3h),freebird,47,22
@@ -157,3 +154,13 @@ buggy-sunset-adventure,4-seater,hub-buggy,250,180
 kayaking-stand-up-paddle-los-cristianos,Rental 2h,atlantis,25,15
 kayaking-stand-up-paddle-los-cristianos,Lesson — 1 person,atlantis,60,40
 kayaking-stand-up-paddle-los-cristianos,Lesson — 2 people,atlantis,85,55
+diving-puerto-colon,Try dive from shore — 20 min,atlantis,75,35
+diving-puerto-colon,Try dive from shore — 40 min,atlantis,95,48
+diving-puerto-colon,Try dive by boat — 20 min,atlantis,85,45
+diving-puerto-colon,Try dive by boat — 40 min,atlantis,105,58
+diving-puerto-colon,2 dives certified — shore,atlantis,80,56
+diving-puerto-colon,2 dives certified — boat,atlantis,100,70
+diving-puerto-colon,Open Water Diver course,atlantis,440,308
+safari-kayak-tour-los-cristianos,Kayak + snorkeling,atlantis,45,25
+safari-kayak-tour-los-cristianos,Kayak only,atlantis,39,25
+safari-kayak-tour-los-cristianos,Kids (6-10),atlantis,22.5,12.5

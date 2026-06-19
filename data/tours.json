@@ -18,9 +18,39 @@
     "minAge": 8,
     "pricing": [
       {
-        "label": "Per person",
+        "label": "Try dive from shore — 20 min",
         "price": 75,
         "net": 35
+      },
+      {
+        "label": "Try dive from shore — 40 min",
+        "price": 95,
+        "net": 48
+      },
+      {
+        "label": "Try dive by boat — 20 min",
+        "price": 85,
+        "net": 45
+      },
+      {
+        "label": "Try dive by boat — 40 min",
+        "price": 105,
+        "net": 58
+      },
+      {
+        "label": "2 dives certified — shore",
+        "price": 80,
+        "net": 56
+      },
+      {
+        "label": "2 dives certified — boat",
+        "price": 100,
+        "net": 70
+      },
+      {
+        "label": "Open Water Diver course",
+        "price": 440,
+        "net": 308
       }
     ],
     "priceFrom": 75,
@@ -380,17 +410,22 @@
     ],
     "pricing": [
       {
-        "label": "Adult",
+        "label": "Kayak + snorkeling",
         "price": 45,
         "net": 25
       },
       {
-        "label": "Child",
-        "price": 22,
+        "label": "Kayak only",
+        "price": 39,
+        "net": 25
+      },
+      {
+        "label": "Kids (6-10)",
+        "price": 22.5,
         "net": 12.5
       }
     ],
-    "priceFrom": 22,
+    "priceFrom": 22.5,
     "description": "Paddle out from Los Cristianos beach to the dramatic cliffs of Guaza, a protected nature reserve, on this guided sea-kayak safari — a peaceful, active way to see the coast from the water.\n\nAlong the way there's a great chance of spotting sea turtles and other marine life in the clear water, with a stop to snorkel. It's suitable for beginners — a quick briefing and you're off.\n\nGreat for couples, families and active travellers. Bring a swimsuit, towel and sunscreen; everything else is provided.",
     "faq": [
       {
