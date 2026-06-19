@@ -2326,17 +2326,27 @@
     ],
     "pricing": [
       {
-        "label": "Adult",
-        "price": 70,
+        "label": "With dinner — adult (11+)",
+        "price": 79,
         "net": 48
       },
       {
-        "label": "Child",
-        "price": 60,
+        "label": "With dinner — child (4-10)",
+        "price": 55,
+        "net": 43
+      },
+      {
+        "label": "Without dinner — adult (11+)",
+        "price": 65,
         "net": 38
+      },
+      {
+        "label": "Without dinner — child (4-10)",
+        "price": 49,
+        "net": 33
       }
     ],
-    "priceFrom": 60,
+    "priceFrom": 49,
     "description": "As the sun drops, Teide National Park becomes one of the best stargazing spots on the planet — and this evening tour (18:00–23:00) is built around it.\n\nFirst stop is a restaurant high in Las Cañadas for a three-course dinner with Canarian wine. Then you head up into the park to watch a breathtaking sunset over the volcanic landscape, glass of sparkling wine in hand. As darkness falls, your guide picks out planets, constellations and the Milky Way in some of the clearest, darkest skies in Europe — protected by law for astronomy.\n\nBring a warm jacket: it's cold at altitude after dark. A magical, relaxed evening for couples and families alike.",
     "faq": [
       {
@@ -2380,7 +2390,7 @@
     "meetingPoint": "Hotel pickup — South Tenerife (evening start ~18:00, exact pickup on confirmation)",
     "bookingPhone": "624 642 724",
     "supplierId": "ozzy",
-    "minAge": 0
+    "minAge": 4
   },
   {
     "slug": "teide-tour-cable-car",
