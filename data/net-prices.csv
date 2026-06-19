@@ -14,7 +14,6 @@ freebird-catamaran,Adult (4.5h),freebird,62,32
 freebird-catamaran,Child 4-11 (3h),freebird,23.5,11
 freebird-catamaran,Child 4-11 (4.5h),freebird,31,16
 freebird-catamaran,Baby (under 4),freebird,0,0
-fishing-boat-puerto-colon,Per person,happy-hooker,70,50
 monte-cristo-catamaran,Adult,monte-cristo,62,40
 monte-cristo-catamaran,Child (0-11),monte-cristo,49,36
 raggie-tenerife-fishing,Fisher — 4h,raggie-fishing,85,60
@@ -69,7 +68,6 @@ renault-captur-automatic-car-rental,Per person,aliscar,65,45.5
 renault-trafic-car-rental,Per person,aliscar,110,77
 seat-ibiza-car-rental,Per person,aliscar,52,36.4
 seat-leon-car-rental,Per person,aliscar,65,45.5
-tuk-tuk,Per person,tuk-tuk,12,9
 vw-beetle-automatic-car-rental,Per person,aliscar,105,73.5
 vw-golf-car-rental,Per person,aliscar,65,45.5
 vw-polo-car-rental,Per person,aliscar,52,36.4
@@ -177,3 +175,5 @@ shogun-boat,Child (3-11),shogun-neptuno,30,18.5
 shogun-boat,Baby (0-2),shogun-neptuno,0,0
 diamant-boat,Adult,opera,80,45
 diamant-boat,Child,opera,50,30
+fishing-boat-puerto-colon,Fisher — 4h,happy-hooker,90,60
+fishing-boat-puerto-colon,Spectator — 4h,happy-hooker,60,50

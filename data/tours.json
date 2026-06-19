@@ -1077,12 +1077,17 @@
     ],
     "pricing": [
       {
-        "label": "Per person",
-        "price": 70,
+        "label": "Fisher — 4h",
+        "price": 90,
+        "net": 60
+      },
+      {
+        "label": "Spectator — 4h",
+        "price": 60,
         "net": 50
       }
     ],
-    "priceFrom": 70,
+    "priceFrom": 60,
     "description": "Chase the catch of your life aboard the Happy Hooker, a fishing boat working the rich Atlantic waters off South Tenerife. Whether you're a seasoned angler or a complete first-timer, the crew sets you up and shows you the ropes.\n\nAll fishing equipment is included — rods, reels and tackle — and you'll try techniques like trolling for the big pelagic species these waters are known for. A great day out with friends, family or your partner.\n\nBring sun protection, a hat and a sense of adventure. Catches vary with the day and season.",
     "included": "・ All fishing equipment (rods, reels, tackle)",
     "faq": [
@@ -4123,72 +4128,6 @@
     "supplierId": "aliscar",
     "meetingPoint": "Aliscar office, Av. Ernesto Sarti 12, Costa Adeje (free delivery Los Cristianos–La Caleta)",
     "minAge": 21
-  },
-  {
-    "slug": "tuk-tuk",
-    "title": "Tuk Tuk — Touristic Tours",
-    "category": "bus-tours",
-    "group": "land",
-    "duration": "1h",
-    "languages": [
-      "Deutsch",
-      "English",
-      "Español",
-      "Français",
-      "Italiano",
-      "Neerlandés",
-      "Rumano",
-      "Русский"
-    ],
-    "pricing": [
-      {
-        "label": "Per person",
-        "price": 12,
-        "net": 9
-      }
-    ],
-    "priceFrom": 12,
-    "description": "Tour the sights the fun way — aboard a bright, 100% electric tuk-tuk. Eco-friendly, quiet and comfortable, with music and an open-air feel, it's a playful way to explore the local area and its highlights.\n\nA relaxed, novel little outing that's a hit with families and couples alike — and easy on the budget. Your driver shows you around at an unhurried pace.\n\nA great quick, different add-on to your holiday.",
-    "faq": [
-      {
-        "question": "How will I receive my tickets?",
-        "answer": "After you complete your purchase, you will receive an order confirmation email within a few minutes. This email will contain all the details of your purchase, including the event, date, and number of tickets. Please note we do not send tickets by post."
-      },
-      {
-        "question": "What is your cancellation policy?",
-        "answer": "Free cancellation with a full refund if you cancel more than 24 hours before the tour starts. Cancellations made less than 24 hours before the start time, or no-shows, are non-refundable. If the operator has to cancel (for example due to bad weather or safety), you get a full refund or a free reschedule. To cancel, message us on WhatsApp (+34 610 434 957) with your booking reference — eligible refunds are processed within 14 days."
-      },
-      {
-        "question": "Can I book an excursion within 24 hours of its start time?",
-        "answer": "Yes, it possible. Please contact us or visit our office"
-      },
-      {
-        "question": "Will I be picked up at my hotel when a transfer is possible?",
-        "answer": "And where is the meeting point The exact meeting point for your excursion will be specified in your booking confirmation email. If a transfer service is included with your booking, we offer convenient hotel pickup. The availability of this service will depend on your hotel’s location and the specific excursion."
-      },
-      {
-        "question": "May I pay directly in cash when the tour / activity starts?",
-        "answer": "We offer online purchases on the platform. If you wish to buy with cash you can visit our office."
-      },
-      {
-        "question": "Do you offer discounts?",
-        "answer": "We generally cannot give any discounts due to the very high demand. We offer discount for group bookings. Please contact us"
-      },
-      {
-        "question": "What happens if the weather is too bad to go on the excursion?",
-        "answer": "If the weather is too bad to go on the excursion, it will be rescheduled or you will receive a full refund."
-      },
-      {
-        "question": "May I purchase a gift voucher?",
-        "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
-      }
-    ],
-    "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/66ba5f353e96ccb355a04adb_264341739_4695885117142426_8120454214620924274_n.jpg",
-    "url": "https://www.excursionstenerife.es/tours/tuk-tuk",
-    "bookingPhone": "628 820 720",
-    "supplierId": "tuk-tuk",
-    "meetingPoint": "Hotel pickup — Costa Adeje area (time on confirmation)",
-    "minAge": 0
   },
   {
     "slug": "vw-beetle-automatic-car-rental",
