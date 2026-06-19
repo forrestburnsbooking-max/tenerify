@@ -917,12 +917,32 @@
     ],
     "pricing": [
       {
-        "label": "Per person",
-        "price": 85,
-        "net": 55
+        "label": "1 hour",
+        "price": 109,
+        "net": 70
+      },
+      {
+        "label": "2 hours",
+        "price": 189,
+        "net": 120
+      },
+      {
+        "label": "3 hours",
+        "price": 269,
+        "net": 180
+      },
+      {
+        "label": "4 hours",
+        "price": 339,
+        "net": 230
+      },
+      {
+        "label": "5 hours",
+        "price": 399,
+        "net": 280
       }
     ],
-    "priceFrom": 85,
+    "priceFrom": 109,
     "description": "Be your own captain — no licence required. The Atlanca is a small motorboat you can rent and pilot yourself along the calm south-coast waters, with no experience or paperwork needed.\n\nTake the helm and explore at your own pace with friends, family or your partner — find a quiet spot, drop anchor and swim, or just cruise the coastline. A quick safety briefing is all it takes to get going.\n\nFreedom on the water without the cost of a skipper. Bring swimwear, a towel and sunscreen.",
     "faq": [
       {

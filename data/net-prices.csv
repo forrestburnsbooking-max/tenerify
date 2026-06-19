@@ -8,7 +8,6 @@ helidream-helicopter-tour,Gran Teide — 40 min,helidreams,545,463.25
 parascending-puerto-colon,Adult,aj-fly,60,40
 parascending-puerto-colon,Child,aj-fly,60,40
 banana-puerto-colon,Per person,watersport,18,12
-atlanca-boat-rental,Per person,atlanca,85,55
 freebird-catamaran,Adult (3h),freebird,47,22
 freebird-catamaran,Adult (4.5h),freebird,62,32
 freebird-catamaran,Child 4-11 (3h),freebird,23.5,11
@@ -167,3 +166,8 @@ fishing-boat-puerto-colon,Spectator — 4h,happy-hooker,60,50
 gulliver-boat,Adult (11+),gulliver,80,49
 gulliver-boat,Child (4-10),gulliver,49,30
 gulliver-boat,Infant (0-3),gulliver,0,0
+atlanca-boat-rental,1 hour,atlanca,109,70
+atlanca-boat-rental,2 hours,atlanca,189,120
+atlanca-boat-rental,3 hours,atlanca,269,180
+atlanca-boat-rental,4 hours,atlanca,339,230
+atlanca-boat-rental,5 hours,atlanca,399,280
