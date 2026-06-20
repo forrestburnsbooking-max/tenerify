@@ -943,7 +943,7 @@
       }
     ],
     "priceFrom": 109,
-    "description": "Be your own captain — no licence required. The Atlanca is a small motorboat you can rent and pilot yourself along the calm south-coast waters, with no experience or paperwork needed.\n\nTake the helm and explore at your own pace with friends, family or your partner — find a quiet spot, drop anchor and swim, or just cruise the coastline. A quick safety briefing is all it takes to get going.\n\nFreedom on the water without the cost of a skipper. Bring swimwear, a towel and sunscreen.",
+    "description": "Be your own captain — no licence required. The Atlanca is a small motorboat for up to 5 guests that you can rent and pilot yourself along the calm south-coast waters, with no experience or paperwork needed.\n\nTake the helm and explore at your own pace with friends, family or your partner — find a quiet spot, drop anchor and swim, or just cruise the coastline. A quick safety briefing is all it takes to get going.\n\nFreedom on the water without the cost of a skipper. Captain must be 18 or over. Bring swimwear, a towel and sunscreen.",
     "faq": [
       {
         "question": "How will I receive my tickets?",
@@ -983,7 +983,8 @@
     "meetingPoint": "Puerto Colón Marina, Costa Adeje",
     "bookingPhone": "659 831 064",
     "supplierId": "atlanca",
-    "minAge": 18
+    "minAge": 18,
+    "capacity": 5
   },
   {
     "slug": "freebird-catamaran",
@@ -5615,7 +5616,8 @@
     "url": "",
     "bookingPhone": "643 985 957",
     "supplierId": "el-fenix",
-    "meetingPoint": "Puerto Colón Marina, Costa Adeje"
+    "meetingPoint": "Puerto Colón Marina, Costa Adeje",
+    "capacity": 6
   },
   {
     "slug": "true-love-boat-rental",
@@ -5701,7 +5703,8 @@
     "url": "",
     "bookingPhone": "642 028 414",
     "supplierId": "true-love",
-    "meetingPoint": "Puerto Colón Marina, Costa Adeje"
+    "meetingPoint": "Puerto Colón Marina, Costa Adeje",
+    "capacity": 5
   },
   {
     "slug": "atlantis-boats-rental",
@@ -5748,7 +5751,7 @@
       }
     ],
     "priceFrom": 100,
-    "description": "Rent and drive your own boat with Atlantis Boats — no licence required. Based at Puerto Colón, these self-drive motorboats let you explore Tenerife’s south-west coast around Costa Adeje and Playa de las Américas at your own pace.\n\nA short safety briefing and you are off — find a calm spot to anchor and swim, or cruise the coastline with friends and family. Captain must be 18 or over. Bring swimwear, a towel and sunscreen.",
+    "description": "Rent and drive your own boat with Atlantis Boats — no licence required. Based at Puerto Colón, their licence-free motorboats (Nausica and Circe for up to 6, Calipso for up to 5) let you explore Tenerife’s south-west coast around Costa Adeje and Playa de las Américas at your own pace.\n\nEach boat has a 15 hp engine, GPS, Bluetooth stereo, snorkel masks and life jackets. A short safety briefing and you are off — anchor in a calm cove to swim, or cruise the coastline. Captain must be 18 or over. Bring swimwear, a towel and sunscreen.",
     "faq": [
       {
         "question": "How will I receive my tickets?",
@@ -5787,7 +5790,8 @@
     "url": "",
     "bookingPhone": "674 712 544",
     "supplierId": "atlantis-boats",
-    "meetingPoint": "Puerto Colón Marina, Costa Adeje"
+    "meetingPoint": "Puerto Colón Marina, Costa Adeje",
+    "capacity": 6
   },
   {
     "slug": "moonday-boat-rental",
@@ -5873,7 +5877,8 @@
     "url": "",
     "bookingPhone": "611 032 524",
     "supplierId": "moonday",
-    "meetingPoint": "Puerto Colón Marina, Costa Adeje"
+    "meetingPoint": "Puerto Colón Marina, Costa Adeje",
+    "capacity": 6
   },
   {
     "slug": "la-pinta-boat-rental",
@@ -5920,7 +5925,7 @@
       }
     ],
     "priceFrom": 100,
-    "description": "Be your own captain aboard La Pinta — a self-drive motorboat you can rent without any licence at Puerto Colón, Costa Adeje. After a quick safety briefing you take the helm yourself, no experience needed.\n\nExplore the calm south-coast waters at your own pace — anchor in a quiet cove for a swim, or cruise looking for dolphins and turtles. Captain must be 18 or over. Minimum rental 2 hours. Bring swimwear, a towel and sunscreen.",
+    "description": "Be your own captain aboard La Pinta — a roomy 5 m self-drive motorboat for up to 6 guests, rented without any licence at Puerto Colón, Costa Adeje. After a quick safety briefing you take the helm yourself, no experience needed.\n\nWith a 15 hp engine, GPS, Bluetooth, snorkel gear, sunshade and life jackets on board, explore the calm south-coast waters at your own pace — anchor in a quiet cove for a swim, or cruise looking for dolphins and turtles. Captain must be 18 or over. Minimum rental 2 hours. Bring swimwear, a towel and sunscreen.",
     "faq": [
       {
         "question": "How will I receive my tickets?",
@@ -5959,7 +5964,8 @@
     "url": "",
     "bookingPhone": "600 262 483",
     "supplierId": "la-pinta",
-    "meetingPoint": "Puerto Colón Marina, Costa Adeje"
+    "meetingPoint": "Puerto Colón Marina, Costa Adeje",
+    "capacity": 6
   },
   {
     "slug": "la-nina-boat-rental",
@@ -6006,7 +6012,7 @@
       }
     ],
     "priceFrom": 100,
-    "description": "Hire and drive La Nina yourself — a licence-free motorboat at Puerto Colón in Costa Adeje. No paperwork or experience required: from age 18, a short briefing and you are the skipper.\n\nCruise the south coastline at your own pace, drop anchor in a sheltered cove and swim, or simply enjoy the sea with friends and family. Minimum rental 2 hours. Bring swimwear, a towel and sunscreen.",
+    "description": "Hire and drive La Niña yourself — a licence-free self-drive motorboat for up to 5 guests at Puerto Colón in Costa Adeje. No paperwork or experience required: from age 18, a short briefing and you are the skipper.\n\nFuel, cold drinks, snorkel gear, Bluetooth, GPS, sunshade and life jackets are included. Cruise the south coastline at your own pace, drop anchor in a sheltered cove and swim, or simply enjoy the sea with friends and family. Minimum rental 2 hours. Bring swimwear, a towel and sunscreen.",
     "faq": [
       {
         "question": "How will I receive my tickets?",
@@ -6045,7 +6051,8 @@
     "url": "",
     "bookingPhone": "600 262 483",
     "supplierId": "la-nina",
-    "meetingPoint": "Puerto Colón Marina, Costa Adeje"
+    "meetingPoint": "Puerto Colón Marina, Costa Adeje",
+    "capacity": 5
   },
   {
     "slug": "leah-catamaran-rental",
@@ -6131,6 +6138,7 @@
     "url": "",
     "bookingPhone": "609 614 652",
     "supplierId": "leah-catamaran",
-    "meetingPoint": "Puerto Colón Marina, Costa Adeje"
+    "meetingPoint": "Puerto Colón Marina, Costa Adeje",
+    "capacity": 6
   }
 ]
