@@ -251,5 +251,40 @@
     "id": "daydream",
     "name": "Daydream Tandem Paragliding",
     "phone": "640 773 065"
+  },
+  {
+    "id": "el-fenix",
+    "name": "El Fenix",
+    "phone": "643 985 957"
+  },
+  {
+    "id": "true-love",
+    "name": "True Love",
+    "phone": "642 028 414"
+  },
+  {
+    "id": "atlantis-boats",
+    "name": "Atlantis Boats",
+    "phone": "674 712 544"
+  },
+  {
+    "id": "moonday",
+    "name": "Moonday",
+    "phone": "611 032 524"
+  },
+  {
+    "id": "la-pinta",
+    "name": "La Pinta",
+    "phone": "600 262 483"
+  },
+  {
+    "id": "la-nina",
+    "name": "La Nina",
+    "phone": "600 262 483"
+  },
+  {
+    "id": "leah-catamaran",
+    "name": "Leah Catamaran",
+    "phone": "609 614 652"
   }
 ]

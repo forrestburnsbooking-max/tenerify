@@ -5530,5 +5530,607 @@
     "bookingPhone": "711 08 90 76",
     "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/66a0d644f7ecd40ff346b374_AtrakcyjnaTeneryfa.pl-Quad-El-Teide-noca-1-600x450.webp",
     "minAge": 18
+  },
+  {
+    "slug": "el-fenix-boat-rental",
+    "title": "El Fenix — motorboat rental without licence",
+    "category": "boat-rental",
+    "group": "water",
+    "duration": "1–5h",
+    "languages": [
+      "Deutsch",
+      "English",
+      "Español",
+      "Français",
+      "Italiano",
+      "Neerlandés",
+      "Rumano",
+      "Русский"
+    ],
+    "minAge": 18,
+    "pricing": [
+      {
+        "label": "1 hour",
+        "price": 100,
+        "net": 70
+      },
+      {
+        "label": "2 hours",
+        "price": 180,
+        "net": 120
+      },
+      {
+        "label": "3 hours",
+        "price": 270,
+        "net": 180
+      },
+      {
+        "label": "4 hours",
+        "price": 360,
+        "net": 230
+      },
+      {
+        "label": "5 hours",
+        "price": 450,
+        "net": 330
+      }
+    ],
+    "priceFrom": 100,
+    "description": "Be your own captain — no licence required. El Fenix is a self-drive motorboat you rent and pilot yourself along Tenerife’s calm south coast.\n\nFind a quiet cove to drop anchor and swim, or simply cruise the coastline with friends, family or your partner. A short safety briefing and you’re off — minimum rental 2 hours.\n\nFreedom on the water without the cost of a skipper. Bring swimwear, a towel and sunscreen.",
+    "faq": [
+      {
+        "question": "How will I receive my tickets?",
+        "answer": "After you complete your purchase, you will receive an order confirmation email within a few minutes. This email will contain all the details of your purchase, including the event, date, and number of tickets. Please note we do not send tickets by post."
+      },
+      {
+        "question": "What is your cancellation policy?",
+        "answer": "Free cancellation with a full refund if you cancel more than 24 hours before the tour starts. Cancellations made less than 24 hours before the start time, or no-shows, are non-refundable. If the operator has to cancel (for example due to bad weather or safety), you get a full refund or a free reschedule. To cancel, message us on WhatsApp (+34 610 434 957) with your booking reference — eligible refunds are processed within 14 days."
+      },
+      {
+        "question": "Can I book an excursion within 24 hours of its start time?",
+        "answer": "Yes, it possible. Please contact us or visit our office"
+      },
+      {
+        "question": "Will I be picked up at my hotel when a transfer is possible?",
+        "answer": "And where is the meeting point The exact meeting point for your excursion will be specified in your booking confirmation email. If a transfer service is included with your booking, we offer convenient hotel pickup. The availability of this service will depend on your hotel’s location and the specific excursion."
+      },
+      {
+        "question": "May I pay directly in cash when the tour / activity starts?",
+        "answer": "We offer online purchases on the platform. If you wish to buy with cash you can visit our office."
+      },
+      {
+        "question": "Do you offer discounts?",
+        "answer": "We generally cannot give any discounts due to the very high demand. We offer discount for group bookings. Please contact us"
+      },
+      {
+        "question": "What happens if the weather is too bad to go on the excursion?",
+        "answer": "If the weather is too bad to go on the excursion, it will be rescheduled or you will receive a full refund."
+      },
+      {
+        "question": "May I purchase a gift voucher?",
+        "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
+      }
+    ],
+    "imageUrl": "/images/tours/boat-rental.jpg",
+    "url": "",
+    "bookingPhone": "643 985 957",
+    "supplierId": "el-fenix",
+    "meetingPoint": "Puerto Colón Marina, Costa Adeje"
+  },
+  {
+    "slug": "true-love-boat-rental",
+    "title": "True Love — motorboat rental without licence",
+    "category": "boat-rental",
+    "group": "water",
+    "duration": "1–5h",
+    "languages": [
+      "Deutsch",
+      "English",
+      "Español",
+      "Français",
+      "Italiano",
+      "Neerlandés",
+      "Rumano",
+      "Русский"
+    ],
+    "minAge": 18,
+    "pricing": [
+      {
+        "label": "1 hour",
+        "price": 100,
+        "net": 70
+      },
+      {
+        "label": "2 hours",
+        "price": 180,
+        "net": 120
+      },
+      {
+        "label": "3 hours",
+        "price": 270,
+        "net": 180
+      },
+      {
+        "label": "4 hours",
+        "price": 360,
+        "net": 230
+      },
+      {
+        "label": "5 hours",
+        "price": 450,
+        "net": 280
+      }
+    ],
+    "priceFrom": 100,
+    "description": "Skipper your own boat with True Love — a licence-free motorboat for exploring the south Tenerife coastline at your own pace.\n\nFind a quiet cove to drop anchor and swim, or simply cruise the coastline with friends, family or your partner. A short safety briefing and you’re off — minimum rental 2 hours.\n\nFreedom on the water without the cost of a skipper. Bring swimwear, a towel and sunscreen.",
+    "faq": [
+      {
+        "question": "How will I receive my tickets?",
+        "answer": "After you complete your purchase, you will receive an order confirmation email within a few minutes. This email will contain all the details of your purchase, including the event, date, and number of tickets. Please note we do not send tickets by post."
+      },
+      {
+        "question": "What is your cancellation policy?",
+        "answer": "Free cancellation with a full refund if you cancel more than 24 hours before the tour starts. Cancellations made less than 24 hours before the start time, or no-shows, are non-refundable. If the operator has to cancel (for example due to bad weather or safety), you get a full refund or a free reschedule. To cancel, message us on WhatsApp (+34 610 434 957) with your booking reference — eligible refunds are processed within 14 days."
+      },
+      {
+        "question": "Can I book an excursion within 24 hours of its start time?",
+        "answer": "Yes, it possible. Please contact us or visit our office"
+      },
+      {
+        "question": "Will I be picked up at my hotel when a transfer is possible?",
+        "answer": "And where is the meeting point The exact meeting point for your excursion will be specified in your booking confirmation email. If a transfer service is included with your booking, we offer convenient hotel pickup. The availability of this service will depend on your hotel’s location and the specific excursion."
+      },
+      {
+        "question": "May I pay directly in cash when the tour / activity starts?",
+        "answer": "We offer online purchases on the platform. If you wish to buy with cash you can visit our office."
+      },
+      {
+        "question": "Do you offer discounts?",
+        "answer": "We generally cannot give any discounts due to the very high demand. We offer discount for group bookings. Please contact us"
+      },
+      {
+        "question": "What happens if the weather is too bad to go on the excursion?",
+        "answer": "If the weather is too bad to go on the excursion, it will be rescheduled or you will receive a full refund."
+      },
+      {
+        "question": "May I purchase a gift voucher?",
+        "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
+      }
+    ],
+    "imageUrl": "/images/tours/boat-rental.jpg",
+    "url": "",
+    "bookingPhone": "642 028 414",
+    "supplierId": "true-love",
+    "meetingPoint": "Puerto Colón Marina, Costa Adeje"
+  },
+  {
+    "slug": "atlantis-boats-rental",
+    "title": "Atlantis — motorboat rental without licence",
+    "category": "boat-rental",
+    "group": "water",
+    "duration": "1–5h",
+    "languages": [
+      "Deutsch",
+      "English",
+      "Español",
+      "Français",
+      "Italiano",
+      "Neerlandés",
+      "Rumano",
+      "Русский"
+    ],
+    "minAge": 18,
+    "pricing": [
+      {
+        "label": "1 hour",
+        "price": 100,
+        "net": 60
+      },
+      {
+        "label": "2 hours",
+        "price": 180,
+        "net": 120
+      },
+      {
+        "label": "3 hours",
+        "price": 270,
+        "net": 180
+      },
+      {
+        "label": "4 hours",
+        "price": 360,
+        "net": 230
+      },
+      {
+        "label": "5 hours",
+        "price": 450,
+        "net": 270
+      }
+    ],
+    "priceFrom": 100,
+    "description": "No licence, no skipper — just you at the helm. Atlantis Boats is a small motorboat you can hire and drive yourself along the south coast.\n\nFind a quiet cove to drop anchor and swim, or simply cruise the coastline with friends, family or your partner. A short safety briefing and you’re off — minimum rental 2 hours.\n\nFreedom on the water without the cost of a skipper. Bring swimwear, a towel and sunscreen.",
+    "faq": [
+      {
+        "question": "How will I receive my tickets?",
+        "answer": "After you complete your purchase, you will receive an order confirmation email within a few minutes. This email will contain all the details of your purchase, including the event, date, and number of tickets. Please note we do not send tickets by post."
+      },
+      {
+        "question": "What is your cancellation policy?",
+        "answer": "Free cancellation with a full refund if you cancel more than 24 hours before the tour starts. Cancellations made less than 24 hours before the start time, or no-shows, are non-refundable. If the operator has to cancel (for example due to bad weather or safety), you get a full refund or a free reschedule. To cancel, message us on WhatsApp (+34 610 434 957) with your booking reference — eligible refunds are processed within 14 days."
+      },
+      {
+        "question": "Can I book an excursion within 24 hours of its start time?",
+        "answer": "Yes, it possible. Please contact us or visit our office"
+      },
+      {
+        "question": "Will I be picked up at my hotel when a transfer is possible?",
+        "answer": "And where is the meeting point The exact meeting point for your excursion will be specified in your booking confirmation email. If a transfer service is included with your booking, we offer convenient hotel pickup. The availability of this service will depend on your hotel’s location and the specific excursion."
+      },
+      {
+        "question": "May I pay directly in cash when the tour / activity starts?",
+        "answer": "We offer online purchases on the platform. If you wish to buy with cash you can visit our office."
+      },
+      {
+        "question": "Do you offer discounts?",
+        "answer": "We generally cannot give any discounts due to the very high demand. We offer discount for group bookings. Please contact us"
+      },
+      {
+        "question": "What happens if the weather is too bad to go on the excursion?",
+        "answer": "If the weather is too bad to go on the excursion, it will be rescheduled or you will receive a full refund."
+      },
+      {
+        "question": "May I purchase a gift voucher?",
+        "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
+      }
+    ],
+    "imageUrl": "/images/tours/boat-rental.jpg",
+    "url": "",
+    "bookingPhone": "674 712 544",
+    "supplierId": "atlantis-boats",
+    "meetingPoint": "Puerto Colón Marina, Costa Adeje"
+  },
+  {
+    "slug": "moonday-boat-rental",
+    "title": "Moonday — motorboat rental without licence",
+    "category": "boat-rental",
+    "group": "water",
+    "duration": "1–5h",
+    "languages": [
+      "Deutsch",
+      "English",
+      "Español",
+      "Français",
+      "Italiano",
+      "Neerlandés",
+      "Rumano",
+      "Русский"
+    ],
+    "minAge": 18,
+    "pricing": [
+      {
+        "label": "1 hour",
+        "price": 100,
+        "net": 70
+      },
+      {
+        "label": "2 hours",
+        "price": 180,
+        "net": 120
+      },
+      {
+        "label": "3 hours",
+        "price": 270,
+        "net": 180
+      },
+      {
+        "label": "4 hours",
+        "price": 360,
+        "net": 230
+      },
+      {
+        "label": "5 hours",
+        "price": 450,
+        "net": 280
+      }
+    ],
+    "priceFrom": 100,
+    "description": "Be your own captain — no licence required. Moonday is a self-drive motorboat you rent and pilot yourself along Tenerife’s calm south coast.\n\nFind a quiet cove to drop anchor and swim, or simply cruise the coastline with friends, family or your partner. A short safety briefing and you’re off — minimum rental 2 hours.\n\nFreedom on the water without the cost of a skipper. Bring swimwear, a towel and sunscreen.",
+    "faq": [
+      {
+        "question": "How will I receive my tickets?",
+        "answer": "After you complete your purchase, you will receive an order confirmation email within a few minutes. This email will contain all the details of your purchase, including the event, date, and number of tickets. Please note we do not send tickets by post."
+      },
+      {
+        "question": "What is your cancellation policy?",
+        "answer": "Free cancellation with a full refund if you cancel more than 24 hours before the tour starts. Cancellations made less than 24 hours before the start time, or no-shows, are non-refundable. If the operator has to cancel (for example due to bad weather or safety), you get a full refund or a free reschedule. To cancel, message us on WhatsApp (+34 610 434 957) with your booking reference — eligible refunds are processed within 14 days."
+      },
+      {
+        "question": "Can I book an excursion within 24 hours of its start time?",
+        "answer": "Yes, it possible. Please contact us or visit our office"
+      },
+      {
+        "question": "Will I be picked up at my hotel when a transfer is possible?",
+        "answer": "And where is the meeting point The exact meeting point for your excursion will be specified in your booking confirmation email. If a transfer service is included with your booking, we offer convenient hotel pickup. The availability of this service will depend on your hotel’s location and the specific excursion."
+      },
+      {
+        "question": "May I pay directly in cash when the tour / activity starts?",
+        "answer": "We offer online purchases on the platform. If you wish to buy with cash you can visit our office."
+      },
+      {
+        "question": "Do you offer discounts?",
+        "answer": "We generally cannot give any discounts due to the very high demand. We offer discount for group bookings. Please contact us"
+      },
+      {
+        "question": "What happens if the weather is too bad to go on the excursion?",
+        "answer": "If the weather is too bad to go on the excursion, it will be rescheduled or you will receive a full refund."
+      },
+      {
+        "question": "May I purchase a gift voucher?",
+        "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
+      }
+    ],
+    "imageUrl": "/images/tours/boat-rental.jpg",
+    "url": "",
+    "bookingPhone": "611 032 524",
+    "supplierId": "moonday",
+    "meetingPoint": "Puerto Colón Marina, Costa Adeje"
+  },
+  {
+    "slug": "la-pinta-boat-rental",
+    "title": "La Pinta — motorboat rental without licence",
+    "category": "boat-rental",
+    "group": "water",
+    "duration": "1–5h",
+    "languages": [
+      "Deutsch",
+      "English",
+      "Español",
+      "Français",
+      "Italiano",
+      "Neerlandés",
+      "Rumano",
+      "Русский"
+    ],
+    "minAge": 18,
+    "pricing": [
+      {
+        "label": "1 hour",
+        "price": 100,
+        "net": 70
+      },
+      {
+        "label": "2 hours",
+        "price": 180,
+        "net": 120
+      },
+      {
+        "label": "3 hours",
+        "price": 270,
+        "net": 180
+      },
+      {
+        "label": "4 hours",
+        "price": 360,
+        "net": 230
+      },
+      {
+        "label": "5 hours",
+        "price": 450,
+        "net": 280
+      }
+    ],
+    "priceFrom": 100,
+    "description": "Skipper your own boat with La Pinta — a licence-free motorboat for exploring the south Tenerife coastline at your own pace.\n\nFind a quiet cove to drop anchor and swim, or simply cruise the coastline with friends, family or your partner. A short safety briefing and you’re off — minimum rental 2 hours.\n\nFreedom on the water without the cost of a skipper. Bring swimwear, a towel and sunscreen.",
+    "faq": [
+      {
+        "question": "How will I receive my tickets?",
+        "answer": "After you complete your purchase, you will receive an order confirmation email within a few minutes. This email will contain all the details of your purchase, including the event, date, and number of tickets. Please note we do not send tickets by post."
+      },
+      {
+        "question": "What is your cancellation policy?",
+        "answer": "Free cancellation with a full refund if you cancel more than 24 hours before the tour starts. Cancellations made less than 24 hours before the start time, or no-shows, are non-refundable. If the operator has to cancel (for example due to bad weather or safety), you get a full refund or a free reschedule. To cancel, message us on WhatsApp (+34 610 434 957) with your booking reference — eligible refunds are processed within 14 days."
+      },
+      {
+        "question": "Can I book an excursion within 24 hours of its start time?",
+        "answer": "Yes, it possible. Please contact us or visit our office"
+      },
+      {
+        "question": "Will I be picked up at my hotel when a transfer is possible?",
+        "answer": "And where is the meeting point The exact meeting point for your excursion will be specified in your booking confirmation email. If a transfer service is included with your booking, we offer convenient hotel pickup. The availability of this service will depend on your hotel’s location and the specific excursion."
+      },
+      {
+        "question": "May I pay directly in cash when the tour / activity starts?",
+        "answer": "We offer online purchases on the platform. If you wish to buy with cash you can visit our office."
+      },
+      {
+        "question": "Do you offer discounts?",
+        "answer": "We generally cannot give any discounts due to the very high demand. We offer discount for group bookings. Please contact us"
+      },
+      {
+        "question": "What happens if the weather is too bad to go on the excursion?",
+        "answer": "If the weather is too bad to go on the excursion, it will be rescheduled or you will receive a full refund."
+      },
+      {
+        "question": "May I purchase a gift voucher?",
+        "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
+      }
+    ],
+    "imageUrl": "/images/tours/boat-rental.jpg",
+    "url": "",
+    "bookingPhone": "600 262 483",
+    "supplierId": "la-pinta",
+    "meetingPoint": "Puerto Colón Marina, Costa Adeje"
+  },
+  {
+    "slug": "la-nina-boat-rental",
+    "title": "La Nina — motorboat rental without licence",
+    "category": "boat-rental",
+    "group": "water",
+    "duration": "1–5h",
+    "languages": [
+      "Deutsch",
+      "English",
+      "Español",
+      "Français",
+      "Italiano",
+      "Neerlandés",
+      "Rumano",
+      "Русский"
+    ],
+    "minAge": 18,
+    "pricing": [
+      {
+        "label": "1 hour",
+        "price": 100,
+        "net": 70
+      },
+      {
+        "label": "2 hours",
+        "price": 180,
+        "net": 120
+      },
+      {
+        "label": "3 hours",
+        "price": 270,
+        "net": 180
+      },
+      {
+        "label": "4 hours",
+        "price": 360,
+        "net": 230
+      },
+      {
+        "label": "5 hours",
+        "price": 450,
+        "net": 280
+      }
+    ],
+    "priceFrom": 100,
+    "description": "No licence, no skipper — just you at the helm. La Nina is a small motorboat you can hire and drive yourself along the south coast.\n\nFind a quiet cove to drop anchor and swim, or simply cruise the coastline with friends, family or your partner. A short safety briefing and you’re off — minimum rental 2 hours.\n\nFreedom on the water without the cost of a skipper. Bring swimwear, a towel and sunscreen.",
+    "faq": [
+      {
+        "question": "How will I receive my tickets?",
+        "answer": "After you complete your purchase, you will receive an order confirmation email within a few minutes. This email will contain all the details of your purchase, including the event, date, and number of tickets. Please note we do not send tickets by post."
+      },
+      {
+        "question": "What is your cancellation policy?",
+        "answer": "Free cancellation with a full refund if you cancel more than 24 hours before the tour starts. Cancellations made less than 24 hours before the start time, or no-shows, are non-refundable. If the operator has to cancel (for example due to bad weather or safety), you get a full refund or a free reschedule. To cancel, message us on WhatsApp (+34 610 434 957) with your booking reference — eligible refunds are processed within 14 days."
+      },
+      {
+        "question": "Can I book an excursion within 24 hours of its start time?",
+        "answer": "Yes, it possible. Please contact us or visit our office"
+      },
+      {
+        "question": "Will I be picked up at my hotel when a transfer is possible?",
+        "answer": "And where is the meeting point The exact meeting point for your excursion will be specified in your booking confirmation email. If a transfer service is included with your booking, we offer convenient hotel pickup. The availability of this service will depend on your hotel’s location and the specific excursion."
+      },
+      {
+        "question": "May I pay directly in cash when the tour / activity starts?",
+        "answer": "We offer online purchases on the platform. If you wish to buy with cash you can visit our office."
+      },
+      {
+        "question": "Do you offer discounts?",
+        "answer": "We generally cannot give any discounts due to the very high demand. We offer discount for group bookings. Please contact us"
+      },
+      {
+        "question": "What happens if the weather is too bad to go on the excursion?",
+        "answer": "If the weather is too bad to go on the excursion, it will be rescheduled or you will receive a full refund."
+      },
+      {
+        "question": "May I purchase a gift voucher?",
+        "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
+      }
+    ],
+    "imageUrl": "/images/tours/boat-rental.jpg",
+    "url": "",
+    "bookingPhone": "600 262 483",
+    "supplierId": "la-nina",
+    "meetingPoint": "Puerto Colón Marina, Costa Adeje"
+  },
+  {
+    "slug": "leah-catamaran-rental",
+    "title": "Leah Catamaran — rental without licence",
+    "category": "boat-rental",
+    "group": "water",
+    "duration": "1–5h",
+    "languages": [
+      "Deutsch",
+      "English",
+      "Español",
+      "Français",
+      "Italiano",
+      "Neerlandés",
+      "Rumano",
+      "Русский"
+    ],
+    "minAge": 18,
+    "pricing": [
+      {
+        "label": "1 hour",
+        "price": 100,
+        "net": 80
+      },
+      {
+        "label": "2 hours",
+        "price": 200,
+        "net": 140
+      },
+      {
+        "label": "3 hours",
+        "price": 290,
+        "net": 210
+      },
+      {
+        "label": "4 hours",
+        "price": 350,
+        "net": 240
+      },
+      {
+        "label": "5 hours",
+        "price": 450,
+        "net": 300
+      }
+    ],
+    "priceFrom": 100,
+    "description": "Be your own captain — no licence required. Leah Catamaran is a self-drive motorboat you rent and pilot yourself along Tenerife’s calm south coast.\n\nFind a quiet cove to drop anchor and swim, or simply cruise the coastline with friends, family or your partner. A short safety briefing and you’re off — minimum rental 2 hours.\n\nFreedom on the water without the cost of a skipper. Bring swimwear, a towel and sunscreen.",
+    "faq": [
+      {
+        "question": "How will I receive my tickets?",
+        "answer": "After you complete your purchase, you will receive an order confirmation email within a few minutes. This email will contain all the details of your purchase, including the event, date, and number of tickets. Please note we do not send tickets by post."
+      },
+      {
+        "question": "What is your cancellation policy?",
+        "answer": "Free cancellation with a full refund if you cancel more than 24 hours before the tour starts. Cancellations made less than 24 hours before the start time, or no-shows, are non-refundable. If the operator has to cancel (for example due to bad weather or safety), you get a full refund or a free reschedule. To cancel, message us on WhatsApp (+34 610 434 957) with your booking reference — eligible refunds are processed within 14 days."
+      },
+      {
+        "question": "Can I book an excursion within 24 hours of its start time?",
+        "answer": "Yes, it possible. Please contact us or visit our office"
+      },
+      {
+        "question": "Will I be picked up at my hotel when a transfer is possible?",
+        "answer": "And where is the meeting point The exact meeting point for your excursion will be specified in your booking confirmation email. If a transfer service is included with your booking, we offer convenient hotel pickup. The availability of this service will depend on your hotel’s location and the specific excursion."
+      },
+      {
+        "question": "May I pay directly in cash when the tour / activity starts?",
+        "answer": "We offer online purchases on the platform. If you wish to buy with cash you can visit our office."
+      },
+      {
+        "question": "Do you offer discounts?",
+        "answer": "We generally cannot give any discounts due to the very high demand. We offer discount for group bookings. Please contact us"
+      },
+      {
+        "question": "What happens if the weather is too bad to go on the excursion?",
+        "answer": "If the weather is too bad to go on the excursion, it will be rescheduled or you will receive a full refund."
+      },
+      {
+        "question": "May I purchase a gift voucher?",
+        "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
+      }
+    ],
+    "imageUrl": "/images/tours/boat-rental.jpg",
+    "url": "",
+    "bookingPhone": "609 614 652",
+    "supplierId": "leah-catamaran",
+    "meetingPoint": "Puerto Colón Marina, Costa Adeje"
   }
 ]
