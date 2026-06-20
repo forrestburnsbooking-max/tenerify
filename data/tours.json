@@ -5699,12 +5699,17 @@
         "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
       }
     ],
-    "imageUrl": "/images/tours/boat-rental.jpg",
+    "imageUrl": "/images/tours/true-love-1.jpg",
     "url": "",
     "bookingPhone": "642 028 414",
     "supplierId": "true-love",
-    "meetingPoint": "Puerto Colón Marina, Costa Adeje",
-    "capacity": 5
+    "meetingPoint": "Puerto Colón Marina — Pantalán 11, Costa Adeje",
+    "capacity": 5,
+    "images": [
+      "/images/tours/true-love-1.jpg",
+      "/images/tours/true-love-2.jpg",
+      "/images/tours/true-love-3.jpg"
+    ]
   },
   {
     "slug": "atlantis-boats-rental",
