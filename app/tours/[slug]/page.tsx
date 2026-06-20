@@ -169,6 +169,9 @@ export default async function TourPage({
           {tour.minAge != null && (
             <span className="px-3 py-1.5 rounded-full bg-white/8 text-stone-300 text-sm">👤 Min age {tour.minAge}</span>
           )}
+          {tour.capacity != null && (
+            <span className="px-3 py-1.5 rounded-full bg-white/8 text-stone-300 text-sm">👥 Up to {tour.capacity}</span>
+          )}
           {tour.meetingPoint && (
             <span className="px-3 py-1.5 rounded-full bg-white/8 text-stone-300 text-sm">📍 {tour.meetingPoint}</span>
           )}

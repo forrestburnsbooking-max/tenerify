@@ -30,6 +30,7 @@ export type Tour = {
   duration?: string;
   languages?: string[];
   minAge?: number;
+  capacity?: number; // max passengers — mainly for boat rentals
   pricing: PricingOption[];
   priceFrom: number;
   description: string;
@@ -140,13 +141,14 @@ export function getTours(): string {
         for (const t of items) {
           const pricePart = formatPrice(t);
           const agePart = t.minAge ? ` | min age ${t.minAge}` : "";
+          const capPart = t.capacity ? ` | up to ${t.capacity} people` : "";
           const durPart = t.duration ? ` | ${t.duration}` : "";
           const incPart = t.included ? ` | Includes: ${t.included.slice(0, 200)}` : "";
           const excPart = t.notIncluded ? ` | NOT included: ${t.notIncluded.slice(0, 200)}` : "";
           const slotsPart = t.timeSlots?.length ? ` | timeSlots: ${t.timeSlots.join(", ")}` : "";
           const depositPart = t.depositPercent ? ` | 💳 ${t.depositPercent}% deposit online, rest paid on pickup` : "";
           const discountOkPart = (t.category === "buggy-quad" || t.category === "jetski") ? ` | 🏷️ 8% chat discount available` : "";
-          lines.push(`    • [slug:${t.slug}] ${t.title}${durPart} | ${pricePart}${agePart}${incPart}${excPart}${slotsPart}${depositPart}${discountOkPart}`);
+          lines.push(`    • [slug:${t.slug}] ${t.title}${durPart} | ${pricePart}${agePart}${capPart}${incPart}${excPart}${slotsPart}${depositPart}${discountOkPart}`);
           if (t.description) {
             lines.push(`      ${t.description.slice(0, 500)}`);
           }
