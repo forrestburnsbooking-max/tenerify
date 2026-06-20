@@ -18,6 +18,7 @@ No test suite — verify changes manually in the browser.
 ```
 ANTHROPIC_API_KEY
 STRIPE_SECRET_KEY
+STRIPE_WEBHOOK_SECRET       # signing secret for /api/stripe/webhook (Canarian Fun Stripe acct)
 NEXT_PUBLIC_BASE_URL        # e.g. https://tenerify.ai (used in Stripe redirect URLs)
 KV_REST_API_URL             # Upstash Redis
 KV_REST_API_TOKEN           # Upstash Redis

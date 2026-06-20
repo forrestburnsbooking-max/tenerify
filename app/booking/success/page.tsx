@@ -76,6 +76,7 @@ function SuccessContent() {
               </p>
             )}
             <p className="text-stone-600 text-xs font-mono">Ref: {ref}</p>
+            <p className="text-stone-600 text-xs mt-2">This charge appears as “CANARIAN FUN” on your card statement.</p>
           </div>
         )}
 

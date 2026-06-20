@@ -2,6 +2,8 @@ import Stripe from "stripe";
 import { NextRequest, NextResponse } from "next/server";
 import { getTourBySlug } from "@/lib/tours";
 import { checkRateLimit, getClientIp } from "@/lib/ratelimit";
+import { logBookingCreated } from "@/lib/bookings";
+import { getSession, SESSION_COOKIE } from "@/lib/session";
 import fs from "fs";
 import path from "path";
 
@@ -155,6 +157,26 @@ export async function POST(req: NextRequest) {
           bookingTime,
         },
       },
+    });
+
+    // Record the booking in our own store — independent of whose Stripe this is.
+    // Best-effort: never blocks or fails checkout.
+    const sid = req.cookies.get(SESSION_COOKIE)?.value;
+    const userSession = sid ? await getSession(sid) : null;
+    await logBookingCreated({
+      id: session.id,
+      tourName,
+      tourSlug: slug ?? "",
+      groupSize,
+      priceEur,
+      chargedEur: chargeEur,
+      discountPercent: effectiveDiscount,
+      depositPercent: depositPercent ?? null,
+      bookingDate,
+      bookingTime,
+      meetingPoint,
+      who: userSession?.who ?? null,
+      language: userSession?.language ?? null,
     });
 
     return NextResponse.json({ url: session.url });

@@ -1,5 +1,6 @@
 import Stripe from "stripe";
 import { NextRequest, NextResponse } from "next/server";
+import { markBookingPaid } from "@/lib/bookings";
 
 export async function GET(req: NextRequest) {
   const id = req.nextUrl.searchParams.get("id");
@@ -14,6 +15,17 @@ export async function GET(req: NextRequest) {
     const meta = session.metadata ?? {};
     const getCustomField = (key: string) =>
       session.custom_fields?.find((f) => f.key === key)?.text?.value ?? null;
+
+    const customerName = getCustomField("full_name") ?? session.customer_details?.name ?? null;
+    const customerEmail = session.customer_details?.email ?? null;
+    const customerPhone = session.customer_details?.phone ?? null;
+    const customerHotel = getCustomField("hotel");
+
+    // Confirm the booking in our own store once Stripe says it's paid. Idempotent.
+    if (session.payment_status === "paid") {
+      await markBookingPaid(session.id, { customerName, customerEmail, customerPhone, customerHotel });
+    }
+
     return NextResponse.json({
       bookingText: meta.bookingText ?? null,
       tourName: meta.tourName ?? null,
@@ -22,10 +34,10 @@ export async function GET(req: NextRequest) {
       bookingTime: meta.bookingTime ?? null,
       meetingPoint: meta.meetingPoint ?? null,
       tourSlug: meta.tourSlug ?? null,
-      customerEmail: session.customer_details?.email ?? null,
-      customerName: getCustomField("full_name") ?? session.customer_details?.name ?? null,
-      customerPhone: session.customer_details?.phone ?? null,
-      customerHotel: getCustomField("hotel"),
+      customerEmail,
+      customerName,
+      customerPhone,
+      customerHotel,
       amountTotal: session.amount_total ?? null,
       depositPercent: meta.depositPercent ?? null,
       totalPriceEur: meta.totalPriceEur ?? null,

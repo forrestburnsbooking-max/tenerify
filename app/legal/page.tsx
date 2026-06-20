@@ -30,12 +30,13 @@ export default function LegalPage() {
 
           <H3>Identification</H3>
           <ul className="text-stone-300 text-sm leading-relaxed space-y-1 list-disc list-inside">
-            <li><strong className="text-white">Trading name:</strong> Tenerify.ai</li>
+            <li><strong className="text-white">Trading names:</strong> Tenerify.ai (website) · Canarian Fun (bookings &amp; payments)</li>
             <li><strong className="text-white">Operating company:</strong> Spanish Dream Plus S.L.</li>
-            <li><strong className="text-white">CIF:</strong> [PLACEHOLDER — to be confirmed]</li>
-            <li><strong className="text-white">Registered address:</strong> Local 19, C.C. Playa Fañabé, Calle Londres 7, Costa Adeje, 38660, Tenerife, Spain</li>
-            <li><strong className="text-white">Email:</strong> forrestburns.booking@gmail.com</li>
-            <li><strong className="text-white">Phone / WhatsApp:</strong> +34 610 434 957</li>
+            <li><strong className="text-white">NIF (CIF):</strong> B-21982194</li>
+            <li><strong className="text-white">Card statement descriptor:</strong> CANARIAN FUN</li>
+            <li><strong className="text-white">Registered address:</strong> Calle Londres 5, Local 19, C.C. Fañabé, 38660 Adeje, Tenerife, Spain</li>
+            <li><strong className="text-white">Bookings &amp; customer support:</strong> info@excursionstenerife.es · +34 624 074 633 (WhatsApp)</li>
+            <li><strong className="text-white">Platform &amp; technical support:</strong> support@tenerify.ai</li>
           </ul>
 
           <H3>Purpose of the website</H3>
@@ -58,7 +59,7 @@ export default function LegalPage() {
           <P>For some activities (e.g. buggy and quad tours), the experience you book (e.g. vehicle type, duration, route) is fulfilled by one of several licensed local partner operators, assigned based on availability for your chosen date and time. The assigned operator&apos;s name and contact details will be confirmed and provided to you before the activity.</P>
 
           <H3>2. Payments</H3>
-          <P>All payments are processed securely by Stripe, Inc. Tenerify.ai receives payment on behalf of the tour operator and passes booking details to them. Your card data is handled exclusively by Stripe and never stored on our servers.</P>
+          <P>All payments are processed securely by Stripe, Inc. on behalf of Spanish Dream Plus S.L. (trading as Canarian Fun), which receives payment as booking intermediary and passes booking details to the relevant tour operator. <strong className="text-white">Your payment will appear on your card statement as &quot;CANARIAN FUN&quot;.</strong> Your card data is handled exclusively by Stripe and never stored on our servers.</P>
           <P>For car and vehicle rentals (operated by Aliscar), only a deposit (typically 30% of the total rental price) is charged online at checkout. The remaining balance is paid directly to the rental operator in cash or card upon vehicle pickup. The full price and the deposit/balance breakdown are shown to you before booking and on your confirmation page.</P>
 
           <H3>3. Booking confirmation</H3>
@@ -74,7 +75,7 @@ export default function LegalPage() {
           <P>We may update these Terms at any time. Continued use of the service after changes constitutes acceptance.</P>
 
           <H3>Contact</H3>
-          <P>Questions about these Terms: WhatsApp +34 610 434 957 or email forrestburns.booking@gmail.com</P>
+          <P>Questions about these Terms or the website: support@tenerify.ai. Questions about a booking, ticket, or cancellation: info@excursionstenerife.es or WhatsApp +34 624 074 633.</P>
         </Section>
 
         {/* Booking Conditions */}
@@ -123,7 +124,7 @@ export default function LegalPage() {
           <div className="space-y-3 text-stone-300 text-sm leading-relaxed">
             <div className="bg-stone-900 border border-white/5 rounded-xl px-4 py-3 space-y-1">
               <p className="font-semibold text-white">More than 24 hours before the tour</p>
-              <p>Full refund to your original payment method. Refunds are processed within 14 days.</p>
+              <p>Full refund to your original payment method, <strong className="text-white">unless the activity is marked non-refundable</strong> (see &quot;Activity-specific terms&quot; below). Refunds are processed within 14 days.</p>
             </div>
             <div className="bg-stone-900 border border-white/5 rounded-xl px-4 py-3 space-y-1">
               <p className="font-semibold text-white">Less than 24 hours before the tour / no-show</p>
@@ -131,11 +132,14 @@ export default function LegalPage() {
             </div>
           </div>
 
+          <H3>Activity-specific terms</H3>
+          <P>Cancellation terms vary depending on the experience booked. Some activities — in particular theme-park and attraction tickets, and certain prepaid boat trips — are non-refundable once booked, even more than 24 hours in advance. Where an activity is non-refundable, this is shown before you pay and confirmed on your booking.</P>
+
           <H3>Operator cancellations</H3>
           <P>If the tour operator cancels your booking (e.g. bad weather, safety reasons, or minimum group not reached), you will receive a full refund or the option to reschedule at no extra cost.</P>
 
           <H3>How to cancel</H3>
-          <P>Contact us via WhatsApp at +34 610 434 957 with your booking reference. Please cancel as early as possible — cancellations must be received more than 24 hours before your tour start time to be eligible for a refund.</P>
+          <P>Contact Canarian Fun via WhatsApp at +34 624 074 633 or email info@excursionstenerife.es with your booking reference. Please cancel as early as possible — cancellations must be received more than 24 hours before your tour start time to be eligible for a refund.</P>
 
           <H3>Non-refundable situations</H3>
           <ul className="text-stone-300 text-sm leading-relaxed space-y-1 list-disc list-inside">
@@ -154,7 +158,7 @@ export default function LegalPage() {
           <P>This Privacy Policy explains how Tenerify.ai collects, uses, and protects your personal data in accordance with the EU General Data Protection Regulation (GDPR) and Spanish data protection law (LOPDGDD).</P>
 
           <H3>Data controller</H3>
-          <P>Spanish Dream Plus S.L., operating as Tenerify.ai, Tenerife, Canary Islands, Spain. Contact: forrestburns.booking@gmail.com — see Legal Notice above for full identification details.</P>
+          <P>Spanish Dream Plus S.L., operating as Tenerify.ai / Canarian Fun, Tenerife, Canary Islands, Spain. Contact for data matters: support@tenerify.ai — see Legal Notice above for full identification details.</P>
 
           <H3>What data we collect</H3>
           <ul className="text-stone-300 text-sm leading-relaxed space-y-1 list-disc list-inside">
@@ -182,7 +186,7 @@ export default function LegalPage() {
           </ul>
 
           <H3>Your rights (GDPR)</H3>
-          <P>You have the right to access, correct, or delete your personal data. To exercise these rights, contact us at forrestburns.booking@gmail.com. You also have the right to lodge a complaint with the Spanish data protection authority (AEPD) at aepd.es.</P>
+          <P>You have the right to access, correct, or delete your personal data. To exercise these rights, contact us at support@tenerify.ai. You also have the right to lodge a complaint with the Spanish data protection authority (AEPD) at aepd.es.</P>
 
           <H3>Data retention</H3>
           <P>Chat session data: deleted after 90 days of inactivity. Booking/payment data: retained for 5 years as required by Spanish tax law. You may request deletion of non-financial data at any time.</P>
@@ -235,7 +239,7 @@ export default function LegalPage() {
         {/* Footer */}
         <div className="border-t border-white/5 pt-8 text-center">
           <p className="text-stone-600 text-xs">Tenerify.ai · Tenerife, Canary Islands, Spain</p>
-          <p className="text-stone-700 text-xs mt-1">Questions? WhatsApp +34 610 434 957</p>
+          <p className="text-stone-700 text-xs mt-1">Booking questions? WhatsApp +34 624 074 633 · Platform: support@tenerify.ai</p>
         </div>
       </div>
     </div>
