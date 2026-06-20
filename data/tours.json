@@ -5970,12 +5970,17 @@
         "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
       }
     ],
-    "imageUrl": "/images/tours/boat-rental.jpg",
+    "imageUrl": "/images/tours/la-pinta-1.jpg",
     "url": "",
     "bookingPhone": "600 262 483",
     "supplierId": "la-pinta",
     "meetingPoint": "Puerto Colón Marina, Costa Adeje",
-    "capacity": 6
+    "capacity": 6,
+    "images": [
+      "/images/tours/la-pinta-1.jpg",
+      "/images/tours/la-pinta-2.jpg",
+      "/images/tours/la-pinta-3.jpg"
+    ]
   },
   {
     "slug": "la-nina-boat-rental",
@@ -6057,12 +6062,17 @@
         "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
       }
     ],
-    "imageUrl": "/images/tours/boat-rental.jpg",
+    "imageUrl": "/images/tours/la-nina-1.jpg",
     "url": "",
     "bookingPhone": "600 262 483",
     "supplierId": "la-nina",
     "meetingPoint": "Puerto Colón Marina, Costa Adeje",
-    "capacity": 5
+    "capacity": 5,
+    "images": [
+      "/images/tours/la-nina-1.jpg",
+      "/images/tours/la-nina-2.jpg",
+      "/images/tours/la-nina-3.jpg"
+    ]
   },
   {
     "slug": "leah-catamaran-rental",
