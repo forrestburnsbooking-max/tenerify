@@ -76,6 +76,7 @@ function detectLanguage(messages: { role: string; content: string }[], acceptLan
 const LANGUAGE_NAMES: Record<string, string> = {
   ru: "Russian", es: "Spanish", fi: "Finnish", de: "German",
   fr: "French", it: "Italian", nl: "Dutch", pl: "Polish", en: "English",
+  uk: "Ukrainian", zh: "Chinese", ar: "Arabic", sv: "Swedish",
 };
 
 function buildStaticSystemPrompt(tours: string, routes: string, legends: string): string {
