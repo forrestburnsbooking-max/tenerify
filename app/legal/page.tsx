@@ -133,7 +133,7 @@ export default function LegalPage() {
           </div>
 
           <H3>Activity-specific terms</H3>
-          <P>Cancellation terms vary depending on the experience booked. Some activities — in particular theme-park and attraction tickets, and certain prepaid boat trips — are non-refundable once booked, even more than 24 hours in advance. Where an activity is non-refundable, this is shown before you pay and confirmed on your booking.</P>
+          <P>Most experiences are fully refundable when cancelled more than 24 hours in advance (see above). The main exception is <strong>theme-park and attraction tickets</strong> (e.g. Siam Park, Loro Parque, Aqualand, Jungle Park), which are <strong>non-refundable</strong> once booked. Where an activity is non-refundable, this is shown before you pay and confirmed on your booking.</P>
 
           <H3>Operator cancellations</H3>
           <P>If the tour operator cancels your booking (e.g. bad weather, safety reasons, or minimum group not reached), you will receive a full refund or the option to reschedule at no extra cost.</P>

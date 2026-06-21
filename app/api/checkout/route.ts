@@ -115,6 +115,12 @@ export async function POST(req: NextRequest) {
       cancel_url: `${baseUrl}/`,
       customer_creation: "always",
       phone_number_collection: { enabled: true },
+      custom_text: {
+        submit: {
+          message:
+            "Please enter a WhatsApp-enabled phone number. After payment we'll email your confirmation and message you on WhatsApp to finalise pickup/meeting details.",
+        },
+      },
       custom_fields: [
         {
           key: "full_name",

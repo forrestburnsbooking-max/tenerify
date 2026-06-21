@@ -50,6 +50,7 @@ export type Tour = {
   reviewCount?: number;
   reviewSource?: string; // where the rating is from: "Google", "Tripadvisor", etc.
   reviewedName?: string; // whose rating it is (operator/venue name)
+  prep?: import("./prep").PrepOverride; // optional override for "what to bring / how to dress"
 };
 
 // Top-level groups (Water / Land / Air / Shows / Rental)

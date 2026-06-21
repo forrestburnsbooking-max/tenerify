@@ -22,6 +22,7 @@ STRIPE_WEBHOOK_SECRET       # signing secret for /api/stripe/webhook (Canarian F
 NEXT_PUBLIC_BASE_URL        # e.g. https://tenerify.ai (used in Stripe redirect URLs)
 KV_REST_API_URL             # Upstash Redis
 KV_REST_API_TOKEN           # Upstash Redis
+BREVO_API_KEY               # Brevo transactional email (booking confirmation). Unset = no-op
 ```
 
 Without Redis vars, the app runs fine locally — sessions fall back to in-memory (`devStore` in `lib/session.ts`) and rate limiting is disabled (always allows).

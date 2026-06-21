@@ -1,4 +1,5 @@
 import { Redis } from "@upstash/redis";
+import { sendBookingConfirmation } from "./email";
 
 // Independent record of every booking that goes through the funnel.
 // This is OUR source of truth for the demand dataset and for reconciling the
@@ -96,6 +97,8 @@ export async function markBookingPaid(
     } else {
       devStore.set(id, updated);
     }
+    // Fires exactly once — the early-return above guards against re-sends.
+    await sendBookingConfirmation(updated);
   } catch {
     // Non-critical
   }

@@ -3,6 +3,8 @@
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState, Suspense } from "react";
 import QRCode from "qrcode";
+import type { PrepInstructions } from "@/lib/prep";
+import { COMPANY } from "@/lib/company";
 
 type TicketData = {
   tourName: string;
@@ -13,6 +15,7 @@ type TicketData = {
   customerName: string;
   customerEmail: string;
   amountTotal: number;
+  prep: PrepInstructions | null;
   sessionId: string;
   ref: string;
 };
@@ -40,6 +43,7 @@ function TicketContent() {
           customerName: data.customerName ?? "",
           customerEmail: data.customerEmail ?? "",
           amountTotal: data.amountTotal ?? 0,
+          prep: data.prep ?? null,
           sessionId,
           ref,
         };
@@ -156,6 +160,39 @@ function TicketContent() {
             </div>
           )}
 
+          {/* What to bring / how to dress */}
+          {ticket.prep && (
+            <div className="px-6 py-5 border-b border-gray-100">
+              <h3 className="text-xs font-semibold uppercase tracking-wide text-gray-400 mb-3">
+                🎒 Before you go
+              </h3>
+              {ticket.prep.bring.length > 0 && (
+                <div className="mb-3">
+                  <div className="text-xs font-medium text-gray-500 mb-1">What to bring</div>
+                  <ul className="space-y-1">
+                    {ticket.prep.bring.map((item) => (
+                      <li key={item} className="flex items-start gap-2 text-sm text-gray-700">
+                        <span className="text-orange-500 mt-0.5">•</span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              {ticket.prep.dress && (
+                <div className="mb-3">
+                  <div className="text-xs font-medium text-gray-500 mb-1">👕 How to dress</div>
+                  <p className="text-sm text-gray-700">{ticket.prep.dress}</p>
+                </div>
+              )}
+              {ticket.prep.notes && (
+                <div className="bg-orange-50 border border-orange-100 rounded-xl px-3 py-2 text-sm text-gray-700">
+                  ⚠️ {ticket.prep.notes}
+                </div>
+              )}
+            </div>
+          )}
+
           {/* QR + ref */}
           <div className="px-6 py-5 flex items-center gap-4">
             {qrDataUrl && (
@@ -168,9 +205,13 @@ function TicketContent() {
             </div>
           </div>
 
-          {/* Footer */}
-          <div className="bg-gray-50 px-6 py-3 text-center text-xs text-gray-400">
-            Questions? WhatsApp +34 610 434 957 · tenerify.ai
+          {/* Operator legal details — required on a tourist-operator ticket */}
+          <div className="bg-gray-50 px-6 py-4 text-center text-[10px] leading-relaxed text-gray-400 space-y-0.5">
+            <div className="font-semibold text-gray-500">
+              {COMPANY.tradeName} — operated by {COMPANY.legalName}
+            </div>
+            <div>NIF {COMPANY.nif} · {COMPANY.address}</div>
+            <div>{COMPANY.bookingEmail} · WhatsApp {COMPANY.bookingPhone} · tenerify.ai</div>
           </div>
         </div>
       </div>

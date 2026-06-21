@@ -2,6 +2,7 @@
 
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState, Suspense } from "react";
+import type { PrepInstructions } from "@/lib/prep";
 
 const WHATSAPP_NUMBER = "34610434957";
 
@@ -14,6 +15,7 @@ type BookingInfo = {
   customerName: string;
   depositPercent: string;
   totalPriceEur: string;
+  prep: PrepInstructions | null;
 };
 
 function SuccessContent() {
@@ -36,6 +38,7 @@ function SuccessContent() {
           customerName: data.customerName ?? "",
           depositPercent: data.depositPercent ?? "",
           totalPriceEur: data.totalPriceEur ?? "",
+          prep: data.prep ?? null,
         });
       })
       .catch(() => {});

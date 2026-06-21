@@ -1,6 +1,8 @@
 import Stripe from "stripe";
 import { NextRequest, NextResponse } from "next/server";
 import { markBookingPaid } from "@/lib/bookings";
+import { getTourBySlug } from "@/lib/tours";
+import { getPrepInstructions } from "@/lib/prep";
 
 export async function GET(req: NextRequest) {
   const id = req.nextUrl.searchParams.get("id");
@@ -26,6 +28,8 @@ export async function GET(req: NextRequest) {
       await markBookingPaid(session.id, { customerName, customerEmail, customerPhone, customerHotel });
     }
 
+    const tour = meta.tourSlug ? getTourBySlug(meta.tourSlug) : null;
+
     return NextResponse.json({
       bookingText: meta.bookingText ?? null,
       tourName: meta.tourName ?? null,
@@ -34,6 +38,7 @@ export async function GET(req: NextRequest) {
       bookingTime: meta.bookingTime ?? null,
       meetingPoint: meta.meetingPoint ?? null,
       tourSlug: meta.tourSlug ?? null,
+      prep: tour ? getPrepInstructions(tour) : null,
       customerEmail,
       customerName,
       customerPhone,
