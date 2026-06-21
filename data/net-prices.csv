@@ -1,20 +1,67 @@
 slug,label,supplierId,pvp,net
+diving-puerto-colon,Try dive from shore — 20 min,atlantis,75,35
+diving-puerto-colon,Try dive from shore — 40 min,atlantis,95,48
+diving-puerto-colon,Try dive by boat — 20 min,atlantis,85,45
+diving-puerto-colon,Try dive by boat — 40 min,atlantis,105,58
+diving-puerto-colon,2 dives certified — shore,atlantis,80,56
+diving-puerto-colon,2 dives certified — boat,atlantis,100,70
+diving-puerto-colon,Open Water Diver course,atlantis,440,308
 fly-fish-puerto-colon,Per person,watersport,18,12
-helidream-helicopter-tour,South Coast — 7 min,helidreams,110,93.50
+helidream-helicopter-tour,South Coast — 7 min,helidreams,110,93.5
 helidream-helicopter-tour,Beaches & Cliffs — 10 min,helidreams,159,135.15
 helidream-helicopter-tour,Los Gigantes — 18 min,helidreams,295,250.75
-helidream-helicopter-tour,Isla Baja — 25 min,helidreams,430,365.50
+helidream-helicopter-tour,Isla Baja — 25 min,helidreams,430,365.5
 helidream-helicopter-tour,Gran Teide — 40 min,helidreams,545,463.25
+paragliding,Standard — 800m (15–20 min),daydream,100,60
+paragliding,High mountain — 1000m (20–30 min),daydream,120,80
+paragliding,Long flight (30–35 min),daydream,130,80
+paragliding,Teide — 45 min (min 2 pax),daydream,180,120
+paragliding,Acrobatic (20–30 min),daydream,150,100
+paratrike,Costa — 500m (20 min),daydream,100,60
+paratrike,Mountain — 1000m (25 min),daydream,130,80
+paratrike,Combined — 1000m (30 min),daydream,180,100
+paratrike,Crossing (60 min),daydream,210,150
+paratrike,Acrobatic (20 min),daydream,150,100
 parascending-puerto-colon,Adult,aj-fly,60,40
 parascending-puerto-colon,Child,aj-fly,60,40
+safari-kayak-tour-los-cristianos,Kayak + snorkeling,atlantis,45,25
+safari-kayak-tour-los-cristianos,Kayak only,atlantis,39,25
+safari-kayak-tour-los-cristianos,Kids (6-10),atlantis,22.5,12.5
+kayaking-stand-up-paddle-los-cristianos,Rental 2h,atlantis,25,15
+kayaking-stand-up-paddle-los-cristianos,Lesson — 1 person,atlantis,60,40
+kayaking-stand-up-paddle-los-cristianos,Lesson — 2 people,atlantis,85,55
 banana-puerto-colon,Per person,watersport,18,12
+arriro-boat,Adult,arriro,60,27.5
+arriro-boat,Child,arriro,45,27.5
+cool-sailing,Adult,cool-sailing,60,27.5
+cool-sailing,Child,cool-sailing,45,27.5
+kosamui-boat,Adult,kosamui,60,27.5
+kosamui-boat,Child,kosamui,45,27.5
+atlanca-boat-rental,1 hour,atlanca,109,70
+atlanca-boat-rental,2 hours,atlanca,189,120
+atlanca-boat-rental,3 hours,atlanca,269,180
+atlanca-boat-rental,4 hours,atlanca,339,230
+atlanca-boat-rental,5 hours,atlanca,399,280
 freebird-catamaran,Adult (3h),freebird,47,22
 freebird-catamaran,Adult (4.5h),freebird,62,32
 freebird-catamaran,Child 4-11 (3h),freebird,23.5,11
 freebird-catamaran,Child 4-11 (4.5h),freebird,31,16
 freebird-catamaran,Baby (under 4),freebird,0,0
+fishing-boat-puerto-colon,Fisher — 4h,happy-hooker,90,60
+fishing-boat-puerto-colon,Spectator — 4h,happy-hooker,60,50
+maxicat-catamaran,Adult,maxicat,45,25
+maxicat-catamaran,Child (6-11),maxicat,22.5,12.5
+maxicat-catamaran,Baby (under 6),maxicat,0,0
 monte-cristo-catamaran,Adult,monte-cristo,62,40
 monte-cristo-catamaran,Child (0-11),monte-cristo,49,36
+neptuno-boat,Adult,shogun-neptuno,63,42
+neptuno-boat,Child (3-11),shogun-neptuno,31.5,21
+neptuno-boat,Baby (0-2),shogun-neptuno,0,0
+diamant-boat,Adult,opera,80,45
+diamant-boat,Child,opera,50,30
+peter-pan-boat,Adult,peter-pan,27,16
+peter-pan-boat,Child (3-11),peter-pan,13.5,8
+peter-pan-boat,Baby (0-2),peter-pan,0,0
 raggie-tenerife-fishing,Fisher — 4h,raggie-fishing,85,60
 raggie-tenerife-fishing,Companion — 4h,raggie-fishing,79,50
 ragnarok-viking-boat,Adult (2h),viking,30,21
@@ -27,16 +74,31 @@ royal-delfin-boat,Adult (4.5h),royal-delfin,63,44.1
 royal-delfin-boat,Child 3-11 (3h),royal-delfin,30,21
 royal-delfin-boat,Child 3-11 (4.5h),royal-delfin,40,28
 royal-delfin-boat,Baby (under 2),royal-delfin,0,0
+shogun-boat,Adult,shogun-neptuno,60,37
+shogun-boat,Child (3-11),shogun-neptuno,30,18.5
+shogun-boat,Baby (0-2),shogun-neptuno,0,0
+sonador-boat,Adult,sonador,60,27.5
+sonador-boat,Child,sonador,45,27.5
+buggy-teide-adventure,2-seater,hub-buggy,180,125
+buggy-teide-adventure,4-seater,hub-buggy,250,180
+buggy-sunset-adventure,2-seater,hub-buggy,180,125
+buggy-sunset-adventure,4-seater,hub-buggy,250,180
 teide-icod-garachico-masca,Adult,nere,58,46.4
 teide-icod-garachico-masca,Child,nere,45,36
 island-tour-masca,Per person,nere,50,33
 la-gomera,Adult,nere,145,125
 la-gomera,Child,nere,118,105.25
+teide-by-night,With dinner — adult (11+),ozzy,79,48
+teide-by-night,With dinner — child (4-10),ozzy,55,43
+teide-by-night,Without dinner — adult (11+),ozzy,65,38
+teide-by-night,Without dinner — child (4-10),ozzy,49,33
 teide-tour-cable-car,Adult,nere,46,45
 teide-tour-cable-car,Child,nere,36,35
 santa-cruz--la-laguna--anaga,Adult,nere,85,50
 santa-cruz--la-laguna--anaga,Child,nere,70,45
 booster-pack-puerto-colon,Per person,watersport,110,45
+jet-ski-puerto-colon,40 minutes (1-2 people),jetski-puerto-colon,90,50
+jet-ski-puerto-colon,1 hour (1-2 people),jetski-puerto-colon,100,60
 watersport-pack-puerto-colon,Per person,watersport,90,54
 aqualand,Adult,nere,36,
 aqualand,Child (5-10),nere,29,
@@ -57,6 +119,10 @@ twin-ticket-loro-parque-siam-park,Adult,nere,78,
 twin-ticket-loro-parque-siam-park,Child (3-11),nere,57,
 twin-ticket-loro-parque-siam-park,Adult + bus transfer,nere,98,
 twin-ticket-loro-parque-siam-park,Child + bus transfer,nere,73,
+quad-sunset-tour,Single (1 rider),quadsquad,100,60
+quad-sunset-tour,Double (2 riders),quadsquad,120,60
+quad-teide-tour,Single (1 rider),quadsquad,100,60
+quad-teide-tour,Double (2 riders),quadsquad,120,60
 citroen-c3-car-rental,Per person,aliscar,62,43.4
 citroen-cactus-automatic-car-rental,Per person,aliscar,65,45.5
 citroen-grand-picasso-car-rental,Per person,aliscar,100,70
@@ -88,89 +154,22 @@ soul-jeep-self-drive-safari,Per jeep (1-2 people),soul-jeep,290,130
 soul-jeep-self-drive-safari,Per jeep (3-4 people),soul-jeep,310,150
 soul-jeep-passenger-tour,Per person,soul-jeep,120,65
 soul-jeep-passenger-tour,Additional passenger,soul-jeep,90,45
-cabrio-bus-teide-masca,Adult,nere,80,55
-cabrio-bus-teide-masca,Child,nere,60,45
-ultimate-quads,Single (1 rider),ultimate-quads,100,60
-ultimate-quads,Double (2 riders),ultimate-quads,120,60
-
-jet-ski-puerto-colon,40 minutes (1-2 people),jetski-puerto-colon,90,50
-jet-ski-puerto-colon,1 hour (1-2 people),jetski-puerto-colon,100,60
 jetski-las-galletas,40 minutes (1-2 people),flash-jetski,90,50
 jetski-las-galletas,1 hour (1-2 people),flash-jetski,100,60
-jetski-extreme,40 minutes (1-2 people),jetski-extreme,90,50
-jetski-extreme,1 hour (1-2 people),jetski-extreme,100,60
-quad-teide-tour,Single (1 rider),quadsquad,100,60
-quad-teide-tour,Double (2 riders),quadsquad,120,60
-quad-sunset-tour,Single (1 rider),quadsquad,100,60
-quad-sunset-tour,Double (2 riders),quadsquad,120,60
-kosamui-boat,Adult,kosamui,60,27.5
-kosamui-boat,Child,kosamui,45,27.5
-cool-sailing,Adult,cool-sailing,60,27.5
-cool-sailing,Child,cool-sailing,45,27.5
-arriro-boat,Adult,arriro,60,27.5
-arriro-boat,Child,arriro,45,27.5
-sonador-boat,Adult,sonador,60,27.5
-sonador-boat,Child,sonador,45,27.5
+cabrio-bus-teide-masca,Adult,nere,80,55
+cabrio-bus-teide-masca,Child,nere,60,45
 galatea-boat,Adult,galatea,60,27.5
 galatea-boat,Child,galatea,45,27.5
-buggy-teide-adventure,2-seater,hub-buggy,180,125
-buggy-teide-adventure,4-seater,hub-buggy,250,180
-buggy-sunset-adventure,2-seater,hub-buggy,180,125
-buggy-sunset-adventure,4-seater,hub-buggy,250,180
-kayaking-stand-up-paddle-los-cristianos,Rental 2h,atlantis,25,15
-kayaking-stand-up-paddle-los-cristianos,Lesson — 1 person,atlantis,60,40
-kayaking-stand-up-paddle-los-cristianos,Lesson — 2 people,atlantis,85,55
-diving-puerto-colon,Try dive from shore — 20 min,atlantis,75,35
-diving-puerto-colon,Try dive from shore — 40 min,atlantis,95,48
-diving-puerto-colon,Try dive by boat — 20 min,atlantis,85,45
-diving-puerto-colon,Try dive by boat — 40 min,atlantis,105,58
-diving-puerto-colon,2 dives certified — shore,atlantis,80,56
-diving-puerto-colon,2 dives certified — boat,atlantis,100,70
-diving-puerto-colon,Open Water Diver course,atlantis,440,308
-safari-kayak-tour-los-cristianos,Kayak + snorkeling,atlantis,45,25
-safari-kayak-tour-los-cristianos,Kayak only,atlantis,39,25
-safari-kayak-tour-los-cristianos,Kids (6-10),atlantis,22.5,12.5
-paragliding,Standard — 800m (15–20 min),daydream,100,60
-paragliding,High mountain — 1000m (20–30 min),daydream,120,80
-paragliding,Long flight (30–35 min),daydream,130,80
-paragliding,Teide — 45 min (min 2 pax),daydream,180,120
-paragliding,Acrobatic (20–30 min),daydream,150,100
-paratrike,Costa — 500m (20 min),daydream,100,60
-paratrike,Mountain — 1000m (25 min),daydream,130,80
-paratrike,Combined — 1000m (30 min),daydream,180,100
-paratrike,Crossing (60 min),daydream,210,150
-paratrike,Acrobatic (20 min),daydream,150,100
-teide-by-night,With dinner — adult (11+),ozzy,79,48
-teide-by-night,With dinner — child (4-10),ozzy,55,43
-teide-by-night,Without dinner — adult (11+),ozzy,65,38
-teide-by-night,Without dinner — child (4-10),ozzy,49,33
-white-dream,Adult,white-dream,60,35
-white-dream,Child,white-dream,40,35
-white-dream,Baby (0-2),white-dream,0,0
-maxicat-catamaran,Adult,maxicat,45,25
-maxicat-catamaran,Child (6-11),maxicat,22.5,12.5
-maxicat-catamaran,Baby (under 6),maxicat,0,0
-neptuno-boat,Adult,shogun-neptuno,63,42
-neptuno-boat,Child (3-11),shogun-neptuno,31.5,21
-neptuno-boat,Baby (0-2),shogun-neptuno,0,0
-peter-pan-boat,Adult,peter-pan,27,16
-peter-pan-boat,Child (3-11),peter-pan,13.5,8
-peter-pan-boat,Baby (0-2),peter-pan,0,0
-shogun-boat,Adult,shogun-neptuno,60,37
-shogun-boat,Child (3-11),shogun-neptuno,30,18.5
-shogun-boat,Baby (0-2),shogun-neptuno,0,0
-diamant-boat,Adult,opera,80,45
-diamant-boat,Child,opera,50,30
-fishing-boat-puerto-colon,Fisher — 4h,happy-hooker,90,60
-fishing-boat-puerto-colon,Spectator — 4h,happy-hooker,60,50
 gulliver-boat,Adult (11+),gulliver,80,49
 gulliver-boat,Child (4-10),gulliver,49,30
 gulliver-boat,Infant (0-3),gulliver,0,0
-atlanca-boat-rental,1 hour,atlanca,109,70
-atlanca-boat-rental,2 hours,atlanca,189,120
-atlanca-boat-rental,3 hours,atlanca,269,180
-atlanca-boat-rental,4 hours,atlanca,339,230
-atlanca-boat-rental,5 hours,atlanca,399,280
+white-dream,Adult,white-dream,60,35
+white-dream,Child,white-dream,40,35
+white-dream,Baby (0-2),white-dream,0,0
+jetski-extreme,40 minutes (1-2 people),jetski-extreme,90,50
+jetski-extreme,1 hour (1-2 people),jetski-extreme,100,60
+ultimate-quads,Single (1 rider),ultimate-quads,100,60
+ultimate-quads,Double (2 riders),ultimate-quads,120,60
 el-fenix-boat-rental,1 hour,el-fenix,100,70
 el-fenix-boat-rental,2 hours,el-fenix,180,120
 el-fenix-boat-rental,3 hours,el-fenix,270,180
@@ -206,3 +205,6 @@ leah-catamaran-rental,2 hours,leah-catamaran,200,140
 leah-catamaran-rental,3 hours,leah-catamaran,290,210
 leah-catamaran-rental,4 hours,leah-catamaran,350,240
 leah-catamaran-rental,5 hours,leah-catamaran,450,300
+paraok-paragliding,Basic (10–20 min flight),paraok,90,65
+paraok-paragliding,"Standard (15–25 min, photos & video)",paraok,130,130
+paraok-paragliding,"Premium (25+ min, acrobatics + edited video)",paraok,150,150
