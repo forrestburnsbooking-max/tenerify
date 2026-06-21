@@ -5443,7 +5443,13 @@
     "meetingPoint": "South Tenerife — departure point confirmed on booking",
     "bookingPhone": "613 92 47 63",
     "supplierId": "white-dream",
-    "minAge": 0
+    "minAge": 0,
+    "images": [
+      "/images/tours/white-dream-1.jpg",
+      "/images/tours/white-dream-2.jpg",
+      "/images/tours/white-dream-3.jpg"
+    ],
+    "imageUrl": "/images/tours/white-dream-1.jpg"
   },
   {
     "slug": "jetski-extreme",
