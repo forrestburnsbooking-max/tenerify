@@ -8,10 +8,18 @@
     "start": "next start",
     "lint": "eslint",
     "scrape-events": "npx tsx scripts/scrape-events.ts",
-    "sync-prices": "npx tsx scripts/sync-prices.ts"
+    "sync-prices": "npx tsx scripts/sync-prices.ts",
+    "reels:studio": "remotion studio remotion/index.ts",
+    "reels:animate": "npx tsx scripts/animate-photos.ts",
+    "reels:photos": "npx tsx scripts/photo-review.ts",
+    "reels:render": "npx tsx scripts/render-reels.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.101.0",
+    "@remotion/bundler": "^4.0.478",
+    "@remotion/cli": "^4.0.478",
+    "@remotion/google-fonts": "^4.0.478",
+    "@remotion/renderer": "^4.0.478",
     "@types/qrcode": "^1.5.6",
     "@upstash/redis": "^1.38.0",
     "csv-parse": "^6.2.1",
@@ -20,6 +28,7 @@
     "react": "19.2.4",
     "react-dom": "19.2.4",
     "react-markdown": "^10.1.0",
+    "remotion": "^4.0.478",
     "stripe": "^22.2.0"
   },
   "devDependencies": {
