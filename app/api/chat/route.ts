@@ -131,7 +131,7 @@ Tear along dusty trails and coastal tracks as the light turns golden, timed so y
 **Rules:**
 - Max 2 tour cards per message
 - **CLOSE, don't browse.** Once the customer shows interest in a tour, commit to it and drive toward booking: date → group → time → book. Do NOT keep pivoting to new tours or re-listing options. Only show a different/alternative tour if they explicitly reject the current one or ask "what else". Bouncing from product to product loses the sale.
-- **Always set tourSlug to the tour your message is about** — not just when showing the card, but in every follow-up about that tour too (asking for date/time/license/group size, confirming details, BOOK_NOW). This keeps its photo/video attached throughout the booking flow, which helps sell it. If showing 2 cards, set it to the one you most recommend. Only omit it for messages that aren't about a specific tour (legends, general chat, multi-tour overviews).
+- **EVERY specific tour you name MUST have its photo — no exceptions.** Photos attach via the slug fields: for ONE named tour set tourSlug; when you name or compare 2+ tours in a single message set tourSlugs to ALL of them (most-recommended first) so each gets a thumbnail in the photo collage. Set the slug not just for cards but in every follow-up about a tour too (date/time/license/group size, confirming, BOOK_NOW). Only leave both unset for messages that name no specific tour at all (legends, greetings, general chat).
 - Use the catalogue's Includes and description fields — they're there to help you sell, don't ignore them
 - **Social proof closes — but only real, correctly-attributed ratings.** A ⭐ rating belongs to exactly one tour: the catalogue line it sits on (the one with its own [slug:...]). Cite a rating ONLY for that tour. NEVER borrow, copy, average or estimate a rating from a different tour — not even a near-identical one in the same category (e.g. don't put another jet ski's rating on this jet ski). If this tour's own line has no ⭐, omit the ⭐ line entirely and say nothing about ratings — never write "no rating", "not rated", "No rating listed" or anything similar. When a real rating is present, include the ⭐ line and weave it into your pitch ("one of the highest-rated boats here — 4.7 from 300+ guests"). Never invent, inflate or round up.
 - Never describe what Tenerify can do — just do it
@@ -381,7 +381,12 @@ export async function POST(req: NextRequest) {
               },
               tourSlug: {
                 type: "string",
-                description: "The slug of the tour your message is about (e.g. 'buggy-sunset-adventure') — set this any time the message references a specific tour: showing its card, asking for date/time/license/group size for it, confirming details, or triggering BOOK_NOW. This attaches the tour's photo/video to your message, which helps sell it. Leave unset only for messages that aren't about a specific tour (legends, general chat, multi-tour overviews).",
+                description: "The slug of the tour your message is about (e.g. 'buggy-sunset-adventure'). REQUIRED any time the message names or recommends ONE specific tour — showing its card, asking for date/time/license/group size, confirming details, or BOOK_NOW. This attaches the tour's photo/video; a tour mentioned with no photo is a failure. Leave unset only for messages that name no specific tour at all (legends, greetings, general chat).",
+              },
+              tourSlugs: {
+                type: "array",
+                items: { type: "string" },
+                description: "When your message names or compares 2+ specific tours, list EVERY named tour's slug here, most-recommended first (e.g. ['maxicat-catamaran','royal-delfin']). Each one gets its photo shown as a thumbnail. For a single tour use tourSlug instead. Every tour you name must have its photo — no exceptions.",
               },
               needsDate: {
                 type: "boolean",
@@ -411,7 +416,7 @@ export async function POST(req: NextRequest) {
     const toolUse = response.content.find((b) => b.type === "tool_use");
     const input =
       toolUse && toolUse.type === "tool_use"
-        ? (toolUse.input as { message: string; options: string[]; tourSlug?: string; needsDate?: boolean; needsLicense?: boolean; needsTime?: boolean; availableTimeSlots?: string[] })
+        ? (toolUse.input as { message: string; options: string[]; tourSlug?: string; tourSlugs?: string[]; needsDate?: boolean; needsLicense?: boolean; needsTime?: boolean; availableTimeSlots?: string[] })
         : null;
 
     let message = input?.message ?? "Sorry, something went wrong.";
@@ -426,24 +431,30 @@ export async function POST(req: NextRequest) {
     const bookingText = bookMatch ? bookMatch[1] : null;
     message = message.replace(/\[BOOK_NOW:[^\]]+\]/g, "").trim();
 
-    // Attach tour media if AI recommended a specific tour
-    let tourMedia: { imageUrl?: string; images?: string[]; videoUrl?: string; title?: string } | null = null;
-    if (tourSlug) {
-      const tour = getTourBySlug(tourSlug);
-      if (tour) {
-        tourMedia = {
+    // Attach a photo for every tour the AI named — one big card for a single
+    // tour, a thumbnail collage for several. tourSlugs (multi) takes priority,
+    // falling back to the single tourSlug; order preserved, deduped.
+    type TourMedia = { imageUrl?: string; images?: string[]; videoUrl?: string; title?: string };
+    const slugList = [...(input?.tourSlugs ?? []), ...(tourSlug ? [tourSlug] : [])]
+      .filter((s, i, arr) => s && arr.indexOf(s) === i);
+    const tourMediaList: TourMedia[] = slugList
+      .map((slug) => {
+        const tour = getTourBySlug(slug);
+        if (!tour) return null;
+        return {
           imageUrl: tour.imageUrl,
           images: tour.images?.length ? tour.images : tour.imageUrl ? [tour.imageUrl] : undefined,
           videoUrl: tour.videoUrl,
           title: tour.title,
-        };
-      }
-    }
+        } as TourMedia;
+      })
+      .filter((m): m is TourMedia => m !== null);
+    const tourMedia = tourMediaList[0] ?? null; // back-compat single
 
     // Save session and set cookie
     await saveSession(sessionId, session);
 
-    const res = NextResponse.json({ message, options, bookingText, tourMedia, needsDate, needsLicense, needsTime, availableTimeSlots, isReturning: session.visits.length > 1 });
+    const res = NextResponse.json({ message, options, bookingText, tourMedia, tourMediaList, needsDate, needsLicense, needsTime, availableTimeSlots, isReturning: session.visits.length > 1 });
     res.cookies.set(SESSION_COOKIE, sessionId, {
       httpOnly: false, // readable by client to show "welcome back"
       sameSite: "lax",

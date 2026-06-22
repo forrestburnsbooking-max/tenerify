@@ -165,6 +165,7 @@ type Message = {
   options?: string[];
   bookingText?: string;
   tourMedia?: TourMedia | null;
+  tourMediaList?: TourMedia[];
   needsDate?: boolean;
   needsLicense?: boolean;
   needsTime?: boolean;
@@ -537,7 +538,7 @@ export default function Home() {
       if (data.isReturning) setIsReturning(true);
       setMessages([
         ...newMessages,
-        { role: "assistant", content: data.message, options: data.options, bookingText: data.bookingText, tourMedia: data.tourMedia, needsDate: data.needsDate, needsLicense: data.needsLicense, needsTime: data.needsTime, availableTimeSlots: data.availableTimeSlots },
+        { role: "assistant", content: data.message, options: data.options, bookingText: data.bookingText, tourMedia: data.tourMedia, tourMediaList: data.tourMediaList, needsDate: data.needsDate, needsLicense: data.needsLicense, needsTime: data.needsTime, availableTimeSlots: data.availableTimeSlots },
       ]);
     } catch {
       setMessages([
@@ -885,37 +886,65 @@ export default function Home() {
                 )}
               </div>
 
-              {/* Tour media card */}
-              {msg.role === "assistant" && msg.tourMedia && (
-                <div className="rounded-2xl overflow-hidden border border-white/10 w-full max-w-sm">
-                  {msg.tourMedia.videoUrl ? (
-                    <iframe
-                      src={msg.tourMedia.videoUrl}
-                      className="w-full aspect-video"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                    />
-                  ) : msg.tourMedia.images?.length ? (
-                    <div className="relative">
-                      <div className="flex overflow-x-auto snap-x snap-mandatory no-scrollbar">
-                        {msg.tourMedia.images.map((src, i) => (
-                          <img
-                            key={src}
-                            src={src}
-                            alt={`${msg.tourMedia!.title ?? ""} ${i + 1}`}
-                            className="w-full flex-none snap-center aspect-video object-cover"
-                          />
-                        ))}
-                      </div>
-                      {msg.tourMedia.images.length > 1 && (
-                        <span className="absolute bottom-2 right-2 bg-black/50 text-white text-xs px-2 py-0.5 rounded-full">
-                          1/{msg.tourMedia.images.length} · swipe
-                        </span>
-                      )}
+              {/* Tour media — one big card for a single tour, a photo collage for several */}
+              {msg.role === "assistant" && (() => {
+                const media = msg.tourMediaList?.length ? msg.tourMediaList : msg.tourMedia ? [msg.tourMedia] : [];
+                if (media.length === 0) return null;
+
+                if (media.length === 1) {
+                  const m = media[0];
+                  return (
+                    <div className="rounded-2xl overflow-hidden border border-white/10 w-full max-w-sm">
+                      {m.videoUrl ? (
+                        <iframe
+                          src={m.videoUrl}
+                          className="w-full aspect-video"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                        />
+                      ) : m.images?.length ? (
+                        <div className="relative">
+                          <div className="flex overflow-x-auto snap-x snap-mandatory no-scrollbar">
+                            {m.images.map((src, i) => (
+                              <img
+                                key={src}
+                                src={src}
+                                alt={`${m.title ?? ""} ${i + 1}`}
+                                className="w-full flex-none snap-center aspect-video object-cover"
+                              />
+                            ))}
+                          </div>
+                          {m.images.length > 1 && (
+                            <span className="absolute bottom-2 right-2 bg-black/50 text-white text-xs px-2 py-0.5 rounded-full">
+                              1/{m.images.length} · swipe
+                            </span>
+                          )}
+                        </div>
+                      ) : null}
                     </div>
-                  ) : null}
-                </div>
-              )}
+                  );
+                }
+
+                // 2+ tours → photo collage of thumbnails, one per named tour
+                return (
+                  <div className="grid grid-cols-2 gap-2 w-full max-w-sm">
+                    {media.map((m, i) => {
+                      const src = m.imageUrl || m.images?.[0];
+                      if (!src) return null;
+                      return (
+                        <div key={(m.title ?? "") + i} className="relative rounded-xl overflow-hidden border border-white/10">
+                          <img src={src} alt={m.title ?? ""} className="w-full aspect-video object-cover" />
+                          {m.title && (
+                            <span className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/85 to-transparent text-white text-[11px] font-medium leading-tight px-2 pt-4 pb-1.5 line-clamp-2">
+                              {m.title}
+                            </span>
+                          )}
+                        </div>
+                      );
+                    })}
+                  </div>
+                );
+              })()}
 
               {/* Booking buttons */}
               {msg.role === "assistant" && msg.bookingText && (
