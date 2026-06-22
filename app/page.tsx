@@ -848,7 +848,7 @@ export default function Home() {
 
         {/* Chat messages */}
         {messages.map((msg, i) => msg.hidden ? null : (
-          <div key={i} className={`flex gap-3 max-w-xl mx-auto w-full ${msg.role === "user" ? "flex-row-reverse" : ""}`}>
+          <div key={i} className={`msg-in flex gap-3 max-w-xl mx-auto w-full ${msg.role === "user" ? "flex-row-reverse" : ""}`}>
             {msg.role === "assistant" && (
               <div className="flex-shrink-0 mt-1 w-7 h-7 rounded-full overflow-hidden">
               <img src="/logo-mark.svg" alt="" className="w-full h-full p-1" />
@@ -945,7 +945,7 @@ export default function Home() {
         ))}
 
         {loading && (
-          <div className="flex gap-3 max-w-xl mx-auto w-full">
+          <div className="msg-in flex gap-3 max-w-xl mx-auto w-full">
             <div className="flex-shrink-0 mt-1 w-7 h-7 rounded-full overflow-hidden">
               <img src="/logo-mark.svg" alt="" className="w-full h-full p-1" />
             </div>
@@ -963,12 +963,13 @@ export default function Home() {
       </div>
 
       {/* Text input */}
-      {step === "chat" && !loading && (
+      {step === "chat" && (
         <div className="relative px-4 pb-5 pt-3 border-t border-white/8">
           <div className="max-w-xl mx-auto flex gap-2 items-center">
             <input
               type="text"
-              placeholder="Type a message..."
+              disabled={loading}
+              placeholder={loading ? "Tenerify is typing…" : "Type a message..."}
               onKeyDown={(e) => {
                 if (e.key === "Enter" && e.currentTarget.value.trim()) {
                   const val = e.currentTarget.value.trim();
@@ -976,9 +977,10 @@ export default function Home() {
                   sendToAI(val, messages);
                 }
               }}
-              className="flex-1 bg-white/10 backdrop-blur-sm border border-white/20 focus:border-orange-500 text-white placeholder-white/40 text-sm px-4 py-3 rounded-2xl focus:outline-none transition-colors"
+              className="flex-1 bg-white/10 backdrop-blur-sm border border-white/20 focus:border-orange-500 text-white placeholder-white/40 text-sm px-4 py-3 rounded-2xl focus:outline-none transition-colors disabled:opacity-50"
             />
             <button
+              disabled={loading}
               onClick={(e) => {
                 const input = (e.currentTarget.previousElementSibling as HTMLInputElement);
                 if (input?.value.trim()) {
@@ -987,7 +989,7 @@ export default function Home() {
                   sendToAI(val, messages);
                 }
               }}
-              className="bg-orange-500 hover:bg-orange-400 text-white p-3 rounded-2xl transition-colors flex-shrink-0"
+              className="bg-orange-500 hover:bg-orange-400 text-white p-3 rounded-2xl transition-colors flex-shrink-0 disabled:opacity-50 disabled:hover:bg-orange-500"
             >
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
                 <path d="M3.105 2.288a.75.75 0 0 0-.826.95l1.908 6.258H10a.75.75 0 0 1 0 1.5H4.188l-1.909 6.258a.75.75 0 0 0 .826.95 28.897 28.897 0 0 0 15.208-8.293.75.75 0 0 0 0-1.076A28.897 28.897 0 0 0 3.105 2.288Z" />
