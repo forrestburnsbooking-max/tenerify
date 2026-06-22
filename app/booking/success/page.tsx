@@ -3,6 +3,7 @@
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState, Suspense } from "react";
 import type { PrepInstructions } from "@/lib/prep";
+import { useTwemoji } from "@/lib/useTwemoji";
 
 const WHATSAPP_NUMBER = "34610434957";
 
@@ -22,6 +23,7 @@ function SuccessContent() {
   const params = useSearchParams();
   const sessionId = params.get("session_id") ?? "";
   const [booking, setBooking] = useState<BookingInfo | null>(null);
+  const rootRef = useTwemoji<HTMLDivElement>();
   const ref = sessionId.slice(-8).toUpperCase();
 
   useEffect(() => {
@@ -47,7 +49,7 @@ function SuccessContent() {
   const waMessage = `Hi! I just paid for${booking ? `: ${booking.tourName}` : " a Tenerife experience"}. My booking reference: ${ref}`;
 
   return (
-    <div className="flex flex-col min-h-screen bg-[#0d0d0d] text-white items-center justify-center px-6">
+    <div ref={rootRef} className="flex flex-col min-h-screen bg-[#0d0d0d] text-white items-center justify-center px-6">
       <div className="max-w-sm w-full text-center space-y-8">
         <div className="text-6xl">✅</div>
 

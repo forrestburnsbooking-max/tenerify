@@ -21,6 +21,15 @@ body {
   -ms-overflow-style: none;
 }
 
+/* Twemoji — render every emoji identically across devices */
+img.emoji {
+  height: 1em;
+  width: 1em;
+  margin: 0 0.05em 0 0.1em;
+  vertical-align: -0.1em;
+  display: inline-block;
+}
+
 @keyframes msg-in {
   from {
     opacity: 0;

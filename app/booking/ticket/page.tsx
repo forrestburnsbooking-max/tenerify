@@ -5,6 +5,7 @@ import { useEffect, useState, Suspense } from "react";
 import QRCode from "qrcode";
 import type { PrepInstructions } from "@/lib/prep";
 import { COMPANY } from "@/lib/company";
+import { useTwemoji } from "@/lib/useTwemoji";
 
 type TicketData = {
   tourName: string;
@@ -26,6 +27,7 @@ function TicketContent() {
   const [ticket, setTicket] = useState<TicketData | null>(null);
   const [qrDataUrl, setQrDataUrl] = useState("");
   const [loading, setLoading] = useState(true);
+  const rootRef = useTwemoji<HTMLDivElement>();
 
   useEffect(() => {
     if (!sessionId) { setLoading(false); return; }
@@ -99,7 +101,7 @@ function TicketContent() {
       </div>
 
       {/* Ticket */}
-      <div className="flex justify-center px-4 pb-10 pt-4 bg-gray-100 min-h-screen">
+      <div ref={rootRef} className="flex justify-center px-4 pb-10 pt-4 bg-gray-100 min-h-screen">
         <div
           className="ticket bg-white rounded-3xl shadow-xl overflow-hidden w-full max-w-sm"
           style={{ fontFamily: "system-ui, sans-serif" }}

@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect, useCallback } from "react";
 import ReactMarkdown from "react-markdown";
 import { SESSION_COOKIE } from "@/lib/session";
+import { useTwemoji } from "@/lib/useTwemoji";
 
 const WHATSAPP_NUMBER = "34610434957";
 
@@ -410,6 +411,7 @@ export default function Home() {
   const [isReturning, setIsReturning] = useState(false);
   const [videoReady, setVideoReady] = useState(false);
   const bottomRef = useRef<HTMLDivElement>(null);
+  const rootRef = useTwemoji<HTMLDivElement>();
   const sendingRef = useRef(false);
 
   const t = UI_STRINGS[selectedLanguage] ?? UI_STRINGS["en"];
@@ -611,7 +613,7 @@ export default function Home() {
   );
 
   return (
-    <div className="flex flex-col h-screen text-white relative overflow-hidden bg-[#0d0d0d]">
+    <div ref={rootRef} className="flex flex-col h-screen text-white relative overflow-hidden bg-[#0d0d0d]">
       {/* Background photo */}
       <img
         src="/chat-bg.jpg"
