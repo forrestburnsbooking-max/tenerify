@@ -8,9 +8,17 @@ const WHATSAPP_NUMBER = "34610434957";
 
 function DatePicker({ onSelect }: { onSelect: (date: string) => void }) {
   const today = new Date();
-  const fmt = (d: Date) => d.toISOString().split("T")[0];
+  // Format a Date as YYYY-MM-DD using LOCAL components (toISOString would shift
+  // by the UTC offset and could move the min date a day in either direction).
+  const fmt = (d: Date) =>
+    `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
   const label = (d: Date) =>
     d.toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" });
+  // Parse a YYYY-MM-DD string as a local date (avoids the UTC off-by-one).
+  const parseLocal = (v: string) => {
+    const [y, m, d] = v.split("-").map(Number);
+    return new Date(y, m - 1, d);
+  };
 
   const tomorrow = new Date(today); tomorrow.setDate(today.getDate() + 1);
   const weekend = new Date(today);
@@ -18,6 +26,7 @@ function DatePicker({ onSelect }: { onSelect: (date: string) => void }) {
   weekend.setDate(today.getDate() + daysToSat);
 
   const [showPicker, setShowPicker] = useState(false);
+  const [picked, setPicked] = useState("");
   const minDate = fmt(tomorrow);
 
   return (
@@ -41,19 +50,26 @@ function DatePicker({ onSelect }: { onSelect: (date: string) => void }) {
         </button>
       </div>
       {showPicker && (
-        <input
-          type="date"
-          min={minDate}
-          autoFocus
-          onChange={(e) => {
-            if (e.target.value) {
-              const d = new Date(e.target.value);
-              onSelect(label(d));
-            }
-          }}
-          className="bg-stone-900 border border-orange-500 text-white rounded-2xl px-4 py-3 text-sm w-full focus:outline-none"
-          style={{ colorScheme: "dark" }}
-        />
+        <div className="flex gap-2">
+          {/* Controlled input — picking a date only stages it; nothing is sent
+              until the user taps OK. This stops the native picker from
+              auto-submitting before the user has chosen. */}
+          <input
+            type="date"
+            min={minDate}
+            value={picked}
+            onChange={(e) => setPicked(e.target.value)}
+            className="flex-1 bg-stone-900 border border-orange-500 text-white rounded-2xl px-4 py-3 text-sm focus:outline-none"
+            style={{ colorScheme: "dark" }}
+          />
+          <button
+            onClick={() => picked && onSelect(label(parseLocal(picked)))}
+            disabled={!picked}
+            className="px-5 py-3 rounded-2xl text-sm font-semibold border border-orange-500 bg-orange-500/20 text-orange-300 hover:bg-orange-500/30 transition-all disabled:opacity-40 disabled:cursor-not-allowed"
+          >
+            OK
+          </button>
+        </div>
       )}
     </div>
   );
