@@ -149,7 +149,8 @@ export function getTours(): string {
           const slotsPart = t.timeSlots?.length ? ` | timeSlots: ${t.timeSlots.join(", ")}` : "";
           const depositPart = t.depositPercent ? ` | 💳 ${t.depositPercent}% deposit online, rest paid on pickup` : "";
           const discountOkPart = (t.category === "buggy-quad" || t.category === "jetski") ? ` | 🏷️ 8% chat discount available` : "";
-          lines.push(`    • [slug:${t.slug}] ${t.title}${durPart} | ${pricePart}${agePart}${capPart}${incPart}${excPart}${slotsPart}${depositPart}${discountOkPart}`);
+          const ratingPart = t.rating ? ` | ⭐ ${t.rating}${t.reviewCount ? ` (${t.reviewCount} reviews${t.reviewSource ? `, ${t.reviewSource}` : ""})` : ""}` : "";
+          lines.push(`    • [slug:${t.slug}] ${t.title}${durPart} | ${pricePart}${agePart}${capPart}${incPart}${excPart}${slotsPart}${depositPart}${discountOkPart}${ratingPart}`);
           if (t.description) {
             lines.push(`      ${t.description.slice(0, 500)}`);
           }
