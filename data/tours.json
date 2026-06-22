@@ -6214,6 +6214,7 @@
     "meetingPoint": "Hotel pickup — South Tenerife (take-off from Taucho, Adeje)",
     "bookingPhone": "633 444 733",
     "supplierId": "paraok",
-    "imageUrl": "/images/tours/paraok-paragliding.jpg"
+    "imageUrl": "/images/tours/paraok-paragliding.jpg",
+    "minAge": 4
   }
 ]
