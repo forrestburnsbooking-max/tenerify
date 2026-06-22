@@ -6171,50 +6171,5 @@
     "supplierId": "leah-catamaran",
     "meetingPoint": "Puerto Colón Marina, Costa Adeje",
     "capacity": 6
-  },
-  {
-    "slug": "paraok-paragliding",
-    "title": "ParaOK Paragliding — tandem flight over Tenerife",
-    "category": "air",
-    "group": "air",
-    "duration": "~1.5–2h (flight 10–25+ min)",
-    "pricing": [
-      {
-        "label": "Basic (10–20 min flight)",
-        "price": 90,
-        "net": 65
-      },
-      {
-        "label": "Standard (15–25 min, photos & video)",
-        "price": 130,
-        "net": 130
-      },
-      {
-        "label": "Premium (25+ min, acrobatics + edited video)",
-        "price": 150,
-        "net": 150
-      }
-    ],
-    "priceFrom": 90,
-    "description": "Soar over the south of Tenerife on a tandem paragliding flight with ParaOK — strapped safely to an expert pilot, no experience needed. After hotel pickup you head up to the launch at Taucho (Adeje), 800 m above the coast — a few running steps and you're airborne.\n\nThree options: Basic (€90) is the pure 10–20 minute flight; Standard (€130) is a longer 15–25 minute flight with photos and video on an SD card; Premium (€150) adds 25+ minutes, acrobatics (spirals, wingovers) and a landing on Enramada beach, with edited photos and video.\n\nThe whole outing is about 1.5–2 hours including transfer. Wear closed shoes, bring sunglasses, and note flights depend on wind so the exact time is confirmed on the day.",
-    "faq": [
-      {
-        "question": "What is your cancellation policy?",
-        "answer": "Free cancellation with a full refund if you cancel more than 24 hours before. Cancellations less than 24 hours before, or no-shows, are non-refundable. If the flight is cancelled for weather/safety, you get a full refund or a free reschedule. To cancel, message us on WhatsApp (+34 610 434 957) with your booking reference."
-      },
-      {
-        "question": "Do I need experience?",
-        "answer": "No — it's a tandem flight with an expert pilot. You just enjoy the ride; the pilot handles everything."
-      },
-      {
-        "question": "What happens if the weather is bad?",
-        "answer": "Paragliding depends on wind. If conditions aren't safe the flight is rescheduled or fully refunded."
-      }
-    ],
-    "meetingPoint": "Hotel pickup — South Tenerife (take-off from Taucho, Adeje)",
-    "bookingPhone": "633 444 733",
-    "supplierId": "paraok",
-    "imageUrl": "/images/tours/paraok-paragliding.jpg",
-    "minAge": 4
   }
 ]
