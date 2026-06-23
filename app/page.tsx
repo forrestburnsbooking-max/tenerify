@@ -1,11 +1,19 @@
 "use client";
 
-import { useState, useRef, useEffect, useCallback } from "react";
+import { useState, useRef, useEffect, useCallback, type ComponentProps } from "react";
 import ReactMarkdown from "react-markdown";
 import { SESSION_COOKIE } from "@/lib/session";
 import { useTwemoji } from "@/lib/useTwemoji";
 
 const WHATSAPP_NUMBER = "34610434957";
+
+// Render every markdown link as an external link that opens in a new tab
+// (Google Maps, menus, etc. should never navigate away from the chat).
+const MD_COMPONENTS = {
+  a: (props: ComponentProps<"a">) => (
+    <a {...props} target="_blank" rel="noopener noreferrer" className="text-orange-400 underline hover:text-orange-300" />
+  ),
+};
 
 function DatePicker({ onSelect }: { onSelect: (date: string) => void }) {
   const today = new Date();
@@ -678,7 +686,7 @@ export default function Home() {
             </div>
             <div className="space-y-3 flex-1">
               <div className="bg-white/6 border border-white/12 text-white rounded-2xl rounded-tl-none px-4 py-3 text-sm leading-relaxed">
-                <ReactMarkdown>{t.intro}</ReactMarkdown>
+                <ReactMarkdown components={MD_COMPONENTS}>{t.intro}</ReactMarkdown>
               </div>
               <div className="grid grid-cols-2 gap-2">
                 {MENU_OPTIONS.map((opt) => {
@@ -882,7 +890,7 @@ export default function Home() {
                 }`}
               >
                 {msg.role === "assistant" ? (
-                  <ReactMarkdown>{msg.content}</ReactMarkdown>
+                  <ReactMarkdown components={MD_COMPONENTS}>{msg.content}</ReactMarkdown>
                 ) : (
                   msg.content
                 )}
