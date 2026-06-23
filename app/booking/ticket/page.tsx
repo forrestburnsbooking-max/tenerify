@@ -2,7 +2,6 @@
 
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState, Suspense } from "react";
-import QRCode from "qrcode";
 import type { PrepInstructions } from "@/lib/prep";
 import { COMPANY } from "@/lib/company";
 import { useTwemoji } from "@/lib/useTwemoji";
@@ -25,7 +24,6 @@ function TicketContent() {
   const params = useSearchParams();
   const sessionId = params.get("session_id") ?? "";
   const [ticket, setTicket] = useState<TicketData | null>(null);
-  const [qrDataUrl, setQrDataUrl] = useState("");
   const [loading, setLoading] = useState(true);
   const rootRef = useTwemoji<HTMLDivElement>();
 
@@ -34,7 +32,7 @@ function TicketContent() {
 
     fetch(`/api/checkout/session?id=${sessionId}`)
       .then((r) => r.json())
-      .then(async (data) => {
+      .then((data) => {
         const ref = sessionId.slice(-8).toUpperCase();
         const ticketData: TicketData = {
           tourName: data.tourName ?? "Tenerife Experience",
@@ -50,11 +48,6 @@ function TicketContent() {
           ref,
         };
         setTicket(ticketData);
-
-        // Generate QR code pointing to verification URL
-        const verifyUrl = `${window.location.origin}/booking/verify?ref=${ref}&id=${sessionId}`;
-        const qr = await QRCode.toDataURL(verifyUrl, { width: 160, margin: 1, color: { dark: "#000", light: "#fff" } });
-        setQrDataUrl(qr);
       })
       .catch(() => {})
       .finally(() => setLoading(false));
@@ -115,6 +108,24 @@ function TicketContent() {
               <div className="text-stone-400 text-xs mt-0.5">Your Tenerife Experience</div>
             </div>
             <div className="text-4xl">🌋</div>
+          </div>
+
+          {/* Pending-confirmation banner — this is not the final ticket yet */}
+          <div className="bg-orange-50 border-b border-orange-100 px-6 py-4">
+            <div className="flex items-start gap-2">
+              <span className="text-lg leading-none">⏳</span>
+              <div>
+                <div className="text-sm font-semibold text-gray-900">
+                  Booking received — we&apos;re finalising it
+                </div>
+                <p className="text-xs text-gray-600 leading-relaxed mt-1">
+                  Our office is confirming the time and pickup point with the
+                  operator. We&apos;ll send your ticket on WhatsApp shortly. This
+                  page is your payment confirmation and prep checklist — keep it
+                  handy.
+                </p>
+              </div>
+            </div>
           </div>
 
           {/* Tour info */}
@@ -195,16 +206,11 @@ function TicketContent() {
             </div>
           )}
 
-          {/* QR + ref */}
-          <div className="px-6 py-5 flex items-center gap-4">
-            {qrDataUrl && (
-              <img src={qrDataUrl} alt="QR code" className="w-24 h-24 rounded-lg border border-gray-100" />
-            )}
-            <div>
-              <div className="text-xs text-gray-400 uppercase tracking-wide mb-1">Booking ref</div>
-              <div className="font-mono font-bold text-gray-900 text-xl">{ticket.ref}</div>
-              <div className="text-xs text-gray-400 mt-1">Scan QR to verify</div>
-            </div>
+          {/* Booking reference */}
+          <div className="px-6 py-5">
+            <div className="text-xs text-gray-400 uppercase tracking-wide mb-1">Booking reference</div>
+            <div className="font-mono font-bold text-gray-900 text-xl">{ticket.ref}</div>
+            <div className="text-xs text-gray-400 mt-1">Quote this if you message us about your booking.</div>
           </div>
 
           {/* Operator legal details — required on a tourist-operator ticket */}

@@ -84,7 +84,10 @@ export async function markBookingPaid(
     const existing = redis
       ? await redis.get<BookingRecord>(`${KEY_PREFIX}${id}`)
       : devStore.get(id) ?? null;
-    if (!existing) return;
+    if (!existing) {
+      console.warn(`[bookings] markBookingPaid: no booking record for ${id} — cannot send confirmation`);
+      return;
+    }
     if (existing.status === "paid") return; // idempotent
     const updated: BookingRecord = {
       ...existing,
@@ -99,8 +102,9 @@ export async function markBookingPaid(
     }
     // Fires exactly once — the early-return above guards against re-sends.
     await sendBookingConfirmation(updated);
-  } catch {
-    // Non-critical
+  } catch (err) {
+    // Non-critical — never break the payment flow, but make it visible.
+    console.error(`[bookings] markBookingPaid failed for ${id}:`, err);
   }
 }
 

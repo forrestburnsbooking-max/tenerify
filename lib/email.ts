@@ -39,10 +39,10 @@ type Copy = {
 
 const COPY: Record<Lang, Copy> = {
   en: {
-    subject: (t) => `Booking confirmed — ${t} ✅`,
+    subject: (t) => `Booking received — ${t} ⏳`,
     thanks: "Thank you for your booking! 🎉",
     confirmed: (t, d, g) =>
-      `Your <strong>${t}</strong>${d ? ` on <strong>${d}</strong>` : ""}${g ? `, ${g}` : ""} is confirmed.`,
+      `We've received your <strong>${t}</strong>${d ? ` for <strong>${d}</strong>` : ""}${g ? `, ${g}` : ""} and your payment.`,
     refLabel: "Booking reference",
     dateLabel: "Date",
     groupLabel: "Group",
@@ -50,7 +50,8 @@ const COPY: Record<Lang, Copy> = {
     meetingFixed: (mp) => `📍 <strong>Meeting point:</strong> ${mp} — please arrive 15–30 minutes early.`,
     meetingPickup:
       "🚐 We'll arrange your pickup point and time based on where you're staying — and confirm it with you before your tour.",
-    finalConfirm: "We'll contact you on WhatsApp to confirm the final details before your tour.",
+    finalConfirm:
+      "Our office is now confirming the time and pickup point with the operator. We'll send you your ticket on WhatsApp shortly — and reach out before your tour with the final details.",
     descriptor: 'This charge appears on your card statement as <strong>CANARIAN FUN</strong>.',
     depositNote: (b) => `This is a deposit — the remaining ${b} is paid on arrival.`,
     waPrompt: "Need to reach us about your booking?",
@@ -59,10 +60,10 @@ const COPY: Record<Lang, Copy> = {
     footer: "Canarian Fun · Tenerife, Spain",
   },
   ru: {
-    subject: (t) => `Бронирование подтверждено — ${t} ✅`,
+    subject: (t) => `Бронь получена — ${t} ⏳`,
     thanks: "Большое спасибо за бронирование! 🎉",
     confirmed: (t, d, g) =>
-      `Ваш <strong>${t}</strong>${d ? ` на <strong>${d}</strong>` : ""}${g ? `, ${g}` : ""} — подтверждён.`,
+      `Мы получили вашу бронь <strong>${t}</strong>${d ? ` на <strong>${d}</strong>` : ""}${g ? `, ${g}` : ""} и оплату.`,
     refLabel: "Номер брони",
     dateLabel: "Дата",
     groupLabel: "Группа",
@@ -70,7 +71,8 @@ const COPY: Record<Lang, Copy> = {
     meetingFixed: (mp) => `📍 <strong>Место встречи:</strong> ${mp} — подойдите за 15–30 минут.`,
     meetingPickup:
       "🚐 Мы согласуем точку и время посадки с учётом того, где вы остановились, и подтвердим их до тура.",
-    finalConfirm: "Мы свяжемся с вами в WhatsApp для окончательного подтверждения деталей перед туром.",
+    finalConfirm:
+      "Наш офис согласовывает время и точку посадки с оператором. Мы пришлём вам билет в WhatsApp в ближайшее время и свяжемся для окончательного подтверждения деталей перед туром.",
     descriptor: 'В выписке по карте платёж отображается как <strong>CANARIAN FUN</strong>.',
     depositNote: (b) => `Это предоплата — остаток ${b} оплачивается на месте.`,
     waPrompt: "Хотите связаться с нами по поводу брони?",
@@ -79,10 +81,10 @@ const COPY: Record<Lang, Copy> = {
     footer: "Canarian Fun · Тенерифе, Испания",
   },
   es: {
-    subject: (t) => `Reserva confirmada — ${t} ✅`,
+    subject: (t) => `Reserva recibida — ${t} ⏳`,
     thanks: "¡Muchas gracias por tu reserva! 🎉",
     confirmed: (t, d, g) =>
-      `Tu <strong>${t}</strong>${d ? ` el <strong>${d}</strong>` : ""}${g ? `, ${g}` : ""} está confirmada.`,
+      `Hemos recibido tu <strong>${t}</strong>${d ? ` para el <strong>${d}</strong>` : ""}${g ? `, ${g}` : ""} y tu pago.`,
     refLabel: "Referencia de reserva",
     dateLabel: "Fecha",
     groupLabel: "Grupo",
@@ -90,7 +92,8 @@ const COPY: Record<Lang, Copy> = {
     meetingFixed: (mp) => `📍 <strong>Punto de encuentro:</strong> ${mp} — llega 15–30 minutos antes.`,
     meetingPickup:
       "🚐 Organizaremos tu punto y hora de recogida según dónde te alojes, y te lo confirmaremos antes de la excursión.",
-    finalConfirm: "Te contactaremos por WhatsApp para confirmar los últimos detalles antes de tu excursión.",
+    finalConfirm:
+      "Nuestra oficina está confirmando la hora y el punto de recogida con el operador. Te enviaremos tu billete por WhatsApp en breve y te contactaremos para confirmar los últimos detalles antes de tu excursión.",
     descriptor: 'Este cargo aparece en tu extracto bancario como <strong>CANARIAN FUN</strong>.',
     depositNote: (b) => `Esto es un depósito — el resto ${b} se paga al llegar.`,
     waPrompt: "¿Necesitas contactarnos sobre tu reserva?",
@@ -142,10 +145,17 @@ function buildHtml(b: BookingRecord): { subject: string; html: string } {
 
 export async function sendBookingConfirmation(b: BookingRecord): Promise<void> {
   const key = process.env.BREVO_API_KEY;
-  if (!key || !b.customerEmail) return;
+  if (!key) {
+    console.warn("[email] BREVO_API_KEY not set — skipping confirmation email");
+    return;
+  }
+  if (!b.customerEmail) {
+    console.warn(`[email] no customer email for booking ${b.id} — skipping confirmation email`);
+    return;
+  }
   const { subject, html } = buildHtml(b);
   try {
-    await fetch("https://api.brevo.com/v3/smtp/email", {
+    const res = await fetch("https://api.brevo.com/v3/smtp/email", {
       method: "POST",
       headers: { "api-key": key, "content-type": "application/json", accept: "application/json" },
       body: JSON.stringify({
@@ -155,7 +165,12 @@ export async function sendBookingConfirmation(b: BookingRecord): Promise<void> {
         htmlContent: html,
       }),
     });
-  } catch {
-    // Never let email failure affect the payment flow
+    if (!res.ok) {
+      const detail = await res.text().catch(() => "");
+      console.error(`[email] Brevo rejected booking ${b.id} (${res.status}): ${detail}`);
+    }
+  } catch (err) {
+    // Never let email failure affect the payment flow, but make it visible.
+    console.error(`[email] Brevo send threw for booking ${b.id}:`, err);
   }
 }

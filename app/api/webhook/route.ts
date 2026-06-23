@@ -2,6 +2,7 @@ import Stripe from "stripe";
 import { NextRequest, NextResponse } from "next/server";
 import { getCommission } from "@/lib/net-prices";
 import { getTourBySlug } from "@/lib/tours";
+import { markBookingPaid } from "@/lib/bookings";
 
 function getStripe() {
   const key = process.env.STRIPE_SECRET_KEY;
@@ -95,6 +96,17 @@ export async function POST(req: NextRequest) {
     ].filter(Boolean);
 
     await sendTelegram(lines.join("\n"));
+
+    // Confirm the booking in our store and send the customer confirmation email.
+    // Idempotent — safe even if /api/checkout/session already marked it paid.
+    if (session.payment_status === "paid") {
+      await markBookingPaid(session.id, {
+        customerName: customerName || null,
+        customerEmail: customerEmail || null,
+        customerPhone: customerPhone || null,
+        customerHotel: customerHotel || null,
+      });
+    }
   }
 
   return NextResponse.json({ received: true });

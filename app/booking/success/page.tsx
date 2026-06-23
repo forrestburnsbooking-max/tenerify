@@ -54,9 +54,11 @@ function SuccessContent() {
         <div className="text-6xl">✅</div>
 
         <div>
-          <h1 className="text-2xl font-bold mb-2">Payment confirmed!</h1>
+          <h1 className="text-2xl font-bold mb-2">Payment received!</h1>
           <p className="text-stone-400 text-sm leading-relaxed">
-            Your spot is secured. Download your ticket below.
+            Thank you! 🎉 Our office is now confirming the time and pickup with
+            the operator, and we&apos;ll send your ticket on WhatsApp shortly.
+            In the meantime, here&apos;s how to get ready.
           </p>
         </div>
 
@@ -91,7 +93,7 @@ function SuccessContent() {
             href={`/booking/ticket?session_id=${sessionId}`}
             className="flex items-center justify-center gap-2 bg-orange-500 hover:bg-orange-400 text-white font-semibold px-6 py-4 rounded-2xl transition-all w-full"
           >
-            🎫 Get Your Ticket
+            📋 View your booking & instructions
           </a>
 
           {/* Customer → operator WhatsApp */}
