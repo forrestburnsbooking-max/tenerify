@@ -642,9 +642,9 @@ export default function Home() {
                 </button>
                 <button
                   onClick={startFresh}
-                  className="text-white/40 hover:text-white/70 text-xs transition-colors"
+                  className="text-white/80 hover:text-white text-sm font-medium underline underline-offset-4 decoration-white/30 hover:decoration-white transition-colors"
                 >
-                  Start fresh
+                  Start new chat
                 </button>
               </div>
             ) : (
