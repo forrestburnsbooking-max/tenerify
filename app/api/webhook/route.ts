@@ -1,6 +1,5 @@
 import Stripe from "stripe";
 import { NextRequest, NextResponse } from "next/server";
-import { getCommission } from "@/lib/net-prices";
 import { getTourBySlug } from "@/lib/tours";
 import { markBookingPaid } from "@/lib/bookings";
 
@@ -67,11 +66,6 @@ export async function POST(req: NextRequest) {
     const customerHotel = getCustomField("hotel");
     const ref = session.id.slice(-8).toUpperCase();
 
-    const commission = tourSlug ? getCommission(tourSlug, pvpTotal) : null;
-    const commissionLine = commission
-      ? `📈 Your commission: €${commission.commission.toFixed(0)} (${commission.percent}%)`
-      : "";
-
     const supplierPhone = tourSlug ? getTourBySlug(tourSlug)?.bookingPhone : null;
 
     const lines = [
@@ -83,7 +77,6 @@ export async function POST(req: NextRequest) {
       amountTotal ? `💰 ${amountTotal} paid${depositPercent ? ` (${depositPercent}% deposit)` : ""}` : "",
       discountLine,
       balanceDue ? `💶 ${balanceDue}` : "",
-      commissionLine,
       meetingPoint ? `📍 ${meetingPoint}` : "",
       "",
       customerName ? `👤 ${customerName}` : "",
