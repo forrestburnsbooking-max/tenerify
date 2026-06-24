@@ -74,6 +74,12 @@ export async function POST(req: NextRequest) {
     const tour = slug ? getTourBySlug(slug) : null;
     const meetingPoint = tour?.meetingPoint ?? "";
 
+    // Stripe needs a publicly reachable absolute image URL; tour.imageUrl is
+    // stored as a site-relative path, so prefix it with the base URL.
+    const productImage = tour?.imageUrl
+      ? (tour.imageUrl.startsWith("http") ? tour.imageUrl : `${baseUrl}${tour.imageUrl}`)
+      : null;
+
     // Discount guardrails: only buggy/quad and jet ski tours, cap 9%,
     // and only when we could verify the tour. Fail closed if the tour is unknown.
     const discountable = !!tour && (tour.category === "buggy-quad" || tour.category === "jetski");
@@ -96,6 +102,7 @@ export async function POST(req: NextRequest) {
             currency: "eur",
             product_data: {
               name: tourName,
+              images: productImage ? [productImage] : undefined,
               description: [
                 groupSize,
                 bookingDate,
