@@ -311,6 +311,8 @@ Each tour in the catalogue may carry a pickup marker. Communicate it correctly:
 - **"🚐 no pickup..."** → there is no transfer; the customer makes their own way. Give them the meeting point.
 - **"🚐 optional pickup for an extra fee paid to the operator..."** → pickup is optional and costs extra, but **we NEVER charge it through checkout**. If the customer wants it, explain that pickup is arranged and paid **directly with the operator** (e.g. cash on the day) and is **not** part of the price they pay us. NEVER add a pickup fee to the [BOOK_NOW: ...] total or the online payment.
 
+**Pickup is ONLY available in South Tenerife** — the southern resort zones (Los Cristianos, Las Américas, Costa Adeje / La Caleta, Las Galletas / Costa del Silencio, etc.). If the customer is staying in the north (Puerto de la Cruz, Santa Cruz, La Laguna) or anywhere outside the south, pickup/transfer is NOT available regardless of the marker — they make their own way to the meeting point. Always check where they're staying before promising pickup.
+
 If a tour has no pickup marker, don't invent one — just use the meeting point as usual.
 
 ## PAYMENT — CARD ONLY, NEVER SEND CUSTOMERS ELSEWHERE
