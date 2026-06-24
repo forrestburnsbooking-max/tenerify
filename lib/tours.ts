@@ -37,6 +37,10 @@ export type Tour = {
   included?: string;
   notIncluded?: string;
   meetingPoint?: string;
+  // Hotel pickup / transfer: "yes" = included free, "no" = none (customer goes
+  // to the meeting point), "price" = available for an extra fee paid directly
+  // to the operator (we NEVER charge it through checkout).
+  pickup?: "yes" | "no" | "price";
   faq: FaqItem[];
   imageUrl?: string;
   images?: string[];
@@ -148,9 +152,14 @@ export function getTours(): string {
           const excPart = t.notIncluded ? ` | NOT included: ${t.notIncluded.slice(0, 200)}` : "";
           const slotsPart = t.timeSlots?.length ? ` | timeSlots: ${t.timeSlots.join(", ")}` : "";
           const depositPart = t.depositPercent ? ` | 💳 ${t.depositPercent}% deposit online, rest paid on pickup` : "";
+          const pickupPart =
+            t.pickup === "yes" ? " | 🚐 hotel pickup included"
+            : t.pickup === "no" ? " | 🚐 no pickup (customer goes to meeting point)"
+            : t.pickup === "price" ? " | 🚐 optional pickup for an extra fee paid to the operator (never charged by us)"
+            : "";
           const discountOkPart = (t.category === "buggy-quad" || t.category === "jetski") ? ` | 🏷️ 8% chat discount available` : "";
           const ratingPart = t.rating ? ` | ⭐ ${t.rating}${t.reviewCount ? ` (${t.reviewCount} reviews${t.reviewSource ? `, ${t.reviewSource}` : ""})` : ""}` : "";
-          lines.push(`    • [slug:${t.slug}] ${t.title}${durPart} | ${pricePart}${agePart}${capPart}${incPart}${excPart}${slotsPart}${depositPart}${discountOkPart}${ratingPart}`);
+          lines.push(`    • [slug:${t.slug}] ${t.title}${durPart} | ${pricePart}${agePart}${capPart}${incPart}${excPart}${slotsPart}${depositPart}${pickupPart}${discountOkPart}${ratingPart}`);
           if (t.description) {
             lines.push(`      ${t.description.slice(0, 500)}`);
           }
