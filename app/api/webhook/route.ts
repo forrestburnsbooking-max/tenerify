@@ -40,6 +40,12 @@ export async function POST(req: NextRequest) {
   if (event.type === "checkout.session.completed") {
     const session = event.data.object as Stripe.Checkout.Session;
 
+    // This Stripe account is shared with Canarian Fun's villa rentals, so the
+    // webhook fires for their payments too. Only act on sessions we created.
+    if (session.metadata?.source !== "tenerify") {
+      return NextResponse.json({ received: true, ignored: "not a tenerify booking" });
+    }
+
     const tourName = session.metadata?.tourName ?? "Unknown tour";
     const tourSlug = session.metadata?.tourSlug ?? "";
     const groupSize = session.metadata?.groupSize ?? "";

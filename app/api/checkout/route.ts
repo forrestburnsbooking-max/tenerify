@@ -146,6 +146,10 @@ export async function POST(req: NextRequest) {
         },
       ],
       metadata: {
+        // Tags this session as ours. The Stripe account is shared with Canarian
+        // Fun's villa rentals, and our webhook fires for every payment on the
+        // account — this lets it ignore everything that isn't a Tenerify booking.
+        source: "tenerify",
         bookingText,
         tourName,
         groupSize,
@@ -169,6 +173,7 @@ export async function POST(req: NextRequest) {
           depositNote,
         ].filter(Boolean).join(" · "),
         metadata: {
+          source: "tenerify",
           tourName,
           groupSize,
           bookingDate,
