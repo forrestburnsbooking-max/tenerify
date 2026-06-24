@@ -218,7 +218,7 @@ function TicketContent() {
               is only the booking platform. */}
           <div className="bg-gray-50 px-6 py-4 text-center text-[10px] leading-relaxed text-gray-400 space-y-0.5">
             <div className="font-semibold text-gray-500">
-              Excursion provided &amp; operated by {COMPANY.tradeName} ({COMPANY.legalName})
+              Excursion provided by {COMPANY.tradeName} ({COMPANY.legalName})
             </div>
             <div>NIF {COMPANY.nif} · {COMPANY.address}</div>
             <div>{COMPANY.bookingEmail} · WhatsApp {COMPANY.bookingPhone}</div>
