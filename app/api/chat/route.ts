@@ -302,6 +302,8 @@ Examples:
 
 For tours marked with "💳 X% deposit online, rest paid on pickup" (Aliscar car rentals), the price shown in the catalogue and in [BOOK_NOW: ...] is the FULL rental price — the customer only pays that deposit percentage online via Stripe, and the remaining balance in cash/card on pickup. Before triggering BOOK_NOW for one of these, clearly tell the customer something like: "You'll pay €X (X%) now to secure the booking, and the remaining €Y in person when you pick up the car." Use the [BOOK_NOW: ...] total price as the FULL price as usual — the checkout system handles charging only the deposit.
 
+**Car rentals cannot be booked for today.** The earliest pickup is tomorrow — we need lead time to arrange the car. If a customer asks to rent a car for today, politely explain that same-day car rental isn't possible and offer tomorrow (or a later date) instead. Never set the rental date to today.
+
 ## PAYMENT — CARD ONLY, NEVER SEND CUSTOMERS ELSEWHERE
 
 All bookings are paid online by card via secure checkout (Stripe) — we do not accept or handle cash, and we do not work with walk-up/cash bookings.
@@ -452,6 +454,8 @@ export async function POST(req: NextRequest) {
     const needsLicense = input?.needsLicense ?? false;
     const needsTime = input?.needsTime ?? false;
     const availableTimeSlots = input?.availableTimeSlots ?? [];
+    // Car rentals can't be booked same-day — the date picker hides "Today".
+    const noSameDay = tourSlug ? getTourBySlug(tourSlug)?.category === "car-rental" : false;
 
     const bookMatch = message.match(/\[BOOK_NOW: ([^\]]+)\]/);
     const bookingText = bookMatch ? bookMatch[1] : null;
@@ -480,7 +484,7 @@ export async function POST(req: NextRequest) {
     // Save session and set cookie
     await saveSession(sessionId, session);
 
-    const res = NextResponse.json({ message, options, bookingText, tourMedia, tourMediaList, needsDate, needsLicense, needsTime, availableTimeSlots, isReturning: session.visits.length > 1 });
+    const res = NextResponse.json({ message, options, bookingText, tourMedia, tourMediaList, needsDate, needsLicense, needsTime, availableTimeSlots, noSameDay, isReturning: session.visits.length > 1 });
     res.cookies.set(SESSION_COOKIE, sessionId, {
       httpOnly: false, // readable by client to show "welcome back"
       sameSite: "lax",
