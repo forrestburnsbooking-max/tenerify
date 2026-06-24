@@ -1,7 +1,15 @@
 import Stripe from "stripe";
 import { NextRequest, NextResponse } from "next/server";
-import { getTourBySlug } from "@/lib/tours";
+import { getTourBySlug, getSuppliers } from "@/lib/tours";
 import { markBookingPaid } from "@/lib/bookings";
+
+// Spanish numbers are stored locally (e.g. "671 408 970"); show them with the
+// country code for the office.
+function withCountryCode(phone: string): string {
+  const p = phone.trim();
+  if (!p) return "";
+  return p.startsWith("+") ? p : `+34 ${p}`;
+}
 
 function getStripe() {
   const key = process.env.STRIPE_SECRET_KEY;
@@ -72,7 +80,10 @@ export async function POST(req: NextRequest) {
     const customerHotel = getCustomField("hotel");
     const ref = session.id.slice(-8).toUpperCase();
 
-    const supplierPhone = tourSlug ? getTourBySlug(tourSlug)?.bookingPhone : null;
+    const tour = tourSlug ? getTourBySlug(tourSlug) : null;
+    const supplier = tour?.supplierId ? getSuppliers().find((s) => s.id === tour.supplierId) : null;
+    const supplierName = supplier?.name ?? "";
+    const supplierPhone = withCountryCode(tour?.bookingPhone || supplier?.phone || "");
 
     const lines = [
       "💳 New booking on Tenerify!",
@@ -89,7 +100,7 @@ export async function POST(req: NextRequest) {
       customerEmail ? `✉️ ${customerEmail}` : "",
       customerPhone ? `📞 Client: ${customerPhone}` : "",
       customerHotel ? `🏨 ${customerHotel}` : "",
-      supplierPhone ? `📞 Call supplier to confirm: ${supplierPhone}` : "",
+      supplierPhone ? `📞 Call supplier to confirm${supplierName ? ` — ${supplierName}` : ""}: ${supplierPhone}` : "",
       "",
       `🔖 Ref: ${ref}`,
     ].filter(Boolean);
