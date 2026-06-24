@@ -5,8 +5,6 @@ import ReactMarkdown from "react-markdown";
 import { SESSION_COOKIE } from "@/lib/session";
 import { useTwemoji } from "@/lib/useTwemoji";
 
-const WHATSAPP_NUMBER = "34610434957";
-
 // Render every markdown link as an external link that opens in a new tab
 // (Google Maps, menus, etc. should never navigate away from the chat).
 const MD_COMPONENTS = {
@@ -115,7 +113,7 @@ function LicensePicker({ onSelect }: { onSelect: (answer: string) => void }) {
   );
 }
 
-function BookingButtons({ bookingText, whatsappNumber }: { bookingText: string; whatsappNumber: string }) {
+function BookingButtons({ bookingText }: { bookingText: string }) {
   const [loading, setLoading] = useState(false);
 
   const handlePay = useCallback(async () => {
@@ -130,10 +128,10 @@ function BookingButtons({ bookingText, whatsappNumber }: { bookingText: string; 
       if (data.url) {
         window.location.href = data.url;
       } else {
-        alert("Payment unavailable right now. Please book via WhatsApp.");
+        alert("Payment unavailable right now. Please try again in a moment.");
       }
     } catch {
-      alert("Payment unavailable right now. Please book via WhatsApp.");
+      alert("Payment unavailable right now. Please try again in a moment.");
     } finally {
       setLoading(false);
     }
@@ -148,14 +146,6 @@ function BookingButtons({ bookingText, whatsappNumber }: { bookingText: string; 
       >
         {loading ? "Opening payment…" : "💳 Pay & Book →"}
       </button>
-      <a
-        href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(`Hi! I'd like to book:\n${bookingText}`)}`}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="flex items-center justify-center gap-2 text-stone-500 hover:text-green-400 text-xs transition-colors py-1"
-      >
-        📲 or book via WhatsApp
-      </a>
     </div>
   );
 }
@@ -958,7 +948,7 @@ export default function Home() {
 
               {/* Booking buttons */}
               {msg.role === "assistant" && msg.bookingText && (
-                <BookingButtons bookingText={msg.bookingText} whatsappNumber={WHATSAPP_NUMBER} />
+                <BookingButtons bookingText={msg.bookingText} />
               )}
 
               {/* Date picker or quick-reply options */}
