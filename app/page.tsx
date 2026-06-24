@@ -407,6 +407,7 @@ export default function Home() {
   const [loading, setLoading] = useState(false);
   const [usedOptions, setUsedOptions] = useState<Set<number>>(new Set());
   const [isReturning, setIsReturning] = useState(false);
+  const [savedTranscript, setSavedTranscript] = useState<{ messages: Message[]; who: string; language: string } | null>(null);
   const [videoReady, setVideoReady] = useState(false);
   const bottomRef = useRef<HTMLDivElement>(null);
   const rootRef = useTwemoji<HTMLDivElement>();
@@ -439,9 +440,43 @@ export default function Home() {
       const whoValue = "Booking from tour page";
       setWho(whoValue);
       sendToAI(`I'd like to book: ${bookParam}`, [], whoValue, "");
+      return;
     }
+
+    // Offer to resume a previous conversation (saved server-side by tfy_sid)
+    fetch("/api/session/transcript")
+      .then((r) => r.json())
+      .then((d) => {
+        if (Array.isArray(d.messages) && d.messages.length > 0) {
+          setSavedTranscript({ messages: d.messages, who: d.who ?? "", language: d.language ?? "" });
+          setIsReturning(true);
+        }
+      })
+      .catch(() => {});
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  function persistTranscript(msgs: Message[], whoValue: string, langValue: string) {
+    fetch("/api/session/transcript", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ messages: msgs, who: whoValue, language: langValue }),
+    }).catch(() => {});
+  }
+
+  function continueChat() {
+    if (!savedTranscript) return;
+    setMessages(savedTranscript.messages);
+    setWho(savedTranscript.who);
+    setSelectedLanguage(savedTranscript.language);
+    setStep("chat");
+  }
+
+  function startFresh() {
+    setSavedTranscript(null);
+    fetch("/api/session/transcript", { method: "DELETE" }).catch(() => {});
+    setStep("language");
+  }
 
   useEffect(() => {
     bottomRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -517,14 +552,17 @@ export default function Home() {
     setMessages(newMessages);
     setLoading(true);
 
+    const effectiveWho = whoValue ?? who;
+    const effectiveLang = langValue ?? selectedLanguage;
+
     try {
       const res = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           messages: newMessages.map(({ role, content }) => ({ role, content })),
-          who: whoValue ?? who,
-          language: langValue ?? selectedLanguage,
+          who: effectiveWho,
+          language: effectiveLang,
         }),
       });
       const data = await res.json();
@@ -536,10 +574,12 @@ export default function Home() {
         return;
       }
       if (data.isReturning) setIsReturning(true);
-      setMessages([
+      const finalMessages: Message[] = [
         ...newMessages,
         { role: "assistant", content: data.message, options: data.options, bookingText: data.bookingText, tourMedia: data.tourMedia, tourMediaList: data.tourMediaList, needsDate: data.needsDate, needsLicense: data.needsLicense, needsTime: data.needsTime, availableTimeSlots: data.availableTimeSlots },
-      ]);
+      ];
+      setMessages(finalMessages);
+      persistTranscript(finalMessages, effectiveWho, effectiveLang);
     } catch {
       setMessages([
         ...newMessages,
@@ -589,12 +629,29 @@ export default function Home() {
                 : "Boats, buggies, shows & more — find and book in under 60 seconds."}
             </p>
 
-            <button
-              onClick={() => setStep("language")}
-              className="w-full bg-orange-500 hover:bg-orange-400 active:bg-orange-600 text-white font-bold px-8 py-4 rounded-2xl text-base transition-all hover:scale-[1.02] shadow-xl shadow-orange-900/50 tracking-wide"
-            >
-              Find my experience →
-            </button>
+            {savedTranscript ? (
+              <div className="w-full flex flex-col items-center gap-3">
+                <button
+                  onClick={continueChat}
+                  className="w-full bg-orange-500 hover:bg-orange-400 active:bg-orange-600 text-white font-bold px-8 py-4 rounded-2xl text-base transition-all hover:scale-[1.02] shadow-xl shadow-orange-900/50 tracking-wide"
+                >
+                  Continue chat →
+                </button>
+                <button
+                  onClick={startFresh}
+                  className="text-white/40 hover:text-white/70 text-xs transition-colors"
+                >
+                  Start fresh
+                </button>
+              </div>
+            ) : (
+              <button
+                onClick={() => setStep("language")}
+                className="w-full bg-orange-500 hover:bg-orange-400 active:bg-orange-600 text-white font-bold px-8 py-4 rounded-2xl text-base transition-all hover:scale-[1.02] shadow-xl shadow-orange-900/50 tracking-wide"
+              >
+                Find my experience →
+              </button>
+            )}
 
             <p className="text-white/25 text-xs">
               Tenerify.ai · <a href="/legal" className="hover:text-white/50 transition-colors">Legal & Privacy</a>
@@ -623,7 +680,7 @@ export default function Home() {
 
       <header className="relative flex items-center gap-3 px-5 border-b border-white/8" style={{ paddingTop: "max(env(safe-area-inset-top, 0px), 16px)", paddingBottom: "16px" }}>
         <button
-          onClick={() => { setStep("hero"); setMessages([]); setUsedOptions(new Set()); setSelectedCategories([]); setWho(""); setLocation(""); setSelectedLanguage(""); setMenuChoice(null); setShowCustomLocation(false); setCustomLocation(""); }}
+          onClick={() => { if (messages.some((m) => !m.hidden)) setSavedTranscript({ messages, who, language: selectedLanguage }); setStep("hero"); setMessages([]); setUsedOptions(new Set()); setSelectedCategories([]); setWho(""); setLocation(""); setSelectedLanguage(""); setMenuChoice(null); setShowCustomLocation(false); setCustomLocation(""); }}
           className="w-8 h-8 hover:scale-110 transition-transform flex-shrink-0"
         >
           <img src="/logo-mark.svg" alt="" className="w-full h-full" />
