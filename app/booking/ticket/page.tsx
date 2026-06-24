@@ -107,7 +107,7 @@ function TicketContent() {
               </div>
               <div className="text-stone-400 text-xs mt-0.5">Your Tenerife Experience</div>
             </div>
-            <div className="text-4xl">🌋</div>
+            <img src="/logo-mark.svg" alt="Tenerify.ai" className="w-10 h-10" />
           </div>
 
           {/* Pending-confirmation banner — this is not the final ticket yet */}
@@ -213,13 +213,18 @@ function TicketContent() {
             <div className="text-xs text-gray-400 mt-1">Quote this if you message us about your booking.</div>
           </div>
 
-          {/* Operator legal details — required on a tourist-operator ticket */}
+          {/* Operator legal details — required on a tourist-operator ticket.
+              The excursion is provided & operated by Canarian Fun; Tenerify.ai
+              is only the booking platform. */}
           <div className="bg-gray-50 px-6 py-4 text-center text-[10px] leading-relaxed text-gray-400 space-y-0.5">
             <div className="font-semibold text-gray-500">
-              {COMPANY.tradeName} — operated by {COMPANY.legalName}
+              Excursion provided &amp; operated by {COMPANY.tradeName} ({COMPANY.legalName})
             </div>
             <div>NIF {COMPANY.nif} · {COMPANY.address}</div>
-            <div>{COMPANY.bookingEmail} · WhatsApp {COMPANY.bookingPhone} · tenerify.ai</div>
+            <div>{COMPANY.bookingEmail} · WhatsApp {COMPANY.bookingPhone}</div>
+            <div className="pt-1 text-gray-400">
+              Booked via tenerify.ai — booking platform; the experience is the operator&apos;s responsibility.
+            </div>
           </div>
         </div>
       </div>
