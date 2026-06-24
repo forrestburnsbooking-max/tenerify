@@ -1488,7 +1488,7 @@
     "title": "Peter Pan pirate ship — 2 hours boat trip",
     "category": "whale-watching",
     "group": "water",
-    "duration": "3h",
+    "duration": "2h",
     "languages": [
       "Deutsch",
       "English",
@@ -1556,9 +1556,9 @@
     "imageUrl": "/images/tours/peter-pan-boat.webp",
     "url": "https://www.excursionstenerife.es/tours/peter-pan-boat",
     "timeSlots": [
-      "11:00",
-      "13:30",
-      "15:30"
+      "10:00",
+      "12:00",
+      "14:00"
     ],
     "bookingPhone": "666 542 881",
     "supplierId": "peter-pan",
