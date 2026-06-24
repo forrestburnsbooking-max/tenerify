@@ -114,11 +114,10 @@ export async function POST(req: NextRequest) {
       success_url: `${baseUrl}/booking/success?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${baseUrl}/`,
       customer_creation: "always",
-      phone_number_collection: { enabled: true },
       custom_text: {
         submit: {
           message:
-            "Please enter a WhatsApp-enabled phone number. After payment we'll email your confirmation and message you on WhatsApp to finalise pickup/meeting details.",
+            "We'll message you on WhatsApp to confirm your pickup point and time — please double-check your WhatsApp number is correct (with country code).",
         },
       },
       custom_fields: [
@@ -126,6 +125,12 @@ export async function POST(req: NextRequest) {
           key: "full_name",
           label: { type: "custom", custom: "Full name" },
           type: "text",
+        },
+        {
+          key: "whatsapp",
+          label: { type: "custom", custom: "WhatsApp number (with country code, e.g. +34...)" },
+          type: "text",
+          text: { minimum_length: 6, maximum_length: 20 },
         },
         {
           key: "hotel",

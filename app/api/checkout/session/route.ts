@@ -20,7 +20,7 @@ export async function GET(req: NextRequest) {
 
     const customerName = getCustomField("full_name") ?? session.customer_details?.name ?? null;
     const customerEmail = session.customer_details?.email ?? null;
-    const customerPhone = session.customer_details?.phone ?? null;
+    const customerPhone = getCustomField("whatsapp") ?? session.customer_details?.phone ?? null;
     const customerHotel = getCustomField("hotel");
 
     // Confirm the booking in our own store once Stripe says it's paid. Idempotent.

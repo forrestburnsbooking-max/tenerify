@@ -63,7 +63,7 @@ export async function POST(req: NextRequest) {
       session.custom_fields?.find((f) => f.key === key)?.text?.value ?? "";
     const customerName = getCustomField("full_name") || session.customer_details?.name || "";
     const customerEmail = session.customer_details?.email ?? "";
-    const customerPhone = session.customer_details?.phone ?? "";
+    const customerPhone = getCustomField("whatsapp") || session.customer_details?.phone || "";
     const customerHotel = getCustomField("hotel");
     const ref = session.id.slice(-8).toUpperCase();
 
