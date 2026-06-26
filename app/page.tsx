@@ -205,7 +205,7 @@ const UI_STRINGS: Record<string, {
   menuLabels: { book: string; route: string; restaurant: string; culture: string; ask: string };
 }> = {
   es: {
-    intro: "¡Hola! Soy Tenerify 🌋 — tu amigo local de IA en Tenerife. Conozco lo que hay en internet *y* lo que solo saben los locales.\n\n**Esto es lo que puedo hacer:**\n- 📅 Encontrar y reservar las mejores actividades de la isla\n- 🗺️ Planificar tu ruta perfecta\n- 🍽️ Recomendarte un restaurante\n- 🏴‍☠️ Contarte una leyenda o historia de la isla\n\n¿Qué te apetece hoy?",
+    intro: "¡Hola! Soy Tenerify 🌋 — tu amigo local de IA en Tenerife. Conozco lo que hay en internet *y* lo que solo saben los locales.\n\n**Esto es lo que puedo hacer:**\n- 📅 Encontrar y reservar las mejores actividades de la isla\n- 🗺️ Planificar tu ruta perfecta\n- 🍽️ Recomendarte un restaurante\n- 🌴 Contarte la cultura y las leyendas de la isla\n\n¿Qué te apetece hoy?",
     whoQuestion: "¡Buenas! ¿Quién viene a Tenerife? 🌊",
     categoryQuestion: "¿Qué te apetece? Elige lo que te interese 👇",
     locationQuestion: "¿En qué zona te alojas? 📍",
@@ -218,7 +218,7 @@ const UI_STRINGS: Record<string, {
     menuLabels: { book: "📅 Reservar actividades", route: "🗺️ Planificar una ruta", restaurant: "🍽️ Recomendar restaurante", culture: "🌴 Cultura y leyendas", ask: "💬 Pregúntame lo que quieras" },
   },
   en: {
-    intro: "Hey! I'm Tenerify 🌋 — your local AI friend from Tenerife. I know what's online *and* what only locals know.\n\n**Here's what I can do:**\n- 📅 Find & book the best activities on the island\n- 🗺️ Plan your perfect route\n- 🍽️ Recommend a restaurant\n- 🏴‍☠️ Tell you a legend or story about the island\n\nWhat would you like today?",
+    intro: "Hey! I'm Tenerify 🌋 — your local AI friend from Tenerife. I know what's online *and* what only locals know.\n\n**Here's what I can do:**\n- 📅 Find & book the best activities on the island\n- 🗺️ Plan your perfect route\n- 🍽️ Recommend a restaurant\n- 🌴 Tell you about the island's culture & legends\n\nWhat would you like today?",
     whoQuestion: "¡Buenas! Who's coming to Tenerife? 🌊",
     categoryQuestion: "What are you looking for? Pick all that interest you 👇",
     locationQuestion: "Which area are you staying in? 📍",
@@ -231,7 +231,7 @@ const UI_STRINGS: Record<string, {
     menuLabels: { book: "📅 Find & book activities", route: "🗺️ Plan a route", restaurant: "🍽️ Recommend a restaurant", culture: "🌴 Culture & legends", ask: "💬 Just ask me anything" },
   },
   de: {
-    intro: "Hey! Ich bin Tenerify 🌋 — dein lokaler KI-Freund aus Teneriffa. Ich kenne, was online steht *und* was nur Einheimische wissen.\n\n**Das kann ich für euch tun:**\n- 📅 Die besten Aktivitäten der Insel finden & buchen\n- 🗺️ Eure perfekte Route planen\n- 🍽️ Ein Restaurant empfehlen\n- 🏴‍☠️ Eine Legende oder Geschichte der Insel erzählen\n\nWorauf habt ihr heute Lust?",
+    intro: "Hey! Ich bin Tenerify 🌋 — dein lokaler KI-Freund aus Teneriffa. Ich kenne, was online steht *und* was nur Einheimische wissen.\n\n**Das kann ich für euch tun:**\n- 📅 Die besten Aktivitäten der Insel finden & buchen\n- 🗺️ Eure perfekte Route planen\n- 🍽️ Ein Restaurant empfehlen\n- 🌴 Dir von Kultur und Legenden der Insel erzählen\n\nWorauf habt ihr heute Lust?",
     whoQuestion: "Hallo! Wer kommt nach Teneriffa? 🌊",
     categoryQuestion: "Was sucht ihr? Wählt alles aus 👇",
     locationQuestion: "In welcher Gegend übernachtet ihr? 📍",
@@ -244,7 +244,7 @@ const UI_STRINGS: Record<string, {
     menuLabels: { book: "📅 Aktivitäten finden & buchen", route: "🗺️ Route planen", restaurant: "🍽️ Restaurant empfehlen", culture: "🌴 Kultur & Legenden", ask: "💬 Frag mich einfach" },
   },
   ru: {
-    intro: "Привет! Я Tenerify 🌋 — твой местный AI-друг с Тенерифе. Знаю и то, что есть в интернете, и то, о чём знают только местные.\n\n**Что я умею:**\n- 📅 Найти и забронировать лучшие активности на острове\n- 🗺️ Спланировать идеальный маршрут\n- 🍽️ Порекомендовать ресторан\n- 🏴‍☠️ Рассказать легенду или историю про остров\n\nЧто бы ты хотел сегодня?",
+    intro: "Привет! Я Tenerify 🌋 — твой местный AI-друг с Тенерифе. Знаю и то, что есть в интернете, и то, о чём знают только местные.\n\n**Что я умею:**\n- 📅 Найти и забронировать лучшие активности на острове\n- 🗺️ Спланировать идеальный маршрут\n- 🍽️ Порекомендовать ресторан\n- 🌴 Рассказать о культуре и легендах острова\n\nЧто бы ты хотел сегодня?",
     whoQuestion: "Привет! Кто едет на Тенерифе? 🌊",
     categoryQuestion: "Что вас интересует? Выбери всё нужное 👇",
     locationQuestion: "В каком районе вы остановились? 📍",
@@ -257,7 +257,7 @@ const UI_STRINGS: Record<string, {
     menuLabels: { book: "📅 Найти и забронировать", route: "🗺️ Спланировать маршрут", restaurant: "🍽️ Порекомендовать ресторан", culture: "🌴 Культура и легенды", ask: "💬 Просто задать вопрос" },
   },
   pl: {
-    intro: "Hej! Jestem Tenerify 🌋 — twój lokalny przyjaciel AI z Teneryfy. Znam to, co jest w internecie *i* to, co wiedzą tylko miejscowi.\n\n**Oto co mogę zrobić:**\n- 📅 Znaleźć i zarezerwować najlepsze atrakcje na wyspie\n- 🗺️ Zaplanować idealną trasę\n- 🍽️ Polecić restaurację\n- 🏴‍☠️ Opowiedzieć legendę lub historię wyspy\n\nNa co masz dziś ochotę?",
+    intro: "Hej! Jestem Tenerify 🌋 — twój lokalny przyjaciel AI z Teneryfy. Znam to, co jest w internecie *i* to, co wiedzą tylko miejscowi.\n\n**Oto co mogę zrobić:**\n- 📅 Znaleźć i zarezerwować najlepsze atrakcje na wyspie\n- 🗺️ Zaplanować idealną trasę\n- 🍽️ Polecić restaurację\n- 🌴 Opowiedzieć o kulturze i legendach wyspy\n\nNa co masz dziś ochotę?",
     whoQuestion: "Hej! Kto jedzie na Teneryfę? 🌊",
     categoryQuestion: "Czego szukasz? Wybierz wszystko 👇",
     locationQuestion: "W której okolicy mieszkasz? 📍",
@@ -270,7 +270,7 @@ const UI_STRINGS: Record<string, {
     menuLabels: { book: "📅 Znajdź i zarezerwuj", route: "🗺️ Zaplanuj trasę", restaurant: "🍽️ Poleć restaurację", culture: "🌴 Kultura i legendy", ask: "💬 Po prostu zapytaj" },
   },
   fr: {
-    intro: "Salut! Je suis Tenerify 🌋 — ton ami local IA de Tenerife. Je connais ce qui est en ligne *et* ce que seuls les locaux savent.\n\n**Voici ce que je peux faire:**\n- 📅 Trouver et réserver les meilleures activités de l'île\n- 🗺️ Planifier ton itinéraire parfait\n- 🍽️ Te recommander un restaurant\n- 🏴‍☠️ Te raconter une légende ou une histoire de l'île\n\nQu'est-ce qui te ferait plaisir aujourd'hui?",
+    intro: "Salut! Je suis Tenerify 🌋 — ton ami local IA de Tenerife. Je connais ce qui est en ligne *et* ce que seuls les locaux savent.\n\n**Voici ce que je peux faire:**\n- 📅 Trouver et réserver les meilleures activités de l'île\n- 🗺️ Planifier ton itinéraire parfait\n- 🍽️ Te recommander un restaurant\n- 🌴 Te parler de la culture et des légendes de l'île\n\nQu'est-ce qui te ferait plaisir aujourd'hui?",
     whoQuestion: "Salut! Qui vient à Tenerife? 🌊",
     categoryQuestion: "Qu'est-ce qui vous intéresse? Choisissez tout 👇",
     locationQuestion: "Dans quelle zone logez-vous? 📍",
@@ -283,7 +283,7 @@ const UI_STRINGS: Record<string, {
     menuLabels: { book: "📅 Trouver et réserver", route: "🗺️ Planifier un itinéraire", restaurant: "🍽️ Recommander un restaurant", culture: "🌴 Culture & légendes", ask: "💬 Pose-moi ta question" },
   },
   it: {
-    intro: "Ciao! Sono Tenerify 🌋 — il tuo amico AI locale di Tenerife. Conosco ciò che c'è online *e* ciò che sanno solo i locali.\n\n**Ecco cosa posso fare:**\n- 📅 Trovare e prenotare le migliori attività dell'isola\n- 🗺️ Pianificare il tuo itinerario perfetto\n- 🍽️ Consigliarti un ristorante\n- 🏴‍☠️ Raccontarti una leggenda o una storia dell'isola\n\nCosa ti va di fare oggi?",
+    intro: "Ciao! Sono Tenerify 🌋 — il tuo amico AI locale di Tenerife. Conosco ciò che c'è online *e* ciò che sanno solo i locali.\n\n**Ecco cosa posso fare:**\n- 📅 Trovare e prenotare le migliori attività dell'isola\n- 🗺️ Pianificare il tuo itinerario perfetto\n- 🍽️ Consigliarti un ristorante\n- 🌴 Raccontarti la cultura e le leggende dell'isola\n\nCosa ti va di fare oggi?",
     whoQuestion: "Ciao! Chi viene a Tenerife? 🌊",
     categoryQuestion: "Cosa cercate? Selezionate tutto 👇",
     locationQuestion: "In quale zona alloggiate? 📍",
@@ -296,7 +296,7 @@ const UI_STRINGS: Record<string, {
     menuLabels: { book: "📅 Trova e prenota", route: "🗺️ Pianifica un itinerario", restaurant: "🍽️ Consiglia un ristorante", culture: "🌴 Cultura e leggende", ask: "💬 Chiedimi quello che vuoi" },
   },
   nl: {
-    intro: "Hallo! Ik ben Tenerify 🌋 — je lokale AI-vriend van Tenerife. Ik ken wat online staat *én* wat alleen locals weten.\n\n**Dit kan ik voor je doen:**\n- 📅 De beste activiteiten op het eiland vinden & boeken\n- 🗺️ Jouw perfecte route plannen\n- 🍽️ Een restaurant aanbevelen\n- 🏴‍☠️ Een legende of verhaal van het eiland vertellen\n\nWaar heb je vandaag zin in?",
+    intro: "Hallo! Ik ben Tenerify 🌋 — je lokale AI-vriend van Tenerife. Ik ken wat online staat *én* wat alleen locals weten.\n\n**Dit kan ik voor je doen:**\n- 📅 De beste activiteiten op het eiland vinden & boeken\n- 🗺️ Jouw perfecte route plannen\n- 🍽️ Een restaurant aanbevelen\n- 🌴 Je vertellen over de cultuur en legendes van het eiland\n\nWaar heb je vandaag zin in?",
     whoQuestion: "Hallo! Wie komt naar Tenerife? 🌊",
     categoryQuestion: "Wat zoeken jullie? Kies alles wat jullie interesseert 👇",
     locationQuestion: "In welk gebied verblijven jullie? 📍",
@@ -309,7 +309,7 @@ const UI_STRINGS: Record<string, {
     menuLabels: { book: "📅 Activiteiten vinden & boeken", route: "🗺️ Route plannen", restaurant: "🍽️ Restaurant aanbevelen", culture: "🌴 Cultuur & legendes", ask: "💬 Vraag me alles" },
   },
   sv: {
-    intro: "Hej! Jag är Tenerify 🌋 — din lokala AI-vän från Teneriffa. Jag vet vad som finns online *och* vad bara lokalbor känner till.\n\n**Det här kan jag göra:**\n- 📅 Hitta & boka de bästa aktiviteterna på ön\n- 🗺️ Planera din perfekta rutt\n- 🍽️ Rekommendera en restaurang\n- 🏴‍☠️ Berätta en legend eller historia om ön\n\nVad är du sugen på idag?",
+    intro: "Hej! Jag är Tenerify 🌋 — din lokala AI-vän från Teneriffa. Jag vet vad som finns online *och* vad bara lokalbor känner till.\n\n**Det här kan jag göra:**\n- 📅 Hitta & boka de bästa aktiviteterna på ön\n- 🗺️ Planera din perfekta rutt\n- 🍽️ Rekommendera en restaurang\n- 🌴 Berätta om öns kultur och legender\n\nVad är du sugen på idag?",
     whoQuestion: "Hej! Vilka kommer till Teneriffa? 🌊",
     categoryQuestion: "Vad letar du efter? Välj allt som intresserar dig 👇",
     locationQuestion: "Vilket område bor du i? 📍",
@@ -322,7 +322,7 @@ const UI_STRINGS: Record<string, {
     menuLabels: { book: "📅 Hitta & boka aktiviteter", route: "🗺️ Planera en rutt", restaurant: "🍽️ Rekommendera en restaurang", culture: "🌴 Kultur & legender", ask: "💬 Fråga mig vad som helst" },
   },
   uk: {
-    intro: "Привіт! Я Tenerify 🌋 — твій місцевий AI-друг з Тенерифе. Знаю і те, що є в інтернеті, і те, що знають лише місцеві.\n\n**Що я вмію:**\n- 📅 Знайти та забронювати найкращі активності на острові\n- 🗺️ Спланувати ідеальний маршрут\n- 🍽️ Порекомендувати ресторан\n- 🏴‍☠️ Розповісти легенду чи історію про острів\n\nЧого б ти хотів сьогодні?",
+    intro: "Привіт! Я Tenerify 🌋 — твій місцевий AI-друг з Тенерифе. Знаю і те, що є в інтернеті, і те, що знають лише місцеві.\n\n**Що я вмію:**\n- 📅 Знайти та забронювати найкращі активності на острові\n- 🗺️ Спланувати ідеальний маршрут\n- 🍽️ Порекомендувати ресторан\n- 🌴 Розповісти про культуру та легенди острова\n\nЧого б ти хотів сьогодні?",
     whoQuestion: "Привіт! Хто їде на Тенерифе? 🌊",
     categoryQuestion: "Що вас цікавить? Обери все потрібне 👇",
     locationQuestion: "У якому районі ви зупинилися? 📍",
@@ -335,7 +335,7 @@ const UI_STRINGS: Record<string, {
     menuLabels: { book: "📅 Знайти та забронювати", route: "🗺️ Спланувати маршрут", restaurant: "🍽️ Порекомендувати ресторан", culture: "🌴 Культура і легенди", ask: "💬 Просто поставити запитання" },
   },
   zh: {
-    intro: "你好！我是 Tenerify 🌋 — 你在特内里费的本地 AI 朋友。我既了解网上的信息，也知道只有当地人才懂的玩法。\n\n**我能帮你做这些：**\n- 📅 寻找并预订岛上最棒的活动\n- 🗺️ 规划你的完美路线\n- 🍽️ 推荐一家餐厅\n- 🏴‍☠️ 讲一个岛上的传说或故事\n\n今天想做点什么呢？",
+    intro: "你好！我是 Tenerify 🌋 — 你在特内里费的本地 AI 朋友。我既了解网上的信息，也知道只有当地人才懂的玩法。\n\n**我能帮你做这些：**\n- 📅 寻找并预订岛上最棒的活动\n- 🗺️ 规划你的完美路线\n- 🍽️ 推荐一家餐厅\n- 🌴 给你讲讲岛上的文化与传说\n\n今天想做点什么呢？",
     whoQuestion: "你好！谁要来特内里费？🌊",
     categoryQuestion: "你在找什么？选择所有感兴趣的 👇",
     locationQuestion: "你住在哪个区域？📍",
@@ -348,7 +348,7 @@ const UI_STRINGS: Record<string, {
     menuLabels: { book: "📅 查找并预订活动", route: "🗺️ 规划路线", restaurant: "🍽️ 推荐餐厅", culture: "🌴 文化与传说", ask: "💬 随便问我" },
   },
   ar: {
-    intro: "مرحباً! أنا Tenerify 🌋 — صديقك المحلي بالذكاء الاصطناعي في تينيريفي. أعرف ما هو على الإنترنت *وما* يعرفه السكان المحليون فقط.\n\n**إليك ما يمكنني فعله:**\n- 📅 إيجاد وحجز أفضل الأنشطة في الجزيرة\n- 🗺️ تخطيط مسارك المثالي\n- 🍽️ ترشيح مطعم لك\n- 🏴‍☠️ أن أحكي لك أسطورة أو قصة عن الجزيرة\n\nماذا تريد اليوم؟",
+    intro: "مرحباً! أنا Tenerify 🌋 — صديقك المحلي بالذكاء الاصطناعي في تينيريفي. أعرف ما هو على الإنترنت *وما* يعرفه السكان المحليون فقط.\n\n**إليك ما يمكنني فعله:**\n- 📅 إيجاد وحجز أفضل الأنشطة في الجزيرة\n- 🗺️ تخطيط مسارك المثالي\n- 🍽️ ترشيح مطعم لك\n- 🌴 أن أحدثك عن ثقافة الجزيرة وأساطيرها\n\nماذا تريد اليوم؟",
     whoQuestion: "مرحباً! من القادم إلى تينيريفي؟ 🌊",
     categoryQuestion: "عمّ تبحث؟ اختر كل ما يهمّك 👇",
     locationQuestion: "في أي منطقة تقيم؟ 📍",
