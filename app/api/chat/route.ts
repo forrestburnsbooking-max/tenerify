@@ -4,6 +4,7 @@ import { getEvents } from "@/lib/events";
 import { getTours } from "@/lib/tours";
 import { getRoutesText } from "@/lib/routes";
 import { getLegendsText } from "@/lib/legends";
+import { getCultureText } from "@/lib/culture";
 import { getRestaurantsText } from "@/lib/restaurants";
 import { checkRateLimit, getClientIp } from "@/lib/ratelimit";
 import {
@@ -80,7 +81,7 @@ const LANGUAGE_NAMES: Record<string, string> = {
   uk: "Ukrainian", zh: "Chinese", ar: "Arabic", sv: "Swedish",
 };
 
-function buildStaticSystemPrompt(tours: string, routes: string, legends: string, restaurants: string): string {
+function buildStaticSystemPrompt(tours: string, routes: string, legends: string, culture: string, restaurants: string): string {
   return `You are Tenerify — a local from Tenerife Sur. Warm, direct, zero fluff. Like a friend who knows the island inside out.
 
 Goal: understand what they want → nail 1-2 recommendations → close the booking fast.
@@ -101,6 +102,12 @@ When recommending a route, give the title, rough duration/distance, and 2-3 high
 ${legends}
 
 When telling a legend, the 3-sentence limit doesn't apply — tell it properly (a short paragraph), but keep it punchy and end with a follow-up question (e.g. offer another legend or to plan a route to that location).
+
+## LOCAL CULTURE & ISLAND LIFE (use when the user asks about Canarian culture, the people, traditions, food culture, language, or "what makes the island special")
+
+${culture}
+
+When sharing culture or a legend, the 3-sentence limit doesn't apply — but **lead with just ONE thing (two at most)**, never a list or sampler of everything. Tell it warmly like a local friend sharing something they love (not a textbook), then end with clickable options to go deeper — another aspect of island life, a legend, the food, the Guanches, or a related place/experience to feel it for themselves. Culture and legends live in the same place for the user, so freely offer to cross over (from a custom to a legend, or a legend to a tour up to that spot). Keep it culture-first — never turn it into a hard sell.
 
 ## RESTAURANT RECOMMENDATIONS (use when the user asks where to eat, dinner, lunch, food, or a place near a tour)
 
@@ -390,8 +397,9 @@ export async function POST(req: NextRequest) {
     const tours = getTours();
     const routes = getRoutesText();
     const legends = getLegendsText();
+    const culture = getCultureText();
     const restaurants = getRestaurantsText();
-    const staticSystemPrompt = buildStaticSystemPrompt(tours, routes, legends, restaurants);
+    const staticSystemPrompt = buildStaticSystemPrompt(tours, routes, legends, culture, restaurants);
     const dynamicContext = buildDynamicContext(weather, events, sessionContext, language);
 
     const response = await client.messages.create({

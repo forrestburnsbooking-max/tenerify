@@ -7,17 +7,59 @@
     "story": "Hidden deep in a steep volcanic ravine on the northwest coast, the village of Masca was once so isolated it could only be reached on foot or by sea. Locals say pirates and smugglers used the narrow gorge — the Barranco de Masca — as a secret hideout, stashing goods in caves along the cliffs while lookouts watched for ships from the village above. Even today, the only way to reach the cove at the bottom is a multi-hour hike down the ravine or a boat from the sea, which is exactly what made it perfect for hiding from the law."
   },
   {
-    "slug": "francis-drake-failed-raid",
-    "title": "The Day Sir Francis Drake Was Turned Away",
-    "region": "Santa Cruz de Tenerife",
-    "era": "1595",
-    "story": "In 1595, the legendary English privateer Sir Francis Drake set sail for the Canary Islands hoping to capture Spanish treasure ships and seize the port of Santa Cruz. But the Spanish had been warned in advance and had reinforced the city's defences. When Drake's fleet arrived, they found the harbour bristling with cannon and the garrison ready. After a failed landing attempt, Drake gave up and sailed on toward the Caribbean — his only major defeat of the campaign, and one locals still mention with a touch of pride."
-  },
-  {
     "slug": "nelsons-lost-arm",
     "title": "Where Admiral Nelson Lost His Arm",
     "region": "Santa Cruz de Tenerife",
     "era": "1797",
-    "story": "Two centuries after Drake's failed attempt, another famous Englishman tried his luck against Santa Cruz: Admiral Horatio Nelson. In July 1797, Nelson led a night assault on the town, but the landing went badly wrong in heavy surf and cannon fire. Nelson himself was hit by grapeshot while stepping ashore and had to have his right arm amputated aboard ship soon after. The British were forced to retreat — but the story has a twist: the Spanish commander treated the wounded British sailors so generously that Nelson later sent a letter of thanks. A cannon said to be from the battle still stands in Santa Cruz's Plaza de España."
+    "story": "One of the most celebrated commanders in British naval history met his match on the shores of Santa Cruz — and left part of himself behind. In July 1797, Admiral Horatio Nelson led a night assault on the town, but the landing went badly wrong in heavy surf and cannon fire. Nelson himself was hit by grapeshot while stepping ashore and had to have his right arm amputated aboard ship soon after. The British were forced to retreat — but the story has a twist: the Spanish commander treated the wounded British sailors so generously that Nelson later sent a letter of thanks. A cannon said to be from the battle, nicknamed 'El Tigre', is still kept in Santa Cruz and claimed by locals as the one that cost Nelson his arm."
+  },
+  {
+    "slug": "guayota-and-teide",
+    "title": "Guayota, the Demon Inside Mount Teide",
+    "region": "Mount Teide, central Tenerife",
+    "era": "Guanche mythology (pre-conquest)",
+    "story": "Long before the Spanish arrived, the Guanche people who lived on Tenerife didn't call the volcano 'Teide' — they called it Echeyde, meaning hell. They believed a wicked demon named Guayota lived inside it, a creature shaped like a great black dog. One day Guayota kidnapped Magec, the god of light and the sun, and dragged him down into the fiery heart of the mountain, plunging the whole island into darkness. The desperate Guanches begged Achamán, the supreme god, for help — and Achamán fought Guayota, freed Magec, and sealed the demon inside the volcano forever, plugging the crater with a stopper of rock. To this day Guanche tradition says the pale cone at the very summit is that plug, and that every rumble or eruption is just Guayota trying to claw his way back out."
+  },
+  {
+    "slug": "virgin-of-candelaria",
+    "title": "The Virgin Who Appeared to the Guanches",
+    "region": "Candelaria, east Tenerife",
+    "era": "c. 1392 (before the conquest)",
+    "story": "Around the year 1392 — a full century before the Spanish conquest — two Guanche goatherds on the beach of Chimisay found their animals refusing to pass a strange figure standing on the rocks. It was a wooden statue of a woman holding a child and a green candle. Not yet Christian and not knowing what it was, the Guanches treated it with awe and carried it to their mencey (king), and it was kept in a cave for decades before anyone understood it was an image of the Virgin Mary. After the conquest she became Our Lady of Candelaria, patron saint of the entire Canary Islands, and today an enormous basilica on that same coast draws pilgrims from across the islands — with bronze statues of the nine Guanche kings lined up outside, facing the sea where it all began."
+  },
+  {
+    "slug": "san-borondon",
+    "title": "San Borondón, the Eighth Island That Vanishes",
+    "region": "The Atlantic west of Tenerife",
+    "era": "6th century onward",
+    "story": "Sailors have sworn for over a thousand years that there is a secret eighth Canary Island that appears on the horizon and then melts away before anyone can reach it. The legend traces back to the Irish monk Saint Brendan — San Borondón in Spanish — who is said to have landed his boat on a green island, lit a campfire, and only then realised the 'island' was the back of a sleeping sea monster that promptly dove underwater. For centuries the phantom island was drawn on official maps, treaties divided up land on it, and several expeditions sailed out to claim it — all returning empty-handed. Even now, on rare clear evenings, people on the western islands point at a distant silhouette and whisper that San Borondón has surfaced again."
+  },
+  {
+    "slug": "princess-dacil",
+    "title": "Princess Dácil and the Conquistador",
+    "region": "Taoro valley (today La Orotava), north Tenerife",
+    "era": "1490s",
+    "story": "Dácil was a Guanche princess — granddaughter of Bencomo, the powerful king of Taoro who led the fiercest resistance against the Spanish invasion, and daughter of the mencey Adjoña. As the story is told, during the long conquest the proud young princess and a Castilian captain, Gonzalo del Castillo, fell in love across enemy lines. Their romance — half history, half poetry — was immortalised in 1604 by the Canarian poet Antonio de Viana, and it came to stand for something larger: the painful blending of the Guanche and Spanish worlds into the islanders of today. Dácil is still a popular girl's name on Tenerife, a quiet reminder that the indigenous people were never fully erased, only mixed in."
+  },
+  {
+    "slug": "bencomo-battle-of-acentejo",
+    "title": "The Slaughter at Acentejo",
+    "region": "La Matanza, north Tenerife",
+    "era": "1494",
+    "story": "In 1494 the Spanish commander Alonso Fernández de Lugo marched inland confident that his armoured soldiers would crush the 'primitive' Guanches. But the Guanche king Bencomo and his brother Tinguaro knew the land, and they lured the column deep into a steep, narrow ravine. There the Guanches rained down rocks and javelins and fell on the trapped soldiers — it was a massacre, with hundreds of Spanish killed and de Lugo barely escaping alive. It remains one of the very few times an indigenous people decisively beat the conquistadors in open battle. The town built on that ground is still called La Matanza de Acentejo — literally 'the Slaughter of Acentejo' — while the neighbouring town where the Spanish later took their revenge is called La Victoria."
+  },
+  {
+    "slug": "guanche-mummies",
+    "title": "The Mummies in the Caves",
+    "region": "Barranco de Herques & the southern ravines",
+    "era": "Guanche era (pre-15th century)",
+    "story": "Few people realise that the Guanches mummified their dead, much like the ancient Egyptians an ocean away. They cleaned and embalmed the bodies, wrapped them tightly in stitched goat hides, and laid them out in hard-to-reach burial caves high in the ravines — the most famous being a cavern in the Barranco de Herques said to have held around a thousand mummies. Over the centuries many were lost, stolen, or even ground up as 'medicine', and one Guanche mummy ended up on display in a museum in mainland Madrid, far from home. You can still meet them, though: the beautifully preserved Guanche mummies in the Museum of Nature and Archaeology in Santa Cruz are among the best-kept on the planet."
+  },
+  {
+    "slug": "garachico-buried-port",
+    "title": "The Night the Sea-Port Was Buried in Lava",
+    "region": "Garachico, north Tenerife",
+    "era": "1706",
+    "story": "For two centuries Garachico was the richest and busiest port in all of Tenerife, where ships loaded barrels of the island's prized wine bound for England and the Americas. Then, in May 1706, the volcano above the town split open and rivers of glowing lava poured straight down through the streets and into the harbour, filling it solid and choking off the trade overnight. The town survived but its fortune did not — the commerce moved away to Santa Cruz, where it remains the capital to this day. Yet there's a final twist of fate: as the lava cooled it carved out a maze of rock pools at the water's edge, and today those very pools — El Caletón — are where visitors come to swim, born from the same disaster that ruined the town."
   }
 ]

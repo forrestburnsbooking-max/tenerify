@@ -202,7 +202,7 @@ const UI_STRINGS: Record<string, {
   whoLabels: { family: string; couple: string; solo: string; friends: string };
   catLabels: { water: string; land: string; air: string; shows: string; rental: string };
   catSubs: { water: string; land: string; air: string; shows: string; rental: string };
-  menuLabels: { book: string; route: string; restaurant: string; legend: string; ask: string };
+  menuLabels: { book: string; route: string; restaurant: string; culture: string; ask: string };
 }> = {
   es: {
     intro: "¡Hola! Soy Tenerify 🌋 — tu amigo local de IA en Tenerife. Conozco lo que hay en internet *y* lo que solo saben los locales.\n\n**Esto es lo que puedo hacer:**\n- 📅 Encontrar y reservar las mejores actividades de la isla\n- 🗺️ Planificar tu ruta perfecta\n- 🍽️ Recomendarte un restaurante\n- 🏴‍☠️ Contarte una leyenda o historia de la isla\n\n¿Qué te apetece hoy?",
@@ -215,7 +215,7 @@ const UI_STRINGS: Record<string, {
     whoLabels: { family: "👨‍👩‍👧 Familia", couple: "💑 Pareja", solo: "🧑 Solo", friends: "👥 Amigos" },
     catLabels: { water: "Agua", land: "Tierra", air: "Aire", shows: "Espectáculos", rental: "Alquiler de coches" },
     catSubs: { water: "Ballenas · Moto acuática · Pesca · Barcos", land: "Buggy y quad · Parques · Tours en bus", air: "Helicóptero · Parapente", shows: "Flamenco · Cenas show", rental: "Coches · Furgonetas · Cabrio" },
-    menuLabels: { book: "📅 Reservar actividades", route: "🗺️ Planificar una ruta", restaurant: "🍽️ Recomendar restaurante", legend: "🏴‍☠️ Contar una leyenda", ask: "💬 Pregúntame lo que quieras" },
+    menuLabels: { book: "📅 Reservar actividades", route: "🗺️ Planificar una ruta", restaurant: "🍽️ Recomendar restaurante", culture: "🌴 Cultura y leyendas", ask: "💬 Pregúntame lo que quieras" },
   },
   en: {
     intro: "Hey! I'm Tenerify 🌋 — your local AI friend from Tenerife. I know what's online *and* what only locals know.\n\n**Here's what I can do:**\n- 📅 Find & book the best activities on the island\n- 🗺️ Plan your perfect route\n- 🍽️ Recommend a restaurant\n- 🏴‍☠️ Tell you a legend or story about the island\n\nWhat would you like today?",
@@ -228,7 +228,7 @@ const UI_STRINGS: Record<string, {
     whoLabels: { family: "👨‍👩‍👧 Family", couple: "💑 Couple", solo: "🧑 Solo", friends: "👥 Friends" },
     catLabels: { water: "Water", land: "Land", air: "Air", shows: "Evening shows", rental: "Car rental" },
     catSubs: { water: "Whale watching · Jet ski · Fishing · Boat trips", land: "Buggy & quads · Theme parks · Bus tours", air: "Helicopter · Paragliding", shows: "Flamenco · Dinner shows", rental: "Cars · Vans · Cabrio" },
-    menuLabels: { book: "📅 Find & book activities", route: "🗺️ Plan a route", restaurant: "🍽️ Recommend a restaurant", legend: "🏴‍☠️ Tell me a legend", ask: "💬 Just ask me anything" },
+    menuLabels: { book: "📅 Find & book activities", route: "🗺️ Plan a route", restaurant: "🍽️ Recommend a restaurant", culture: "🌴 Culture & legends", ask: "💬 Just ask me anything" },
   },
   de: {
     intro: "Hey! Ich bin Tenerify 🌋 — dein lokaler KI-Freund aus Teneriffa. Ich kenne, was online steht *und* was nur Einheimische wissen.\n\n**Das kann ich für euch tun:**\n- 📅 Die besten Aktivitäten der Insel finden & buchen\n- 🗺️ Eure perfekte Route planen\n- 🍽️ Ein Restaurant empfehlen\n- 🏴‍☠️ Eine Legende oder Geschichte der Insel erzählen\n\nWorauf habt ihr heute Lust?",
@@ -241,7 +241,7 @@ const UI_STRINGS: Record<string, {
     whoLabels: { family: "👨‍👩‍👧 Familie", couple: "💑 Paar", solo: "🧑 Alleine", friends: "👥 Freunde" },
     catLabels: { water: "Wasser", land: "Land", air: "Luft", shows: "Abendshows", rental: "Mietwagen" },
     catSubs: { water: "Walbeobachtung · Jetski · Angeln · Bootstouren", land: "Buggy & Quad · Freizeitparks · Bustouren", air: "Hubschrauber · Gleitschirm", shows: "Flamenco · Dinnershows", rental: "Autos · Vans · Cabrio" },
-    menuLabels: { book: "📅 Aktivitäten finden & buchen", route: "🗺️ Route planen", restaurant: "🍽️ Restaurant empfehlen", legend: "🏴‍☠️ Legende erzählen", ask: "💬 Frag mich einfach" },
+    menuLabels: { book: "📅 Aktivitäten finden & buchen", route: "🗺️ Route planen", restaurant: "🍽️ Restaurant empfehlen", culture: "🌴 Kultur & Legenden", ask: "💬 Frag mich einfach" },
   },
   ru: {
     intro: "Привет! Я Tenerify 🌋 — твой местный AI-друг с Тенерифе. Знаю и то, что есть в интернете, и то, о чём знают только местные.\n\n**Что я умею:**\n- 📅 Найти и забронировать лучшие активности на острове\n- 🗺️ Спланировать идеальный маршрут\n- 🍽️ Порекомендовать ресторан\n- 🏴‍☠️ Рассказать легенду или историю про остров\n\nЧто бы ты хотел сегодня?",
@@ -254,7 +254,7 @@ const UI_STRINGS: Record<string, {
     whoLabels: { family: "👨‍👩‍👧 Семья", couple: "💑 Пара", solo: "🧑 Один", friends: "👥 Друзья" },
     catLabels: { water: "Вода", land: "Суша", air: "Воздух", shows: "Вечерние шоу", rental: "Аренда авто" },
     catSubs: { water: "Киты и дельфины · Гидроцикл · Рыбалка · Лодки", land: "Багги и квадро · Парки · Автобусные туры", air: "Вертолёт · Параплан", shows: "Фламенко · Шоу с ужином", rental: "Авто · Минивэны · Кабрио" },
-    menuLabels: { book: "📅 Найти и забронировать", route: "🗺️ Спланировать маршрут", restaurant: "🍽️ Порекомендовать ресторан", legend: "🏴‍☠️ Рассказать легенду", ask: "💬 Просто задать вопрос" },
+    menuLabels: { book: "📅 Найти и забронировать", route: "🗺️ Спланировать маршрут", restaurant: "🍽️ Порекомендовать ресторан", culture: "🌴 Культура и легенды", ask: "💬 Просто задать вопрос" },
   },
   pl: {
     intro: "Hej! Jestem Tenerify 🌋 — twój lokalny przyjaciel AI z Teneryfy. Znam to, co jest w internecie *i* to, co wiedzą tylko miejscowi.\n\n**Oto co mogę zrobić:**\n- 📅 Znaleźć i zarezerwować najlepsze atrakcje na wyspie\n- 🗺️ Zaplanować idealną trasę\n- 🍽️ Polecić restaurację\n- 🏴‍☠️ Opowiedzieć legendę lub historię wyspy\n\nNa co masz dziś ochotę?",
@@ -267,7 +267,7 @@ const UI_STRINGS: Record<string, {
     whoLabels: { family: "👨‍👩‍👧 Rodzina", couple: "💑 Para", solo: "🧑 Solo", friends: "👥 Znajomi" },
     catLabels: { water: "Woda", land: "Ląd", air: "Powietrze", shows: "Wieczorne pokazy", rental: "Wynajem aut" },
     catSubs: { water: "Wieloryby · Skuter wodny · Wędkarstwo · Łodzie", land: "Buggy i quady · Parki · Wycieczki autobusowe", air: "Helikopter · Paralotnia", shows: "Flamenco · Kolacje z pokazem", rental: "Samochody · Vany · Kabriolet" },
-    menuLabels: { book: "📅 Znajdź i zarezerwuj", route: "🗺️ Zaplanuj trasę", restaurant: "🍽️ Poleć restaurację", legend: "🏴‍☠️ Opowiedz legendę", ask: "💬 Po prostu zapytaj" },
+    menuLabels: { book: "📅 Znajdź i zarezerwuj", route: "🗺️ Zaplanuj trasę", restaurant: "🍽️ Poleć restaurację", culture: "🌴 Kultura i legendy", ask: "💬 Po prostu zapytaj" },
   },
   fr: {
     intro: "Salut! Je suis Tenerify 🌋 — ton ami local IA de Tenerife. Je connais ce qui est en ligne *et* ce que seuls les locaux savent.\n\n**Voici ce que je peux faire:**\n- 📅 Trouver et réserver les meilleures activités de l'île\n- 🗺️ Planifier ton itinéraire parfait\n- 🍽️ Te recommander un restaurant\n- 🏴‍☠️ Te raconter une légende ou une histoire de l'île\n\nQu'est-ce qui te ferait plaisir aujourd'hui?",
@@ -280,7 +280,7 @@ const UI_STRINGS: Record<string, {
     whoLabels: { family: "👨‍👩‍👧 Famille", couple: "💑 Couple", solo: "🧑 Seul(e)", friends: "👥 Amis" },
     catLabels: { water: "Eau", land: "Terre", air: "Air", shows: "Spectacles", rental: "Location de voiture" },
     catSubs: { water: "Baleines · Jet ski · Pêche · Bateaux", land: "Buggy & quad · Parcs · Excursions en bus", air: "Hélicoptère · Parapente", shows: "Flamenco · Dîners-spectacles", rental: "Voitures · Vans · Cabriolet" },
-    menuLabels: { book: "📅 Trouver et réserver", route: "🗺️ Planifier un itinéraire", restaurant: "🍽️ Recommander un restaurant", legend: "🏴‍☠️ Raconter une légende", ask: "💬 Pose-moi ta question" },
+    menuLabels: { book: "📅 Trouver et réserver", route: "🗺️ Planifier un itinéraire", restaurant: "🍽️ Recommander un restaurant", culture: "🌴 Culture & légendes", ask: "💬 Pose-moi ta question" },
   },
   it: {
     intro: "Ciao! Sono Tenerify 🌋 — il tuo amico AI locale di Tenerife. Conosco ciò che c'è online *e* ciò che sanno solo i locali.\n\n**Ecco cosa posso fare:**\n- 📅 Trovare e prenotare le migliori attività dell'isola\n- 🗺️ Pianificare il tuo itinerario perfetto\n- 🍽️ Consigliarti un ristorante\n- 🏴‍☠️ Raccontarti una leggenda o una storia dell'isola\n\nCosa ti va di fare oggi?",
@@ -293,7 +293,7 @@ const UI_STRINGS: Record<string, {
     whoLabels: { family: "👨‍👩‍👧 Famiglia", couple: "💑 Coppia", solo: "🧑 Solo", friends: "👥 Amici" },
     catLabels: { water: "Acqua", land: "Terra", air: "Aria", shows: "Spettacoli serali", rental: "Noleggio auto" },
     catSubs: { water: "Balene · Moto d'acqua · Pesca · Barche", land: "Buggy e quad · Parchi · Tour in bus", air: "Elicottero · Parapendio", shows: "Flamenco · Cene-spettacolo", rental: "Auto · Furgoni · Cabrio" },
-    menuLabels: { book: "📅 Trova e prenota", route: "🗺️ Pianifica un itinerario", restaurant: "🍽️ Consiglia un ristorante", legend: "🏴‍☠️ Raccontami una leggenda", ask: "💬 Chiedimi quello che vuoi" },
+    menuLabels: { book: "📅 Trova e prenota", route: "🗺️ Pianifica un itinerario", restaurant: "🍽️ Consiglia un ristorante", culture: "🌴 Cultura e leggende", ask: "💬 Chiedimi quello che vuoi" },
   },
   nl: {
     intro: "Hallo! Ik ben Tenerify 🌋 — je lokale AI-vriend van Tenerife. Ik ken wat online staat *én* wat alleen locals weten.\n\n**Dit kan ik voor je doen:**\n- 📅 De beste activiteiten op het eiland vinden & boeken\n- 🗺️ Jouw perfecte route plannen\n- 🍽️ Een restaurant aanbevelen\n- 🏴‍☠️ Een legende of verhaal van het eiland vertellen\n\nWaar heb je vandaag zin in?",
@@ -306,7 +306,7 @@ const UI_STRINGS: Record<string, {
     whoLabels: { family: "👨‍👩‍👧 Familie", couple: "💑 Stel", solo: "🧑 Solo", friends: "👥 Vrienden" },
     catLabels: { water: "Water", land: "Land", air: "Lucht", shows: "Avondshows", rental: "Autoverhuur" },
     catSubs: { water: "Walvissen · Jetski · Vissen · Boottochten", land: "Buggy & quad · Pretparken · Bustours", air: "Helikopter · Paragliding", shows: "Flamenco · Dinershows", rental: "Auto's · Bussen · Cabrio" },
-    menuLabels: { book: "📅 Activiteiten vinden & boeken", route: "🗺️ Route plannen", restaurant: "🍽️ Restaurant aanbevelen", legend: "🏴‍☠️ Vertel een legende", ask: "💬 Vraag me alles" },
+    menuLabels: { book: "📅 Activiteiten vinden & boeken", route: "🗺️ Route plannen", restaurant: "🍽️ Restaurant aanbevelen", culture: "🌴 Cultuur & legendes", ask: "💬 Vraag me alles" },
   },
   sv: {
     intro: "Hej! Jag är Tenerify 🌋 — din lokala AI-vän från Teneriffa. Jag vet vad som finns online *och* vad bara lokalbor känner till.\n\n**Det här kan jag göra:**\n- 📅 Hitta & boka de bästa aktiviteterna på ön\n- 🗺️ Planera din perfekta rutt\n- 🍽️ Rekommendera en restaurang\n- 🏴‍☠️ Berätta en legend eller historia om ön\n\nVad är du sugen på idag?",
@@ -319,7 +319,7 @@ const UI_STRINGS: Record<string, {
     whoLabels: { family: "👨‍👩‍👧 Familj", couple: "💑 Par", solo: "🧑 Ensam", friends: "👥 Vänner" },
     catLabels: { water: "Vatten", land: "Land", air: "Luft", shows: "Kvällsshower", rental: "Hyrbil" },
     catSubs: { water: "Valskådning · Vattenskoter · Fiske · Båtturer", land: "Buggy & fyrhjuling · Temaparker · Bussturer", air: "Helikopter · Skärmflygning", shows: "Flamenco · Middagsshower", rental: "Bilar · Skåpbilar · Cabriolet" },
-    menuLabels: { book: "📅 Hitta & boka aktiviteter", route: "🗺️ Planera en rutt", restaurant: "🍽️ Rekommendera en restaurang", legend: "🏴‍☠️ Berätta en legend", ask: "💬 Fråga mig vad som helst" },
+    menuLabels: { book: "📅 Hitta & boka aktiviteter", route: "🗺️ Planera en rutt", restaurant: "🍽️ Rekommendera en restaurang", culture: "🌴 Kultur & legender", ask: "💬 Fråga mig vad som helst" },
   },
   uk: {
     intro: "Привіт! Я Tenerify 🌋 — твій місцевий AI-друг з Тенерифе. Знаю і те, що є в інтернеті, і те, що знають лише місцеві.\n\n**Що я вмію:**\n- 📅 Знайти та забронювати найкращі активності на острові\n- 🗺️ Спланувати ідеальний маршрут\n- 🍽️ Порекомендувати ресторан\n- 🏴‍☠️ Розповісти легенду чи історію про острів\n\nЧого б ти хотів сьогодні?",
@@ -332,7 +332,7 @@ const UI_STRINGS: Record<string, {
     whoLabels: { family: "👨‍👩‍👧 Сім'я", couple: "💑 Пара", solo: "🧑 Один", friends: "👥 Друзі" },
     catLabels: { water: "Вода", land: "Суша", air: "Повітря", shows: "Вечірні шоу", rental: "Оренда авто" },
     catSubs: { water: "Кити та дельфіни · Гідроцикл · Риболовля · Човни", land: "Баггі та квадро · Парки · Автобусні тури", air: "Вертоліт · Параплан", shows: "Фламенко · Шоу з вечерею", rental: "Авто · Мінівени · Кабріо" },
-    menuLabels: { book: "📅 Знайти та забронювати", route: "🗺️ Спланувати маршрут", restaurant: "🍽️ Порекомендувати ресторан", legend: "🏴‍☠️ Розповісти легенду", ask: "💬 Просто поставити запитання" },
+    menuLabels: { book: "📅 Знайти та забронювати", route: "🗺️ Спланувати маршрут", restaurant: "🍽️ Порекомендувати ресторан", culture: "🌴 Культура і легенди", ask: "💬 Просто поставити запитання" },
   },
   zh: {
     intro: "你好！我是 Tenerify 🌋 — 你在特内里费的本地 AI 朋友。我既了解网上的信息，也知道只有当地人才懂的玩法。\n\n**我能帮你做这些：**\n- 📅 寻找并预订岛上最棒的活动\n- 🗺️ 规划你的完美路线\n- 🍽️ 推荐一家餐厅\n- 🏴‍☠️ 讲一个岛上的传说或故事\n\n今天想做点什么呢？",
@@ -345,7 +345,7 @@ const UI_STRINGS: Record<string, {
     whoLabels: { family: "👨‍👩‍👧 家庭", couple: "💑 情侣", solo: "🧑 一个人", friends: "👥 朋友" },
     catLabels: { water: "水上", land: "陆地", air: "空中", shows: "晚间表演", rental: "租车" },
     catSubs: { water: "观鲸 · 水上摩托 · 海钓 · 游船", land: "沙滩车和四轮车 · 主题公园 · 巴士游", air: "直升机 · 滑翔伞", shows: "弗拉门戈 · 晚宴秀", rental: "轿车 · 商务车 · 敞篷车" },
-    menuLabels: { book: "📅 查找并预订活动", route: "🗺️ 规划路线", restaurant: "🍽️ 推荐餐厅", legend: "🏴‍☠️ 讲个传说", ask: "💬 随便问我" },
+    menuLabels: { book: "📅 查找并预订活动", route: "🗺️ 规划路线", restaurant: "🍽️ 推荐餐厅", culture: "🌴 文化与传说", ask: "💬 随便问我" },
   },
   ar: {
     intro: "مرحباً! أنا Tenerify 🌋 — صديقك المحلي بالذكاء الاصطناعي في تينيريفي. أعرف ما هو على الإنترنت *وما* يعرفه السكان المحليون فقط.\n\n**إليك ما يمكنني فعله:**\n- 📅 إيجاد وحجز أفضل الأنشطة في الجزيرة\n- 🗺️ تخطيط مسارك المثالي\n- 🍽️ ترشيح مطعم لك\n- 🏴‍☠️ أن أحكي لك أسطورة أو قصة عن الجزيرة\n\nماذا تريد اليوم؟",
@@ -358,22 +358,22 @@ const UI_STRINGS: Record<string, {
     whoLabels: { family: "👨‍👩‍👧 عائلة", couple: "💑 ثنائي", solo: "🧑 بمفردي", friends: "👥 أصدقاء" },
     catLabels: { water: "بحر", land: "برّ", air: "جو", shows: "عروض مسائية", rental: "تأجير سيارات" },
     catSubs: { water: "مشاهدة الحيتان · جت سكي · صيد · رحلات بحرية", land: "باغي وكواد · مدن ملاهٍ · جولات بالحافلة", air: "هليكوبتر · طيران شراعي", shows: "فلامنكو · عشاء مع عرض", rental: "سيارات · فانات · مكشوفة" },
-    menuLabels: { book: "📅 ابحث واحجز الأنشطة", route: "🗺️ خطّط مساراً", restaurant: "🍽️ رشّح مطعماً", legend: "🏴‍☠️ احكِ لي أسطورة", ask: "💬 اسألني أي شيء" },
+    menuLabels: { book: "📅 ابحث واحجز الأنشطة", route: "🗺️ خطّط مساراً", restaurant: "🍽️ رشّح مطعماً", culture: "🌴 الثقافة والأساطير", ask: "💬 اسألني أي شيء" },
   },
 };
 
-const MENU_OPTIONS: { id: "book" | "route" | "restaurant" | "legend" | "ask" }[] = [
+const MENU_OPTIONS: { id: "book" | "route" | "restaurant" | "culture" | "ask" }[] = [
   { id: "book" },
   { id: "route" },
   { id: "restaurant" },
-  { id: "legend" },
+  { id: "culture" },
   { id: "ask" },
 ];
 
-const MENU_MESSAGES: Record<"route" | "restaurant" | "legend", string> = {
+const MENU_MESSAGES: Record<"route" | "restaurant" | "culture", string> = {
   route: "I'd like to plan a self-drive route around Tenerife. Suggest one and tell me about it.",
   restaurant: "Recommend a good restaurant in Tenerife.",
-  legend: "Tell me a legend or story about Tenerife.",
+  culture: "Tell me about this island — its culture, people, food and traditions, and its legends and stories. What makes Tenerife special? Start me off with something, then offer to go deeper.",
 };
 
 const WHO_OPTIONS = [
@@ -490,7 +490,7 @@ export default function Home() {
     setStep("menu");
   }
 
-  async function handleMenuOption(id: "book" | "route" | "restaurant" | "legend" | "ask") {
+  async function handleMenuOption(id: "book" | "route" | "restaurant" | "culture" | "ask") {
     setMenuChoice(id);
     if (id === "book") {
       setStep("who");
