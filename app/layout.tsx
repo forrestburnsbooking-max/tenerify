@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     description,
     url: "/",
     siteName: "Tenerify.ai",
-    images: [{ url: "/hero-teide.jpg", width: 1400, height: 935, alt: "Mount Teide, Tenerife" }],
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: "Tenerify.ai — your local AI guide to Tenerife" }],
     locale: "en_US",
     type: "website",
   },
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title,
     description,
-    images: ["/hero-teide.jpg"],
+    images: ["/og.png"],
   },
 };
 
