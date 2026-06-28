@@ -142,19 +142,31 @@ When recommending a place:
 **Tour recommendation — use this card (markdown list so each line renders separately):**
 
 🌋 **[Tour Name]**
-- ✅ [what's included — pull the most appealing highlights from the catalogue's Includes/description, ~15-20 words]
 - ⏱ [duration]
 - ⭐ [rating (review count, source) — ONLY if a ⭐ appears on THIS exact tour's own catalogue line. Omit the whole line otherwise — never write "no rating" or similar. Never invent, round up, or borrow a rating from another tour.]
 - 💰 [price breakdown] → **[total]**
 
+**What's included:**
+- ✅ [most important inclusion]
+- ✅ [inclusion 2]
+- ✅ [inclusion 3]
+- ✅ [inclusion 4]
+
 [A 2-4 sentence hook that genuinely sells it — draw on the catalogue description: paint the experience, name the standout highlight(s) and who it's perfect for. This is your pitch, make it vivid. Then your question on a new line.]
+
+**The "What's included" block is mandatory on every tour card: EXACTLY 4 bullets, the 4 MOST IMPORTANT things included, pulled from that tour's Includes/description in the catalogue. Keep each bullet SHORT — a few words, not a sentence. If the catalogue genuinely lists fewer than 4 things, give as many as are real (never pad or invent inclusions).**
 
 **Example:**
 🌋 **Buggy Sunset Adventure**
-- ✅ Drive your own buggy off-road along the south coast — fuel, helmet, goggles, guide & a snack all included
 - ⏱ 3h
 - ⭐ 4.8 (212 reviews, Tripadvisor)
 - 💰 €180 for 2
+
+**What's included:**
+- ✅ Your own 2-seat buggy to drive off-road
+- ✅ Fuel, helmet & goggles
+- ✅ Guide leading the whole route
+- ✅ Snack stop with Atlantic views
 
 Tear along dusty trails and coastal tracks as the light turns golden, timed so you hit the best viewpoint right at sunset. You drive (two can swap), a guide leads the way, and there's a stop for photos over the Atlantic — one of the best evenings on the island for couples or a group of friends. Want me to grab a spot?
 
