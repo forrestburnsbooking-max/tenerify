@@ -213,6 +213,8 @@ Always state number of vehicles and total clearly:
 
 **For ALL tours:** ask ages of participants if there's any chance of minors (family, group). Check min age from catalogue.
 
+**Asking children's ages — type, don't tap.** When you ask for the ages of children and there are **2 or more kids** (each can be a different age), set **needsText: true** and leave options EMPTY — a single set of age buttons can't capture two different ages and traps the user. Ask them to type it (e.g. "How old are the two children? (e.g. 5 and 9)"). For exactly one child, age buttons are fine.
+
 **For buggy and quad tours ONLY — ALWAYS ask before recommending:**
 - Set needsLicense=true in your tool response when asking this question
 - Buggy AND quad → both require **category B or A** driving license, min age **18**
@@ -444,6 +446,10 @@ export async function POST(req: NextRequest) {
                 type: "boolean",
                 description: "Set to true when asking if the user has a driving license (for buggy/quad tours). Shows license type buttons in the UI.",
               },
+              needsText: {
+                type: "boolean",
+                description: "Set to true when the answer can't be a single clickable choice and must be typed freely — above all the AGES of children when there are 2+ kids (each child a different age). This hides the option buttons so the user types their answer (e.g. '5 and 9'). When set, leave options empty.",
+              },
               needsTime: {
                 type: "boolean",
                 description: "Set to true when asking the user to pick a departure time. Only set this AFTER needsDate has been answered. The UI will show the available time slots for their chosen tour.",
@@ -464,14 +470,17 @@ export async function POST(req: NextRequest) {
     const toolUse = response.content.find((b) => b.type === "tool_use");
     const input =
       toolUse && toolUse.type === "tool_use"
-        ? (toolUse.input as { message: string; options: string[]; tourSlug?: string; tourSlugs?: string[]; needsDate?: boolean; needsLicense?: boolean; needsTime?: boolean; availableTimeSlots?: string[] })
+        ? (toolUse.input as { message: string; options: string[]; tourSlug?: string; tourSlugs?: string[]; needsDate?: boolean; needsLicense?: boolean; needsText?: boolean; needsTime?: boolean; availableTimeSlots?: string[] })
         : null;
 
     let message = input?.message ?? "Sorry, something went wrong.";
-    const options = input?.options ?? [];
+    // A free-text answer (e.g. 2+ children's ages) must show no buttons — drop any
+    // options the model sent so a stray age chip can never trap the user.
+    const options = input?.needsText ? [] : (input?.options ?? []);
     const tourSlug = input?.tourSlug ?? null;
     const needsDate = input?.needsDate ?? false;
     const needsLicense = input?.needsLicense ?? false;
+    const needsText = input?.needsText ?? false;
     const needsTime = input?.needsTime ?? false;
     const availableTimeSlots = input?.availableTimeSlots ?? [];
     // Car rentals can't be booked same-day — the date picker hides "Today".
@@ -504,7 +513,7 @@ export async function POST(req: NextRequest) {
     // Save session and set cookie
     await saveSession(sessionId, session);
 
-    const res = NextResponse.json({ message, options, bookingText, tourMedia, tourMediaList, needsDate, needsLicense, needsTime, availableTimeSlots, noSameDay, isReturning: session.visits.length > 1 });
+    const res = NextResponse.json({ message, options, bookingText, tourMedia, tourMediaList, needsDate, needsLicense, needsText, needsTime, availableTimeSlots, noSameDay, isReturning: session.visits.length > 1 });
     res.cookies.set(SESSION_COOKIE, sessionId, {
       httpOnly: false, // readable by client to show "welcome back"
       sameSite: "lax",

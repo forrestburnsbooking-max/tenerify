@@ -180,6 +180,7 @@ type Message = {
   tourMediaList?: TourMedia[];
   needsDate?: boolean;
   needsLicense?: boolean;
+  needsText?: boolean;
   needsTime?: boolean;
   availableTimeSlots?: string[];
   noSameDay?: boolean;
@@ -590,7 +591,7 @@ export default function Home() {
       if (data.isReturning) setIsReturning(true);
       const finalMessages: Message[] = [
         ...newMessages,
-        { role: "assistant", content: data.message, options: data.options, bookingText: data.bookingText, tourMedia: data.tourMedia, tourMediaList: data.tourMediaList, needsDate: data.needsDate, needsLicense: data.needsLicense, needsTime: data.needsTime, availableTimeSlots: data.availableTimeSlots, noSameDay: data.noSameDay },
+        { role: "assistant", content: data.message, options: data.options, bookingText: data.bookingText, tourMedia: data.tourMedia, tourMediaList: data.tourMediaList, needsDate: data.needsDate, needsLicense: data.needsLicense, needsText: data.needsText, needsTime: data.needsTime, availableTimeSlots: data.availableTimeSlots, noSameDay: data.noSameDay },
       ];
       setMessages(finalMessages);
       persistTranscript(finalMessages, effectiveWho, effectiveLang);
@@ -1039,6 +1040,9 @@ export default function Home() {
                     setUsedOptions((prev) => new Set(prev).add(i));
                     sendToAI(answer, messages);
                   }} />
+                ) : msg.needsText ? (
+                  // Free-text answer (e.g. ages of 2+ children) — no buttons, just the composer.
+                  null
                 ) : (
                   <div className="flex flex-wrap gap-2">
                     {(msg.options && msg.options.length > 0
