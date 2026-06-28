@@ -9,7 +9,9 @@
     "lint": "eslint",
     "scrape-events": "npx tsx scripts/scrape-events.ts",
     "sync-prices": "npx tsx scripts/sync-prices.ts",
+    "ping-indexnow": "npx tsx scripts/ping-indexnow.ts",
     "reels:studio": "remotion studio remotion/index.ts",
+    "reels:enhance": "npx tsx scripts/enhance-photos.ts",
     "reels:animate": "npx tsx scripts/animate-photos.ts",
     "reels:photos": "npx tsx scripts/photo-review.ts",
     "reels:render": "npx tsx scripts/render-reels.ts"
@@ -29,6 +31,7 @@
     "react": "19.2.4",
     "react-dom": "19.2.4",
     "react-markdown": "^10.1.0",
+    "remark-breaks": "^4.0.0",
     "remotion": "^4.0.478",
     "stripe": "^22.2.0"
   },
