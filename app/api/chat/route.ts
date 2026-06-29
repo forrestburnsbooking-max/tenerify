@@ -17,6 +17,7 @@ import {
   SESSION_TTL_MS,
 } from "@/lib/session";
 import { getTourBySlug } from "@/lib/tours";
+import { isHighSeason, highSeasonLabel } from "@/lib/season";
 import { randomUUID } from "crypto";
 
 const client = new Anthropic();
@@ -292,11 +293,15 @@ Many tours have fixed departure times. When recommending a tour that has timeSlo
 
 ## MINIMUM BOOKING LEAD TIME
 
-A booking must be made at least 3 hours before the activity starts — there isn't enough time for the operator to confirm otherwise.
+How far ahead a booking must be made depends on the season of the **activity's date** — the "Season right now" line in the context above tells you which rule is active for today:
 
-- When the user wants to book for **today**, only offer/accept time slots that are at least 3 hours from the current time shown above.
-- If the user picks "today" but every remaining slot (or the activity itself, for tours without fixed times) is less than 3 hours away, tell them today is too tight to confirm and offer tomorrow instead.
-- If the user explicitly asks for a time/date less than 3 hours away, politely explain the 3-hour rule and suggest the next valid option — do not trigger BOOK_NOW.
+- **High season (${highSeasonLabel()}): at least 12 hours before the activity starts.** The island is busy, so only very last-minute slots can't be confirmed in time. Anything 12+ hours away is fine — an evening chat can still book tomorrow morning.
+- **Rest of the year: at least 3 hours before the activity starts.**
+
+Apply the rule to the chosen date/time:
+- Same-day bookings are fine as long as the slot is still at least the season's minimum hours away.
+- If the requested slot (or the activity itself, for tours without fixed times) is less than the season's minimum away, politely explain the lead time and offer the **nearest valid slot or date** instead — never trigger BOOK_NOW for a time inside the window.
+- If the user explicitly asks for a time inside the window, explain the rule and suggest the next valid option rather than booking it.
 
 ## BOOKING TRIGGER
 
@@ -364,7 +369,11 @@ All bookings are paid online by card via secure checkout (Stripe) — we do not 
 
 function buildDynamicContext(weather: string, events: string, sessionContext: string, language: string): string {
   const langName = LANGUAGE_NAMES[language] ?? "English";
+  const seasonLine = isHighSeason()
+    ? `Season right now: HIGH SEASON — minimum booking lead time is 12 hours.`
+    : `Season right now: off-season — minimum booking lead time is 3 hours.`;
   return `Current date & time in Tenerife (Atlantic/Canary): ${getCurrentDateTime()}
+${seasonLine}
 
 ${weather ? `Right now in Tenerife Sur: ${weather}.\n` : ""}
 ${events ? `EVENTS ON THE ISLAND (mention when relevant):\n${events}\n` : ""}
@@ -501,6 +510,8 @@ export async function POST(req: NextRequest) {
     const needsTime = input?.needsTime ?? false;
     const availableTimeSlots = input?.availableTimeSlots ?? [];
     // Car rentals can't be booked same-day — the date picker hides "Today".
+    // Otherwise "Today" stays: even in high season a late slot can clear the
+    // 12h minimum, so the AI gates the exact time rather than the date picker.
     const noSameDay = tourSlug ? getTourBySlug(tourSlug)?.category === "car-rental" : false;
 
     const bookMatch = message.match(/\[BOOK_NOW: ([^\]]+)\]/);

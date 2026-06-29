@@ -154,8 +154,10 @@ soul-jeep-self-drive-safari,Per jeep (1-2 people),soul-jeep,290,130
 soul-jeep-self-drive-safari,Per jeep (3-4 people),soul-jeep,310,150
 soul-jeep-passenger-tour,Per person,soul-jeep,120,65
 soul-jeep-passenger-tour,Additional passenger,soul-jeep,90,45
-jetski-las-galletas,40 minutes (1-2 people),flash-jetski,90,50
-jetski-las-galletas,1 hour (1-2 people),flash-jetski,100,60
+jetski-las-galletas,1 hour — Single,flash-jetski,90,40
+jetski-las-galletas,1 hour — Double,flash-jetski,100,50
+jetski-las-galletas,2 hours — Single,flash-jetski,150,100
+jetski-las-galletas,2 hours — Double,flash-jetski,170,110
 cabrio-bus-teide-masca,Adult,nere,80,55
 cabrio-bus-teide-masca,Child,nere,60,45
 galatea-boat,Adult,galatea,60,27.5
