@@ -1975,6 +1975,75 @@
     "minAge": 0
   },
   {
+    "slug": "champagne-premium-charter",
+    "title": "Champagne — Premium private boat charter",
+    "category": "whale-watching",
+    "group": "water",
+    "duration": "2h / 3h / 4h",
+    "capacity": 8,
+    "languages": [
+      "English",
+      "Español",
+      "Русский"
+    ],
+    "pricing": [
+      {
+        "label": "2 hours — whole boat (private, up to 8 guests)",
+        "price": 450
+      },
+      {
+        "label": "3 hours — whole boat (private, up to 8 guests)",
+        "price": 600
+      },
+      {
+        "label": "4 hours — whole boat (private, up to 8 guests)",
+        "price": 700
+      }
+    ],
+    "priceFrom": 450,
+    "description": "Champagne is a sleek Sealine motor yacht for a fully private charter along the south-west coast of Tenerife — the whole boat is yours, with a skipper at the helm.\n\nCruise toward Los Gigantes, watch for whales and dolphins, drop anchor in a quiet cove to swim and snorkel, and toast the views with the coastline and the mountains as your backdrop.\n\nPriced per boat, not per person — perfect for a family, a couple celebrating something special, or a group of friends who want the sea to themselves. Choose 2, 3 or 4 hours.",
+    "included": "Private use of the whole boat · professional skipper · fuel",
+    "meetingPoint": "Puerto Colón Marina — Pantalán 3, Costa Adeje",
+    "pickup": "no",
+    "faq": [
+      {
+        "question": "How will I receive my tickets?",
+        "answer": "After you complete your purchase, you will receive an order confirmation email within a few minutes. This email will contain all the details of your purchase, including the event, date, and number of tickets. Please note we do not send tickets by post."
+      },
+      {
+        "question": "What is your cancellation policy?",
+        "answer": "Free cancellation with a full refund if you cancel more than 24 hours before the tour starts. Cancellations made less than 24 hours before the start time, or no-shows, are non-refundable. If the operator has to cancel (for example due to bad weather or safety), you get a full refund or a free reschedule. To cancel, message us on WhatsApp (+34 610 434 957) with your booking reference — eligible refunds are processed within 14 days."
+      },
+      {
+        "question": "Can I book an excursion within 24 hours of its start time?",
+        "answer": "It depends on the season. Outside high season we can usually confirm bookings made just a few hours ahead (minimum 3 hours before the start). In high season (15 June – 15 September) the island is busy, so online bookings need at least 12 hours' notice (an evening booking for the next morning is fine). For anything sooner, message us on WhatsApp or visit the office and we'll do our best to fit you in."
+      },
+      {
+        "question": "Will I be picked up at my hotel when a transfer is possible?",
+        "answer": "And where is the meeting point The exact meeting point for your excursion will be specified in your booking confirmation email. If a transfer service is included with your booking, we offer convenient hotel pickup. The availability of this service will depend on your hotel’s location and the specific excursion."
+      },
+      {
+        "question": "May I pay directly in cash when the tour / activity starts?",
+        "answer": "We offer online purchases on the platform. If you wish to buy with cash you can visit our office."
+      },
+      {
+        "question": "Do you offer discounts?",
+        "answer": "We generally cannot give any discounts due to the very high demand. We offer discount for group bookings. Please contact us"
+      },
+      {
+        "question": "What happens if the weather is too bad to go on the excursion?",
+        "answer": "If the weather is too bad to go on the excursion, it will be rescheduled or you will receive a full refund."
+      },
+      {
+        "question": "May I purchase a gift voucher?",
+        "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
+      }
+    ],
+    "imageUrl": "/images/tours/champagne.jpg",
+    "url": "",
+    "minAge": 0
+  },
+  {
     "slug": "buggy-teide-adventure",
     "title": "Buggy — Teide Day Adventure",
     "category": "buggy-quad",
