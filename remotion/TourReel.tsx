@@ -5,6 +5,7 @@ import {
   Loop,
   OffthreadVideo,
   Sequence,
+  Series,
   spring,
   staticFile,
   useCurrentFrame,
@@ -108,10 +109,13 @@ export const TourReel: React.FC<TourReelProps> = ({
   languages,
   tagline,
   clip,
+  clips,
 }) => {
   const frame = useCurrentFrame();
   const { fps, durationInFrames } = useVideoConfig();
 
+  const multishot = clips && clips.length > 1;
+  const segLen = multishot ? Math.floor(durationInFrames / clips!.length) : 0;
   const clipSrc = clip ? (clip.startsWith("http") ? clip : staticFile(`clips/${clip}`)) : "";
   // Local /images/... paths must go through staticFile; remote URLs pass through.
   const imgSrc = imageUrl
@@ -133,7 +137,21 @@ export const TourReel: React.FC<TourReelProps> = ({
       {/* Background: animated clip if present, else photo. The whole subject is
           shown (object-fit: contain) over a blurred fill so nothing is cropped. */}
       <AbsoluteFill style={{ overflow: "hidden" }}>
-        {clipSrc ? (
+        {multishot ? (
+          <Series>
+            {clips!.map((c, i) => {
+              // Last shot absorbs the rounding remainder so the cuts fill the reel exactly.
+              const len = i === clips!.length - 1 ? durationInFrames - segLen * (clips!.length - 1) : segLen;
+              const src = c.startsWith("http") ? c : staticFile(`clips/${c}`);
+              return (
+                <Series.Sequence key={c} durationInFrames={len}>
+                  <OffthreadVideo src={src} muted style={FILL_BLUR} />
+                  <OffthreadVideo src={src} muted style={FIT_CONTAIN} />
+                </Series.Sequence>
+              );
+            })}
+          </Series>
+        ) : clipSrc ? (
           <Loop durationInFrames={CLIP_LOOP_FRAMES}>
             <OffthreadVideo src={clipSrc} muted style={FILL_BLUR} />
             <OffthreadVideo src={clipSrc} muted style={FIT_CONTAIN} />

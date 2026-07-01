@@ -1,0 +1,51 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Vertical first frames — review</title>
+<style>
+  body { margin: 0; background: #0d0d0d; color: #eee; font: 15px/1.4 "Plus Jakarta Sans", system-ui, sans-serif; }
+  h1 { font-weight: 700; padding: 24px 24px 4px; }
+  p.sub { color: #888; padding: 0 24px 16px; margin: 0; }
+  .grid { display: flex; flex-wrap: wrap; gap: 28px; padding: 24px; }
+  .card { background: #161616; border-radius: 14px; padding: 16px; width: 360px; }
+  .card h2 { font-size: 16px; margin: 0 0 12px; color: #ffa033; }
+  .pair { display: flex; gap: 12px; align-items: flex-start; }
+  .col { flex: 1; }
+  .col span { display: block; font-size: 11px; color: #777; margin-bottom: 6px; text-transform: uppercase; letter-spacing: .04em; }
+  img { width: 100%; border-radius: 8px; display: block; background: #000; }
+  .orig img { aspect-ratio: auto; }
+  .badge { display: inline-block; font-size: 11px; padding: 2px 8px; border-radius: 999px; margin-left: 8px; vertical-align: middle; }
+  .preserve { background: #1e3a2a; color: #6fdf9f; }
+  .generic  { background: #3a2a1e; color: #ffb36f; }
+</style>
+<h1>Вертикальные first-frames — тест (4 из 35)</h1>
+<p class="sub">Слева оригинал, справа сгенерённый 9:16 кадр (FLUX Kontext). Цель — объект сохранён, кадр заполняет рилс.</p>
+<div class="grid">
+  <div class="card">
+    <h2>maxicat-catamaran <span class="badge preserve">сохранение</span></h2>
+    <div class="pair">
+      <div class="col orig"><span>оригинал</span><img src="public/images/tours/maxicat-catamaran.webp"></div>
+      <div class="col"><span>9:16</span><img src="public/images/tours/_vert/maxicat-catamaran.jpg"></div>
+    </div>
+  </div>
+  <div class="card">
+    <h2>peter-pan-boat <span class="badge preserve">сохранение</span></h2>
+    <div class="pair">
+      <div class="col orig"><span>оригинал</span><img src="public/images/tours/peter-pan-boat.webp"></div>
+      <div class="col"><span>9:16</span><img src="public/images/tours/_vert/peter-pan-boat.jpg"></div>
+    </div>
+  </div>
+  <div class="card">
+    <h2>jetski <span class="badge generic">пересборка</span></h2>
+    <div class="pair">
+      <div class="col orig"><span>оригинал</span><img src="public/images/tours/jetski.webp"></div>
+      <div class="col"><span>9:16</span><img src="public/images/tours/_vert/jetski.jpg"></div>
+    </div>
+  </div>
+  <div class="card">
+    <h2>atlanca-boat-rental <span class="badge preserve">сохранение</span></h2>
+    <div class="pair">
+      <div class="col orig"><span>оригинал</span><img src="public/images/tours/atlanca-boat-rental.jpg"></div>
+      <div class="col"><span>9:16</span><img src="public/images/tours/_vert/atlanca-boat-rental.jpg"></div>
+    </div>
+  </div>
+</div>

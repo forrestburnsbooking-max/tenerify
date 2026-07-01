@@ -43,3 +43,6 @@ next-env.d.ts
 
 # remotion reels (local marketing assets)
 /public/clips
+
+# private outreach / PR materials (target lists, pitches, press kit) — never publish
+/outreach

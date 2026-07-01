@@ -48,7 +48,7 @@ const cards = [...byClip.entries()]
       : "";
     return `
       <div class="card">
-        <div class="imgwrap"><img loading="lazy" src="${imgSrc(rep.imageUrl ?? "")}" alt="${key}"></div>
+        <div class="imgwrap"><img class="bg" loading="lazy" src="${imgSrc(rep.imageUrl ?? "")}" alt=""><img class="fg" loading="lazy" src="${imgSrc(rep.imageUrl ?? "")}" alt="${key}"></div>
         <div class="meta">
           <div class="key">${key}${grouped ? ` <span class="badge">group</span>` : ""}</div>
           <div class="title">${rep.title}</div>
@@ -67,8 +67,10 @@ const html = `<!doctype html>
   .sub { color:#888; margin-bottom:20px; }
   .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:16px; }
   .card { background:#1a1a1a; border-radius:12px; overflow:hidden; border:1px solid #262626; }
-  .imgwrap { aspect-ratio:9/16; background:#000; }
-  .imgwrap img { width:100%; height:100%; object-fit:cover; display:block; }
+  .imgwrap { aspect-ratio:9/16; background:#000; position:relative; overflow:hidden; }
+  /* blurred fill + whole image on top — mirrors the reel composition (no crop) */
+  .imgwrap .bg { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; filter:blur(18px) brightness(0.5); transform:scale(1.2); }
+  .imgwrap .fg { position:absolute; inset:0; width:100%; height:100%; object-fit:contain; }
   .meta { padding:10px 12px; }
   .key { font-weight:700; color:#fb923c; }
   .badge { font-size:10px; background:#fb923c; color:#000; border-radius:4px; padding:1px 5px; vertical-align:middle; }
@@ -77,7 +79,7 @@ const html = `<!doctype html>
 </style></head>
 <body>
   <h1>Reel source photos — ${byClip.size} clips for ${animated.length} tours</h1>
-  <div class="sub">9:16 crop — this hero photo is the first frame fed to Kling. Heroes should be dynamic / on-water; spot ones to re-shoot.</div>
+  <div class="sub">Each tile = the first frame fed to Kling (shown WHOLE, like the new reel composition — no crop). Spot any to re-shoot.</div>
   <div class="grid">${cards}</div>
 </body></html>`;
 

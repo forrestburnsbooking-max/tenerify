@@ -81,6 +81,19 @@ async function main() {
           ? `${key}.mp4`
           : "";
       })(),
+      // Multi-shot: gather <key>-1.mp4, -2.mp4, … if present (sequenced as cuts).
+      // Keyed like the single clip so grouped activities share the same shots.
+      clips: (() => {
+        const key = clipKeyForSlug(tour.slug);
+        const clipsDir = path.join(process.cwd(), "public", "clips");
+        const out: string[] = [];
+        for (let n = 1; ; n++) {
+          const f = `${key}-${n}.mp4`;
+          if (!fs.existsSync(path.join(clipsDir, f))) break;
+          out.push(f);
+        }
+        return out;
+      })(),
     };
 
     try {
