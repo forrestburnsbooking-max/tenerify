@@ -31,6 +31,38 @@ export function getRestaurants(): Restaurant[] {
   }
 }
 
+export function getRestaurantBySlug(slug: string): Restaurant | undefined {
+  return getRestaurants().find((r) => r.slug === slug);
+}
+
+// South coast west→east, then Costa del Silencio (next to Las Galletas, near
+// the airport), then the north-coast towns.
+export const AREA_GROUP_ORDER = [
+  "Los Cristianos",
+  "Las Americas",
+  "Costa Adeje",
+  "Los Gigantes",
+  "Las Galletas",
+  "Costa del Silencio",
+  "La Laguna",
+  "Puerto de la Cruz",
+  "Santa Cruz",
+] as const;
+
+export type AreaGroup = (typeof AREA_GROUP_ORDER)[number];
+
+// Raw `area` values carry parenthetical detail ("(harbour)", "(north)") or a
+// sub-neighborhood prefix ("La Caleta, Costa Adeje") — strip those down to
+// one of the macro groups above so restaurants group geographically.
+export function getAreaGroup(area: string): AreaGroup {
+  const clean = area.replace(/\s*\([^)]*\)/g, "").trim();
+  if (clean.includes("Américas") || clean.includes("Americas")) return "Las Americas";
+  for (const group of AREA_GROUP_ORDER) {
+    if (clean === group || clean.endsWith(`, ${group}`) || clean.includes(group)) return group;
+  }
+  return clean as AreaGroup;
+}
+
 export function getRestaurantsText(): string {
   const restaurants = getRestaurants();
   if (!restaurants.length) return "";
