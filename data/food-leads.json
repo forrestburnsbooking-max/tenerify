@@ -1,0 +1,338 @@
+[
+  {
+    "name": "Legends",
+    "description": "",
+    "area": "Puerto de Santiago",
+    "lat": 28.2286773,
+    "lng": -16.8404859,
+    "mapsUrl": "https://maps.google.com/?q=28.2286773,-16.8404859"
+  },
+  {
+    "name": "Cielo y mar",
+    "description": "",
+    "area": "Puerto de Santiago",
+    "lat": 28.2359118,
+    "lng": -16.842463,
+    "mapsUrl": "https://maps.google.com/?q=28.2359118,-16.842463"
+  },
+  {
+    "name": "Tipsy Los Gigantes",
+    "description": "",
+    "area": "Los Gigantes",
+    "lat": 28.2422222,
+    "lng": -16.8391667,
+    "mapsUrl": "https://maps.google.com/?q=28.2422222,-16.8391667"
+  },
+  {
+    "name": "Sorriso",
+    "description": "",
+    "area": "Los Gigantes",
+    "lat": 28.2384802,
+    "lng": -16.8450126,
+    "mapsUrl": "https://maps.google.com/?q=28.2384802,-16.8450126"
+  },
+  {
+    "name": "Pizzería Cafeterìa El Paseo",
+    "description": "",
+    "area": "Los Gigantes",
+    "lat": 28.2381718,
+    "lng": -16.841036,
+    "mapsUrl": "https://maps.google.com/?q=28.2381718,-16.841036"
+  },
+  {
+    "name": "Troqué Restaurante – Cocina española en La Caleta, Costa Adeje",
+    "description": "",
+    "area": "La Caleta",
+    "lat": 28.0995044,
+    "lng": -16.7542798,
+    "mapsUrl": "https://maps.google.com/?q=28.0995044,-16.7542798"
+  },
+  {
+    "name": "Tapitas la Caleta",
+    "description": "",
+    "area": "La Caleta",
+    "lat": 28.1021656,
+    "lng": -16.7571613,
+    "mapsUrl": "https://maps.google.com/?q=28.1021656,-16.7571613"
+  },
+  {
+    "name": "Restaurante Salitre",
+    "description": "",
+    "area": "La Caleta",
+    "lat": 28.100353,
+    "lng": -16.755306,
+    "mapsUrl": "https://maps.google.com/?q=28.100353,-16.755306"
+  },
+  {
+    "name": "La Torre del Mirador",
+    "description": "",
+    "area": "Costa Adeje",
+    "lat": 28.092074,
+    "lng": -16.744416,
+    "mapsUrl": "https://maps.google.com/?q=28.092074,-16.744416"
+  },
+  {
+    "name": "Chiringuito Pirata",
+    "description": "",
+    "area": "La Tejita",
+    "lat": 28.0303225,
+    "lng": -16.5632341,
+    "mapsUrl": "https://maps.google.com/?q=28.0303225,-16.5632341"
+  },
+  {
+    "name": "(El Rincon de Nadine)",
+    "description": "",
+    "area": "El Médano",
+    "lat": 28.047131,
+    "lng": -16.5388615,
+    "mapsUrl": "https://maps.google.com/?q=28.047131,-16.5388615"
+  },
+  {
+    "name": "Lille café",
+    "description": "",
+    "area": "El Médano",
+    "lat": 28.0461687,
+    "lng": -16.5376807,
+    "mapsUrl": "https://maps.google.com/?q=28.0461687,-16.5376807"
+  },
+  {
+    "name": "Ubuntu cafe",
+    "description": "",
+    "area": "El Médano",
+    "lat": 28.044276,
+    "lng": -16.5359651,
+    "mapsUrl": "https://maps.google.com/?q=28.044276,-16.5359651"
+  },
+  {
+    "name": "Rincón del Marinero - Tajao",
+    "description": "",
+    "area": "Tajao",
+    "lat": 28.1099309,
+    "lng": -16.4691969,
+    "mapsUrl": "https://maps.google.com/?q=28.1099309,-16.4691969"
+  },
+  {
+    "name": "Tasca Añepa",
+    "description": "",
+    "area": "Abades",
+    "lat": 28.1429849,
+    "lng": -16.4400535,
+    "mapsUrl": "https://maps.google.com/?q=28.1429849,-16.4400535"
+  },
+  {
+    "name": "Tasca Rincón de Tara",
+    "description": "",
+    "area": "Güímar",
+    "lat": 28.316333,
+    "lng": -16.41184,
+    "mapsUrl": "https://maps.google.com/?q=28.316333,-16.41184"
+  },
+  {
+    "name": "Restaurante Amoremio",
+    "description": "",
+    "area": "Candelaria",
+    "lat": 28.352278,
+    "lng": -16.3702605,
+    "mapsUrl": "https://maps.google.com/?q=28.352278,-16.3702605"
+  },
+  {
+    "name": "Freiduría / Abacería La Mar",
+    "description": "",
+    "area": "Candelaria",
+    "lat": 28.35352,
+    "lng": -16.37013,
+    "mapsUrl": "https://maps.google.com/?q=28.35352,-16.37013"
+  },
+  {
+    "name": "Restaurante Rincón de Pedro",
+    "description": "",
+    "area": "Santa Cruz",
+    "lat": 28.4603696,
+    "lng": -16.2551047,
+    "mapsUrl": "https://maps.google.com/?q=28.4603696,-16.2551047"
+  },
+  {
+    "name": "Bodeguita Canaria",
+    "description": "",
+    "area": "Santa Cruz",
+    "lat": 28.4658969,
+    "lng": -16.2493572,
+    "mapsUrl": "https://maps.google.com/?q=28.4658969,-16.2493572"
+  },
+  {
+    "name": "bodegon el puntero",
+    "description": "",
+    "area": "Santa Cruz",
+    "lat": 28.468176,
+    "lng": -16.2538736,
+    "mapsUrl": "https://maps.google.com/?q=28.468176,-16.2538736"
+  },
+  {
+    "name": "Ghio’s Burger Crafters",
+    "description": "",
+    "area": "Santa Cruz",
+    "lat": 28.4688878,
+    "lng": -16.2482504,
+    "mapsUrl": "https://maps.google.com/?q=28.4688878,-16.2482504"
+  },
+  {
+    "name": "Restaurante Más Que Carne",
+    "description": "",
+    "area": "Santa Cruz",
+    "lat": 28.47445,
+    "lng": -16.24693,
+    "mapsUrl": "https://maps.google.com/?q=28.47445,-16.24693"
+  },
+  {
+    "name": "Etéreo by Pedro Nel",
+    "description": "",
+    "area": "Santa Cruz",
+    "lat": 28.4733955,
+    "lng": -16.2520925,
+    "mapsUrl": "https://maps.google.com/?q=28.4733955,-16.2520925"
+  },
+  {
+    "name": "Tasca 61",
+    "description": "",
+    "area": "La Laguna",
+    "lat": 28.4909876,
+    "lng": -16.3136569,
+    "mapsUrl": "https://maps.google.com/?q=28.4909876,-16.3136569"
+  },
+  {
+    "name": "LA COCRE",
+    "description": "",
+    "area": "La Laguna",
+    "lat": 28.4897745,
+    "lng": -16.3141623,
+    "mapsUrl": "https://maps.google.com/?q=28.4897745,-16.3141623"
+  },
+  {
+    "name": "Pizzería Paganini La Laguna",
+    "description": "",
+    "area": "La Laguna",
+    "lat": 28.4906094,
+    "lng": -16.3229156,
+    "mapsUrl": "https://maps.google.com/?q=28.4906094,-16.3229156"
+  },
+  {
+    "name": "Los Pinchitos",
+    "description": "",
+    "area": "Las Teresitas / San Andrés",
+    "lat": 28.505301,
+    "lng": -16.1920604,
+    "mapsUrl": "https://maps.google.com/?q=28.505301,-16.1920604"
+  },
+  {
+    "name": "Restaurante Rincón del Pescador",
+    "description": "",
+    "area": "Las Teresitas / San Andrés",
+    "lat": 28.5045724,
+    "lng": -16.1920278,
+    "mapsUrl": "https://maps.google.com/?q=28.5045724,-16.1920278"
+  },
+  {
+    "name": "Restaurante Casa Sánchez",
+    "description": "",
+    "area": "Punta del Hidalgo",
+    "lat": 28.5684791,
+    "lng": -16.3258803,
+    "mapsUrl": "https://maps.google.com/?q=28.5684791,-16.3258803"
+  },
+  {
+    "name": "Bar Restaurante Cofradía de Bajamar",
+    "description": "",
+    "area": "Bajamar",
+    "lat": 28.5553856,
+    "lng": -16.3445985,
+    "mapsUrl": "https://maps.google.com/?q=28.5553856,-16.3445985"
+  },
+  {
+    "name": "Restaurante Los Tarajales",
+    "description": "",
+    "area": "Bajamar",
+    "lat": 28.5545745,
+    "lng": -16.3451792,
+    "mapsUrl": "https://maps.google.com/?q=28.5545745,-16.3451792"
+  },
+  {
+    "name": "Casa Egón",
+    "description": "",
+    "area": "La Orotava",
+    "lat": 28.3895026,
+    "lng": -16.5241025,
+    "mapsUrl": "https://maps.google.com/?q=28.3895026,-16.5241025"
+  },
+  {
+    "name": "Terraza Tasca Villera",
+    "description": "",
+    "area": "La Orotava",
+    "lat": 28.3915051,
+    "lng": -16.5265442,
+    "mapsUrl": "https://maps.google.com/?q=28.3915051,-16.5265442"
+  },
+  {
+    "name": "Baraka Café & Grill",
+    "description": "",
+    "area": "Puerto de la Cruz",
+    "lat": 28.4115065,
+    "lng": -16.5595542,
+    "mapsUrl": "https://maps.google.com/?q=28.4115065,-16.5595542"
+  },
+  {
+    "name": "Rincón Del Mar",
+    "description": "",
+    "area": "Puerto de la Cruz",
+    "lat": 28.4107818,
+    "lng": -16.5649196,
+    "mapsUrl": "https://maps.google.com/?q=28.4107818,-16.5649196"
+  },
+  {
+    "name": "La Parada - Casa de Comidas",
+    "description": "",
+    "area": "Icod de los Vinos",
+    "lat": 28.3672222,
+    "lng": -16.7205556,
+    "mapsUrl": "https://maps.google.com/?q=28.3672222,-16.7205556"
+  },
+  {
+    "name": "El Rebojo | Bocados de Mar y Vinos",
+    "description": "",
+    "area": "Garachico",
+    "lat": 28.3735994,
+    "lng": -16.7646479,
+    "mapsUrl": "https://maps.google.com/?q=28.3735994,-16.7646479"
+  },
+  {
+    "name": "Tasca El Muelle Viejo - Restaurante Garachico",
+    "description": "",
+    "area": "Garachico",
+    "lat": 28.3719597,
+    "lng": -16.7669707,
+    "mapsUrl": "https://maps.google.com/?q=28.3719597,-16.7669707"
+  },
+  {
+    "name": "Restaurante \"El Guanche \" Alte Schule",
+    "description": "",
+    "area": "Masca",
+    "lat": 28.3048073,
+    "lng": -16.8412899,
+    "mapsUrl": "https://maps.google.com/?q=28.3048073,-16.8412899"
+  },
+  {
+    "name": "Casa Picar",
+    "description": "",
+    "area": "Taganana (Anaga)",
+    "lat": 28.560358,
+    "lng": -16.2168693,
+    "mapsUrl": "https://maps.google.com/?q=28.560358,-16.2168693"
+  },
+  {
+    "name": "Restaurante Roque las Ánimas",
+    "description": "",
+    "area": "Taganana (Anaga)",
+    "lat": 28.5641438,
+    "lng": -16.2144987,
+    "mapsUrl": "https://maps.google.com/?q=28.5641438,-16.2144987"
+  }
+]

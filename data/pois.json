@@ -1,0 +1,1343 @@
+[
+  {
+    "category": "landmark",
+    "name": "Mount Teide (volcano)",
+    "description": "Spain's highest peak",
+    "area": "Teide National Park",
+    "lat": 28.2723384,
+    "lng": -16.642508,
+    "mapsUrl": "https://maps.google.com/?q=28.2723384,-16.642508"
+  },
+  {
+    "category": "landmark",
+    "name": "Teide viewpoint",
+    "description": "",
+    "area": "Teide National Park",
+    "lat": 28.2700403,
+    "lng": -16.6387946,
+    "mapsUrl": "https://maps.google.com/?q=28.2700403,-16.6387946"
+  },
+  {
+    "category": "landmark",
+    "name": "Roques de García",
+    "description": "Famous rock formations beside the volcano (including the famous \"God's Finger\")",
+    "area": "Teide National Park",
+    "lat": 28.2242148,
+    "lng": -16.6321404,
+    "mapsUrl": "https://maps.google.com/?q=28.2242148,-16.6321404"
+  },
+  {
+    "category": "landmark",
+    "name": "San Cristóbal de La Laguna",
+    "description": "UNESCO World Heritage old town",
+    "area": "La Laguna",
+    "lat": 28.4874009,
+    "lng": -16.3159061,
+    "mapsUrl": "https://maps.google.com/?q=28.4874009,-16.3159061"
+  },
+  {
+    "category": "landmark",
+    "name": "Auditorio de Tenerife Adán Martín",
+    "description": "Futuristic concert hall in Santa Cruz",
+    "area": "Santa Cruz",
+    "lat": 28.4561009,
+    "lng": -16.251352,
+    "mapsUrl": "https://maps.google.com/?q=28.4561009,-16.251352"
+  },
+  {
+    "category": "landmark",
+    "name": "Basílica de Candelaria",
+    "description": "Pilgrimage site with statues of the Guanche kings on the square",
+    "area": "Candelaria",
+    "lat": 28.3512934,
+    "lng": -16.3694216,
+    "mapsUrl": "https://maps.google.com/?q=28.3512934,-16.3694216"
+  },
+  {
+    "category": "landmark",
+    "name": "Güímar Pyramids",
+    "description": "Complex of astronomically aligned step pyramids",
+    "area": "Güímar",
+    "lat": 28.3208138,
+    "lng": -16.4137526,
+    "mapsUrl": "https://maps.google.com/?q=28.3208138,-16.4137526"
+  },
+  {
+    "category": "landmark",
+    "name": "Drago Milenario",
+    "description": "Ancient dragon tree in Icod de los Vinos",
+    "area": "Icod de los Vinos",
+    "lat": 28.3665471,
+    "lng": -16.722216,
+    "mapsUrl": "https://maps.google.com/?q=28.3665471,-16.722216"
+  },
+  {
+    "category": "landmark",
+    "name": "Masca",
+    "description": "The \"Machu Picchu of the Canaries\"",
+    "area": "Masca",
+    "lat": 28.3045505,
+    "lng": -16.8404779,
+    "mapsUrl": "https://maps.google.com/?q=28.3045505,-16.8404779"
+  },
+  {
+    "category": "landmark",
+    "name": "Plaza de Masca",
+    "description": "",
+    "area": "Masca",
+    "lat": 28.3054472,
+    "lng": -16.8403985,
+    "mapsUrl": "https://maps.google.com/?q=28.3054472,-16.8403985"
+  },
+  {
+    "category": "landmark",
+    "name": "Acantilados de Los Gigantes",
+    "description": "Massive cliffs up to 600m high",
+    "area": "Los Gigantes",
+    "lat": 28.242121,
+    "lng": -16.8431746,
+    "mapsUrl": "https://maps.google.com/?q=28.242121,-16.8431746"
+  },
+  {
+    "category": "landmark",
+    "name": "Charco de Isla Cangrejo",
+    "description": "Natural volcanic rock pool",
+    "area": "Los Gigantes",
+    "lat": 28.2415615,
+    "lng": -16.8434783,
+    "mapsUrl": "https://maps.google.com/?q=28.2415615,-16.8434783"
+  },
+  {
+    "category": "landmark",
+    "name": "Los Gigantes viewpoint",
+    "description": "",
+    "area": "Los Gigantes",
+    "lat": 28.240759,
+    "lng": -16.8422874,
+    "mapsUrl": "https://maps.google.com/?q=28.240759,-16.8422874"
+  },
+  {
+    "category": "landmark",
+    "name": "Garachico",
+    "description": "Town destroyed by a lava flow in 1706",
+    "area": "Garachico",
+    "lat": 28.3732467,
+    "lng": -16.7640103,
+    "mapsUrl": "https://maps.google.com/?q=28.3732467,-16.7640103"
+  },
+  {
+    "category": "landmark",
+    "name": "Plaza de la Libertad (Freedom Square)",
+    "description": "",
+    "area": "Garachico",
+    "lat": 28.3732187,
+    "lng": -16.7645895,
+    "mapsUrl": "https://maps.google.com/?q=28.3732187,-16.7645895"
+  },
+  {
+    "category": "landmark",
+    "name": "San Miguel Castle",
+    "description": "",
+    "area": "Garachico",
+    "lat": 28.3732049,
+    "lng": -16.7660564,
+    "mapsUrl": "https://maps.google.com/?q=28.3732049,-16.7660564"
+  },
+  {
+    "category": "landmark",
+    "name": "Casa de los Balcones",
+    "description": "House of balconies in La Orotava",
+    "area": "La Orotava",
+    "lat": 28.3883333,
+    "lng": -16.5258333,
+    "mapsUrl": "https://maps.google.com/?q=28.3883333,-16.5258333"
+  },
+  {
+    "category": "landmark",
+    "name": "Casa Lercaro",
+    "description": "",
+    "area": "La Orotava",
+    "lat": 28.3890959,
+    "lng": -16.5260499,
+    "mapsUrl": "https://maps.google.com/?q=28.3890959,-16.5260499"
+  },
+  {
+    "category": "landmark",
+    "name": "Castillo de San Juan Bautista",
+    "description": "The \"Black Castle\" beside the Auditorio",
+    "area": "Santa Cruz",
+    "lat": 28.4554121,
+    "lng": -16.2523846,
+    "mapsUrl": "https://maps.google.com/?q=28.4554121,-16.2523846"
+  },
+  {
+    "category": "landmark",
+    "name": "Plaza de España",
+    "description": "The heart of the capital",
+    "area": "Santa Cruz",
+    "lat": 28.4670652,
+    "lng": -16.2472048,
+    "mapsUrl": "https://maps.google.com/?q=28.4670652,-16.2472048"
+  },
+  {
+    "category": "landmark",
+    "name": "Castillo de San Cristobal",
+    "description": "Largest Spanish fortification in the New World, built 1634-1790 to defend against land attacks",
+    "area": "Santa Cruz",
+    "lat": 28.4669857,
+    "lng": -16.2467901,
+    "mapsUrl": "https://maps.google.com/?q=28.4669857,-16.2467901"
+  },
+  {
+    "category": "landmark",
+    "name": "Church tower, Icod de los Vinos",
+    "description": "",
+    "area": "Icod de los Vinos",
+    "lat": 28.36718,
+    "lng": -16.721621,
+    "mapsUrl": "https://maps.google.com/?q=28.36718,-16.721621"
+  },
+  {
+    "category": "landmark",
+    "name": "San Telmo Shrine",
+    "description": "Small white chapel by the ocean in Puerto de la Cruz",
+    "area": "Puerto de la Cruz",
+    "lat": 28.4175442,
+    "lng": -16.545559,
+    "mapsUrl": "https://maps.google.com/?q=28.4175442,-16.545559"
+  },
+  {
+    "category": "landmark",
+    "name": "El Semáforo de Igueste",
+    "description": "Abandoned signal station on the Anaga cliffs",
+    "area": "Igueste de San Andrés",
+    "lat": 28.523394,
+    "lng": -16.145461,
+    "mapsUrl": "https://maps.google.com/?q=28.523394,-16.145461"
+  },
+  {
+    "category": "landmark",
+    "name": "Igueste beach",
+    "description": "",
+    "area": "Igueste de San Andrés",
+    "lat": 28.5231063,
+    "lng": -16.1522939,
+    "mapsUrl": "https://maps.google.com/?q=28.5231063,-16.1522939"
+  },
+  {
+    "category": "landmark",
+    "name": "Iglesia de Nuestra Señora de la Peña de Francia",
+    "description": "Catholic church built in 1697, with well-kept gardens, a Mudéjar-style wooden ceiling, and three naves",
+    "area": "Puerto de la Cruz",
+    "lat": 28.4170105,
+    "lng": -16.5481873,
+    "mapsUrl": "https://maps.google.com/?q=28.4170105,-16.5481873"
+  },
+  {
+    "category": "landmark",
+    "name": "Ayuntamiento de La Orotava",
+    "description": "Town hall",
+    "area": "La Orotava",
+    "lat": 28.389186,
+    "lng": -16.5247975,
+    "mapsUrl": "https://maps.google.com/?q=28.389186,-16.5247975"
+  },
+  {
+    "category": "landmark",
+    "name": "Cruz del Carmen viewpoint",
+    "description": "",
+    "area": "Cruz del Carmen (Anaga)",
+    "lat": 28.5303329,
+    "lng": -16.2804559,
+    "mapsUrl": "https://maps.google.com/?q=28.5303329,-16.2804559"
+  },
+  {
+    "category": "museum",
+    "name": "MUNA (Museum of Nature and Archaeology)",
+    "description": "Home of the Guanche mummies",
+    "area": "Santa Cruz",
+    "lat": 28.463895,
+    "lng": -16.249485,
+    "mapsUrl": "https://maps.google.com/?q=28.463895,-16.249485"
+  },
+  {
+    "category": "museum",
+    "name": "TEA Tenerife Espacio de las Artes",
+    "description": "Contemporary art centre",
+    "area": "Santa Cruz",
+    "lat": 28.4639687,
+    "lng": -16.2510159,
+    "mapsUrl": "https://maps.google.com/?q=28.4639687,-16.2510159"
+  },
+  {
+    "category": "museum",
+    "name": "Museum of Science and the Cosmos",
+    "description": "Interactive exhibits in La Laguna",
+    "area": "La Laguna",
+    "lat": 28.4756564,
+    "lng": -16.3088835,
+    "mapsUrl": "https://maps.google.com/?q=28.4756564,-16.3088835"
+  },
+  {
+    "category": "museum",
+    "name": "Fuerte de Almeyda Military Museum",
+    "description": "Home to the famous \"El Tigre\" cannon",
+    "area": "Santa Cruz",
+    "lat": 28.4753925,
+    "lng": -16.2477571,
+    "mapsUrl": "https://maps.google.com/?q=28.4753925,-16.2477571"
+  },
+  {
+    "category": "museum",
+    "name": "ARTlandya",
+    "description": "Doll museum in Icod",
+    "area": "Icod de los Vinos",
+    "lat": 28.3678115,
+    "lng": -16.6935635,
+    "mapsUrl": "https://maps.google.com/?q=28.3678115,-16.6935635"
+  },
+  {
+    "category": "museum",
+    "name": "Casa del Vino",
+    "description": "Wine museum in El Sauzal",
+    "area": "El Sauzal",
+    "lat": 28.470513,
+    "lng": -16.4346174,
+    "mapsUrl": "https://maps.google.com/?q=28.470513,-16.4346174"
+  },
+  {
+    "category": "museum",
+    "name": "Casa del Carnaval",
+    "description": "Museum of Santa Cruz's famous carnival",
+    "area": "Santa Cruz",
+    "lat": 28.4646698,
+    "lng": -16.2558632,
+    "mapsUrl": "https://maps.google.com/?q=28.4646698,-16.2558632"
+  },
+  {
+    "category": "museum",
+    "name": "Telesforo Bravo Visitor Center",
+    "description": "Volcanology museum",
+    "area": "La Orotava",
+    "lat": 28.3921891,
+    "lng": -16.5271976,
+    "mapsUrl": "https://maps.google.com/?q=28.3921891,-16.5271976"
+  },
+  {
+    "category": "museum",
+    "name": "Museum of History and Anthropology of Tenerife",
+    "description": "",
+    "area": "La Laguna",
+    "lat": 28.4895207,
+    "lng": -16.3149336,
+    "mapsUrl": "https://maps.google.com/?q=28.4895207,-16.3149336"
+  },
+  {
+    "category": "park-garden",
+    "name": "Puerta de Tierra Park",
+    "description": "",
+    "area": "Garachico",
+    "lat": 28.3720906,
+    "lng": -16.7653854,
+    "mapsUrl": "https://maps.google.com/?q=28.3720906,-16.7653854"
+  },
+  {
+    "category": "park-garden",
+    "name": "Hijuela del Botánico",
+    "description": "Beautiful botanical garden",
+    "area": "La Orotava",
+    "lat": 28.3890788,
+    "lng": -16.524097,
+    "mapsUrl": "https://maps.google.com/?q=28.3890788,-16.524097"
+  },
+  {
+    "category": "park-garden",
+    "name": "Marquesado de la Quinta Roja Garden",
+    "description": "Hillside park with fountains, flowers, a 19th-century mausoleum, and views over the sea and old town",
+    "area": "La Orotava",
+    "lat": 28.3895012,
+    "lng": -16.5229748,
+    "mapsUrl": "https://maps.google.com/?q=28.3895012,-16.5229748"
+  },
+  {
+    "category": "park-garden",
+    "name": "Teide National Park",
+    "description": "Lunar landscapes and lava fields",
+    "area": "Teide National Park",
+    "lat": 28.2538787,
+    "lng": -16.6182682,
+    "mapsUrl": "https://maps.google.com/?q=28.2538787,-16.6182682"
+  },
+  {
+    "category": "park-garden",
+    "name": "Parque Rural de Anaga",
+    "description": "Laurel forest (UNESCO)",
+    "area": "Cruz del Carmen (Anaga)",
+    "lat": 28.5308651,
+    "lng": -16.279915,
+    "mapsUrl": "https://maps.google.com/?q=28.5308651,-16.279915"
+  },
+  {
+    "category": "park-garden",
+    "name": "Sendero de los Sentidos",
+    "description": "Walking trail",
+    "area": "Cruz del Carmen (Anaga)",
+    "lat": 28.5309637,
+    "lng": -16.2796975,
+    "mapsUrl": "https://maps.google.com/?q=28.5309637,-16.2796975"
+  },
+  {
+    "category": "park-garden",
+    "name": "Botanical Garden",
+    "description": "",
+    "area": "Puerto de la Cruz",
+    "lat": 28.4115604,
+    "lng": -16.5358112,
+    "mapsUrl": "https://maps.google.com/?q=28.4115604,-16.5358112"
+  },
+  {
+    "category": "park-garden",
+    "name": "Palmetum",
+    "description": "Europe's largest palm collection (Santa Cruz)",
+    "area": "Santa Cruz",
+    "lat": 28.4522953,
+    "lng": -16.2563552,
+    "mapsUrl": "https://maps.google.com/?q=28.4522953,-16.2563552"
+  },
+  {
+    "category": "park-garden",
+    "name": "Parque García Sanabria",
+    "description": "City botanical garden",
+    "area": "Santa Cruz",
+    "lat": 28.4720365,
+    "lng": -16.2535446,
+    "mapsUrl": "https://maps.google.com/?q=28.4720365,-16.2535446"
+  },
+  {
+    "category": "park-garden",
+    "name": "Flower Clock",
+    "description": "",
+    "area": "Santa Cruz",
+    "lat": 28.4715172,
+    "lng": -16.2532834,
+    "mapsUrl": "https://maps.google.com/?q=28.4715172,-16.2532834"
+  },
+  {
+    "category": "park-garden",
+    "name": "Sitio Litre Garden",
+    "description": "Garden once visited by Agatha Christie",
+    "area": "Puerto de la Cruz",
+    "lat": 28.4133087,
+    "lng": -16.5441633,
+    "mapsUrl": "https://maps.google.com/?q=28.4133087,-16.5441633"
+  },
+  {
+    "category": "park-garden",
+    "name": "La Granja Municipal Park",
+    "description": "Large recreational park in the capital",
+    "area": "Santa Cruz",
+    "lat": 28.4631478,
+    "lng": -16.2653359,
+    "mapsUrl": "https://maps.google.com/?q=28.4631478,-16.2653359"
+  },
+  {
+    "category": "park-garden",
+    "name": "Pino Gordo",
+    "description": "Nature reserve with the largest pine tree",
+    "area": "Vilaflor",
+    "lat": 28.1652515,
+    "lng": -16.6368919,
+    "mapsUrl": "https://maps.google.com/?q=28.1652515,-16.6368919"
+  },
+  {
+    "category": "beach-nature",
+    "name": "César Manrique Water Park",
+    "description": "",
+    "area": "Santa Cruz",
+    "lat": 28.454147,
+    "lng": -16.2542081,
+    "mapsUrl": "https://maps.google.com/?q=28.454147,-16.2542081"
+  },
+  {
+    "category": "beach-nature",
+    "name": "Iglesia de la Concepción",
+    "description": "Oldest church in Santa Cruz",
+    "area": "La Laguna",
+    "lat": 28.4905227,
+    "lng": -16.320638,
+    "mapsUrl": "https://maps.google.com/?q=28.4905227,-16.320638"
+  },
+  {
+    "category": "beach-nature",
+    "name": "Loro Parque",
+    "description": "Zoo and botanical garden",
+    "area": "Puerto de la Cruz",
+    "lat": 28.4084895,
+    "lng": -16.5646751,
+    "mapsUrl": "https://maps.google.com/?q=28.4084895,-16.5646751"
+  },
+  {
+    "category": "beach-nature",
+    "name": "Playa de Las Teresitas",
+    "description": "Golden Saharan sand (San Andrés)",
+    "area": "Las Teresitas / San Andrés",
+    "lat": 28.5097119,
+    "lng": -16.1847441,
+    "mapsUrl": "https://maps.google.com/?q=28.5097119,-16.1847441"
+  },
+  {
+    "category": "beach-nature",
+    "name": "Playa de Benijo",
+    "description": "Wildest beach in Anaga",
+    "area": "Playa de Benijo (Anaga)",
+    "lat": 28.5721077,
+    "lng": -16.1925214,
+    "mapsUrl": "https://maps.google.com/?q=28.5721077,-16.1925214"
+  },
+  {
+    "category": "beach-nature",
+    "name": "Playa de la Tejita",
+    "description": "Natural beach next to Montaña Roja",
+    "area": "La Tejita",
+    "lat": 28.031759,
+    "lng": -16.5565657,
+    "mapsUrl": "https://maps.google.com/?q=28.031759,-16.5565657"
+  },
+  {
+    "category": "beach-nature",
+    "name": "El Médano",
+    "description": "Paradise for surfers and windsurfers",
+    "area": "El Médano",
+    "lat": 28.0459835,
+    "lng": -16.5363109,
+    "mapsUrl": "https://maps.google.com/?q=28.0459835,-16.5363109"
+  },
+  {
+    "category": "beach-nature",
+    "name": "Playa del Duque",
+    "description": "Most upscale beach in the south",
+    "area": "Costa Adeje",
+    "lat": 28.091441,
+    "lng": -16.7439204,
+    "mapsUrl": "https://maps.google.com/?q=28.091441,-16.7439204"
+  },
+  {
+    "category": "beach-nature",
+    "name": "Puerto de San Marcos",
+    "description": "Black-sand beach in a small bay near Icod",
+    "area": "Icod de los Vinos",
+    "lat": 28.3775569,
+    "lng": -16.7240134,
+    "mapsUrl": "https://maps.google.com/?q=28.3775569,-16.7240134"
+  },
+  {
+    "category": "beach-nature",
+    "name": "Playa del Castillo",
+    "description": "",
+    "area": "Puerto de la Cruz",
+    "lat": 28.4130486,
+    "lng": -16.5591424,
+    "mapsUrl": "https://maps.google.com/?q=28.4130486,-16.5591424"
+  },
+  {
+    "category": "beach-nature",
+    "name": "Playa de la Arena",
+    "description": "Natural black sand in Puerto de Santiago",
+    "area": "Puerto de Santiago",
+    "lat": 28.2297166,
+    "lng": -16.8408842,
+    "mapsUrl": "https://maps.google.com/?q=28.2297166,-16.8408842"
+  },
+  {
+    "category": "beach-nature",
+    "name": "Charco La Vaca",
+    "description": "",
+    "area": "Puerto de Santiago",
+    "lat": 28.2287532,
+    "lng": -16.8425804,
+    "mapsUrl": "https://maps.google.com/?q=28.2287532,-16.8425804"
+  },
+  {
+    "category": "beach-nature",
+    "name": "Charco De La Laja",
+    "description": "Rock pool in San Juan de la Rambla",
+    "area": "San Juan de la Rambla",
+    "lat": 28.3962952,
+    "lng": -16.6518597,
+    "mapsUrl": "https://maps.google.com/?q=28.3962952,-16.6518597"
+  },
+  {
+    "category": "beach-nature",
+    "name": "Bajamar",
+    "description": "Huge pools with waves spilling over the sea wall",
+    "area": "Bajamar",
+    "lat": 28.5564074,
+    "lng": -16.3444705,
+    "mapsUrl": "https://maps.google.com/?q=28.5564074,-16.3444705"
+  },
+  {
+    "category": "beach-nature",
+    "name": "Punta del Hidalgo viewpoint",
+    "description": "",
+    "area": "Punta del Hidalgo",
+    "lat": 28.5712518,
+    "lng": -16.3177717,
+    "mapsUrl": "https://maps.google.com/?q=28.5712518,-16.3177717"
+  },
+  {
+    "category": "beach-nature",
+    "name": "Barranco del Infierno",
+    "description": "\"Hell's Ravine\" in Adeje",
+    "area": "Adeje",
+    "lat": 28.1263,
+    "lng": -16.7237269,
+    "mapsUrl": "https://maps.google.com/?q=28.1263,-16.7237269"
+  },
+  {
+    "category": "beach-nature",
+    "name": "Cueva del viento",
+    "description": "One of the longest lava tubes in the world",
+    "area": "Icod de los Vinos",
+    "lat": 28.3520121,
+    "lng": -16.7039689,
+    "mapsUrl": "https://maps.google.com/?q=28.3520121,-16.7039689"
+  },
+  {
+    "category": "beach-nature",
+    "name": "Vilaflor",
+    "description": "Highest village in Spain",
+    "area": "Vilaflor",
+    "lat": 28.1578174,
+    "lng": -16.6372355,
+    "mapsUrl": "https://maps.google.com/?q=28.1578174,-16.6372355"
+  },
+  {
+    "category": "beach-nature",
+    "name": "La Caleta",
+    "description": "Former fishing village, now a hub of seafood restaurants",
+    "area": "La Caleta",
+    "lat": 28.1001994,
+    "lng": -16.7547945,
+    "mapsUrl": "https://maps.google.com/?q=28.1001994,-16.7547945"
+  },
+  {
+    "category": "beach-nature",
+    "name": "Playa La Caleta",
+    "description": "",
+    "area": "La Caleta",
+    "lat": 28.1012654,
+    "lng": -16.7571449,
+    "mapsUrl": "https://maps.google.com/?q=28.1012654,-16.7571449"
+  },
+  {
+    "category": "beach-nature",
+    "name": "Abades",
+    "description": "Settlement with an abandoned leper church",
+    "area": "Abades",
+    "lat": 28.1442895,
+    "lng": -16.4424057,
+    "mapsUrl": "https://maps.google.com/?q=28.1442895,-16.4424057"
+  },
+  {
+    "category": "beach-nature",
+    "name": "Former Abades Leper Hospital",
+    "description": "",
+    "area": "Abades",
+    "lat": 28.1463889,
+    "lng": -16.4374444,
+    "mapsUrl": "https://maps.google.com/?q=28.1463889,-16.4374444"
+  },
+  {
+    "category": "beach-nature",
+    "name": "Arco de Tajao",
+    "description": "Natural rock arch",
+    "area": "Tajao",
+    "lat": 28.1156976,
+    "lng": -16.4728695,
+    "mapsUrl": "https://maps.google.com/?q=28.1156976,-16.4728695"
+  },
+  {
+    "category": "beach-nature",
+    "name": "Plaza de la Patrona de Canarias",
+    "description": "",
+    "area": "Candelaria",
+    "lat": 28.3518046,
+    "lng": -16.3698676,
+    "mapsUrl": "https://maps.google.com/?q=28.3518046,-16.3698676"
+  },
+  {
+    "category": "beach-nature",
+    "name": "Punta del Hidalgo Lighthouse",
+    "description": "",
+    "area": "Punta del Hidalgo",
+    "lat": 28.5763221,
+    "lng": -16.328694,
+    "mapsUrl": "https://maps.google.com/?q=28.5763221,-16.328694"
+  },
+  {
+    "category": "beach-nature",
+    "name": "Taganana",
+    "description": "",
+    "area": "Taganana (Anaga)",
+    "lat": 28.5605853,
+    "lng": -16.2181647,
+    "mapsUrl": "https://maps.google.com/?q=28.5605853,-16.2181647"
+  },
+  {
+    "category": "beach-nature",
+    "name": "La Montañeta",
+    "description": "",
+    "area": "Taganana (Anaga)",
+    "lat": 28.5626984,
+    "lng": -16.2197784,
+    "mapsUrl": "https://maps.google.com/?q=28.5626984,-16.2197784"
+  },
+  {
+    "category": "shop",
+    "name": "Mercadona",
+    "description": "",
+    "area": "Puerto de Santiago",
+    "lat": 28.2350928,
+    "lng": -16.8349192,
+    "mapsUrl": "https://maps.google.com/?q=28.2350928,-16.8349192"
+  },
+  {
+    "category": "shop",
+    "name": "Centro Comercial La Magalona",
+    "description": "",
+    "area": "Icod de los Vinos",
+    "lat": 28.368972,
+    "lng": -16.7215905,
+    "mapsUrl": "https://maps.google.com/?q=28.368972,-16.7215905"
+  },
+  {
+    "category": "shop",
+    "name": "Mercadona",
+    "description": "",
+    "area": "Puerto de la Cruz",
+    "lat": 28.4154532,
+    "lng": -16.5432795,
+    "mapsUrl": "https://maps.google.com/?q=28.4154532,-16.5432795"
+  },
+  {
+    "category": "shop",
+    "name": "Centro Comercial La Ola",
+    "description": "",
+    "area": "Santa Cruz",
+    "lat": 28.4602042,
+    "lng": -16.2545971,
+    "mapsUrl": "https://maps.google.com/?q=28.4602042,-16.2545971"
+  },
+  {
+    "category": "shop",
+    "name": "Lidl",
+    "description": "",
+    "area": "Adeje",
+    "lat": 28.12806,
+    "lng": -16.74327,
+    "mapsUrl": "https://maps.google.com/?q=28.12806,-16.74327"
+  },
+  {
+    "category": "shop",
+    "name": "Lidl",
+    "description": "",
+    "area": "Los Gigantes",
+    "lat": 28.239133,
+    "lng": -16.839094,
+    "mapsUrl": "https://maps.google.com/?q=28.239133,-16.839094"
+  },
+  {
+    "category": "shop",
+    "name": "Lidl",
+    "description": "",
+    "area": "Puerto de la Cruz",
+    "lat": 28.38245,
+    "lng": -16.57598,
+    "mapsUrl": "https://maps.google.com/?q=28.38245,-16.57598"
+  },
+  {
+    "category": "shop",
+    "name": "Lidl",
+    "description": "",
+    "area": "Puerto de la Cruz",
+    "lat": 28.39777,
+    "lng": -16.54169,
+    "mapsUrl": "https://maps.google.com/?q=28.39777,-16.54169"
+  },
+  {
+    "category": "shop",
+    "name": "Lidl",
+    "description": "",
+    "area": "Puerto de la Cruz",
+    "lat": 28.40278,
+    "lng": -16.56893,
+    "mapsUrl": "https://maps.google.com/?q=28.40278,-16.56893"
+  },
+  {
+    "category": "shop",
+    "name": "Lidl",
+    "description": "",
+    "area": "Santa Cruz",
+    "lat": 28.45785,
+    "lng": -16.25844,
+    "mapsUrl": "https://maps.google.com/?q=28.45785,-16.25844"
+  },
+  {
+    "category": "shop",
+    "name": "HiperDino Puerto de la Cruz",
+    "description": "",
+    "area": "Puerto de la Cruz",
+    "lat": 28.4127869,
+    "lng": -16.554268,
+    "mapsUrl": "https://maps.google.com/?q=28.4127869,-16.554268"
+  },
+  {
+    "category": "shop",
+    "name": "HiperDino Picasso",
+    "description": "",
+    "area": "Puerto de la Cruz",
+    "lat": 28.4161579,
+    "lng": -16.5446729,
+    "mapsUrl": "https://maps.google.com/?q=28.4161579,-16.5446729"
+  },
+  {
+    "category": "shop",
+    "name": "HiperDino Fañabé",
+    "description": "",
+    "area": "Fañabé",
+    "lat": 28.1068421,
+    "lng": -16.7314106,
+    "mapsUrl": "https://maps.google.com/?q=28.1068421,-16.7314106"
+  },
+  {
+    "category": "shop",
+    "name": "HiperDino",
+    "description": "",
+    "area": "Fañabé",
+    "lat": 28.1168892,
+    "lng": -16.7306519,
+    "mapsUrl": "https://maps.google.com/?q=28.1168892,-16.7306519"
+  },
+  {
+    "category": "shop",
+    "name": "HiperDino Chafiras II",
+    "description": "",
+    "area": "Las Chafiras",
+    "lat": 28.050482,
+    "lng": -16.6164283,
+    "mapsUrl": "https://maps.google.com/?q=28.050482,-16.6164283"
+  },
+  {
+    "category": "shop",
+    "name": "HiperDino",
+    "description": "",
+    "area": "Güímar",
+    "lat": 28.3184355,
+    "lng": -16.4069944,
+    "mapsUrl": "https://maps.google.com/?q=28.3184355,-16.4069944"
+  },
+  {
+    "category": "shop",
+    "name": "SuperDino Parque Bulevar",
+    "description": "",
+    "area": "Santa Cruz",
+    "lat": 28.4703516,
+    "lng": -16.2515452,
+    "mapsUrl": "https://maps.google.com/?q=28.4703516,-16.2515452"
+  },
+  {
+    "category": "shop",
+    "name": "Municipal Market",
+    "description": "",
+    "area": "La Laguna",
+    "lat": 28.4929154,
+    "lng": -16.3135431,
+    "mapsUrl": "https://maps.google.com/?q=28.4929154,-16.3135431"
+  },
+  {
+    "category": "shop",
+    "name": "HiperDino Piedra Redonda",
+    "description": "",
+    "area": "Puerto de la Cruz",
+    "lat": 28.3983897,
+    "lng": -16.5442959,
+    "mapsUrl": "https://maps.google.com/?q=28.3983897,-16.5442959"
+  },
+  {
+    "category": "transport-parking",
+    "name": "Tenerife South Airport (TFS)",
+    "description": "Main tourist airport",
+    "area": "Tenerife South Airport",
+    "lat": 28.0467575,
+    "lng": -16.5725303,
+    "mapsUrl": "https://maps.google.com/?q=28.0467575,-16.5725303"
+  },
+  {
+    "category": "transport-parking",
+    "name": "Tenerife North Airport (TFN)",
+    "description": "Local and domestic flights",
+    "area": "Tenerife North Airport",
+    "lat": 28.4838073,
+    "lng": -16.3427673,
+    "mapsUrl": "https://maps.google.com/?q=28.4838073,-16.3427673"
+  },
+  {
+    "category": "transport-parking",
+    "name": "Tram interchange",
+    "description": "",
+    "area": "Santa Cruz",
+    "lat": 28.4589644,
+    "lng": -16.2509853,
+    "mapsUrl": "https://maps.google.com/?q=28.4589644,-16.2509853"
+  },
+  {
+    "category": "transport-parking",
+    "name": "Los Cristianos Port",
+    "description": "Fred Olsen and Naviera Armas ferries",
+    "area": "Los Cristianos",
+    "lat": 28.0489549,
+    "lng": -16.7195174,
+    "mapsUrl": "https://maps.google.com/?q=28.0489549,-16.7195174"
+  },
+  {
+    "category": "transport-parking",
+    "name": "Teide Cable Car",
+    "description": "Cable car (booking required months in advance!)",
+    "area": "Teide National Park",
+    "lat": 28.2700216,
+    "lng": -16.6388189,
+    "mapsUrl": "https://maps.google.com/?q=28.2700216,-16.6388189"
+  },
+  {
+    "category": "transport-parking",
+    "name": "Port terminal",
+    "description": "",
+    "area": "Santa Cruz",
+    "lat": 28.4723444,
+    "lng": -16.2465118,
+    "mapsUrl": "https://maps.google.com/?q=28.4723444,-16.2465118"
+  },
+  {
+    "category": "transport-parking",
+    "name": "Parking APK2 Weyler",
+    "description": "",
+    "area": "Santa Cruz",
+    "lat": 28.467861,
+    "lng": -16.255246,
+    "mapsUrl": "https://maps.google.com/?q=28.467861,-16.255246"
+  },
+  {
+    "category": "transport-parking",
+    "name": "Market parking (pedestrian entrance)",
+    "description": "",
+    "area": "Santa Cruz",
+    "lat": 28.463835,
+    "lng": -16.2522696,
+    "mapsUrl": "https://maps.google.com/?q=28.463835,-16.2522696"
+  },
+  {
+    "category": "transport-parking",
+    "name": "Parking Tenerif Santa Cruz",
+    "description": "",
+    "area": "Santa Cruz",
+    "lat": 28.4633877,
+    "lng": -16.2514813,
+    "mapsUrl": "https://maps.google.com/?q=28.4633877,-16.2514813"
+  },
+  {
+    "category": "transport-parking",
+    "name": "Parking La Ola",
+    "description": "",
+    "area": "Santa Cruz",
+    "lat": 28.4596945,
+    "lng": -16.254994,
+    "mapsUrl": "https://maps.google.com/?q=28.4596945,-16.254994"
+  },
+  {
+    "category": "transport-parking",
+    "name": "Parking Santa Rosalía",
+    "description": "",
+    "area": "Santa Cruz",
+    "lat": 28.4715413,
+    "lng": -16.2524412,
+    "mapsUrl": "https://maps.google.com/?q=28.4715413,-16.2524412"
+  },
+  {
+    "category": "transport-parking",
+    "name": "Parking",
+    "description": "",
+    "area": "Las Teresitas / San Andrés",
+    "lat": 28.5091184,
+    "lng": -16.1874046,
+    "mapsUrl": "https://maps.google.com/?q=28.5091184,-16.1874046"
+  },
+  {
+    "category": "transport-parking",
+    "name": "Public parking area",
+    "description": "",
+    "area": "Las Teresitas / San Andrés",
+    "lat": 28.5075474,
+    "lng": -16.1888614,
+    "mapsUrl": "https://maps.google.com/?q=28.5075474,-16.1888614"
+  },
+  {
+    "category": "transport-parking",
+    "name": "Free parking",
+    "description": "",
+    "area": "Playa de Benijo (Anaga)",
+    "lat": 28.5719632,
+    "lng": -16.1923751,
+    "mapsUrl": "https://maps.google.com/?q=28.5719632,-16.1923751"
+  },
+  {
+    "category": "transport-parking",
+    "name": "Parking Rodríguez Moure (El Remojo)",
+    "description": "",
+    "area": "La Laguna",
+    "lat": 28.4919467,
+    "lng": -16.3173057,
+    "mapsUrl": "https://maps.google.com/?q=28.4919467,-16.3173057"
+  },
+  {
+    "category": "transport-parking",
+    "name": "Parking Las Quinteras | MUVISA",
+    "description": "",
+    "area": "La Laguna",
+    "lat": 28.4866208,
+    "lng": -16.3124803,
+    "mapsUrl": "https://maps.google.com/?q=28.4866208,-16.3124803"
+  },
+  {
+    "category": "transport-parking",
+    "name": "Parking El Cristo | MUVISA",
+    "description": "",
+    "area": "La Laguna",
+    "lat": 28.4931646,
+    "lng": -16.3134966,
+    "mapsUrl": "https://maps.google.com/?q=28.4931646,-16.3134966"
+  },
+  {
+    "category": "transport-parking",
+    "name": "Parking La Baranda",
+    "description": "",
+    "area": "El Sauzal",
+    "lat": 28.4695749,
+    "lng": -16.4341504,
+    "mapsUrl": "https://maps.google.com/?q=28.4695749,-16.4341504"
+  },
+  {
+    "category": "transport-parking",
+    "name": "Free parking, La Orotava",
+    "description": "",
+    "area": "La Orotava",
+    "lat": 28.3907315,
+    "lng": -16.5197161,
+    "mapsUrl": "https://maps.google.com/?q=28.3907315,-16.5197161"
+  },
+  {
+    "category": "transport-parking",
+    "name": "Parking Lercaro",
+    "description": "",
+    "area": "La Orotava",
+    "lat": 28.3892048,
+    "lng": -16.5281632,
+    "mapsUrl": "https://maps.google.com/?q=28.3892048,-16.5281632"
+  },
+  {
+    "category": "transport-parking",
+    "name": "Parking",
+    "description": "",
+    "area": "Puerto de la Cruz",
+    "lat": 28.4152535,
+    "lng": -16.5473208,
+    "mapsUrl": "https://maps.google.com/?q=28.4152535,-16.5473208"
+  },
+  {
+    "category": "transport-parking",
+    "name": "Explanada del Muelle",
+    "description": "",
+    "area": "Puerto de la Cruz",
+    "lat": 28.4183927,
+    "lng": -16.5522541,
+    "mapsUrl": "https://maps.google.com/?q=28.4183927,-16.5522541"
+  },
+  {
+    "category": "transport-parking",
+    "name": "Aparcamientos del Loro Parque",
+    "description": "",
+    "area": "Puerto de la Cruz",
+    "lat": 28.4086657,
+    "lng": -16.566596,
+    "mapsUrl": "https://maps.google.com/?q=28.4086657,-16.566596"
+  },
+  {
+    "category": "transport-parking",
+    "name": "Parking",
+    "description": "",
+    "area": "Icod de los Vinos",
+    "lat": 28.3693043,
+    "lng": -16.7220078,
+    "mapsUrl": "https://maps.google.com/?q=28.3693043,-16.7220078"
+  },
+  {
+    "category": "transport-parking",
+    "name": "Garachico",
+    "description": "",
+    "area": "Garachico",
+    "lat": 28.371885,
+    "lng": -16.7680355,
+    "mapsUrl": "https://maps.google.com/?q=28.371885,-16.7680355"
+  },
+  {
+    "category": "transport-parking",
+    "name": "Aparcamiento Garachico",
+    "description": "",
+    "area": "Garachico",
+    "lat": 28.3749722,
+    "lng": -16.7634664,
+    "mapsUrl": "https://maps.google.com/?q=28.3749722,-16.7634664"
+  },
+  {
+    "category": "transport-parking",
+    "name": "Parking El Mirador",
+    "description": "",
+    "area": "Los Gigantes",
+    "lat": 28.2400741,
+    "lng": -16.8409099,
+    "mapsUrl": "https://maps.google.com/?q=28.2400741,-16.8409099"
+  },
+  {
+    "category": "transport-parking",
+    "name": "Parking",
+    "description": "",
+    "area": "Los Gigantes",
+    "lat": 28.2408828,
+    "lng": -16.8377834,
+    "mapsUrl": "https://maps.google.com/?q=28.2408828,-16.8377834"
+  },
+  {
+    "category": "transport-parking",
+    "name": "Free Carpark",
+    "description": "",
+    "area": "Puerto de Santiago",
+    "lat": 28.2290148,
+    "lng": -16.8407435,
+    "mapsUrl": "https://maps.google.com/?q=28.2290148,-16.8407435"
+  },
+  {
+    "category": "transport-parking",
+    "name": "La Caleta",
+    "description": "",
+    "area": "La Caleta",
+    "lat": 28.1018834,
+    "lng": -16.755236,
+    "mapsUrl": "https://maps.google.com/?q=28.1018834,-16.755236"
+  },
+  {
+    "category": "transport-parking",
+    "name": "La Tejita Beach Parking Lot",
+    "description": "",
+    "area": "La Tejita",
+    "lat": 28.0343989,
+    "lng": -16.5530365,
+    "mapsUrl": "https://maps.google.com/?q=28.0343989,-16.5530365"
+  },
+  {
+    "category": "transport-parking",
+    "name": "Parking El Medano",
+    "description": "",
+    "area": "El Médano",
+    "lat": 28.0463966,
+    "lng": -16.5399854,
+    "mapsUrl": "https://maps.google.com/?q=28.0463966,-16.5399854"
+  },
+  {
+    "category": "transport-parking",
+    "name": "Public parking",
+    "description": "",
+    "area": "Güímar",
+    "lat": 28.3158836,
+    "lng": -16.4106476,
+    "mapsUrl": "https://maps.google.com/?q=28.3158836,-16.4106476"
+  },
+  {
+    "category": "transport-parking",
+    "name": "Parking del muelle en Candelaria",
+    "description": "",
+    "area": "Candelaria",
+    "lat": 28.3550883,
+    "lng": -16.3697204,
+    "mapsUrl": "https://maps.google.com/?q=28.3550883,-16.3697204"
+  },
+  {
+    "category": "transport-parking",
+    "name": "Aparcamiento Interparking Plaza España - Parking 24 Horas Santa Cruz de Tenerife",
+    "description": "",
+    "area": "Santa Cruz",
+    "lat": 28.4676799,
+    "lng": -16.2467053,
+    "mapsUrl": "https://maps.google.com/?q=28.4676799,-16.2467053"
+  },
+  {
+    "category": "transport-parking",
+    "name": "Parking El Pilar",
+    "description": "",
+    "area": "Santa Cruz",
+    "lat": 28.470165,
+    "lng": -16.2518515,
+    "mapsUrl": "https://maps.google.com/?q=28.470165,-16.2518515"
+  },
+  {
+    "category": "transport-parking",
+    "name": "Parking Ramón y Cajal",
+    "description": "",
+    "area": "Santa Cruz",
+    "lat": 28.4653299,
+    "lng": -16.2530582,
+    "mapsUrl": "https://maps.google.com/?q=28.4653299,-16.2530582"
+  },
+  {
+    "category": "transport-parking",
+    "name": "Parking Las Teresitas",
+    "description": "",
+    "area": "Las Teresitas / San Andrés",
+    "lat": 28.5065395,
+    "lng": -16.189598,
+    "mapsUrl": "https://maps.google.com/?q=28.5065395,-16.189598"
+  },
+  {
+    "category": "toilet",
+    "name": "Public toilet",
+    "description": "",
+    "area": "Santa Cruz",
+    "lat": 28.462818,
+    "lng": -16.2480155,
+    "mapsUrl": "https://maps.google.com/?q=28.462818,-16.2480155"
+  },
+  {
+    "category": "toilet",
+    "name": "Public toilet",
+    "description": "",
+    "area": "Santa Cruz",
+    "lat": 28.4690556,
+    "lng": -16.2476702,
+    "mapsUrl": "https://maps.google.com/?q=28.4690556,-16.2476702"
+  },
+  {
+    "category": "toilet",
+    "name": "Public toilet",
+    "description": "",
+    "area": "Santa Cruz",
+    "lat": 28.4726422,
+    "lng": -16.2552111,
+    "mapsUrl": "https://maps.google.com/?q=28.4726422,-16.2552111"
+  },
+  {
+    "category": "toilet",
+    "name": "Public toilet",
+    "description": "",
+    "area": "Santa Cruz",
+    "lat": 28.4680432,
+    "lng": -16.2553202,
+    "mapsUrl": "https://maps.google.com/?q=28.4680432,-16.2553202"
+  },
+  {
+    "category": "toilet",
+    "name": "Public toilet",
+    "description": "",
+    "area": "Las Teresitas / San Andrés",
+    "lat": 28.5094601,
+    "lng": -16.1861953,
+    "mapsUrl": "https://maps.google.com/?q=28.5094601,-16.1861953"
+  },
+  {
+    "category": "toilet",
+    "name": "Public toilet",
+    "description": "",
+    "area": "Las Teresitas / San Andrés",
+    "lat": 28.507449,
+    "lng": -16.1886217,
+    "mapsUrl": "https://maps.google.com/?q=28.507449,-16.1886217"
+  },
+  {
+    "category": "toilet",
+    "name": "Public toilet",
+    "description": "",
+    "area": "Cruz del Carmen (Anaga)",
+    "lat": 28.530803,
+    "lng": -16.2801699,
+    "mapsUrl": "https://maps.google.com/?q=28.530803,-16.2801699"
+  },
+  {
+    "category": "toilet",
+    "name": "Public toilet",
+    "description": "",
+    "area": "Punta del Hidalgo",
+    "lat": 28.5665493,
+    "lng": -16.3317176,
+    "mapsUrl": "https://maps.google.com/?q=28.5665493,-16.3317176"
+  },
+  {
+    "category": "toilet",
+    "name": "Public restrooms",
+    "description": "",
+    "area": "El Médano",
+    "lat": 28.0445039,
+    "lng": -16.5385786,
+    "mapsUrl": "https://maps.google.com/?q=28.0445039,-16.5385786"
+  },
+  {
+    "category": "toilet",
+    "name": "Public toilet",
+    "description": "",
+    "area": "La Orotava",
+    "lat": 28.3888809,
+    "lng": -16.5232849,
+    "mapsUrl": "https://maps.google.com/?q=28.3888809,-16.5232849"
+  },
+  {
+    "category": "toilet",
+    "name": "Public toilet",
+    "description": "",
+    "area": "Puerto de la Cruz",
+    "lat": 28.4137092,
+    "lng": -16.5583877,
+    "mapsUrl": "https://maps.google.com/?q=28.4137092,-16.5583877"
+  },
+  {
+    "category": "toilet",
+    "name": "Public toilet",
+    "description": "",
+    "area": "Icod de los Vinos",
+    "lat": 28.3674101,
+    "lng": -16.7213885,
+    "mapsUrl": "https://maps.google.com/?q=28.3674101,-16.7213885"
+  },
+  {
+    "category": "toilet",
+    "name": "Public toilet",
+    "description": "",
+    "area": "Los Gigantes",
+    "lat": 28.2398658,
+    "lng": -16.8410213,
+    "mapsUrl": "https://maps.google.com/?q=28.2398658,-16.8410213"
+  },
+  {
+    "category": "toilet",
+    "name": "Public toilet",
+    "description": "",
+    "area": "Costa Adeje",
+    "lat": 28.0911959,
+    "lng": -16.7430028,
+    "mapsUrl": "https://maps.google.com/?q=28.0911959,-16.7430028"
+  },
+  {
+    "category": "toilet",
+    "name": "Public toilet",
+    "description": "",
+    "area": "Los Cristianos",
+    "lat": 28.0507326,
+    "lng": -16.7188693,
+    "mapsUrl": "https://maps.google.com/?q=28.0507326,-16.7188693"
+  }
+]

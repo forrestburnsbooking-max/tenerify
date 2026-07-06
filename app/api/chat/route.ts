@@ -6,6 +6,7 @@ import { getRoutesText } from "@/lib/routes";
 import { getLegendsText } from "@/lib/legends";
 import { getCultureText } from "@/lib/culture";
 import { getRestaurantsText } from "@/lib/restaurants";
+import { getPoisText } from "@/lib/pois";
 import { checkRateLimit, getClientIp } from "@/lib/ratelimit";
 import {
   getSession,
@@ -82,7 +83,7 @@ const LANGUAGE_NAMES: Record<string, string> = {
   uk: "Ukrainian", zh: "Chinese", ar: "Arabic", sv: "Swedish",
 };
 
-function buildStaticSystemPrompt(tours: string, routes: string, legends: string, culture: string, restaurants: string): string {
+function buildStaticSystemPrompt(tours: string, routes: string, legends: string, culture: string, restaurants: string, pois: string): string {
   return `You are Tenerify — a local from Tenerife Sur. Warm, direct, zero fluff. Like a friend who knows the island inside out.
 
 Goal: understand what they want → nail 1-2 recommendations → close the booking fast.
@@ -133,6 +134,19 @@ When recommending a place:
 - Naturally pair food with an experience when it fits ("...perfect for dinner after your sunset catamaran"), but the restaurant itself is just a tip, not a sale.
 - Only recommend restaurants from the list above. If we have nothing fitting their area/request, say so honestly rather than inventing a place.
 - **Don't dead-end on a price/cuisine gap.** If the area they picked has no place at the exact budget or cuisine they asked for, offer the closest option we DO have there (e.g. "the most affordable in Los Gigantes is…") and/or a strong match in the nearest neighbouring zone — never just reply that there's nothing. Always leave them with a real suggestion.
+
+## ISLAND MAP: SIGHTS, BEACHES, PARKING, SHOPS & PRACTICAL SPOTS (use for any "where is / how do I find / is there a" question)
+
+${pois}
+
+This is your island map knowledge — landmarks, museums, gardens, beaches & natural pools, supermarkets, airports/ports/parking, and public toilets, each with its area and a Google Maps pin. Use it to answer ANY practical or sightseeing question: "what's worth seeing near X", "where can I park at Masca", "is there a supermarket nearby", "where's a toilet at Las Teresitas".
+
+- **ALWAYS include the 📍 Google Maps link for every spot you name** — render it as a markdown link, e.g. [📍 Open in Google Maps](mapsUrl), using that spot's own 📍 URL from the list. A place without its map pin is a failure.
+- These are free public places — never trigger [BOOK_NOW] for them and never invent prices or opening hours you don't have. Exception: Teide Cable Car genuinely requires booking months ahead — flag that when it comes up.
+- When recommending a sight or beach, check the parking list for a car park in the same area and offer it in the same breath ("there's free parking at…") — especially for guests with a rental car.
+- Pair spots with our products naturally when it fits (a landmark near a tour stop, a beach after a boat trip, a self-drive route passing a sight) — but a "where is" answer comes first; don't turn every answer into a sales pitch.
+- If several spots match, pick the 2-3 closest to where the guest is staying or heading — don't dump the whole list.
+- If they ask for something not on the map (a pharmacy, a specific brand), say honestly you don't have it pinned and suggest the nearest thing you DO have.
 
 ## MESSAGE FORMAT RULES (critical)
 
@@ -428,7 +442,8 @@ export async function POST(req: NextRequest) {
     const legends = getLegendsText();
     const culture = getCultureText();
     const restaurants = getRestaurantsText();
-    const staticSystemPrompt = buildStaticSystemPrompt(tours, routes, legends, culture, restaurants);
+    const pois = getPoisText();
+    const staticSystemPrompt = buildStaticSystemPrompt(tours, routes, legends, culture, restaurants, pois);
     const dynamicContext = buildDynamicContext(weather, events, sessionContext, language);
 
     const response = await client.messages.create({
