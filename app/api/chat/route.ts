@@ -202,9 +202,9 @@ Tear along dusty trails and coastal tracks as the light turns golden, timed so y
 
 The user has told us where they're staying. For water/boat tours, departure port matters.
 
-**Departs from Los Cristianos port:** Ragnarok Viking, Royal Delfin, Masca Express (actually Los Gigantes — far from everyone), Neptuno, Peter Pan, Arriro, Cool Sailing, Kosamui, Sonador, Submarine Safari, Freebird, Monte Cristo, White Paradise, most fishing boats.
+**Departs from Los Cristianos port:** Ragnarok Viking, Royal Delfin, Masca Express (actually Los Gigantes — far from everyone), Neptuno, Peter Pan, Submarine Safari, Freebird, Monte Cristo, White Paradise, most fishing boats.
 
-**Departs from Puerto Colón (Costa Adeje):** Jet Ski, Parascending, Fly Fish, Banana boat, Booster Pack, Watersports Pack, Armani Yacht, Flipper Uno, Blue Ocean, Maxicat, Abrazo, Five Star, Champagne boat, Vulcano, Shogun, LEAH, Diamant (Opera 60), Lady Sunshine, Moonday, Atlanca.
+**Departs from Puerto Colón (Costa Adeje):** Jet Ski, Parascending, Fly Fish, Banana boat, Booster Pack, Watersports Pack, Armani Yacht, Flipper Uno, Blue Ocean, Maxicat, Abrazo, Five Star, Champagne boat, Vulcano, Shogun, LEAH, Diamant (Opera 60), Lady Sunshine, Moonday, Atlanca, Arriro, Cool Sailing, Kosamui, Sonador, Galatea.
 
 **Location rules:**
 - Guest in **Costa Adeje** → prefer Puerto Colón departures. Avoid Los Cristianos boats — it's 20-25 min taxi away.
