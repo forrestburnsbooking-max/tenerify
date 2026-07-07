@@ -186,7 +186,7 @@ type Message = {
   noSameDay?: boolean;
 };
 
-type Step = "hero" | "language" | "menu" | "who" | "category" | "location" | "chat";
+type Step = "hero" | "language" | "menu" | "bookMode" | "who" | "category" | "location" | "chat";
 
 const LANGUAGES = [
   { flag: "🇪🇸", label: "Español",    value: "es" },
@@ -388,6 +388,20 @@ const MENU_MESSAGES: Record<"route" | "restaurant" | "culture", string> = {
   culture: "Tell me about this island — its culture, people, food and traditions, and its legends and stories. What makes Tenerife special? Start me off with something, then offer to go deeper.",
 };
 
+// "Find & book" fork: hand-pick with the AI vs. browse the catalogue yourself.
+// Kept outside TRANSLATIONS so unlisted languages fall back to English.
+const BOOK_MODE_TEXTS: Record<string, { question: string; assist: string; catalog: string }> = {
+  en: { question: "How would you like to choose?", assist: "🎯 Pick for me — a couple of quick questions", catalog: "📖 I'll browse the catalogue myself" },
+  ru: { question: "Как удобнее выбрать?", assist: "🎯 Подбери за меня — пара быстрых вопросов", catalog: "📖 Сам посмотрю каталог" },
+  es: { question: "¿Cómo prefieres elegir?", assist: "🎯 Elige por mí — un par de preguntas rápidas", catalog: "📖 Prefiero ver el catálogo" },
+  de: { question: "Wie möchtet ihr auswählen?", assist: "🎯 Wähl für mich — ein paar schnelle Fragen", catalog: "📖 Ich schaue selbst in den Katalog" },
+  fr: { question: "Comment préfères-tu choisir ?", assist: "🎯 Choisis pour moi — quelques questions rapides", catalog: "📖 Je regarde le catalogue moi-même" },
+  it: { question: "Come preferisci scegliere?", assist: "🎯 Scegli per me — un paio di domande veloci", catalog: "📖 Guardo io il catalogo" },
+  nl: { question: "Hoe wil je kiezen?", assist: "🎯 Kies voor mij — een paar snelle vragen", catalog: "📖 Ik bekijk zelf de catalogus" },
+  pl: { question: "Jak wolisz wybrać?", assist: "🎯 Wybierz za mnie — kilka szybkich pytań", catalog: "📖 Sam przejrzę katalog" },
+  uk: { question: "Як зручніше обрати?", assist: "🎯 Підбери за мене — пара швидких питань", catalog: "📖 Сам подивлюся каталог" },
+};
+
 const WHO_OPTIONS = [
   { label: "👨‍👩‍👧 Family", value: "We are a family with kids" },
   { label: "💑 Couple", value: "We are a couple" },
@@ -412,6 +426,7 @@ const LOCATIONS = [
 export default function Home() {
   const [step, setStep] = useState<Step>("hero");
   const [menuChoice, setMenuChoice] = useState<string | null>(null);
+  const [bookModeChoice, setBookModeChoice] = useState<"assist" | "catalog" | null>(null);
   const [who, setWho] = useState("");
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
   const [location, setLocation] = useState("");
@@ -448,13 +463,37 @@ export default function Home() {
     // Check for existing session cookie to show "welcome back"
     setIsReturning(document.cookie.includes(SESSION_COOKIE));
 
-    // Deep link from a tour page: /?book=<Tour Title> jumps straight into chat
+    // Deep link from a tour page: /?book=<Tour Title> jumps straight into chat.
+    // Restore language and who from the server-side session first, so a guest
+    // who chatted in Russian and detoured through the catalogue isn't answered
+    // in English on return.
     const bookParam = new URLSearchParams(window.location.search).get("book");
     if (bookParam) {
       setStep("chat");
-      const whoValue = "Booking from tour page";
-      setWho(whoValue);
-      sendToAI(`I'd like to book: ${bookParam}`, [], whoValue, "");
+      // sessionStorage covers the same-tab catalogue detour (set on language/who
+      // selection); the server-side transcript covers a return in a fresh tab.
+      const storedLang = sessionStorage.getItem("tfy_lang") ?? "";
+      const storedWho = sessionStorage.getItem("tfy_who") ?? "";
+      const start = (lang: string, whoValue: string) => {
+        if (lang) setSelectedLanguage(lang);
+        setWho(whoValue);
+        sendToAI(`I'd like to book: ${bookParam}`, [], whoValue, lang);
+      };
+      if (storedLang || storedWho) {
+        start(storedLang, storedWho || "Booking from tour page");
+      } else {
+        fetch("/api/session/transcript")
+          .then((r) => r.json())
+          .catch(() => ({}))
+          .then((d) => {
+            const lang = typeof d?.language === "string" && d.language ? d.language : "";
+            const whoValue =
+              typeof d?.who === "string" && d.who && d.who !== "Open chat"
+                ? d.who
+                : "Booking from tour page";
+            start(lang, whoValue);
+          });
+      }
       return;
     }
 
@@ -499,13 +538,14 @@ export default function Home() {
 
   function handleLanguageSelect(lang: string) {
     setSelectedLanguage(lang);
+    sessionStorage.setItem("tfy_lang", lang);
     setStep("menu");
   }
 
   async function handleMenuOption(id: "book" | "route" | "restaurant" | "culture" | "ask") {
     setMenuChoice(id);
     if (id === "book") {
-      setStep("who");
+      setStep("bookMode");
       return;
     }
     if (id === "ask") {
@@ -525,11 +565,13 @@ export default function Home() {
       handleLanguageSelect(lang);
     } else {
       setSelectedLanguage(lang);
+      sessionStorage.setItem("tfy_lang", lang);
     }
   }
 
   function handleWho(option: { label: string; value: string }) {
     setWho(option.value);
+    sessionStorage.setItem("tfy_who", option.value);
     setStep("category");
   }
 
@@ -695,7 +737,7 @@ export default function Home() {
 
       <header className="relative flex items-center gap-3 px-5 border-b border-white/8" style={{ paddingTop: "max(env(safe-area-inset-top, 0px), 16px)", paddingBottom: "16px" }}>
         <button
-          onClick={() => { if (messages.some((m) => !m.hidden)) setSavedTranscript({ messages, who, language: selectedLanguage }); setStep("hero"); setMessages([]); setUsedOptions(new Set()); setSelectedCategories([]); setWho(""); setLocation(""); setSelectedLanguage(""); setMenuChoice(null); setShowCustomLocation(false); setCustomLocation(""); }}
+          onClick={() => { if (messages.some((m) => !m.hidden)) setSavedTranscript({ messages, who, language: selectedLanguage }); setStep("hero"); setMessages([]); setUsedOptions(new Set()); setSelectedCategories([]); setWho(""); setLocation(""); setSelectedLanguage(""); setMenuChoice(null); setBookModeChoice(null); setShowCustomLocation(false); setCustomLocation(""); }}
           className="w-8 h-8 hover:scale-110 transition-transform flex-shrink-0"
         >
           <img src="/logo-mark.svg" alt="" className="w-full h-full" />
@@ -775,6 +817,51 @@ export default function Home() {
             </div>
           </div>
         )}
+
+        {/* Book-mode fork: AI-assisted pick vs. browse the catalogue */}
+        {menuChoice === "book" && (step === "bookMode" || step === "who" || step === "category" || step === "location" || step === "chat") && (() => {
+          const bm = BOOK_MODE_TEXTS[selectedLanguage] ?? BOOK_MODE_TEXTS.en;
+          const isLocked = step !== "bookMode";
+          return (
+            <div className="flex gap-3 max-w-xl mx-auto w-full">
+              <div className="flex-shrink-0 mt-1 w-7 h-7 rounded-full overflow-hidden">
+                <img src="/logo-mark.svg" alt="" className="w-full h-full p-1" />
+              </div>
+              <div className="space-y-3 flex-1">
+                <div className="bg-white/6 border border-white/12 text-white rounded-2xl rounded-tl-none px-4 py-3 text-sm leading-relaxed">
+                  {bm.question}
+                </div>
+                <div className="grid grid-cols-1 gap-2">
+                  <button
+                    onClick={() => { if (!isLocked) { setBookModeChoice("assist"); setStep("who"); } }}
+                    disabled={isLocked}
+                    className={`px-4 py-2.5 rounded-2xl text-sm font-medium border transition-all text-left ${
+                      isLocked
+                        ? bookModeChoice === "assist"
+                          ? "bg-orange-500/20 border-orange-500 text-orange-300 cursor-default"
+                          : "bg-white/5 border-white/10 text-white/40 cursor-default"
+                        : "bg-white/8 border-white/15 text-white hover:border-orange-500 hover:text-orange-400 cursor-pointer"
+                    }`}
+                  >
+                    {bm.assist}
+                  </button>
+                  <a
+                    href="/tours"
+                    onClick={(e) => { if (isLocked) e.preventDefault(); else setBookModeChoice("catalog"); }}
+                    aria-disabled={isLocked}
+                    className={`px-4 py-2.5 rounded-2xl text-sm font-medium border transition-all text-left ${
+                      isLocked
+                        ? "bg-white/5 border-white/10 text-white/40 cursor-default pointer-events-none"
+                        : "bg-white/8 border-white/15 text-white hover:border-orange-500 hover:text-orange-400 cursor-pointer"
+                    }`}
+                  >
+                    {bm.catalog}
+                  </a>
+                </div>
+              </div>
+            </div>
+          );
+        })()}
 
         {/* Who selection */}
         {menuChoice === "book" && (step === "who" || step === "category" || step === "location" || step === "chat") && (

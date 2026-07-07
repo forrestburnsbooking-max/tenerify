@@ -12,6 +12,7 @@ import {
   SUBCATEGORY_EMOJI,
   type Tour,
 } from "@/lib/tours";
+import ToursCatalog, { type CatalogGroup } from "@/components/ToursCatalog";
 
 const title = "All Tenerife experiences & tours — book online | Tenerify.ai";
 const description =
@@ -30,50 +31,6 @@ export const metadata: Metadata = {
   },
 };
 
-function TourCard({ tour }: { tour: Tour }) {
-  const img = tourImages(tour)[0];
-  return (
-    <Link
-      href={`/tours/${tour.slug}`}
-      className="group flex flex-col rounded-2xl overflow-hidden bg-white/[0.03] border border-white/8 hover:border-orange-500/50 transition-all"
-    >
-      <div className="aspect-[16/10] bg-stone-900 overflow-hidden">
-        {img ? (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
-            src={img}
-            alt={tour.title}
-            loading="lazy"
-            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-          />
-        ) : (
-          <div className="w-full h-full flex items-center justify-center text-4xl text-stone-700">🌴</div>
-        )}
-      </div>
-      <div className="p-3 flex flex-col gap-1.5 flex-1">
-        <h3 className="text-sm font-semibold leading-snug line-clamp-2">{tour.title}</h3>
-        {tour.rating && tour.rating >= 4.0 && (
-          <div className="flex items-center gap-1 text-xs">
-            <span className="text-amber-400">★</span>
-            <span className="font-semibold text-white">{tour.rating.toFixed(1)}</span>
-            {tour.reviewCount ? (
-              <span className="text-stone-500">({tour.reviewCount.toLocaleString("en-US")})</span>
-            ) : null}
-          </div>
-        )}
-        <div className="mt-auto pt-1 flex items-center justify-between gap-2">
-          <span className="text-orange-400 font-semibold text-sm">{formatPriceFrom(tour)}</span>
-          {tour.duration && (
-            <span className="text-stone-200 text-[11px] bg-white/10 px-2 py-1 rounded-full whitespace-nowrap">
-              ⏱ {tour.duration}
-            </span>
-          )}
-        </div>
-      </div>
-    </Link>
-  );
-}
-
 export default function ToursIndexPage() {
   const tours = getAllTours();
 
@@ -82,6 +39,28 @@ export default function ToursIndexPage() {
     if (!bySub.has(t.category)) bySub.set(t.category, []);
     bySub.get(t.category)!.push(t);
   }
+
+  const groups: CatalogGroup[] = GROUP_ORDER.map((g) => ({
+    id: g,
+    label: GROUP_LABEL[g],
+    emoji: GROUP_EMOJI[g],
+    subs: GROUP_SUBCATEGORIES[g]
+      .filter((s) => bySub.has(s))
+      .map((s) => ({
+        id: s,
+        label: SUBCATEGORY_LABEL[s],
+        emoji: SUBCATEGORY_EMOJI[s],
+        tours: bySub.get(s)!.map((t) => ({
+          slug: t.slug,
+          title: t.title,
+          duration: t.duration,
+          rating: t.rating,
+          reviewCount: t.reviewCount,
+          img: tourImages(t)[0],
+          priceLabel: formatPriceFrom(t),
+        })),
+      })),
+  })).filter((g) => g.subs.length > 0);
 
   return (
     <div className="min-h-screen bg-[#0d0d0d] text-white">
@@ -100,29 +79,7 @@ export default function ToursIndexPage() {
           to get a personal recommendation.
         </p>
 
-        {GROUP_ORDER.map((group) => {
-          const subs = GROUP_SUBCATEGORIES[group].filter((s) => bySub.has(s));
-          if (!subs.length) return null;
-          return (
-            <section key={group} className="mb-12">
-              <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
-                <span>{GROUP_EMOJI[group]}</span> {GROUP_LABEL[group]}
-              </h2>
-              {subs.map((sub) => (
-                <div key={sub} className="mb-8">
-                  <h3 className="text-sm font-semibold text-stone-300 mb-3 flex items-center gap-2">
-                    <span>{SUBCATEGORY_EMOJI[sub]}</span> {SUBCATEGORY_LABEL[sub]}
-                  </h3>
-                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-                    {bySub.get(sub)!.map((t) => (
-                      <TourCard key={t.slug} tour={t} />
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </section>
-          );
-        })}
+        <ToursCatalog groups={groups} />
 
         <div className="mt-4 pt-6 border-t border-white/5">
           <Link href="/" className="text-stone-500 hover:text-white text-sm transition-colors">
