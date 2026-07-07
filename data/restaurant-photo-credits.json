@@ -1,0 +1,303 @@
+{
+  "el-cine-los-cristianos": {
+    "matchedName": "Bar Restaurante El Cine",
+    "matchedAddress": "P.º Juan Bariajo, 8, 38650 Los Cristianos, Santa Cruz de Tenerife, Spain",
+    "authors": [
+      "Jaime Martin Tamayo"
+    ]
+  },
+  "pescaito-los-cristianos": {
+    "matchedName": "Pescaito los cristianos",
+    "matchedAddress": "Callejon Leandra, 1, 38650 Arona, Santa Cruz de Tenerife, Spain",
+    "authors": [
+      "Rosa Maria Ampudia"
+    ]
+  },
+  "el-ventorrillo-los-cristianos": {
+    "matchedName": "El Ventorrillo",
+    "matchedAddress": "P.º Dulce María Loinaz, 18, 38650 Los Cristianos, Santa Cruz de Tenerife, Spain",
+    "authors": [
+      "El Ventorrillo"
+    ]
+  },
+  "taberna-vasca-txupinazo": {
+    "matchedName": "Taberna Vasca Txupinazo",
+    "matchedAddress": "Calle Berna, s/n, 38650 Los Cristianos, Santa Cruz de Tenerife, Spain",
+    "authors": [
+      "Jason Carroll"
+    ]
+  },
+  "quei-bravi-ragazzi-los-cristianos": {
+    "matchedName": "Quei bravi Ragazzi -Ristorante Italiano / Italian Restaurant.",
+    "matchedAddress": "P.º Lucia Barrios, 1, 38650 Los Cristianos, Santa Cruz de Tenerife, Spain",
+    "authors": [
+      "Quei bravi Ragazzi -Ristorante Italiano / Italian Restaurant."
+    ]
+  },
+  "qapaq-los-cristianos": {
+    "matchedName": "Restaurante qapaq",
+    "matchedAddress": "Av. la Habana, 14, 38650 Arona, Santa Cruz de Tenerife, Spain",
+    "authors": [
+      "Restaurante qapaq"
+    ]
+  },
+  "the-palms-fish-and-chips": {
+    "matchedName": "THE PALMS FISH & CHIPS",
+    "matchedAddress": "Av. Rafael Puig Lluvina, s/n, 38660 Playa de las Américas, Santa Cruz de Tenerife, Spain",
+    "authors": [
+      "THE PALMS FISH & CHIPS"
+    ]
+  },
+  "limonella-las-americas": {
+    "matchedName": "Limonella",
+    "matchedAddress": "C. Managua, 17, 38660 Arona, Santa Cruz de Tenerife, Spain",
+    "authors": [
+      "Limonella Italian Restaurant"
+    ]
+  },
+  "thai-botanico": {
+    "matchedName": "Thai Botanico | Authentic Thai Cuisine",
+    "matchedAddress": "1st floor Commercial Centre Safari, Avenida Las Americas 38650 Playa de la Américas Santa Cruz de Tenerife ES, Av. las Américas, 38660 Arona, Santa Cruz de Tenerife, Spain",
+    "authors": [
+      "Thai Botanico | Authentic Thai Cuisine"
+    ]
+  },
+  "la-medusa-las-americas": {
+    "matchedName": "La Medusa",
+    "matchedAddress": "Av. la Habana, 9, 38650 Arona, Santa Cruz de Tenerife, Spain",
+    "authors": [
+      "La Medusa Restaurant • Cocktail • Bar"
+    ]
+  },
+  "the-bank-steak-house": {
+    "matchedName": "The Bank Steakhouse",
+    "matchedAddress": "Av. Rafael Puig Lluvina, 38, 38660 Playa de las Américas, Santa Cruz de Tenerife, Spain",
+    "authors": [
+      "The Bank Steakhouse"
+    ]
+  },
+  "uluwatu-las-americas": {
+    "matchedName": "Uluwatu - Asian Peruvian Grill",
+    "matchedAddress": "C. Managua, 17, 38660 Arona, Santa Cruz de Tenerife, Spain",
+    "authors": [
+      "Uluwatu - Asian Peruvian Grill"
+    ]
+  },
+  "pizzeria-san-marco-costa-adeje": {
+    "matchedName": "Restaurante Pizzería San Marco",
+    "matchedAddress": "Centro Comercial The Duke, Av. de Bruselas, 12, 38660 Costa Adeje, Santa Cruz de Tenerife, Spain",
+    "authors": [
+      "Restaurante Pizzería San Marco"
+    ]
+  },
+  "pizzeria-originale-costa-adeje": {
+    "matchedName": "Pizzeria Originale",
+    "matchedAddress": "C. el Sauce, 6, 38660 Costa Adeje, Santa Cruz de Tenerife, Spain",
+    "authors": [
+      "Pizzeria Originale"
+    ]
+  },
+  "almar-tenerife-costa-adeje": {
+    "matchedName": "Almar Tenerife",
+    "matchedAddress": "C .C, Kristal center, C. Gran Bretaña, 10, 38660 Costa Adeje, Santa Cruz de Tenerife, Spain",
+    "authors": [
+      "Almar Tenerife"
+    ]
+  },
+  "donaire-costa-adeje": {
+    "matchedName": "Restaurante Donaire",
+    "matchedAddress": "C. Fernando Lopez Arvelo, 1, 38660 Costa Adeje, Santa Cruz de Tenerife, Spain",
+    "authors": [
+      "Restaurante Donaire"
+    ]
+  },
+  "besame-mucho-costa-adeje": {
+    "matchedName": "Bésame Mucho",
+    "matchedAddress": "Playas de Troya, Av. Rafael Puig Lluvina, 38660 Playa de las Américas, Santa Cruz de Tenerife, Spain",
+    "authors": [
+      "Bésame Mucho"
+    ]
+  },
+  "la-cupula-costa-adeje": {
+    "matchedName": "La Cupula Restaurant",
+    "matchedAddress": "Playa Fañabé, C. París, s/n, 38670 Costa Adeje, Santa Cruz de Tenerife, Spain",
+    "authors": [
+      "Restaurante La Cúpula - Adrian Hoteles"
+    ]
+  },
+  "san-ho-la-caleta": {
+    "matchedName": "San Hô Restaurant",
+    "matchedAddress": "Av. de la Virgen de Guadalupe, 21, 38679 La Caleta, Santa Cruz de Tenerife, Spain",
+    "authors": [
+      "San Hô"
+    ]
+  },
+  "tas-k-los-gigantes": {
+    "matchedName": "Tas-k",
+    "matchedAddress": "C. los Guíos, 16, 38683 Santiago del Teide, Santa Cruz de Tenerife, Spain",
+    "authors": [
+      "Tas-k"
+    ]
+  },
+  "mamma-lucia-los-gigantes": {
+    "matchedName": "Restaurante Pizzeria Mamma Lucia",
+    "matchedAddress": "Av. Jose Gonzalez Forte, 73, 38683 Santiago del Teide, Santa Cruz de Tenerife, Spain",
+    "authors": [
+      "Blessed Rose"
+    ]
+  },
+  "casa-edu-los-gigantes": {
+    "matchedName": "Casa Edu",
+    "matchedAddress": "Carr. Gral. Puerto de Santiago, 1, 38687 Alcalá, Santa Cruz de Tenerife, Spain",
+    "authors": [
+      "Delia Garcia"
+    ]
+  },
+  "sargo-los-gigantes": {
+    "matchedName": "Sargo restaurante",
+    "matchedAddress": "Av. Quinto Centenario, 34, 38683 Santiago del Teide, Santa Cruz de Tenerife, Spain",
+    "authors": [
+      "Liam Keeble"
+    ]
+  },
+  "kv-bar-gourmet-los-gigantes": {
+    "matchedName": "KV Bar Gourmet",
+    "matchedAddress": "C. Pob. Marinero, 7, 38683 Santiago del Teide, Santa Cruz de Tenerife, Spain",
+    "authors": [
+      "Jaakko Ilvonen"
+    ]
+  },
+  "cielo-y-mar-los-gigantes": {
+    "matchedName": "Cielo y mar",
+    "matchedAddress": "C. la Sirena, 12, 38683 Puerto de Santiago, Santa Cruz de Tenerife, Spain",
+    "authors": [
+      "Cielo y mar"
+    ]
+  },
+  "casa-mary-las-galletas": {
+    "matchedName": "Casa Mary",
+    "matchedAddress": "Carretera General la Estrella, TF-652, 23, 38631 Las Galletas, Santa Cruz de Tenerife, Spain",
+    "authors": [
+      "Restaurant Casa Mary"
+    ]
+  },
+  "restaurante-euro-las-galletas": {
+    "matchedName": "Restaurante Euro",
+    "matchedAddress": "P.º Maritimo, 6, 38631 Las Galletas, Santa Cruz de Tenerife, Spain",
+    "authors": [
+      "Restaurante Euro"
+    ]
+  },
+  "varadero-viejo-las-galletas": {
+    "matchedName": "Restaurante Varadero Viejo Las Galletas",
+    "matchedAddress": "C. el Varadero, 26, 38631 Las Galletas, Santa Cruz de Tenerife, Spain",
+    "authors": [
+      "Restaurante Varadero Viejo Las Galletas"
+    ]
+  },
+  "fish-art-costa-del-silencio": {
+    "matchedName": "Restaurant Fish-Art",
+    "matchedAddress": "C. Minerva, 16, 38630 Arona, Santa Cruz de Tenerife, Spain",
+    "authors": [
+      "Restaurant Fish-Art"
+    ]
+  },
+  "bouganville-costa-del-silencio": {
+    "matchedName": "Bouganville Ristorante",
+    "matchedAddress": "C. Diana, 10, 38630 Costa del Silencio, Santa Cruz de Tenerife, Spain",
+    "authors": [
+      "FRANCISCO JOSE GARCIA ALVAREZ"
+    ]
+  },
+  "viento-sur-costa-del-silencio": {
+    "matchedName": "Viento Sur",
+    "matchedAddress": "C. Minerva, 39, 38630 Arona, Santa Cruz de Tenerife, Spain",
+    "authors": [
+      "Viento Sur"
+    ]
+  },
+  "pangea-puerto-de-la-cruz": {
+    "matchedName": "Pangea Restaurant",
+    "matchedAddress": "C. Mequinez, 25, 38400 Puerto de la Cruz, Santa Cruz de Tenerife, Spain",
+    "authors": [
+      "Jiri Dvorak"
+    ]
+  },
+  "senorita-canelita-puerto-de-la-cruz": {
+    "matchedName": "Señorita Canelita",
+    "matchedAddress": "C. San Juan, 15, Loc 1, 38400 Puerto de la Cruz, Santa Cruz de Tenerife, Spain",
+    "authors": [
+      "Vi Marr"
+    ]
+  },
+  "arcon-tapas-puerto-de-la-cruz": {
+    "matchedName": "Arcón Tapas",
+    "matchedAddress": "Pl. Concejil, 2, 38400 Puerto de la Cruz, Santa Cruz de Tenerife, Spain",
+    "authors": [
+      "Arcón Tapas"
+    ]
+  },
+  "ibericos-gastrobar-puerto-de-la-cruz": {
+    "matchedName": "Ibéricos Gastro-bar",
+    "matchedAddress": "C. la Hoya, 14, 38400 Puerto de la Cruz, Santa Cruz de Tenerife, Spain",
+    "authors": [
+      "Ibéricos Gastro-bar"
+    ]
+  },
+  "longo-steak-house-puerto-de-la-cruz": {
+    "matchedName": "Longo Steak House",
+    "matchedAddress": "Calle de la Marina, 39, 38400 Puerto de la Cruz, Santa Cruz de Tenerife, Spain",
+    "authors": [
+      "Longo Steak House"
+    ]
+  },
+  "el-taller-seve-diaz-puerto-de-la-cruz": {
+    "matchedName": "El Taller de Seve Diaz",
+    "matchedAddress": "Calle San Felipe, 32, 38400 Puerto de la Cruz, Santa Cruz de Tenerife, Spain",
+    "authors": [
+      "Restaurante El Taller Seve Diaz"
+    ]
+  },
+  "guachinche-como-en-casa-la-laguna": {
+    "matchedName": "Guachinche Como En Casa",
+    "matchedAddress": "TF-235, 131, 38297 La Laguna, Santa Cruz de Tenerife, Spain",
+    "authors": [
+      "Simone Sgorbati"
+    ]
+  },
+  "la-perla-negra-la-laguna": {
+    "matchedName": "Restaurante La Perla Negra Alcampo La Laguna",
+    "matchedAddress": "Nivel 1 C.C. Alcampo, 38205 La Laguna, Santa Cruz de Tenerife, Spain",
+    "authors": [
+      "Restaurante La Perla Negra Alcampo La Laguna"
+    ]
+  },
+  "tasca-faracho-la-laguna": {
+    "matchedName": "Tasca Faracho",
+    "matchedAddress": "C. Santo Domingo, 26, 38201 La Laguna, Santa Cruz de Tenerife, Spain",
+    "authors": [
+      "Jerónimo Verbenita"
+    ]
+  },
+  "fusion-vinos-y-tapas-la-laguna": {
+    "matchedName": "Fusión vinos y tapas",
+    "matchedAddress": "C. San Agustín, 42, 38201 La Laguna, Santa Cruz de Tenerife, Spain",
+    "authors": [
+      "jean MINET"
+    ]
+  },
+  "maquila-la-laguna": {
+    "matchedName": "Restaurante Maquila",
+    "matchedAddress": "Cjón. Maquila, 6, 38202 La Laguna, Santa Cruz de Tenerife, Spain",
+    "authors": [
+      "M B"
+    ]
+  },
+  "big-nonna-la-laguna": {
+    "matchedName": "Big Nonna Tenerife",
+    "matchedAddress": "C. Hermanos Marrero, 8, 38201 La Laguna, Santa Cruz de Tenerife, Spain",
+    "authors": [
+      "Alba Galo"
+    ]
+  }
+}

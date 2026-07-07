@@ -5,8 +5,16 @@
     "cuisine": "Canarian / seafood",
     "area": "Los Cristianos (harbour)",
     "priceRange": "€",
-    "goodFor": ["budget", "authentic local", "fresh fish"],
-    "mustTry": ["grilled octopus", "fried squid (calamares)", "sepia"],
+    "goodFor": [
+      "budget",
+      "authentic local",
+      "fresh fish"
+    ],
+    "mustTry": [
+      "grilled octopus",
+      "fried squid (calamares)",
+      "sepia"
+    ],
     "description": "A cosy, no-frills classic by Los Cristianos harbour serving honest traditional Canarian cooking — especially fresh fish — at very reasonable prices (~€10–20 a head). A local favourite for an easy, tasty, wallet-friendly meal.",
     "meetingPoint": "Los Cristianos harbour",
     "mapsUrl": "https://maps.google.com/?q=Bar+Restaurante+El+Cine+Los+Cristianos",
@@ -14,7 +22,8 @@
     "bookingAdvised": false,
     "rating": 4.9,
     "reviewCount": 9100,
-    "reviewSource": "Google"
+    "reviewSource": "Google",
+    "imageUrl": "/images/restaurants/el-cine-los-cristianos.jpg"
   },
   {
     "slug": "pescaito-los-cristianos",
@@ -22,15 +31,24 @@
     "cuisine": "Spanish / seafood",
     "area": "Los Cristianos",
     "priceRange": "€",
-    "goodFor": ["budget", "families", "fresh fish"],
-    "mustTry": ["fried fish platter", "boquerones", "papas con mojo"],
+    "goodFor": [
+      "budget",
+      "families",
+      "fresh fish"
+    ],
+    "mustTry": [
+      "fried fish platter",
+      "boquerones",
+      "papas con mojo"
+    ],
     "description": "A bustling, well-priced fish spot loved by locals and visitors alike — generous plates of fresh, simply-done seafood at gentle prices (~€15–20 a head). Great for a relaxed, no-fuss lunch or dinner.",
     "meetingPoint": "Los Cristianos",
     "mapsUrl": "https://maps.google.com/?q=Pescaito+Los+Cristianos+Tenerife",
     "bookingAdvised": false,
     "rating": 4.9,
     "reviewCount": 2600,
-    "reviewSource": "Google"
+    "reviewSource": "Google",
+    "imageUrl": "/images/restaurants/pescaito-los-cristianos.jpg"
   },
   {
     "slug": "el-ventorrillo-los-cristianos",
@@ -38,8 +56,16 @@
     "cuisine": "Canarian / traditional",
     "area": "Los Cristianos",
     "priceRange": "€€",
-    "goodFor": ["families", "groups", "authentic local"],
-    "mustTry": ["grilled octopus", "papas arrugadas con mojo", "grilled meats"],
+    "goodFor": [
+      "families",
+      "groups",
+      "authentic local"
+    ],
+    "mustTry": [
+      "grilled octopus",
+      "papas arrugadas con mojo",
+      "grilled meats"
+    ],
     "description": "A buzzing little tavern in the pedestrian old streets of Los Cristianos, rustic Canarian decor and generous, honest plates. Famous for its grilled octopus. Where local families actually eat — great value at ~€20–30 a head.",
     "meetingPoint": "P.º Dulce María Loinaz 18, Los Cristianos",
     "mapsUrl": "https://maps.google.com/?q=El+Ventorrillo+Los+Cristianos",
@@ -47,7 +73,8 @@
     "bookingAdvised": true,
     "rating": 4.7,
     "reviewCount": 3600,
-    "reviewSource": "Google"
+    "reviewSource": "Google",
+    "imageUrl": "/images/restaurants/el-ventorrillo-los-cristianos.jpg"
   },
   {
     "slug": "taberna-vasca-txupinazo",
@@ -55,8 +82,16 @@
     "cuisine": "Basque / Spanish tapas",
     "area": "Los Cristianos",
     "priceRange": "€€",
-    "goodFor": ["groups", "foodies", "tapas night"],
-    "mustTry": ["cachopo (national award winner)", "Basque tapas", "pintxos"],
+    "goodFor": [
+      "groups",
+      "foodies",
+      "tapas night"
+    ],
+    "mustTry": [
+      "cachopo (national award winner)",
+      "Basque tapas",
+      "pintxos"
+    ],
     "description": "A Basque tavern a couple of streets back from the front in Los Cristianos, raved about for food, service and atmosphere. Their cachopo won the national 'best in the Canaries' contest. ~€20–30 per person — book ahead, it fills up.",
     "meetingPoint": "Calle Berna s/n, Los Cristianos",
     "mapsUrl": "https://maps.google.com/?q=Taberna+Vasca+Txupinazo+Los+Cristianos",
@@ -64,7 +99,8 @@
     "bookingAdvised": true,
     "rating": 4.6,
     "reviewCount": 2100,
-    "reviewSource": "Google"
+    "reviewSource": "Google",
+    "imageUrl": "/images/restaurants/taberna-vasca-txupinazo.jpg"
   },
   {
     "slug": "quei-bravi-ragazzi-los-cristianos",
@@ -72,15 +108,24 @@
     "cuisine": "Italian",
     "area": "Los Cristianos",
     "priceRange": "€€€",
-    "goodFor": ["couples", "special occasion", "foodies"],
-    "mustTry": ["fresh pasta", "truffle dishes", "Italian wine"],
+    "goodFor": [
+      "couples",
+      "special occasion",
+      "foodies"
+    ],
+    "mustTry": [
+      "fresh pasta",
+      "truffle dishes",
+      "Italian wine"
+    ],
     "description": "An elegant, highly-rated Italian doing refined fresh pasta and a serious wine list — a step up for a special dinner in Los Cristianos (~€40–55 a head). Polished service and a romantic feel; book ahead.",
     "meetingPoint": "Los Cristianos",
     "mapsUrl": "https://maps.google.com/?q=Quei+Bravi+Ragazzi+Los+Cristianos",
     "bookingAdvised": true,
     "rating": 4.9,
     "reviewCount": 810,
-    "reviewSource": "Google"
+    "reviewSource": "Google",
+    "imageUrl": "/images/restaurants/quei-bravi-ragazzi-los-cristianos.jpg"
   },
   {
     "slug": "qapaq-los-cristianos",
@@ -88,32 +133,49 @@
     "cuisine": "Peruvian",
     "area": "Los Cristianos",
     "priceRange": "€€€",
-    "goodFor": ["couples", "foodies", "something different"],
-    "mustTry": ["ceviche", "lomo saltado", "pisco sour"],
+    "goodFor": [
+      "couples",
+      "foodies",
+      "something different"
+    ],
+    "mustTry": [
+      "ceviche",
+      "lomo saltado",
+      "pisco sour"
+    ],
     "description": "Beautifully presented Peruvian cooking — vibrant ceviches and Nikkei plates that stand out from the usual. One of the highest-rated tables in Los Cristianos for a creative, upscale evening (~€40–50 a head).",
     "meetingPoint": "Los Cristianos",
     "mapsUrl": "https://maps.google.com/?q=Restaurante+Qapaq+Los+Cristianos",
     "bookingAdvised": true,
     "rating": 4.9,
     "reviewCount": 1200,
-    "reviewSource": "Google"
+    "reviewSource": "Google",
+    "imageUrl": "/images/restaurants/qapaq-los-cristianos.jpg"
   },
-
   {
     "slug": "the-palms-fish-and-chips",
     "name": "The Palms Fish & Chips",
     "cuisine": "British / fish & chips",
     "area": "Playa de las Américas",
     "priceRange": "€",
-    "goodFor": ["budget", "families", "casual"],
-    "mustTry": ["cod & chips", "battered sausage", "mushy peas"],
+    "goodFor": [
+      "budget",
+      "families",
+      "casual"
+    ],
+    "mustTry": [
+      "cod & chips",
+      "battered sausage",
+      "mushy peas"
+    ],
     "description": "A proper, well-rated British chippy for when you fancy a comforting, cheap bite (~€10–15 a head). Big portions, crisp batter — an easy family-friendly stop in Las Américas.",
     "meetingPoint": "Playa de las Américas",
     "mapsUrl": "https://maps.google.com/?q=The+Palms+Fish+and+Chips+Playa+de+las+Americas",
     "bookingAdvised": false,
     "rating": 4.6,
     "reviewCount": 1200,
-    "reviewSource": "Google"
+    "reviewSource": "Google",
+    "imageUrl": "/images/restaurants/the-palms-fish-and-chips.jpg"
   },
   {
     "slug": "limonella-las-americas",
@@ -121,15 +183,24 @@
     "cuisine": "Italian / pizza",
     "area": "Playa de las Américas",
     "priceRange": "€",
-    "goodFor": ["budget", "families", "casual"],
-    "mustTry": ["wood-fired pizza", "fresh pasta", "tiramisu"],
+    "goodFor": [
+      "budget",
+      "families",
+      "casual"
+    ],
+    "mustTry": [
+      "wood-fired pizza",
+      "fresh pasta",
+      "tiramisu"
+    ],
     "description": "A perennial favourite for proper wood-fired pizza and pasta at friendly prices (~€15–20 a head). Reliable, generous and family-friendly — one of the most-reviewed spots in Las Américas for a reason.",
     "meetingPoint": "Playa de las Américas",
     "mapsUrl": "https://maps.google.com/?q=Limonella+Playa+de+las+Americas",
     "bookingAdvised": true,
     "rating": 4.9,
     "reviewCount": 9600,
-    "reviewSource": "Google"
+    "reviewSource": "Google",
+    "imageUrl": "/images/restaurants/limonella-las-americas.jpg"
   },
   {
     "slug": "thai-botanico",
@@ -137,8 +208,16 @@
     "cuisine": "Thai",
     "area": "Playa de las Américas",
     "priceRange": "€€",
-    "goodFor": ["couples", "families", "something different"],
-    "mustTry": ["green curry", "pad thai", "tom yum"],
+    "goodFor": [
+      "couples",
+      "families",
+      "something different"
+    ],
+    "mustTry": [
+      "green curry",
+      "pad thai",
+      "tom yum"
+    ],
     "description": "Hugely popular authentic Thai spot in CC Safari, with thousands of glowing reviews and a lush, leafy setting. A welcome change from seafood-and-steak when you fancy bold, fragrant flavours. Mid-range prices.",
     "meetingPoint": "CC Safari, 1st floor, Av. de las Américas, Playa de las Américas",
     "mapsUrl": "https://maps.google.com/?q=Thai+Botanico+Tenerife",
@@ -146,7 +225,8 @@
     "bookingAdvised": true,
     "rating": 4.6,
     "reviewCount": 10000,
-    "reviewSource": "Google"
+    "reviewSource": "Google",
+    "imageUrl": "/images/restaurants/thai-botanico.jpg"
   },
   {
     "slug": "la-medusa-las-americas",
@@ -154,15 +234,24 @@
     "cuisine": "Mediterranean / seafood",
     "area": "Playa de las Américas",
     "priceRange": "€€",
-    "goodFor": ["couples", "groups", "seafood"],
-    "mustTry": ["fresh fish", "seafood rice", "carpaccio"],
+    "goodFor": [
+      "couples",
+      "groups",
+      "seafood"
+    ],
+    "mustTry": [
+      "fresh fish",
+      "seafood rice",
+      "carpaccio"
+    ],
     "description": "A stylish, very well-rated Mediterranean-seafood table for a relaxed mid-range dinner (~€30–40 a head). Fresh fish done with care and a buzzy atmosphere — book for evenings.",
     "meetingPoint": "Playa de las Américas",
     "mapsUrl": "https://maps.google.com/?q=La+Medusa+Playa+de+las+Americas",
     "bookingAdvised": true,
     "rating": 4.9,
     "reviewCount": 3600,
-    "reviewSource": "Google"
+    "reviewSource": "Google",
+    "imageUrl": "/images/restaurants/la-medusa-las-americas.jpg"
   },
   {
     "slug": "the-bank-steak-house",
@@ -170,8 +259,16 @@
     "cuisine": "Steakhouse",
     "area": "Playa de las Américas",
     "priceRange": "€€€",
-    "goodFor": ["couples", "special occasion", "meat lovers"],
-    "mustTry": ["fillet steak", "ribs", "grilled prawns"],
+    "goodFor": [
+      "couples",
+      "special occasion",
+      "meat lovers"
+    ],
+    "mustTry": [
+      "fillet steak",
+      "ribs",
+      "grilled prawns"
+    ],
     "description": "Stylish East-Coast-inspired steakhouse inside Hotel Villa Cortés on the seafront. Premium cuts cooked precisely, polished service, chic room — a reliable upscale dinner (~€45–60 a head).",
     "meetingPoint": "Av. Rafael Puig Lluvina 38, Hotel Villa Cortés, Playa de las Américas",
     "mapsUrl": "https://maps.google.com/?q=The+Bank+Steak+House+Playa+de+las+Americas",
@@ -179,7 +276,8 @@
     "bookingAdvised": true,
     "rating": 4.6,
     "reviewCount": 1400,
-    "reviewSource": "Tripadvisor"
+    "reviewSource": "Tripadvisor",
+    "imageUrl": "/images/restaurants/the-bank-steak-house.jpg"
   },
   {
     "slug": "uluwatu-las-americas",
@@ -187,32 +285,49 @@
     "cuisine": "Asian-Peruvian fusion",
     "area": "Playa de las Américas",
     "priceRange": "€€€",
-    "goodFor": ["couples", "foodies", "special occasion"],
-    "mustTry": ["Nikkei ceviche", "robata grill", "bao buns"],
+    "goodFor": [
+      "couples",
+      "foodies",
+      "special occasion"
+    ],
+    "mustTry": [
+      "Nikkei ceviche",
+      "robata grill",
+      "bao buns"
+    ],
     "description": "A sleek, creative Asian-Peruvian grill for a standout night out — bold Nikkei plates and robata-grilled dishes, beautifully presented (~€45–60 a head). One of the trendiest upscale tables in Las Américas; book ahead.",
     "meetingPoint": "Playa de las Américas",
     "mapsUrl": "https://maps.google.com/?q=Uluwatu+Asian+Peruvian+Grill+Tenerife",
     "bookingAdvised": true,
     "rating": 4.9,
     "reviewCount": 1700,
-    "reviewSource": "Google"
+    "reviewSource": "Google",
+    "imageUrl": "/images/restaurants/uluwatu-las-americas.jpg"
   },
-
   {
     "slug": "pizzeria-san-marco-costa-adeje",
     "name": "Restaurante Pizzería San Marco",
     "cuisine": "Italian / pizza",
     "area": "Costa Adeje",
     "priceRange": "€",
-    "goodFor": ["budget", "families", "casual"],
-    "mustTry": ["wood-fired pizza", "lasagne", "calzone"],
+    "goodFor": [
+      "budget",
+      "families",
+      "casual"
+    ],
+    "mustTry": [
+      "wood-fired pizza",
+      "lasagne",
+      "calzone"
+    ],
     "description": "A dependable, long-running Italian doing proper wood-fired pizza and pasta at easy prices (~€12–18 a head). Friendly and family-friendly — a safe budget bet in Costa Adeje.",
     "meetingPoint": "Costa Adeje",
     "mapsUrl": "https://maps.google.com/?q=Pizzeria+San+Marco+Costa+Adeje",
     "bookingAdvised": false,
     "rating": 4.8,
     "reviewCount": 1070,
-    "reviewSource": "Google"
+    "reviewSource": "Google",
+    "imageUrl": "/images/restaurants/pizzeria-san-marco-costa-adeje.jpg"
   },
   {
     "slug": "pizzeria-originale-costa-adeje",
@@ -220,15 +335,24 @@
     "cuisine": "Italian / pizza",
     "area": "Costa Adeje",
     "priceRange": "€",
-    "goodFor": ["budget", "families", "casual"],
-    "mustTry": ["Neapolitan pizza", "bruschetta", "tiramisu"],
+    "goodFor": [
+      "budget",
+      "families",
+      "casual"
+    ],
+    "mustTry": [
+      "Neapolitan pizza",
+      "bruschetta",
+      "tiramisu"
+    ],
     "description": "A small, genuinely-Italian pizzeria turning out excellent Neapolitan pizza at gentle prices (~€12–18 a head). Cosy and authentic — great for an unfussy family meal.",
     "meetingPoint": "Costa Adeje",
     "mapsUrl": "https://maps.google.com/?q=Pizzeria+Originale+Costa+Adeje",
     "bookingAdvised": false,
     "rating": 4.8,
     "reviewCount": 700,
-    "reviewSource": "Google"
+    "reviewSource": "Google",
+    "imageUrl": "/images/restaurants/pizzeria-originale-costa-adeje.jpg"
   },
   {
     "slug": "almar-tenerife-costa-adeje",
@@ -236,15 +360,24 @@
     "cuisine": "Seafood / Mediterranean",
     "area": "Costa Adeje",
     "priceRange": "€€",
-    "goodFor": ["couples", "families", "seafood"],
-    "mustTry": ["seafood paella", "grilled fish", "fritura"],
+    "goodFor": [
+      "couples",
+      "families",
+      "seafood"
+    ],
+    "mustTry": [
+      "seafood paella",
+      "grilled fish",
+      "fritura"
+    ],
     "description": "A bright, very popular seafood-Mediterranean spot for a relaxed mid-range meal (~€30–40 a head). Fresh fish and rice dishes done well; one of the most-reviewed tables in Costa Adeje.",
     "meetingPoint": "Costa Adeje",
     "mapsUrl": "https://maps.google.com/?q=Almar+Tenerife+Costa+Adeje",
     "bookingAdvised": true,
     "rating": 4.9,
     "reviewCount": 5000,
-    "reviewSource": "Google"
+    "reviewSource": "Google",
+    "imageUrl": "/images/restaurants/almar-tenerife-costa-adeje.jpg"
   },
   {
     "slug": "donaire-costa-adeje",
@@ -252,15 +385,23 @@
     "cuisine": "Contemporary Canarian / Spanish",
     "area": "Costa Adeje",
     "priceRange": "€€",
-    "goodFor": ["couples", "foodies", "special occasion"],
-    "mustTry": ["reimagined Canarian dishes", "tasting plates"],
+    "goodFor": [
+      "couples",
+      "foodies",
+      "special occasion"
+    ],
+    "mustTry": [
+      "reimagined Canarian dishes",
+      "tasting plates"
+    ],
     "description": "Boldly reinterpreted Canarian flavours in a smart contemporary setting — creative and beautifully plated, yet still mid-range (~€30–40 a head). A standout for foodies in Costa Adeje; book ahead.",
     "meetingPoint": "Costa Adeje",
     "mapsUrl": "https://maps.google.com/?q=Restaurante+Donaire+Costa+Adeje",
     "bookingAdvised": true,
     "rating": 4.9,
     "reviewCount": 1000,
-    "reviewSource": "Google"
+    "reviewSource": "Google",
+    "imageUrl": "/images/restaurants/donaire-costa-adeje.jpg"
   },
   {
     "slug": "besame-mucho-costa-adeje",
@@ -268,15 +409,24 @@
     "cuisine": "Seafood / grill",
     "area": "Costa Adeje",
     "priceRange": "€€€",
-    "goodFor": ["couples", "special occasion", "seafood"],
-    "mustTry": ["grilled seafood platter", "premium cuts", "lobster"],
+    "goodFor": [
+      "couples",
+      "special occasion",
+      "seafood"
+    ],
+    "mustTry": [
+      "grilled seafood platter",
+      "premium cuts",
+      "lobster"
+    ],
     "description": "An upmarket seafood-and-grill house for a treat dinner — top-quality fish and meat off the grill in a stylish room (~€45–60 a head). Reliably excellent; book for the evening.",
     "meetingPoint": "Costa Adeje",
     "mapsUrl": "https://maps.google.com/?q=Besame+Mucho+Costa+Adeje",
     "bookingAdvised": true,
     "rating": 4.9,
     "reviewCount": 2000,
-    "reviewSource": "Google"
+    "reviewSource": "Google",
+    "imageUrl": "/images/restaurants/besame-mucho-costa-adeje.jpg"
   },
   {
     "slug": "la-cupula-costa-adeje",
@@ -284,15 +434,23 @@
     "cuisine": "Fusion / fine dining",
     "area": "Costa Adeje",
     "priceRange": "€€€",
-    "goodFor": ["couples", "special occasion", "fine dining"],
-    "mustTry": ["tasting menu", "creative fusion plates"],
+    "goodFor": [
+      "couples",
+      "special occasion",
+      "fine dining"
+    ],
+    "mustTry": [
+      "tasting menu",
+      "creative fusion plates"
+    ],
     "description": "An elegant fusion fine-dining room for a memorable evening — inventive plates and a refined setting (~€55–70 a head). A polished step-up choice when you want to mark the occasion.",
     "meetingPoint": "Costa Adeje",
     "mapsUrl": "https://maps.google.com/?q=La+Cupula+Restaurant+Costa+Adeje",
     "bookingAdvised": true,
     "rating": 4.9,
     "reviewCount": 1000,
-    "reviewSource": "Google"
+    "reviewSource": "Google",
+    "imageUrl": "/images/restaurants/la-cupula-costa-adeje.jpg"
   },
   {
     "slug": "san-ho-la-caleta",
@@ -300,8 +458,15 @@
     "cuisine": "Japanese-Peruvian-Canarian fusion (Michelin ⭐)",
     "area": "La Caleta, Costa Adeje",
     "priceRange": "€€€€",
-    "goodFor": ["couples", "special occasion", "fine dining"],
-    "mustTry": ["Esencia tasting menu", "Canarian-Nikkei seafood"],
+    "goodFor": [
+      "couples",
+      "special occasion",
+      "fine dining"
+    ],
+    "mustTry": [
+      "Esencia tasting menu",
+      "Canarian-Nikkei seafood"
+    ],
     "description": "One Michelin star (Guide España 2025), inside the Royal Hideaway Corales Beach in La Caleta. Chef Adrián Bosch blends Japan, Peru and the Canaries into a refined tasting-menu experience (~€120 pp). For a once-in-a-trip splurge.",
     "meetingPoint": "Av. Virgen de Guadalupe 21, Royal Hideaway Corales Beach, La Caleta, Adeje",
     "mapsUrl": "https://maps.google.com/?q=San+Ho+Restaurant+La+Caleta+Tenerife",
@@ -309,17 +474,26 @@
     "bookingAdvised": true,
     "rating": 4.7,
     "reviewCount": 1400,
-    "reviewSource": "Tripadvisor"
+    "reviewSource": "Tripadvisor",
+    "imageUrl": "/images/restaurants/san-ho-la-caleta.jpg"
   },
-
   {
     "slug": "tas-k-los-gigantes",
     "name": "Tas-K",
     "cuisine": "Spanish tapas",
     "area": "Los Gigantes",
     "priceRange": "€",
-    "goodFor": ["budget", "tapas night", "groups", "casual"],
-    "mustTry": ["baked camembert bites", "Canarian potatoes with mojo", "shark taco"],
+    "goodFor": [
+      "budget",
+      "tapas night",
+      "groups",
+      "casual"
+    ],
+    "mustTry": [
+      "baked camembert bites",
+      "Canarian potatoes with mojo",
+      "shark taco"
+    ],
     "description": "A tiny, much-loved tapas bar a few metres from the beach — widely called the best tapas in Los Gigantes. ~€5 a tapa with 4-for-€10 deals (~€10–20 a head). Small and popular, so book ahead.",
     "meetingPoint": "Just off the beach, Los Gigantes",
     "mapsUrl": "https://maps.google.com/?q=Tas-K+Los+Gigantes+Tenerife",
@@ -327,7 +501,8 @@
     "bookingAdvised": true,
     "rating": 4.8,
     "reviewCount": 2400,
-    "reviewSource": "Google"
+    "reviewSource": "Google",
+    "imageUrl": "/images/restaurants/tas-k-los-gigantes.jpg"
   },
   {
     "slug": "mamma-lucia-los-gigantes",
@@ -335,15 +510,24 @@
     "cuisine": "Italian / pizza",
     "area": "Los Gigantes",
     "priceRange": "€",
-    "goodFor": ["budget", "families", "casual"],
-    "mustTry": ["wood-fired pizza", "fresh pasta", "calzone"],
+    "goodFor": [
+      "budget",
+      "families",
+      "casual"
+    ],
+    "mustTry": [
+      "wood-fired pizza",
+      "fresh pasta",
+      "calzone"
+    ],
     "description": "A friendly, well-rated Italian for a budget-friendly family meal in Los Gigantes (~€15–20 a head). Generous wood-fired pizzas and pasta; easy and reliable.",
     "meetingPoint": "Los Gigantes",
     "mapsUrl": "https://maps.google.com/?q=Mamma+Lucia+Los+Gigantes",
     "bookingAdvised": false,
     "rating": 4.8,
     "reviewCount": 2180,
-    "reviewSource": "Google"
+    "reviewSource": "Google",
+    "imageUrl": "/images/restaurants/mamma-lucia-los-gigantes.jpg"
   },
   {
     "slug": "casa-edu-los-gigantes",
@@ -351,15 +535,24 @@
     "cuisine": "Spanish / grill",
     "area": "Los Gigantes (Playa de la Arena)",
     "priceRange": "€€",
-    "goodFor": ["families", "groups", "meat lovers"],
-    "mustTry": ["grilled meats", "entrecôte", "Canarian sides"],
+    "goodFor": [
+      "families",
+      "groups",
+      "meat lovers"
+    ],
+    "mustTry": [
+      "grilled meats",
+      "entrecôte",
+      "Canarian sides"
+    ],
     "description": "A hugely popular local grill near Playa de la Arena — generous portions of well-cooked meat and Spanish classics at fair prices (~€25–30 a head). Thousands of happy reviews; book at peak times.",
     "meetingPoint": "Playa de la Arena, Los Gigantes",
     "mapsUrl": "https://maps.google.com/?q=Casa+Edu+Playa+de+la+Arena+Tenerife",
     "bookingAdvised": true,
     "rating": 4.9,
     "reviewCount": 7000,
-    "reviewSource": "Google"
+    "reviewSource": "Google",
+    "imageUrl": "/images/restaurants/casa-edu-los-gigantes.jpg"
   },
   {
     "slug": "sargo-los-gigantes",
@@ -367,15 +560,24 @@
     "cuisine": "Mediterranean / seafood",
     "area": "Los Gigantes",
     "priceRange": "€€",
-    "goodFor": ["couples", "families", "seafood"],
-    "mustTry": ["fresh fish", "seafood pasta", "carpaccio"],
+    "goodFor": [
+      "couples",
+      "families",
+      "seafood"
+    ],
+    "mustTry": [
+      "fresh fish",
+      "seafood pasta",
+      "carpaccio"
+    ],
     "description": "A polished but relaxed Mediterranean-seafood spot doing fresh fish and Italian-leaning plates very well (~€25–35 a head). Consistently top-rated in Los Gigantes for a mid-range dinner.",
     "meetingPoint": "Los Gigantes",
     "mapsUrl": "https://maps.google.com/?q=Sargo+Restaurante+Los+Gigantes",
     "bookingAdvised": true,
     "rating": 4.9,
     "reviewCount": 1470,
-    "reviewSource": "Google"
+    "reviewSource": "Google",
+    "imageUrl": "/images/restaurants/sargo-los-gigantes.jpg"
   },
   {
     "slug": "kv-bar-gourmet-los-gigantes",
@@ -383,8 +585,16 @@
     "cuisine": "French / seafood",
     "area": "Los Gigantes (harbour)",
     "priceRange": "€€€",
-    "goodFor": ["couples", "foodies", "harbour views"],
-    "mustTry": ["scallops", "seared tuna", "moules frites"],
+    "goodFor": [
+      "couples",
+      "foodies",
+      "harbour views"
+    ],
+    "mustTry": [
+      "scallops",
+      "seared tuna",
+      "moules frites"
+    ],
     "description": "An intimate harbourside bistro facing the boats and the famous cliffs, doing innovative homemade French-leaning cooking (~€40–55 a head). A touch pricier than its neighbours but consistently the best plate in Los Gigantes.",
     "meetingPoint": "Puerto de Los Gigantes (harbour front)",
     "mapsUrl": "https://maps.google.com/?q=KV+Bar+Gourmet+Los+Gigantes+Tenerife",
@@ -392,7 +602,8 @@
     "bookingAdvised": true,
     "rating": 4.7,
     "reviewCount": 820,
-    "reviewSource": "Tripadvisor"
+    "reviewSource": "Tripadvisor",
+    "imageUrl": "/images/restaurants/kv-bar-gourmet-los-gigantes.jpg"
   },
   {
     "slug": "cielo-y-mar-los-gigantes",
@@ -400,32 +611,49 @@
     "cuisine": "Spanish / seafood",
     "area": "Los Gigantes",
     "priceRange": "€€€",
-    "goodFor": ["couples", "special occasion", "sea views"],
-    "mustTry": ["catch of the day", "seafood rice", "local wines"],
+    "goodFor": [
+      "couples",
+      "special occasion",
+      "sea views"
+    ],
+    "mustTry": [
+      "catch of the day",
+      "seafood rice",
+      "local wines"
+    ],
     "description": "An upscale Spanish-seafood table with lovely views for a special evening in Los Gigantes (~€40–55 a head). Carefully cooked fresh fish and a calm, romantic setting; book ahead.",
     "meetingPoint": "Los Gigantes",
     "mapsUrl": "https://maps.google.com/?q=Cielo+y+Mar+Los+Gigantes",
     "bookingAdvised": true,
     "rating": 4.9,
     "reviewCount": 1690,
-    "reviewSource": "Google"
+    "reviewSource": "Google",
+    "imageUrl": "/images/restaurants/cielo-y-mar-los-gigantes.jpg"
   },
-
   {
     "slug": "casa-mary-las-galletas",
     "name": "Casa Mary",
     "cuisine": "Spanish / home cooking",
     "area": "Las Galletas",
     "priceRange": "€",
-    "goodFor": ["budget", "authentic local", "families"],
-    "mustTry": ["grilled meats", "homemade stews", "papas con mojo"],
+    "goodFor": [
+      "budget",
+      "authentic local",
+      "families"
+    ],
+    "mustTry": [
+      "grilled meats",
+      "homemade stews",
+      "papas con mojo"
+    ],
     "description": "A no-frills local institution in Las Galletas with a near-perfect rating from thousands of guests. Generous home-style Spanish cooking at very gentle prices (~€10–20 a head) — exactly where locals go.",
     "meetingPoint": "Las Galletas",
     "mapsUrl": "https://maps.google.com/?q=Casa+Mary+Las+Galletas+Tenerife",
     "bookingAdvised": false,
     "rating": 4.9,
     "reviewCount": 2400,
-    "reviewSource": "Google"
+    "reviewSource": "Google",
+    "imageUrl": "/images/restaurants/casa-mary-las-galletas.jpg"
   },
   {
     "slug": "restaurante-euro-las-galletas",
@@ -433,15 +661,24 @@
     "cuisine": "Pizza / Italian",
     "area": "Las Galletas",
     "priceRange": "€",
-    "goodFor": ["budget", "families", "casual"],
-    "mustTry": ["pizza", "pasta", "homemade desserts"],
+    "goodFor": [
+      "budget",
+      "families",
+      "casual"
+    ],
+    "mustTry": [
+      "pizza",
+      "pasta",
+      "homemade desserts"
+    ],
     "description": "A friendly budget pizzeria in Las Galletas with a loyal local following — tasty wood-fired pizza and pasta at very fair prices (~€10–18 a head). Easy and family-friendly.",
     "meetingPoint": "Las Galletas",
     "mapsUrl": "https://maps.google.com/?q=Restaurante+Euro+Las+Galletas",
     "bookingAdvised": false,
     "rating": 4.8,
     "reviewCount": 500,
-    "reviewSource": "Google"
+    "reviewSource": "Google",
+    "imageUrl": "/images/restaurants/restaurante-euro-las-galletas.jpg"
   },
   {
     "slug": "varadero-viejo-las-galletas",
@@ -449,15 +686,24 @@
     "cuisine": "Spanish / seafood",
     "area": "Las Galletas",
     "priceRange": "€€",
-    "goodFor": ["families", "groups", "fresh fish"],
-    "mustTry": ["fresh catch of the day", "seafood paella", "grilled octopus"],
+    "goodFor": [
+      "families",
+      "groups",
+      "fresh fish"
+    ],
+    "mustTry": [
+      "fresh catch of the day",
+      "seafood paella",
+      "grilled octopus"
+    ],
     "description": "A beloved seafront seafood house in the laid-back fishing town of Las Galletas — one of the highest ratings in the whole south. Honest portions of properly fresh fish at fair prices (~€25–35 a head).",
     "meetingPoint": "Seafront, Las Galletas",
     "mapsUrl": "https://maps.google.com/?q=Restaurante+Varadero+Viejo+Las+Galletas",
     "bookingAdvised": true,
     "rating": 4.9,
     "reviewCount": 3800,
-    "reviewSource": "Google"
+    "reviewSource": "Google",
+    "imageUrl": "/images/restaurants/varadero-viejo-las-galletas.jpg"
   },
   {
     "slug": "fish-art-costa-del-silencio",
@@ -465,15 +711,24 @@
     "cuisine": "European / seafood",
     "area": "Costa del Silencio",
     "priceRange": "€€",
-    "goodFor": ["couples", "families", "seafood"],
-    "mustTry": ["fresh fish", "seafood platter", "homemade desserts"],
+    "goodFor": [
+      "couples",
+      "families",
+      "seafood"
+    ],
+    "mustTry": [
+      "fresh fish",
+      "seafood platter",
+      "homemade desserts"
+    ],
     "description": "A warmly-run European-seafood restaurant in Costa del Silencio with thousands of glowing reviews — fresh fish, careful cooking and friendly service at mid-range prices (~€25–35 a head).",
     "meetingPoint": "Costa del Silencio",
     "mapsUrl": "https://maps.google.com/?q=Restaurant+Fish-Art+Costa+del+Silencio",
     "bookingAdvised": true,
     "rating": 4.9,
     "reviewCount": 1550,
-    "reviewSource": "Google"
+    "reviewSource": "Google",
+    "imageUrl": "/images/restaurants/fish-art-costa-del-silencio.jpg"
   },
   {
     "slug": "bouganville-costa-del-silencio",
@@ -481,15 +736,24 @@
     "cuisine": "Italian",
     "area": "Costa del Silencio",
     "priceRange": "€€€",
-    "goodFor": ["couples", "special occasion", "foodies"],
-    "mustTry": ["fresh pasta", "Italian mains", "tiramisu"],
+    "goodFor": [
+      "couples",
+      "special occasion",
+      "foodies"
+    ],
+    "mustTry": [
+      "fresh pasta",
+      "Italian mains",
+      "tiramisu"
+    ],
     "description": "A smart, well-loved Italian in Costa del Silencio for a step-up dinner (~€35–45 a head). Fresh handmade pasta and a proper wine list in an elegant setting; book for the evening.",
     "meetingPoint": "Costa del Silencio",
     "mapsUrl": "https://maps.google.com/?q=Bouganville+Ristorante+Costa+del+Silencio",
     "bookingAdvised": true,
     "rating": 4.8,
     "reviewCount": 860,
-    "reviewSource": "Google"
+    "reviewSource": "Google",
+    "imageUrl": "/images/restaurants/bouganville-costa-del-silencio.jpg"
   },
   {
     "slug": "viento-sur-costa-del-silencio",
@@ -497,32 +761,49 @@
     "cuisine": "French / European",
     "area": "Costa del Silencio",
     "priceRange": "€€€",
-    "goodFor": ["couples", "special occasion", "fine dining"],
-    "mustTry": ["French classics", "duck", "fine wines"],
+    "goodFor": [
+      "couples",
+      "special occasion",
+      "fine dining"
+    ],
+    "mustTry": [
+      "French classics",
+      "duck",
+      "fine wines"
+    ],
     "description": "A refined French-European table for a special, grown-up dinner in Costa del Silencio (~€40–55 a head). Classic technique, careful service and a calm room; book ahead.",
     "meetingPoint": "Costa del Silencio",
     "mapsUrl": "https://maps.google.com/?q=Viento+Sur+Costa+del+Silencio",
     "bookingAdvised": true,
     "rating": 4.6,
     "reviewCount": 685,
-    "reviewSource": "Google"
+    "reviewSource": "Google",
+    "imageUrl": "/images/restaurants/viento-sur-costa-del-silencio.jpg"
   },
-
   {
     "slug": "pangea-puerto-de-la-cruz",
     "name": "Pangea Restaurant",
     "cuisine": "Mexican / Latin American",
     "area": "Puerto de la Cruz (north)",
     "priceRange": "€",
-    "goodFor": ["budget", "groups", "casual"],
-    "mustTry": ["tacos", "nachos", "margaritas"],
+    "goodFor": [
+      "budget",
+      "groups",
+      "casual"
+    ],
+    "mustTry": [
+      "tacos",
+      "nachos",
+      "margaritas"
+    ],
     "description": "A lively, well-priced Mexican spot in Puerto de la Cruz — fresh tacos and cocktails in a fun atmosphere (~€12–20 a head). Great for a casual, cheerful bite. Note: Puerto is ~1h north.",
     "meetingPoint": "Puerto de la Cruz",
     "mapsUrl": "https://maps.google.com/?q=Pangea+Restaurant+Puerto+de+la+Cruz",
     "bookingAdvised": false,
     "rating": 4.9,
     "reviewCount": 940,
-    "reviewSource": "Google"
+    "reviewSource": "Google",
+    "imageUrl": "/images/restaurants/pangea-puerto-de-la-cruz.jpg"
   },
   {
     "slug": "senorita-canelita-puerto-de-la-cruz",
@@ -530,15 +811,24 @@
     "cuisine": "Spanish / European",
     "area": "Puerto de la Cruz (north)",
     "priceRange": "€",
-    "goodFor": ["budget", "couples", "casual"],
-    "mustTry": ["brunch plates", "Spanish tapas", "homemade cakes"],
+    "goodFor": [
+      "budget",
+      "couples",
+      "casual"
+    ],
+    "mustTry": [
+      "brunch plates",
+      "Spanish tapas",
+      "homemade cakes"
+    ],
     "description": "A charming, great-value little spot in Puerto de la Cruz beloved for brunch and casual Spanish-European plates (~€12–20 a head). Pretty, friendly and easy on the wallet. Note: Puerto is ~1h north.",
     "meetingPoint": "Puerto de la Cruz",
     "mapsUrl": "https://maps.google.com/?q=Senorita+Canelita+Puerto+de+la+Cruz",
     "bookingAdvised": false,
     "rating": 4.9,
     "reviewCount": 1650,
-    "reviewSource": "Google"
+    "reviewSource": "Google",
+    "imageUrl": "/images/restaurants/senorita-canelita-puerto-de-la-cruz.jpg"
   },
   {
     "slug": "arcon-tapas-puerto-de-la-cruz",
@@ -546,8 +836,16 @@
     "cuisine": "Canarian tapas",
     "area": "Puerto de la Cruz (north)",
     "priceRange": "€€",
-    "goodFor": ["foodies", "authentic local", "tapas night"],
-    "mustTry": ["papas arrugadas con mojo", "croquetas", "Canarian cheese"],
+    "goodFor": [
+      "foodies",
+      "authentic local",
+      "tapas night"
+    ],
+    "mustTry": [
+      "papas arrugadas con mojo",
+      "croquetas",
+      "Canarian cheese"
+    ],
     "description": "A favourite for authentic Canarian tapas by Plaza del Charco in Puerto de la Cruz. Famous for some of the best papas arrugadas and mojo on the island (~€20–30 a head). Note: Puerto is ~1h north.",
     "meetingPoint": "Near Plaza del Charco, Puerto de la Cruz",
     "mapsUrl": "https://maps.google.com/?q=Arcon+Tapas+Puerto+de+la+Cruz",
@@ -555,7 +853,8 @@
     "bookingAdvised": true,
     "rating": 4.6,
     "reviewCount": 900,
-    "reviewSource": "Google"
+    "reviewSource": "Google",
+    "imageUrl": "/images/restaurants/arcon-tapas-puerto-de-la-cruz.jpg"
   },
   {
     "slug": "ibericos-gastrobar-puerto-de-la-cruz",
@@ -563,15 +862,24 @@
     "cuisine": "Mediterranean / Spanish",
     "area": "Puerto de la Cruz (north)",
     "priceRange": "€€",
-    "goodFor": ["couples", "foodies", "tapas night"],
-    "mustTry": ["Iberian ham", "creative tapas", "local wines"],
+    "goodFor": [
+      "couples",
+      "foodies",
+      "tapas night"
+    ],
+    "mustTry": [
+      "Iberian ham",
+      "creative tapas",
+      "local wines"
+    ],
     "description": "A stylish, top-rated gastro-bar in Puerto de la Cruz serving creative Mediterranean-Spanish small plates and good wines (~€25–35 a head). Buzzy and modern; book at peak times. Note: Puerto is ~1h north.",
     "meetingPoint": "Puerto de la Cruz",
     "mapsUrl": "https://maps.google.com/?q=Ibericos+Gastrobar+Puerto+de+la+Cruz",
     "bookingAdvised": true,
     "rating": 4.9,
     "reviewCount": 3400,
-    "reviewSource": "Google"
+    "reviewSource": "Google",
+    "imageUrl": "/images/restaurants/ibericos-gastrobar-puerto-de-la-cruz.jpg"
   },
   {
     "slug": "longo-steak-house-puerto-de-la-cruz",
@@ -579,15 +887,24 @@
     "cuisine": "Steakhouse",
     "area": "Puerto de la Cruz (north)",
     "priceRange": "€€€",
-    "goodFor": ["couples", "special occasion", "meat lovers"],
-    "mustTry": ["premium steaks", "ribs", "grilled sides"],
+    "goodFor": [
+      "couples",
+      "special occasion",
+      "meat lovers"
+    ],
+    "mustTry": [
+      "premium steaks",
+      "ribs",
+      "grilled sides"
+    ],
     "description": "A well-regarded steakhouse in Puerto de la Cruz for a hearty upscale dinner (~€40–55 a head). Quality cuts cooked properly in a smart setting; book ahead. Note: Puerto is ~1h north.",
     "meetingPoint": "Puerto de la Cruz",
     "mapsUrl": "https://maps.google.com/?q=Longo+Steak+House+Puerto+de+la+Cruz",
     "bookingAdvised": true,
     "rating": 4.9,
     "reviewCount": 2750,
-    "reviewSource": "Google"
+    "reviewSource": "Google",
+    "imageUrl": "/images/restaurants/longo-steak-house-puerto-de-la-cruz.jpg"
   },
   {
     "slug": "el-taller-seve-diaz-puerto-de-la-cruz",
@@ -595,32 +912,48 @@
     "cuisine": "Contemporary Canarian (Michelin ⭐)",
     "area": "Puerto de la Cruz (north)",
     "priceRange": "€€€",
-    "goodFor": ["couples", "special occasion", "fine dining"],
-    "mustTry": ["tasting menu", "creative Canarian-Mediterranean plates"],
+    "goodFor": [
+      "couples",
+      "special occasion",
+      "fine dining"
+    ],
+    "mustTry": [
+      "tasting menu",
+      "creative Canarian-Mediterranean plates"
+    ],
     "description": "A Michelin-starred kitchen in Puerto de la Cruz where chef Seve Díaz turns local and Mediterranean produce into refined, creative dishes (~€60–80 a head). A north-coast destination for a special meal. Note: Puerto is ~1h north.",
     "meetingPoint": "Puerto de la Cruz",
     "mapsUrl": "https://maps.google.com/?q=El+Taller+Seve+Diaz+Puerto+de+la+Cruz",
     "bookingAdvised": true,
     "rating": 4.9,
     "reviewCount": 2600,
-    "reviewSource": "Google"
+    "reviewSource": "Google",
+    "imageUrl": "/images/restaurants/el-taller-seve-diaz-puerto-de-la-cruz.jpg"
   },
-
   {
     "slug": "guachinche-como-en-casa-la-laguna",
     "name": "Guachinche Como En Casa",
     "cuisine": "Canarian guachinche / grill",
     "area": "La Laguna (north)",
     "priceRange": "€",
-    "goodFor": ["budget", "authentic local", "groups"],
-    "mustTry": ["grilled meats", "papas con mojo", "house wine"],
+    "goodFor": [
+      "budget",
+      "authentic local",
+      "groups"
+    ],
+    "mustTry": [
+      "grilled meats",
+      "papas con mojo",
+      "house wine"
+    ],
     "description": "A classic Canarian guachinche near La Laguna — home-style grilled meats and local wine at rock-bottom prices (~€10–18 a head), with a huge local following. As authentic as it gets. Note: La Laguna is ~50 min north.",
     "meetingPoint": "La Laguna area",
     "mapsUrl": "https://maps.google.com/?q=Guachinche+Como+En+Casa+La+Laguna",
     "bookingAdvised": false,
     "rating": 4.9,
     "reviewCount": 11000,
-    "reviewSource": "Google"
+    "reviewSource": "Google",
+    "imageUrl": "/images/restaurants/guachinche-como-en-casa-la-laguna.jpg"
   },
   {
     "slug": "la-perla-negra-la-laguna",
@@ -628,15 +961,24 @@
     "cuisine": "Pizza / American",
     "area": "La Laguna (north)",
     "priceRange": "€",
-    "goodFor": ["budget", "families", "casual"],
-    "mustTry": ["pizza", "burgers", "loaded fries"],
+    "goodFor": [
+      "budget",
+      "families",
+      "casual"
+    ],
+    "mustTry": [
+      "pizza",
+      "burgers",
+      "loaded fries"
+    ],
     "description": "A buzzy, great-value pizza-and-American spot in La Laguna with thousands of reviews — big portions, easy prices (~€12–18 a head). Reliable for a casual, filling meal. Note: La Laguna is ~50 min north.",
     "meetingPoint": "La Laguna",
     "mapsUrl": "https://maps.google.com/?q=La+Perla+Negra+La+Laguna",
     "bookingAdvised": false,
     "rating": 4.9,
     "reviewCount": 5600,
-    "reviewSource": "Google"
+    "reviewSource": "Google",
+    "imageUrl": "/images/restaurants/la-perla-negra-la-laguna.jpg"
   },
   {
     "slug": "tasca-faracho-la-laguna",
@@ -644,8 +986,16 @@
     "cuisine": "Canarian tapas",
     "area": "La Laguna (north)",
     "priceRange": "€€",
-    "goodFor": ["couples", "foodies", "authentic local"],
-    "mustTry": ["croquetas", "pork cheek (carrillera)", "Canarian tapas"],
+    "goodFor": [
+      "couples",
+      "foodies",
+      "authentic local"
+    ],
+    "mustTry": [
+      "croquetas",
+      "pork cheek (carrillera)",
+      "Canarian tapas"
+    ],
     "description": "A tiny, characterful tapas tavern in a colonial house in La Laguna's UNESCO old town — only seven tables and outstanding traditional Canarian small plates (~€25–30 a head). Book ahead. Note: La Laguna is ~50 min north.",
     "meetingPoint": "Calle Santo Domingo, historic centre, La Laguna",
     "mapsUrl": "https://maps.google.com/?q=La+Tasca+Faracho+La+Laguna",
@@ -653,7 +1003,8 @@
     "bookingAdvised": true,
     "rating": 4.7,
     "reviewCount": 600,
-    "reviewSource": "Tripadvisor"
+    "reviewSource": "Tripadvisor",
+    "imageUrl": "/images/restaurants/tasca-faracho-la-laguna.jpg"
   },
   {
     "slug": "fusion-vinos-y-tapas-la-laguna",
@@ -661,15 +1012,24 @@
     "cuisine": "Tapas / wine bar",
     "area": "La Laguna (north)",
     "priceRange": "€€",
-    "goodFor": ["couples", "wine lovers", "foodies"],
-    "mustTry": ["creative tapas", "local wines", "croquetas"],
+    "goodFor": [
+      "couples",
+      "wine lovers",
+      "foodies"
+    ],
+    "mustTry": [
+      "creative tapas",
+      "local wines",
+      "croquetas"
+    ],
     "description": "A stylish wine-and-tapas spot in La Laguna's old town serving creative small plates with a strong Canarian wine list (~€25–30 a head). Intimate and relaxed; book ahead. Note: La Laguna is ~50 min north.",
     "meetingPoint": "Historic centre, La Laguna",
     "mapsUrl": "https://maps.google.com/?q=Fusion+Vinos+y+Tapas+La+Laguna",
     "bookingAdvised": true,
     "rating": 4.7,
     "reviewCount": 340,
-    "reviewSource": "Google"
+    "reviewSource": "Google",
+    "imageUrl": "/images/restaurants/fusion-vinos-y-tapas-la-laguna.jpg"
   },
   {
     "slug": "maquila-la-laguna",
@@ -677,15 +1037,23 @@
     "cuisine": "Contemporary Spanish / Canarian",
     "area": "La Laguna (north)",
     "priceRange": "€€€",
-    "goodFor": ["couples", "special occasion", "fine dining"],
-    "mustTry": ["tasting plates", "market-driven dishes"],
+    "goodFor": [
+      "couples",
+      "special occasion",
+      "fine dining"
+    ],
+    "mustTry": [
+      "tasting plates",
+      "market-driven dishes"
+    ],
     "description": "One of La Laguna's top tables — contemporary Canarian-Spanish cooking from quality market produce, beautifully done (~€45–60 a head). A destination dinner in the historic city. Note: La Laguna is ~50 min north.",
     "meetingPoint": "Historic centre, La Laguna",
     "mapsUrl": "https://maps.google.com/?q=Restaurante+Maquila+La+Laguna",
     "bookingAdvised": true,
     "rating": 4.9,
     "reviewCount": 2800,
-    "reviewSource": "Google"
+    "reviewSource": "Google",
+    "imageUrl": "/images/restaurants/maquila-la-laguna.jpg"
   },
   {
     "slug": "big-nonna-la-laguna",
@@ -693,14 +1061,23 @@
     "cuisine": "Italian",
     "area": "La Laguna (north)",
     "priceRange": "€€€",
-    "goodFor": ["couples", "special occasion", "foodies"],
-    "mustTry": ["fresh pasta", "truffle dishes", "Italian wine"],
+    "goodFor": [
+      "couples",
+      "special occasion",
+      "foodies"
+    ],
+    "mustTry": [
+      "fresh pasta",
+      "truffle dishes",
+      "Italian wine"
+    ],
     "description": "A stylish, top-rated Italian in La Laguna for a special evening — fresh handmade pasta and a confident wine list in a chic room (~€40–55 a head). Book ahead. Note: La Laguna is ~50 min north.",
     "meetingPoint": "La Laguna",
     "mapsUrl": "https://maps.google.com/?q=Big+Nonna+Tenerife+La+Laguna",
     "bookingAdvised": true,
     "rating": 4.9,
     "reviewCount": 960,
-    "reviewSource": "Google"
+    "reviewSource": "Google",
+    "imageUrl": "/images/restaurants/big-nonna-la-laguna.jpg"
   }
 ]
