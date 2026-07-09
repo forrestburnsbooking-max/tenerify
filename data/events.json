@@ -1,5 +1,37 @@
 [
   {
+    "title": "AronaTura 2026 - Ruta 1: Jama - Casas Altas - Valle San Lorenzo",
+    "date": "2026-07-09",
+    "location": "Arona",
+    "description": "El Aula de la Naturaleza del Patronato Municipal de Cultura de Arona inaugura una nueva edición de AronaTura",
+    "price": "See website",
+    "url": "https://www.arona.org/Agenda/ctl/Ver/mid/429?id=91498"
+  },
+  {
+    "title": "Parranda Chasnera",
+    "date": "2026-07-09",
+    "location": "Arona",
+    "description": "La Parranda Chasnera",
+    "price": "See website",
+    "url": "https://www.arona.org/Agenda/ctl/Ver/mid/429?id=91514"
+  },
+  {
+    "title": "Club de Lectura Amagante",
+    "date": "2026-07-09",
+    "location": "Arona",
+    "description": "El Club de Lectura Amagante",
+    "price": "See website",
+    "url": "https://www.arona.org/Agenda/ctl/Ver/mid/429?id=91515"
+  },
+  {
+    "title": "Tango Show - Espectáculo",
+    "date": "2026-07-10",
+    "location": "Arona",
+    "description": "Un recorrido emotivo por los clásicos del tango. Amor, humor y elegancia caracterizan esta obra en la que músicos, cantantes y bailarines nos brindarán un espectáculo con el que disfrutar con el auténtico tango argentino.",
+    "price": "See website",
+    "url": "https://www.arona.org/Agenda/ctl/Ver/mid/429?id=91377"
+  },
+  {
     "title": "Baile de Magos de Puerto de la Cruz",
     "date": "2026-07-11",
     "location": "Puerto de la Cruz",
@@ -14,6 +46,14 @@
     "description": "San Cristóbal de La Laguna celebra el 12 de julio la Romería de San Benito, la más representativa de Canarias.",
     "price": "See website",
     "url": "https://www.webtenerife.com/agenda/2026/07/romeria-de-san-benito/"
+  },
+  {
+    "title": "Arona Ilusiona - Dart y Payaso Cañita",
+    "date": "2026-07-13",
+    "location": "Arona",
+    "description": "Dart y el Payaso Cañita",
+    "price": "See website",
+    "url": "https://www.arona.org/Agenda/ctl/Ver/mid/429?id=91485"
   },
   {
     "title": "Embarcación de la Virgen del Carmen",
@@ -33,11 +73,35 @@
     "url": "https://www.webtenerife.com/agenda/2026/07/tenerife-lan-party/"
   },
   {
+    "title": "Presentación del libro - Una vida cualquiera",
+    "date": "2026-07-14",
+    "location": "Arona",
+    "description": "El escritor Jose M. Gomes Mendes",
+    "price": "See website",
+    "url": "https://www.arona.org/Agenda/ctl/Ver/mid/429?id=91516"
+  },
+  {
+    "title": "Café Filosófico Juventud - ¿Qué significa ser joven hoy?",
+    "date": "2026-07-14",
+    "location": "Arona",
+    "description": "La juventud ha cambiado profundamente en las últimas décadas. Este encuentro invita a reflexionar sobre los retos, oportunidades e inquietudes de las nuevas generaciones, analizando cuestiones como la identidad, las expectativas de futuro, las relaciones personales o el papel que desempeñan los jóve",
+    "price": "See website",
+    "url": "https://www.arona.org/Agenda/ctl/Ver/mid/429?id=91517"
+  },
+  {
+    "title": "Presentación del libro infantil - La Mesa Mágica",
+    "date": "2026-07-15",
+    "location": "Los Cristianos",
+    "description": "El Centro Cultural Los Cristianos",
+    "price": "See website",
+    "url": "https://www.arona.org/Agenda/ctl/Ver/mid/429?id=91489"
+  },
+  {
     "title": "Cook Music Fest Tenerife 2026",
     "date": "2026-07-16",
     "endDate": "2026-07-18",
     "location": "Santa Cruz de Tenerife",
-    "description": "El Cook Music Fest celebra su 5&ordf; edición del 16 al 18 de julio en el Puerto de Santa Cruz de Tenerife.",
+    "description": "El Cook Music Fest celebra su 5ª edición del 16 al 18 de julio en el Puerto de Santa Cruz de Tenerife.",
     "price": "See website",
     "url": "https://www.webtenerife.com/agenda/2026/07/cook-music-fest-tenerife-2026/"
   },
@@ -48,6 +112,14 @@
     "description": "José James y Célia Kameni rinden homenaje a Marvin Gaye el 16 de julio en el Teatro Leal, La Laguna.",
     "price": "See website",
     "url": "https://www.webtenerife.com/agenda/2026/07/jose-james-with-celia-kameni-marvin-gayes-i-want-you/"
+  },
+  {
+    "title": "Goyo Tavío",
+    "date": "2026-07-16",
+    "location": "Arona",
+    "description": "El reconocido cantante Goyo Tavío",
+    "price": "See website",
+    "url": "https://www.arona.org/Agenda/ctl/Ver/mid/429?id=91490"
   },
   {
     "title": "IDOLS – La Revolución K-POP",

@@ -2,8 +2,10 @@
  * Scraper for Tenerife events → data/events.json
  * Run: npm run scrape-events
  *
- * Source: webtenerife.com/agenda — the official Turismo de Tenerife calendar.
- * (The previous source, tenerifecultura.com, no longer exists.)
+ * Sources:
+ * - webtenerife.com/agenda — official Turismo de Tenerife calendar (island-wide)
+ * - arona.org/Agenda?area=Cultura — Arona town hall cultural agenda (Tenerife South)
+ * (The original source, tenerifecultura.com, no longer exists.)
  */
 
 import fs from "fs";
@@ -34,11 +36,23 @@ const TOWNS = [
   "La Orotava", "Garachico", "Icod de los Vinos", "Güímar", "Vilaflor", "Tacoronte",
 ];
 
+const ENTITIES: Record<string, string> = {
+  oacute: "ó", aacute: "á", eacute: "é", iacute: "í", uacute: "ú", ntilde: "ñ",
+  Oacute: "Ó", Aacute: "Á", Eacute: "É", Iacute: "Í", Uacute: "Ú", Ntilde: "Ñ",
+  uuml: "ü", ordf: "ª", ordm: "º", deg: "°", amp: "&", quot: '"', apos: "'",
+  ndash: "–", mdash: "—", hellip: "…", nbsp: " ", laquo: "«", raquo: "»",
+};
+
 const stripTags = (s: string) =>
-  s.replace(/<[^>]+>/g, "").replace(/&oacute;/g, "ó").replace(/&aacute;/g, "á")
-    .replace(/&eacute;/g, "é").replace(/&iacute;/g, "í").replace(/&uacute;/g, "ú")
-    .replace(/&ntilde;/g, "ñ").replace(/&amp;/g, "&").replace(/&quot;/g, '"')
-    .replace(/&#039;/g, "'").replace(/\s+/g, " ").trim();
+  s.replace(/<[^>]+>/g, "")
+    .replace(/&(#?\w+);/g, (full, name: string) => {
+      if (name.startsWith("#")) {
+        const code = name[1] === "x" ? parseInt(name.slice(2), 16) : parseInt(name.slice(1), 10);
+        return Number.isFinite(code) ? String.fromCodePoint(code) : full;
+      }
+      return ENTITIES[name] ?? full;
+    })
+    .replace(/\s+/g, " ").trim();
 
 function parseSpanishDate(d: string, m: string, y: string): string {
   const month = MONTHS[m.toLowerCase()];
@@ -102,10 +116,88 @@ async function scrapeWebtenerife(): Promise<Event[]> {
   return events;
 }
 
-async function main() {
-  console.log("Scraping Tenerife events (webtenerife.com/agenda)...");
+const MONTH_ABBR: Record<string, string> = {
+  ENE: "01", FEB: "02", MAR: "03", ABR: "04", MAY: "05", JUN: "06",
+  JUL: "07", AGO: "08", SEP: "09", SEPT: "09", OCT: "10", NOV: "11", DIC: "12",
+};
 
-  const events = await scrapeWebtenerife();
+// Listing shows only day + month — pick the year that puts the date in the
+// future-ish window (a date >30 days in the past must be next year's).
+function inferYear(month: string, day: string): string {
+  const now = new Date();
+  const candidate = new Date(`${now.getFullYear()}-${month}-${day}T12:00:00`);
+  if (candidate.getTime() < now.getTime() - 30 * 86400_000) {
+    return String(now.getFullYear() + 1);
+  }
+  return String(now.getFullYear());
+}
+
+async function fetchAronaDescription(url: string): Promise<string> {
+  try {
+    const res = await fetch(url, { headers: UA });
+    const html = await res.text();
+    const m = /Descripcion del evento:\s*([\s\S]{40,}?)<\//.exec(html);
+    return m ? stripTags(m[1]).slice(0, 300) : "";
+  } catch {
+    return "";
+  }
+}
+
+async function scrapeArona(): Promise<Event[]> {
+  const res = await fetch("https://www.arona.org/Agenda?area=Cultura", { headers: UA });
+  const html = await res.text();
+
+  const events: Event[] = [];
+  const blocks = html.split('<div class="agenda-evento">').slice(1);
+  for (const block of blocks) {
+    const day = (/<div class="agenda-evento-dia">(\d{1,2})<\/div>/.exec(block) || [])[1];
+    const monthAbbr = (/<div class="agenda-evento-mes">(\w+)\.?<\/div>/.exec(block) || [])[1];
+    const link = /<div class="agenda-evento-title">\s*<a [^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/.exec(block);
+    if (!day || !monthAbbr || !link) continue;
+
+    const month = MONTH_ABBR[monthAbbr.toUpperCase().replace(".", "")];
+    if (!month) continue;
+
+    const title = stripTags(link[2]);
+    const url = link[1];
+    events.push({
+      title,
+      date: `${inferYear(month, day.padStart(2, "0"))}-${month}-${day.padStart(2, "0")}`,
+      location: "",
+      description: "",
+      price: "See website",
+      url,
+    });
+  }
+
+  for (const e of events) {
+    if (!e.url) continue;
+    e.description = await fetchAronaDescription(e.url);
+    e.location = guessLocation(`${e.title} ${e.description}`);
+    if (e.location === "Tenerife") e.location = "Arona";
+    await new Promise((r) => setTimeout(r, 300));
+  }
+
+  return events;
+}
+
+// Same happening can appear in both calendars — keep the first (webtenerife
+// wins: its entries carry better island-wide context).
+function dedupe(events: Event[]): Event[] {
+  const seen = new Set<string>();
+  return events.filter((e) => {
+    const key = `${e.date}|${e.title.toLowerCase().replace(/[^a-zá-ú0-9]+/gi, " ").trim()}`;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
+async function main() {
+  console.log("Scraping Tenerife events (webtenerife.com + arona.org)...");
+
+  const [webtenerife, arona] = await Promise.all([scrapeWebtenerife(), scrapeArona()]);
+  const events = dedupe([...webtenerife, ...arona]);
 
   // Keep events that haven't ended yet, within the next 90 days
   const today = new Date().toISOString().slice(0, 10);
@@ -113,6 +205,8 @@ async function main() {
 
   const filtered = events
     .filter((e) => (e.endDate ?? e.date) >= today && e.date <= cutoff)
+    // A postponed/cancelled event surfacing as current is worse than a gap
+    .filter((e) => !/APLAZADO|CANCELADO|SUSPENDIDO|POSPUESTO/i.test(e.title))
     .sort((a, b) => a.date.localeCompare(b.date))
     .slice(0, 50);
 

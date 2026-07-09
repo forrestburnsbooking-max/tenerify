@@ -38,6 +38,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.7,
     },
+    {
+      url: "https://tenerify.ai/events",
+      lastModified: new Date(),
+      changeFrequency: "daily",
+      priority: 0.7,
+    },
     ...restaurantEntries,
     {
       url: "https://tenerify.ai/legal",
