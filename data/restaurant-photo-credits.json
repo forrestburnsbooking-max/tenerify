@@ -299,5 +299,19 @@
     "authors": [
       "Alba Galo"
     ]
+  },
+  "rincon-del-marinero-los-cristianos": {
+    "matchedName": "Restaurante Rincón del Marinero",
+    "matchedAddress": "P.º El Cabezo, s/n, 38650 Los Cristianos, Santa Cruz de Tenerife, Spain",
+    "authors": [
+      "Restaurante Rincón del Marinero"
+    ]
+  },
+  "oro-di-napoli-los-cristianos": {
+    "matchedName": "Oro di Napoli",
+    "matchedAddress": "C. del Valle Menéndez, 20, 38650 Los Cristianos, Santa Cruz de Tenerife, Spain",
+    "authors": [
+      "Fran Castilla"
+    ]
   }
 }

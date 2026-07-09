@@ -1079,5 +1079,55 @@
     "reviewCount": 960,
     "reviewSource": "Google",
     "imageUrl": "/images/restaurants/big-nonna-la-laguna.jpg"
+  },
+  {
+    "slug": "rincon-del-marinero-los-cristianos",
+    "name": "Rincón del Marinero",
+    "cuisine": "Seafood / Canarian",
+    "area": "Los Cristianos (harbour)",
+    "priceRange": "€€",
+    "goodFor": [
+      "fresh fish",
+      "authentic local",
+      "seafront terrace"
+    ],
+    "mustTry": [
+      "fresh grilled fish",
+      "seafood platter",
+      "papas arrugadas"
+    ],
+    "description": "A harbour-side seafood classic on the El Cabezo promenade, steps from the beach. Fresh fish straight off the boats, prepared simply and well — the kind of place locals take visiting friends for an honest seafood lunch by the water.",
+    "meetingPoint": "Paseo El Cabezo, Los Cristianos",
+    "mapsUrl": "https://maps.google.com/?q=Restaurante+Rincon+del+Marinero+Los+Cristianos",
+    "menuUrl": "http://www.restauranterincondelmarinero.com/",
+    "bookingAdvised": false,
+    "rating": 4.3,
+    "reviewCount": 2150,
+    "reviewSource": "Google",
+    "imageUrl": "/images/restaurants/rincon-del-marinero-los-cristianos.jpg"
+  },
+  {
+    "slug": "oro-di-napoli-los-cristianos",
+    "name": "Oro di Napoli",
+    "cuisine": "Italian / pizza",
+    "area": "Los Cristianos",
+    "priceRange": "€",
+    "goodFor": [
+      "budget",
+      "families",
+      "casual dinner"
+    ],
+    "mustTry": [
+      "Neapolitan-style pizza",
+      "creative seasonal toppings"
+    ],
+    "description": "Proper Neapolitan pizza in the centre of Los Cristianos — puffy, perfectly charred rims and quality toppings, at prices that make it easy to come back twice in a week. Deservedly one of the busiest spots in town, packed even late in the evening.",
+    "meetingPoint": "Calle del Valle Menéndez 20, Los Cristianos",
+    "mapsUrl": "https://maps.google.com/?q=Oro+di+Napoli+Los+Cristianos",
+    "bookingAdvised": true,
+    "rating": 4.5,
+    "reviewCount": 6804,
+    "reviewSource": "Google",
+    "imageUrl": "/images/restaurants/oro-di-napoli-los-cristianos.jpg"
   }
 ]
