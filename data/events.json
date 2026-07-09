@@ -1,45 +1,84 @@
 [
   {
-    "title": "Carnaval de Santa Cruz de Tenerife",
-    "date": "2026-06-13",
-    "time": "20:00",
-    "location": "Santa Cruz de Tenerife, calle del Pilar",
-    "description": "One of the world's great carnivals — costumes, music, street parties",
-    "price": "Free",
-    "url": "https://www.carnavaldetenerife.com"
+    "title": "Baile de Magos de Puerto de la Cruz",
+    "date": "2026-07-11",
+    "location": "Puerto de la Cruz",
+    "description": "Puerto de la Cruz celebra su Baile de Magos el próximo 11 de julio con folclore y trajes típicos canarios.",
+    "price": "See website",
+    "url": "https://www.webtenerife.com/agenda/2026/07/baile-de-magos-de-puerto-de-la-cruz/"
   },
   {
-    "title": "Concierto: Orquesta Sinfónica de Tenerife",
-    "date": "2026-06-14",
-    "time": "19:30",
-    "location": "Auditorio de Tenerife, Santa Cruz",
-    "description": "Live symphonic performance in Calatrava's iconic concert hall",
-    "price": "€10–€35",
-    "url": "https://www.auditoriodetenerife.com"
+    "title": "Romería de San Benito",
+    "date": "2026-07-12",
+    "location": "La Laguna",
+    "description": "San Cristóbal de La Laguna celebra el 12 de julio la Romería de San Benito, la más representativa de Canarias.",
+    "price": "See website",
+    "url": "https://www.webtenerife.com/agenda/2026/07/romeria-de-san-benito/"
   },
   {
-    "title": "Exposición: Arte Volcánico",
-    "date": "2026-06-07",
-    "time": "10:00–20:00",
-    "location": "TEA Tenerife, Santa Cruz",
-    "description": "Contemporary art inspired by volcanic landscapes of the Canary Islands",
-    "price": "Free on Sundays, €6 other days",
-    "url": "https://www.teatenerife.es"
+    "title": "Embarcación de la Virgen del Carmen",
+    "date": "2026-07-14",
+    "location": "Puerto de la Cruz",
+    "description": "Puerto de la Cruz sale al mar el 14 de julio, en la tradicional Embarcación de la Virgen del Carmen.",
+    "price": "See website",
+    "url": "https://www.webtenerife.com/agenda/2026/07/embarcacion-de-la-virgen-del-carmen/"
   },
   {
-    "title": "Mercado Artesanal de La Orotava",
-    "date": "2026-06-07",
-    "time": "09:00–14:00",
-    "location": "Plaza del Ayuntamiento, La Orotava",
-    "description": "Weekly crafts market in the most beautiful historic town on the island",
-    "price": "Free"
+    "title": "Tenerife LAN Party (TLP Tenerife 2026)",
+    "date": "2026-07-14",
+    "endDate": "2026-07-19",
+    "location": "Santa Cruz",
+    "description": "La TLP Tenerife celebra su 20 aniversario del 14 al 19 de julio en el Recinto Ferial de Santa Cruz.",
+    "price": "See website",
+    "url": "https://www.webtenerife.com/agenda/2026/07/tenerife-lan-party/"
   },
   {
-    "title": "Festival de Música Étnica",
-    "date": "2026-06-20",
-    "time": "18:00",
-    "location": "Parque García Sanabria, Santa Cruz",
-    "description": "World music festival in the open-air park",
-    "price": "Free"
+    "title": "Cook Music Fest Tenerife 2026",
+    "date": "2026-07-16",
+    "endDate": "2026-07-18",
+    "location": "Santa Cruz de Tenerife",
+    "description": "El Cook Music Fest celebra su 5&ordf; edición del 16 al 18 de julio en el Puerto de Santa Cruz de Tenerife.",
+    "price": "See website",
+    "url": "https://www.webtenerife.com/agenda/2026/07/cook-music-fest-tenerife-2026/"
+  },
+  {
+    "title": "José James con Célia Kameni: Marvin Gaye's I Want…",
+    "date": "2026-07-16",
+    "location": "La Laguna",
+    "description": "José James y Célia Kameni rinden homenaje a Marvin Gaye el 16 de julio en el Teatro Leal, La Laguna.",
+    "price": "See website",
+    "url": "https://www.webtenerife.com/agenda/2026/07/jose-james-with-celia-kameni-marvin-gayes-i-want-you/"
+  },
+  {
+    "title": "IDOLS – La Revolución K-POP",
+    "date": "2026-07-17",
+    "location": "Los Cristianos",
+    "description": "El primer musical original de K-POP en España llega al Auditorio Infanta Leonor de Los Cristianos el 17 de julio.",
+    "price": "See website",
+    "url": "https://www.webtenerife.com/agenda/2026/07/idols-la-revolucion-kpop-los-cristianos/"
+  },
+  {
+    "title": "Orquesta Mondragón",
+    "date": "2026-07-18",
+    "location": "La Laguna",
+    "description": "La Orquesta Mondragón actúa el próximo 18 de julio en el Teatro Leal, La Laguna.",
+    "price": "See website",
+    "url": "https://www.webtenerife.com/agenda/2026/07/orquesta-mondragon-teatro-leal/"
+  },
+  {
+    "title": "Urban Beach Festival en Tenerife 2026",
+    "date": "2026-07-25",
+    "location": "Santa Cruz de Tenerife",
+    "description": "Beéle trae su Borondo Tour al Puerto de Santa Cruz de Tenerife el próximo 25 de julio.",
+    "price": "See website",
+    "url": "https://www.webtenerife.com/agenda/2026/07/urban-beach-festival-en-tenerife-2026/"
+  },
+  {
+    "title": "Kapo",
+    "date": "2026-07-26",
+    "location": "Santa Cruz de Tenerife",
+    "description": "Kapo actúa por primera vez en Tenerife el próximo 26 de julio en el Parking del Palmetum, Santa Cruz de Tenerife.",
+    "price": "See website",
+    "url": "https://www.webtenerife.com/agenda/2026/07/kapo-palmetum/"
   }
 ]
