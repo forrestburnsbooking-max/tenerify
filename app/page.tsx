@@ -665,13 +665,18 @@ export default function Home() {
         {/* Content */}
         <div className="relative z-10 flex flex-col items-center justify-end flex-1 px-6 text-center pb-16 pt-12">
           <div className="flex flex-col items-center gap-6 max-w-sm w-full">
-            <h1 className="text-6xl font-extrabold tracking-tight leading-none">
-              <span className="text-white">Tenerify</span>
-              <span className="text-orange-400">.ai</span>
-            </h1>
+            <div>
+              <h1 className="text-6xl font-extrabold tracking-tight mb-2 leading-none">
+                <span className="text-white">Tenerify</span>
+                <span className="text-orange-400">.ai</span>
+              </h1>
+              <p className="text-white/70 text-sm font-medium tracking-widest uppercase mt-3">
+                Your local AI friend on Tenerife
+              </p>
+            </div>
 
-            <p className="text-white/85 text-lg font-medium leading-snug max-w-[280px]">
-              Ask the Island anything.
+            <p className="text-white/60 text-sm leading-relaxed max-w-[260px]">
+              Boats, buggies, shows & more — find and book in under 60 seconds.
             </p>
 
             {savedTranscript ? (
