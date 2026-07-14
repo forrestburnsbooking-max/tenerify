@@ -2497,7 +2497,7 @@
     "title": "Mount Teide National Park Tour (cable car optional)",
     "category": "bus-tours",
     "group": "land",
-    "duration": "3h",
+    "duration": "Full day",
     "languages": [
       "Deutsch",
       "English",
@@ -2511,16 +2511,16 @@
     "pricing": [
       {
         "label": "Adult",
-        "price": 46,
-        "net": 45
+        "price": 39,
+        "net": 31.2
       },
       {
-        "label": "Child",
-        "price": 36,
-        "net": 35
+        "label": "Child (3-13)",
+        "price": 27,
+        "net": 21.6
       }
     ],
-    "priceFrom": 46,
+    "priceFrom": 39,
     "description": "Climb from the coast into Teide National Park — a UNESCO World Heritage Site — on a guided tour to the foot of El Teide, the highest peak in Spain at 3,718 m. You'll cross the Corona Forestal pine forest and stop at the most spectacular lava fields, rock formations and viewpoints of the Las Cañadas caldera, with views on clear days across to La Gomera, La Palma and El Hierro.\n\nThe cable car up to the 3,555 m upper station is the highlight for many visitors — but the ride is an optional extra, bought separately and not included in this tour price. Cable car tickets sell out fast and only run in good weather, so if you want to go up, it's best to reserve your slot in advance.\n\nBring a jacket — even in summer it's cold and windy at altitude.",
     "faq": [
       {
