@@ -5,15 +5,31 @@
     "area": "Los Cristianos / Playa de las Américas",
     "address": "Calle Amalia Alayón 22, Arona, Los Cristianos, 38650",
     "phone": null,
-    "languages": ["en", "it", "es"],
+    "languages": [
+      "en",
+      "it",
+      "es"
+    ],
     "notes": "Dr. Parra, GDC-registered (UK-trained). Offers emergency dentistry. High-tech diagnostic equipment.",
     "sourceUrl": "https://www.whatclinic.com/dentists/canary-islands/tenerife/playa-de-las-americas/dental-center-diparr-tenerife",
     "verification": {
       "reviewsChecked": 3,
       "reviews": [
-        { "date": "2026-02-14", "rating": 5, "reviewer": "Mark E, UK" },
-        { "date": "2024-10-04", "rating": 4.5, "reviewer": "Geraldine, Ireland" },
-        { "date": "2023-03-24", "rating": 5, "reviewer": "Karin, Belgium" }
+        {
+          "date": "2026-02-14",
+          "rating": 5,
+          "reviewer": "Mark E, UK"
+        },
+        {
+          "date": "2024-10-04",
+          "rating": 4.5,
+          "reviewer": "Geraldine, Ireland"
+        },
+        {
+          "date": "2023-03-24",
+          "rating": 5,
+          "reviewer": "Karin, Belgium"
+        }
       ],
       "lastReviewDate": "2026-02-14",
       "freshnessPass": true,
@@ -26,7 +42,10 @@
     "area": "Los Cristianos",
     "address": null,
     "phone": null,
-    "languages": ["en", "es"],
+    "languages": [
+      "en",
+      "es"
+    ],
     "notes": "Advertises emergency dentistry for toothaches/accidental injuries. Central Los Cristianos.",
     "sourceUrl": "https://www.myguidetenerife.com/lists/best-english-speaking-dentists-in-tenerife",
     "verification": {
@@ -44,7 +63,10 @@
     "area": "Playa de las Américas",
     "address": null,
     "phone": null,
-    "languages": ["en", "es"],
+    "languages": [
+      "en",
+      "es"
+    ],
     "notes": "Walk-in, no appointment needed. Mon-Fri 9-2 & 5-8, Sat 9-2. Former 'British Surgery'. Multiple tourist reviews praise no language barrier, incl. a pediatric case (2yo).",
     "sourceUrl": "https://doctorlasamericas.com/",
     "verification": {
@@ -62,7 +84,11 @@
     "area": "Los Cristianos",
     "address": null,
     "phone": null,
-    "languages": ["en", "de", "es"],
+    "languages": [
+      "en",
+      "de",
+      "es"
+    ],
     "notes": "Same-day appointments, described by reviewers as fast and tourist-friendly.",
     "sourceUrl": "https://islanddoctors.es/",
     "verification": {
@@ -80,7 +106,10 @@
     "area": "Costa Adeje",
     "address": "Urbanización San Eugenio, s/n, 38660 Adeje",
     "phone": "922 752 626",
-    "languages": ["en", "es"],
+    "languages": [
+      "en",
+      "es"
+    ],
     "notes": "Full hospital pediatrics department, ages 0-14: clinical + preventive pediatrics.",
     "sourceUrl": "https://www.quironsalud.com/tenerife-adeje/en/services/pediatrics",
     "verification": {
@@ -116,15 +145,32 @@
     "area": "Costa Adeje",
     "address": "Hotel Olé Tropical Tenerife, 38660 Adeje",
     "phone": null,
-    "languages": ["en", "es"],
+    "languages": [
+      "en",
+      "es"
+    ],
     "notes": "Does both relaxation massage and physio-style sessions (reviewer described 3 physio sessions for an injury). Therapists named in reviews: Paola, Laura, Alex.",
     "sourceUrl": "https://www.tripadvisor.com/ShowUserReviews-g662606-d13817492-r742222875-Wellness_Tenerife_Massage-Costa_Adeje_Adeje_Tenerife_Canary_Islands.html",
     "verification": {
       "reviewsChecked": 3,
       "reviews": [
-        { "date": "2026-07-05", "rating": null, "reviewer": "Gracie L, Los Cristianos", "note": "~yesterday relative to check date" },
-        { "date": "2026-07-04", "rating": null, "reviewer": "SoulJourney88, Los Cristianos", "note": "~2 days ago relative to check date" },
-        { "date": "2020-01-31", "rating": 5, "reviewer": "534neilw, Plymouth UK" }
+        {
+          "date": "2026-07-05",
+          "rating": null,
+          "reviewer": "Gracie L, Los Cristianos",
+          "note": "~yesterday relative to check date"
+        },
+        {
+          "date": "2026-07-04",
+          "rating": null,
+          "reviewer": "SoulJourney88, Los Cristianos",
+          "note": "~2 days ago relative to check date"
+        },
+        {
+          "date": "2020-01-31",
+          "rating": 5,
+          "reviewer": "534neilw, Plymouth UK"
+        }
       ],
       "lastReviewDate": "2026-07-05",
       "freshnessPass": true,
@@ -137,7 +183,10 @@
     "area": "Adeje",
     "address": null,
     "phone": null,
-    "languages": ["en", "es"],
+    "languages": [
+      "en",
+      "es"
+    ],
     "notes": "Clinical physiotherapy (not just massage/wellness) — good pairing option alongside Wellness Tenerife Massage.",
     "sourceUrl": "https://fisiomovebalance.es/en/fisioterapia-movebalance/",
     "verification": {
@@ -155,15 +204,29 @@
     "area": "Puerto de Santiago",
     "address": "Jonay Hernández Díaz, C 843, 38611 Puerto de Santiago",
     "phone": null,
-    "languages": ["en"],
+    "languages": [
+      "en"
+    ],
     "notes": "EXCLUDED — fails the freshness rule (newest of only 2 TripAdvisor reviews is March 2019, >1 year old). Also outside our core south-resort zones. Kept here only as a record of why it was rejected.",
     "sourceUrl": "https://www.tripadvisor.com/Attraction_Review-g673853-d13336781-Reviews-Fisio_Salud-Puerto_de_Santiago_Tenerife_Canary_Islands.html",
     "verification": {
       "reviewsChecked": 3,
       "reviews": [
-        { "date": "2019-03-01", "rating": 5, "reviewer": "rpm7903" },
-        { "date": "2019-02-01", "rating": 5, "reviewer": "Julie Bromley" },
-        { "date": "2019-01-01", "rating": 5, "reviewer": "solo traveler" }
+        {
+          "date": "2019-03-01",
+          "rating": 5,
+          "reviewer": "rpm7903"
+        },
+        {
+          "date": "2019-02-01",
+          "rating": 5,
+          "reviewer": "Julie Bromley"
+        },
+        {
+          "date": "2019-01-01",
+          "rating": 5,
+          "reviewer": "solo traveler"
+        }
       ],
       "lastReviewDate": "2019-03-01",
       "freshnessPass": false,
@@ -176,7 +239,10 @@
     "area": "Los Cristianos",
     "address": "Centro Comercial Apolo, Calle Hermano Pedro De Bethencourt 2, Local 12",
     "phone": null,
-    "languages": ["en", "es"],
+    "languages": [
+      "en",
+      "es"
+    ],
     "notes": "Hair, nails and beauty. Long-standing repeat customers mentioned in reviews (multi-year clients).",
     "sourceUrl": "https://www.pinkiestenerife.com/cristianos-location",
     "verification": {
@@ -212,7 +278,10 @@
     "area": "Los Cristianos",
     "address": "Calle Boston 4, Los Cristianos",
     "phone": null,
-    "languages": ["en", "es"],
+    "languages": [
+      "en",
+      "es"
+    ],
     "notes": "Established 1995. Hair, nails, beauty, solarium, chiropodist, massage, reflexology — one-stop shop.",
     "sourceUrl": "https://www.yelp.com/biz/ripples-los-cristianos",
     "verification": {
@@ -222,6 +291,125 @@
       "freshnessPass": "needsManualCheck",
       "status": "unverified",
       "note": "No dated third-party reviews found via search — check Google Maps directly."
+    }
+  },
+  {
+    "category": "pediatrician",
+    "name": "Pediatras Tenerife (Los Cristianos)",
+    "area": "Los Cristianos",
+    "address": "Los Cristianos surgery — Mon–Fri 09:30–15:00",
+    "phone": null,
+    "languages": [
+      "en",
+      "es"
+    ],
+    "notes": "Pediatric specialists UK-trained / British Medical Association background. Dedicated private paediatric practice (not a general clinic).",
+    "sourceUrl": "https://pediatrastenerife.com/en/profesionales",
+    "verification": {
+      "reviewsChecked": 0,
+      "reviews": [],
+      "lastReviewDate": null,
+      "freshnessPass": "needsManualCheck",
+      "status": "unverified"
+    }
+  },
+  {
+    "category": "pediatrician",
+    "name": "MedCenter (German practice, Los Cristianos)",
+    "area": "Los Cristianos / El Médano",
+    "address": "Los Cristianos + El Médano branches",
+    "phone": null,
+    "languages": [
+      "de",
+      "en",
+      "es"
+    ],
+    "notes": "German-run specialist practice; catchment covers Costa Adeje & Las Américas. Good for German-speaking families with kids.",
+    "sourceUrl": "https://medcenter-tenerife.com/en/",
+    "verification": {
+      "reviewsChecked": 0,
+      "reviews": [],
+      "lastReviewDate": null,
+      "freshnessPass": "needsManualCheck",
+      "status": "unverified"
+    }
+  },
+  {
+    "category": "pediatrician",
+    "name": "International Doctor 24H (paediatric home visit)",
+    "area": "Los Cristianos / Costa Adeje / Las Américas",
+    "address": "Hotel/home visits, 24/7",
+    "phone": null,
+    "languages": [
+      "en",
+      "de",
+      "es"
+    ],
+    "notes": "24/7 paediatrician + family doctor that comes to your hotel/apartment. Ideal for a sick child at night. Verify call-out fee.",
+    "sourceUrl": "https://internationaldoctor24h.com/doctors-tenerife/",
+    "verification": {
+      "reviewsChecked": 0,
+      "reviews": [],
+      "lastReviewDate": null,
+      "freshnessPass": "needsManualCheck",
+      "status": "unverified"
+    }
+  },
+  {
+    "category": "pharmacy",
+    "name": "Farmacia Arona Gran Hotel (Los Cristianos)",
+    "area": "Los Cristianos",
+    "address": "Avda. Juan Carlos I, 38, Local 1 (Arona Gran Hotel)",
+    "phone": "922 78 74 84",
+    "languages": [
+      "es"
+    ],
+    "notes": "Open 09:00–21:00 every day of the year (on-duty rota). Central Los Cristianos, by the seafront hotels.",
+    "sourceUrl": "https://farmacias365.com/24h-pharmacies/arona",
+    "verification": {
+      "reviewsChecked": 0,
+      "reviews": [],
+      "lastReviewDate": null,
+      "freshnessPass": "notApplicable",
+      "status": "unverified"
+    }
+  },
+  {
+    "category": "pharmacy",
+    "name": "Farmacia El Muelle (Los Cristianos)",
+    "area": "Los Cristianos",
+    "address": "Los Cristianos harbour area",
+    "phone": "922 79 49 62",
+    "languages": [
+      "es"
+    ],
+    "notes": "Harbour-side pharmacy in Los Cristianos.",
+    "sourceUrl": "https://farmacias365.com/farmacias-de-guardia/tenerife/los-cristianos",
+    "verification": {
+      "reviewsChecked": 0,
+      "reviews": [],
+      "lastReviewDate": null,
+      "freshnessPass": "notApplicable",
+      "status": "unverified"
+    }
+  },
+  {
+    "category": "pharmacy",
+    "name": "Farmacia Rafael Puig (Playa de las Américas)",
+    "area": "Playa de las Américas",
+    "address": "Avda. Rafael Puig Lluvina, 1, local 19A",
+    "phone": "922 89 60 00",
+    "languages": [
+      "es"
+    ],
+    "notes": "Extended hours: Mon–Sat 09:00–21:00, Sun 09:00–17:00, every day of the year. Heart of Las Américas.",
+    "sourceUrl": "https://farmacias365.com/24h-pharmacies/arona",
+    "verification": {
+      "reviewsChecked": 0,
+      "reviews": [],
+      "lastReviewDate": null,
+      "freshnessPass": "notApplicable",
+      "status": "unverified"
     }
   }
 ]

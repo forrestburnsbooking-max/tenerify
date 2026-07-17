@@ -69,6 +69,12 @@ export async function POST(req: NextRequest) {
     const stripe = getStripe();
     const baseUrl = process.env.NEXT_PUBLIC_BASE_URL ?? "http://localhost:3000";
 
+    // Read our server-side session up front so the referring hotel (QR attribution)
+    // can be stamped onto the Stripe metadata as well as our own booking record.
+    const sid = req.cookies.get(SESSION_COOKIE)?.value;
+    const userSession = sid ? await getSession(sid) : null;
+    const hotel = userSession?.hotel ?? "";
+
     // Look up meeting point from tour data
     const slug = clientTourSlug ?? findTourSlugByName(tourName);
     const tour = slug ? getTourBySlug(slug) : null;
@@ -157,6 +163,7 @@ export async function POST(req: NextRequest) {
         bookingTime,
         meetingPoint,
         tourSlug: slug ?? "",
+        hotel, // referring partner hotel (QR attribution) — "" for direct traffic
         depositPercent: depositPercent ? String(depositPercent) : "",
         totalPriceEur: String(discountedPrice),
         originalPriceEur: String(priceEur),
@@ -184,8 +191,6 @@ export async function POST(req: NextRequest) {
 
     // Record the booking in our own store — independent of whose Stripe this is.
     // Best-effort: never blocks or fails checkout.
-    const sid = req.cookies.get(SESSION_COOKIE)?.value;
-    const userSession = sid ? await getSession(sid) : null;
     await logBookingCreated({
       id: session.id,
       tourName,
@@ -200,6 +205,7 @@ export async function POST(req: NextRequest) {
       meetingPoint,
       who: userSession?.who ?? null,
       language: userSession?.language ?? null,
+      hotel: hotel || null,
     });
 
     return NextResponse.json({ url: session.url });

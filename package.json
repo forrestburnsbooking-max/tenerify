@@ -14,7 +14,9 @@
     "reels:enhance": "npx tsx scripts/enhance-photos.ts",
     "reels:animate": "npx tsx scripts/animate-photos.ts",
     "reels:photos": "npx tsx scripts/photo-review.ts",
-    "reels:render": "npx tsx scripts/render-reels.ts"
+    "reels:render": "npx tsx scripts/render-reels.ts",
+    "reels:episode": "npx tsx scripts/build-episode.ts",
+    "reels:bot": "npx tsx scripts/reels-bot.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.101.0",

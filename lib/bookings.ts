@@ -23,6 +23,8 @@ export type BookingRecord = {
   meetingPoint: string;
   who: string | null; // family/couple/solo/friends, if known
   language: string | null;
+  hotel: string | null; // partner-hotel slug that referred this booking (QR attribution) — drives the revenue split
+
   // Filled in once payment is confirmed
   customerName: string | null;
   customerEmail: string | null;

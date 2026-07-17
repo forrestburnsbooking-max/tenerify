@@ -44,5 +44,19 @@ next-env.d.ts
 # remotion reels (local marketing assets)
 /public/clips
 
+# reels media archive — raw footage stays local (keep README/.gitkeep only)
+/public/reels/**/*.mp4
+/public/reels/**/*.mov
+/public/reels/**/*.m4a
+/public/reels/**/*.mp3
+/public/reels/**/*.wav
+/public/reels/**/*.png
+/public/reels/**/*.jpg
+/public/reels/**/*.jpeg
+
+# generated episode voiceover + personal voice sample (never commit)
+/public/episodes/audio
+/public/episodes/voice-sample.*
+
 # private outreach / PR materials (target lists, pitches, press kit) — never publish
 /outreach

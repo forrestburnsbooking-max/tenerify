@@ -4,6 +4,7 @@ export type SessionData = {
   id: string;
   who?: string;
   language?: string;
+  hotel?: string; // partner-hotel slug when the guest arrived via a lobby QR (/?h=<slug>) — attribution key for the revenue split
   visits: { date: string; vibes: string[] }[];
   likedTopics: string[];
   createdAt: string;

@@ -7,6 +7,7 @@ import { getLegendsText } from "@/lib/legends";
 import { getCultureText } from "@/lib/culture";
 import { getRestaurantsText } from "@/lib/restaurants";
 import { getPoisText } from "@/lib/pois";
+import { getHotelBySlug, getHotelText } from "@/lib/hotels";
 import { checkRateLimit, getClientIp } from "@/lib/ratelimit";
 import {
   getSession,
@@ -415,7 +416,7 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    const { messages, who, language: explicitLanguage } = await req.json();
+    const { messages, who, language: explicitLanguage, hotel: hotelSlug } = await req.json();
 
     if (
       !Array.isArray(messages) ||
@@ -444,6 +445,14 @@ export async function POST(req: NextRequest) {
       session = updateSessionVisit(session, who, language);
     }
 
+    // Remember which partner hotel referred this guest (QR in the lobby) — it
+    // rides the session all the way to checkout for per-hotel attribution.
+    if (typeof hotelSlug === "string" && hotelSlug && session.hotel !== hotelSlug) {
+      session.hotel = hotelSlug;
+    }
+    const hotelData = session.hotel ? getHotelBySlug(session.hotel) : undefined;
+    const hotelText = hotelData ? getHotelText(hotelData) : "";
+
     const sessionContext = sessionToContext(session);
     const [weather, events] = await Promise.all([getWeather(), getEvents()]);
     const tours = getTours();
@@ -461,6 +470,8 @@ export async function POST(req: NextRequest) {
       system: [
         { type: "text", text: staticSystemPrompt, cache_control: { type: "ephemeral" } },
         { type: "text", text: dynamicContext },
+        // Per-hotel house info — kept out of the cached block since it varies by guest.
+        ...(hotelText ? [{ type: "text" as const, text: hotelText }] : []),
       ],
       messages,
       tools: [
