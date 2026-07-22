@@ -1976,11 +1976,11 @@
   },
   {
     "slug": "champagne-premium-charter",
-    "title": "Champagne — Premium private boat charter",
+    "title": "Champagne — Private boat charter (Sealine SC29)",
     "category": "whale-watching",
     "group": "water",
-    "duration": "2h / 3h / 4h",
-    "capacity": 8,
+    "duration": "2h / 3h / 4h / 5h / 6h",
+    "capacity": 10,
     "languages": [
       "English",
       "Español",
@@ -1988,21 +1988,34 @@
     ],
     "pricing": [
       {
-        "label": "2 hours — whole boat (private, up to 8 guests)",
-        "price": 450
+        "label": "2 hours — whole boat (private, up to 10 guests)",
+        "price": 400,
+        "net": 300
       },
       {
-        "label": "3 hours — whole boat (private, up to 8 guests)",
-        "price": 600
+        "label": "3 hours — whole boat (private, up to 10 guests)",
+        "price": 500,
+        "net": 400
       },
       {
-        "label": "4 hours — whole boat (private, up to 8 guests)",
-        "price": 700
+        "label": "4 hours — whole boat (private, up to 10 guests)",
+        "price": 650,
+        "net": 500
+      },
+      {
+        "label": "5 hours — whole boat (private, up to 10 guests)",
+        "price": 800,
+        "net": 600
+      },
+      {
+        "label": "6 hours — whole boat (private, up to 10 guests)",
+        "price": 950,
+        "net": 750
       }
     ],
-    "priceFrom": 450,
-    "description": "Champagne is a sleek Sealine motor yacht for a fully private charter along the south-west coast of Tenerife — the whole boat is yours, with a skipper at the helm.\n\nCruise toward Los Gigantes, watch for whales and dolphins, drop anchor in a quiet cove to swim and snorkel, and toast the views with the coastline and the mountains as your backdrop.\n\nPriced per boat, not per person — perfect for a family, a couple celebrating something special, or a group of friends who want the sea to themselves. Choose 2, 3 or 4 hours.",
-    "included": "Private use of the whole boat · professional skipper · fuel",
+    "priceFrom": 400,
+    "description": "Champagne is a sleek Sealine SC29 motor yacht (8.94 m, up to 10 guests) for a fully private charter along the south-west coast of Tenerife — the whole boat is yours, with a professional skipper at the helm.\n\nOn 2–4 hour cruises you'll explore the Costa Adeje coast — Playa Diego Hernández, El Puertito, El Callao and Las Vistas — dropping anchor in a quiet cove to swim and snorkel. On 5–6 hour trips you head further, toward the Los Gigantes cliffs and Barranco de Masca, and an authentic Spanish paella is added to the menu.\n\nPriced per boat, not per person — perfect for a family, a couple celebrating something special, or a group of friends who want the sea to themselves.",
+    "included": "Private use of the whole boat · professional crew · lunch box (vegan/veg/meat/fish), fruit, crudités, nuts, dessert · open bar (cava, wine, beer, soft drinks, water) · snorkelling gear · swim stop · paella on 5h+ trips",
     "meetingPoint": "Puerto Colón Marina — Pantalán 3, Costa Adeje",
     "pickup": "no",
     "faq": [
@@ -2041,7 +2054,270 @@
     ],
     "imageUrl": "/images/tours/champagne.jpg",
     "url": "",
-    "minAge": 0
+    "minAge": 0,
+    "supplierId": "ocean-peak-charters",
+    "bookingPhone": "699 995 555"
+  },
+  {
+    "slug": "armani-private-charter",
+    "title": "Armani — Private boat charter (Maxum 2700SE)",
+    "category": "whale-watching",
+    "group": "water",
+    "duration": "2h / 3h / 4h / 5h / 6h",
+    "capacity": 6,
+    "languages": [
+      "English",
+      "Español",
+      "Русский"
+    ],
+    "pricing": [
+      {
+        "label": "2 hours — whole boat (private, up to 6 guests)",
+        "price": 320,
+        "net": 250
+      },
+      {
+        "label": "2 hours sunset — whole boat (private, up to 6 guests)",
+        "price": 360,
+        "net": 280
+      },
+      {
+        "label": "3 hours — whole boat (private, up to 6 guests)",
+        "price": 400,
+        "net": 310
+      },
+      {
+        "label": "4 hours — whole boat (private, up to 6 guests)",
+        "price": 500,
+        "net": 400
+      },
+      {
+        "label": "5 hours — whole boat (private, up to 6 guests)",
+        "price": 700,
+        "net": 550
+      },
+      {
+        "label": "6 hours — whole boat (private, up to 6 guests)",
+        "price": 850,
+        "net": 650
+      }
+    ],
+    "priceFrom": 320,
+    "description": "Armani is a Maxum Marine 2700SE motorboat (8.9 m, up to 6 guests) for a fully private charter along Tenerife's south-west coast — the whole boat is yours, with a professional skipper.\n\nOn 2–4 hour cruises you'll cruise the Costa Adeje coast — Playa Diego Hernández, El Puertito, El Callao and Las Vistas — with a swim-and-snorkel stop in a quiet cove. On 5–6 hour trips you push on toward the Los Gigantes cliffs and Barranco de Masca, with an authentic Spanish paella added to the menu. There's also a dedicated 2-hour sunset departure.\n\nPriced per boat, not per person — ideal for a couple or a small group who want an intimate day at sea.",
+    "included": "Private use of the whole boat · professional crew · lunch box (vegan/veg/meat/fish), fruit, crudités, nuts, dessert · open bar (cava, wine, beer, soft drinks, water) · snorkelling gear · swim stop · paella on 5h+ trips",
+    "meetingPoint": "Puerto Colón Marina — Pantalán 2, Costa Adeje",
+    "pickup": "no",
+    "faq": [
+      {
+        "question": "How will I receive my tickets?",
+        "answer": "After you complete your purchase, you will receive an order confirmation email within a few minutes. This email will contain all the details of your purchase, including the event, date, and number of tickets. Please note we do not send tickets by post."
+      },
+      {
+        "question": "What is your cancellation policy?",
+        "answer": "Free cancellation with a full refund if you cancel more than 24 hours before the tour starts. Cancellations made less than 24 hours before the start time, or no-shows, are non-refundable. If the operator has to cancel (for example due to bad weather or safety), you get a full refund or a free reschedule. To cancel, message us on WhatsApp (+34 624 074 633) with your booking reference — eligible refunds are processed within 14 days."
+      },
+      {
+        "question": "Can I book an excursion within 24 hours of its start time?",
+        "answer": "It depends on the season. Outside high season we can usually confirm bookings made just a few hours ahead (minimum 3 hours before the start). In high season (15 June – 15 September) the island is busy, so online bookings need at least 12 hours' notice (an evening booking for the next morning is fine). For anything sooner, message us on WhatsApp or visit the office and we'll do our best to fit you in."
+      },
+      {
+        "question": "Will I be picked up at my hotel when a transfer is possible?",
+        "answer": "And where is the meeting point The exact meeting point for your excursion will be specified in your booking confirmation email. If a transfer service is included with your booking, we offer convenient hotel pickup. The availability of this service will depend on your hotel’s location and the specific excursion."
+      },
+      {
+        "question": "May I pay directly in cash when the tour / activity starts?",
+        "answer": "We offer online purchases on the platform. If you wish to buy with cash you can visit our office."
+      },
+      {
+        "question": "Do you offer discounts?",
+        "answer": "We generally cannot give any discounts due to the very high demand. We offer discount for group bookings. Please contact us"
+      },
+      {
+        "question": "What happens if the weather is too bad to go on the excursion?",
+        "answer": "If the weather is too bad to go on the excursion, it will be rescheduled or you will receive a full refund."
+      },
+      {
+        "question": "May I purchase a gift voucher?",
+        "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
+      }
+    ],
+    "imageUrl": "/images/tours/armani-people-1.webp",
+    "url": "",
+    "minAge": 0,
+    "supplierId": "ocean-peak-charters",
+    "bookingPhone": "699 995 555"
+  },
+  {
+    "slug": "lady-sunshine-private-charter",
+    "title": "Lady Sunshine — Private sailing yacht charter (Bavaria 55)",
+    "category": "whale-watching",
+    "group": "water",
+    "duration": "3h / 4h / 5h / 6h / 7h / 8h",
+    "capacity": 12,
+    "languages": [
+      "English",
+      "Español",
+      "Русский"
+    ],
+    "pricing": [
+      {
+        "label": "3 hours — whole yacht (private, up to 12 guests)",
+        "price": 750,
+        "net": 563
+      },
+      {
+        "label": "4 hours — whole yacht (private, up to 12 guests)",
+        "price": 880,
+        "net": 660
+      },
+      {
+        "label": "5 hours — whole yacht (private, up to 12 guests)",
+        "price": 1050,
+        "net": 787
+      },
+      {
+        "label": "6 hours — whole yacht (private, up to 12 guests)",
+        "price": 1230,
+        "net": 923
+      },
+      {
+        "label": "7 hours — whole yacht (private, up to 12 guests)",
+        "price": 1400,
+        "net": 1050
+      },
+      {
+        "label": "8 hours — whole yacht (private, up to 12 guests)",
+        "price": 1570,
+        "net": 1177
+      }
+    ],
+    "priceFrom": 750,
+    "description": "Lady Sunshine is an elegant Bavaria Cruiser 55 sailing yacht (16.1 m, up to 12 guests) — the premium way to explore Tenerife's south coast under sail, with a professional multilingual crew of two.\n\nOn 3–4 hour trips you'll sail the Costa Adeje beaches with a swim stop; 5–6 hours gives a relaxed pace toward the Los Gigantes cliffs (paella added from 5 hours); 7–8 hours is a full day out to Los Gigantes and the Barranco de Masca. On board: stand-up paddleboard, tandem kayak and snorkelling gear, premium catering and an open bar.\n\nPriced per yacht, not per person — made for birthdays, proposals, anniversaries, corporate days or a special escape at sea. Optional transfer between Los Cristianos and Costa Adeje (extra cost, on request).",
+    "included": "Private use of the whole yacht · professional multilingual crew of 2 · premium catering (charcuterie, cheese, Spanish omelette, hummus, nachos, fruit, macarons) · open bar (cava, wine, beer, soft drinks, water) · SUP, tandem kayak & snorkelling gear · swim stop · paella on 5h+ trips",
+    "meetingPoint": "Puerto Colón Marina — Pantalán 14, Costa Adeje",
+    "pickup": "no",
+    "faq": [
+      {
+        "question": "How will I receive my tickets?",
+        "answer": "After you complete your purchase, you will receive an order confirmation email within a few minutes. This email will contain all the details of your purchase, including the event, date, and number of tickets. Please note we do not send tickets by post."
+      },
+      {
+        "question": "What is your cancellation policy?",
+        "answer": "Free cancellation with a full refund if you cancel more than 24 hours before the tour starts. Cancellations made less than 24 hours before the start time, or no-shows, are non-refundable. If the operator has to cancel (for example due to bad weather or safety), you get a full refund or a free reschedule. To cancel, message us on WhatsApp (+34 624 074 633) with your booking reference — eligible refunds are processed within 14 days."
+      },
+      {
+        "question": "Can I book an excursion within 24 hours of its start time?",
+        "answer": "It depends on the season. Outside high season we can usually confirm bookings made just a few hours ahead (minimum 3 hours before the start). In high season (15 June – 15 September) the island is busy, so online bookings need at least 12 hours' notice (an evening booking for the next morning is fine). For anything sooner, message us on WhatsApp or visit the office and we'll do our best to fit you in."
+      },
+      {
+        "question": "Will I be picked up at my hotel when a transfer is possible?",
+        "answer": "And where is the meeting point The exact meeting point for your excursion will be specified in your booking confirmation email. If a transfer service is included with your booking, we offer convenient hotel pickup. The availability of this service will depend on your hotel’s location and the specific excursion."
+      },
+      {
+        "question": "May I pay directly in cash when the tour / activity starts?",
+        "answer": "We offer online purchases on the platform. If you wish to buy with cash you can visit our office."
+      },
+      {
+        "question": "Do you offer discounts?",
+        "answer": "We generally cannot give any discounts due to the very high demand. We offer discount for group bookings. Please contact us"
+      },
+      {
+        "question": "What happens if the weather is too bad to go on the excursion?",
+        "answer": "If the weather is too bad to go on the excursion, it will be rescheduled or you will receive a full refund."
+      },
+      {
+        "question": "May I purchase a gift voucher?",
+        "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
+      }
+    ],
+    "imageUrl": "https://oceanpeakcharters.com/wp-content/uploads/2026/05/Lady-Sunshine.jpg",
+    "url": "https://oceanpeakcharters.com/product/lady-sunshine/",
+    "minAge": 0,
+    "supplierId": "ocean-peak-charters",
+    "bookingPhone": "699 995 555"
+  },
+  {
+    "slug": "champagne-shared-trip",
+    "title": "Champagne — Shared boat trip (morning & sunset)",
+    "category": "whale-watching",
+    "group": "water",
+    "duration": "2h / 3h",
+    "capacity": 10,
+    "languages": [
+      "English",
+      "Español",
+      "Русский"
+    ],
+    "pricing": [
+      {
+        "label": "Morning 10:00 — 3 hours (per person)",
+        "price": 74,
+        "net": 35
+      },
+      {
+        "label": "Sunset — 2 hours (per person)",
+        "price": 59,
+        "net": 35
+      }
+    ],
+    "priceFrom": 59,
+    "description": "Join a shared group cruise aboard Champagne, a Sealine SC29 motor yacht leaving Puerto Colón (Pantalán 3) — pay per person, no need to book the whole boat.\n\nTwo departures: a 3-hour morning trip at 10:00, or a 2-hour sunset cruise. You cruise the Costa Adeje coast — Playa Diego Hernández, El Puertito, El Callao, Las Vistas — with a swim-and-snorkel stop in a quiet cove. A lunch box, fruit and an open bar are included on board.\n\nA relaxed, sociable day at sea for couples, friends and families. Minimum 4 guests; children under 2 travel free.",
+    "included": "Shared group departure (min 4 guests) · professional crew · lunch box with premium sandwich (vegan/veg/meat/fish), fresh fruit, crudités, nuts & dessert · open bar (cava, wine, beer, soft drinks, water) · snorkelling gear · swim stop · Mount Teide & coastline views",
+    "meetingPoint": "Puerto Colón Marina — Pantalán 3, Costa Adeje",
+    "pickup": "no",
+    "faq": [
+      {
+        "question": "How will I receive my tickets?",
+        "answer": "After you complete your purchase, you will receive an order confirmation email within a few minutes. This email will contain all the details of your purchase, including the event, date, and number of tickets. Please note we do not send tickets by post."
+      },
+      {
+        "question": "What is your cancellation policy?",
+        "answer": "Free cancellation with a full refund if you cancel more than 24 hours before the tour starts. Cancellations made less than 24 hours before the start time, or no-shows, are non-refundable. If the operator has to cancel (for example due to bad weather or safety), you get a full refund or a free reschedule. To cancel, message us on WhatsApp (+34 624 074 633) with your booking reference — eligible refunds are processed within 14 days."
+      },
+      {
+        "question": "Can I book an excursion within 24 hours of its start time?",
+        "answer": "It depends on the season. Outside high season we can usually confirm bookings made just a few hours ahead (minimum 3 hours before the start). In high season (15 June – 15 September) the island is busy, so online bookings need at least 12 hours' notice (an evening booking for the next morning is fine). For anything sooner, message us on WhatsApp or visit the office and we'll do our best to fit you in."
+      },
+      {
+        "question": "Will I be picked up at my hotel when a transfer is possible?",
+        "answer": "And where is the meeting point The exact meeting point for your excursion will be specified in your booking confirmation email. If a transfer service is included with your booking, we offer convenient hotel pickup. The availability of this service will depend on your hotel’s location and the specific excursion."
+      },
+      {
+        "question": "May I pay directly in cash when the tour / activity starts?",
+        "answer": "We offer online purchases on the platform. If you wish to buy with cash you can visit our office."
+      },
+      {
+        "question": "Do you offer discounts?",
+        "answer": "We generally cannot give any discounts due to the very high demand. We offer discount for group bookings. Please contact us"
+      },
+      {
+        "question": "What happens if the weather is too bad to go on the excursion?",
+        "answer": "If the weather is too bad to go on the excursion, it will be rescheduled or you will receive a full refund."
+      },
+      {
+        "question": "May I purchase a gift voucher?",
+        "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
+      }
+    ],
+    "imageUrl": "/images/tours/champagne.jpg",
+    "url": "",
+    "minAge": 0,
+    "timeSlots": [
+      "10:00",
+      "19:00"
+    ],
+    "supplierId": "ocean-peak-charters",
+    "bookingPhone": "699 995 555",
+    "prep": {
+      "bring": [
+        "Swimwear and a towel",
+        "Sunglasses and sunscreen",
+        "A light layer for the sunset trip",
+        "Phone or camera"
+      ],
+      "dress": "Light, comfortable clothes; bring a layer for the evening cruise as it cools at sea.",
+      "notes": "Lunch box and open bar are included. Shared group trip, minimum 4 guests; children under 2 free. Departures at 10:00 (3h) or sunset (2h) — arrive at Pantalán 3, Puerto Colón about 15–30 minutes early."
+    }
   },
   {
     "slug": "buggy-teide-adventure",
@@ -3086,6 +3362,73 @@
     "reviewCount": 37203,
     "reviewSource": "Google",
     "reviewedName": "Siam Park",
+    "meetingPoint": "Siam Park, Av. Siam, Costa Adeje",
+    "minAge": 0
+  },
+  {
+    "slug": "siam-park-all-inclusive-deluxe",
+    "title": "Siam Park — All Inclusive Deluxe (Fast Pass + food & drinks)",
+    "category": "parks",
+    "group": "land",
+    "duration": "Full day",
+    "languages": [
+      "Deutsch",
+      "English",
+      "Español",
+      "Français",
+      "Italiano",
+      "Neerlandés",
+      "Rumano",
+      "Русский"
+    ],
+    "pricing": [
+      {
+        "label": "Per person (age 3+)",
+        "price": 165,
+        "net": 132
+      }
+    ],
+    "priceFrom": 165,
+    "description": "The VIP way to do Siam Park — the water park TripAdvisor has crowned the best on the planet. The All Inclusive Deluxe ticket bundles unlimited Fast Pass to skip the queues on most rides, all-you-can-eat at the park restaurants, unlimited soft drinks, beer and water, plus a towel and a locker.\n\nTake on the giant waves of the Wave Palace, drift the one-kilometre Mai Thai River through the Thai-themed jungle, and brave Tower of Power — a near-vertical 28-metre drop at up to 80 km/h through a shark-and-ray tank. Note: Fast Pass covers all rides except Tower of Power and Mai Thai River, which keep their normal queues.\n\nPriced per person (age 3+); under-3s enter free. The best option if you want the full Siam Park with the food, drinks and shorter queues sorted — ideal for families and anyone visiting in high season.",
+    "included": "Full-day park entry · unlimited Fast Pass on all rides EXCEPT Tower of Power & Mai Thai River · all-you-can-eat at the park restaurants (Beach Club, Thai House, Coco Bar) · unlimited soft drinks, beer & water (no cocktails, wine or spirits) · towel (return required) · locker (refundable deposit paid at the park). Not included: sunbeds/cabana, parking (~€7/day).",
+    "faq": [
+      {
+        "question": "How will I receive my tickets?",
+        "answer": "After you complete your purchase, you will receive an order confirmation email within a few minutes. This email will contain all the details of your purchase, including the event, date, and number of tickets. Please note we do not send tickets by post."
+      },
+      {
+        "question": "What is your cancellation policy?",
+        "answer": "Free cancellation with a full refund if you cancel more than 24 hours before the tour starts. Cancellations made less than 24 hours before the start time, or no-shows, are non-refundable. If the operator has to cancel (for example due to bad weather or safety), you get a full refund or a free reschedule. To cancel, message us on WhatsApp (+34 624 074 633) with your booking reference — eligible refunds are processed within 14 days."
+      },
+      {
+        "question": "Can I book an excursion within 24 hours of its start time?",
+        "answer": "It depends on the season. Outside high season we can usually confirm bookings made just a few hours ahead (minimum 3 hours before the start). In high season (15 June – 15 September) the island is busy, so online bookings need at least 12 hours' notice (an evening booking for the next morning is fine). For anything sooner, message us on WhatsApp or visit the office and we'll do our best to fit you in."
+      },
+      {
+        "question": "Will I be picked up at my hotel when a transfer is possible?",
+        "answer": "And where is the meeting point The exact meeting point for your excursion will be specified in your booking confirmation email. If a transfer service is included with your booking, we offer convenient hotel pickup. The availability of this service will depend on your hotel’s location and the specific excursion."
+      },
+      {
+        "question": "May I pay directly in cash when the tour / activity starts?",
+        "answer": "We offer online purchases on the platform. If you wish to buy with cash you can visit our office."
+      },
+      {
+        "question": "Do you offer discounts?",
+        "answer": "We generally cannot give any discounts due to the very high demand. We offer discount for group bookings. Please contact us"
+      },
+      {
+        "question": "What happens if the weather is too bad to go on the excursion?",
+        "answer": "If the weather is too bad to go on the excursion, it will be rescheduled or you will receive a full refund."
+      },
+      {
+        "question": "May I purchase a gift voucher?",
+        "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
+      }
+    ],
+    "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6659956066980b3e57ccf786_z.webp",
+    "url": "",
+    "bookingPhone": "922 797 573 / 662 936 575",
+    "supplierId": "nere",
     "meetingPoint": "Siam Park, Av. Siam, Costa Adeje",
     "minAge": 0
   },
@@ -6052,10 +6395,10 @@
   },
   {
     "slug": "armani-sunset-boat",
-    "title": "Armani — Sunset boat trip with drinks & tapas",
+    "title": "Armani — Shared boat trip (morning & sunset)",
     "category": "whale-watching",
     "group": "water",
-    "duration": "2h",
+    "duration": "2h / 3h",
     "languages": [
       "Deutsch",
       "English",
@@ -6066,17 +6409,22 @@
       "Rumano",
       "Русский"
     ],
-    "minAge": 18,
+    "minAge": 0,
     "pricing": [
       {
-        "label": "Per person",
-        "price": 60,
+        "label": "Morning 10:00 — 3 hours (per person)",
+        "price": 64,
+        "net": 30
+      },
+      {
+        "label": "Sunset — 2 hours (per person)",
+        "price": 59,
         "net": 30
       }
     ],
-    "priceFrom": 60,
-    "description": "Sail into the Tenerife sunset aboard Armani, a sleek charter that leaves Puerto Colón every evening at 19:00. Over two hours you cruise the Costa Adeje coastline as the sun drops into the Atlantic — glass in hand, tapas on deck.\n\nAn adults-only, laid-back evening on the water, perfect for couples and friends chasing the island's best golden-hour views. Drinks on board and a selection of tapas are included.",
-    "included": "・ 2-hour sunset cruise along Costa Adeje\n・ Drinks on board\n・ Selection of tapas",
+    "priceFrom": 59,
+    "description": "Join a shared group cruise aboard Armani, a Maxum motorboat leaving Puerto Colón (Pantalán 2) — pay per person, no need to book the whole boat.\n\nTwo departures: a 3-hour morning trip at 10:00, or a 2-hour sunset cruise as the sun drops into the Atlantic. Either way you cruise the Costa Adeje coast — Playa Diego Hernández, El Puertito, El Callao, Las Vistas — with a swim-and-snorkel stop in a quiet cove. A lunch box, fruit and an open bar are included on board.\n\nA relaxed, sociable day at sea for couples, friends and families. Minimum 4 guests; children under 2 travel free.",
+    "included": "Shared group departure (min 4 guests) · professional crew · lunch box with premium sandwich (vegan/veg/meat/fish), fresh fruit, crudités, nuts & dessert · open bar (cava, wine, beer, soft drinks, water) · snorkelling gear · swim stop · Mount Teide & coastline views",
     "faq": [
       {
         "question": "How will I receive my tickets?",
@@ -6107,6 +6455,7 @@
     ],
     "url": "",
     "timeSlots": [
+      "10:00",
       "19:00"
     ],
     "bookingPhone": "699 995 555",
@@ -6114,13 +6463,13 @@
     "meetingPoint": "Pantalán 2, Puerto Colón Marina, Costa Adeje",
     "prep": {
       "bring": [
-        "A light jacket or sweater for after sunset",
-        "Sunglasses",
-        "Sunscreen",
-        "Phone or camera for the sunset"
+        "Swimwear and a towel",
+        "Sunglasses and sunscreen",
+        "A light layer for the sunset trip",
+        "Phone or camera"
       ],
-      "dress": "Comfortable clothes in layers — it cools down at sea once the sun sets.",
-      "notes": "Drinks and tapas are included on board. Adults only (18+). Departure is 19:00 sharp — arrive at Pantalán 2, Puerto Colón about 15–30 minutes early."
+      "dress": "Light, comfortable clothes; bring a layer for the evening cruise as it cools at sea.",
+      "notes": "Lunch box and open bar are included. Shared group trip, minimum 4 guests; children under 2 free. Departures at 10:00 (3h) or sunset (2h) — arrive at Pantalán 2, Puerto Colón about 15–30 minutes early."
     }
   }
 ]
