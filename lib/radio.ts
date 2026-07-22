@@ -26,7 +26,15 @@ export function getLatestSegment(): RadioSegment | null {
   return JSON.parse(fs.readFileSync(SEGMENT_MANIFEST, "utf-8"));
 }
 
-export type SpecialEpisode = { slug: string; title: string; generatedAt: string; lines: RadioSegmentLine[] };
+export type SpecialEpisode = {
+  slug: string;
+  title: string;
+  generatedAt: string;
+  lines: RadioSegmentLine[];
+  episodeFile?: string;
+  episodeDurationSeconds?: number;
+  episodeSizeBytes?: number;
+};
 
 const SPECIAL_DIR = path.join(process.cwd(), "public", "radio", "segments", "special");
 
@@ -39,6 +47,16 @@ export function getSpecialEpisodes(): SpecialEpisode[] {
     .filter((slug) => fs.existsSync(path.join(SPECIAL_DIR, slug, "manifest.json")))
     .map((slug) => {
       const manifest = JSON.parse(fs.readFileSync(path.join(SPECIAL_DIR, slug, "manifest.json"), "utf-8"));
-      return { slug, title: manifest.title ?? slug, generatedAt: manifest.generatedAt, lines: manifest.lines };
-    });
+      return {
+        slug,
+        title: manifest.title ?? slug,
+        generatedAt: manifest.generatedAt,
+        lines: manifest.lines,
+        episodeFile: manifest.episodeFile,
+        episodeDurationSeconds: manifest.episodeDurationSeconds,
+        episodeSizeBytes: manifest.episodeSizeBytes,
+      };
+    })
+    .filter((e) => e.episodeFile) // podcast feed only wants episodes with a stitched mp3
+    .sort((a, b) => b.generatedAt.localeCompare(a.generatedAt));
 }

@@ -72,5 +72,8 @@
       "text": "More to come on this. Stay with us.",
       "file": "/radio/segments/special/tren-del-sur/line-13.mp3"
     }
-  ]
+  ],
+  "episodeFile": "/radio/segments/special/tren-del-sur/episode.mp3",
+  "episodeDurationSeconds": 201.69,
+  "episodeSizeBytes": 3227934
 }

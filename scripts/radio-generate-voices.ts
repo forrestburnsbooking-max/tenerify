@@ -9,6 +9,8 @@
 
 import fs from "fs";
 import path from "path";
+import { spawnSync } from "child_process";
+import ffmpegPath from "ffmpeg-static";
 
 // Load .env.local so `npm run radio:voices` works without exporting vars by hand.
 try {
@@ -97,15 +99,48 @@ async function main() {
     manifest.push({ speaker: line.speaker, text: line.text, file: `${PUBLIC_PREFIX}/${fileName}` });
   }
 
+  // Stitch every line into one continuous episode.mp3 — podcast platforms need
+  // a single enclosure file per episode, not a scatter of per-line clips.
+  const listFile = path.join(OUT_DIR, "concat-list.txt");
+  const episodeFile = path.join(OUT_DIR, "episode.mp3");
+  fs.writeFileSync(
+    listFile,
+    manifest.map((m) => `file '${path.join(OUT_DIR, path.basename(m.file))}'`).join("\n")
+  );
+  const ffmpegResult = spawnSync(
+    ffmpegPath as unknown as string,
+    ["-y", "-f", "concat", "-safe", "0", "-i", listFile, "-c", "copy", episodeFile],
+    { encoding: "utf-8" }
+  );
+  if (ffmpegResult.status !== 0) {
+    throw new Error(`ffmpeg failed: ${ffmpegResult.stderr}`);
+  }
+  const ffmpegOutput = ffmpegResult.stderr ?? "";
+  fs.unlinkSync(listFile);
+
+  const durationMatches = [...ffmpegOutput.matchAll(/time=(\d+):(\d+):(\d+\.\d+)/g)];
+  const lastMatch = durationMatches[durationMatches.length - 1];
+  const durationSeconds = lastMatch
+    ? Number(lastMatch[1]) * 3600 + Number(lastMatch[2]) * 60 + Number(lastMatch[3])
+    : null;
+  const episodeSizeBytes = fs.statSync(episodeFile).size;
+
   fs.writeFileSync(
     path.join(OUT_DIR, "manifest.json"),
     JSON.stringify(
-      { generatedAt: script.generatedAt, title: (script as { title?: string }).title, lines: manifest },
+      {
+        generatedAt: script.generatedAt,
+        title: (script as { title?: string }).title,
+        lines: manifest,
+        episodeFile: `${PUBLIC_PREFIX}/episode.mp3`,
+        episodeDurationSeconds: durationSeconds,
+        episodeSizeBytes,
+      },
       null,
       2
     )
   );
-  console.log(`Done — ${manifest.length} lines rendered to ${path.relative(process.cwd(), OUT_DIR)}`);
+  console.log(`Done — ${manifest.length} lines rendered + stitched to ${path.relative(process.cwd(), episodeFile)}`);
 }
 
 main().catch((err) => {
