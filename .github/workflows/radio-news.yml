@@ -1,0 +1,43 @@
+name: Radio Tenerify — hourly news segment
+
+on:
+  schedule:
+    - cron: "5 * * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm ci
+
+      - name: Generate news script
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: npx tsx scripts/radio-generate-news.ts
+
+      - name: Render voices
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+        run: npx tsx scripts/radio-generate-voices.ts
+
+      - name: Commit and push new segment
+        run: |
+          git config user.name "radio-tenerify-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/radio/segments/latest.json public/radio/segments/latest
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Radio Tenerify: refresh news segment [skip ci]"
+            git push
+          fi
