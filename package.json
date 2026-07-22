@@ -14,7 +14,9 @@
     "reels:enhance": "npx tsx scripts/enhance-photos.ts",
     "reels:animate": "npx tsx scripts/animate-photos.ts",
     "reels:photos": "npx tsx scripts/photo-review.ts",
-    "reels:render": "npx tsx scripts/render-reels.ts"
+    "reels:render": "npx tsx scripts/render-reels.ts",
+    "radio:news": "npx tsx scripts/radio-generate-news.ts",
+    "radio:voices": "npx tsx scripts/radio-generate-voices.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.101.0",
