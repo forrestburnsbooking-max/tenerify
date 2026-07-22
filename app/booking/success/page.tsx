@@ -5,7 +5,7 @@ import { useEffect, useState, Suspense } from "react";
 import type { PrepInstructions } from "@/lib/prep";
 import { useTwemoji } from "@/lib/useTwemoji";
 
-const WHATSAPP_NUMBER = "34610434957";
+const WHATSAPP_NUMBER = "34624074633";
 
 type BookingInfo = {
   tourName: string;

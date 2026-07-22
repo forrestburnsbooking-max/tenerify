@@ -10,7 +10,7 @@ const jakarta = Plus_Jakarta_Sans({
   display: "swap",
 });
 
-const WHATSAPP_NUMBER = "34610434957";
+const WHATSAPP_NUMBER = "34624074633";
 
 const title = "Tenerify.ai — Your local AI guide to Tenerife";
 const description = "Discover and book the best experiences in Tenerife Sur. AI-powered, locally curated.";
