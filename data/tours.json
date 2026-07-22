@@ -2643,85 +2643,8 @@
     "minAge": 0
   },
   {
-    "slug": "booster-pack-puerto-colon",
-    "title": "Booster Pack — Jet Ski & Parascending",
-    "category": "jetski",
-    "group": "water",
-    "duration": "1h",
-    "languages": [
-      "Deutsch",
-      "English",
-      "Español",
-      "Français",
-      "Italiano",
-      "Neerlandés",
-      "Rumano",
-      "Русский"
-    ],
-    "minAge": 16,
-    "pricing": [
-      {
-        "label": "Per person",
-        "price": 110,
-        "net": 45
-      }
-    ],
-    "priceFrom": 110,
-    "description": "Two adrenaline hits in one go from Puerto Colón. The Booster Pack combines a jet ski blast along the coast with parascending — soaring high above the water under a parachute towed by a speedboat.\n\nIt's the perfect combo for thrill-seekers: pure speed at sea level, then a calm, breathtaking bird's-eye view of the coastline from up high.\n\nNo experience needed for either — guides handle everything. Bring a swimsuit, towel and sunscreen.",
-    "faq": [
-      {
-        "question": "How will I receive my tickets?",
-        "answer": "After you complete your purchase, you will receive an order confirmation email within a few minutes. This email will contain all the details of your purchase, including the event, date, and number of tickets. Please note we do not send tickets by post."
-      },
-      {
-        "question": "What is your cancellation policy?",
-        "answer": "Free cancellation with a full refund if you cancel more than 24 hours before the tour starts. Cancellations made less than 24 hours before the start time, or no-shows, are non-refundable. If the operator has to cancel (for example due to bad weather or safety), you get a full refund or a free reschedule. To cancel, message us on WhatsApp (+34 624 074 633) with your booking reference — eligible refunds are processed within 14 days."
-      },
-      {
-        "question": "Can I book an excursion within 24 hours of its start time?",
-        "answer": "It depends on the season. Outside high season we can usually confirm bookings made just a few hours ahead (minimum 3 hours before the start). In high season (15 June – 15 September) the island is busy, so online bookings need at least 12 hours' notice (an evening booking for the next morning is fine). For anything sooner, message us on WhatsApp or visit the office and we'll do our best to fit you in."
-      },
-      {
-        "question": "Will I be picked up at my hotel when a transfer is possible?",
-        "answer": "And where is the meeting point The exact meeting point for your excursion will be specified in your booking confirmation email. If a transfer service is included with your booking, we offer convenient hotel pickup. The availability of this service will depend on your hotel’s location and the specific excursion."
-      },
-      {
-        "question": "May I pay directly in cash when the tour / activity starts?",
-        "answer": "We offer online purchases on the platform. If you wish to buy with cash you can visit our office."
-      },
-      {
-        "question": "Do you offer discounts?",
-        "answer": "We generally cannot give any discounts due to the very high demand. We offer discount for group bookings. Please contact us"
-      },
-      {
-        "question": "What happens if the weather is too bad to go on the excursion?",
-        "answer": "If the weather is too bad to go on the excursion, it will be rescheduled or you will receive a full refund."
-      },
-      {
-        "question": "May I purchase a gift voucher?",
-        "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
-      }
-    ],
-    "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6692c42396277c050a9605c4_BOOSTER_PACKS1.webp",
-    "url": "https://www.excursionstenerife.es/tours/booster-pack-puerto-colon",
-    "timeSlots": [
-      "09:00",
-      "10:00",
-      "11:00",
-      "12:00",
-      "13:00",
-      "14:00",
-      "15:00",
-      "16:00",
-      "17:00"
-    ],
-    "meetingPoint": "Puerto Colón Marina, Costa Adeje",
-    "supplierId": "watersport",
-    "bookingPhone": "638 531 863"
-  },
-  {
     "slug": "jet-ski-puerto-colon",
-    "title": "Jetski — Ocean Safari excursion",
+    "title": "Jet Ski Safari — Puerto Colón",
     "category": "jetski",
     "group": "water",
     "duration": "1h",
@@ -2738,18 +2661,18 @@
     "minAge": 16,
     "pricing": [
       {
-        "label": "40 minutes (1-2 people)",
-        "price": 90,
-        "net": 50
+        "label": "1 hour — Single",
+        "price": 99,
+        "net": 60
       },
       {
-        "label": "1 hour (1-2 people)",
-        "price": 100,
-        "net": 60
+        "label": "1 hour — Double",
+        "price": 119,
+        "net": 70
       }
     ],
-    "priceFrom": 90,
-    "description": "For a hit of speed and salt spray, nothing beats a jet ski safari along the Costa Adeje coast. Led by an instructor on the water, you'll ride out from the Las Américas area and skim the south coastline, taking in the cliffs and open Atlantic at full throttle.\n\nThe price covers a full one-hour ride on a jet ski for two — ride together or take turns. It's a guided safari: you simply follow the lead jet ski, so no experience is needed.\n\nBring a swimsuit, a towel and a waterproof phone case if you want photos.",
+    "priceFrom": 99,
+    "description": "For a hit of speed and salt spray, nothing beats a jet ski safari along the Costa Adeje coast. Led by an instructor on the water, you'll ride out from Puerto Colón and skim the south coastline, taking in the cliffs and open Atlantic at full throttle.\n\nChoose a single or double ski — ride solo or two-up. It's a guided safari: you simply follow the lead jet ski, so no experience is needed. Departs from Puerto Colón Marina in Costa Adeje — make your own way to the port (no hotel transfer on this one).\n\nBring a swimsuit, a towel and a waterproof phone case if you want photos.",
     "meetingPoint": "Puerto Colón Marina, Costa Adeje",
     "faq": [
       {
@@ -2800,84 +2723,8 @@
       "17:00"
     ],
     "supplierId": "jetski-puerto-colon",
-    "bookingPhone": "602 58 58 87"
-  },
-  {
-    "slug": "watersport-pack-puerto-colon",
-    "title": "Water Sports Pack — Jet Ski + Parascending + Fly Fish",
-    "category": "jetski",
-    "group": "water",
-    "duration": "1h",
-    "languages": [
-      "Deutsch",
-      "English",
-      "Español",
-      "Français",
-      "Italiano",
-      "Neerlandés",
-      "Rumano",
-      "Русский"
-    ],
-    "minAge": 16,
-    "pricing": [
-      {
-        "label": "Per person",
-        "price": 90,
-        "net": 54
-      }
-    ],
-    "priceFrom": 90,
-    "description": "Three watersports, one action-packed session from Puerto Colón: a jet ski ride, parascending high above the waves, and the wild Fly Fish towable.\n\nIt's the ultimate sampler for adrenaline lovers — speed, height and splash all in one booking, with guides looking after each activity. The best-value way to try a bit of everything.\n\nNo experience needed. Bring a swimsuit, towel and sunscreen.",
-    "faq": [
-      {
-        "question": "How will I receive my tickets?",
-        "answer": "After you complete your purchase, you will receive an order confirmation email within a few minutes. This email will contain all the details of your purchase, including the event, date, and number of tickets. Please note we do not send tickets by post."
-      },
-      {
-        "question": "What is your cancellation policy?",
-        "answer": "Free cancellation with a full refund if you cancel more than 24 hours before the tour starts. Cancellations made less than 24 hours before the start time, or no-shows, are non-refundable. If the operator has to cancel (for example due to bad weather or safety), you get a full refund or a free reschedule. To cancel, message us on WhatsApp (+34 624 074 633) with your booking reference — eligible refunds are processed within 14 days."
-      },
-      {
-        "question": "Can I book an excursion within 24 hours of its start time?",
-        "answer": "It depends on the season. Outside high season we can usually confirm bookings made just a few hours ahead (minimum 3 hours before the start). In high season (15 June – 15 September) the island is busy, so online bookings need at least 12 hours' notice (an evening booking for the next morning is fine). For anything sooner, message us on WhatsApp or visit the office and we'll do our best to fit you in."
-      },
-      {
-        "question": "Will I be picked up at my hotel when a transfer is possible?",
-        "answer": "And where is the meeting point The exact meeting point for your excursion will be specified in your booking confirmation email. If a transfer service is included with your booking, we offer convenient hotel pickup. The availability of this service will depend on your hotel’s location and the specific excursion."
-      },
-      {
-        "question": "May I pay directly in cash when the tour / activity starts?",
-        "answer": "We offer online purchases on the platform. If you wish to buy with cash you can visit our office."
-      },
-      {
-        "question": "Do you offer discounts?",
-        "answer": "We generally cannot give any discounts due to the very high demand. We offer discount for group bookings. Please contact us"
-      },
-      {
-        "question": "What happens if the weather is too bad to go on the excursion?",
-        "answer": "If the weather is too bad to go on the excursion, it will be rescheduled or you will receive a full refund."
-      },
-      {
-        "question": "May I purchase a gift voucher?",
-        "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
-      }
-    ],
-    "imageUrl": "https://cdn.prod.website-files.com/664b7dd803941967e876905a/6692e0b495f33c7a887c2c7b_z_Colage.webp",
-    "url": "https://www.excursionstenerife.es/tours/watersport-pack-puerto-colon",
-    "timeSlots": [
-      "09:00",
-      "10:00",
-      "11:00",
-      "12:00",
-      "13:00",
-      "14:00",
-      "15:00",
-      "16:00",
-      "17:00"
-    ],
-    "meetingPoint": "Puerto Colón Marina, Costa Adeje",
-    "bookingPhone": "638 531 863",
-    "supplierId": "watersport"
+    "bookingPhone": "602 58 58 87",
+    "included": "Jet ski, fuel, insurance, life jacket and wetsuit, guide."
   },
   {
     "slug": "aqualand",
@@ -5239,33 +5086,23 @@
     "title": "Jet Ski Safari — Las Galletas",
     "category": "jetski",
     "group": "water",
-    "duration": "1–2h",
+    "duration": "1h",
     "minAge": 16,
     "pricing": [
       {
         "label": "1 hour — Single",
-        "price": 90,
+        "price": 79,
         "net": 40
       },
       {
         "label": "1 hour — Double",
-        "price": 100,
+        "price": 99,
         "net": 50
-      },
-      {
-        "label": "2 hours — Single",
-        "price": 150,
-        "net": 100
-      },
-      {
-        "label": "2 hours — Double",
-        "price": 170,
-        "net": 110
       }
     ],
-    "priceFrom": 90,
-    "description": "Explore Tenerife's south coast on a powerful Sea-Doo jet ski, setting off from Marina del Sur in Las Galletas. A guide leads the safari along the coastline, with incredible open-ocean views the whole way.\n\nEverything's included — jet ski, fuel, insurance, life jacket and wetsuit, guide, and free pick-up and drop-off. Choose a single or double ski. It's a guided safari, so no experience is required; just follow the lead.\n\nBring a swimsuit and a towel; a waterproof phone case is handy for photos.",
-    "included": "Jet ski, fuel, insurance, life jacket and wetsuit, guide, free pick-up/drop-off in South Tenerife, soft drinks.",
+    "priceFrom": 79,
+    "description": "Explore Tenerife's south coast on a powerful Sea-Doo jet ski, setting off from Marina del Sur in Las Galletas. A guide leads the safari along the coastline, with incredible open-ocean views the whole way.\n\n**Free hotel pick-up and drop-off is included — but only within South Tenerife: Los Cristianos, Las Américas and Costa Adeje.** If you're staying in one of those areas, transfer is on us; from anywhere else you make your own way to Marina del Sur in Las Galletas.\n\nEverything else is included too — jet ski, fuel, insurance, life jacket and wetsuit, and your guide. Choose a single or double ski. It's a guided safari, so no experience is required; just follow the lead.\n\nBring a swimsuit and a towel; a waterproof phone case is handy for photos.",
+    "included": "Jet ski, fuel, insurance, life jacket and wetsuit, guide, soft drinks, and free pick-up/drop-off within South Tenerife (Los Cristianos, Las Américas, Costa Adeje only).",
     "meetingPoint": "Marina del Sur, Av. del Litoral, Pantalán Nº4, Las Galletas",
     "faq": [
       {
@@ -5535,50 +5372,6 @@
       "16:00",
       "19:00"
     ]
-  },
-  {
-    "slug": "jetski-extreme",
-    "title": "Extreme Jet Ski Safari",
-    "category": "jetski",
-    "group": "water",
-    "duration": "40 min or 1h",
-    "pricing": [
-      {
-        "label": "40 minutes (1-2 people)",
-        "price": 90,
-        "net": 50
-      },
-      {
-        "label": "1 hour (1-2 people)",
-        "price": 100,
-        "net": 60
-      }
-    ],
-    "priceFrom": 90,
-    "description": "Tenerife's south-west coast at full throttle. The Extreme Jet Ski Safari runs in small groups (max 4 skis) with a multilingual guide leading the way — so you get real speed and attention, not a crowd.\n\nFrom Puerto Colón you'll carve along the Costa Adeje coast toward La Caleta and the offshore fish farms, where dolphins are often spotted, with the longer ride pushing on toward Palm Mar. Powerful Sea-Doo skis, photos of your ride included, and no licence or experience needed — just hold on.\n\nRide solo or two-up; choose 40 minutes or a full hour. Bring a swimsuit, a towel and a waterproof phone case.",
-    "faq": [
-      {
-        "question": "How will I receive my tickets?",
-        "answer": "After you complete your purchase, you will receive an order confirmation email within a few minutes with all the details of your booking."
-      },
-      {
-        "question": "What is your cancellation policy?",
-        "answer": "Free cancellation with a full refund if you cancel more than 24 hours before the tour starts. Cancellations made less than 24 hours before the start time, or no-shows, are non-refundable. If the operator has to cancel (for example due to bad weather or safety), you get a full refund or a free reschedule. To cancel, message us on WhatsApp (+34 624 074 633) with your booking reference — eligible refunds are processed within 14 days."
-      },
-      {
-        "question": "What happens if the weather is too bad?",
-        "answer": "If the weather is too bad to go on the excursion, it will be rescheduled or you will receive a full refund."
-      },
-      {
-        "question": "Do I need a licence or experience?",
-        "answer": "No — it's a guided safari, you follow the instructor. No licence or experience needed."
-      }
-    ],
-    "meetingPoint": "Puerto Colón Harbour — Pantalán 7, Costa Adeje",
-    "bookingPhone": "642 81 19 12",
-    "supplierId": "jetski-extreme",
-    "imageUrl": "/images/tours/jetski-extreme.jpg",
-    "minAge": 16
   },
   {
     "slug": "ultimate-quads",

@@ -8,10 +8,7 @@
 export const CLIP_GROUPS: Record<string, string[]> = {
   jetski: [
     "jet-ski-puerto-colon", // representative photo
-    "booster-pack-puerto-colon",
-    "watersport-pack-puerto-colon",
     "jetski-las-galletas",
-    "jetski-extreme",
   ],
   buggy: ["buggy-teide-adventure", "buggy-sunset-adventure"],
   quad: ["quad-teide-tour", "quad-sunset-tour", "ultimate-quads"],
