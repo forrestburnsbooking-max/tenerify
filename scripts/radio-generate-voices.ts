@@ -21,8 +21,19 @@ try {
   /* no .env.local — rely on real env */
 }
 
-const SCRIPT_FILE = path.join(process.cwd(), "data", "radio", "segments", "latest.json");
-const OUT_DIR = path.join(process.cwd(), "public", "radio", "segments", "latest");
+// Supports two modes:
+//   npx tsx scripts/radio-generate-voices.ts                 → renders the hourly news segment
+//   npx tsx scripts/radio-generate-voices.ts --special <slug> → renders a special-topic segment
+const specialIdx = process.argv.indexOf("--special");
+const specialSlug = specialIdx !== -1 ? process.argv[specialIdx + 1] : null;
+
+const SCRIPT_FILE = specialSlug
+  ? path.join(process.cwd(), "data", "radio", "segments", "special", `${specialSlug}.json`)
+  : path.join(process.cwd(), "data", "radio", "segments", "latest.json");
+const OUT_DIR = specialSlug
+  ? path.join(process.cwd(), "public", "radio", "segments", "special", specialSlug)
+  : path.join(process.cwd(), "public", "radio", "segments", "latest");
+const PUBLIC_PREFIX = specialSlug ? `/radio/segments/special/${specialSlug}` : "/radio/segments/latest";
 
 // Two default ElevenLabs voice IDs (stock library voices — swap for your own picks
 // in the ElevenLabs voice library at https://elevenlabs.io/app/voice-library).
@@ -83,12 +94,16 @@ async function main() {
     const audio = await renderLine(line.text, voiceId, apiKey);
     const fileName = `line-${String(i).padStart(2, "0")}.mp3`;
     fs.writeFileSync(path.join(OUT_DIR, fileName), audio);
-    manifest.push({ speaker: line.speaker, text: line.text, file: `/radio/segments/latest/${fileName}` });
+    manifest.push({ speaker: line.speaker, text: line.text, file: `${PUBLIC_PREFIX}/${fileName}` });
   }
 
   fs.writeFileSync(
     path.join(OUT_DIR, "manifest.json"),
-    JSON.stringify({ generatedAt: script.generatedAt, lines: manifest }, null, 2)
+    JSON.stringify(
+      { generatedAt: script.generatedAt, title: (script as { title?: string }).title, lines: manifest },
+      null,
+      2
+    )
   );
   console.log(`Done — ${manifest.length} lines rendered to ${path.relative(process.cwd(), OUT_DIR)}`);
 }

@@ -25,3 +25,20 @@ export function getLatestSegment(): RadioSegment | null {
   if (!fs.existsSync(SEGMENT_MANIFEST)) return null;
   return JSON.parse(fs.readFileSync(SEGMENT_MANIFEST, "utf-8"));
 }
+
+export type SpecialEpisode = { slug: string; title: string; generatedAt: string; lines: RadioSegmentLine[] };
+
+const SPECIAL_DIR = path.join(process.cwd(), "public", "radio", "segments", "special");
+
+// One-off "programme" episodes (e.g. a deep-dive discussion), generated via
+// scripts/radio-generate-special.ts — each lives in its own subfolder with a manifest.
+export function getSpecialEpisodes(): SpecialEpisode[] {
+  if (!fs.existsSync(SPECIAL_DIR)) return [];
+  return fs
+    .readdirSync(SPECIAL_DIR)
+    .filter((slug) => fs.existsSync(path.join(SPECIAL_DIR, slug, "manifest.json")))
+    .map((slug) => {
+      const manifest = JSON.parse(fs.readFileSync(path.join(SPECIAL_DIR, slug, "manifest.json"), "utf-8"));
+      return { slug, title: manifest.title ?? slug, generatedAt: manifest.generatedAt, lines: manifest.lines };
+    });
+}
