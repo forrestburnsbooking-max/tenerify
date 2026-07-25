@@ -12,11 +12,9 @@ export const CLIP_GROUPS: Record<string, string[]> = {
   ],
   buggy: ["buggy-teide-adventure", "buggy-sunset-adventure"],
   quad: ["quad-teide-tour", "quad-sunset-tour", "ultimate-quads"],
-  // 12-seat local sailing boats — Kosamui, Cool Sailing, Arriro, Sonador, Galatea.
+  // 12-seat local sailing boats — merged all-inclusive card, plus Sonador, Galatea.
   sailing: [
-    "kosamui-boat", // representative photo
-    "cool-sailing",
-    "arriro-boat",
+    "sailing-yacht-all-inclusive", // representative photo
     "sonador-boat",
     "galatea-boat",
   ],

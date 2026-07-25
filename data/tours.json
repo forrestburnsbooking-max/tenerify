@@ -725,181 +725,6 @@
     "minAge": 6
   },
   {
-    "slug": "arriro-boat",
-    "title": "Arriro yacht — Private or shared 3h sail trip with skipper",
-    "category": "whale-watching",
-    "group": "water",
-    "duration": "3h",
-    "languages": [
-      "Deutsch",
-      "English",
-      "Español",
-      "Français",
-      "Italiano",
-      "Neerlandés",
-      "Rumano",
-      "Русский"
-    ],
-    "pricing": [
-      {
-        "label": "Adult",
-        "price": 60,
-        "net": 27.5
-      },
-      {
-        "label": "Child",
-        "price": 45,
-        "net": 27.5
-      }
-    ],
-    "priceFrom": 60,
-    "description": "The Arriro is a sailboat departing Puerto Colón for the Costa Adeje coast, available as a private charter or a shared trip. Under sail you'll head out to find the pilot whales and dolphins that live in Canarian waters year-round.\n\nThere's time to swim in the clear Atlantic and enjoy the quiet of being under sail rather than engine. Choose a shared departure for value, or book it privately for your own group.\n\nA calm, authentic sailing experience. Bring swimwear, a towel and sunscreen.",
-    "faq": [
-      {
-        "question": "How will I receive my tickets?",
-        "answer": "After you complete your purchase, you will receive an order confirmation email within a few minutes. This email will contain all the details of your purchase, including the event, date, and number of tickets. Please note we do not send tickets by post."
-      },
-      {
-        "question": "What is your cancellation policy?",
-        "answer": "Free cancellation with a full refund if you cancel more than 24 hours before the tour starts. Cancellations made less than 24 hours before the start time, or no-shows, are non-refundable. If the operator has to cancel (for example due to bad weather or safety), you get a full refund or a free reschedule. To cancel, message us on WhatsApp (+34 624 074 633) with your booking reference — eligible refunds are processed within 14 days."
-      },
-      {
-        "question": "Can I book an excursion within 24 hours of its start time?",
-        "answer": "It depends on the season. Outside high season we can usually confirm bookings made just a few hours ahead (minimum 3 hours before the start). In high season (15 June – 15 September) the island is busy, so online bookings need at least 12 hours' notice (an evening booking for the next morning is fine). For anything sooner, message us on WhatsApp or visit the office and we'll do our best to fit you in."
-      },
-      {
-        "question": "Will I be picked up at my hotel when a transfer is possible?",
-        "answer": "And where is the meeting point The exact meeting point for your excursion will be specified in your booking confirmation email. If a transfer service is included with your booking, we offer convenient hotel pickup. The availability of this service will depend on your hotel’s location and the specific excursion."
-      },
-      {
-        "question": "May I pay directly in cash when the tour / activity starts?",
-        "answer": "We offer online purchases on the platform. If you wish to buy with cash you can visit our office."
-      },
-      {
-        "question": "Do you offer discounts?",
-        "answer": "We generally cannot give any discounts due to the very high demand. We offer discount for group bookings. Please contact us"
-      },
-      {
-        "question": "What happens if the weather is too bad to go on the excursion?",
-        "answer": "If the weather is too bad to go on the excursion, it will be rescheduled or you will receive a full refund."
-      },
-      {
-        "question": "May I purchase a gift voucher?",
-        "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
-      }
-    ],
-    "imageUrl": "/images/tours/arriro-boat.webp",
-    "url": "https://www.excursionstenerife.es/tours/arriro-boat",
-    "timeSlots": [
-      "10:00",
-      "13:00",
-      "16:00"
-    ],
-    "meetingPoint": "Gate 11, Puerto Colón Marina, Costa Adeje",
-    "bookingPhone": "619 591 892",
-    "supplierId": "arriro",
-    "minAge": 0
-  },
-  {
-    "slug": "cool-sailing",
-    "title": "Cool Sailing — 3h sailing yacht trip",
-    "category": "whale-watching",
-    "group": "water",
-    "duration": "3h",
-    "pricing": [
-      {
-        "label": "Adult",
-        "price": 60,
-        "net": 27.5
-      },
-      {
-        "label": "Child",
-        "price": 45,
-        "net": 27.5
-      }
-    ],
-    "priceFrom": 60,
-    "description": "Cool Sailing is a relaxed 3-hour sailing-yacht trip from Puerto Colón along the Costa Adeje coast, capped at just 11 guests for a personal, uncrowded day on the water.\n\nYou'll sail in search of the resident pilot whales and dolphins, anchor for a swim in the clear Atlantic, and enjoy an open bar and food included throughout.\n\nSmall-group and easygoing — ideal for couples and small groups. Bring swimwear, a towel and sunscreen.",
-    "timeSlots": [
-      "10:00",
-      "13:00",
-      "16:00",
-      "19:00"
-    ],
-    "meetingPoint": "Puerto Colón Marina, Costa Adeje",
-    "faq": [
-      {
-        "question": "How will I receive my tickets?",
-        "answer": "After you complete your purchase, you will receive an order confirmation email within a few minutes with all the details of your booking."
-      },
-      {
-        "question": "What is your cancellation policy?",
-        "answer": "Free cancellation with a full refund if you cancel more than 24 hours before the tour starts. Cancellations made less than 24 hours before the start time, or no-shows, are non-refundable. If the operator has to cancel (for example due to bad weather or safety), you get a full refund or a free reschedule. To cancel, message us on WhatsApp (+34 624 074 633) with your booking reference — eligible refunds are processed within 14 days."
-      },
-      {
-        "question": "What happens if the weather is too bad?",
-        "answer": "If the weather is too bad to go on the excursion, it will be rescheduled or you will receive a full refund."
-      },
-      {
-        "question": "Can I book within 24 hours?",
-        "answer": "Yes, it is possible. Please contact us."
-      }
-    ],
-    "imageUrl": "/images/tours/cool-sailing.jpg",
-    "bookingPhone": "613 924 763",
-    "supplierId": "cool-sailing",
-    "minAge": 0
-  },
-  {
-    "slug": "kosamui-boat",
-    "title": "Kosamui — 3h sailing yacht, whale & dolphin watching",
-    "category": "whale-watching",
-    "group": "water",
-    "duration": "3h",
-    "pricing": [
-      {
-        "label": "Adult",
-        "price": 60,
-        "net": 27.5
-      },
-      {
-        "label": "Child",
-        "price": 45,
-        "net": 27.5
-      }
-    ],
-    "priceFrom": 60,
-    "description": "Kosamui is an intimate sailing-yacht trip from Puerto Colón — capped at just 12 guests, so it never feels crowded. Over three relaxed hours you'll sail Tenerife's south-west coast in search of the resident pilot whales and dolphins.\n\nThe crew anchors at a quiet spot for a swim in the clear Atlantic, with an open bar and food included throughout. Small-group, unhurried and personal — the opposite of the big party boats.\n\nIdeal for couples and small groups. Bring swimwear, a towel and sunscreen.",
-    "timeSlots": [
-      "10:00",
-      "13:00",
-      "16:00"
-    ],
-    "meetingPoint": "Puerto Colón Marina, Costa Adeje",
-    "faq": [
-      {
-        "question": "How will I receive my tickets?",
-        "answer": "After you complete your purchase, you will receive an order confirmation email within a few minutes with all the details of your booking."
-      },
-      {
-        "question": "What is your cancellation policy?",
-        "answer": "Free cancellation with a full refund if you cancel more than 24 hours before the tour starts. Cancellations made less than 24 hours before the start time, or no-shows, are non-refundable. If the operator has to cancel (for example due to bad weather or safety), you get a full refund or a free reschedule. To cancel, message us on WhatsApp (+34 624 074 633) with your booking reference — eligible refunds are processed within 14 days."
-      },
-      {
-        "question": "What happens if the weather is too bad?",
-        "answer": "If the weather is too bad to go on the excursion, it will be rescheduled or you will receive a full refund."
-      },
-      {
-        "question": "Can I book within 24 hours?",
-        "answer": "Yes, it is possible. Please contact us."
-      }
-    ],
-    "imageUrl": "/images/tours/kosamui-boat.jpg",
-    "bookingPhone": "639 203 484",
-    "supplierId": "kosamui",
-    "minAge": 0
-  },
-  {
     "slug": "atlanca-boat-rental",
     "title": "Atlanca — Motorboat rental without license",
     "category": "boat-rental",
@@ -985,6 +810,84 @@
     "supplierId": "atlanca",
     "minAge": 18,
     "capacity": 5
+  },
+  {
+    "slug": "sailing-yacht-all-inclusive",
+    "title": "Sailing Yacht — 3h All-Inclusive Whale watching & snorkeling",
+    "category": "whale-watching",
+    "group": "water",
+    "duration": "3h",
+    "capacity": 12,
+    "languages": [
+      "Deutsch",
+      "English",
+      "Español",
+      "Français",
+      "Italiano",
+      "Neerlandés",
+      "Rumano",
+      "Русский"
+    ],
+    "pricing": [
+      {
+        "label": "Adult",
+        "price": 49,
+        "net": 27.5
+      },
+      {
+        "label": "Child",
+        "price": 35,
+        "net": 27.5
+      }
+    ],
+    "priceFrom": 49,
+    "description": "A relaxed 3-hour trip aboard a small sailing yacht (up to 12 guests) from Puerto Colón along the Costa Adeje coast — under sail, no engine noise, never crowded.\n\nYou'll head out in search of the pilot whales and dolphins that live in Canarian waters year-round, then drop anchor in a quiet cove for a swim and a snorkel. Food and an open bar are included on board — a sociable, all-inclusive few hours at sea.\n\nGreat value for couples, friends and families. Departures at 10:00, 13:00, 16:00 and a 19:00 sunset sail. Priced per person; children pay a reduced rate.",
+    "included": "Shared sailing trip on a small yacht (up to 12 guests) · skipper · whale & dolphin watching · swim & snorkel stop · food and open bar on board (all-inclusive)",
+    "meetingPoint": "Puerto Colón Marina, Costa Adeje",
+    "faq": [
+      {
+        "question": "How will I receive my tickets?",
+        "answer": "After you complete your purchase, you will receive an order confirmation email within a few minutes. This email will contain all the details of your purchase, including the event, date, and number of tickets. Please note we do not send tickets by post."
+      },
+      {
+        "question": "What is your cancellation policy?",
+        "answer": "Free cancellation with a full refund if you cancel more than 24 hours before the tour starts. Cancellations made less than 24 hours before the start time, or no-shows, are non-refundable. If the operator has to cancel (for example due to bad weather or safety), you get a full refund or a free reschedule. To cancel, message us on WhatsApp (+34 624 074 633) with your booking reference — eligible refunds are processed within 14 days."
+      },
+      {
+        "question": "Can I book an excursion within 24 hours of its start time?",
+        "answer": "It depends on the season. Outside high season we can usually confirm bookings made just a few hours ahead (minimum 3 hours before the start). In high season (15 June – 15 September) the island is busy, so online bookings need at least 12 hours' notice (an evening booking for the next morning is fine). For anything sooner, message us on WhatsApp or visit the office and we'll do our best to fit you in."
+      },
+      {
+        "question": "Will I be picked up at my hotel when a transfer is possible?",
+        "answer": "And where is the meeting point The exact meeting point for your excursion will be specified in your booking confirmation email. If a transfer service is included with your booking, we offer convenient hotel pickup. The availability of this service will depend on your hotel’s location and the specific excursion."
+      },
+      {
+        "question": "May I pay directly in cash when the tour / activity starts?",
+        "answer": "We offer online purchases on the platform. If you wish to buy with cash you can visit our office."
+      },
+      {
+        "question": "Do you offer discounts?",
+        "answer": "We generally cannot give any discounts due to the very high demand. We offer discount for group bookings. Please contact us"
+      },
+      {
+        "question": "What happens if the weather is too bad to go on the excursion?",
+        "answer": "If the weather is too bad to go on the excursion, it will be rescheduled or you will receive a full refund."
+      },
+      {
+        "question": "May I purchase a gift voucher?",
+        "answer": "To purchase a gift voucher, you can either book with a specified date if you know it or without a date. Simply provide your personal details during the booking process—your name, email address, and phone number. Shortly after, you'll receive an email containing the ticket or voucher as a printable PDF, ready for you to gift immediately"
+      }
+    ],
+    "imageUrl": "/images/tours/cool-sailing.jpg",
+    "url": "",
+    "minAge": 0,
+    "timeSlots": [
+      "10:00",
+      "13:00",
+      "16:00",
+      "19:00"
+    ],
+    "bookingPhone": "624 074 633"
   },
   {
     "slug": "freebird-catamaran",

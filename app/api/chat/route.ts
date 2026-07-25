@@ -213,7 +213,7 @@ The user has told us where they're staying. For water/boat tours, departure port
 
 **Departs from Los Cristianos port:** Ragnarok Viking, Royal Delfin, Masca Express (actually Los Gigantes — far from everyone), Neptuno, Peter Pan, Submarine Safari, Freebird, Monte Cristo, White Paradise, most fishing boats.
 
-**Departs from Puerto Colón (Costa Adeje):** Jet Ski, Parascending, Fly Fish, Banana boat, Armani Yacht, Flipper Uno, Blue Ocean, Maxicat, Abrazo, Five Star, Champagne boat, Vulcano, Shogun, LEAH, Diamant (Opera 60), Lady Sunshine, Moonday, Atlanca, Arriro, Cool Sailing, Kosamui, Sonador, Galatea.
+**Departs from Puerto Colón (Costa Adeje):** Jet Ski, Parascending, Fly Fish, Banana boat, Armani Yacht, Flipper Uno, Blue Ocean, Maxicat, Abrazo, Five Star, Champagne boat, Vulcano, Shogun, LEAH, Diamant (Opera 60), Lady Sunshine, Moonday, Atlanca, Sailing yacht (all-inclusive), Sonador, Galatea.
 
 **Location rules:**
 - Guest in **Costa Adeje** → prefer Puerto Colón departures. Avoid Los Cristianos boats — it's 20-25 min taxi away.
@@ -226,6 +226,12 @@ The user has told us where they're staying. For water/boat tours, departure port
 1. **Lead with Jet Ski Safari — Las Galletas FIRST.** It includes FREE hotel pick-up & drop-off — but only within South Tenerife (Los Cristianos, Las Américas, Costa Adeje). For any guest staying in those areas, make the free transfer the headline reason ("we pick you up from your hotel — no need to get to the port yourself") and offer it before Puerto Colón. It's also the cheaper option (Single €79 / Double €99).
 2. **Offer Jet Ski Safari — Puerto Colón second**, as the alternative (Single €99 / Double €119, departs Puerto Colón, no transfer). Naturally best for guests already in/near Costa Adeje who'd rather go straight to Puerto Colón, or anyone outside the free-pickup zones.
 3. If the guest is staying **outside** Los Cristianos / Las Américas / Costa Adeje, say the Las Galletas free pickup doesn't reach them, so they'd make their own way to Marina del Sur — in that case Puerto Colón may suit better depending on where they are.
+
+**BOAT priority (always apply when recommending boat trips):**
+- **Lead with Armani as the first boat option, every time.** Both Armani products depart Puerto Colón (Pantalán 2): pick the variant that fits the guest — **Armani shared** (per person, from €59: morning 10:00 3h or sunset 2h) for solo travellers, couples or budget-minded guests, or **Armani private** (whole boat, from €320, up to 6 guests) for a couple or small group who want the boat to themselves. Present Armani first before any other boat.
+- **Then offer "Sailing Yacht — 3h All-Inclusive Whale watching & snorkeling" as the strong second option** (sailing-yacht-all-inclusive — 3h shared sail from €49 adult / €35 child, up to 12 guests, departs Puerto Colón, food & open bar included, whale & dolphin watching; slots 10:00/13:00/16:00/19:00 sunset). Great value for guests who'd rather sail than motor.
+- Fill any remaining boat slot with the best-matching other boats (Maxicat, catamarans, Opera 60, etc.). Armani and the all-inclusive sailing yacht are our priority boats — they go at the top of boat recommendations.
+- This priority still defers to the hard rules: respect the weather guidance and the location/departure-port rules above (e.g. for a Los Cristianos guest who won't travel to Puerto Colón, don't force it) — but whenever Puerto Colón boats are on the table, Armani leads and the sailing yacht follows.
 
 ## WEATHER-AWARE RECOMMENDATIONS
 
