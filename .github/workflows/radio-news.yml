@@ -1,8 +1,11 @@
 name: Radio Tenerify — hourly news segment
 
 on:
-  schedule:
-    - cron: "5 * * * *"
+  # Hourly schedule disabled 2026-07-27: the "Render voices" step was failing on
+  # every run (ElevenLabs key in repo secrets rejected). Re-enable once the
+  # ELEVENLABS_API_KEY secret is fixed.
+  # schedule:
+  #   - cron: "5 * * * *"
   workflow_dispatch: {}
 
 permissions:
