@@ -210,6 +210,84 @@ export function getAllTours(): Tour[] {
   }
 }
 
+// Words that carry no identity — they appear in half the catalogue, so letting
+// them score would make "X — Private boat trip" look like "Y — Private boat trip".
+const NAME_STOPWORDS = new Set([
+  "the", "and", "with", "from", "for", "your", "our", "in", "of", "at", "on", "to",
+  "tour", "tours", "trip", "trips", "ticket", "tickets", "experience", "excursion",
+  "de", "la", "el", "los", "las", "y",
+]);
+
+function normalizeName(s: string): string {
+  return s.toLowerCase().replace(/[^a-z0-9]/g, "");
+}
+
+function nameTokens(s: string): Set<string> {
+  return new Set(
+    s.toLowerCase().split(/[^a-z0-9]+/).filter((w) => w.length > 1 && !NAME_STOPWORDS.has(w))
+  );
+}
+
+// Dice coefficient over the two token sets: 1 = same words, 0 = nothing shared.
+function diceScore(a: Set<string>, b: Set<string>): number {
+  if (!a.size || !b.size) return 0;
+  let shared = 0;
+  for (const w of a) if (b.has(w)) shared++;
+  return (2 * shared) / (a.size + b.size);
+}
+
+/**
+ * Resolve a tour from the free-text name the AI wrote into [BOOK_NOW: ...].
+ *
+ * This is a FALLBACK — checkout passes the exact slug whenever the chat message
+ * carried one. It matters that a near-miss returns null rather than a plausible
+ * neighbour: the resolved tour supplies the checkout photo, the meeting point
+ * printed on the customer's Stripe page and confirmation, the deposit rule and
+ * the discount eligibility. Sending someone to the wrong marina is worse than
+ * sending them a booking with no meeting point line.
+ */
+export function findTourByName(tourName: string): Tour | null {
+  const tours = getAllTours();
+  const target = normalizeName(tourName);
+  if (target.length < 3) return null;
+
+  // 1. Exact title (punctuation-insensitive) — the overwhelmingly common case.
+  const exact = tours.find((t) => normalizeName(t.title) === target);
+  if (exact) return exact;
+
+  // 2. The AI truncated the title ("Loro Parque tickets" for "Loro Parque
+  //    tickets — The biggest ZOO in Tenerife"). A unique prefix match is strong
+  //    evidence; two candidates ("Fiat 500" → plain + Cabrio) means ambiguous.
+  if (target.length >= 6) {
+    const prefixed = tours.filter((t) => normalizeName(t.title).startsWith(target));
+    if (prefixed.length === 1) return prefixed[0];
+  }
+
+  // 3. One name fully contains the other, and they're comparable in length. The
+  //    length floor stops a short generic title ("Aqualand") from swallowing a
+  //    long combo title that merely mentions it ("2 Parks Ticket ... Aqualand").
+  const contained = tours
+    .map((t) => ({ tour: t, norm: normalizeName(t.title) }))
+    .filter(({ norm }) => {
+      if (norm.length < 6) return false;
+      if (!norm.includes(target) && !target.includes(norm)) return false;
+      return Math.min(norm.length, target.length) / Math.max(norm.length, target.length) >= 0.5;
+    })
+    .sort((a, b) => Math.abs(a.norm.length - target.length) - Math.abs(b.norm.length - target.length));
+  if (contained.length) return contained[0].tour;
+
+  // 4. Token overlap, but only with a clear winner — ambiguity fails closed.
+  const targetTokens = nameTokens(tourName);
+  const scored = tours
+    .map((t) => ({ tour: t, score: diceScore(targetTokens, nameTokens(t.title)) }))
+    .sort((a, b) => b.score - a.score);
+  const [best, runnerUp] = scored;
+  if (best && best.score >= 0.4 && (!runnerUp || best.score - runnerUp.score >= 0.08)) {
+    return best.tour;
+  }
+  return null;
+}
+
 export function tourImages(t: Tour): string[] {
   if (t.images?.length) return t.images;
   if (t.imageUrl) return [t.imageUrl];
