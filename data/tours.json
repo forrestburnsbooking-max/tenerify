@@ -2065,36 +2065,36 @@
     "pricing": [
       {
         "label": "3 hours — whole yacht (private, up to 12 guests)",
-        "price": 750,
+        "price": 500,
         "net": 563
       },
       {
         "label": "4 hours — whole yacht (private, up to 12 guests)",
-        "price": 880,
+        "price": 650,
         "net": 660
       },
       {
         "label": "5 hours — whole yacht (private, up to 12 guests)",
-        "price": 1050,
+        "price": 800,
         "net": 787
       },
       {
         "label": "6 hours — whole yacht (private, up to 12 guests)",
-        "price": 1230,
+        "price": 950,
         "net": 923
       },
       {
         "label": "7 hours — whole yacht (private, up to 12 guests)",
-        "price": 1400,
+        "price": 1100,
         "net": 1050
       },
       {
         "label": "8 hours — whole yacht (private, up to 12 guests)",
-        "price": 1570,
+        "price": 1250,
         "net": 1177
       }
     ],
-    "priceFrom": 750,
+    "priceFrom": 500,
     "description": "Lady Sunshine is an elegant Bavaria Cruiser 55 sailing yacht (16.1 m, up to 12 guests) — the premium way to explore Tenerife's south coast under sail, with a professional multilingual crew of two.\n\nOn 3–4 hour trips you'll sail the Costa Adeje beaches with a swim stop; 5–6 hours gives a relaxed pace toward the Los Gigantes cliffs (paella added from 5 hours); 7–8 hours is a full day out to Los Gigantes and the Barranco de Masca. On board: stand-up paddleboard, tandem kayak and snorkelling gear, premium catering and an open bar.\n\nPriced per yacht, not per person — made for birthdays, proposals, anniversaries, corporate days or a special escape at sea. Optional transfer between Los Cristianos and Costa Adeje (extra cost, on request).",
     "included": "Private use of the whole yacht · professional multilingual crew of 2 · premium catering (charcuterie, cheese, Spanish omelette, hummus, nachos, fruit, macarons) · open bar (cava, wine, beer, soft drinks, water) · SUP, tandem kayak & snorkelling gear · swim stop · paella on 5h+ trips",
     "meetingPoint": "Puerto Colón Marina — Pantalán 14, Costa Adeje",
