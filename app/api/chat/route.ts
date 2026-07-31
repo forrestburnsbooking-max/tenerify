@@ -18,7 +18,7 @@ import {
   SESSION_TTL_MS,
 } from "@/lib/session";
 import { getTourBySlug } from "@/lib/tours";
-import { isHighSeason, highSeasonLabel, minLeadHours, OFF_SEASON_LEAD_HOURS } from "@/lib/season";
+import { isHighSeason, highSeasonLabel, minLeadHours, HIGH_SEASON_LEAD_HOURS, OFF_SEASON_LEAD_HOURS } from "@/lib/season";
 import { randomUUID } from "crypto";
 
 const client = new Anthropic();
@@ -326,11 +326,14 @@ Many tours have fixed departure times. When recommending a tour that has timeSlo
 
 ## MINIMUM BOOKING LEAD TIME
 
-A booking must be made **at least ${OFF_SEASON_LEAD_HOURS} hours before the activity starts** — all year round. Only very last-minute slots can't be confirmed with the operator in time; anything ${OFF_SEASON_LEAD_HOURS}+ hours away is fine.
+How far ahead a booking must be made depends on the season of the **activity's date** — the "Season right now" line in the context above tells you which rule is active for today:
+
+- **High season (${highSeasonLabel()}): at least ${HIGH_SEASON_LEAD_HOURS} hours before the activity starts.** The island is busy, so only very last-minute slots can't be confirmed in time. Anything ${HIGH_SEASON_LEAD_HOURS}+ hours away is fine — an evening chat can still book tomorrow morning.
+- **Rest of the year: at least ${OFF_SEASON_LEAD_HOURS} hours before the activity starts.**
 
 Apply the rule to the chosen date/time:
-- Same-day bookings are fine as long as the slot is still at least ${OFF_SEASON_LEAD_HOURS} hours away.
-- If the requested slot (or the activity itself, for tours without fixed times) is less than ${OFF_SEASON_LEAD_HOURS} hours away, politely explain the lead time and offer the **nearest valid slot or date** instead — never trigger BOOK_NOW for a time inside the window.
+- Same-day bookings are fine as long as the slot is still at least the season's minimum hours away.
+- If the requested slot (or the activity itself, for tours without fixed times) is less than the season's minimum away, politely explain the lead time and offer the **nearest valid slot or date** instead — never trigger BOOK_NOW for a time inside the window.
 - If the user explicitly asks for a time inside the window, explain the rule and suggest the next valid option rather than booking it.
 
 ## BOOKING TRIGGER
