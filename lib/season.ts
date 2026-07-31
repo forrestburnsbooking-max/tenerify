@@ -1,16 +1,16 @@
-// Seasonal booking lead time.
+// Booking lead time.
 //
-// In high season the island is busy and operators can't confirm very
-// last-minute slots in time, so bookings need 12h notice (an evening chat can
-// still book the next morning). The rest of the year 3h is enough. Edit
-// HIGH_SEASON below to change the window — endpoints are inclusive, format
-// "MM-DD". The window must not wrap across New Year (the simple MM-DD compare
-// below assumes from <= to within the same year).
+// Currently 3h all year round — operators confirm fast enough that the old 12h
+// high-season window was costing more bookings than it saved. Raise
+// HIGH_SEASON_LEAD_HOURS again to bring the seasonal rule back; the season
+// window itself is HIGH_SEASON below — endpoints are inclusive, format "MM-DD".
+// The window must not wrap across New Year (the simple MM-DD compare below
+// assumes from <= to within the same year).
 
 const HIGH_SEASON = { from: "06-15", to: "09-15" };
 const TZ = "Atlantic/Canary";
 
-export const HIGH_SEASON_LEAD_HOURS = 12;
+export const HIGH_SEASON_LEAD_HOURS = 3;
 export const OFF_SEASON_LEAD_HOURS = 3;
 
 function tenerifeMonthDay(date: Date): string {

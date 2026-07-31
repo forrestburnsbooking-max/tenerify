@@ -18,7 +18,7 @@ import {
   SESSION_TTL_MS,
 } from "@/lib/session";
 import { getTourBySlug } from "@/lib/tours";
-import { isHighSeason, highSeasonLabel } from "@/lib/season";
+import { isHighSeason, highSeasonLabel, minLeadHours, OFF_SEASON_LEAD_HOURS } from "@/lib/season";
 import { randomUUID } from "crypto";
 
 const client = new Anthropic();
@@ -326,14 +326,11 @@ Many tours have fixed departure times. When recommending a tour that has timeSlo
 
 ## MINIMUM BOOKING LEAD TIME
 
-How far ahead a booking must be made depends on the season of the **activity's date** — the "Season right now" line in the context above tells you which rule is active for today:
-
-- **High season (${highSeasonLabel()}): at least 12 hours before the activity starts.** The island is busy, so only very last-minute slots can't be confirmed in time. Anything 12+ hours away is fine — an evening chat can still book tomorrow morning.
-- **Rest of the year: at least 3 hours before the activity starts.**
+A booking must be made **at least ${OFF_SEASON_LEAD_HOURS} hours before the activity starts** — all year round. Only very last-minute slots can't be confirmed with the operator in time; anything ${OFF_SEASON_LEAD_HOURS}+ hours away is fine.
 
 Apply the rule to the chosen date/time:
-- Same-day bookings are fine as long as the slot is still at least the season's minimum hours away.
-- If the requested slot (or the activity itself, for tours without fixed times) is less than the season's minimum away, politely explain the lead time and offer the **nearest valid slot or date** instead — never trigger BOOK_NOW for a time inside the window.
+- Same-day bookings are fine as long as the slot is still at least ${OFF_SEASON_LEAD_HOURS} hours away.
+- If the requested slot (or the activity itself, for tours without fixed times) is less than ${OFF_SEASON_LEAD_HOURS} hours away, politely explain the lead time and offer the **nearest valid slot or date** instead — never trigger BOOK_NOW for a time inside the window.
 - If the user explicitly asks for a time inside the window, explain the rule and suggest the next valid option rather than booking it.
 
 ## BOOKING TRIGGER
@@ -350,17 +347,17 @@ The Total price is ALWAYS the full undiscounted total. If you offer a discount (
 Examples:
 [BOOK_NOW: Maxicat Catamaran | 2 adults + 1 child | €115 | 15 June 2026 | 10:00]
 [BOOK_NOW: Buggy – Teide Sunset Adventure | 2 adults | €180 | 15 June 2026 | 18:00 | discount:8]
-[BOOK_NOW: Jet Ski Safari — Puerto Colón | 2 people (double) | €119 | 15 June 2026 | 11:00 | discount:8]
+[BOOK_NOW: Jet Ski Safari — Puerto Colón | 2 people (double) | €119 | 15 June 2026 | 11:00]
 
 ## DISCOUNTS (closing tool)
 
-**Only BUGGY, QUAD and JET SKI tours have a standing 8% "book in this chat" discount.** These are marked **🏷️ 8% chat discount available** in the catalogue. As soon as you present or start closing one of them, lead with it: "Book it right here in the chat and you save 8% — €180 → **€166**." Make it the reason to book now with you. Don't wait for them to hesitate or ask.
-- **Standard discount is 8%**, only on tours marked 🏷️ (buggy, quad, jet ski). (Hard ceiling 9% — never exceed.)
-- **NEVER on anything else** — boats, parks, excursions, shows, car rentals, etc. have NO discount. Don't offer it AND don't mention that one isn't available — say nothing about discounts at all, just present the price normally.
+**Only BUGGY and QUAD tours have a standing 8% "book in this chat" discount.** These are marked **🏷️ 8% chat discount available** in the catalogue. As soon as you present or start closing one of them, lead with it: "Book it right here in the chat and you save 8% — €180 → **€166**." Make it the reason to book now with you. Don't wait for them to hesitate or ask.
+- **Standard discount is 8%**, only on tours marked 🏷️ (buggy, quad). (Hard ceiling 9% — never exceed.)
+- **NEVER on anything else** — jet skis, boats, parks, excursions, shows, car rentals, etc. have NO discount. Don't offer it AND don't mention that one isn't available — say nothing about discounts at all, just present the price normally.
 - Apply it via the "discount:8" field in BOOK_NOW. Keep the BOOK_NOW Total at the full price — the system computes the discounted charge.
 - Always show the discounted price in your message (full → discounted).
 - **End with an explicit call to action that ties the discount to booking NOW in the chat** — don't leave the 8% as just a price footnote. Make the closing line a nudge, in the user's language, e.g. "Забронируй прямо здесь — и 8% твои, фиксирую дату?" / "Lock it in right here and the 8% is yours — shall I grab you a spot?" The discount is a reason to act now, so phrase it that way.
-- The system hard-caps at 9% and only applies the discount to buggy/quad/jet ski tours, ignoring it anywhere else.
+- The system hard-caps at 9% and only applies the discount to buggy/quad tours, ignoring it anywhere else.
 [BOOK_NOW: Siam Park | 2 adults + 1 child | €59 | 15 June 2026 | -]
 
 ## CAR & VEHICLE RENTALS — DEPOSIT POLICY
@@ -402,9 +399,7 @@ All bookings are paid online by card via secure checkout (Stripe) — we do not 
 
 function buildDynamicContext(weather: string, events: string, sessionContext: string, language: string): string {
   const langName = LANGUAGE_NAMES[language] ?? "English";
-  const seasonLine = isHighSeason()
-    ? `Season right now: HIGH SEASON — minimum booking lead time is 12 hours.`
-    : `Season right now: off-season — minimum booking lead time is 3 hours.`;
+  const seasonLine = `Season right now: ${isHighSeason() ? `HIGH SEASON (${highSeasonLabel()})` : "off-season"} — minimum booking lead time is ${minLeadHours()} hours.`;
   return `Current date & time in Tenerife (Atlantic/Canary): ${getCurrentDateTime()}
 ${seasonLine}
 

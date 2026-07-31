@@ -157,7 +157,7 @@ export function getTours(): string {
             : t.pickup === "no" ? " | 🚐 no pickup (customer goes to meeting point)"
             : t.pickup === "price" ? " | 🚐 optional pickup for an extra fee paid to the operator (never charged by us)"
             : "";
-          const discountOkPart = (t.category === "buggy-quad" || t.category === "jetski") ? ` | 🏷️ 8% chat discount available` : "";
+          const discountOkPart = t.category === "buggy-quad" ? ` | 🏷️ 8% chat discount available` : "";
           const ratingPart = t.rating ? ` | ⭐ ${t.rating}${t.reviewCount ? ` (${t.reviewCount} reviews${t.reviewSource ? `, ${t.reviewSource}` : ""})` : ""}` : "";
           lines.push(`    • [slug:${t.slug}] ${t.title}${durPart} | ${pricePart}${agePart}${capPart}${incPart}${excPart}${slotsPart}${depositPart}${pickupPart}${discountOkPart}${ratingPart}`);
           if (t.description) {
