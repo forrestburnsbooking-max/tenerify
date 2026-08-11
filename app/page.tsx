@@ -125,7 +125,7 @@ function LicensePicker({ onSelect }: { onSelect: (answer: string) => void }) {
   );
 }
 
-function BookingButtons({ bookingText }: { bookingText: string }) {
+function BookingButtons({ bookingText, tourSlug }: { bookingText: string; tourSlug?: string | null }) {
   const [loading, setLoading] = useState(false);
 
   const handlePay = useCallback(async () => {
@@ -134,7 +134,7 @@ function BookingButtons({ bookingText }: { bookingText: string }) {
       const res = await fetch("/api/checkout", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ bookingText }),
+        body: JSON.stringify({ bookingText, tourSlug }),
       });
       const data = await res.json();
       if (data.url) {
@@ -147,7 +147,7 @@ function BookingButtons({ bookingText }: { bookingText: string }) {
     } finally {
       setLoading(false);
     }
-  }, [bookingText]);
+  }, [bookingText, tourSlug]);
 
   return (
     <div className="flex flex-col gap-2 w-full max-w-xs">
@@ -175,6 +175,7 @@ type Message = {
   hidden?: boolean; // sent to the AI as context but not rendered (e.g. the onboarding summary)
   options?: string[];
   bookingText?: string;
+  tourSlug?: string | null; // exact tour the AI was talking about — handed to checkout
   tourMedia?: TourMedia | null;
   tourMediaList?: TourMedia[];
   needsDate?: boolean;
@@ -201,6 +202,22 @@ const LANGUAGES = [
   { flag: "🇨🇳", label: "中文",        value: "zh" },
   { flag: "🇸🇦", label: "العربية",     value: "ar" },
 ];
+
+const SUPPORTED_LANGS = new Set(LANGUAGES.map((l) => l.value));
+
+// Best-effort match of the browser's preferred languages to one we support.
+// navigator.languages is already in the user's priority order, so the first
+// hit wins (a German with English as a fallback still gets German). Returns
+// "" when none of the browser's languages are supported → we show the picker.
+function detectBrowserLang(): string {
+  if (typeof navigator === "undefined") return "";
+  const prefs = navigator.languages?.length ? navigator.languages : [navigator.language];
+  for (const p of prefs) {
+    const primary = p?.toLowerCase().split("-")[0];
+    if (primary && SUPPORTED_LANGS.has(primary)) return primary;
+  }
+  return "";
+}
 
 const UI_STRINGS: Record<string, {
   intro: string;
@@ -403,6 +420,21 @@ const BOOK_MODE_TEXTS: Record<string, { question: string; assist: string; catalo
   uk: { question: "Як зручніше обрати?", assist: "🎯 Підбери за мене — пара швидких питань", catalog: "📖 Сам подивлюся каталог" },
 };
 
+// Persistent trust badge shown on every tour card — the one thing ChatGPT can't
+// offer: real, verified, current prices from actual operators (not AI guesses).
+// Kept outside TRANSLATIONS so unlisted languages fall back to English.
+const VERIFIED_BADGE: Record<string, string> = {
+  en: "Real price · verified operator",
+  ru: "Реальная цена · проверенный оператор",
+  es: "Precio real · operador verificado",
+  de: "Echter Preis · geprüfter Anbieter",
+  fr: "Prix réel · opérateur vérifié",
+  it: "Prezzo reale · operatore verificato",
+  nl: "Echte prijs · geverifieerde aanbieder",
+  pl: "Realna cena · zweryfikowany operator",
+  uk: "Реальна ціна · перевірений оператор",
+};
+
 const WHO_OPTIONS = [
   { label: "👨‍👩‍👧 Family", value: "We are a family with kids" },
   { label: "💑 Couple", value: "We are a couple" },
@@ -460,6 +492,8 @@ export default function Home() {
   };
 
   useEffect(() => {
+    const detected = detectBrowserLang();
+
     // Deep link from a tour page: /?book=<Tour Title> jumps straight into chat.
     // Restore language and who from the server-side session first, so a guest
     // who chatted in Russian and detoured through the catalogue isn't answered
@@ -477,13 +511,13 @@ export default function Home() {
         sendToAI(`I'd like to book: ${bookParam}`, [], whoValue, lang);
       };
       if (storedLang || storedWho) {
-        start(storedLang, storedWho || "Booking from tour page");
+        start(storedLang || detected, storedWho || "Booking from tour page");
       } else {
         fetch("/api/session/transcript")
           .then((r) => r.json())
           .catch(() => ({}))
           .then((d) => {
-            const lang = typeof d?.language === "string" && d.language ? d.language : "";
+            const lang = typeof d?.language === "string" && d.language ? d.language : detected;
             const whoValue =
               typeof d?.who === "string" && d.who && d.who !== "Open chat"
                 ? d.who
@@ -522,10 +556,22 @@ export default function Home() {
     setStep("chat");
   }
 
+  // Enter onboarding from the hero. Skip the manual language step when we can
+  // detect the browser's language (re-detecting here covers the back button,
+  // which clears selectedLanguage); otherwise fall back to the picker.
+  function beginOnboarding() {
+    const lang = selectedLanguage || detectBrowserLang();
+    if (lang && lang !== selectedLanguage) {
+      setSelectedLanguage(lang);
+      sessionStorage.setItem("tfy_lang", lang);
+    }
+    setStep(lang ? "menu" : "language");
+  }
+
   function startFresh() {
     setSavedTranscript(null);
     fetch("/api/session/transcript", { method: "DELETE" }).catch(() => {});
-    setStep("language");
+    beginOnboarding();
   }
 
   useEffect(() => {
@@ -628,7 +674,7 @@ export default function Home() {
       }
       const finalMessages: Message[] = [
         ...newMessages,
-        { role: "assistant", content: data.message, options: data.options, bookingText: data.bookingText, tourMedia: data.tourMedia, tourMediaList: data.tourMediaList, needsDate: data.needsDate, needsLicense: data.needsLicense, needsText: data.needsText, needsTime: data.needsTime, availableTimeSlots: data.availableTimeSlots, noSameDay: data.noSameDay },
+        { role: "assistant", content: data.message, options: data.options, bookingText: data.bookingText, tourSlug: data.tourSlug, tourMedia: data.tourMedia, tourMediaList: data.tourMediaList, needsDate: data.needsDate, needsLicense: data.needsLicense, needsText: data.needsText, needsTime: data.needsTime, availableTimeSlots: data.availableTimeSlots, noSameDay: data.noSameDay },
       ];
       setMessages(finalMessages);
       persistTranscript(finalMessages, effectiveWho, effectiveLang);
@@ -696,7 +742,7 @@ export default function Home() {
               </div>
             ) : (
               <button
-                onClick={() => setStep("language")}
+                onClick={beginOnboarding}
                 className="w-full bg-orange-500 hover:bg-orange-400 active:bg-orange-600 text-white font-bold px-8 py-4 rounded-2xl text-base transition-all hover:scale-[1.02] shadow-xl shadow-orange-900/50 tracking-wide"
               >
                 Find my experience →
@@ -1043,9 +1089,22 @@ export default function Home() {
                 const media = msg.tourMediaList?.length ? msg.tourMediaList : msg.tourMedia ? [msg.tourMedia] : [];
                 if (media.length === 0) return null;
 
+                // Trust pill — always shown whenever a tour is on screen, so the
+                // "verified, real price" signal never depends on the AI remembering
+                // to write it. This is our edge over a generic AI answer.
+                const badge = (
+                  <div className="flex items-center gap-1.5 w-full max-w-sm mt-1.5 text-[11px] font-medium text-emerald-300/90">
+                    <svg viewBox="0 0 20 20" fill="currentColor" className="w-3.5 h-3.5 flex-none" aria-hidden="true">
+                      <path fillRule="evenodd" d="M16.7 5.3a1 1 0 0 1 0 1.4l-7.5 7.5a1 1 0 0 1-1.4 0L3.3 9.7a1 1 0 1 1 1.4-1.4l3.3 3.29 6.8-6.8a1 1 0 0 1 1.4 0Z" clipRule="evenodd" />
+                    </svg>
+                    <span>{VERIFIED_BADGE[selectedLanguage] ?? VERIFIED_BADGE.en}</span>
+                  </div>
+                );
+
                 if (media.length === 1) {
                   const m = media[0];
                   return (
+                    <>
                     <div className="rounded-2xl overflow-hidden border border-white/10 w-full max-w-sm">
                       {m.videoUrl ? (
                         <iframe
@@ -1074,11 +1133,14 @@ export default function Home() {
                         </div>
                       ) : null}
                     </div>
+                    {badge}
+                    </>
                   );
                 }
 
                 // 2+ tours → photo collage of thumbnails, one per named tour
                 return (
+                  <>
                   <div className="grid grid-cols-2 gap-2 w-full max-w-sm">
                     {media.map((m, i) => {
                       const src = m.imageUrl || m.images?.[0];
@@ -1095,12 +1157,14 @@ export default function Home() {
                       );
                     })}
                   </div>
+                  {badge}
+                  </>
                 );
               })()}
 
               {/* Booking buttons */}
               {msg.role === "assistant" && msg.bookingText && (
-                <BookingButtons bookingText={msg.bookingText} />
+                <BookingButtons bookingText={msg.bookingText} tourSlug={msg.tourSlug} />
               )}
 
               {/* Date picker or quick-reply options */}

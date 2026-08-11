@@ -583,7 +583,9 @@ export async function POST(req: NextRequest) {
     // Save session and set cookie
     await saveSession(sessionId, session);
 
-    const res = NextResponse.json({ message, options, bookingText, tourMedia, tourMediaList, needsDate, needsLicense, needsText, needsTime, availableTimeSlots, noSameDay, isReturning: session.visits.length > 1 });
+    // tourSlug rides along so the Pay button can hand checkout the exact tour
+    // instead of making it guess from the BOOK_NOW name.
+    const res = NextResponse.json({ message, options, bookingText, tourSlug, tourMedia, tourMediaList, needsDate, needsLicense, needsText, needsTime, availableTimeSlots, noSameDay, isReturning: session.visits.length > 1 });
     res.cookies.set(SESSION_COOKIE, sessionId, {
       httpOnly: false, // readable by client to show "welcome back"
       sameSite: "lax",
