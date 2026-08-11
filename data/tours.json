@@ -2816,6 +2816,10 @@
     "timeSlots": [
       "08:30"
     ],
+    "days": [
+      "Mon",
+      "Thu"
+    ],
     "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
     "bookingPhone": "677 654 754",
     "supplierId": "nere",

@@ -22,6 +22,18 @@ export type FaqItem = {
   answer: string;
 };
 
+// Days a tour actually runs. Order matters — it's the order they're printed in,
+// and Mon-first matches how the operators quote their schedules.
+export const WEEKDAYS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"] as const;
+export type Weekday = (typeof WEEKDAYS)[number];
+
+/** "Mon & Thu", "Mon, Wed & Fri" — always in week order, whatever the JSON order. */
+export function formatDays(days: Weekday[]): string {
+  const sorted = [...days].sort((a, b) => WEEKDAYS.indexOf(a) - WEEKDAYS.indexOf(b));
+  if (sorted.length <= 1) return sorted[0] ?? "";
+  return `${sorted.slice(0, -1).join(", ")} & ${sorted[sorted.length - 1]}`;
+}
+
 export type Tour = {
   slug: string;
   title: string;
@@ -46,6 +58,8 @@ export type Tour = {
   images?: string[];
   videoUrl?: string;
   timeSlots?: string[];
+  // Days of the week the tour departs at all. Absent = runs every day.
+  days?: Weekday[];
   url: string;
   bookingPhone?: string;
   depositPercent?: number;
@@ -151,6 +165,7 @@ export function getTours(): string {
           const incPart = t.included ? ` | Includes: ${t.included.slice(0, 200)}` : "";
           const excPart = t.notIncluded ? ` | NOT included: ${t.notIncluded.slice(0, 200)}` : "";
           const slotsPart = t.timeSlots?.length ? ` | timeSlots: ${t.timeSlots.join(", ")}` : "";
+          const daysPart = t.days?.length ? ` | 📅 RUNS ${formatDays(t.days)} ONLY` : "";
           const depositPart = t.depositPercent ? ` | 💳 ${t.depositPercent}% deposit online, rest paid on pickup` : "";
           const pickupPart =
             t.pickup === "yes" ? " | 🚐 hotel pickup included"
@@ -159,7 +174,7 @@ export function getTours(): string {
             : "";
           const discountOkPart = t.category === "buggy-quad" ? ` | 🏷️ 8% chat discount available` : "";
           const ratingPart = t.rating ? ` | ⭐ ${t.rating}${t.reviewCount ? ` (${t.reviewCount} reviews${t.reviewSource ? `, ${t.reviewSource}` : ""})` : ""}` : "";
-          lines.push(`    • [slug:${t.slug}] ${t.title}${durPart} | ${pricePart}${agePart}${capPart}${incPart}${excPart}${slotsPart}${depositPart}${pickupPart}${discountOkPart}${ratingPart}`);
+          lines.push(`    • [slug:${t.slug}] ${t.title}${durPart} | ${pricePart}${agePart}${capPart}${incPart}${excPart}${daysPart}${slotsPart}${depositPart}${pickupPart}${discountOkPart}${ratingPart}`);
           if (t.description) {
             lines.push(`      ${t.description.slice(0, 500)}`);
           }

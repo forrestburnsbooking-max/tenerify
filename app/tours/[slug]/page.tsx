@@ -6,6 +6,7 @@ import {
   getTourBySlug,
   tourImages,
   formatPriceFrom,
+  formatDays,
   SUBCATEGORY_LABEL,
 } from "@/lib/tours";
 import TourGallery from "@/components/TourGallery";
@@ -165,6 +166,9 @@ export default async function TourPage({
           </span>
           {tour.duration && (
             <span className="px-3 py-1.5 rounded-full bg-white/8 text-stone-300 text-sm">⏱ {tour.duration}</span>
+          )}
+          {!!tour.days?.length && (
+            <span className="px-3 py-1.5 rounded-full bg-white/8 text-stone-300 text-sm">📅 {formatDays(tour.days)} only</span>
           )}
           {tour.minAge != null && (
             <span className="px-3 py-1.5 rounded-full bg-white/8 text-stone-300 text-sm">👤 Min age {tour.minAge}</span>
