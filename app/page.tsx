@@ -125,11 +125,44 @@ function LicensePicker({ onSelect }: { onSelect: (answer: string) => void }) {
   );
 }
 
-function BookingButtons({ bookingText, tourSlug }: { bookingText: string; tourSlug?: string | null }) {
+// Checkout refuses a date the tour doesn't run on. It answers with facts
+// (allowed weekdays + the next real departures) and the wording lives here,
+// where the interface language is already known.
+const SCHEDULE_REFUSAL: Record<string, { runs: string; nearest: string }> = {
+  en: { runs: "This tour only departs on", nearest: "Nearest departures:" },
+  ru: { runs: "Этот тур ходит только по", nearest: "Ближайшие даты:" },
+  es: { runs: "Esta excursión solo sale los", nearest: "Próximas salidas:" },
+  de: { runs: "Diese Tour fährt nur", nearest: "Nächste Termine:" },
+  fr: { runs: "Cette excursion part uniquement le", nearest: "Prochains départs :" },
+  it: { runs: "Questa escursione parte solo il", nearest: "Prossime partenze:" },
+  nl: { runs: "Deze tour vertrekt alleen op", nearest: "Eerstvolgende data:" },
+  pl: { runs: "Ta wycieczka odjeżdża tylko w", nearest: "Najbliższe terminy:" },
+  uk: { runs: "Цей тур їздить тільки по", nearest: "Найближчі дати:" },
+};
+
+// 1 January 2024 was a Monday — offsetting from it turns "Thu" into whatever
+// the guest's language calls Thursday, without shipping a table per language.
+const WEEKDAY_OFFSET: Record<string, number> = { Mon: 0, Tue: 1, Wed: 2, Thu: 3, Fri: 4, Sat: 5, Sun: 6 };
+
+function weekdayName(day: string, lang: string): string {
+  const d = new Date(Date.UTC(2024, 0, 1 + (WEEKDAY_OFFSET[day] ?? 0)));
+  return d.toLocaleDateString(lang || "en", { weekday: "long", timeZone: "UTC" });
+}
+
+function departureDate(iso: string, lang: string): string {
+  const [y, m, d] = iso.split("-").map(Number);
+  return new Date(Date.UTC(y, m - 1, d)).toLocaleDateString(lang || "en", {
+    weekday: "short", day: "numeric", month: "long", timeZone: "UTC",
+  });
+}
+
+function BookingButtons({ bookingText, tourSlug, lang }: { bookingText: string; tourSlug?: string | null; lang?: string }) {
   const [loading, setLoading] = useState(false);
+  const [refusal, setRefusal] = useState("");
 
   const handlePay = useCallback(async () => {
     setLoading(true);
+    setRefusal("");
     try {
       const res = await fetch("/api/checkout", {
         method: "POST",
@@ -139,6 +172,11 @@ function BookingButtons({ bookingText, tourSlug }: { bookingText: string; tourSl
       const data = await res.json();
       if (data.url) {
         window.location.href = data.url;
+      } else if (data.error === "day_not_available") {
+        const words = SCHEDULE_REFUSAL[lang ?? "en"] ?? SCHEDULE_REFUSAL.en;
+        const days = (data.allowedDays ?? []).map((d: string) => weekdayName(d, lang ?? "en")).join(", ");
+        const dates = (data.nextDates ?? []).map((iso: string) => departureDate(iso, lang ?? "en")).join(" · ");
+        setRefusal(`${words.runs} ${days}. ${dates ? `${words.nearest} ${dates}` : ""}`.trim());
       } else {
         alert("Payment unavailable right now. Please try again in a moment.");
       }
@@ -147,7 +185,7 @@ function BookingButtons({ bookingText, tourSlug }: { bookingText: string; tourSl
     } finally {
       setLoading(false);
     }
-  }, [bookingText, tourSlug]);
+  }, [bookingText, tourSlug, lang]);
 
   return (
     <div className="flex flex-col gap-2 w-full max-w-xs">
@@ -158,6 +196,11 @@ function BookingButtons({ bookingText, tourSlug }: { bookingText: string; tourSl
       >
         {loading ? "Opening payment…" : "💳 Pay & Book →"}
       </button>
+      {refusal && (
+        <p role="alert" className="text-amber-300/90 text-xs leading-relaxed border border-amber-400/25 bg-amber-400/10 rounded-xl px-3 py-2">
+          📅 {refusal}
+        </p>
+      )}
     </div>
   );
 }
@@ -1164,7 +1207,7 @@ export default function Home() {
 
               {/* Booking buttons */}
               {msg.role === "assistant" && msg.bookingText && (
-                <BookingButtons bookingText={msg.bookingText} tourSlug={msg.tourSlug} />
+                <BookingButtons bookingText={msg.bookingText} tourSlug={msg.tourSlug} lang={selectedLanguage} />
               )}
 
               {/* Date picker or quick-reply options */}

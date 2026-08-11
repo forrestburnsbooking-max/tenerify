@@ -1,6 +1,7 @@
 import Stripe from "stripe";
 import { NextRequest, NextResponse } from "next/server";
 import { getTourBySlug, findTourByName } from "@/lib/tours";
+import { weekdayOfIso, isoOfEnglishDate, nextAllowedDates } from "@/lib/schedule";
 import { checkRateLimit, getClientIp } from "@/lib/ratelimit";
 import { logBookingCreated } from "@/lib/bookings";
 import { getSession, SESSION_COOKIE } from "@/lib/session";
@@ -12,15 +13,20 @@ function getStripe() {
 }
 
 function parseBookingText(bookingText: string) {
-  // Format: "Tour Name | 2 people | €180 | 15 June 2026 | 10:00 | discount:5"
-  // Time is "-" when the tour has no fixed time slot. discount:N is optional.
+  // Format: "Tour Name | 2 people | €180 | 15 June 2026 | 10:00 | iso:2026-06-15 | discount:5"
+  // Time is "-" when the tour has no fixed time slot. iso: and discount: are optional.
   const raw = bookingText.split("|").map((s) => s.trim());
-  // Pull out the optional discount field wherever it sits
+  // Pull out the optional named fields wherever they sit, so the positional
+  // fields below keep their indexes — a BOOK_NOW written before iso: existed
+  // still parses exactly as it used to.
   let discountPercent = 0;
+  let isoDate = "";
   const parts: string[] = [];
   for (const p of raw) {
     const m = p.match(/discount\s*:\s*(\d+)/i);
+    const iso = p.match(/iso\s*:\s*(\d{4}-\d{2}-\d{2})/i);
     if (m) discountPercent = parseInt(m[1], 10) || 0;
+    else if (iso) isoDate = iso[1];
     else parts.push(p);
   }
   const tourName = parts[0] ?? "Tenerife Experience";
@@ -29,7 +35,7 @@ function parseBookingText(bookingText: string) {
   const bookingDate = parts[3] ?? "";
   const bookingTime = parts[4] && parts[4] !== "-" ? parts[4] : "";
   const priceEur = parseFloat(priceStr.replace(/[^0-9.]/g, "")) || 0;
-  return { tourName, groupSize, priceEur, bookingDate, bookingTime, discountPercent };
+  return { tourName, groupSize, priceEur, bookingDate, bookingTime, discountPercent, isoDate };
 }
 
 function findTourSlugByName(tourName: string): string | null {
@@ -52,7 +58,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Missing bookingText" }, { status: 400 });
     }
 
-    const { tourName, groupSize, priceEur, bookingDate, bookingTime, discountPercent } = parseBookingText(bookingText);
+    const { tourName, groupSize, priceEur, bookingDate, bookingTime, discountPercent, isoDate } = parseBookingText(bookingText);
     const stripe = getStripe();
     const baseUrl = process.env.NEXT_PUBLIC_BASE_URL ?? "http://localhost:3000";
 
@@ -66,6 +72,34 @@ export async function POST(req: NextRequest) {
     const slug = clientTourSlug ?? findTourSlugByName(tourName);
     const tour = slug ? getTourBySlug(slug) : null;
     const meetingPoint = tour?.meetingPoint ?? "";
+
+    // Some tours only depart on certain weekdays. The assistant is told to
+    // refuse other days, but a customer can type a date instead of using the
+    // picker, so this is the only place the rule actually holds.
+    //
+    // It fails OPEN on anything it can't read: an unparseable date, or a
+    // BOOK_NOW written before the iso: field existed (old saved transcripts).
+    // Blocking those would cost real bookings to defend against a typo.
+    if (tour?.days?.length && isoDate) {
+      const weekday = weekdayOfIso(isoDate);
+      const humanIso = isoOfEnglishDate(bookingDate);
+      if (weekday && humanIso && humanIso !== isoDate) {
+        // The two dates in the same BOOK_NOW disagree — that's a model slip,
+        // not a bad choice by the customer. Let it through and leave a trail.
+        console.warn(
+          `[checkout] BOOK_NOW date mismatch: shown "${bookingDate}" vs iso ${isoDate} (${slug ?? "unknown tour"})`
+        );
+      } else if (weekday && !tour.days.includes(weekday)) {
+        return NextResponse.json(
+          {
+            error: "day_not_available",
+            allowedDays: tour.days,
+            nextDates: nextAllowedDates(tour.days, 3),
+          },
+          { status: 400 }
+        );
+      }
+    }
 
     // Stripe needs a publicly reachable absolute image URL; tour.imageUrl is
     // stored as a site-relative path, so prefix it with the base URL.
