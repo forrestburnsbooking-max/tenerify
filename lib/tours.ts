@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import { formatDays, type Weekday } from "./schedule";
 
 const TOURS_FILE = path.join(process.cwd(), "data", "tours.json");
 const SUPPLIERS_FILE = path.join(process.cwd(), "data", "suppliers.json");
@@ -22,17 +23,10 @@ export type FaqItem = {
   answer: string;
 };
 
-// Days a tour actually runs. Order matters — it's the order they're printed in,
-// and Mon-first matches how the operators quote their schedules.
-export const WEEKDAYS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"] as const;
-export type Weekday = (typeof WEEKDAYS)[number];
-
-/** "Mon & Thu", "Mon, Wed & Fri" — always in week order, whatever the JSON order. */
-export function formatDays(days: Weekday[]): string {
-  const sorted = [...days].sort((a, b) => WEEKDAYS.indexOf(a) - WEEKDAYS.indexOf(b));
-  if (sorted.length <= 1) return sorted[0] ?? "";
-  return `${sorted.slice(0, -1).join(", ")} & ${sorted[sorted.length - 1]}`;
-}
+// Weekday vocabulary lives in lib/schedule.ts — it has no Node-only imports,
+// so the browser can share it. Re-exported here because callers already reach
+// for the catalogue module when they want anything about a tour.
+export { WEEKDAYS, formatDays, type Weekday } from "./schedule";
 
 export type Tour = {
   slug: string;

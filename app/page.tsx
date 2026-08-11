@@ -4,6 +4,7 @@ import { useState, useRef, useEffect, useCallback, type ComponentProps } from "r
 import ReactMarkdown from "react-markdown";
 import remarkBreaks from "remark-breaks";
 import { useTwemoji } from "@/lib/useTwemoji";
+import { nextAllowedDates, type Weekday } from "@/lib/schedule";
 
 // Single newlines become real line breaks (react-markdown collapses them otherwise),
 // so a question on its own line no longer glues onto the text above it.
@@ -23,7 +24,7 @@ const MD_COMPONENTS = {
   ),
 };
 
-function DatePicker({ onSelect, noSameDay = false }: { onSelect: (date: string) => void; noSameDay?: boolean }) {
+function DatePicker({ onSelect, noSameDay = false, allowedDays = [], lang }: { onSelect: (date: string) => void; noSameDay?: boolean; allowedDays?: string[]; lang?: string }) {
   const today = new Date();
   // Format a Date as YYYY-MM-DD using LOCAL components (toISOString would shift
   // by the UTC offset and could move the min date a day in either direction).
@@ -45,6 +46,32 @@ function DatePicker({ onSelect, noSameDay = false }: { onSelect: (date: string) 
   const [showPicker, setShowPicker] = useState(false);
   const [picked, setPicked] = useState("");
   const minDate = fmt(tomorrow);
+
+  // A tour that only runs on certain weekdays gets its real departures as
+  // buttons instead of Today/Tomorrow/This weekend — two of those three would
+  // be dead ends, and a calendar can't grey out "every Tuesday" anyway.
+  // The chat still receives the English date, the same string every other
+  // path sends; only what the guest reads is localised.
+  if (allowedDays.length) {
+    const dates = nextAllowedDates(allowedDays as Weekday[], 6);
+    return (
+      <div className="flex flex-wrap gap-2">
+        {dates.map((iso) => {
+          const [y, m, d] = iso.split("-").map(Number);
+          const date = new Date(y, m - 1, d);
+          return (
+            <button
+              key={iso}
+              onClick={() => onSelect(label(date))}
+              className="px-4 py-2 rounded-full text-sm font-medium border bg-white/8 border-white/15 text-white hover:border-orange-500 hover:text-orange-400 transition-all"
+            >
+              {date.toLocaleDateString(lang || "en-GB", { weekday: "short", day: "numeric", month: "short" })}
+            </button>
+          );
+        })}
+      </div>
+    );
+  }
 
   return (
     <div className="flex flex-col gap-2 w-full">
@@ -227,6 +254,7 @@ type Message = {
   needsTime?: boolean;
   availableTimeSlots?: string[];
   noSameDay?: boolean;
+  allowedDays?: string[]; // weekdays this tour departs; empty = any day
 };
 
 type Step = "hero" | "language" | "menu" | "bookMode" | "who" | "category" | "location" | "chat";
@@ -717,7 +745,7 @@ export default function Home() {
       }
       const finalMessages: Message[] = [
         ...newMessages,
-        { role: "assistant", content: data.message, options: data.options, bookingText: data.bookingText, tourSlug: data.tourSlug, tourMedia: data.tourMedia, tourMediaList: data.tourMediaList, needsDate: data.needsDate, needsLicense: data.needsLicense, needsText: data.needsText, needsTime: data.needsTime, availableTimeSlots: data.availableTimeSlots, noSameDay: data.noSameDay },
+        { role: "assistant", content: data.message, options: data.options, bookingText: data.bookingText, tourSlug: data.tourSlug, tourMedia: data.tourMedia, tourMediaList: data.tourMediaList, needsDate: data.needsDate, needsLicense: data.needsLicense, needsText: data.needsText, needsTime: data.needsTime, availableTimeSlots: data.availableTimeSlots, noSameDay: data.noSameDay, allowedDays: data.allowedDays },
       ];
       setMessages(finalMessages);
       persistTranscript(finalMessages, effectiveWho, effectiveLang);
@@ -1213,7 +1241,7 @@ export default function Home() {
               {/* Date picker or quick-reply options */}
               {msg.role === "assistant" && i === lastAssistantIndex && !usedOptions.has(i) && !loading && (
                 msg.needsDate ? (
-                  <DatePicker noSameDay={msg.noSameDay} onSelect={(date) => {
+                  <DatePicker noSameDay={msg.noSameDay} allowedDays={msg.allowedDays} lang={selectedLanguage} onSelect={(date) => {
                     setUsedOptions((prev) => new Set(prev).add(i));
                     sendToAI(date, messages);
                   }} />

@@ -557,6 +557,10 @@ export async function POST(req: NextRequest) {
     // Otherwise "Today" stays: even in high season a late slot can clear the
     // 12h minimum, so the AI gates the exact time rather than the date picker.
     const noSameDay = tourSlug ? getTourBySlug(tourSlug)?.category === "car-rental" : false;
+    // Tours that only depart on certain weekdays: the picker offers those dates
+    // instead of Today/Tomorrow/This weekend. Empty for everything else, which
+    // keeps the widget on its existing path.
+    const allowedDays = (tourSlug ? getTourBySlug(tourSlug)?.days : undefined) ?? [];
 
     const bookMatch = message.match(/\[BOOK_NOW: ([^\]]+)\]/);
     const bookingText = bookMatch ? bookMatch[1] : null;
@@ -587,7 +591,7 @@ export async function POST(req: NextRequest) {
 
     // tourSlug rides along so the Pay button can hand checkout the exact tour
     // instead of making it guess from the BOOK_NOW name.
-    const res = NextResponse.json({ message, options, bookingText, tourSlug, tourMedia, tourMediaList, needsDate, needsLicense, needsText, needsTime, availableTimeSlots, noSameDay, isReturning: session.visits.length > 1 });
+    const res = NextResponse.json({ message, options, bookingText, tourSlug, tourMedia, tourMediaList, needsDate, needsLicense, needsText, needsTime, availableTimeSlots, noSameDay, allowedDays, isReturning: session.visits.length > 1 });
     res.cookies.set(SESSION_COOKIE, sessionId, {
       httpOnly: false, // readable by client to show "welcome back"
       sameSite: "lax",

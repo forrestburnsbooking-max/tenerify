@@ -1,4 +1,17 @@
-import { WEEKDAYS, type Weekday } from "./tours";
+// Kept free of any Node-only import (no fs) so the date picker can use it in
+// the browser as well as checkout on the server.
+
+// Days a tour actually runs. Order matters — it's the order they're printed
+// in, and Mon-first matches how the operators quote their schedules.
+export const WEEKDAYS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"] as const;
+export type Weekday = (typeof WEEKDAYS)[number];
+
+/** "Mon & Thu", "Mon, Wed & Fri" — always in week order, whatever the JSON order. */
+export function formatDays(days: Weekday[]): string {
+  const sorted = [...days].sort((a, b) => WEEKDAYS.indexOf(a) - WEEKDAYS.indexOf(b));
+  if (sorted.length <= 1) return sorted[0] ?? "";
+  return `${sorted.slice(0, -1).join(", ")} & ${sorted[sorted.length - 1]}`;
+}
 
 /**
  * Weekday of an ISO "YYYY-MM-DD" date, or null if the string isn't one.

@@ -18,6 +18,7 @@ export type StoredMessage = {
   needsTime?: boolean;
   availableTimeSlots?: string[];
   noSameDay?: boolean;
+  allowedDays?: string[];
 };
 
 export type Transcript = {
@@ -101,6 +102,7 @@ export function sanitizeMessages(input: unknown): StoredMessage[] | null {
     if (m.needsTime === true) msg.needsTime = true;
     if (Array.isArray(m.availableTimeSlots)) msg.availableTimeSlots = m.availableTimeSlots.map(String);
     if (m.noSameDay === true) msg.noSameDay = true;
+    if (Array.isArray(m.allowedDays)) msg.allowedDays = m.allowedDays.slice(0, 7).map(String);
     out.push(msg);
   }
   if (JSON.stringify(out).length > MAX_BYTES) return null;
