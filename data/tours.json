@@ -2510,6 +2510,9 @@
     "timeSlots": [
       "08:30"
     ],
+    "days": [
+      "Tue"
+    ],
     "meetingPoint": "Hotel pickup — South Tenerife (time on confirmation)",
     "supplierId": "nere",
     "minAge": 0
@@ -4653,6 +4656,9 @@
     "timeSlots": [
       "21:00"
     ],
+    "days": [
+      "Thu"
+    ],
     "meetingPoint": "Las Olas Showroom, GF Victoria Hotel, C. Fernando López Arvelo 1, Costa Adeje",
     "bookingPhone": "922 987 184",
     "supplierId": "las-olas-showroom",
@@ -4726,6 +4732,9 @@
     "url": "https://www.excursionstenerife.es/tours/flamenco-show-sala-coliseo",
     "timeSlots": [
       "20:30"
+    ],
+    "days": [
+      "Fri"
     ],
     "meetingPoint": "Teatro Coliseo, Avda. Edelmira Alfonso s/n, San Miguel de Abona",
     "bookingPhone": "922 374 811",
@@ -4801,6 +4810,9 @@
     "timeSlots": [
       "21:00"
     ],
+    "days": [
+      "Sat"
+    ],
     "meetingPoint": "Auditorio Pirámide de Arona, Av. las Américas s/n, Playa de las Américas",
     "bookingPhone": "658 987 645",
     "supplierId": "history-musicle",
@@ -4874,6 +4886,11 @@
     "url": "https://www.excursionstenerife.es/tours/medieval-show",
     "timeSlots": [
       "19:00"
+    ],
+    "days": [
+      "Tue",
+      "Thu",
+      "Sat"
     ],
     "meetingPoint": "Castillo San Miguel, Av. Edelmira Alfonso s/n, Aldea Blanca",
     "bookingPhone": "922 374 811",
@@ -5060,6 +5077,10 @@
     "adultOnly": true,
     "timeSlots": [
       "20:30"
+    ],
+    "days": [
+      "Fri",
+      "Sat"
     ],
     "meetingPoint": "Las Olas Showroom, GF Victoria Hotel, C. Fernando López Arvelo 1, Costa Adeje",
     "bookingPhone": "922 987 184",
