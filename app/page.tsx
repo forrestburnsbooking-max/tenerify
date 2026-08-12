@@ -24,7 +24,7 @@ const MD_COMPONENTS = {
   ),
 };
 
-function DatePicker({ onSelect, noSameDay = false, allowedDays = [], lang }: { onSelect: (date: string) => void; noSameDay?: boolean; allowedDays?: string[]; lang?: string }) {
+function DatePicker({ onSelect, allowedDays = [], lang }: { onSelect: (date: string) => void; allowedDays?: string[]; lang?: string }) {
   const today = new Date();
   // Format a Date as YYYY-MM-DD using LOCAL components (toISOString would shift
   // by the UTC offset and could move the min date a day in either direction).
@@ -76,12 +76,8 @@ function DatePicker({ onSelect, noSameDay = false, allowedDays = [], lang }: { o
   return (
     <div className="flex flex-col gap-2 w-full">
       <div className="flex flex-wrap gap-2">
-        {!noSameDay && (
-          <button onClick={() => onSelect(label(today))}
-            className="px-4 py-2 rounded-full text-sm font-medium border bg-white/8 border-white/15 text-white hover:border-orange-500 hover:text-orange-400 transition-all">
-            Today
-          </button>
-        )}
+        {/* No "Today": every booking needs 24h of notice, which can't fit
+            inside the current day for any tour. */}
         <button onClick={() => onSelect(label(tomorrow))}
           className="px-4 py-2 rounded-full text-sm font-medium border bg-white/8 border-white/15 text-white hover:border-orange-500 hover:text-orange-400 transition-all">
           Tomorrow
@@ -276,7 +272,6 @@ type Message = {
   needsText?: boolean;
   needsTime?: boolean;
   availableTimeSlots?: string[];
-  noSameDay?: boolean;
   allowedDays?: string[]; // weekdays this tour departs; empty = any day
 };
 
@@ -768,7 +763,7 @@ export default function Home() {
       }
       const finalMessages: Message[] = [
         ...newMessages,
-        { role: "assistant", content: data.message, options: data.options, bookingText: data.bookingText, tourSlug: data.tourSlug, tourMedia: data.tourMedia, tourMediaList: data.tourMediaList, needsDate: data.needsDate, needsLicense: data.needsLicense, needsText: data.needsText, needsTime: data.needsTime, availableTimeSlots: data.availableTimeSlots, noSameDay: data.noSameDay, allowedDays: data.allowedDays },
+        { role: "assistant", content: data.message, options: data.options, bookingText: data.bookingText, tourSlug: data.tourSlug, tourMedia: data.tourMedia, tourMediaList: data.tourMediaList, needsDate: data.needsDate, needsLicense: data.needsLicense, needsText: data.needsText, needsTime: data.needsTime, availableTimeSlots: data.availableTimeSlots, allowedDays: data.allowedDays },
       ];
       setMessages(finalMessages);
       persistTranscript(finalMessages, effectiveWho, effectiveLang);
@@ -1264,7 +1259,7 @@ export default function Home() {
               {/* Date picker or quick-reply options */}
               {msg.role === "assistant" && i === lastAssistantIndex && !usedOptions.has(i) && !loading && (
                 msg.needsDate ? (
-                  <DatePicker noSameDay={msg.noSameDay} allowedDays={msg.allowedDays} lang={selectedLanguage} onSelect={(date) => {
+                  <DatePicker allowedDays={msg.allowedDays} lang={selectedLanguage} onSelect={(date) => {
                     setUsedOptions((prev) => new Set(prev).add(i));
                     sendToAI(date, messages);
                   }} />

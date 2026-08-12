@@ -17,7 +17,6 @@ export type StoredMessage = {
   needsLicense?: boolean;
   needsTime?: boolean;
   availableTimeSlots?: string[];
-  noSameDay?: boolean;
   allowedDays?: string[];
 };
 
@@ -101,7 +100,6 @@ export function sanitizeMessages(input: unknown): StoredMessage[] | null {
     if (m.needsLicense === true) msg.needsLicense = true;
     if (m.needsTime === true) msg.needsTime = true;
     if (Array.isArray(m.availableTimeSlots)) msg.availableTimeSlots = m.availableTimeSlots.map(String);
-    if (m.noSameDay === true) msg.noSameDay = true;
     if (Array.isArray(m.allowedDays)) msg.allowedDays = m.allowedDays.slice(0, 7).map(String);
     out.push(msg);
   }

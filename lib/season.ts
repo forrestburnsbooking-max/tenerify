@@ -1,17 +1,19 @@
-// Seasonal booking lead time.
+// Booking lead time and the high-season window.
 //
-// In high season the island is busy and operators can't confirm very
-// last-minute slots in time, so bookings need 12h notice (an evening chat can
-// still book the next morning). The rest of the year 3h is enough. Edit
-// HIGH_SEASON below to change the window — endpoints are inclusive, format
-// "MM-DD". The window must not wrap across New Year (the simple MM-DD compare
-// below assumes from <= to within the same year).
+// The lead time is a single rule all year: an activity must start at least
+// MIN_LEAD_HOURS from the moment of booking. It used to be seasonal (12h in
+// high season, 3h otherwise); the operators close their lists a day ahead, so
+// the flat 24h matches how they actually work.
+//
+// The season window stays — it's still useful context for the assistant (a
+// busy island reads differently from a quiet one) — but it no longer changes
+// the lead time. Endpoints are inclusive, format "MM-DD", and the window must
+// not wrap across New Year (the MM-DD compare below assumes from <= to).
 
 const HIGH_SEASON = { from: "06-15", to: "09-15" };
 const TZ = "Atlantic/Canary";
 
-export const HIGH_SEASON_LEAD_HOURS = 12;
-export const OFF_SEASON_LEAD_HOURS = 3;
+export const MIN_LEAD_HOURS = 24;
 
 function tenerifeMonthDay(date: Date): string {
   // "MM-DD" in Tenerife local time, so the season flips at Canary midnight.
@@ -30,8 +32,8 @@ export function isHighSeason(date: Date = new Date()): boolean {
   return md >= HIGH_SEASON.from && md <= HIGH_SEASON.to;
 }
 
-export function minLeadHours(date: Date = new Date()): number {
-  return isHighSeason(date) ? HIGH_SEASON_LEAD_HOURS : OFF_SEASON_LEAD_HOURS;
+export function minLeadHours(): number {
+  return MIN_LEAD_HOURS;
 }
 
 // Human-readable window for prompts/copy, e.g. "15 June – 15 September".

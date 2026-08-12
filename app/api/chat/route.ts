@@ -18,7 +18,7 @@ import {
   SESSION_TTL_MS,
 } from "@/lib/session";
 import { getTourBySlug } from "@/lib/tours";
-import { isHighSeason, highSeasonLabel, minLeadHours, HIGH_SEASON_LEAD_HOURS, OFF_SEASON_LEAD_HOURS } from "@/lib/season";
+import { isHighSeason, highSeasonLabel, MIN_LEAD_HOURS } from "@/lib/season";
 import { randomUUID } from "crypto";
 
 const client = new Anthropic();
@@ -336,15 +336,13 @@ For a tour that has one:
 
 ## MINIMUM BOOKING LEAD TIME
 
-How far ahead a booking must be made depends on the season of the **activity's date** — the "Season right now" line in the context above tells you which rule is active for today:
+**Every booking needs at least ${MIN_LEAD_HOURS} hours between now and the moment the activity starts.** One rule, all year, every tour — the operators close their lists a day ahead. The current date and time in Tenerife is given in the context above; measure from that.
 
-- **High season (${highSeasonLabel()}): at least ${HIGH_SEASON_LEAD_HOURS} hours before the activity starts.** The island is busy, so only very last-minute slots can't be confirmed in time. Anything ${HIGH_SEASON_LEAD_HOURS}+ hours away is fine — an evening chat can still book tomorrow morning.
-- **Rest of the year: at least ${OFF_SEASON_LEAD_HOURS} hours before the activity starts.**
-
-Apply the rule to the chosen date/time:
-- Same-day bookings are fine as long as the slot is still at least the season's minimum hours away.
-- If the requested slot (or the activity itself, for tours without fixed times) is less than the season's minimum away, politely explain the lead time and offer the **nearest valid slot or date** instead — never trigger BOOK_NOW for a time inside the window.
-- If the user explicitly asks for a time inside the window, explain the rule and suggest the next valid option rather than booking it.
+Apply it to the chosen date/time:
+- **Same-day bookings are never possible** — ${MIN_LEAD_HOURS} hours can't fit inside today. Don't offer today as an option.
+- Tomorrow only works if the activity's start time is still ${MIN_LEAD_HOURS}+ hours away. If it's 14:00 now and the tour departs 08:30, tomorrow's departure is only 18.5 hours out — too soon. Offer the day after instead.
+- For a tour with no fixed departure time (parks, rentals, tickets), apply the same rule to the day itself: the earliest bookable date is the day after tomorrow unless the booking is made very early in the day.
+- Never trigger BOOK_NOW for a slot inside the window. Explain the ${MIN_LEAD_HOURS}-hour rule and offer the **nearest valid date** instead — and if the customer insists on something sooner, point them to WhatsApp (+34 624 074 633) rather than booking it.
 
 ## BOOKING TRIGGER
 
@@ -414,7 +412,7 @@ All bookings are paid online by card via secure checkout (Stripe) — we do not 
 
 function buildDynamicContext(weather: string, events: string, sessionContext: string, language: string): string {
   const langName = LANGUAGE_NAMES[language] ?? "English";
-  const seasonLine = `Season right now: ${isHighSeason() ? `HIGH SEASON (${highSeasonLabel()})` : "off-season"} — minimum booking lead time is ${minLeadHours()} hours.`;
+  const seasonLine = `Season right now: ${isHighSeason() ? `HIGH SEASON (${highSeasonLabel()}) — the island is busy, popular slots fill up` : "off-season"}. Minimum booking lead time is ${MIN_LEAD_HOURS} hours, all year.`;
   return `Current date & time in Tenerife (Atlantic/Canary): ${getCurrentDateTime()}
 ${seasonLine}
 
@@ -553,10 +551,6 @@ export async function POST(req: NextRequest) {
     const needsText = input?.needsText ?? false;
     const needsTime = input?.needsTime ?? false;
     const availableTimeSlots = input?.availableTimeSlots ?? [];
-    // Car rentals can't be booked same-day — the date picker hides "Today".
-    // Otherwise "Today" stays: even in high season a late slot can clear the
-    // 12h minimum, so the AI gates the exact time rather than the date picker.
-    const noSameDay = tourSlug ? getTourBySlug(tourSlug)?.category === "car-rental" : false;
     // Tours that only depart on certain weekdays: the picker offers those dates
     // instead of Today/Tomorrow/This weekend. Empty for everything else, which
     // keeps the widget on its existing path.
@@ -591,7 +585,7 @@ export async function POST(req: NextRequest) {
 
     // tourSlug rides along so the Pay button can hand checkout the exact tour
     // instead of making it guess from the BOOK_NOW name.
-    const res = NextResponse.json({ message, options, bookingText, tourSlug, tourMedia, tourMediaList, needsDate, needsLicense, needsText, needsTime, availableTimeSlots, noSameDay, allowedDays, isReturning: session.visits.length > 1 });
+    const res = NextResponse.json({ message, options, bookingText, tourSlug, tourMedia, tourMediaList, needsDate, needsLicense, needsText, needsTime, availableTimeSlots, allowedDays, isReturning: session.visits.length > 1 });
     res.cookies.set(SESSION_COOKIE, sessionId, {
       httpOnly: false, // readable by client to show "welcome back"
       sameSite: "lax",
