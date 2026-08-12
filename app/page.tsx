@@ -155,25 +155,48 @@ function LicensePicker({ onSelect }: { onSelect: (answer: string) => void }) {
 // Checkout refuses a date the tour doesn't run on. It answers with facts
 // (allowed weekdays + the next real departures) and the wording lives here,
 // where the interface language is already known.
-const SCHEDULE_REFUSAL: Record<string, { runs: string; nearest: string }> = {
-  en: { runs: "This tour only departs on", nearest: "Nearest departures:" },
-  ru: { runs: "Этот тур ходит только по", nearest: "Ближайшие даты:" },
-  es: { runs: "Esta excursión solo sale los", nearest: "Próximas salidas:" },
-  de: { runs: "Diese Tour fährt nur", nearest: "Nächste Termine:" },
-  fr: { runs: "Cette excursion part uniquement le", nearest: "Prochains départs :" },
-  it: { runs: "Questa escursione parte solo il", nearest: "Prossime partenze:" },
-  nl: { runs: "Deze tour vertrekt alleen op", nearest: "Eerstvolgende data:" },
-  pl: { runs: "Ta wycieczka odjeżdża tylko w", nearest: "Najbliższe terminy:" },
-  uk: { runs: "Цей тур їздить тільки по", nearest: "Найближчі дати:" },
+const SCHEDULE_REFUSAL: Record<string, { runs: string; nearest: string; and: string }> = {
+  en: { runs: "This tour only departs on", nearest: "Nearest departures:", and: "and" },
+  ru: { runs: "Этот тур ходит только по", nearest: "Ближайшие даты:", and: "и" },
+  es: { runs: "Esta excursión solo sale los", nearest: "Próximas salidas:", and: "y" },
+  de: { runs: "Diese Tour fährt nur", nearest: "Nächste Termine:", and: "und" },
+  fr: { runs: "Cette excursion part uniquement", nearest: "Prochains départs :", and: "et" },
+  it: { runs: "Questa escursione parte solo", nearest: "Prossime partenze:", and: "e" },
+  nl: { runs: "Deze tour vertrekt alleen op", nearest: "Eerstvolgende data:", and: "en" },
+  pl: { runs: "Ta wycieczka odjeżdża tylko", nearest: "Najbliższe terminy:", and: "i" },
+  uk: { runs: "Цей тур їздить тільки по", nearest: "Найближчі дати:", and: "та" },
 };
 
-// 1 January 2024 was a Monday — offsetting from it turns "Thu" into whatever
-// the guest's language calls Thursday, without shipping a table per language.
-const WEEKDAY_OFFSET: Record<string, number> = { Mon: 0, Tue: 1, Wed: 2, Thu: 3, Fri: 4, Sat: 5, Sun: 6 };
+// "Runs on Mondays" needs a form Intl won't give you: it returns the dictionary
+// word ("понедельник") where the sentence needs "по понедельникам", German
+// needs "montags", Polish "w poniedziałki". Hence a table per language.
+//
+// Where the language states the preposition once for the whole list (ru, uk,
+// es, nl) it lives in `runs` above and the days stay bare — "по понедельникам
+// и четвергам". Where it repeats naturally (fr, it, pl) it sits on each day.
+const RECURRING_DAY: Record<string, Record<string, string>> = {
+  en: { Mon: "Mondays", Tue: "Tuesdays", Wed: "Wednesdays", Thu: "Thursdays", Fri: "Fridays", Sat: "Saturdays", Sun: "Sundays" },
+  ru: { Mon: "понедельникам", Tue: "вторникам", Wed: "средам", Thu: "четвергам", Fri: "пятницам", Sat: "субботам", Sun: "воскресеньям" },
+  es: { Mon: "lunes", Tue: "martes", Wed: "miércoles", Thu: "jueves", Fri: "viernes", Sat: "sábados", Sun: "domingos" },
+  de: { Mon: "montags", Tue: "dienstags", Wed: "mittwochs", Thu: "donnerstags", Fri: "freitags", Sat: "samstags", Sun: "sonntags" },
+  fr: { Mon: "le lundi", Tue: "le mardi", Wed: "le mercredi", Thu: "le jeudi", Fri: "le vendredi", Sat: "le samedi", Sun: "le dimanche" },
+  it: { Mon: "il lunedì", Tue: "il martedì", Wed: "il mercoledì", Thu: "il giovedì", Fri: "il venerdì", Sat: "il sabato", Sun: "la domenica" },
+  nl: { Mon: "maandag", Tue: "dinsdag", Wed: "woensdag", Thu: "donderdag", Fri: "vrijdag", Sat: "zaterdag", Sun: "zondag" },
+  pl: { Mon: "w poniedziałki", Tue: "we wtorki", Wed: "w środy", Thu: "w czwartki", Fri: "w piątki", Sat: "w soboty", Sun: "w niedziele" },
+  uk: { Mon: "понеділках", Tue: "вівторках", Wed: "середах", Thu: "четвергах", Fri: "п'ятницях", Sat: "суботах", Sun: "неділях" },
+};
 
 function weekdayName(day: string, lang: string): string {
-  const d = new Date(Date.UTC(2024, 0, 1 + (WEEKDAY_OFFSET[day] ?? 0)));
-  return d.toLocaleDateString(lang || "en", { weekday: "long", timeZone: "UTC" });
+  const table = RECURRING_DAY[lang] ?? RECURRING_DAY.en;
+  return table[day] ?? day;
+}
+
+/** "по понедельникам и четвергам" — last pair joined by the language's "and". */
+function joinDays(days: string[], lang: string): string {
+  const words = SCHEDULE_REFUSAL[lang] ?? SCHEDULE_REFUSAL.en;
+  const named = days.map((d) => weekdayName(d, lang));
+  if (named.length <= 1) return named[0] ?? "";
+  return `${named.slice(0, -1).join(", ")} ${words.and} ${named[named.length - 1]}`;
 }
 
 function departureDate(iso: string, lang: string): string {
@@ -201,7 +224,7 @@ function BookingButtons({ bookingText, tourSlug, lang }: { bookingText: string; 
         window.location.href = data.url;
       } else if (data.error === "day_not_available") {
         const words = SCHEDULE_REFUSAL[lang ?? "en"] ?? SCHEDULE_REFUSAL.en;
-        const days = (data.allowedDays ?? []).map((d: string) => weekdayName(d, lang ?? "en")).join(", ");
+        const days = joinDays(data.allowedDays ?? [], lang ?? "en");
         const dates = (data.nextDates ?? []).map((iso: string) => departureDate(iso, lang ?? "en")).join(" · ");
         setRefusal(`${words.runs} ${days}. ${dates ? `${words.nearest} ${dates}` : ""}`.trim());
       } else {
