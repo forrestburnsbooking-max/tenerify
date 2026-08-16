@@ -292,22 +292,6 @@ const LANGUAGES = [
   { flag: "🇸🇦", label: "العربية",     value: "ar" },
 ];
 
-const SUPPORTED_LANGS = new Set(LANGUAGES.map((l) => l.value));
-
-// Best-effort match of the browser's preferred languages to one we support.
-// navigator.languages is already in the user's priority order, so the first
-// hit wins (a German with English as a fallback still gets German). Returns
-// "" when none of the browser's languages are supported → we show the picker.
-function detectBrowserLang(): string {
-  if (typeof navigator === "undefined") return "";
-  const prefs = navigator.languages?.length ? navigator.languages : [navigator.language];
-  for (const p of prefs) {
-    const primary = p?.toLowerCase().split("-")[0];
-    if (primary && SUPPORTED_LANGS.has(primary)) return primary;
-  }
-  return "";
-}
-
 const UI_STRINGS: Record<string, {
   intro: string;
   whoQuestion: string;
@@ -581,8 +565,6 @@ export default function Home() {
   };
 
   useEffect(() => {
-    const detected = detectBrowserLang();
-
     // Deep link from a tour page: /?book=<Tour Title> jumps straight into chat.
     // Restore language and who from the server-side session first, so a guest
     // who chatted in Russian and detoured through the catalogue isn't answered
@@ -600,13 +582,13 @@ export default function Home() {
         sendToAI(`I'd like to book: ${bookParam}`, [], whoValue, lang);
       };
       if (storedLang || storedWho) {
-        start(storedLang || detected, storedWho || "Booking from tour page");
+        start(storedLang, storedWho || "Booking from tour page");
       } else {
         fetch("/api/session/transcript")
           .then((r) => r.json())
           .catch(() => ({}))
           .then((d) => {
-            const lang = typeof d?.language === "string" && d.language ? d.language : detected;
+            const lang = typeof d?.language === "string" && d.language ? d.language : "";
             const whoValue =
               typeof d?.who === "string" && d.who && d.who !== "Open chat"
                 ? d.who
@@ -645,22 +627,10 @@ export default function Home() {
     setStep("chat");
   }
 
-  // Enter onboarding from the hero. Skip the manual language step when we can
-  // detect the browser's language (re-detecting here covers the back button,
-  // which clears selectedLanguage); otherwise fall back to the picker.
-  function beginOnboarding() {
-    const lang = selectedLanguage || detectBrowserLang();
-    if (lang && lang !== selectedLanguage) {
-      setSelectedLanguage(lang);
-      sessionStorage.setItem("tfy_lang", lang);
-    }
-    setStep(lang ? "menu" : "language");
-  }
-
   function startFresh() {
     setSavedTranscript(null);
     fetch("/api/session/transcript", { method: "DELETE" }).catch(() => {});
-    beginOnboarding();
+    setStep("language");
   }
 
   useEffect(() => {
@@ -831,7 +801,7 @@ export default function Home() {
               </div>
             ) : (
               <button
-                onClick={beginOnboarding}
+                onClick={() => setStep("language")}
                 className="w-full bg-orange-500 hover:bg-orange-400 active:bg-orange-600 text-white font-bold px-8 py-4 rounded-2xl text-base transition-all hover:scale-[1.02] shadow-xl shadow-orange-900/50 tracking-wide"
               >
                 Find my experience →
