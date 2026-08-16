@@ -151,16 +151,23 @@ function LicensePicker({ onSelect }: { onSelect: (answer: string) => void }) {
 // Checkout refuses a date the tour doesn't run on. It answers with facts
 // (allowed weekdays + the next real departures) and the wording lives here,
 // where the interface language is already known.
-const SCHEDULE_REFUSAL: Record<string, { runs: string; nearest: string; and: string }> = {
-  en: { runs: "This tour only departs on", nearest: "Nearest departures:", and: "and" },
-  ru: { runs: "Этот тур ходит только по", nearest: "Ближайшие даты:", and: "и" },
-  es: { runs: "Esta excursión solo sale los", nearest: "Próximas salidas:", and: "y" },
-  de: { runs: "Diese Tour fährt nur", nearest: "Nächste Termine:", and: "und" },
-  fr: { runs: "Cette excursion part uniquement", nearest: "Prochains départs :", and: "et" },
-  it: { runs: "Questa escursione parte solo", nearest: "Prossime partenze:", and: "e" },
-  nl: { runs: "Deze tour vertrekt alleen op", nearest: "Eerstvolgende data:", and: "en" },
-  pl: { runs: "Ta wycieczka odjeżdża tylko", nearest: "Najbliższe terminy:", and: "i" },
-  uk: { runs: "Цей тур їздить тільки по", nearest: "Найближчі дати:", and: "та" },
+// Full sentences with slots rather than fragments glued together in code:
+// punctuation and spacing belong to the language. Chinese joins with 、 and
+// ends in 。 with no spaces at all; Arabic's و attaches to the word after it.
+type RefusalWords = { line: string; nearest: string; sep: string; and: string };
+const SCHEDULE_REFUSAL: Record<string, RefusalWords> = {
+  en: { line: "This tour only departs on {days}.", nearest: "Nearest departures: {dates}", sep: ", ", and: " and " },
+  ru: { line: "Этот тур ходит только по {days}.", nearest: "Ближайшие даты: {dates}", sep: ", ", and: " и " },
+  es: { line: "Esta excursión solo sale los {days}.", nearest: "Próximas salidas: {dates}", sep: ", ", and: " y " },
+  de: { line: "Diese Tour fährt nur {days}.", nearest: "Nächste Termine: {dates}", sep: ", ", and: " und " },
+  fr: { line: "Cette excursion part uniquement {days}.", nearest: "Prochains départs : {dates}", sep: ", ", and: " et " },
+  it: { line: "Questa escursione parte solo {days}.", nearest: "Prossime partenze: {dates}", sep: ", ", and: " e " },
+  nl: { line: "Deze tour vertrekt alleen op {days}.", nearest: "Eerstvolgende data: {dates}", sep: ", ", and: " en " },
+  pl: { line: "Ta wycieczka odjeżdża tylko {days}.", nearest: "Najbliższe terminy: {dates}", sep: ", ", and: " i " },
+  uk: { line: "Цей тур їздить тільки по {days}.", nearest: "Найближчі дати: {dates}", sep: ", ", and: " та " },
+  sv: { line: "Den här turen går bara på {days}.", nearest: "Närmaste avgångar: {dates}", sep: ", ", and: " och " },
+  zh: { line: "此行程仅限以下日期出发：{days}。", nearest: "最近的出发日期：{dates}", sep: "、", and: "和" },
+  ar: { line: "تنطلق هذه الرحلة أيام {days}.", nearest: "أقرب المواعيد: {dates}", sep: "، ", and: " و" },
 };
 
 // "Runs on Mondays" needs a form Intl won't give you: it returns the dictionary
@@ -180,6 +187,9 @@ const RECURRING_DAY: Record<string, Record<string, string>> = {
   nl: { Mon: "maandag", Tue: "dinsdag", Wed: "woensdag", Thu: "donderdag", Fri: "vrijdag", Sat: "zaterdag", Sun: "zondag" },
   pl: { Mon: "w poniedziałki", Tue: "we wtorki", Wed: "w środy", Thu: "w czwartki", Fri: "w piątki", Sat: "w soboty", Sun: "w niedziele" },
   uk: { Mon: "понеділках", Tue: "вівторках", Wed: "середах", Thu: "четвергах", Fri: "п'ятницях", Sat: "суботах", Sun: "неділях" },
+  sv: { Mon: "måndagar", Tue: "tisdagar", Wed: "onsdagar", Thu: "torsdagar", Fri: "fredagar", Sat: "lördagar", Sun: "söndagar" },
+  zh: { Mon: "周一", Tue: "周二", Wed: "周三", Thu: "周四", Fri: "周五", Sat: "周六", Sun: "周日" },
+  ar: { Mon: "الاثنين", Tue: "الثلاثاء", Wed: "الأربعاء", Thu: "الخميس", Fri: "الجمعة", Sat: "السبت", Sun: "الأحد" },
 };
 
 function weekdayName(day: string, lang: string): string {
@@ -192,7 +202,7 @@ function joinDays(days: string[], lang: string): string {
   const words = SCHEDULE_REFUSAL[lang] ?? SCHEDULE_REFUSAL.en;
   const named = days.map((d) => weekdayName(d, lang));
   if (named.length <= 1) return named[0] ?? "";
-  return `${named.slice(0, -1).join(", ")} ${words.and} ${named[named.length - 1]}`;
+  return `${named.slice(0, -1).join(words.sep)}${words.and}${named[named.length - 1]}`;
 }
 
 function departureDate(iso: string, lang: string): string {
@@ -222,7 +232,9 @@ function BookingButtons({ bookingText, tourSlug, lang }: { bookingText: string; 
         const words = SCHEDULE_REFUSAL[lang ?? "en"] ?? SCHEDULE_REFUSAL.en;
         const days = joinDays(data.allowedDays ?? [], lang ?? "en");
         const dates = (data.nextDates ?? []).map((iso: string) => departureDate(iso, lang ?? "en")).join(" · ");
-        setRefusal(`${words.runs} ${days}. ${dates ? `${words.nearest} ${dates}` : ""}`.trim());
+        const line = words.line.replace("{days}", days);
+        const nearest = dates ? words.nearest.replace("{dates}", dates) : "";
+        setRefusal(`${line} ${nearest}`.trim());
       } else {
         alert("Payment unavailable right now. Please try again in a moment.");
       }
@@ -243,7 +255,7 @@ function BookingButtons({ bookingText, tourSlug, lang }: { bookingText: string; 
         {loading ? "Opening payment…" : "💳 Pay & Book →"}
       </button>
       {refusal && (
-        <p role="alert" className="text-amber-300/90 text-xs leading-relaxed border border-amber-400/25 bg-amber-400/10 rounded-xl px-3 py-2">
+        <p role="alert" dir="auto" className="text-amber-300/90 text-xs leading-relaxed border border-amber-400/25 bg-amber-400/10 rounded-xl px-3 py-2">
           📅 {refusal}
         </p>
       )}
@@ -491,6 +503,9 @@ const BOOK_MODE_TEXTS: Record<string, { question: string; assist: string; catalo
   nl: { question: "Hoe wil je kiezen?", assist: "🎯 Kies voor mij — een paar snelle vragen", catalog: "📖 Ik bekijk zelf de catalogus" },
   pl: { question: "Jak wolisz wybrać?", assist: "🎯 Wybierz za mnie — kilka szybkich pytań", catalog: "📖 Sam przejrzę katalog" },
   uk: { question: "Як зручніше обрати?", assist: "🎯 Підбери за мене — пара швидких питань", catalog: "📖 Сам подивлюся каталог" },
+  sv: { question: "Hur vill du välja?", assist: "🎯 Välj åt mig — några snabba frågor", catalog: "📖 Jag bläddrar i katalogen själv" },
+  zh: { question: "您想如何选择？", assist: "🎯 帮我挑选 — 回答几个问题", catalog: "📖 我自己浏览目录" },
+  ar: { question: "كيف تفضّل الاختيار؟", assist: "🎯 اختر لي — بضعة أسئلة سريعة", catalog: "📖 سأتصفّح الكتالوج بنفسي" },
 };
 
 // Persistent trust badge shown on every tour card — the one thing ChatGPT can't
@@ -506,6 +521,9 @@ const VERIFIED_BADGE: Record<string, string> = {
   nl: "Echte prijs · geverifieerde aanbieder",
   pl: "Realna cena · zweryfikowany operator",
   uk: "Реальна ціна · перевірений оператор",
+  sv: "Riktigt pris · verifierad arrangör",
+  zh: "真实价格 · 认证运营商",
+  ar: "سعر حقيقي · مشغّل موثّق",
 };
 
 const WHO_OPTIONS = [
